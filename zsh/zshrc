@@ -1,0 +1,118 @@
+# File location was changed from ~/.zshrc to ~/.config/zsh/.zshrc
+# This was done by adding the following line to /etc/zsh/zshenv
+# export ZDOTDIR="$HOME"/.config/zsh 
+
+source ~/.config/zsh/extra-zsh-settings
+PROMPT=' %F{#ff55ff}%2~%f %S%F{#ff55ff}囍 %D{%H:%M} → %f%s '
+
+# Simple aliases
+alias cdt="cd ~/Desktop && ll"
+alias cdd="cd ~/Downloads && ll"
+alias cdm="cd ~/Misc/Backups && ll"
+alias cds="cd ~/Repositories/scripts && ll"
+alias cddf="cd ~/Repositories/dotfiles && ll"
+alias rdol="rdo dolphin ."
+alias rdold="rdo dolphin ~/Downloads"
+alias rdols="rdol Holding/screenshots"
+alias m="micro"
+alias e="emacs -nw "
+alias sm="sudo micro"
+alias se="sudo emacs -nw "
+alias qq="clr; cd; zsh"
+alias tp="trash-put -f"
+alias xx="xdg-open"
+alias mkdir="mkdir -pv"
+alias cp="cp -i"
+alias mv='mv -i'
+alias window-name="xprop WM_CLASS"
+alias pg='ping gnu.org'
+alias clr="printf '\033[2J\033[3J\033[1;1H'"
+alias sudo='sudo '
+
+# List
+alias l="exa --icons --group-directories-first"
+alias ll="exa -l --icons --no-user --time-style=iso --group-directories-first"
+alias lll="exa -l --icons --no-user --time-style=iso --group-directories-first -T -L "
+alias lla="exa -la --icons --no-user --group-directories-first --time-style=iso"
+alias lld="exa ~/Downloads -l --icons --sort=oldest --no-user --no-permissions --group-directories-first --time-style=iso"
+
+# Package management
+alias pacs="sudo pacman -S "
+alias pacrsc="sudo pacman -Rsc"
+alias pacr="sudo pacman -Rns"
+alias pacss="pacman -Ss"
+alias pacsi="pacman -Si"
+alias syu="sudo pacman -Syu"
+alias sua="yay -Sua"
+alias tree="pactree -r "
+alias align-mirrors="sudo pacman-mirrors --fasttrack && sudo pacman -Syyu"
+
+
+# Scripts 
+alias expact="~/Repositories/scripts/expact.sh"
+alias expaca="~/Repositories/scripts/expaca.sh"
+alias keys="~/Repositories/scripts/keys.sh"
+alias font-list="~/Repositories/scripts/font-list.sh"
+alias get-image="~/Repositories/scripts/ExtractPDFImage.sh"
+alias ytmp3="~/Repositories/scripts/ytmp3.sh"
+alias ytvid="~/Repositories/scripts/ytvid.sh"
+alias knock="~/.local/share/knock/.knock/knock ~/Downloads/URLLink.acsm"
+alias backdots="~/Repositories/scripts/backdots.sh"
+alias chcover="~/Repositories/scripts/chcover.sh"
+alias newscript='which="script" ~/Repositories/scripts/new-micro.sh '
+alias newsolution='which="solution" ~/Repositories/scripts/new-micro.sh '
+alias newpbmodule='which="polybar-module" ~/Repositories/scripts/new-micro.sh '
+alias newmotif="~/Repositories/scripts/newmotif.sh"
+alias tess='~/Repositories/scripts/tess.sh'
+
+# Config files
+### Emacs
+alias /e="micro ~/Repositories/dotfiles/emacs/init.el"
+### Kitty 
+alias /ka="micro ~/Repositories/dotfiles/kitty/kitty-awesome/kitty-awesome.conf"
+alias /kb="micro ~/Repositories/dotfiles/kitty/kitty-bspwm/kitty-bspwm.conf"
+### Zsh
+alias /z="micro ~/Repositories/dotfiles/zsh/zshrc"
+### AwesomeWM
+alias /a="micro ~/.config/awesome/rc.lua"
+### bspwm
+alias /b="micro ~/Repositories/dotfiles/bspwm/bspwmrc"
+alias /s="micro ~/Repositories/dotfiles/sxhkd/sxhkdrc"
+alias /p="micro ~/Repositories/dotfiles/polybar/config.ini"
+
+
+
+# Functions
+## Disown
+function run_disowned() {
+    "$@" & disown
+}
+function rdo() {
+    # run_disowned and silenced
+
+    run_disowned "$@" 1>/dev/null 2>/dev/null
+}
+
+## Bigdate
+bd () {
+    date +"%Y%m%d%H%M"
+}
+
+
+
+
+
+# Terminal Art
+echo ""
+figlet "Palestine Will Be Free" -tck -f Elite | lolcat
+figlet "Workers of the World, UNITE!" -tck -f Elite | lolcat
+echo ""
+echo "" 
+
+
+
+
+source /home/oak/.config/broot/launcher/bash/br
+
+# Set zcompdump location
+compinit -d "$XDG_CACHE_HOME"/zsh/zcompdump-"$ZSH_VERSION" 

@@ -1,0 +1,9 @@
+configuration {
+	font: "Inconsolata Condensed SemiBold 16";
+	modi: "drun,emoji";
+	show-icons: true;
+	icon-theme: "Vimix-Ruby";
+	
+}
+
+@theme "/usr/share/rofi/themes/paprika-purple.rasi"
