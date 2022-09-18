@@ -1,7 +1,6 @@
 # File location was changed from ~/.zshrc to ~/.config/zsh/.zshrc
 # This was done by adding the following line to /etc/zsh/zshenv
 # export ZDOTDIR="$HOME"/.config/zsh 
-# test
 
 source ~/.config/zsh/extra-zsh-settings
 PROMPT=' %F{#ff55ff}%2~%f %S%F{#ff55ff}囍 %D{%H:%M} → %f%s '
