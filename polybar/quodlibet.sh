@@ -6,7 +6,6 @@ if [ "$(quodlibet --print-playing)" == "/ [untitled Unknown Audio File]" ]; then
 	echo ""; exit
 fi
 function arabcheck() {
-
 	quodlibet --print-playing | grep '[ابتثجحخدذرزسشصضطظعغفقكلمنهوي]'
 }
 if [ "$(arabcheck)" != "" ]; then
