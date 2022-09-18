@@ -1,7 +1,6 @@
 #!/bin/bash
 
-arttest=$(quodlibet --print-playing | grep ' - ')
-if [ "$arttest" == "" ]
+if [ "$(quodlibet --print-playing | grep ' - ')" == "" ]
 	then
 	songname=$(quodlibet --print-playing)
 	else
