@@ -34,7 +34,7 @@ alias m="micro"
 alias e="emacs -nw "
 alias sm="sudo micro"
 alias se="sudo emacs -nw "
-alias qq="clr; cd; zsh"
+alias qq="clr; cd; ~/Repositories/scripts/terminal-art.sh"
 alias tp="trash-put -f"
 alias xx="xdg-open"
 alias mkdir="mkdir -pv"
@@ -118,14 +118,8 @@ bd () {
 
 
 
-# Terminal Art
-echo ""
-figlet "Palestine Will Be Free" -tck -f Elite | lolcat
-figlet "Workers of the World, UNITE!" -tck -f Elite | lolcat
-echo ""
-echo "" 
-
-
+# Terminal art
+~/Repositories/scripts/terminal-art.sh
 
 
 source /home/oak/.config/broot/launcher/bash/br
