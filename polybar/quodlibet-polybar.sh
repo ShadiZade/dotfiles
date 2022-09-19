@@ -1,7 +1,7 @@
 #!/bin/bash
 if [ "$(quodlibet --print-playing)" == "/ [untitled Unknown Audio File]" ]; then echo ""; exit; fi
 if [ "$(quodlibet --print-playing | grep '[ابتثجحخدذرزسشصضطظعغفقكلمنهوي]')" != "" ]; then 
-~/Repositories/dotfiles/polybar/arab-quodlibet.sh; exit; fi
+~/Repositories/dotfiles/polybar/arab-quodlibet-polybar.sh; exit; fi
 # checks for a hyphen to ascertain if the song has a known artist
 if [ "$(quodlibet --print-playing | grep ' - ')" == "" ]
 	then

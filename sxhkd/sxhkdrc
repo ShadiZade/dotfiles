@@ -19,21 +19,13 @@
 
 ############################################# basic bindings
 
-# quit/restart bspwm
-super + shift + q
-	bspc quit
+# quit or restart bspwm
+super + shift + {q,r}
+	bspc {quit,wm -r}
 
-# restart bspwm
-super + shift + r
-	bspc wm -r
-
-# close program
-super + shift + c
-	bspc node -c
-
-# kill program
-super + shift + k
-	bspc node -k
+# close or kill program
+super + shift + {c,k}
+	bspc node -{c,k}
 
 # reload sxhkd configs:
 super + shift + s
@@ -66,13 +58,9 @@ super + alt + ctrl + {space,Right,Left,Prior,Next}
 super + Escape
 	bspc desktop -f last
 
-# focus the previous window in the current desktop
-super + j
-	bspc node -f prev.local.!hidden.window
-
-# focus the next window in the current desktop
-super + k
-	bspc node -f next.local.!hidden.window
+# focus the previous/next window in the current desktop
+super + {j,k}
+	bspc node -f {prev.local.!hidden.window,next.local.!hidden.window}
 
 # focus on desktop
 super + {1-9}
@@ -125,13 +113,9 @@ super + e
 super + d
 	dolphin
 	
-# quick screenshot
-Print
-	flameshot full
-
-# detailed screenshot
-ctrl + Print
-	flameshot gui
+# flameshot
+{_,ctrl + }Print
+	flameshot {full,gui}
 
 
 
