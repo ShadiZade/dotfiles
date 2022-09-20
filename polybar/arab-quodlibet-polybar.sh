@@ -8,4 +8,4 @@ if [ "$(quodlibet --print-playing | grep ' - ')" == "" ]
 	artistname=$(quodlibet --print-playing | awk -F " - " '{print $1}')
 	songname=$songitself" ل"$artistname
 fi
-echo $songname | fribidi | awk '{gsub(/^\s+|\s+$/,"")} {print $0}'
+echo "$songname" | fribidi | awk '{gsub(/^\s+|\s+$/,"")} {print $0}'

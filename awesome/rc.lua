@@ -231,7 +231,7 @@ awful.screen.connect_for_each_screen(function(s)
             	brightness_widget{ type = 'arc', program = 'brightnessctl', step = 6, timeout = 120 },
 				volume_widget{ widget_type = 'arc', mute_color = '#aa2200ff' },
        			batteryarc_widget({ show_current_level = true, arc_thickness = 2, show_notification_mode = 'off', enable_battery_warning = false, timeout = 30 }),
-				logout_popup.widget{ bg_color = "#004444", accent_color = "#ff4365", text_color = '#ffffff', icon_size = 30, icon_margin = 16, onlock = function() awful.spawn.with_shell("/home/oak/Repositories/scripts/lockscreen.sh") end }
+				logout_popup.widget{ bg_color = "#004444", accent_color = "#ff4365", text_color = '#ffffff', icon_size = 30, icon_margin = 16, onlock = function() awful.spawn.with_shell("/home/oak/Repositories/scripts/lockscreen-awesome.sh") end }
         	},
 		},
 		{
@@ -346,7 +346,7 @@ globalkeys = gears.table.join(
               {description = "show emoji list", group = "launcher"}),
     
 	 -- Lock screen
-    awful.key({ modkey },            "z",     function () awful.util.spawn("/home/oak/Repositories/scripts/lockscreen.sh") end,
+    awful.key({ modkey },            "z",     function () awful.util.spawn("/home/oak/Repositories/scripts/lockscreen-awesome.sh") end,
               {description = "lock screen", group = "awesome"}),
 
     -- Dolphin
