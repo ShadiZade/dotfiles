@@ -22,7 +22,7 @@
  '(ido-enable-flex-matching t)
  '(ido-mode 'both nil (ido))
  '(package-selected-packages
-   '(2048-game wc-mode slime xkcd private-diary pomodoro which-key)))
+   '(markdown-mode 2048-game wc-mode slime xkcd private-diary pomodoro which-key)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
