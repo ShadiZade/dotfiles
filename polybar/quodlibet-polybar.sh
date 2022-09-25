@@ -8,7 +8,7 @@ if [ "$(quodlibet --print-playing | grep ' - ')" == "" ]
 	then
 	songname=$(quodlibet --print-playing)
 	else
-	songitself=$(quodlibet --print-playing | awk -F " - " '{print $2}')
+	songitself=$(quodlibet --print-playing | awk -F " - " '{print $NF}')
 	artistname=$(quodlibet --print-playing | awk -F " - " '{print $1}')
 	# removes II, III, Jr, or Jr. from artist name, isolates surname, and finalizes structure
 	songname=$(echo "$artistname" | awk -F " (Jr[.]*|II[I]*)" '{print $1}' | awk -F " " '{print $NF}')"'s "$songitself
