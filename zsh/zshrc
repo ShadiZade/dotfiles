@@ -75,6 +75,7 @@ alias align-mirrors="sudo pacman-mirrors --fasttrack && sudo pacman -Syyu"
 alias gita="git add *"
 alias gitc="git commit -m"
 alias gitp="git push -u origin master"
+alias gitp-main="git push -u origin main"
 
 # Scripts 
 alias expact="~/Repositories/scripts/expact.sh"
