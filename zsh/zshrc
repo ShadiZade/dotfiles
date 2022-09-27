@@ -38,6 +38,7 @@ alias sm="sudo micro"
 alias se="sudo emacs -nw "
 alias qq="clr; cd; ~/Repositories/scripts/terminal-art.sh"
 alias tp="trash-put -f"
+alias stp="sudo trash-put -f"
 alias xx="xdg-open"
 alias mkdir="mkdir -pv"
 alias cp="cp -i"
@@ -46,6 +47,7 @@ alias window-name="xprop WM_CLASS"
 alias pg='ping gnu.org'
 alias clr="printf '\033[2J\033[3J\033[1;1H'"
 alias sudo='sudo '
+alias sl='sl -eal5'
 
 # List
 alias l="exa --icons --group-directories-first"

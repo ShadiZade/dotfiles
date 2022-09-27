@@ -47,3 +47,34 @@
 (global-set-key (kbd "C-c a") #'org-agenda)
 (global-set-key (kbd "C-c c") #'org-capture)
 (global-set-key (kbd "C-c C-q") 'slime-close-all-parens-in-sexp)
+(global-set-key (kbd "C-c C-x /") 'strike-through-for-org-mode)
+
+;;; Functions
+;;;; org mode strikethrough
+(defun strike-through-for-org-mode ()
+      (interactive)
+      (beginning-of-line)  
+      (save-excursion     
+        (if (string-prefix-p "*" (thing-at-point 'line t))  
+            (progn
+              (setq go_char (string-match "[ ]" (thing-at-point 'line t)))  
+              (forward-char (+ go_char 1))
+              (insert "+")   
+              (end-of-line)  
+              (insert "+")   
+              )
+          (if (string-match "[^ ]" (thing-at-point 'line t))  
+              (progn
+                (setq go_char (string-match "[^ ]" (thing-at-point 'line t)))  
+                (forward-char (+ go_char 2))  
+                (insert "+")   
+                (end-of-line)  
+                (insert "+")  
+                )
+            (message "[-] Not Proper Position!")
+            )
+          )
+        )
+      )
+
+;;;;

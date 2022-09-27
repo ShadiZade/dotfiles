@@ -10,6 +10,6 @@ Here's a brief explanation of each one:
 - **picom**: A compositor for X11. It's what makes stuff transparent. 
 - **polybar**: The thingy on the top of the screen. You need it for bspwm.
 - **rofi**: I mostly use it for the `rofi -show drun` functionality.
-- **sxhkd**: Winner of the [second worst](https://github.com/ncmpcpp/ncmpcpp) name in the open source world, It's actually pretty good at managing keybindings.
+- **sxhkd**: Winner of the [second worst](https://github.com/ncmpcpp/ncmpcpp) name in the open source world. It's actually pretty good at managing keybindings.
 - **xkb**: Having borked my keyboard on more than one occasion, my custom keyboard layouts for Arabic and English are here, just in case.
 - **zsh**: Shell for Linux, yadda yadda, you get the picture.
