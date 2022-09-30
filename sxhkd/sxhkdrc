@@ -35,10 +35,10 @@ super + shift + s
 super + alt + ctrl + {Down,Up}
 	pulsemixer --change-volume {-,+}10
 
-# volume mute
-super + alt + ctrl + slash
-	pulsemixer --toggle-mute
-	
+# volume mute/100
+super + alt + ctrl + {slash,BackSpace}
+	pulsemixer {--toggle-mute,--set-volume 100}
+
 # brightness down/up
 super + alt + ctrl + {minus,equal}
 	brightnessctl s 40{-,+}
@@ -97,9 +97,13 @@ super + f
 super + q
 	kitty -c=$HOME/.config/kitty/kitty-bspwm.conf
 
-# rofi
+# rofi drun
 super + a
 	rofi -show drun
+
+# rofi emoji
+super + shift + a
+	rofi -show emoji
 
 # vivaldi
 super + v
