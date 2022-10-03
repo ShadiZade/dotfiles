@@ -47,7 +47,9 @@ super + alt + ctrl + {minus,equal}
 super + alt + ctrl + {space,Right,Left,Prior,Next}
 	quodlibet {--play-pause,--next,--focus,--seek=-00:10,--seek=+00:07}
 
-
+# clear clipboard
+super + shift + bracketright
+	xsel -cb
 
 
 	
