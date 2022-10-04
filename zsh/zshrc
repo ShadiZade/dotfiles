@@ -88,7 +88,6 @@ alias get-image="~/Repositories/scripts/extract-pdf-image.sh"
 alias ytmp3="~/Repositories/scripts/ytmp3.sh"
 alias ytvid="~/Repositories/scripts/ytvid.sh"
 alias knock="~/.local/share/knock/.knock/knock ~/Downloads/URLLink.acsm"
-alias backdots="~/Repositories/scripts/backdots.sh"
 alias chcover="~/Repositories/scripts/chcover.sh"
 alias newscript='which="script" ~/Repositories/scripts/new-micro.sh '
 alias newsolution='which="solution" ~/Repositories/scripts/new-micro.sh '
