@@ -74,7 +74,7 @@ alias align-mirrors="sudo pacman-mirrors --fasttrack && sudo pacman -Syyu"
 
 # Git
 
-alias gita="~/Repositories/scripts/backpacks.sh; git add *"
+alias gita="~/Repositories/scripts/backpacks.sh && git add *"
 alias gitc="git commit -m"
 alias gitp="git push -u origin master"
 alias gitp-main="git push -u origin main"
