@@ -48,6 +48,7 @@ alias pg='ping gnu.org'
 alias clr="printf '\033[2J\033[3J\033[1;1H'"
 alias sudo='sudo '
 alias sl='sl -eal5'
+alias memuse='df | grep sda1 | awk "{print \$5}" '
 
 # List
 alias l="exa --icons --group-directories-first"
@@ -65,6 +66,7 @@ alias pacsi="pacman -Si"
 alias yays="yay -S"
 alias yayss="yay -Ssa"
 alias yaysi="yay -Si"
+alias yaysc="yay -Sc"
 alias syu="sudo pacman -Syu"
 alias sua="yay -Sua"
 alias tree="pactree -r "
@@ -72,7 +74,7 @@ alias align-mirrors="sudo pacman-mirrors --fasttrack && sudo pacman -Syyu"
 
 # Git
 
-alias gita="git add *"
+alias gita="~/Repositories/scripts/backpacks.sh; git add *"
 alias gitc="git commit -m"
 alias gitp="git push -u origin master"
 alias gitp-main="git push -u origin main"
