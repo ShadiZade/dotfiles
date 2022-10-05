@@ -88,6 +88,9 @@ super + {Left,Down,Up,Right}
 super + f
 	bspc node -t fullscreen || bspc node -t tiled
 
+# set the window state
+super + {t,shift + t,s}
+	bspc node -t {tiled,pseudo_tiled,floating}
 
 
 
@@ -95,30 +98,31 @@ super + f
 	
 ############################################# program shortcuts
 
+
+# rofi
+super + {_,shift + }a
+	rofi -show {drun,emoji}
+	
 # terminal
-super + q
+super + q ; s
 	kitty -c=$HOME/.config/kitty/kitty-bspwm.conf
 
-# rofi drun
-super + a
-	rofi -show drun
-
-# rofi emoji
-super + shift + a
-	rofi -show emoji
-
 # vivaldi
-super + v
+super + q ; v
 	vivaldi-stable
 
 # emacs
-super + e
+super + q ; e
 	emacs
 
 # dolphin
-super + d
+super + q ; d
 	dolphin
-	
+
+# quodlibet
+super + q ; q
+	quodlibet
+
 # flameshot
 {_,ctrl + }Print
 	flameshot {full,gui}
@@ -164,10 +168,6 @@ super + g
 #
 # state/flags
 #
-
-# set the window state
-super + {t,shift + t,s}
-	bspc node -t {tiled,pseudo_tiled,floating}
 
 # set the node flags
 super + ctrl + {m,x,y,z}

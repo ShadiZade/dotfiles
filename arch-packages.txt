@@ -52,6 +52,7 @@ dhclient
 dhcpcd
 diffutils
 digikam
+dmenu
 dmidecode
 dmraid
 dnsmasq
@@ -403,9 +404,11 @@ wireless-regdb
 wmctrl
 wpa_supplicant
 xautolock
+xclip
 xcompmgr
 xdg-user-dirs
 xdg-utils
+xdotool
 xf86-input-elographics
 xf86-input-evdev
 xf86-input-libinput
