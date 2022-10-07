@@ -27,6 +27,8 @@ gtypist
 jabref
 kasts
 luckybackup
+manjaro-documentation-en
+manjaro-firmware
 megatools
 mimeo
 minecraft-launcher

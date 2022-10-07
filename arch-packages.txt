@@ -199,8 +199,6 @@ man-db
 man-pages
 manjaro-alsa
 manjaro-browser-settings
-manjaro-documentation-en
-manjaro-firmware
 manjaro-hotfixes
 manjaro-pulse
 manjaro-release
