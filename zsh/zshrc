@@ -1,22 +1,16 @@
 ##################################################################################################
 #
-#				  ____  _   _    _    ____ ___     _____   _    ____  _____ 
-#				 / ___|| | | |  / \  |  _ \_ _|   |__  /  / \  |  _ \| ____|
-#				 \___ \| |_| | / _ \ | | | | |_____ / /  / _ \ | | | |  _|  
-#				  ___) |  _  |/ ___ \| |_| | |_____/ /_ / ___ \| |_| | |___ 
-#				 |____/|_| |_/_/   \_\____/___|   /____/_/   \_\____/|_____|
+#					 ____  _   _    _    ____ ___     _____   _    ____  _____ 
+#					/ ___|| | | |  / \  |  _ \_ _|   |__  /  / \  |  _ \| ____|
+#					\___ \| |_| | / _ \ | | | | |_____ / /  / _ \ | | | |  _|  
+#					 ___) |  _  |/ ___ \| |_| | |_____/ /_ / ___ \| |_| | |___ 
+#					|____/|_| |_/_/   \_\____/___|   /____/_/   \_\____/|_____|
 #
-#								https://github.com/ShadiZade
-#										zsh config
-#						~/.config/zsh/.zshrc (Hooray XDG standard!)
+#					https://github.com/ShadiZade
+#					zsh config
 #
 ###################################################################################################
-
-
-
-# File location was changed from ~/.zshrc to ~/.config/zsh/.zshrc
-# This was done by adding the following line to /etc/zsh/zshenv
-# export ZDOTDIR="$HOME"/.config/zsh 
+####### symlink location: ~/.config/zsh/ ##########################################################
 
 source ~/.config/zsh/extra-zsh-settings
 PROMPT=' %F{#ff55ff}%2~%f %S%F{#ff55ff}囍 %D{%H:%M} → %f%s '
@@ -140,3 +134,9 @@ source /home/oak/.config/broot/launcher/bash/br
 
 # Set zcompdump location
 compinit -d "$XDG_CACHE_HOME"/zsh/zcompdump-"$ZSH_VERSION" 
+
+
+
+# File location was changed from ~/.zshrc to ~/.config/zsh/.zshrc
+# This was done by adding the following line to /etc/zsh/zshenv
+# export ZDOTDIR="$HOME"/.config/zsh 
