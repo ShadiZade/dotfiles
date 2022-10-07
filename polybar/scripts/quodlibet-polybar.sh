@@ -1,8 +1,23 @@
 #!/bin/bash
+##################################################################################################
+#
+#					 ____  _   _    _    ____ ___     _____   _    ____  _____ 
+#					/ ___|| | | |  / \  |  _ \_ _|   |__  /  / \  |  _ \| ____|
+#					\___ \| |_| | / _ \ | | | | |_____ / /  / _ \ | | | |  _|  
+#					 ___) |  _  |/ ___ \| |_| | |_____/ /_ / ___ \| |_| | |___ 
+#					|____/|_| |_/_/   \_\____/___|   /____/_/   \_\____/|_____|
+#
+#					https://github.com/ShadiZade
+#					quodlibet-polybar.sh
+#					script for displaying name of song in a polybar module
+#
+###################################################################################################
+####### symlink location: ~/.config/polybar/scripts/ ##############################################
+
 if [ "$(quodlibet --print-playing 2>&1 | grep 'not running')" != "" ]; then echo ""; exit; fi
 if [ "$(quodlibet --print-playing | grep 'Unknown Audio')" != "" ]; then echo ""; exit; fi
 if [ "$(quodlibet --print-playing | grep '[ابتثجحخدذرزسشصضطظعغفقكلمنهوي]')" != "" ]; then 
-~/Repositories/dotfiles/polybar/arab-quodlibet-polybar.sh; exit; fi
+~/.config/polybar/scripts/arab-quodlibet-polybar.sh; exit; fi
 # checks for a hyphen to ascertain if the song has a known artist
 if [ "$(quodlibet --print-playing | grep ' - ')" == "" ]
 	then

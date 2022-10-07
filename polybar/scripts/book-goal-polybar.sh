@@ -1,4 +1,4 @@
-/* 
+#!/bin/bash
 ##################################################################################################
 #
 #					 ____  _   _    _    ____ ___     _____   _    ____  _____ 
@@ -8,21 +8,11 @@
 #					|____/|_| |_/_/   \_\____/___|   /____/_/   \_\____/|_____|
 #
 #					https://github.com/ShadiZade
-#					config.rasi
-#					rofi config
+#					book-goal-polybar.sh
+#					script for showing percentage of book reading goal
 #
 ###################################################################################################
-####### symlink location: ~/.config/rofi/ #########################################################
-*/
+####### symlink location: ~/.config/polybar/scripts/ ##############################################
 
-
-
-configuration {
-	font: "Inconsolata Condensed SemiBold 16";
-	modi: "drun,emoji";
-	show-icons: true;
-	icon-theme: "Vimix-Ruby";
-	
-}
-
-@theme "/usr/share/rofi/themes/frontier-blue.rasi"
+source ~/Repositories/scripts/book-goal-calc.sh
+echo "$cB 🙼 $bP%"

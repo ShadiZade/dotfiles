@@ -1,4 +1,4 @@
-/* 
+#!/bin/bash
 ##################################################################################################
 #
 #					 ____  _   _    _    ____ ___     _____   _    ____  _____ 
@@ -8,21 +8,12 @@
 #					|____/|_| |_/_/   \_\____/___|   /____/_/   \_\____/|_____|
 #
 #					https://github.com/ShadiZade
-#					config.rasi
-#					rofi config
+#					polybar-launch.sh
+#					script for launching polybar
 #
 ###################################################################################################
-####### symlink location: ~/.config/rofi/ #########################################################
-*/
+####### symlink location: ~/.config/polybar/scripts/ ##############################################
 
-
-
-configuration {
-	font: "Inconsolata Condensed SemiBold 16";
-	modi: "drun,emoji";
-	show-icons: true;
-	icon-theme: "Vimix-Ruby";
-	
-}
-
-@theme "/usr/share/rofi/themes/frontier-blue.rasi"
+killall -q polybar
+while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
+polybar bspwm1 -c ~/.config/polybar/config.ini
