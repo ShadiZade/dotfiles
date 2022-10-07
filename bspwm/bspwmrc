@@ -15,7 +15,7 @@
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 picom &
-feh --bg-fill /usr/share/wallpapers/essence-2.png &
+feh --bg-fill "/usr/share/wallpapers/Makc/art/The Frontier.jpg" &
 fcitx5 -d &
 $HOME/.config/polybar/polybar-launch.sh &
 
