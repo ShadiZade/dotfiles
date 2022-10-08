@@ -86,7 +86,7 @@ super + f
 	bspc node -t fullscreen || bspc node -t tiled
 
 # set the window state
-super + {t,shift + t,s}
+super + t ; {t,p,f}
 	bspc node -t {tiled,pseudo_tiled,floating}
 
 
