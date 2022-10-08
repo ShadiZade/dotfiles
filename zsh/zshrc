@@ -38,12 +38,14 @@ alias xx="xdg-open"
 alias mkdir="mkdir -pv"
 alias cp="cp -i"
 alias mv='mv -i'
+alias grep='grep --color=auto'
 alias window-name="xprop WM_CLASS"
 alias pg='ping gnu.org'
 alias clr="printf '\033[2J\033[3J\033[1;1H'"
 alias sudo='sudo '
 alias sl='sl -eal5'
 alias memuse='df | grep sda1 | awk "{print \$5}" '
+alias ccat='highlight'
 
 # List
 alias l="exa --icons --group-directories-first"
@@ -104,7 +106,7 @@ alias /a="micro ~/.config/awesome/rc.lua"
 alias /b="micro ~/Repositories/dotfiles/bspwm/bspwmrc"
 alias /s="micro ~/Repositories/dotfiles/sxhkd/sxhkdrc"
 alias /p="micro ~/Repositories/dotfiles/polybar/config.ini"
-
+alias /t="sudo micro ~/Repositories/dotfiles/bspwm/bspwm-theme.sh"
 
 
 # Functions

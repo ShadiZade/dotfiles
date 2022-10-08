@@ -122,6 +122,7 @@ gvfs-smb
 gzip
 handlr
 haveged
+highlight
 howl
 hunspell-en_us
 inetutils

@@ -117,7 +117,7 @@ super + q ; d
 	dolphin
 
 # quodlibet
-super + q ; q
+super + q ; l
 	quodlibet
 
 # flameshot

@@ -14,6 +14,7 @@
 ###################################################################################################
 ####### symlink location: ~/.config/bspwm/ ########################################################
 
+source ~/Repositories/dotfiles/bspwm/bspwm-theme.sh
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 picom &
@@ -35,8 +36,8 @@ bspc config split_ratio          0.5
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
-bspc config normal_border_color		      "#b89388"
-bspc config focused_border_color	      "#314664"
+bspc config normal_border_color		      "#$bspwm_theme_secondary_color"
+bspc config focused_border_color	      "#$bspwm_theme_primary_color"
 
 bspc rule -a persepolis state=floating 
 bspc rule -a Steam state=floating 
