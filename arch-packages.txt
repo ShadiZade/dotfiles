@@ -225,6 +225,7 @@ modemmanager
 mp3wrap
 mpv
 mtpfs
+musescore
 ncdu
 neofetch
 neovim
@@ -393,6 +394,7 @@ vi
 vim
 virtualbox
 vivaldi
+vlc
 vulkan-intel
 vulkan-radeon
 w3m
