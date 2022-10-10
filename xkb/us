@@ -13,7 +13,7 @@ xkb_symbols "basic" {
     key <AE07>	{[ 7,				ampersand,			U00BE								]};
     key <AE08>	{[ 8,				asterisk												]};
     key <AE09>	{[ 9,				parenleft												]};
-    key <AE10>	{[ 0,				parenright,			U2022								]};
+    key <AE10>	{[ 0,				parenright												]};
     key <AE11>	{[ minus,			underscore,			U2014,				U2015			]};
     key <AE12>	{[ equal,			plus,				notequal,			U2248			]};
 
@@ -37,8 +37,8 @@ xkb_symbols "basic" {
     key <AC05>	{[ g,				G														]};
     key <AC06>	{[ h,				H														]};
     key <AC07>	{[ j,				J														]};
-    key <AC08>	{[ k,				K														]};
-    key <AC09>	{[ l,				L,					U2019								]};
+    key <AC08>	{[ k,				K,					parenleft							]};
+    key <AC09>	{[ l,				L,					parenright							]};
     key <AC10>	{[ semicolon,		colon,				U201C								]};
     key <AC11>	{[ apostrophe,		quotedbl,			U201D								]};
     key <BKSL>	{[ asciitilde,		backslash,			grave								]};
@@ -50,8 +50,8 @@ xkb_symbols "basic" {
     key <AB05>	{[ b,				B														]};
     key <AB06>	{[ n,				N														]};
     key <AB07>	{[ m,				M														]};
-    key <AB08>	{[ comma,			less,				parenleft							]};
-    key <AB09>	{[ period,			greater,			parenright							]};
+    key <AB08>	{[ comma,			less,				U2019								]};
+    key <AB09>	{[ period,			greater,			U2022								]};
     key <AB10>	{[ slash,			question,			U00BF,				U203D			]};
 
     include "level3(ralt_switch)"
