@@ -56,6 +56,7 @@ dmenu
 dmidecode
 dmraid
 dnsmasq
+doge
 dolphin
 dolphin-plugins
 dosfstools
@@ -394,7 +395,6 @@ vi
 vim
 virtualbox
 vivaldi
-vlc
 vulkan-intel
 vulkan-radeon
 w3m
