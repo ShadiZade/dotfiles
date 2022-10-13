@@ -654,7 +654,7 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 -- }}}
 
 -- autolaunch
-awful.spawn.with_shell("feh --bg-fill /usr/share/wallpapers/worldmap-2.png")
+awful.spawn.with_shell("xwallpaper --zoom /usr/share/wallpapers/worldmap-2.png")
 awful.spawn.with_shell("fcitx5")
 awful.spawn.with_shell("picom")
 

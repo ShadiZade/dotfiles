@@ -83,7 +83,6 @@ fcitx5-material-color
 fcitx5-qt
 fcitx5-rime
 fd
-feh
 ffmpeg
 ffmpegthumbs
 figlet
@@ -172,7 +171,6 @@ libdvdcss
 libime
 libjxl
 libktorrent
-libreoffice-extension-writer2latex
 libreoffice-fresh
 libreoffice-fresh-ar
 libreoffice-fresh-zh-cn
@@ -236,7 +234,6 @@ networkmanager-openconnect
 networkmanager-pptp
 networkmanager-vpnc
 nfs-utils
-nitrogen
 nix
 nm-connection-editor
 noto-fonts
@@ -428,6 +425,7 @@ xorg-xinit
 xorg-xkill
 xorg-xsetroot
 xsel
+xwallpaper
 xz
 yay
 yt-dlp
