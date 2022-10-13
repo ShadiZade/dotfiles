@@ -25,3 +25,9 @@ case $bspwm_theme in
 				bspwm_theme_secondary_color=$bspwm_theme_color_mountainside_redwhite
 				;;
 esac
+
+# wallpaper
+bspwm_theme_wallpaper="/usr/share/wallpapers/Makc/art/The Frontier.jpg"
+#bspwm_theme_wallpaper="/usr/share/wallpapers/basil.png"
+#bspwm_theme_wallpaper="/usr/share/wallpapers/essence-2.png"
+#bspwm_theme_wallpaper="/usr/share/wallpapers/worldmap-2.png"

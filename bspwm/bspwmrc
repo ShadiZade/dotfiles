@@ -18,7 +18,7 @@ source ~/Repositories/dotfiles/bspwm/bspwm-theme.sh
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 picom &
-feh --bg-fill "/usr/share/wallpapers/Makc/art/The Frontier.jpg" &
+xwallpaper --zoom "$bspwm_theme_wallpaper" &
 fcitx5 -d &
 $HOME/.config/polybar/scripts/polybar-launch.sh &
 
