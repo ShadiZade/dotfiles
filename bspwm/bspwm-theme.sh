@@ -27,7 +27,7 @@ case $bspwm_theme in
 esac
 
 # wallpaper
-bspwm_theme_wallpaper="/usr/share/wallpapers/Makc/art/The Frontier.jpg"
-#bspwm_theme_wallpaper="/usr/share/wallpapers/basil.png"
-#bspwm_theme_wallpaper="/usr/share/wallpapers/essence-2.png"
-#bspwm_theme_wallpaper="/usr/share/wallpapers/worldmap-2.png"
+bspwm_theme_wallpaper="/usr/share/wallpapers/use/the-frontier.jpg"
+#bspwm_theme_wallpaper="/usr/share/wallpapers/use/basil.png"
+#bspwm_theme_wallpaper="/usr/share/wallpapers/use/essence-2.png"
+#bspwm_theme_wallpaper="/usr/share/wallpapers/use/worldmap-2.png"
