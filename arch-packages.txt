@@ -19,7 +19,6 @@ audacity
 autoconf
 automake
 avahi
-awesome
 axel
 b43-fwcutter
 bash
@@ -40,7 +39,6 @@ calc
 calibre
 cdparanoia
 cdrdao
-cmatrix
 coreutils
 cowsay
 cpupower
