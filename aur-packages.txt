@@ -47,7 +47,6 @@ sddm-sugar-light
 siji-git
 soundcloud-dl-git
 telegram-desktop-bin
-tmatrix
 ttf-amiri
 ttf-arabeyes-fonts
 ttf-ubuntu-arabic
