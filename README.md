@@ -11,5 +11,6 @@ Here's a brief explanation of each one:
 - **polybar**: The thingy on the top of the screen. You need it for bspwm.
 - **rofi**: I mostly use it for the `rofi -show drun` functionality.
 - **sxhkd**: Winner of the [second worst](https://github.com/ncmpcpp/ncmpcpp) name in the open source world. It's actually pretty good at managing keybindings.
+- **sxiv**: Ultra-lightweight image viewer.
 - **xkb**: Having borked my keyboard on more than one occasion, my custom keyboard layouts for Arabic and English are here, just in case.
 - **zsh**: Shell for Linux, yadda yadda, you get the picture.
