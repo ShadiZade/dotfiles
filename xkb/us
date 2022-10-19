@@ -35,7 +35,7 @@ xkb_symbols "basic" {
     key <AC03>	{[ d,				D														]};
     key <AC04>	{[ f,				F														]};
     key <AC05>	{[ g,				G														]};
-    key <AC06>	{[ h,				H														]};
+    key <AC06>	{[ h,				H,					U56CD								]};
     key <AC07>	{[ j,				J														]};
     key <AC08>	{[ k,				K,					parenleft							]};
     key <AC09>	{[ l,				L,					parenright							]};
