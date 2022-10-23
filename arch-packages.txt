@@ -428,4 +428,6 @@ xwallpaper
 xz
 yay
 yt-dlp
+zathura
+zathura-pdf-poppler
 zensu

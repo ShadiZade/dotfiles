@@ -100,8 +100,7 @@ alias tess='~/Repositories/scripts/tess.sh'
 ### emacs
 alias ’e="micro ~/Repositories/dotfiles/emacs/init.el"
 ### kitty 
-alias ’ka="micro ~/Repositories/dotfiles/kitty/kitty-awesome/kitty-awesome.conf"
-alias ’kb="micro ~/Repositories/dotfiles/kitty/kitty-bspwm/kitty-bspwm.conf"
+alias ’k="micro ~/Repositories/dotfiles/kitty/kitty-bspwm/kitty-bspwm.conf"
 ### zsh
 alias ’z="micro ~/Repositories/dotfiles/zsh/zshrc"
 ### awesomewm
@@ -110,8 +109,9 @@ alias ’a="micro ~/.config/awesome/rc.lua"
 alias ’b="micro ~/Repositories/dotfiles/bspwm/bspwmrc"
 alias ’s="micro ~/Repositories/dotfiles/sxhkd/sxhkdrc"
 alias ’p="micro ~/Repositories/dotfiles/polybar/config.ini"
-alias ’t="sudo micro ~/Repositories/dotfiles/bspwm/bspwm-theme.sh"
-
+### theming
+alias ’tc="sudo micro ~/Repositories/scripts/bspwm-theme.sh"
+alias ’tp="~/Repositories/scripts/theme-picker.sh"
 
 # functions
 ## disown

@@ -14,7 +14,7 @@
 ###################################################################################################
 ####### symlink location: ~/.config/bspwm/ ########################################################
 
-source ~/Repositories/dotfiles/bspwm/bspwm-theme.sh
+source ~/Repositories/scripts/bspwm-theme.sh
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 picom &
