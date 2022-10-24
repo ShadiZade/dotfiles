@@ -139,7 +139,6 @@ kcolorchooser
 kdeconnect
 kdegraphics-thumbnailers
 kdenetwork-filesharing
-kdenlive
 kdf
 kdiff3
 keditbookmarks
@@ -306,7 +305,6 @@ qt6-virtualkeyboard
 qt6-wayland
 qt6-websockets
 qt6-webview
-qtox
 quicklisp
 quodlibet
 reiserfsprogs
