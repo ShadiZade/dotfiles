@@ -8,9 +8,9 @@
 #					|____/|_| |_/_/   \_\____/___|   /____/_/   \_\____/|_____|
 #
 #					https://github.com/ShadiZade
-#					paprika-purple.rasi
+#					collective-green.rasi
 #					rofi theme
-#					paprika purple
+#					collective green
 #
 ###################################################################################################
 ####### symlink location: /usr/share/rofi/themes/ #################################################
@@ -22,16 +22,16 @@
     scrollbar: true;
 
     /* Gruvbox dark colors */
-    gruvbox-dark-bg0-hard:     #5a0d1f;
-    gruvbox-dark-bg0:          #390814;
-	gruvbox-dark-bg2:          #85132d;
+    gruvbox-dark-bg0-hard:     #2c4235;
+    gruvbox-dark-bg0:          #213127;
+	gruvbox-dark-bg2:          #3f5f4c;
     gruvbox-dark-fg0:          #fbf1c7;
-    gruvbox-dark-fg1:          #ebdbb2;
+    gruvbox-dark-fg1:          #d7b57d;
     gruvbox-dark-red-dark:     #cc241d;
     gruvbox-dark-red-light:    #fb4934;
     gruvbox-dark-yellow-dark:  #d79921;
     gruvbox-dark-yellow-light: #fabd2f;
-    gruvbox-dark-gray:         #c48e5c;
+    gruvbox-dark-gray:         #d7b57d;
     
     /* Theme colors */
     background:                  @gruvbox-dark-bg0-hard;

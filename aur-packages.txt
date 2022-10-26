@@ -46,6 +46,7 @@ scantailor-advanced-bin
 sddm-sugar-light
 siji-git
 soundcloud-dl-git
+tagutil
 telegram-desktop-bin
 ttf-amiri
 ttf-arabeyes-fonts

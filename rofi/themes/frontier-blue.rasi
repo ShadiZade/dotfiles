@@ -36,7 +36,7 @@
     /* Theme colors */
     background:                  @gruvbox-dark-bg0-hard;
     background-color:            @background;
-    foreground:                  @gruvbox-dark-fg1;
+    foreground:                  @gruvbox-dark-gray;
     border-color:                @gruvbox-dark-gray;
     separatorcolor:              @border-color;
     scrollbar-handle:            @border-color;
