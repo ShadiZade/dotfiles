@@ -49,7 +49,7 @@ alias sl='sl -eal5'
 alias memuse='df | grep sda1 | awk "{print \$5}" '
 alias ccat='highlight'
 alias yd='calc "$(date +"%Y")-$1"'
-
+alias llwc="ll | wc -l"
 
 # list
 alias l="exa --icons --group-directories-first"

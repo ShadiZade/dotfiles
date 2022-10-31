@@ -203,3 +203,7 @@ add-zsh-hook preexec mzc_termsupport_preexec
 export LS_OPTIONS='--color=auto'
 eval "$(dircolors -b)"
 alias ls='ls $LS_OPTIONS'
+
+
+# General variables
+export EDITOR="micro"

@@ -360,13 +360,13 @@ texlive-pictures
 texlive-pstricks
 texlive-publishers
 texlive-science
-thunderbird
 timeshift
 timeshift-autosnap-manjaro
 tldr
 tlp
 tmux
 transcode
+translate-shell
 trash-cli
 ttc-iosevka
 ttf-dejavu
