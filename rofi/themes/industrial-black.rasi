@@ -24,8 +24,8 @@
     /* Gruvbox dark colors */
     gruvbox-dark-bg0-hard:     #201f27;
     gruvbox-dark-bg0:          #1b1a21;
-	gruvbox-dark-bg2:          #302f3b;
-    gruvbox-dark-fg0:          #fbf1c7;
+	gruvbox-dark-bg2:          #9f773f;
+    gruvbox-dark-fg0:          #201f27;
     gruvbox-dark-fg1:          #d7b57d;
     gruvbox-dark-red-dark:     #cc241d;
     gruvbox-dark-red-light:    #fb4934;
@@ -45,8 +45,8 @@
     normal-foreground:           @foreground;
     alternate-normal-background: @gruvbox-dark-bg0;
     alternate-normal-foreground: @foreground;
-    selected-normal-background:  @gruvbox-dark-bg2;
-    selected-normal-foreground:  @gruvbox-dark-fg0;
+    selected-normal-background:  @gruvbox-dark-gray;
+    selected-normal-foreground:  @gruvbox-dark-bg0-hard;
 
     active-background:           @gruvbox-dark-yellow-dark;
     active-foreground:           @background;

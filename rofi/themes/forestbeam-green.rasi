@@ -8,9 +8,9 @@
 #					|____/|_| |_/_/   \_\____/___|   /____/_/   \_\____/|_____|
 #
 #					https://github.com/ShadiZade
-#					collective-green.rasi
+#					forestbeam-green.rasi
 #					rofi theme
-#					collective green
+#					forestbeam green
 #
 ###################################################################################################
 ####### symlink location: /usr/share/rofi/themes/ #################################################
@@ -22,16 +22,16 @@
     scrollbar: true;
 
     /* Gruvbox dark colors */
-    gruvbox-dark-bg0-hard:     #2c4235;
-    gruvbox-dark-bg0:          #213127;
-	gruvbox-dark-bg2:          #3f5f4c;
+    gruvbox-dark-bg0-hard:     #97b074;
+    gruvbox-dark-bg0:          #6a7c52;
+	gruvbox-dark-bg2:          #391e27;
     gruvbox-dark-fg0:          #fbf1c7;
     gruvbox-dark-fg1:          #d7b57d;
     gruvbox-dark-red-dark:     #cc241d;
     gruvbox-dark-red-light:    #fb4934;
     gruvbox-dark-yellow-dark:  #d79921;
     gruvbox-dark-yellow-light: #fabd2f;
-    gruvbox-dark-gray:         #d7b57d;
+    gruvbox-dark-gray:         #391e27;
     
     /* Theme colors */
     background:                  @gruvbox-dark-bg0-hard;
@@ -45,8 +45,8 @@
     normal-foreground:           @foreground;
     alternate-normal-background: @gruvbox-dark-bg0;
     alternate-normal-foreground: @foreground;
-    selected-normal-background:  @gruvbox-dark-gray;
-    selected-normal-foreground:  @gruvbox-dark-bg0-hard;
+    selected-normal-background:  @gruvbox-dark-bg2;
+    selected-normal-foreground:  @gruvbox-dark-fg0;
 
     active-background:           @gruvbox-dark-yellow-dark;
     active-foreground:           @background;
