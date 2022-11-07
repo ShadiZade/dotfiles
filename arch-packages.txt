@@ -184,8 +184,8 @@ lightdm-slick-greeter
 lightdm-webkit-theme-litarvan
 linux-steam-integration
 linux515
-linux519
-linux519-virtualbox-host-modules
+linux60
+linux60-virtualbox-host-modules
 logrotate
 lolcat
 lvm2
@@ -249,6 +249,7 @@ p7zip
 packagekit-qt5
 pacman
 partitionmanager
+pass
 patch
 pciutils
 pcmanfm

@@ -22,6 +22,7 @@ flite1
 fortune-mod-montypython
 fortune-mod-starwars
 freetube-bin
+gallery-dl
 gconf
 google-earth-pro
 gtypist
@@ -56,5 +57,4 @@ uget-integrator-chromium
 vimix-icon-theme
 xcb-imdkit-git
 xdg-ninja-git
-yacreader
 zoom
