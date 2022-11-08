@@ -14,12 +14,13 @@
 ###################################################################################################
 ####### symlink location: ~/.config/polybar/scripts/ ##############################################
 
-if [ "$(quodlibet --print-playing | grep ' - ')" == "" ]
+fullname=$(quodlibet --print-playing)
+if echo "$fullname" | grep -q ' - '
 	then
-	songname=$(quodlibet --print-playing)
-	else
-	songitself=$(quodlibet --print-playing | awk -F " - " '{print $2}')
-	artistname=$(quodlibet --print-playing | awk -F " - " '{print $1}')
+	songitself=$(echo "$fullname" | awk -F " - " '{print $2}')
+	artistname=$(echo "$fullname" | awk -F " - " '{print $1}')
 	songname=$songitself" ل"$artistname
+	else
+	songname="$fullname"
 fi
 echo "$songname" | fribidi | awk '{gsub(/^\s+|\s+$/,"")} {print $0}'
