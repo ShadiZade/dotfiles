@@ -22,7 +22,6 @@ avahi
 axel
 b43-fwcutter
 bash
-bat
 bcprov
 bison
 bitwarden
@@ -342,6 +341,7 @@ systemd-fsck-silent
 systemd-kcm
 systemd-sysvcompat
 tar
+termdown
 terminus-font
 tesseract
 texinfo

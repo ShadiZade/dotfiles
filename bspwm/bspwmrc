@@ -21,6 +21,7 @@ picom &
 xwallpaper --zoom "$bspwm_theme_wallpaper" &
 fcitx5 -d &
 $HOME/.config/polybar/scripts/polybar-launch.sh &
+setxkbmap
 
 bspc monitor -d 1 2 3 4 5 6 7 8 9
 
