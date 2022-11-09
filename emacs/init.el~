@@ -46,8 +46,7 @@
  '(custom-safe-themes
    '("a556e4e6fc62469cd28a57c3b5386807d676a33176659f849fc53fa8763f5955" default))
  '(global-visual-line-mode t)
- '(package-selected-packages
-   '(powershell 2048-game counsel auto-package-update annotate)))
+ '(package-selected-packages '(counsel auto-package-update annotate)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

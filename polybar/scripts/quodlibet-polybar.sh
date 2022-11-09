@@ -29,9 +29,8 @@ if echo "$fullname" | grep -q ' - '
 	songname=$fullname
 fi
 # checks for all categorizations (Op., BWV, B., Hob.), and then for movement #s
-final=$(echo "$songname" \
+echo $(echo "$songname" \
 | awk -F ',[[:space:]][[:alnum:]]+[[:print:]]+[([:digit:]|N/A)]' '{print $1}' \
 | awk -F '-[[:space:]][IVX]+[[:space:]]' '{print $1}'\
 )
-echo "$final"
 
