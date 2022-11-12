@@ -121,6 +121,7 @@ handlr
 haveged
 highlight
 howl
+httrack
 hunspell-en_us
 inetutils
 inkscape

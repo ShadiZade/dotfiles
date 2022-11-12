@@ -28,7 +28,6 @@ google-earth-pro
 gtypist
 jabref
 kasts
-kochmorse
 luckybackup
 manjaro-firmware
 megatools
@@ -50,7 +49,6 @@ sddm-sugar-light
 siji-git
 soundcloud-dl-git
 taffy
-tagutil
 telegram-desktop-bin
 ttf-amiri
 ttf-arabeyes-fonts
