@@ -54,6 +54,10 @@ alias yd='calc "$(date +"%Y")-$1"'
 alias llwc="ll | wc -l"
 alias wi="nmcli device wifi"
 alias backwall="sudo rsync -uv /usr/share/wallpapers/use/* ~/Pictures/wallpapers/use"
+alias morse="morse-x -f 350"
+alias bookcol='fd "pdf|epub|mobi" ~/Books | wc -l'
+alias disk-destroyer="command dd"
+alias dd="echo 'Probably the wrong command. Use alias \"disk-destroyer\" for the actual dd command.'"
 
 # list
 alias l="exa --icons --group-directories-first"
@@ -137,7 +141,7 @@ bd () {
 
 # terminal art
 ~/Repositories/scripts/terminal-art.sh
-
+setxkbmap
 
 source /home/oak/.config/broot/launcher/bash/br
 
