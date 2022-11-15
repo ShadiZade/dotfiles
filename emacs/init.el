@@ -45,9 +45,11 @@
  '(custom-enabled-themes '(tango-dark))
  '(custom-safe-themes
    '("a556e4e6fc62469cd28a57c3b5386807d676a33176659f849fc53fa8763f5955" default))
+ '(elfeed-feeds
+   '("https://babelwad.com/feed/" "https://www.smbc-comics.com/comic/rss" "https://phdcomics.com/gradfeed.php" "https://xkcd.com/atom.xml" "https://simonwillison.net/atom/entries/" "https://pluralistic.net/feed/"))
  '(global-visual-line-mode t)
  '(package-selected-packages
-   '(powershell 2048-game counsel auto-package-update annotate)))
+   '(elfeed powershell 2048-game counsel auto-package-update annotate)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

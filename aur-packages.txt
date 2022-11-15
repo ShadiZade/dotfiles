@@ -18,7 +18,6 @@ celestia-addon-voyagers
 cmatrix-git
 cpdf
 czkawka-gui
-flite1
 fortune-mod-montypython
 fortune-mod-starwars
 freetube-bin
@@ -30,7 +29,6 @@ jabref
 kasts
 luckybackup
 manjaro-firmware
-megatools
 mimeo
 minecraft-launcher
 mkinitcpio-firmware

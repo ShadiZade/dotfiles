@@ -429,5 +429,8 @@ xz
 yay
 yt-dlp
 zathura
+zathura-cb
+zathura-djvu
 zathura-pdf-poppler
+zathura-ps
 zensu
