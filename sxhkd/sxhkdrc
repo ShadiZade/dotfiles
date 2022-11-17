@@ -120,6 +120,18 @@ super + q ; d
 super + q ; l
 	quodlibet
 
+# kodi
+super + q ; k
+	kodi
+
+# freetube
+super + q ; f
+	freetube
+
+# qbittorrent
+super + q ; b
+	qbittorrent
+
 # flameshot
 {_,ctrl + }Print
 	flameshot {full,gui}
