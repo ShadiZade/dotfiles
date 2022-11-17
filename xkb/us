@@ -12,8 +12,8 @@ xkb_symbols "basic" {
     key <AE06>	{[ 6,				asciicircum,		U2154								]};
     key <AE07>	{[ 7,				ampersand,			U00BE								]};
     key <AE08>	{[ 8,				asterisk												]};
-    key <AE09>	{[ 9,				parenleft												]};
-    key <AE10>	{[ 0,				parenright												]};
+    key <AE09>	{[ 9,				parenleft,			parenleft							]};
+    key <AE10>	{[ 0,				parenright,			parenright							]};
     key <AE11>	{[ minus,			underscore,			U2014,				U2015			]};
     key <AE12>	{[ equal,			plus,				notequal,			U2248			]};
 
@@ -37,8 +37,8 @@ xkb_symbols "basic" {
     key <AC05>	{[ g,				G														]};
     key <AC06>	{[ h,				H,					U56CD								]};
     key <AC07>	{[ j,				J														]};
-    key <AC08>	{[ k,				K,					parenleft							]};
-    key <AC09>	{[ l,				L,					parenright							]};
+    key <AC08>	{[ k,				K														]};
+    key <AC09>	{[ l,				L,					U03BB								]};
     key <AC10>	{[ semicolon,		colon,				U201C								]};
     key <AC11>	{[ apostrophe,		quotedbl,			U201D								]};
     key <BKSL>	{[ asciitilde,		backslash,			grave								]};
