@@ -29,7 +29,6 @@ breeze
 breeze-gtk
 breeze-icons
 brightnessctl
-broot
 bspwm
 btop
 btrfs-progs
@@ -367,6 +366,7 @@ timeshift-autosnap-manjaro
 tldr
 tlp
 tmux
+torbrowser-launcher
 transcode
 translate-shell
 trash-cli

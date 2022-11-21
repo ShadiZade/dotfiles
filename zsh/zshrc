@@ -59,12 +59,18 @@ alias bookcol='fd "pdf|epub|mobi" ~/Books | wc -l'
 alias disk-destroyer="command dd"
 alias dd="echo 'Probably the wrong command. Use alias \"disk-destroyer\" for the actual dd command.'"
 
+# translation
+alias zhen="trans zh:en"
+alias enzh="trans en:zh"
+alias deen="trans de:en"
+alias ende="trans en:de"
+
 # list
-alias l="exa --icons --group-directories-first"
-alias ll="exa -l --icons --no-user --time-style=iso --group-directories-first"
-alias lll="exa -l --icons --no-user --time-style=iso --group-directories-first -T -L "
-alias lla="exa -la --icons --no-user --group-directories-first --time-style=iso"
-alias lld="exa ~/Downloads -l --icons --sort=oldest --no-user --no-permissions --group-directories-first --time-style=iso"
+alias l="exa --icons --sort=ext --group-directories-first"
+alias ll="exa -l --icons --no-user --time-style=iso --sort=ext --group-directories-first"
+alias lll="exa -l --icons --no-user --time-style=iso --sort=ext --group-directories-first -T -L "
+alias lla="exa -la --icons --no-user --group-directories-first --sort=ext --time-style=iso"
+alias lld="exa ~/Downloads -l --icons --sort=oldest --no-user --sort=ext --no-permissions --group-directories-first --time-style=iso"
 
 # package management
 alias pacs="sudo pacman -S "

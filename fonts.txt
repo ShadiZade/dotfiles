@@ -999,7 +999,6 @@
 /usr/share/fonts/noto/NotoSansMedefaidrin-Bold.ttf: Noto Sans Medefaidrin:style=Bold
 /usr/share/fonts/noto/NotoSansOriya-Bold.ttf: Noto Sans Oriya:style=Bold
 /usr/share/fonts/TTF/Constructium.ttf: Constructium:style=Book
-/usr/share/fonts/TTF/vscode.ttf: Broot Icons Visual Studio Code:style=Regular
 /usr/share/fonts/TTF/arabeyes/ae_Cortoba.ttf: Cortoba:style=Regular
 /usr/share/fonts/noto/NotoSansLisu-Regular.ttf: Noto Sans Lisu:style=Regular
 /usr/share/fonts/mathjax2/HTML-CSS/Gyre-Pagella/woff/GyrePagellaMathJax_Size3-Regular.woff: TeX Gyre Pagella Math,Gyre Pagella MathJax Size3:style=Regular

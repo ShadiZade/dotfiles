@@ -14,7 +14,7 @@
 ###################################################################################################
 ####### symlink location: ~/.config/polybar/scripts/ ##############################################
 
-echo "$(quodlibet --print-playing 2>&1)" | grep -q 'not running' && exit
+quodlibet --print-playing 2>&1 | grep -q 'not running' && exit
 fullname=$(quodlibet --print-playing)
 echo "$fullname" | grep -q 'Unknown Audio' && exit
 echo "$fullname" | grep -q '[ابتثجحخدذرزسشصضطظعغفقكلمنهوي]' && ~/.config/polybar/scripts/arab-quodlibet-polybar.sh && exit
@@ -29,8 +29,6 @@ if echo "$fullname" | grep -q ' - '
 	songname=$fullname
 fi
 # checks for all categorizations (Op., BWV, B., Hob.), and then for movement #s
-echo $(echo "$songname" \
+echo "$songname" \
 | awk -F ',[[:space:]][[:alnum:]]+[[:print:]]+[([:digit:]|N/A)]' '{print $1}' \
-| awk -F '-[[:space:]][IVX]+[[:space:]]' '{print $1}'\
-)
-
+| awk -F '-[[:space:]][IVX]+[[:space:]]' '{print $1}'
