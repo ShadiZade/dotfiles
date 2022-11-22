@@ -88,7 +88,8 @@ alias tree="pactree -r "
 alias align-mirrors="sudo pacman-mirrors --fasttrack && sudo pacman -Syyu"
 
 # git
-
+alias gits="git status"
+alias gitd="git diff"
 alias gita="~/Repositories/scripts/backpacks.sh && git add *"
 alias gitc="git commit -m"
 alias gitp="git push -u origin master"
