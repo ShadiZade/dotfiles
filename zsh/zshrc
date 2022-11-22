@@ -1,3 +1,4 @@
+#!/bin/zsh
 ##################################################################################################
 #
 #					 ____  _   _    _    ____ ___     _____   _    ____  _____ 
@@ -113,19 +114,19 @@ alias tess='~/Repositories/scripts/tess.sh'
 
 # config files
 ### emacs
-alias ’e="micro ~/Repositories/dotfiles/emacs/init.el"
+alias ’e="emacs -nw ~/Repositories/dotfiles/emacs/init.el"
 ### kitty 
 alias ’k="micro ~/Repositories/dotfiles/kitty/kitty-bspwm/kitty-bspwm.conf"
 ### zsh
-alias ’z="micro ~/Repositories/dotfiles/zsh/zshrc"
+alias ’z="emacs -nw ~/Repositories/dotfiles/zsh/zshrc"
 ### awesomewm
-alias ’a="micro ~/.config/awesome/rc.lua"
+alias ’a="emacs -nw ~/.config/awesome/rc.lua"
 ### bspwm
-alias ’b="micro ~/Repositories/dotfiles/bspwm/bspwmrc"
-alias ’s="micro ~/Repositories/dotfiles/sxhkd/sxhkdrc"
-alias ’p="micro ~/Repositories/dotfiles/polybar/config.ini"
+alias ’b="emacs -nw ~/Repositories/dotfiles/bspwm/bspwmrc"
+alias ’s="emacs -nw ~/Repositories/dotfiles/sxhkd/sxhkdrc"
+alias ’p="emacs -nw ~/Repositories/dotfiles/polybar/config.ini"
 ### theming
-alias ’tc="sudo micro ~/Repositories/scripts/bspwm-theme.sh"
+alias ’tc="emacs -nw ~/Repositories/scripts/bspwm-theme.sh"
 alias ’tp="~/Repositories/scripts/theme-picker.sh"
 
 # functions

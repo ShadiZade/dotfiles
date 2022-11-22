@@ -26,6 +26,8 @@
 ;;(setq ido-everywhere t)
 ;;(ido-mode 1)
 (ivy-mode 1)
+(setq make-backup-files nil)
+(setq visible-bell 1)
 
 ;; Initialize package sources
 (require 'package)
