@@ -26,6 +26,7 @@ alias cdc="cd ~/.config && l"
 alias cddf="cd ~/Repositories/dotfiles && ll"
 alias cdsz="cd ~/Repositories/ShadiZade && ll"
 alias cdwall="cd /usr/share/wallpapers/use && ll"
+alias cdy="cd ~/Excluding/ytvid && ll"
 alias rdol="rdo dolphin ."
 alias rdold="rdo dolphin ~/Downloads"
 alias rdols="rdol Holding/screenshots"
@@ -59,6 +60,8 @@ alias morse="morse-x -f 350"
 alias bookcol='fd "pdf|epub|mobi" ~/Books | wc -l'
 alias disk-destroyer="command dd"
 alias dd="echo 'Probably the wrong command. Use alias \"disk-destroyer\" for the actual dd command.'"
+alias mpv="rdo mpv"
+alias mpva="command mpv"
 
 # translation
 alias zhen="trans zh:en"
