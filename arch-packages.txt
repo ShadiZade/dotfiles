@@ -132,7 +132,6 @@ java-commons-lang
 jfsutils
 jp2a
 kaccounts-providers
-kcalc
 kcharselect
 kcolorchooser
 kdeconnect
@@ -383,6 +382,7 @@ udiskie
 udisks2
 uget
 unarchiver
+unzip
 usb_modeswitch
 usbutils
 util-linux

@@ -50,6 +50,7 @@ taffy
 telegram-desktop-bin
 ttf-amiri
 ttf-arabeyes-fonts
+ttf-teletext2
 ttf-ubuntu-arabic
 uget-integrator-chromium
 vimix-icon-theme

@@ -1431,6 +1431,7 @@
 /usr/share/fonts/TTF/iosevka-light.ttc: Iosevka,Iosevka Light Oblique:style=Light Oblique,Regular
 /usr/share/fonts/adobe-source-code-pro/SourceCodeVariable-Italic.otf: Source Code Variable:style=Light Italic
 /usr/share/fonts/noto/NotoSerifToto-Regular.ttf: Noto Serif Toto:style=Regular
+/usr/share/fonts/TTF/teletext2.ttf: teletext2:style=Medium
 /usr/share/fonts/noto/NotoSerifBengali-Light.ttf: Noto Serif Bengali,Noto Serif Bengali Light:style=Light,Regular
 /usr/share/fonts/noto/NotoSansDevanagariUI-Bold.ttf: Noto Sans Devanagari UI:style=Bold
 /usr/share/fonts/TTF/iosevka-extrabold.ttc: Iosevka Fixed,Iosevka Fixed XBd Ex:style=Extrabold Extended Italic,Italic

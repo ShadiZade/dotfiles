@@ -103,7 +103,7 @@ super + {_,shift + }a
 	
 # terminal
 super + q ; s
-	kitty -c=$HOME/.config/kitty/kitty-bspwm.conf
+	kitty
 
 # vivaldi
 super + q ; v
