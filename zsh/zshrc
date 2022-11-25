@@ -119,7 +119,7 @@ alias tess='~/Repositories/scripts/tess.sh'
 ### emacs
 alias ’e="emacs -nw ~/Repositories/dotfiles/emacs/init.el"
 ### kitty 
-alias ’k="micro ~/Repositories/dotfiles/kitty/kitty-bspwm/kitty-bspwm.conf"
+alias ’k="micro ~/Repositories/dotfiles/kitty/kitty.conf"
 ### zsh
 alias ’z="emacs -nw ~/Repositories/dotfiles/zsh/zshrc"
 ### awesomewm

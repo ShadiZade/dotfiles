@@ -37,6 +37,7 @@ calc
 calibre
 cdparanoia
 cdrdao
+clisp
 coreutils
 cowsay
 cpupower
