@@ -37,7 +37,6 @@ calc
 calibre
 cdparanoia
 cdrdao
-clisp
 coreutils
 cowsay
 cpupower
@@ -365,7 +364,6 @@ timeshift
 timeshift-autosnap-manjaro
 tldr
 tlp
-tmux
 torbrowser-launcher
 transcode
 translate-shell

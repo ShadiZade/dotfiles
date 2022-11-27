@@ -50,3 +50,4 @@ bspc rule -a Sxiv state=fullscreen
 bspc rule -a okular state=fullscreen  
 bspc rule -a FreeTube state=fullscreen
 bspc rule -a calibre state=fullscreen
+bspc rule -a Zathura state=fullscreen

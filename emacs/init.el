@@ -59,4 +59,7 @@
  ;; If there is more than one, they won't work right.
  )
 
+(setq inferior-lisp-program "sbcl")
+(require 'slime-autoloads)
+(eval-after-load "slime"  '(progn (slime-setup '(slime-fancy))))
 

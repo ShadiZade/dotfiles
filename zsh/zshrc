@@ -62,6 +62,7 @@ alias disk-destroyer="command dd"
 alias dd="echo 'Probably the wrong command. Use alias \"disk-destroyer\" for the actual dd command.'"
 alias mpv="rdo mpv"
 alias mpva="command mpv"
+alias z="rdo zathura"
 
 # translation
 alias zhen="trans zh:en"
