@@ -39,7 +39,6 @@ cdparanoia
 cdrdao
 coreutils
 cowsay
-cpupower
 cronie
 cryptsetup
 deja-dup
@@ -323,7 +322,6 @@ sed
 shadow
 sigil
 sl
-smplayer
 snapd-glib
 sof-firmware
 spectre-meltdown-checker

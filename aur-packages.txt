@@ -18,6 +18,7 @@ celestia-addon-voyagers
 cmatrix-git
 cpdf
 czkawka-gui
+epr-git
 fortune-mod-montypython
 fortune-mod-starwars
 freetube-bin
