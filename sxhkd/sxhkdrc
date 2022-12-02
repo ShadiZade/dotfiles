@@ -25,6 +25,10 @@ super + shift + {q,r}
 super + shift + {c,k}
 	bspc node -{c,k}
 
+# activate dalek mode
+super + shift + Delete
+	xkill
+
 # reload sxhkd configs:
 super + shift + s
 	pkill -USR1 -x sxhkd
@@ -49,7 +53,9 @@ super + alt + ctrl + {space,Right,Left,Prior,Next}
 super + shift + BackSpace
 	xsel -cb
 
-
+# theme picker
+super + shift + t
+	~/Repositories/scripts/theme-picker.sh
 	
 
 ############################################# window management

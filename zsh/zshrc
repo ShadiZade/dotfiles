@@ -55,7 +55,7 @@ alias ccat='highlight'
 alias yd='calc "$(date +"%Y")-$1"'
 alias llwc="ll | wc -l"
 alias wi="nmcli device wifi"
-alias backwall="sudo rsync -ruv /usr/share/wallpapers/* ~/Pictures/wallpapers"
+alias back="~/Repositories/scripts/back/backmaster.sh"
 alias morse="morse-x -f 350"
 alias bookcol='fd "pdf|epub|mobi" ~/Books | wc -l'
 alias disk-destroyer="command dd"
@@ -69,6 +69,8 @@ alias zhen="trans zh:en"
 alias enzh="trans en:zh"
 alias deen="trans de:en"
 alias ende="trans en:de"
+alias esen="trans es:en"
+alias enes="trans en:es"
 
 # list
 alias l="exa --icons --sort=ext --group-directories-first"
@@ -95,7 +97,7 @@ alias align-mirrors="sudo pacman-mirrors --fasttrack && sudo pacman -Syyu"
 # git
 alias gits="git status"
 alias gitd="git diff"
-alias gita="~/Repositories/scripts/backpacks.sh && git add *"
+alias gita="~/Repositories/scripts/back/backpacks.sh && git add *"
 alias gitc="git commit -m"
 alias gitp="git push -u origin master"
 alias gitp-main="git push -u origin main"
@@ -127,7 +129,7 @@ alias ’z="emacs -nw ~/Repositories/dotfiles/zsh/zshrc"
 alias ’a="emacs -nw ~/.config/awesome/rc.lua"
 ### bspwm
 alias ’b="emacs -nw ~/Repositories/dotfiles/bspwm/bspwmrc"
-alias ’s="emacs -nw ~/Repositories/dotfiles/sxhkd/sxhkdrc"
+alias ’s="micro ~/Repositories/dotfiles/sxhkd/sxhkdrc"
 alias ’p="emacs -nw ~/Repositories/dotfiles/polybar/config.ini"
 ### theming
 alias ’tc="emacs -nw ~/Repositories/scripts/bspwm-theme.sh"

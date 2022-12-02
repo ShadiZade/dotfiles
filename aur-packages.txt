@@ -17,7 +17,6 @@ celestia-addon-vaders_tie_fighter
 celestia-addon-voyagers
 cmatrix-git
 cpdf
-czkawka-gui
 epr-git
 fortune-mod-montypython
 fortune-mod-starwars
@@ -51,6 +50,7 @@ taffy
 telegram-desktop-bin
 ttf-amiri
 ttf-arabeyes-fonts
+ttf-ms-fonts
 ttf-teletext2
 ttf-ubuntu-arabic
 uget-integrator-chromium

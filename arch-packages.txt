@@ -117,6 +117,7 @@ gvfs-smb
 gzip
 handlr
 haveged
+hexchat
 highlight
 howl
 httrack
@@ -202,6 +203,7 @@ manjaro-system
 manjaro-zsh-config
 matrix-synapse
 mdadm
+meld
 memtest86+
 menumaker
 mesa-demos
