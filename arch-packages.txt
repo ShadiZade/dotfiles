@@ -37,6 +37,7 @@ calc
 calibre
 cdparanoia
 cdrdao
+copyq
 coreutils
 cowsay
 cronie
@@ -148,7 +149,6 @@ kitty
 kodi
 kolourpaint
 kphotoalbum
-krename
 krita
 ksystemlog
 kwalletmanager
@@ -214,7 +214,6 @@ micro
 mkinitcpio-openswap
 mkvtoolnix-cli
 mkvtoolnix-gui
-mlocate
 mobile-broadband-provider-info
 modemmanager
 mp3wrap
@@ -308,6 +307,7 @@ qt6-webview
 quicklisp
 quodlibet
 reiserfsprogs
+rink
 ripgrep
 rmlint
 rofi
@@ -400,7 +400,6 @@ wireless-regdb
 wmctrl
 wpa_supplicant
 xautolock
-xclip
 xcompmgr
 xdg-user-dirs
 xdg-utils
@@ -422,7 +421,6 @@ xorg-xev
 xorg-xinit
 xorg-xkill
 xorg-xsetroot
-xsel
 xwallpaper
 xz
 yay

@@ -21,7 +21,8 @@ PROMPT=' %F{#ff55ff}%2~%f %S%F{#ff55ff} 囍 %D{%H:%M} 🠦 %f%s '
 alias cdt="cd ~/Desktop && ll"
 alias cdd="cd ~/Downloads && ll"
 alias cdm="cd ~/Misc/Backups && ll"
-alias cds="cd ~/Repositories/scripts && ll"
+alias cds="cd ~/Study && ll"
+alias cdsc="cd ~/Repositories/scripts && ll"
 alias cdc="cd ~/.config && l"
 alias cddf="cd ~/Repositories/dotfiles && ll"
 alias cdsz="cd ~/Repositories/ShadiZade && ll"
@@ -63,6 +64,7 @@ alias dd="echo 'Probably the wrong command. Use alias \"disk-destroyer\" for the
 alias mpv="rdo mpv"
 alias mpva="command mpv"
 alias z="rdo zathura"
+alias cf="~/Repositories/scripts/copy-full-path.sh" 
 
 # translation
 alias zhen="trans zh:en"

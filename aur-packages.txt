@@ -1,7 +1,5 @@
-airsonic
 authy
 bgs-git
-bibata-cursor-theme-bin
 celestia
 celestia-addon-2009_exoplanets
 celestia-addon-2010_exoplanets

@@ -220,6 +220,7 @@
 /usr/share/fonts/noto/NotoSansDisplay-Thin.ttf: Noto Sans,Noto Sans Display Thin:style=Display Thin,Regular
 /usr/share/fonts/noto/NotoSansSinhala-Thin.ttf: Noto Sans Sinhala,Noto Sans Sinhala Thin:style=Thin,Regular
 /usr/share/fonts/TTF/iosevka-bold.ttc: Iosevka,Iosevka Oblique:style=Bold Oblique,Bold
+/usr/share/fonts/TTF/Amiri-BoldItalic.ttf: Amiri:style=Bold Italic
 /usr/share/fonts/TTF/iosevka-heavy.ttc: Iosevka Term,Iosevka Term Heavy:style=Heavy Italic,Italic
 /usr/share/fonts/Hack/Hack-Regular.ttf: Hack:style=Regular
 /usr/share/fonts/mathjax2/HTML-CSS/TeX/woff/MathJax_Script-Regular.woff: MathJax_Script:style=Regular
@@ -270,7 +271,6 @@
 /usr/share/fonts/TTF/NotoSansMono-Regular-Nerd-Font-Complete.ttf: NotoSansMono Nerd Font:style=Regular
 /usr/share/fonts/noto/NotoSerifToto-Medium.ttf: Noto Serif Toto,Noto Serif Toto Medium:style=Medium,Regular
 /usr/share/fonts/noto/NotoSansOldTurkic-Regular.ttf: Noto Sans Old Turkic:style=Regular
-/usr/share/fonts/TTF/Amiri-BoldSlanted.ttf: Amiri:style=Bold Slanted
 /usr/share/fonts/noto/NotoSansOsmanya-Regular.ttf: Noto Sans Osmanya:style=Regular
 /usr/share/fonts/noto/NotoSansGurmukhiUI-Light.ttf: Noto Sans Gurmukhi UI,Noto Sans Gurmukhi UI Light:style=Light,Regular
 /usr/share/fonts/noto/NotoSansSinhalaUI-Thin.ttf: Noto Sans Sinhala UI,Noto Sans Sinhala UI Thin:style=Thin,Regular
@@ -719,7 +719,6 @@
 /usr/share/fonts/mathjax2/HTML-CSS/STIX-Web/woff/STIXMathJax_Marks-Bold.woff: STIX MathJax Marks:style=Bold
 /usr/share/fonts/noto/NotoSerifGrantha-Regular.ttf: Noto Serif Grantha:style=Regular
 /usr/share/fonts/mathjax2/HTML-CSS/STIX-Web/woff/STIXMathJax_Normal-BoldItalic.woff: STIX MathJax Normal:style=Bold Italic
-/usr/share/fonts/TTF/Amiri-Slanted.ttf: Amiri:style=Slanted
 /usr/share/fonts/noto/NotoSansIndicSiyaqNumbers-Regular.ttf: Noto Sans Indic Siyaq Numbers:style=Regular
 /usr/share/fonts/noto/NotoSerifKannada-Regular.ttf: Noto Serif Kannada:style=Regular
 /usr/share/fonts/noto/NotoSansTelugu-Regular.ttf: Noto Sans Telugu:style=Regular
@@ -1001,6 +1000,7 @@
 /usr/share/fonts/noto/NotoSansGujarati-Regular.ttf: Noto Sans Gujarati:style=Regular
 /usr/share/fonts/noto/NotoRashiHebrew-Black.ttf: Noto Rashi Hebrew,Noto Rashi Hebrew Blk:style=Black,Regular
 /usr/share/fonts/noto/NotoSansDeseret-Regular.ttf: Noto Sans Deseret:style=Regular
+/usr/share/fonts/TTF/Amiri-Italic.ttf: Amiri:style=Italic
 /usr/share/fonts/noto/NotoSerifGujarati-Regular.ttf: Noto Serif Gujarati:style=Regular
 /usr/share/fonts/adobe-source-code-pro/SourceCodePro-ExtraLightIt.otf: Source Code Pro,Source Code Pro ExtraLight:style=ExtraLight Italic,Italic
 /usr/share/fonts/gsfonts/NimbusSansNarrow-Oblique.otf: Nimbus Sans Narrow:style=Oblique
