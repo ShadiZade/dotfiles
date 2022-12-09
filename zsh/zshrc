@@ -18,7 +18,8 @@ source ~/.config/zsh/extra-zsh-settings
 PROMPT=' %F{#ff55ff}%2~%f %S%F{#ff55ff} 囍 %D{%H:%M} 🠦 %f%s '
 
 # simple aliases
-alias cdt="cd ~/Desktop && ll"
+alias cdk="cd ~/Desktop && ll"
+alias cdt="cd ~/.local/share/Trash/files && lln"
 alias cdd="cd ~/Downloads && ll"
 alias cdm="cd ~/Misc/Backups && ll"
 alias cds="cd ~/Study && ll"
@@ -38,8 +39,6 @@ alias se="sudo emacs -nw "
 alias q="source ~/.config/zsh/.zshrc"
 alias qq="clr; cd; ~/Repositories/scripts/terminal-art.sh"
 alias qqq="clr; cd; source ~/.config/zsh/.zshrc"
-alias tp="trash-put -f"
-alias stp="sudo trash-put -f"
 alias xx="xdg-open"
 alias mkdir="mkdir -pv"
 alias cp="cp -i"
@@ -65,6 +64,7 @@ alias mpv="rdo mpv"
 alias mpva="command mpv"
 alias z="rdo zathura"
 alias cf="~/Repositories/scripts/copy-full-path.sh" 
+alias trash-clear="rm -rf ~/.local/share/Trash/files/*"
 
 # translation
 alias zhen="trans zh:en"
@@ -77,9 +77,10 @@ alias enes="trans en:es"
 # list
 alias l="exa --icons --sort=ext --group-directories-first"
 alias ll="exa -l --icons --no-user --time-style=iso --sort=ext --group-directories-first"
-alias lll="exa -l --icons --no-user --time-style=iso --sort=ext --group-directories-first -T -L "
 alias lla="exa -la --icons --no-user --group-directories-first --sort=ext --time-style=iso"
 alias lld="exa ~/Downloads -l --icons --sort=oldest --no-user --sort=ext --no-permissions --group-directories-first --time-style=iso"
+alias lln="exa -l --icons --no-user --time-style=iso --sort=newest"
+alias lls="exa -l --icons --no-user --time-style=iso --sort=size"
 
 # package management
 alias pacs="sudo pacman -S "

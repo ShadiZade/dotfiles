@@ -46,6 +46,7 @@ siji-git
 soundcloud-dl-git
 taffy
 telegram-desktop-bin
+trashf
 ttf-amiri
 ttf-arabeyes-fonts
 ttf-ms-fonts

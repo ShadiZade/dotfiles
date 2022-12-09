@@ -52,7 +52,6 @@ dmenu
 dmidecode
 dmraid
 dnsmasq
-doge
 dolphin
 dolphin-plugins
 dosfstools
@@ -367,7 +366,6 @@ tlp
 torbrowser-launcher
 transcode
 translate-shell
-trash-cli
 ttc-iosevka
 ttf-dejavu
 ttf-droid
@@ -400,6 +398,7 @@ wireless-regdb
 wmctrl
 wpa_supplicant
 xautolock
+xclip
 xcompmgr
 xdg-user-dirs
 xdg-utils
@@ -421,6 +420,7 @@ xorg-xev
 xorg-xinit
 xorg-xkill
 xorg-xsetroot
+xsel
 xwallpaper
 xz
 yay
