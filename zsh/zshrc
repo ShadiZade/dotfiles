@@ -23,6 +23,7 @@ alias cdt="cd ~/.local/share/Trash/files && lln"
 alias cdd="cd ~/Downloads && ll"
 alias cdm="cd ~/Misc/Backups && ll"
 alias cds="cd ~/Study && ll"
+alias cdb="cd ~/Books"
 alias cdsc="cd ~/Repositories/scripts && ll"
 alias cdc="cd ~/.config && l"
 alias cddf="cd ~/Repositories/dotfiles && ll"
@@ -80,7 +81,7 @@ alias ll="exa -l --icons --no-user --time-style=iso --sort=ext --group-directori
 alias lla="exa -la --icons --no-user --group-directories-first --sort=ext --time-style=iso"
 alias lld="exa ~/Downloads -l --icons --sort=oldest --no-user --sort=ext --no-permissions --group-directories-first --time-style=iso"
 alias lln="exa -l --icons --no-user --time-style=iso --sort=newest"
-alias lls="exa -l --icons --no-user --time-style=iso --sort=size"
+alias lls="exa -l --icons --no-user --time-style=iso --sort=size --group-directories-first"
 
 # package management
 alias pacs="sudo pacman -S "
