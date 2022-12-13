@@ -63,3 +63,12 @@
 (require 'slime-autoloads)
 (eval-after-load "slime"  '(progn (slime-setup '(slime-fancy))))
 
+;;; Keybinds
+(global-set-key (kbd "M-o") 'other-window)
+(global-set-key (kbd "C-c f") 'flyspell-mode)
+(global-set-key (kbd "C-c l") #'org-store-link)
+(global-set-key (kbd "C-c a") #'org-agenda)
+(global-set-key (kbd "C-c c") #'org-capture)
+(global-set-key (kbd "C-c C-q") 'slime-close-all-parens-in-sexp)
+(global-set-key (kbd "C-c C-x C-/") 'strike-through-for-org-mode)
+(global-set-key (kbd "C-c C-<return>") 'org-insert-subheading)
