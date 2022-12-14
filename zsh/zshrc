@@ -60,7 +60,6 @@ alias llwc="ll | wc -l"
 alias wi="nmcli device wifi"
 alias back="~/Repositories/scripts/back/backmaster.sh"
 alias morse="morse-x -f 350"
-alias bookcol='fd "pdf|epub|mobi" ~/Books | wc -l'
 alias disk-destroyer="command dd"
 alias dd="echo 'Probably the wrong command. Use alias \"disk-destroyer\" for the actual dd command.'"
 alias mpv="rdo mpv"

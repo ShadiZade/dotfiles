@@ -40,6 +40,7 @@ plymouth-theme-aperture-git
 protondb-tags
 python-pathvalidate
 python-soundcloud-v2
+qoobar-git
 scantailor-advanced-bin
 sddm-sugar-light
 siji-git
