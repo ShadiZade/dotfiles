@@ -23,6 +23,7 @@ gallery-dl
 gconf
 google-earth-pro
 gtypist
+id3
 jabref
 kasts
 luckybackup

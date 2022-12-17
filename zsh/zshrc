@@ -44,8 +44,8 @@ alias qq="clr; cd; ~/Repositories/scripts/terminal-art.sh"
 alias qqq="clr; cd; source ~/.config/zsh/.zshrc"
 alias xx="xdg-open"
 alias mkdir="mkdir -pv"
-alias cp="cp -i"
-alias mv='mv -i'
+alias cp="cp -iv"
+alias mv='mv -iv'
 alias grep='grep --color=auto'
 alias window-name="xprop WM_CLASS"
 alias pg='ping gnu.org'
@@ -101,7 +101,7 @@ alias align-mirrors="sudo pacman-mirrors --fasttrack && sudo pacman -Syyu"
 # git
 alias gits="git status"
 alias gitd="git diff"
-alias gita="~/Repositories/scripts/back/backpacks.sh && git add *"
+alias gita="git add ."
 alias gitc="git commit -m"
 alias gitp="git push -u origin master"
 alias gitp-main="git push -u origin main"
@@ -112,8 +112,8 @@ alias expaca="~/Repositories/scripts/expaca.sh"
 alias keys="~/Repositories/scripts/keys.sh"
 alias font-list="~/Repositories/scripts/font-list.sh"
 alias get-image="~/Repositories/scripts/extract-pdf-image.sh"
-alias ytmp3="~/Repositories/scripts/ytmp3.sh"
-alias ytvid="~/Repositories/scripts/ytvid.sh"
+alias ytm="~/Repositories/scripts/ytmp3.sh"
+alias ytv="~/Repositories/scripts/ytvid.sh"
 alias knock="~/.local/share/knock/.knock/knock ~/Downloads/URLLink.acsm"
 alias chcover="~/Repositories/scripts/chcover.sh"
 alias newscript='which="script" ~/Repositories/scripts/new-micro.sh '
