@@ -18,7 +18,7 @@ while read file
 do
         case "$1" in
         "C-d")
-                trash-put "$file" ;;
+                rt "$file" ;;
         "C-z")
                 echo -n "$file" | xclip -selection clipboard ;;
         esac
