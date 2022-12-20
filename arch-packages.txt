@@ -37,7 +37,6 @@ calc
 calibre
 cdparanoia
 cdrdao
-copyq
 coreutils
 cowsay
 cronie
