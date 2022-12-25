@@ -22,9 +22,11 @@ avahi
 axel
 b43-fwcutter
 bash
+bat
 bcprov
 bison
 bitwarden
+blueman
 breeze
 breeze-gtk
 breeze-icons
@@ -97,6 +99,7 @@ glibc-locales
 glow
 gnome-keyring
 gnome-themes-extra
+gpicview
 grep
 grub
 grub-btrfs
@@ -186,7 +189,20 @@ logrotate
 lolcat
 lvm2
 lxappearance
+lxappearance-obconf
+lxde-common
+lxde-icon-theme
+lxdm
+lxhotkey
+lxinput
+lxlauncher
+lxmusic
 lxpanel
+lxrandr
+lxsession
+lxtask
+lxterminal
+lynx
 make
 man-db
 man-pages
@@ -199,7 +215,6 @@ manjaro-settings-manager-kcm
 manjaro-settings-manager-knotifier
 manjaro-system
 manjaro-zsh-config
-matrix-synapse
 mdadm
 meld
 memtest86+
@@ -220,7 +235,6 @@ mtpfs
 musescore
 ncdu
 neofetch
-neovim
 network-manager-applet
 networkmanager
 networkmanager-openconnect
@@ -237,6 +251,7 @@ ntp
 numlockx
 nyancat
 okular
+openbox
 openresolv
 openssh
 os-prober
@@ -304,6 +319,7 @@ qt6-websockets
 qt6-webview
 quicklisp
 quodlibet
+ranger
 reiserfsprogs
 rink
 ripgrep
@@ -376,6 +392,7 @@ ttf-liberation
 ttf-nerd-fonts-symbols-2048-em
 udiskie
 udisks2
+ueberzug
 uget
 unarchiver
 unzip

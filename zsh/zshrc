@@ -15,7 +15,7 @@
 ####### symlink location: ~/.config/zsh/ ##########################################################
 
 source ~/.config/zsh/extra-zsh-settings
-PROMPT=' %F{#ff55ff}%2~%f %S%F{#ff55ff} 囍 %D{%H:%M} 🠦 %f%s '
+PROMPT=' %F{#55ff55}%2~%f %S%F{#55ff55} 囍 %D{%H:%M} 🠦 %f%s '
 
 # simple aliases
 alias cdk="cd ~/Desktop && ll"

@@ -10,6 +10,7 @@ Here's a brief explanation of each one:
 - **mpv**: The only good media player. Screw you, VLC.
 - **picom**: A compositor for X11. It's what makes stuff transparent. 
 - **polybar**: The thingy on the top of the screen. You need it for bspwm.
+- **ranger**: TUI file manager. Strange name choice, though.
 - **rofi**: I mostly use it for the `rofi -show drun` functionality.
 - **sxhkd**: Winner of the [second worst](https://github.com/ncmpcpp/ncmpcpp) name in the open source world. It's actually pretty good at managing keybindings.
 - **sxiv**: Ultra-lightweight image viewer.

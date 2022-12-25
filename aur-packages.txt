@@ -39,6 +39,7 @@ outguess
 plymouth-theme-angular-git
 plymouth-theme-aperture-git
 protondb-tags
+pspp
 python-pathvalidate
 python-soundcloud-v2
 qoobar-git
