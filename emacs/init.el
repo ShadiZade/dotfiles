@@ -72,3 +72,12 @@
 (global-set-key (kbd "C-c C-q") 'slime-close-all-parens-in-sexp)
 (global-set-key (kbd "C-c C-x C-/") 'strike-through-for-org-mode)
 (global-set-key (kbd "C-c C-<return>") 'org-insert-subheading)
+
+
+
+
+
+
+
+(load "beta-html-helper-mode")
+(setq auto-mode-alist (cons '("\\.html$" . html-helper-mode) auto-mode-alist))
