@@ -23,6 +23,7 @@ gallery-dl
 gconf
 google-earth-pro
 gtypist
+heroic-games-launcher-bin
 id3
 jabref
 kasts

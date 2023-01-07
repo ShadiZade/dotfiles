@@ -149,11 +149,11 @@ kio-extras
 kitty
 kodi
 kolourpaint
-kphotoalbum
 krita
 ksystemlog
 kwalletmanager
 less
+lf
 lib32-libcanberra
 lib32-libva-intel-driver
 lib32-libva-mesa-driver
@@ -286,6 +286,7 @@ pulsemixer
 pv
 python-pillow
 python-pip
+python-pipx
 python-pyqt5
 python-pysmbc
 python-reportlab
@@ -354,6 +355,7 @@ systemd-fsck-silent
 systemd-kcm
 systemd-sysvcompat
 tar
+tellico
 termdown
 terminus-font
 tesseract
