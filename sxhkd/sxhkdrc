@@ -46,8 +46,8 @@ super + alt + ctrl + {minus,equal}
 	brightnessctl s 40{-,+}
 
 # quodlibet controls
-super + alt + ctrl + {space,Right,Left,Prior,Next}
-	quodlibet {--play-pause,--next,--focus,--seek=-00:10,--seek=+00:07}
+super + alt + ctrl + {space,Right,Left,Prior,Next,0}
+	quodlibet {--play-pause,--next,--focus,--seek=-00:10,--seek=+00:07,--seek=00:00}
 
 # clear clipboard
 super + shift + BackSpace
