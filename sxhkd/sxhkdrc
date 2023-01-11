@@ -49,9 +49,13 @@ super + alt + ctrl + {minus,equal}
 super + alt + ctrl + {space,Right,Prior,Next,0}
 	quodlibet {--play-pause,--next,--seek=-00:10,--seek=+00:07,--seek=00:00}
 
-# quodlibet enqueue
+# quodlibet enqueue current
 super + alt + ctrl + Left
 	$HOME/Repositories/scripts/quodlibet-enqueue.sh
+
+# quodlibet enqueue menu
+super + alt + ctrl + Return
+	$HOME/Repositories/scripts/choose-song.sh
 
 # clear clipboard
 super + shift + BackSpace
