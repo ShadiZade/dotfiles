@@ -47,7 +47,7 @@ super + alt + ctrl + {minus,equal}
 
 # quodlibet controls
 super + alt + ctrl + {space,Right,Prior,Next,0}
-	quodlibet {--play-pause,--next,--seek=-00:10,--seek=+00:07,--seek=00:00}
+	quodlibet {--play-pause,--next,--seek=-00:03,--seek=+00:03,--seek=00:00}
 
 # quodlibet enqueue current
 super + alt + ctrl + Left

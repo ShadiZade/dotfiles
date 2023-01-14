@@ -49,6 +49,7 @@ alias xx="xdg-open"
 alias mkdir="mkdir -pv"
 alias cp="cp -iv"
 alias mv='mv -iv'
+alias rmdir='rmdir -v'
 alias grep='grep --color=auto'
 alias window-name="xprop WM_CLASS"
 alias pg='ping gnu.org'
