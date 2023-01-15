@@ -59,6 +59,7 @@ alias sudo='sudo '
 alias sl='sl -eal5'
 alias memuse='df | grep sda1 | awk "{print \$5}" '
 alias ccat='highlight'
+alias ,,='trans -b'
 alias yd='calc "$(date +"%Y")-$1"'
 alias llwc="ll | wc -l"
 alias wi="nmcli device wifi"
@@ -73,12 +74,12 @@ alias cf="~/Repositories/scripts/copy-full-path.sh"
 alias trash-clear="rm -rf ~/.local/share/Trash/files/*"
 
 # translation
-alias zhen="trans -b zh:en"
-alias enzh="trans -b en:zh"
-alias deen="trans -b de:en"
-alias ende="trans -b en:de"
-alias esen="trans -b es:en"
-alias enes="trans -b en:es"
+alias zhen="command trans -b zh:en"
+alias enzh="command trans -b en:zh"
+alias deen="command trans -b de:en"
+alias ende="command trans -b en:de"
+alias esen="command trans -b es:en"
+alias enes="command trans -b en:es"
 
 # list
 alias l="exa --icons --sort=ext --group-directories-first"
@@ -123,7 +124,7 @@ alias get-image="~/Repositories/scripts/extract-pdf-image.sh"
 alias ytm="~/Repositories/scripts/ytmp3.sh"
 alias ytr="~/Repositories/scripts/ytmp3-sb.sh"
 alias ytv="~/Repositories/scripts/ytvid.sh"
-alias knock="~/.local/share/knock/.knock/knock ~/Downloads/URLLink.acsm"
+alias knock="~/.local/share/knock/.knock/knock"
 alias chcover="~/Repositories/scripts/chcover.sh"
 alias newscript='which="script" ~/Repositories/scripts/new-micro.sh '
 alias newsolution='which="solution" ~/Repositories/scripts/new-micro.sh '
