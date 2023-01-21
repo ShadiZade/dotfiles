@@ -24,7 +24,7 @@ alias cdk="cd ~/Desktop && ll"
 alias cdt="cd ~/.local/share/Trash/files && lln"
 alias cdd="cd ~/Downloads && ll"
 alias cdm="cd ~/Misc/Backups && ll"
-alias cdb="cd ~/Books"
+alias cdb="cd ~/Books/add && ll"
 alias cdc="cd ~/.config && l"
 alias cds="cd ~/Study && ll"
 alias cdsl="cd ~/Study/languages && ll"
@@ -47,10 +47,11 @@ alias qq="clr; cd; ~/Repositories/scripts/terminal-art.sh"
 alias qqq="clr; cd; source ~/.config/zsh/.zshrc"
 alias xx="xdg-open"
 alias mkdir="mkdir -pv"
+alias fd="fd -i"
 alias cp="cp -iv"
 alias mv='mv -iv'
 alias rmdir='rmdir -v'
-alias grep='grep --color=auto'
+alias grep='grep --color=auto -i'
 alias window-name="xprop WM_CLASS"
 alias pg='ping gnu.org'
 alias pg-c='while true; do pg; sleep 3; done'
@@ -80,6 +81,10 @@ alias deen="command trans -b de:en"
 alias ende="command trans -b en:de"
 alias esen="command trans -b es:en"
 alias enes="command trans -b en:es"
+alias ruen="command trans -b ru:en"
+alias enru="command trans -b en:ru"
+alias laen="command trans -b la:en"
+alias enla="command trans -b en:la"
 
 # list
 alias l="exa --icons --sort=ext --group-directories-first"

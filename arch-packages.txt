@@ -153,7 +153,6 @@ krita
 ksystemlog
 kwalletmanager
 less
-lf
 lib32-libcanberra
 lib32-libva-intel-driver
 lib32-libva-mesa-driver
@@ -320,7 +319,6 @@ qt6-websockets
 qt6-webview
 quicklisp
 quodlibet
-ranger
 reiserfsprogs
 rink
 ripgrep

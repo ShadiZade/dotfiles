@@ -29,6 +29,7 @@ jabref
 kasts
 luckybackup
 manjaro-firmware
+mikhak-fonts
 mimeo
 minecraft-launcher
 mkinitcpio-firmware
@@ -36,6 +37,7 @@ morse-x
 navi
 no-more-secrets
 noto-fonts-sc
+otf-kawkab-mono
 outguess
 plymouth-theme-angular-git
 plymouth-theme-aperture-git
@@ -45,6 +47,7 @@ python-soundcloud-v2
 qoobar-git
 scantailor-advanced-bin
 sddm-sugar-light
+shahab-fonts
 siji-git
 soundcloud-dl-git
 taffy
@@ -53,6 +56,7 @@ trashf
 ttf-amiri
 ttf-arabeyes-fonts
 ttf-ms-fonts
+ttf-sil-scheherazade
 ttf-teletext2
 ttf-ubuntu-arabic
 uget-integrator-chromium
