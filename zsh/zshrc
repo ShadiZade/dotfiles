@@ -113,12 +113,12 @@ alias cdset="cd src/epub/text"
 
 
 # git
-alias gits="git status"
-alias gitd="git diff"
-alias gita="git add ."
-alias gitc="git commit -m"
-alias gitp="git push -u origin master"
-alias gitp-main="git push -u origin main"
+alias gts="git status"
+alias gtd="git diff"
+alias gta="git add ."
+alias gtc="git commit -m"
+alias gtp="git push -u origin master"
+alias gtp-main="git push -u origin main"
 
 # scripts 
 alias expact="~/Repositories/scripts/expact.sh"
