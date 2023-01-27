@@ -21,7 +21,7 @@ PROMPT=' %F{#55ff55}%2~%f %S%F{#55ff55} 囍 %D{%H:%M} 🠦 %f%s '
 alias '..2'="cd ../.."
 alias '..3'="cd ../../.."
 alias cdk="cd ~/Desktop && ll"
-alias cdt="cd ~/.local/share/Trash/files && lln"
+alias cdt="cd ~/.local/share/Trash/files && lln --time=changed --sort=changed && du -sh"
 alias cdd="cd ~/Downloads && ll"
 alias cdm="cd ~/Misc/Backups && ll"
 alias cdb="cd ~/Books/add && ll"

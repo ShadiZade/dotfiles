@@ -267,6 +267,7 @@ pdfcrack
 pdftk
 perl
 perl-file-mimeinfo
+perl-rename
 phonon-qt5-gstreamer
 picom
 pkgconf
