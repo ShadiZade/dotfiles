@@ -336,6 +336,7 @@ sbcl
 sddm
 sed
 shadow
+shotcut
 sigil
 sl
 snapd-glib

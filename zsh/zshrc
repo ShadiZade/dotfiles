@@ -18,6 +18,7 @@ source ~/.config/zsh/extra-zsh-settings
 PROMPT=' %F{#55ff55}%2~%f %S%F{#55ff55} 囍 %D{%H:%M} 🠦 %f%s '
 
 # simple aliases
+alias '..'="cd .. && ll"
 alias '..2'="cd ../.."
 alias '..3'="cd ../../.."
 alias cdk="cd ~/Desktop && ll"
@@ -53,8 +54,8 @@ alias mv='mv -iv'
 alias rmdir='rmdir -v'
 alias grep='grep --color=auto -i'
 alias window-name="xprop WM_CLASS"
-alias pg='ping gnu.org'
-alias pg-c='while true; do pg; sleep 3; done'
+alias pg='ping -c 1 gnu.org'
+alias pg-c='while true; do ping -qc 1 gnu.org && break; sleep 3; done'
 alias clr="printf '\033[2J\033[3J\033[1;1H'"
 alias sudo='sudo '
 alias sl='sl -eal5'
