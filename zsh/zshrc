@@ -185,9 +185,9 @@ pg-c () {
 ~/Repositories/scripts/terminal-art.sh
 setxkbmap
 
-# set zcompdump location
+# misc
 compinit -d "$XDG_CACHE_HOME"/zsh/zcompdump-"$ZSH_VERSION" 
-
+export HISTCONTROL=ignorespace
 
 
 # file location was changed from ~/.zshrc to ~/.config/zsh/.zshrc
