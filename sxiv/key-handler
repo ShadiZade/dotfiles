@@ -16,7 +16,7 @@
 
 move () {
 	loc=$(ls -1 "$HOME/Pictures/mobile/3-finished" | rofi -dmenu -i -p 'choose folder')
-	[ -z "$loc" ] || mv -v "$file" "$HOME/Pictures/mobile/3- finished/$loc"
+	[ -z "$loc" ] || mv -v "$file" "$HOME/Pictures/mobile/3-finished/$loc"
 }
 
 describe () {

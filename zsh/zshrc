@@ -25,7 +25,8 @@ alias cdk="cd ~/Desktop && ll"
 alias cdt="cd ~/.local/share/Trash/files && lln --time=changed --sort=changed && du -sh"
 alias cdd="cd ~/Downloads && ll"
 alias cdm="cd ~/Misc/Backups && ll"
-alias cdb="cd ~/Books/add && ll"
+alias cdb="cd ~/Books"
+alias cdba="cd ~/Books/add && ll"
 alias cdc="cd ~/.config && l"
 alias cds="cd ~/Study && ll"
 alias cdsl="cd ~/Study/languages && ll"
@@ -73,6 +74,7 @@ alias mpa="command mpv --no-audio-display"
 alias z="rdo zathura"
 alias cf="~/Repositories/scripts/copy-full-path.sh" 
 alias trash-clear="rm -rf ~/.local/share/Trash/files/*"
+alias xv="sxiv *"
 
 # translation
 alias zhen="command trans -b zh:en"
@@ -113,12 +115,12 @@ alias cdset="cd src/epub/text"
 
 
 # git
-alias gts="git status"
-alias gtd="git diff"
-alias gta="git add ."
-alias gtc="git commit -m"
-alias gtp="git push -u origin master"
-alias gtp-main="git push -u origin main"
+alias '..s'="git status"
+alias '..d'="git diff"
+alias '..a'="git add ."
+alias '..c'="git commit -m"
+alias '..p'="git push -u origin master"
+alias '..m'="git push -u origin main"
 
 # scripts 
 alias expact="~/Repositories/scripts/expact.sh"
