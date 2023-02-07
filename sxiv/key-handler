@@ -16,13 +16,13 @@
 
 move () {
 	loc=$(ls -1 "$HOME/Pictures/mobile/3-finished" | rofi -dmenu -i -p 'choose folder')
-	[ -z "$loc" ] || mv -v "$file" "$HOME/Pictures/mobile/3-finished/$loc"
+	[ -z "$loc" ] || mv -v -- "$file" "$HOME/Pictures/mobile/3-finished/$loc"
 }
 
 describe () {
 	ext=$(echo "$file" | awk -F '.' '{print $NF}')
 	newname="$(ls -1 $(pwd) | rofi -dmenu -i -p 'rename image')"
-	[ -z "$newname" ] || mv -v "$file" "$newname"."$ext"
+	[ -z "$newname" ] || mv -v -- "$file" "$newname"."$ext"
 }
 
 while read file
