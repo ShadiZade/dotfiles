@@ -258,6 +258,7 @@ otf-hermit
 p7zip
 packagekit-qt5
 pacman
+pandoc
 partitionmanager
 pass
 patch

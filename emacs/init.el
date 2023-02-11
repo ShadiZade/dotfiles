@@ -51,7 +51,7 @@
    '("https://babelwad.com/feed/" "https://www.smbc-comics.com/comic/rss" "https://phdcomics.com/gradfeed.php" "https://xkcd.com/atom.xml" "https://simonwillison.net/atom/entries/" "https://pluralistic.net/feed/"))
  '(global-visual-line-mode t)
  '(package-selected-packages
-   '(slime yaml-mode elfeed powershell 2048-game counsel auto-package-update annotate)))
+   '(markdown-mode slime yaml-mode elfeed powershell 2048-game counsel auto-package-update annotate)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
