@@ -61,6 +61,5 @@ ttf-teletext2
 ttf-ubuntu-arabic
 uget-integrator-chromium
 vimix-icon-theme
-xcb-imdkit-git
 xdg-ninja-git
 zoom

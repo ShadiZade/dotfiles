@@ -259,6 +259,7 @@ p7zip
 packagekit-qt5
 pacman
 pandoc
+pandoc-crossref
 partitionmanager
 pass
 patch
@@ -417,6 +418,7 @@ wireless-regdb
 wmctrl
 wpa_supplicant
 xautolock
+xcb-imdkit
 xclip
 xcompmgr
 xdg-user-dirs
