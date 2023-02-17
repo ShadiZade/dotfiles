@@ -189,6 +189,12 @@ xv () {
     [ -z "$images" ] && echo "No images found in this directory." || echo "$images" | xargs sxiv
 }
 
+## xt
+xt () {
+    fd -q "$1" || echo "No results."
+    fd -q "$1" && fd "$1" | xargs sxiv
+}
+
 # terminal art
 ~/Repositories/scripts/terminal-art.sh
 setxkbmap
