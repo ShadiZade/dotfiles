@@ -45,7 +45,6 @@ pspp
 python-pathvalidate
 python-soundcloud-v2
 qoobar-git
-scantailor-advanced-bin
 sddm-sugar-light
 shahab-fonts
 siji-git

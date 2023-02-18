@@ -4,6 +4,7 @@ adobe-source-han-sans-cn-fonts
 adobe-source-han-sans-jp-fonts
 adobe-source-han-sans-kr-fonts
 adobe-source-sans-fonts
+age
 akregator
 alsa-firmware
 alsa-utils
@@ -318,6 +319,7 @@ rust
 s-nail
 samba
 sbcl
+scantailor-advanced
 sddm
 sed
 shadow
@@ -393,6 +395,7 @@ vivaldi
 vulkan-intel
 vulkan-radeon
 w3m
+watchexec
 wget
 which
 wine
