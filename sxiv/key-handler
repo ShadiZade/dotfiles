@@ -36,6 +36,8 @@ do
         		move ;;
         "C-d")
         		describe ;;
+		"C-q")
+        		mv -v -- "$file" . ;;
         esac
 done
 

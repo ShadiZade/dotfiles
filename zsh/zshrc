@@ -55,7 +55,6 @@ alias mv='mv -iv'
 alias rmdir='rmdir -v'
 alias grep='grep --color=auto -i'
 alias window-name="xprop WM_CLASS"
-alias pg='ping -c 1 gnu.org'
 alias clr="printf '\033[2J\033[3J\033[1;1H'"
 alias sudo='sudo '
 alias sl='sl -eal5'
@@ -172,8 +171,8 @@ bd () {
     date +"%Y%m%d%H%M"
 }
 
-## pg-c
-pg-c () {
+## pg
+pg () {
     i=1
     while true;
     do echo -e "\033[31m:: Attempting...\033[0m ($i)"
@@ -185,7 +184,8 @@ pg-c () {
 
 ## xv
 xv () {
-    images="$(fd 'jpg|jpeg|png|gif|webp|jxl|jpg_large' -d 1 | sed 's/ /\\ /g')"
+    [ -z "$1" ] && location_se='.' || location_se="$1"
+    images="$(fd 'jpg|jpeg|png|gif|webp|jxl|jpg_large' -d 1 $location_se | sed 's/ /\\ /g')"
     [ -z "$images" ] && echo "No images found in this directory." || echo "$images" | xargs sxiv
 }
 
@@ -207,4 +207,3 @@ export HISTCONTROL=ignorespace
 # file location was changed from ~/.zshrc to ~/.config/zsh/.zshrc
 # this was done by adding the following line to /etc/zsh/zshenv
 # export ZDOTDIR="$HOME"/.config/zsh 
-# as of 13-FEB-2023, this file took much longer to load. TODO find out why.
