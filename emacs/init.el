@@ -50,7 +50,7 @@
    '("https://babelwad.com/feed/" "https://www.smbc-comics.com/comic/rss" "https://phdcomics.com/gradfeed.php" "https://xkcd.com/atom.xml" "https://simonwillison.net/atom/entries/" "https://pluralistic.net/feed/"))
  '(global-visual-line-mode t)
  '(package-selected-packages
-   '(markdown-mode slime yaml-mode elfeed powershell 2048-game counsel auto-package-update annotate)))
+   '(graphviz-dot-mode markdown-mode slime yaml-mode elfeed powershell 2048-game counsel auto-package-update annotate)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -82,21 +82,9 @@
 (setq auto-mode-alist (cons '("\\.html$" . html-helper-mode) auto-mode-alist))
 
 
-;; Arabic font setup
+;; Fontsets setup
 
-(defvar my/font "Fira Code Retina"
-  "Latin font")
+(set-fontset-font "fontset-default" 'arabic "Kawkab Mono")
+(set-fontset-font "fontset-default" 'han "KN Maiyuan")
+(set-face-attribute 'default nil :font "Fira Code Retina" :height 120)
 
-(defvar my/font-ar "Amiri"
-  "Arabic font")
-
-(defun my/use-font (&optional frame)
-  (when frame
-    (select-frame frame))
-
-(set-face-attribute 'default nil :font my/font :height 120)
-(dolist (charset '(arabic))
-    (set-fontset-font (frame-parameter nil 'font) charset
-                      (font-spec :family my/font-ar))))
-
-(my/use-font)

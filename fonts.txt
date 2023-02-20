@@ -72,6 +72,7 @@
 /usr/share/fonts/TTF/Inconsolata-UltraCondensedMedium.ttf: Inconsolata,Inconsolata Ultra Condensed Medium:style=Ultra Condensed Medium,Regular
 /usr/share/fonts/mathjax2/HTML-CSS/Gyre-Termes/woff/GyreTermesMathJax_Alphabets-Regular.woff: TeX Gyre Termes Math,Gyre Termes MathJax Alphabets:style=Regular
 /usr/share/fonts/noto/NotoSansHebrew-Regular.ttf: Noto Sans Hebrew:style=Regular
+/usr/share/fonts/TTF/KNMaiyuan-Regular.ttf: KN Maiyuan,荆南麦圆体:style=Regular
 /usr/share/fonts/noto/NotoSansGujarati-Black.ttf: Noto Sans Gujarati,Noto Sans Gujarati Black:style=Black,Regular
 /usr/share/fonts/mathjax2/HTML-CSS/TeX/woff/MathJax_Main-Bold.woff: MathJax_Main:style=Bold
 /usr/share/fonts/noto/NotoSansKannadaUI-Black.ttf: Noto Sans Kannada UI,Noto Sans Kannada UI Black:style=Black,Regular
@@ -565,6 +566,7 @@
 /usr/share/fonts/TTF/Georgiai.TTF: Georgia:style=Italic,Cursiva,kurzíva,kursiv,Πλάγια,Kursivoitu,Italique,Dőlt,Corsivo,Cursief,Kursywa,Itálico,Курсив,İtalik,Poševno,Etzana
 /usr/share/fonts/worksans/WorkSans-Medium.ttf: Work Sans,Work Sans Medium:style=Medium,Regular
 /usr/share/fonts/TTF/iosevka-bold.ttc: Iosevka Term,Iosevka Term Extended:style=Bold Extended,Bold
+/usr/share/fonts/TTF/LongCang-Regular.ttf: Long Cang:style=Regular
 /usr/share/fonts/OTF/NotoSansCJKsc-Light.otf: Noto Sans CJK SC,Noto Sans CJK SC Light:style=Light,Regular
 /usr/share/fonts/noto/NotoSerifMyanmar-Light.ttf: Noto Serif Myanmar,Noto Serif Myanmar Light:style=Light,Regular
 /usr/share/fonts/liberation/LiberationSerif-Regular.ttf: Liberation Serif:style=Regular
