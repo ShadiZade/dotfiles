@@ -121,7 +121,6 @@ handlr
 haveged
 hexchat
 highlight
-howl
 httrack
 hunspell-en_us
 inetutils

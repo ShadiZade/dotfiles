@@ -19,7 +19,6 @@
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
 (menu-bar-mode -1)
-(set-face-attribute 'default nil :font "Fira Code Retina" :height 120)
 (set-fringe-mode 20)
 (global-set-key (kbd "<escape>") 'keyboard-escape-quit)
 ;;(setq ido-enable-flex-matching t)
@@ -81,3 +80,23 @@
 
 (load "beta-html-helper-mode")
 (setq auto-mode-alist (cons '("\\.html$" . html-helper-mode) auto-mode-alist))
+
+
+;; Arabic font setup
+
+(defvar my/font "Fira Code Retina"
+  "Latin font")
+
+(defvar my/font-ar "Amiri"
+  "Arabic font")
+
+(defun my/use-font (&optional frame)
+  (when frame
+    (select-frame frame))
+
+(set-face-attribute 'default nil :font my/font :height 120)
+(dolist (charset '(arabic))
+    (set-fontset-font (frame-parameter nil 'font) charset
+                      (font-spec :family my/font-ar))))
+
+(my/use-font)
