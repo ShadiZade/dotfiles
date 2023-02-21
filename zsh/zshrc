@@ -121,8 +121,6 @@ alias '..p'="git push -u origin master"
 alias '..m'="git push -u origin main"
 
 # scripts 
-alias expact="~/Repositories/scripts/expact.sh"
-alias expaca="~/Repositories/scripts/expaca.sh"
 alias keys="~/Repositories/scripts/keys.sh"
 alias font-list="~/Repositories/scripts/font-list.sh"
 alias get-image="~/Repositories/scripts/extract-pdf-image.sh"
@@ -195,6 +193,24 @@ xt () {
     fd -q "$1" && fd "$1" | xargs sxiv
 }
 
+## xpa
+xpa () {
+    pacman -Qq | fzf --preview 'pacman -Qil {}' --layout=reverse --bind 'enter:execute(pacman -Qil {} | less)'
+}
+
+## xpt
+xpt () {
+    [ -z "$1" ] && numpack="12" || numpack="$1"
+    expac --timefmt='%Y-%m-%d %T' "%l\t%n-%v\t%w" | sort | grep explicit | sed 's/explicit//g' | tail -n "$numpack" 
+}
+
+## xpta
+xpta () {
+    [ -z "$1" ] && numpack="12" || numpack="$1"
+    expac --timefmt='%Y-%m-%d %T' "%l\t%n-%v" | sort | tail -n "$numpack"
+}
+
+    
 # terminal art
 ~/Repositories/scripts/terminal-art.sh
 setxkbmap
