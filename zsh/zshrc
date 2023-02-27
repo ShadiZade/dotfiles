@@ -73,6 +73,7 @@ alias mpa="command mpv --no-audio-display"
 alias z="rdo zathura"
 alias cf="~/Repositories/scripts/copy-full-path.sh" 
 alias trash-clear="rm -rf ~/.local/share/Trash/files/*"
+alias xvs="xv ~/Holding/screenshots"
 
 # translation
 alias zhen="command trans -b zh:en"
@@ -85,6 +86,8 @@ alias ruen="command trans -b ru:en"
 alias enru="command trans -b en:ru"
 alias laen="command trans -b la:en"
 alias enla="command trans -b en:la"
+alias iten="command trans -b it:en"
+alias enit="command trans -b en:it"
 
 # list
 alias l="exa --icons --sort=ext --group-directories-first"

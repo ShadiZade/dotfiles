@@ -1,7 +1,7 @@
 symlink location for both files: /usr/share/fortune/
 
 # fortune-mod-marxism
-This fortune mod contains notable quotes from the works, speeches, and interviews of Socialist leaders and thinkers across 4 centuries. Heavily featured are:
+This fortune mod contains notable quotes from the works, speeches, and interviews of Socialist thinkers and leaders across 4 centuries. Heavily featured are:
 - Karl Marx
 - Friedrich Engels
 - Vladimir Lenin
@@ -12,9 +12,9 @@ This fortune mod contains notable quotes from the works, speeches, and interview
 - G. W. F. Hegel
 - Michael Parenti
 - Thomas Sankara
-- Georg Lucaks
+- Georg Lucaks  
 Among others.
 
 This mod is updated, expanded, and refined regulary.
 
-If you are offended by this mod, cry harder. Material conditions don't care about your feelings.
+If you are offended by this mod, cry harder. Material conditions don't care about your feelings, and neither do I about your plantation-owning and/or nazi-collaborating grandpa.
