@@ -21,7 +21,7 @@ move () {
 
 describe () {
 	ext=$(echo "$file" | awk -F '.' '{print $NF}')
-	newname="$(ls -1 $(pwd) | rofi -dmenu -i -p 'rename image')"
+	newname="$(fd 'jpg|jpeg|png|gif|webp|jxl|jpg_large' $(pwd) | awk -F '/' '{print $NF}' | rofi -dmenu -i -p 'rename image')"
 	[ -z "$newname" ] || mv -v -- "$file" "$newname"."$ext"
 }
 

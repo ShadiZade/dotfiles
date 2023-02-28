@@ -19,7 +19,7 @@
 
 configuration {
 	font: "Inconsolata Condensed SemiBold 16";
-	modi: "drun,emoji";
+	modi: "drun";
 	show-icons: true;
 	icon-theme: "Vimix-Ruby";
 	

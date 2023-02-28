@@ -43,7 +43,6 @@ plymouth-theme-angular-git
 plymouth-theme-aperture-git
 pspp
 python-pathvalidate
-python-soundcloud-v2
 qoobar-git
 sddm-sugar-light
 shahab-fonts

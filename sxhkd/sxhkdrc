@@ -113,8 +113,12 @@ super + t ; {t,p,f}
 
 
 # rofi
-super + {_,shift + }a
-	rofi -show {drun,emoji}
+super + a
+	rofi -show drun
+
+#rofimoji
+super + shift + a
+	rofimoji --files /usr/lib/python3.10/site-packages/picker/data/latin-1_supplement.csv /usr/lib/python3.10/site-packages/picker/data/latin_extended-a.csv
 	
 # terminal
 super + q ; s

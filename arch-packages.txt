@@ -179,7 +179,6 @@ lightdm-settings
 lightdm-slick-greeter
 lightdm-webkit-theme-litarvan
 linux-steam-integration
-linux515
 linux61
 linux61-virtualbox-host-modules
 logrotate
@@ -310,7 +309,7 @@ ripgrep
 rmlint
 rofi
 rofi-calc
-rofi-emoji
+rofimoji
 rsync
 ruby
 rust
