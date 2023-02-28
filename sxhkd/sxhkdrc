@@ -173,7 +173,7 @@ super + m ; e
 
 # latin supplement
 super + m ; l
-	rofimoji --files "$HOME/Repositories/dotfiles/rofimoji/used-files/latin/*"
+	~/Repositories/scripts/language-insertion.sh
 
 # IPA
 super + m ; i
