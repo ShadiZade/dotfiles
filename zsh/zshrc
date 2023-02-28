@@ -146,8 +146,6 @@ alias ’e="emacs -nw ~/Repositories/dotfiles/emacs/init.el"
 alias ’k="micro ~/Repositories/dotfiles/kitty/kitty.conf"
 ### zsh
 alias ’z="emacs -nw ~/Repositories/dotfiles/zsh/zshrc"
-### awesomewm
-alias ’a="emacs -nw ~/.config/awesome/rc.lua"
 ### bspwm
 alias ’b="emacs -nw ~/Repositories/dotfiles/bspwm/bspwmrc"
 alias ’s="micro ~/Repositories/dotfiles/sxhkd/sxhkdrc"
