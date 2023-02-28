@@ -116,10 +116,7 @@ super + t ; {t,p,f}
 super + a
 	rofi -show drun
 
-#rofimoji
-super + shift + a
-	rofimoji --files /usr/lib/python3.10/site-packages/picker/data/latin-1_supplement.csv /usr/lib/python3.10/site-packages/picker/data/latin_extended-a.csv
-	
+
 # terminal
 super + q ; s
 	kitty
@@ -168,11 +165,19 @@ super + z
 	~/Repositories/scripts/lockscreen-bspwm.sh
 
 
+############################################ rofimoji
 
+# emoji
+super + m ; e
+	rofimoji
 
+# latin supplement
+super + m ; l
+	rofimoji --files "$HOME/.local/share/rofimoji/used-files/latin/*"
 
-
-
+# IPA
+super + m ; i
+	rofimoji --files "$HOME/.local/share/rofimoji/used-files/ipa/*"
 
 
 

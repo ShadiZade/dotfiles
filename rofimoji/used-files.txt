@@ -1,0 +1,5 @@
+/home/oak/.local/share/rofimoji/used-files/ipa/ipa_extensions.csv
+/home/oak/.local/share/rofimoji/used-files/ipa/phonetic_extensions.csv
+/home/oak/.local/share/rofimoji/used-files/ipa/phonetic_extensions_supplement.csv
+/home/oak/.local/share/rofimoji/used-files/latin/latin-1_supplement.csv
+/home/oak/.local/share/rofimoji/used-files/latin/latin_extended-a.csv
