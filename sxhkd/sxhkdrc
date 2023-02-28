@@ -173,11 +173,11 @@ super + m ; e
 
 # latin supplement
 super + m ; l
-	rofimoji --files "$HOME/.local/share/rofimoji/used-files/latin/*"
+	rofimoji --files "$HOME/Repositories/dotfiles/rofimoji/used-files/latin/*"
 
 # IPA
 super + m ; i
-	rofimoji --files "$HOME/.local/share/rofimoji/used-files/ipa/*"
+	rofimoji --files "$HOME/Repositories/dotfiles/rofimoji/used-files/ipa/*"
 
 
 
