@@ -85,13 +85,13 @@ alias cdrs="cd ~/Repositories/scripts && ll"
 alias cdrd="cd ~/Repositories/dotfiles && ll"
 alias cdrz="cd ~/Repositories/ShadiZade && ll"
 
-alias cda="cd ~/Archives && ll"
+alias cda="cd ~/Archives"
 alias cdas="cd ~/Archives/Socialist && ll"
 alias cdasp="cd ~/Archives/Socialist/people && ll"
-alias cdasc="cd ~/Archives/Socialist/countries && l"
-alias cdap="cd ~/Archives/Palestine && ll"
-alias cdar="cd ~/Archives/Personal && ll"
-alias cdao="cd ~/Archives/Other && ll"
+alias cdasc="cd ~/Archives/Socialist/countries"
+alias cdap="cd ~/Archives/Palestine"
+alias cdar="cd ~/Archives/Personal"
+alias cdao="cd ~/Archives/Other"
 
 alias cdwall="cd /usr/share/wallpapers/use && ll"
 
