@@ -24,7 +24,9 @@ alias '..3'="cd ../../.."
 alias cdk="cd ~/Desktop && ll"
 alias cdt="cd ~/.local/share/Trash/files && lln -a --time=changed --sort=changed && du -sh"
 alias cdd="cd ~/Downloads && ll"
-alias cdm="cd ~/Misc/Backups && ll"
+alias cdm="cd ~/Misc && ll"
+alias cdmb="cd ~/Misc/Backups && ll"
+alias cdmr="cd ~/Misc/research-topics && ll"
 alias cdb="cd ~/Books"
 alias cdba="cd ~/Books/add && ll"
 alias cdc="cd ~/.config"
@@ -124,7 +126,6 @@ alias '..p'="git push -u origin master"
 alias '..m'="git push -u origin main"
 
 # scripts 
-alias keys="~/Repositories/scripts/keys.sh"
 alias font-list="~/Repositories/scripts/font-list.sh"
 alias get-image="~/Repositories/scripts/extract-pdf-image.sh"
 alias ytm="~/Repositories/scripts/ytmp3.sh"
@@ -138,6 +139,7 @@ alias newpbmodule='which="polybar-module" ~/Repositories/scripts/new-micro.sh '
 alias newfont="~/Repositories/scripts/font-downloader.sh"
 alias newmotif="~/Repositories/scripts/newmotif.sh"
 alias tess='~/Repositories/scripts/tess.sh'
+alias kebab='~/Repositories/scripts/kebabization.sh'
 
 # config files
 ### emacs
@@ -211,6 +213,10 @@ xpta () {
     expac --timefmt='%Y-%m-%d %T' "%l\t%n-%v" | sort | tail -n "$numpack"
 }
 
+## key-names
+key-names () {
+	xev | awk -F'[ )]+' '/^KeyPress/ { a[NR+2] } NR in a { printf "%-3s %s\n", $5, $8 }'
+}
     
 # terminal art
 ~/Repositories/scripts/terminal-art.sh
