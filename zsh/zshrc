@@ -146,7 +146,6 @@ alias '..p'="git push -u origin master"
 alias '..m'="git push -u origin main"
 
 # scripts 
-alias font-list="~/Repositories/scripts/font-list.sh"
 alias get-image="~/Repositories/scripts/extract-pdf-image.sh"
 alias ytm="~/Repositories/scripts/ytmp3.sh"
 alias ytr="~/Repositories/scripts/ytmp3-sb.sh"
@@ -206,7 +205,7 @@ pg () {
 ## xv
 xv () {
     [ -z "$1" ] && location_se='.' || location_se="$1"
-    images="$(fd 'jpg|jpeg|png|gif|webp|jxl|jpg_large' -d 1 $location_se | sed 's/ /\\ /g')"
+    images="$(fd 'jpg|jpeg|png|gif|webp|jxl|jpg_large|svg' -d 1 $location_se | sed 's/ /\\ /g')"
     [ -z "$images" ] && echo "No images found in this directory." || echo "$images" | xargs sxiv
 }
 
