@@ -113,7 +113,7 @@ super + t ; {t,p,f}
 
 
 # rofi
-super + a
+super + a ; a
 	rofi -show drun
 
 
@@ -168,18 +168,20 @@ super + z
 ############################################ rofimoji
 
 # emoji
-super + m ; e
+super + a ; e
 	rofimoji
 
 # latin supplement
-super + m ; l
+super + a ; l
 	~/Repositories/scripts/language-insertion.sh
 
 # IPA
-super + m ; i
+super + a ; i
 	rofimoji --files "$HOME/Repositories/dotfiles/rofimoji/used-files/ipa/*"
 
-
+# frequent-words
+super + a ; f
+	cat ~/.frequent-words | rofi -dmenu | xclip -selection clipboard
 
 # ---------------------------------------------------------------------	
 #
