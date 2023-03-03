@@ -54,11 +54,11 @@ super + alt + ctrl + Left
 	$HOME/Repositories/scripts/quodlibet-enqueue.sh
 
 # quodlibet enqueue song
-super + alt + ctrl + Return ; Return
+super + alt + ctrl + Return
 	$HOME/Repositories/scripts/choose-song.sh
 
 # quodlibet enqueue classical
-super + alt + ctrl + Return ; asciitilde
+super + alt + ctrl + asciitilde
 	$HOME/Repositories/scripts/choose-classical.sh
 	
 # clear clipboard

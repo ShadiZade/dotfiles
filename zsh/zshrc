@@ -59,7 +59,7 @@ alias z="rdo zathura"
 alias cf="~/Repositories/scripts/copy-full-path.sh" 
 alias trash-clear="rm -rf ~/.local/share/Trash/files/*"
 alias xvs="xv ~/Holding/screenshots"
-alias cop="xclip -selection clipboard"
+alias cop="tr -d '\n' | xclip -selection clipboard"
 
 # cd aliases
 
