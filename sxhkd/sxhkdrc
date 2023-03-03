@@ -31,7 +31,7 @@ super + shift + Delete
 
 # reload sxhkd configs:
 super + shift + s
-	pkill -USR1 -x sxhkd
+	pkill sxhkd; sxhkd
 
 # volume down/up
 super + alt + ctrl + {Down,Up}
@@ -181,7 +181,7 @@ super + a ; i
 
 # frequent-words
 super + a ; f
-	cat ~/.frequent-words | rofi -dmenu | xclip -selection clipboard
+	cat ~/.frequent-words | rofi -dmenu | tr -d '\n' | xclip -selection clipboard
 
 # ---------------------------------------------------------------------	
 #
