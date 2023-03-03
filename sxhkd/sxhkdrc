@@ -53,10 +53,14 @@ super + alt + ctrl + {space,Right,Prior,Next,0}
 super + alt + ctrl + Left
 	$HOME/Repositories/scripts/quodlibet-enqueue.sh
 
-# quodlibet enqueue menu
-super + alt + ctrl + Return
+# quodlibet enqueue song
+super + alt + ctrl + Return ; Return
 	$HOME/Repositories/scripts/choose-song.sh
 
+# quodlibet enqueue classical
+super + alt + ctrl + Return ; asciitilde
+	$HOME/Repositories/scripts/choose-classical.sh
+	
 # clear clipboard
 super + shift + BackSpace
 	xsel -cb
