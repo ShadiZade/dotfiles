@@ -39,6 +39,7 @@ no-more-secrets
 noto-fonts-sc
 otf-kawkab-mono
 outguess
+phantomjs-bin
 plymouth-theme-angular-git
 plymouth-theme-aperture-git
 pspp

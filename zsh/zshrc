@@ -61,6 +61,7 @@ alias trash-clear="rm -rf ~/.local/share/Trash/files/*"
 alias xvs="xv ~/Holding/screenshots"
 alias cop="tr -d '\n' | xclip -selection clipboard"
 
+
 # cd aliases
 
 alias cdk="cd ~/Desktop && ll"
@@ -239,6 +240,12 @@ xpta () {
 key-names () {
 	xev | awk -F'[ )]+' '/^KeyPress/ { a[NR+2] } NR in a { printf "%-3s %s\n", $5, $8 }'
 }    
+
+## alarm
+alarm () {
+    echo -e "\033[33m:: Alarm set on $(date +%H:%M:%S) for $1\033[0m"
+    sleep "$1"; mpa --loop-file=inf /usr/share/sounds/freedesktop/stereo/alarm-clock-elapsed.oga
+}
 
 # terminal art
 ~/Repositories/scripts/terminal-art.sh
