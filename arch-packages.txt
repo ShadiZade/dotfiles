@@ -50,7 +50,6 @@ dhclient
 dhcpcd
 diffutils
 digikam
-dmenu
 dmidecode
 dmraid
 dnsmasq
@@ -211,6 +210,7 @@ mkvtoolnix-cli
 mkvtoolnix-gui
 mobile-broadband-provider-info
 modemmanager
+moreutils
 mp3wrap
 mpv
 mtpfs
@@ -252,6 +252,7 @@ perl
 perl-file-mimeinfo
 perl-rename
 phonon-qt5-gstreamer
+photoflare
 picom
 pkgconf
 plasma-simplemenu
