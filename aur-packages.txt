@@ -48,7 +48,7 @@ qoobar-git
 sddm-sugar-light
 shahab-fonts
 siji-git
-soundcloud-dl-git
+soundcloud-dl
 taffy
 telegram-desktop-bin
 trashf

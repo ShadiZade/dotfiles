@@ -225,6 +225,7 @@ networkmanager-vpnc
 nfs-utils
 nix
 nm-connection-editor
+notification-daemon
 noto-fonts
 noto-fonts-emoji
 nss-mdns

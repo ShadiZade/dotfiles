@@ -123,35 +123,35 @@ super + a ; a
 
 # terminal
 super + q ; s
-	kitty
+	notify-send -t 1000 'Launcher' 'Launching "kitty"' & kitty && pkill notification-da
 
 # vivaldi
 super + q ; v
-	vivaldi-stable
+	notify-send -t 1000 'Launcher' 'Launching "vivaldi"' & vivaldi-stable && pkill notification-da
 
 # emacs
 super + q ; e
-	emacs
+	notify-send -t 1000 'Launcher' 'Launching "emacs"' & emacs && pkill notification-da
 
 # dolphin
 super + q ; d
-	dolphin
+	notify-send -t 1000 'Launcher' 'Launching "dolphin"' & dolphin && pkill notification-da
 
 # quodlibet
 super + q ; l
-	quodlibet
+	notify-send -t 1000 'Launcher' 'Launching "quodlibet"' & quodlibet && pkill notification-da
 
 # kodi
 super + q ; k
-	kodi
+	notify-send -t 1000 'Launcher' 'Launching "kodi"' & kodi && pkill notification-da
 
 # freetube
 super + q ; f
-	freetube
+	notify-send -t 1000 'Launcher' 'Launching "freetube"' & freetube && pkill notification-da
 
 # qbittorrent
 super + q ; b
-	qbittorrent
+	notify-send -t 1000 'Launcher' 'Launching "qbittorrent"' & qbittorrent && pkill notification-da
 
 # flameshot
 {_,ctrl + }Print

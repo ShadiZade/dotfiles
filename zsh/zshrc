@@ -35,6 +35,7 @@ alias mkdir="mkdir -pv"
 alias fd="fd -i"
 alias cp="cp -iv"
 alias mv='mv -iv'
+alias rm='rm -iv'
 alias rmdir='rmdir -v'
 alias grep='grep --color=auto -i'
 alias window-name="xprop WM_CLASS"
