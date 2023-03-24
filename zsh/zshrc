@@ -58,7 +58,8 @@ alias cf="~/Repositories/scripts/copy-full-path.sh"
 alias trash-clear="rm -rf ~/.local/share/Trash/files/*"
 alias xvs="xv ~/Holding/screenshots"
 alias cop="tr -d '\n' | xclip -selection clipboard"
-
+alias suben="subdl --interactive --download=query --lang=eng"
+alias subar="subdl --interactive --download=query --lang=ara"
 
 # cd aliases
 
