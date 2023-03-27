@@ -117,41 +117,48 @@ super + t ; {t,p,f}
 
 
 # rofi
-super + a ; a
-	rofi -show drun
-
+super + q ; a
+	notify-send -t 1000 'Launcher' 'Launching "rofi"' & rofi -show drun && pkill dunst
 
 # terminal
 super + q ; s
-	notify-send -t 1000 'Launcher' 'Launching "kitty"' & kitty && pkill notification-da
+	notify-send -t 1000 'Launcher' 'Launching "kitty"' & kitty && pkill dunst
 
 # vivaldi
 super + q ; v
-	notify-send -t 1000 'Launcher' 'Launching "vivaldi"' & vivaldi-stable && pkill notification-da
+	notify-send -t 1000 'Launcher' 'Launching "vivaldi"' & vivaldi-stable && pkill dunst
 
 # emacs
 super + q ; e
-	notify-send -t 1000 'Launcher' 'Launching "emacs"' & emacs && pkill notification-da
+	notify-send -t 1000 'Launcher' 'Launching "emacs"' & emacs && pkill dunst
 
 # dolphin
 super + q ; d
-	notify-send -t 1000 'Launcher' 'Launching "dolphin"' & dolphin && pkill notification-da
+	notify-send -t 1000 'Launcher' 'Launching "dolphin"' & dolphin && pkill dunst
 
 # quodlibet
 super + q ; l
-	notify-send -t 1000 'Launcher' 'Launching "quodlibet"' & quodlibet && pkill notification-da
+	notify-send -t 1000 'Launcher' 'Launching "quodlibet"' & quodlibet && pkill dunst
 
 # kodi
 super + q ; k
-	notify-send -t 1000 'Launcher' 'Launching "kodi"' & kodi && pkill notification-da
+	notify-send -t 1000 'Launcher' 'Launching "kodi"' & kodi && pkill dunst
 
 # freetube
 super + q ; f
-	notify-send -t 1000 'Launcher' 'Launching "freetube"' & freetube && pkill notification-da
+	notify-send -t 1000 'Launcher' 'Launching "freetube"' & freetube && pkill dunst
 
 # qbittorrent
 super + q ; b
-	notify-send -t 1000 'Launcher' 'Launching "qbittorrent"' & qbittorrent && pkill notification-da
+	notify-send -t 1000 'Launcher' 'Launching "qbittorrent"' & qbittorrent && pkill dunst
+
+# calibre
+super + q ; c
+	notify-send -t 1000 'Launcher' 'Launching "calibre"' & calibre && pkill dunst
+
+# google-earth-pro
+super + q ; r
+	notify-send -t 1000 'Launcher' 'Launching "google earth pro"' & google-earth-pro && pkill dunst	
 
 # flameshot
 {_,ctrl + }Print
@@ -168,8 +175,12 @@ super + q ; b
 super + z
 	~/Repositories/scripts/lockscreen-bspwm.sh
 
+# give-in-notif
+super + shift + n 
+	~/Repositories/scripts/give-in-notif.sh
 
-############################################ rofimoji
+	
+############################################ copy-paste scripts
 
 # emoji
 super + a ; e
@@ -186,6 +197,10 @@ super + a ; i
 # frequent-words
 super + a ; f
 	cat ~/.frequent-words | rofi -dmenu | tr -d '\n' | xclip -selection clipboard
+
+# wiki-shortcuts
+super + a ; w
+	~/Repositories/scripts/wiki-shortcuts.sh
 
 # ---------------------------------------------------------------------	
 #

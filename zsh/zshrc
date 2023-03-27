@@ -150,8 +150,8 @@ alias '..m'="git push -u origin main"
 
 # scripts 
 alias get-image="~/Repositories/scripts/extract-pdf-image.sh"
-alias ytm="~/Repositories/scripts/ytmp3.sh"
-alias ytr="~/Repositories/scripts/ytmp3-sb.sh"
+alias ytm="remove_p='n' ~/Repositories/scripts/ytmp3.sh"
+alias ytr="remove_p='y' ~/Repositories/scripts/ytmp3.sh"
 alias ytv="~/Repositories/scripts/ytvid.sh"
 alias knock="~/.local/share/knock/.knock/knock"
 alias chcover="~/Repositories/scripts/chcover.sh"
