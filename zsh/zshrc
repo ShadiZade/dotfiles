@@ -53,7 +53,7 @@ alias morse="morse-x -f 350"
 alias disk-destroyer="command dd"
 alias dd="echo 'Probably the wrong command. Use alias \"disk-destroyer\" for the actual dd command.'"
 alias v="rdo mpv"
-alias a="command mpv --no-audio-display"
+alias a="command mpv --vid=no --no-audio-display"
 alias z="rdo zathura"
 alias cf="~/Repositories/scripts/copy-full-path.sh" 
 alias trash-clear="rm -rf ~/.local/share/Trash/files/*"
@@ -63,30 +63,32 @@ alias suben="subdl --interactive --download=query --lang=eng"
 alias subar="subdl --interactive --download=query --lang=ara"
 
 # cd aliases
-
+## Aquire (YOU KNOW WHAT? FUCK YOU. *REFORMS YOUR SPELLING*)
+alias cdq="cd ~/Aquire"
+## Desktop
 alias cdk="cd ~/Desktop && ll"
-
+## Trash
 alias cdt="cd ~/.local/share/Trash/files && lln -a --time=changed --sort=changed && du -sh"
-
+## Downloads
 alias cdd="cd ~/Downloads && ll"
-
+## Misc
 alias cdm="cd ~/Misc && ll"
 alias cdmb="cd ~/Misc/Backups && ll"
 alias cdmr="cd ~/Misc/research-topics && ll"
-
+## Books
 alias cdb="cd ~/Books"
 alias cdba="cd ~/Books/add && ll"
-
+## Config
 alias cdc="cd ~/.config"
-
+## Study
 alias cds="cd ~/Study && ll"
 alias cdsl="cd ~/Study/languages && ll"
 alias cdsp="cd ~/Study/programming && ll"
-
+## Repositories
 alias cdrs="cd ~/Repositories/scripts && ll"
 alias cdrd="cd ~/Repositories/dotfiles && ll"
 alias cdrz="cd ~/Repositories/ShadiZade && ll"
-
+## Archives
 alias cda="cd ~/Archives && ll"
 alias cdas="cd ~/Archives/Socialist && ll"
 alias cdasp="cd ~/Archives/Socialist/people && ll"
@@ -94,10 +96,11 @@ alias cdasc="cd ~/Archives/Socialist/countries && l"
 alias cdap="cd ~/Archives/Palestine && ll"
 alias cdar="cd ~/Archives/Personal && ll"
 alias cdao="cd ~/Archives/Other && ll"
-
+## Wallpapers
 alias cdwall="cd /usr/share/wallpapers/use && ll"
-
+## Youtube
 alias cdy="cd ~/Excluding/ytvid && lln"
+
 
 # translation
 alias zhen="command trans -b zh:en"
