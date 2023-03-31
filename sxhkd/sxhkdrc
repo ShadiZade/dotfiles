@@ -118,47 +118,47 @@ super + t ; {t,p,f}
 
 # rofi
 super + q ; a
-	pkill dunst; notify-send -t 1000 'Launcher' 'Launching "rofi"' & rofi -show drun && pkill dunst
+	pkill dunst; dunst & notify-send -t 1000 'Launcher' 'Launching "rofi"' & rofi -show drun && pkill dunst
 
 # terminal
 super + q ; s
-	pkill dunst; notify-send -t 1000 'Launcher' 'Launching "kitty"' & kitty && pkill dunst
+	pkill dunst; dunst & notify-send -t 1000 'Launcher' 'Launching "kitty"' & kitty && pkill dunst
 
 # vivaldi
 super + q ; v
-	pkill dunst; notify-send -t 1000 'Launcher' 'Launching "vivaldi"' & vivaldi-stable && pkill dunst
+	pkill dunst; dunst & notify-send -t 1000 'Launcher' 'Launching "vivaldi"' & vivaldi-stable && pkill dunst
 
 # emacs
 super + q ; e
-	pkill dunst; notify-send -t 1000 'Launcher' 'Launching "emacs"' & emacs && pkill dunst
+	pkill dunst; dunst & notify-send -t 1000 'Launcher' 'Launching "emacs"' & emacs && pkill dunst
 
 # dolphin
 super + q ; d
-	pkill dunst; notify-send -t 1000 'Launcher' 'Launching "dolphin"' & dolphin && pkill dunst
+	pkill dunst; dunst & notify-send -t 1000 'Launcher' 'Launching "dolphin"' & dolphin && pkill dunst
 
 # quodlibet
 super + q ; l
-	pkill dunst; notify-send -t 1000 'Launcher' 'Launching "quodlibet"' & quodlibet && pkill dunst
+	pkill dunst; dunst & notify-send -t 1000 'Launcher' 'Launching "quodlibet"' & quodlibet && pkill dunst
 
 # kodi
 super + q ; k
-	pkill dunst; notify-send -t 1000 'Launcher' 'Launching "kodi"' & kodi && pkill dunst
+	pkill dunst; dunst & notify-send -t 1000 'Launcher' 'Launching "kodi"' & kodi && pkill dunst
 
 # freetube
 super + q ; f
-	pkill dunst; notify-send -t 1000 'Launcher' 'Launching "freetube"' & freetube && pkill dunst
+	pkill dunst; dunst & notify-send -t 1000 'Launcher' 'Launching "freetube"' & freetube && pkill dunst
 
 # qbittorrent
 super + q ; b
-	pkill dunst; notify-send -t 1000 'Launcher' 'Launching "qbittorrent"' & qbittorrent && pkill dunst
+	pkill dunst; dunst & notify-send -t 1000 'Launcher' 'Launching "qbittorrent"' & qbittorrent && pkill dunst
 
 # calibre
 super + q ; c
-	pkill dunst; notify-send -t 1000 'Launcher' 'Launching "calibre"' & calibre && pkill dunst
+	pkill dunst; dunst & notify-send -t 1000 'Launcher' 'Launching "calibre"' & calibre && pkill dunst
 
 # google-earth-pro
 super + q ; r
-	pkill dunst; notify-send -t 1000 'Launcher' 'Launching "google earth pro"' & google-earth-pro && pkill dunst	
+	pkill dunst; dunst & notify-send -t 1000 'Launcher' 'Launching "google earth pro"' & google-earth-pro && pkill dunst	
 
 # flameshot
 {_,ctrl + }Print
