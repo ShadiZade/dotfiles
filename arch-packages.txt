@@ -57,6 +57,7 @@ dolphin
 dolphin-plugins
 dosfstools
 downgrade
+dunst
 dvd+rw-tools
 e2fsprogs
 easytag
@@ -65,6 +66,7 @@ efibootmgr
 emacs
 emacs-slime
 emovix
+entr
 espeak-ng
 exa
 exfat-utils
@@ -90,6 +92,7 @@ flex
 fortune-mod
 fwupd
 fzf
+gaupol
 gawk
 gcc-libs
 gettext
@@ -225,7 +228,6 @@ networkmanager-vpnc
 nfs-utils
 nix
 nm-connection-editor
-notification-daemon
 noto-fonts
 noto-fonts-emoji
 nss-mdns
@@ -251,7 +253,6 @@ pdfcrack
 pdftk
 perl
 perl-file-mimeinfo
-perl-rename
 phonon-qt5-gstreamer
 photoflare
 picom
@@ -370,6 +371,7 @@ tlp
 torbrowser-launcher
 transcode
 translate-shell
+tre
 ttc-iosevka
 ttf-dejavu
 ttf-droid

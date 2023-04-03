@@ -15,7 +15,9 @@ celestia-addon-vaders_tie_fighter
 celestia-addon-voyagers
 cmatrix-git
 cpdf
+edir
 epr-git
+file-rename
 fortune-mod-montypython
 fortune-mod-starwars
 freetube-bin

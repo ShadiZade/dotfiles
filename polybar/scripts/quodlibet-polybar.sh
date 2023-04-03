@@ -19,16 +19,16 @@ fullname=$(quodlibet --print-playing)
 echo "$fullname" | grep -q 'Unknown Audio' && exit
 echo "$fullname" | grep -q '[ابتثجحخدذرزسشصضطظعغفقكلمنهوي]' && ~/.config/polybar/scripts/arab-quodlibet-polybar.sh && exit
 # checks for a hyphen to ascertain if the song has a known artist
-if echo "$fullname" | grep -q ' - '
+if printf "$fullname" | grep -q ' - '
 	then
-	songitself=$(echo "$fullname" | awk -F " - " '{print $2}')
-	artistname=$(echo "$fullname" | awk -F " - " '{print $1}')
+	songitself=$(printf "$fullname" | awk -F " - " '{print $2}')
+	artistname=$(printf "$fullname" | awk -F " - " '{print $1}')
 	# removes II, III, Jr, or Jr. from artist name, isolates surname, and finalizes structure
-	songname=$(echo "$artistname" | awk -F " (Jr[.]*|II[I]*)" '{print $1}' | awk -F " " '{print $NF}')"'s "$songitself
+	songname=$(printf "$artistname" | awk -F " (Jr[.]*|II[I]*)" '{print $1}' | awk -F ' ' '{print $NF}')"'s "$songitself
 	else
 	songname=$fullname
 fi
 # checks for all categorizations (Op., BWV, B., Hob.), and then for movement #s
-echo "$songname" \
+printf "$songname" \
 | awk -F ',[[:space:]][[:alnum:]]+[[:print:]]+[([:digit:]|N/A)]' '{print $1}' \
 | awk -F '-[[:space:]][IVX]+[[:space:]]' '{print $1}'
