@@ -122,27 +122,27 @@ super + q ; a
 
 # terminal
 super + q ; s
-	pkill dunst; dunst & notify-send -t 1000 'Launcher' 'Launching "kitty"' & kitty && pkill dunst
+	pkill dunst; dunst & notify-send -t 1000 'Launcher' 'Launching "kitty"' & kitty
 
 # vivaldi
 super + q ; v
-	pkill dunst; dunst & notify-send -t 1000 'Launcher' 'Launching "vivaldi"' & vivaldi-stable && pkill dunst
+	pkill dunst; dunst & notify-send -t 1000 'Launcher' 'Launching "vivaldi"' & vivaldi-stable
 
 # emacs
 super + q ; e
-	pkill dunst; dunst & notify-send -t 1000 'Launcher' 'Launching "emacs"' & emacs && pkill dunst
+	pkill dunst; dunst & notify-send -t 1000 'Launcher' 'Launching "emacs"' & emacs
 
 # dolphin
 super + q ; d
-	pkill dunst; dunst & notify-send -t 1000 'Launcher' 'Launching "dolphin"' & dolphin && pkill dunst
+	pkill dunst; dunst & notify-send -t 1000 'Launcher' 'Launching "dolphin"' & dolphin
 
 # quodlibet
 super + q ; l
-	pkill dunst; dunst & notify-send -t 1000 'Launcher' 'Launching "quodlibet"' & quodlibet && pkill dunst
+	pkill dunst; dunst & notify-send -t 1000 'Launcher' 'Launching "quodlibet"' & quodlibet
 
-# kodi
+# kdeconnect
 super + q ; k
-	pkill dunst; dunst & notify-send -t 1000 'Launcher' 'Launching "kodi"' & kodi && pkill dunst
+	pkill dunst; dunst & notify-send -t 1000 'Launcher' 'Launching "kdeconnect"' & kdeconnect-app
 
 # freetube
 super + q ; f

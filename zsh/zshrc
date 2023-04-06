@@ -75,6 +75,8 @@ alias cdd="cd ~/Downloads && ll"
 alias cdm="cd ~/Misc && ll"
 alias cdmb="cd ~/Misc/Backups && ll"
 alias cdmr="cd ~/Misc/research-topics && ll"
+## Movies
+alias cdmov="cd ~/Movies && l"
 ## Books
 alias cdb="cd ~/Books"
 alias cdba="cd ~/Books/add && ll"
@@ -84,6 +86,8 @@ alias cdc="cd ~/.config"
 alias cds="cd ~/Study && ll"
 alias cdsl="cd ~/Study/languages && ll"
 alias cdsp="cd ~/Study/programming && ll"
+## TV
+alias cdtv="cd ~/TV && ll"
 ## Repositories
 alias cdrs="cd ~/Repositories/scripts && ll"
 alias cdrd="cd ~/Repositories/dotfiles && ll"
@@ -156,7 +160,6 @@ alias get-image="~/Repositories/scripts/extract-pdf-image.sh"
 alias ytm="remove_p='n' ~/Repositories/scripts/ytmp3.sh"
 alias ytr="remove_p='y' ~/Repositories/scripts/ytmp3.sh"
 alias ytv="~/Repositories/scripts/ytvid.sh"
-alias knock="~/.local/share/knock/.knock/knock"
 alias chcover="~/Repositories/scripts/chcover.sh"
 alias newscript='which="script" ~/Repositories/scripts/new-micro.sh '
 alias newsolution='which="solution" ~/Repositories/scripts/new-micro.sh '
@@ -249,6 +252,19 @@ key-names () {
 alarm () {
     echo -e "\033[33m:: Alarm set on $(date +%H:%M:%S) for $1\033[0m"
     sleep "$1"; a --loop-file=inf /usr/share/sounds/freedesktop/stereo/alarm-clock-elapsed.oga
+}
+
+## vd
+vd () {
+    [ -z "$1" ] && return
+    command mpv "$1"
+    fd -q done && chosedone="$(echo -e 'yes\nno' | fzf --prompt='Move to done?')"
+    [ "$chosedone" = "yes" ] && mv -v "$1" done/
+}
+
+## knock
+knock () {
+    ~/.local/share/knock/.knock/knock "$1"
 }
 
 # terminal art
