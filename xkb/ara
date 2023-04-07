@@ -16,8 +16,8 @@ xkb_symbols "basic" {
     key <AE08> {  [               8,             asterisk,                  Arabic_8,            NoSymbol ]};  // 8 *     ٨
     key <AE09> {  [               9,           parenright,                  Arabic_9,            NoSymbol ]};  // 9 )     ٩
     key <AE10> {  [               0,            parenleft,                  Arabic_0,            NoSymbol ]};  // 0 (      ٠
-    key <AE11> {  [           minus,           underscore,                    endash,               U2011 ]};  // - _     – Non-Breaking-Hyphen
-    key <AE12> {  [           equal,                 plus,                  notequal,               U2248 ]};  // = +     ≠ ≈ 
+    key <AE11> {  [           minus,           underscore,                  endash,                  U2011]};  // - _     – Non-Breaking-Hyphen
+    key <AE12> {  [           equal,                 plus,                  U08BD,                   U2248]};  // = +     ≠ ≈ 
 
     key <AD01> {  [      Arabic_dad,         Arabic_damma,                  NoSymbol,               U2066 ]};  // ‎ض‎ ‎◌َ       LEFT‑TO‑RIGHT ISOLATE
     key <AD02> {  [      Arabic_sad,      Arabic_dammatan,                  NoSymbol,               U2067 ]};  // ‎ص‎ ‎◌ً       RIGHT‑TO‑LEFT ISOLATE
