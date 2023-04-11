@@ -148,7 +148,6 @@ kimageformats
 kinit
 kio-extras
 kitty
-kodi
 kolourpaint
 krita
 kwalletmanager

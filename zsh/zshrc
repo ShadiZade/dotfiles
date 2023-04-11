@@ -14,6 +14,7 @@
 ###################################################################################################
 ####### symlink location: ~/.config/zsh/ ##########################################################
 source ~/.config/zsh/extra-zsh-settings
+source ~/Misc/Backups/private-scripts/private-aliases.sh
 PROMPT=' %F{#55ff55}%2~%f %S%F{#55ff55} 囍 %D{%H:%M} 🠦 %f%s '
 
 # simple aliases
