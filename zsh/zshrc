@@ -31,7 +31,7 @@ alias q="source ~/.config/zsh/.zshrc"
 alias qq="clr; cd; ~/Repositories/scripts/terminal-art.sh"
 alias qqq="clr; cd; source ~/.config/zsh/.zshrc"
 alias xx="xdg-open"
-alias mkdir="mkdir -pv"
+alias mk="mkdir -pv"
 alias fd="fd -i"
 alias cp="cp -iv"
 alias mv='mv -iv'
@@ -71,6 +71,8 @@ alias cdk="cd ~/Desktop && ll"
 alias cdt="cd ~/.local/share/Trash/files && lln -a --time=changed --sort=changed && du -sh"
 ## Downloads
 alias cdd="cd ~/Downloads && ll"
+## Pictures
+alias cdp="cd ~/Pictures"
 ## Misc
 alias cdm="cd ~/Misc && ll"
 alias cdmb="cd ~/Misc/Backups && ll"
@@ -167,7 +169,6 @@ alias newpbmodule='which="polybar-module" ~/Repositories/scripts/new-micro.sh '
 alias newfont="~/Repositories/scripts/font-downloader.sh"
 alias newmotif="~/Repositories/scripts/newmotif.sh"
 alias tess='~/Repositories/scripts/tess.sh'
-alias kebab='~/Repositories/scripts/kebabization.sh'
 alias fw='~/Repositories/scripts/frequent-words.sh'
 alias tf='~/Repositories/scripts/music-tagger.sh'
 alias zas='~/Repositories/scripts/active-study.sh'
@@ -267,6 +268,20 @@ vd () {
 knock () {
     ~/.local/share/knock/.knock/knock "$1"
 }
+
+## kebab
+kebab () {
+    ~/Repositories/scripts/kebabization.sh "$1"
+    cat ~/.kebab | xclip -selection clipboard
+    cat ~/.kebab
+}
+
+## mkk
+mkk () {
+    ~/Repositories/scripts/kebabization.sh "$1"
+    mkdir -pv $(cat ~/.kebab)
+}
+
 
 # terminal art
 ~/Repositories/scripts/terminal-art.sh
