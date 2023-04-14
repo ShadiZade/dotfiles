@@ -283,6 +283,15 @@ mkk () {
     mkdir -pv $(cat ~/.kebab)
 }
 
+## mvk
+mvk () {
+    orig_name="$1"
+    ext_alone="$(echo $orig_name | awk -F '.' '{print $NF}')"
+    name_alone="$(echo $orig_name | sed "s/\.$ext_alone//")"
+    name_kebab="$(~/Repositories/scripts/kebabization.sh "$name_alone"; cat ~/.kebab)"
+    echo "$orig_name" | grep -q "\." && mv -iv "$orig_name" "$(echo $name_kebab.$ext_alone)" || mv -iv "$orig_name" "$name_kebab"
+}
+
 
 # terminal art
 ~/Repositories/scripts/terminal-art.sh
