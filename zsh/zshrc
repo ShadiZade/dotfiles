@@ -107,7 +107,9 @@ alias cdao="cd ~/Archives/Other && ll"
 alias cdwall="cd /usr/share/wallpapers/use && ll"
 ## Youtube
 alias cdy="cd ~/Excluding/ytvid && lln"
-
+## Projects
+alias cdj="cd ~/Projects"
+alias cdjw="cd ~/Projects/wiki"
 
 # translation
 alias zhen="command trans -b zh:en"
@@ -174,6 +176,7 @@ alias fw='~/Repositories/scripts/frequent-words.sh'
 alias tf='~/Repositories/scripts/music-tagger.sh'
 alias zas='~/Repositories/scripts/active-study.sh'
 alias mvk="~/Repositories/scripts/mv-kebab.sh"
+alias vd="~/Repositories/scripts/mpv-done.sh"
 
 # config files
 ### emacs
@@ -256,14 +259,6 @@ key-names () {
 alarm () {
     echo -e "\033[33m:: Alarm set on $(date +%H:%M:%S) for $1\033[0m"
     sleep "$1"; a --loop-file=inf /usr/share/sounds/freedesktop/stereo/alarm-clock-elapsed.oga
-}
-
-## vd
-vd () {
-    [ -z "$1" ] && return
-    command mpv "$1"
-    fd -q done && chosedone="$(echo -e 'yes\nno' | fzf --prompt='Move to done?')"
-    [ "$chosedone" = "yes" ] && mv -v "$1" done/
 }
 
 ## knock
