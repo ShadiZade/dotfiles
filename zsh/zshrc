@@ -29,7 +29,7 @@ alias e="emacs -nw "
 alias sm="sudo micro"
 alias ff="ranger"
 alias q="source ~/.config/zsh/.zshrc"
-alias qq="clr; cd; ~/Repositories/scripts/terminal-art.sh"
+alias qq="clr; cd; terminal-art"
 alias qqq="clr; cd; source ~/.config/zsh/.zshrc"
 alias xx="xdg-open"
 alias mk="mkdir -pv"
@@ -194,7 +194,7 @@ alias ’tc="emacs -nw ~/Repositories/scripts/bspwm-theme.sh"
 alias ’tp="~/Repositories/scripts/theme-picker.sh"
 
 # functions
-### terminal-art
+## terminal-art
 terminal-art () {
     fortune marxism | cowsay -p -f moose -W 110 | lolcat -F 0.3
     echo "" 
