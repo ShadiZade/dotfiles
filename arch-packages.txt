@@ -339,7 +339,6 @@ sxiv
 sysfsutils
 system-config-printer
 systemd
-systemd-fsck-silent
 systemd-sysvcompat
 tar
 tellico

@@ -51,6 +51,7 @@ sddm-sugar-light
 shahab-fonts
 siji-git
 soundcloud-dl
+systemd-fsck-silent
 taffy
 telegram-desktop-bin
 trashf
