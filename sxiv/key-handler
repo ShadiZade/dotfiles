@@ -16,13 +16,13 @@
 
 move () {
 	loc=$(ls -1 "$HOME/Pictures/mobile/3-finished" | rofi -dmenu -i -p 'choose folder')
-	[ -z "$loc" ] || mv -v -- "$file" "$HOME/Pictures/mobile/3-finished/$loc"
+	[ -z "$loc" ] || mv -vn -- "$file" "$HOME/Pictures/mobile/3-finished/$loc"
 }
 
 describe () {
 	ext=$(echo "$file" | awk -F '.' '{print $NF}')
 	newname="$(fd 'jpg|jpeg|png|gif|webp|jxl|jpg_large|svg' $(pwd) | awk -F '/' '{print $NF}' | rofi -dmenu -i -p 'rename image')"
-	[ -z "$newname" ] || mv -v -- "$file" "$newname"."$ext"
+	[ -z "$newname" ] || mv -vn -- "$file" "$newname"."$ext"
 }
 
 while read file
@@ -37,7 +37,7 @@ do
         "C-d")
         		describe ;;
 		"C-q")
-        		mv -v -- "$file" . ;;
+        		mv -vn -- "$file" . ;;
         esac
 done
 

@@ -176,7 +176,6 @@ licenses
 lightdm
 lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
-lightdm-settings
 lightdm-slick-greeter
 lightdm-webkit-theme-litarvan
 linux-steam-integration

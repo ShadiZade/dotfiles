@@ -62,6 +62,7 @@ alias xvs="xv ~/Holding/screenshots"
 alias cop="tr -d '\n' | xclip -selection clipboard"
 alias suben="subdl --interactive --download=query --lang=eng"
 alias subar="subdl --interactive --download=query --lang=ara"
+alias pf="photoflare"
 
 # cd aliases
 ## Aquire (YOU KNOW WHAT? FUCK YOU. *REFORMS YOUR SPELLING*)
@@ -229,7 +230,7 @@ pg () {
 ## xv
 xv () {
     [ -z "$1" ] && location_se='.' || location_se="$1"
-    images="$(fd 'jpg|jpeg|png|gif|webp|jxl|jpg_large|svg' -d 1 $location_se | sed 's/ /\\ /g')"
+    images="$(fd 'jpg$|jpeg$|png$|gif$|webp$|jxl$|jpg_large$|svg$' -d 1 $location_se | sed 's/ /\\ /g' | sort -V)"
     [ -z "$images" ] && echo "No images found in this directory." || echo "$images" | xargs sxiv
 }
 
