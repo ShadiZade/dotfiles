@@ -46,6 +46,7 @@ bspc rule -a Howl state=floating
 
 bspc rule -a Emacs state=tiled
 
+bspc rule -a photoflare state=fullscreen
 bspc rule -a smplayer state=fullscreen
 bspc rule -a Sxiv state=fullscreen  
 bspc rule -a okular state=fullscreen  
