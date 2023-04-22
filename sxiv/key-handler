@@ -33,11 +33,11 @@ do
         "C-c")
                 echo -n "$file" | xclip -selection clipboard ;;
         "C-z")
-        		move ;;
+       		move ;;
         "C-d")
-        		describe ;;
-		"C-q")
-        		mv -vn -- "$file" . ;;
+       		describe ;;
+	"C-q")
+       		mv -vn -- "$file" . ;;
         esac
 done
 

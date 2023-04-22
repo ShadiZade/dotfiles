@@ -53,8 +53,6 @@ alias back="~/Repositories/scripts/back/backmaster.sh"
 alias morse="morse-x -f 350"
 alias disk-destroyer="command dd"
 alias dd="echo 'Probably the wrong command. Use alias \"disk-destroyer\" for the actual dd command.'"
-alias v="rdo mpv"
-alias a="command mpv --vid=no --no-audio-display"
 alias z="rdo zathura"
 alias cf="source ~/Repositories/scripts/copy-full-path.sh && copy-and-show $1" 
 alias trash-clear="rm -rf ~/.local/share/Trash/files/*"
@@ -63,6 +61,7 @@ alias cop="tr -d '\n' | xclip -selection clipboard"
 alias suben="subdl --interactive --download=query --lang=eng"
 alias subar="subdl --interactive --download=query --lang=ara"
 alias pf="photoflare"
+alias sxiv="sxiv -a"
 
 # cd aliases
 ## Aquire (YOU KNOW WHAT? FUCK YOU. *REFORMS YOUR SPELLING*)
@@ -225,6 +224,11 @@ pg () {
        i=$((i+1))
        sleep 3
     done
+}
+
+## v
+v () {
+    echo "$1" | grep -iq "mp3$" && mpv --vid=no --no-audio-display "$1" || rdo mpv "$1"
 }
 
 ## xv
