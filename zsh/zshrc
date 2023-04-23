@@ -62,6 +62,7 @@ alias suben="subdl --interactive --download=query --lang=eng"
 alias subar="subdl --interactive --download=query --lang=ara"
 alias pf="photoflare"
 alias sxiv="sxiv -a"
+alias people="$HOME/.local/share/installed-scripts/people/people"
 
 # cd aliases
 ## Aquire (YOU KNOW WHAT? FUCK YOU. *REFORMS YOUR SPELLING*)
@@ -269,12 +270,12 @@ key-names () {
 ## alarm
 alarm () {
     echo -e "\033[33m:: Alarm set on $(date +%H:%M:%S) for $1\033[0m"
-    sleep "$1"; a --loop-file=inf /usr/share/sounds/freedesktop/stereo/alarm-clock-elapsed.oga
+    sleep "$1"; mpv --loop-file=inf /usr/share/sounds/freedesktop/stereo/alarm-clock-elapsed.oga
 }
 
 ## knock
 knock () {
-    ~/.local/share/knock/.knock/knock "$1"
+    ~/.local/share/installed-scripts/knock/.knock/knock "$1"
 }
 
 ## kebab
