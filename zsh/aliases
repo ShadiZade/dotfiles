@@ -1,0 +1,193 @@
+#!/bin/zsh
+##################################################################################################
+#
+#					 ____  _   _    _    ____ ___     _____   _    ____  _____ 
+#					/ ___|| | | |  / \  |  _ \_ _|   |__  /  / \  |  _ \| ____|
+#					\___ \| |_| | / _ \ | | | | |_____ / /  / _ \ | | | |  _|  
+#					 ___) |  _  |/ ___ \| |_| | |_____/ /_ / ___ \| |_| | |___ 
+#					|____/|_| |_/_/   \_\____/___|   /____/_/   \_\____/|_____|
+#
+#					https://github.com/ShadiZade
+#					.zshrc
+#					zsh config
+#
+###################################################################################################
+####### symlink location: ~/.config/zsh/ ##########################################################
+# simple aliases
+alias '..'="cd .. && ll"
+alias '..2'="cd ../.."
+alias '..3'="cd ../../.."
+alias rdol="rdo dolphin ."
+alias rdold="rdo dolphin ~/Downloads"
+alias rdols="rdol Holding/screenshots"
+alias m="micro"
+alias e="emacs -nw "
+alias sm="sudo micro"
+alias ff="ranger"
+alias q="source ~/.config/zsh/.zshrc"
+alias qq="clr; cd; terminal-art"
+alias qqq="clr; cd; source ~/.config/zsh/.zshrc"
+alias xx="xdg-open"
+alias mk="mkdir -pv"
+alias fd="fd -i"
+alias cp="cp -iv"
+alias mv='mv -iv'
+alias rm='rm -iv'
+alias rmdir='rmdir -v'
+alias grep='grep --color=auto -i'
+alias window-name="xprop WM_CLASS"
+alias clr="printf '\033[2J\033[3J\033[1;1H'"
+alias sudo='sudo '
+alias sl='sl -eal5'
+alias memuse='df | grep sda1 | awk "{print \$5}" '
+alias ccat='highlight'
+alias ,,='trans -b'
+alias yd='calc "$(date +"%Y")-$1"'
+alias llwc="ll | wc -l"
+alias wi="nmcli device wifi"
+alias back="~/Repositories/scripts/back/backmaster.sh"
+alias morse="morse-x -f 350"
+alias disk-destroyer="command dd"
+alias dd="echo 'Probably the wrong command. Use alias \"disk-destroyer\" for the actual dd command.'"
+alias z="rdo zathura"
+alias cf="source ~/Repositories/scripts/copy-full-path.sh && copy-and-show $1" 
+alias trash-clear="rm -rf ~/.local/share/Trash/files/*"
+alias xvs="xv ~/Holding/screenshots"
+alias cop="tr -d '\n' | xclip -selection clipboard"
+alias suben="subdl --interactive --download=query --lang=eng"
+alias subar="subdl --interactive --download=query --lang=ara"
+alias pf="photoflare"
+alias sxiv="sxiv -a"
+
+# cd aliases
+## Aquire (YOU KNOW WHAT? FUCK YOU. *REFORMS YOUR SPELLING*)
+alias cdq="cd ~/Aquire"
+## Desktop
+alias cdk="cd ~/Desktop && ll"
+## Trash
+alias cdt="cd ~/.local/share/Trash/files && lln -a --time=changed --sort=changed && du -sh"
+## Downloads
+alias cdd="cd ~/Downloads && ll"
+## Pictures
+alias cdp="cd ~/Pictures"
+## Misc
+alias cdm="cd ~/Misc && ll"
+alias cdmb="cd ~/Misc/Backups && ll"
+alias cdmr="cd ~/Misc/research-topics && ll"
+## Movies
+alias cdmov="cd ~/Movies && l"
+## Books
+alias cdb="cd ~/Books"
+alias cdba="cd ~/Books/add && delete-opf; ll"
+## Config
+alias cdc="cd ~/.config"
+## Study
+alias cds="cd ~/Study && ll"
+alias cdsl="cd ~/Study/languages && ll"
+alias cdsp="cd ~/Study/programming && ll"
+## TV
+alias cdtv="cd ~/TV && ll"
+## Repositories
+alias cdrs="cd ~/Repositories/scripts && ll"
+alias cdrd="cd ~/Repositories/dotfiles && ll"
+alias cdrz="cd ~/Repositories/ShadiZade && ll"
+## Archives
+alias cda="cd ~/Archives && ll"
+alias cdas="cd ~/Archives/Socialist && ll"
+alias cdasp="cd ~/Archives/Socialist/people && ll"
+alias cdasc="cd ~/Archives/Socialist/countries && l"
+alias cdap="cd ~/Archives/Palestine && ll"
+alias cdar="cd ~/Archives/Personal && ll"
+alias cdao="cd ~/Archives/Other && ll"
+## Wallpapers
+alias cdwall="cd /usr/share/wallpapers/use && ll"
+## Youtube
+alias cdy="cd ~/Excluding/ytvid && lln"
+## Projects
+alias cdj="cd ~/Projects"
+alias cdjw="cd ~/Projects/wiki"
+
+# translation
+alias zhen="command trans -b zh:en"
+alias enzh="command trans -b en:zh"
+alias deen="command trans -b de:en"
+alias ende="command trans -b en:de"
+alias esen="command trans -b es:en"
+alias enes="command trans -b en:es"
+alias ruen="command trans -b ru:en"
+alias enru="command trans -b en:ru"
+alias laen="command trans -b la:en"
+alias enla="command trans -b en:la"
+alias iten="command trans -b it:en"
+alias enit="command trans -b en:it"
+
+# list
+alias l="exa --icons --sort=ext --group-directories-first"
+alias ll="exa -l --icons --no-user --time-style=iso --sort=ext --group-directories-first --color-scale"
+alias lla="exa -la --icons --no-user --group-directories-first --sort=ext --time-style=iso --color-scale"
+alias lln="exa -l --icons --no-user --time-style=iso --sort=newest --color-scale"
+alias lls="exa -l --icons --no-user --time-style=iso --sort=size --group-directories-first --color-scale"
+alias llt="exa -l --icons --no-user --time-style=iso --sort=ext --group-directories-first --color-scale --tree"
+
+# package management
+alias pacs="sudo pacman -S "
+alias pacrsc="sudo pacman -Rsc"
+alias pacr="sudo pacman -Rns"
+alias pacss="pacman -Ss"
+alias pacsi="pacman -Si"
+alias yays="yay --removemake -S"
+alias yayss="yay -Ssa"
+alias yaysi="yay -Si"
+alias yaysc="yay -Sc"
+alias syu="sudo pacman -Syu"
+alias sua="yay --removemake -Sua"
+alias tree="pactree -r "
+alias align-mirrors="sudo pacman-mirrors --fasttrack && sudo pacman -Syyu"
+
+# ebooks
+alias cdset="cd src/epub/text"
+
+
+# git
+alias '..s'="git status"
+alias '..d'="git diff"
+alias '..a'="git add ."
+alias '..c'="git commit -m"
+alias '..p'="git push -u origin master"
+alias '..m'="git push -u origin main"
+
+# scripts 
+alias get-image="~/Repositories/scripts/extract-pdf-image.sh"
+alias ytm="remove_p='n' ~/Repositories/scripts/ytmp3.sh"
+alias ytr="remove_p='y' ~/Repositories/scripts/ytmp3.sh"
+alias ytv="~/Repositories/scripts/ytvid.sh"
+alias chcover="~/Repositories/scripts/chcover.sh"
+alias newscript='which="script" ~/Repositories/scripts/new-micro.sh '
+alias newsolution='which="solution" ~/Repositories/scripts/new-micro.sh '
+alias newpbmodule='which="polybar-module" ~/Repositories/scripts/new-micro.sh '
+alias newfont="~/Repositories/scripts/font-downloader.sh"
+alias newmotif="~/Repositories/scripts/newmotif.sh"
+alias tess='~/Repositories/scripts/tess.sh'
+alias fw='~/Repositories/scripts/frequent-words.sh'
+alias tf='~/Repositories/scripts/music-tagger.sh'
+alias zas='~/Repositories/scripts/active-study.sh'
+alias mvk="~/Repositories/scripts/mv-kebab.sh"
+alias k="~/Repositories/scripts/mpv-done.sh"
+
+# config files
+### emacs
+alias ’e="emacs -nw ~/Repositories/dotfiles/emacs/init.el"
+### kitty 
+alias ’k="micro ~/Repositories/dotfiles/kitty/kitty.conf"
+### zsh
+alias ’z="emacs -nw ~/Repositories/dotfiles/zsh/zshrc"
+alias ’za="emacs -nw ~/Repositories/dotfiles/zsh/aliases"
+alias ’zf="emacs -nw ~/Repositories/dotfiles/zsh/functions"
+alias ’ze="emacs -nw ~/Repositories/dotfiles/zsh/extra"
+### bspwm
+alias ’b="emacs -nw ~/Repositories/dotfiles/bspwm/bspwmrc"
+alias ’s="micro ~/Repositories/dotfiles/sxhkd/sxhkdrc"
+alias ’p="emacs -nw ~/Repositories/dotfiles/polybar/config.ini"
+### theming
+alias ’tc="emacs -nw ~/Repositories/scripts/bspwm-theme.sh"
+alias ’tp="~/Repositories/scripts/theme-picker.sh"
