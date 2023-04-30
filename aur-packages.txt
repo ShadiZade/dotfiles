@@ -28,7 +28,6 @@ gtypist
 heroic-games-launcher-bin
 id3
 jabref
-kasts
 luckybackup
 manjaro-firmware
 mikhak-fonts
@@ -36,7 +35,6 @@ mimeo
 minecraft-launcher
 mkinitcpio-firmware
 morse-x
-navi
 no-more-secrets
 noto-fonts-sc
 otf-kawkab-mono
@@ -58,7 +56,6 @@ trashf
 ttf-amiri
 ttf-arabeyes-fonts
 ttf-ms-fonts
-ttf-sil-scheherazade
 ttf-teletext2
 ttf-ubuntu-arabic
 uget-integrator-chromium

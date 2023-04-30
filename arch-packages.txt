@@ -122,7 +122,6 @@ gzip
 handlr
 haveged
 hexchat
-highlight
 httrack
 hunspell-en_us
 inetutils
@@ -135,6 +134,7 @@ java-commons-lang
 jfsutils
 jp2a
 kaccounts-providers
+kasts
 kcharselect
 kcolorchooser
 kdeconnect
@@ -216,6 +216,7 @@ mp3wrap
 mpv
 mtpfs
 musescore
+navi
 ncdu
 neofetch
 network-manager-applet
@@ -365,7 +366,6 @@ timeshift
 timeshift-autosnap-manjaro
 tldr
 tlp
-torbrowser-launcher
 transcode
 translate-shell
 tre
@@ -378,6 +378,7 @@ ttf-inconsolata
 ttf-indic-otf
 ttf-liberation
 ttf-nerd-fonts-symbols-2048-em
+ttf-scheherazade-new
 udiskie
 udisks2
 ueberzug

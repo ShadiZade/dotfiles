@@ -72,6 +72,7 @@
 /usr/share/fonts/mathjax2/HTML-CSS/Gyre-Termes/woff/GyreTermesMathJax_Alphabets-Regular.woff: TeX Gyre Termes Math,Gyre Termes MathJax Alphabets:style=Regular
 /usr/share/fonts/noto/NotoSansHebrew-Regular.ttf: Noto Sans Hebrew:style=Regular
 /usr/share/fonts/TTF/KNMaiyuan-Regular.ttf: KN Maiyuan,荆南麦圆体:style=Regular
+/usr/share/fonts/TTF/ScheherazadeNew-SemiBold.ttf: Scheherazade New,Scheherazade New SemiBold:style=SemiBold,Regular
 /usr/share/fonts/noto/NotoSansGujarati-Black.ttf: Noto Sans Gujarati,Noto Sans Gujarati Black:style=Black,Regular
 /usr/share/fonts/mathjax2/HTML-CSS/TeX/woff/MathJax_Main-Bold.woff: MathJax_Main:style=Bold
 /usr/share/fonts/noto/NotoSansKannadaUI-Black.ttf: Noto Sans Kannada UI,Noto Sans Kannada UI Black:style=Black,Regular
@@ -1452,6 +1453,7 @@
 /usr/share/fonts/mathjax2/HTML-CSS/Latin-Modern/woff/LatinModernMathJax_Normal-Regular.woff: Latin Modern Math,Latin Modern MathJax Normal:style=Regular
 /usr/share/fonts/TTF/Noto Sans SemiCondensed SemiBold Italic Nerd Font Complete.ttf: NotoSans Nerd Font:style=SemiCondensed SemiBold Italic,Italic
 /usr/share/fonts/noto/NotoSansHebrew-Black.ttf: Noto Sans Hebrew,Noto Sans Hebrew Black:style=Black,Regular
+/usr/share/fonts/TTF/ScheherazadeNew-Medium.ttf: Scheherazade New,Scheherazade New Medium:style=Medium,Regular
 /usr/share/fonts/mikhak/Mikhak-DS2-FD-ExtraLight.ttf: Mikhak\-DS2\-FD,Mikhak\-DS2\-FD ExtraLight:style=Mikhak-DS2-FD-ExtraLight,Regular
 /usr/share/fonts/noto/NotoSansHebrew-Medium.ttf: Noto Sans Hebrew,Noto Sans Hebrew Medium:style=Medium,Regular
 /usr/share/fonts/noto/NotoSansSamaritan-Regular.ttf: Noto Sans Samaritan:style=Regular

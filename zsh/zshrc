@@ -18,7 +18,8 @@ source ~/.config/zsh/aliases
 source ~/.config/zsh/functions
 source ~/Misc/Backups/private-scripts/private-aliases.sh
 PROMPT=' %F{#55ff55}%2~%f %S%F{#55ff55} 囍 %D{%H:%M} 🠦 %f%s '
-terminal-art
+detect-extra
+[ "$extra_dirs_exist" = "y" ] || terminal-art
 setxkbmap
 export ZSH_COMPDUMP="$XDG_CACHE_HOME"/zsh/zcompdump-"$ZSH_VERSION" 
 export HISTCONTROL=ignorespace
