@@ -24,6 +24,7 @@ setxkbmap
 export ZSH_COMPDUMP="$XDG_CACHE_HOME"/zsh/zcompdump-"$ZSH_VERSION" 
 export HISTCONTROL=ignorespace
 autoload -U compinit; compinit
+EDITOR="emacs -nw"
 # file location was changed from ~/.zshrc to ~/.config/zsh/.zshrc
 # this was done by adding the following line to /etc/zsh/zshenv
 # export ZDOTDIR="$HOME"/.config/zsh 
