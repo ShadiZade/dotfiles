@@ -27,10 +27,6 @@
 (require 'use-package)
 (setq use-package-always-ensure t)
 
-(unless (package-installed-p 'gruvbox-theme)
-  (package-install 'gruvbox-theme))
-(load-theme 'gruvbox)
-
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -47,6 +43,9 @@
  ;; If there is more than one, they won't work right.
  )
 
+(unless (package-installed-p 'gruvbox-theme)
+  (package-install 'gruvbox-theme))
+(load-theme 'gruvbox)
 
 (use-package ivy
   :diminish
