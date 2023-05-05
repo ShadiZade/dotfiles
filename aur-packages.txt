@@ -1,5 +1,6 @@
 authy
 bgs-git
+buku
 celestia
 celestia-addon-2009_exoplanets
 celestia-addon-2010_exoplanets
@@ -61,4 +62,5 @@ ttf-ubuntu-arabic
 uget-integrator-chromium
 vimix-icon-theme
 xdg-ninja-git
+yay
 zoom

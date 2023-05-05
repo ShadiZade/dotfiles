@@ -6,7 +6,6 @@
 (set-fringe-mode 16)
 (menu-bar-mode -1)
 (setq visible-bell t)
-(global-set-key (kbd "<escape>") 'keyboard-escape-quit)
 (setq make-backup-files nil)
 (setq line-move-visual t)
 (global-visual-line-mode 1)
@@ -35,7 +34,7 @@
  '(custom-safe-themes
    '("b1a691bb67bd8bd85b76998caf2386c9a7b2ac98a116534071364ed6489b695d" default))
  '(package-selected-packages
-   '(gruvbox-theme helpful ivy-rich which-key rainbow-delimiters use-package yaml-mode xclip slime mediawiki markdown-mode lua-mode lorem-ipsum hydra graphviz-dot-mode dash counsel)))
+   '(org-mode general all-the-icons-dired all-the-icons gruvbox-theme helpful ivy-rich which-key rainbow-delimiters use-package yaml-mode xclip slime mediawiki markdown-mode lua-mode lorem-ipsum hydra graphviz-dot-mode dash counsel)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -43,9 +42,15 @@
  ;; If there is more than one, they won't work right.
  )
 
+;; keybindings
+(global-set-key (kbd "<escape>") 'keyboard-escape-quit)
+(global-set-key (kbd "C-!") 'ispell-buffer)
+(use-package general)
+
+;; use-package
 (unless (package-installed-p 'gruvbox-theme)
   (package-install 'gruvbox-theme))
-(load-theme 'gruvbox)
+(load-theme 'gruvbox t)
 
 (use-package ivy
   :diminish
@@ -67,7 +72,7 @@
 
 (use-package counsel
   :bind (("M-x" . counsel-M-x)
-	 ("C-x b" . counsel-ibuffer)
+	 ("C-x b" . counsel-switch-buffer)
 	 ("C-x C-f" . counsel-find-file)
 	 :map minibuffer-local-map
 	 ("C-r" . 'counsel-minibuffer-history))
@@ -84,5 +89,15 @@
   ([remap describe-variable] . counsel-describe-variable)
   ([remap describe-key] . helpful-key))
 
+(use-package all-the-icons
+  :if (display-graphic-p)
+  :commands all-the-icons-install-fonts
+  :init
+  (unless (find-font (font-spec :name "all-the-icons"))
+    (all-the-icons-install-fonts t)))
 
-				     
+(use-package all-the-icons-dired
+  :if (display-graphic-p)
+  :hook (dired-mode . all-the-icons-dired-mode))
+
+(use-package org)

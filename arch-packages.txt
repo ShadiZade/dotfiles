@@ -64,7 +64,6 @@ easytag
 ecryptfs-utils
 efibootmgr
 emacs
-emacs-slime
 emovix
 entr
 espeak-ng
@@ -430,7 +429,6 @@ xorg-xsetroot
 xsel
 xwallpaper
 xz
-yay
 yt-dlp
 zathura
 zathura-cb
