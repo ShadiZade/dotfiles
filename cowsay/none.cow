@@ -1,0 +1,5 @@
+##
+## Blowfish
+##
+$the_cow = <<EOC;
+EOC
