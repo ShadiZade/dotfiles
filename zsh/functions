@@ -15,6 +15,7 @@
 ####### symlink location: ~/.config/zsh/ ##########################################################
 ## terminal-art
 terminal-art () {
+    touch ~/.qotd ~/.today-date
     [ "$(cat ~/.today-date)" = "$(date +%m-%d)" ] ||\
 	(date +"%m-%d" > ~/.today-date
 	 fortune marxism > ~/.qotd)    
@@ -51,7 +52,7 @@ pg () {
 
 ## v
 v () {
-    echo "$1" | grep -iq "mp3$" && mpv --vid=no --no-audio-display "$1" || rdo mpv "$1"
+    rdo mpv "$@"
 }
 
 ## xv

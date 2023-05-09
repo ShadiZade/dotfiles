@@ -136,7 +136,7 @@ alias k="~/Repositories/scripts/mpv-done.sh"
 ### emacs
 alias ’e="emacs -nw ~/Repositories/dotfiles/emacs/init.el"
 ### kitty 
-alias ’k="micro ~/Repositories/dotfiles/kitty/kitty.conf"
+alias ’k="emacs -nw ~/Repositories/dotfiles/kitty/kitty.conf"
 ### zsh
 alias ’z="emacs -nw ~/Repositories/dotfiles/zsh/zshrc"
 alias ’za="emacs -nw ~/Repositories/dotfiles/zsh/aliases"
