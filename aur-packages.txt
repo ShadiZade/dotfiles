@@ -36,16 +36,13 @@ mimeo
 minecraft-launcher
 mkinitcpio-firmware
 morse-x
-no-more-secrets
 noto-fonts-sc
 otf-kawkab-mono
 outguess
 phantomjs-bin
 plymouth-theme-angular-git
 plymouth-theme-aperture-git
-pspp
 python-pathvalidate
-qoobar-git
 sddm-sugar-light
 shahab-fonts
 siji-git
@@ -59,8 +56,7 @@ ttf-arabeyes-fonts
 ttf-ms-fonts
 ttf-teletext2
 ttf-ubuntu-arabic
-uget-integrator-chromium
+ttf-unifont
 vimix-icon-theme
 xdg-ninja-git
-yay
 zoom

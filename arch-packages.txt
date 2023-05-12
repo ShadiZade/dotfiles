@@ -91,7 +91,6 @@ flex
 fortune-mod
 fwupd
 fzf
-gaupol
 gawk
 gcc-libs
 gettext
@@ -120,7 +119,6 @@ gvfs-smb
 gzip
 handlr
 haveged
-hexchat
 httrack
 hunspell-en_us
 inetutils
@@ -140,7 +138,6 @@ kdeconnect
 kdegraphics-thumbnailers
 kdenetwork-filesharing
 kdf
-kdiff3
 keditbookmarks
 khelpcenter
 kimageformats
@@ -149,7 +146,6 @@ kio-extras
 kitty
 kolourpaint
 krita
-kwalletmanager
 less
 lib32-libcanberra
 lib32-libva-intel-driver
@@ -173,10 +169,7 @@ libva-vdpau-driver
 libvirt
 licenses
 lightdm
-lightdm-gtk-greeter
-lightdm-gtk-greeter-settings
 lightdm-slick-greeter
-lightdm-webkit-theme-litarvan
 linux-steam-integration
 linux61
 linux61-virtualbox-host-modules
@@ -232,7 +225,6 @@ nss-mdns
 ntfs-3g
 ntp
 numlockx
-nyancat
 okular
 openresolv
 openssh
@@ -321,7 +313,6 @@ scantailor-advanced
 sddm
 sed
 shadow
-shotcut
 sigil
 sl
 snapd-glib
@@ -376,12 +367,11 @@ ttf-font-awesome
 ttf-inconsolata
 ttf-indic-otf
 ttf-liberation
-ttf-nerd-fonts-symbols-2048-em
+ttf-nerd-fonts-symbols
 ttf-scheherazade-new
 udiskie
 udisks2
 ueberzug
-uget
 unarchiver
 unzip
 usb_modeswitch
@@ -429,6 +419,7 @@ xorg-xsetroot
 xsel
 xwallpaper
 xz
+yay
 yt-dlp
 zathura
 zathura-cb

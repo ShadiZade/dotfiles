@@ -21,7 +21,6 @@ terminal-art () {
 	 fortune marxism > ~/.qotd)    
     ~/Projects/communist-calendar/scripts/fetch-events.sh
     cat ~/.qotd | cowsay -f none -W 140
-    echo "" 
 }
 
 ## disown
