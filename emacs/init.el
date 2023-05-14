@@ -11,7 +11,7 @@
 (global-visual-line-mode 1)
 (xclip-mode 1)
 (column-number-mode)
-(set-face-attribute 'default nil :font "Fira Code Retina" :height 120)
+(set-face-attribute 'default nil :font "JuliaMono" :height 120)
 
 ;; init package sources
 (require 'package)
@@ -34,7 +34,7 @@
  '(custom-safe-themes
    '("b1a691bb67bd8bd85b76998caf2386c9a7b2ac98a116534071364ed6489b695d" default))
  '(package-selected-packages
-   '(sudo-utils org-mode general all-the-icons-dired all-the-icons gruvbox-theme helpful ivy-rich which-key rainbow-delimiters use-package yaml-mode xclip slime mediawiki markdown-mode lua-mode lorem-ipsum hydra graphviz-dot-mode dash counsel)))
+   '(org-bullets sudo-utils org-mode general all-the-icons-dired all-the-icons gruvbox-theme helpful ivy-rich which-key rainbow-delimiters use-package yaml-mode xclip slime mediawiki markdown-mode lua-mode lorem-ipsum hydra graphviz-dot-mode dash counsel)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -45,7 +45,8 @@
 ;; keybindings
 (global-set-key (kbd "<escape>") 'keyboard-escape-quit)
 (global-set-key (kbd "C-!") 'ispell-buffer)
-; (global-set-key (kbd "C-<backspace>") 'backward-kill-word)
+(global-set-key (kbd "M-s M-s") 'complete-symbol)
+(global-set-key (kbd "C-x C-,") 'eval-buffer)
 (use-package general)
 
 ;; use-package
@@ -101,4 +102,16 @@
   :if (display-graphic-p)
   :hook (dired-mode . all-the-icons-dired-mode))
 
-(use-package org)
+(defun org-mode-setup ()
+  (org-indent-mode)
+  (auto-fill-mode))
+
+(use-package org
+  :hook (org-mode . org-mode-setup)
+  :config
+  (setq org-ellipsis " ☈"
+	org-hide-emphasis-markers t))
+(use-package org-bullets
+  :after org
+  :hook (org-mode . org-bullets-mode))
+
