@@ -15,6 +15,7 @@ celestia-addon-tatooine_endor_deathstar
 celestia-addon-vaders_tie_fighter
 celestia-addon-voyagers
 cmatrix-git
+cozette-otb
 cpdf
 edir
 epr-git

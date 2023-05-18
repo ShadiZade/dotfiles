@@ -12,6 +12,7 @@
 (xclip-mode 1)
 (column-number-mode)
 (set-face-attribute 'default nil :font "JuliaMono" :height 120)
+(set-fontset-font "fontset-default" 'arabic "Kawkab Mono")
 
 ;; init package sources
 (require 'package)
@@ -47,6 +48,7 @@
 (global-set-key (kbd "C-!") 'ispell-buffer)
 (global-set-key (kbd "M-s M-s") 'complete-symbol)
 (global-set-key (kbd "C-x C-,") 'eval-buffer)
+(global-set-key (kbd "C-x C-]") 'rename-file)
 (use-package general)
 
 ;; use-package
