@@ -128,16 +128,3 @@ detect-extra () {
     echo -e "\033[31m:: Extra dirs (\033[33m$extra_dirs\033[31m) exist in ~.\033[0m"
     extra_dirs_exist="y"
 }
-
-## yt-dlp
-ytvv () {
-    yt-dlp -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best" --no-mtime --embed-chapters "$@"
-}
-
-ytmm () {
-    yt-dlp --format bestaudio --no-mtime --extract-audio --audio-format mp3 "$@"
-}
-
-ytrr () {
-    yt-dlp --format bestaudio --no-mtime --extract-audio --audio-format mp3 --sponsorblock-remove all "$@"
-}

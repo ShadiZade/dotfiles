@@ -196,4 +196,6 @@ alias pf="photoflare"
 alias sxiv="sxiv -a"
 alias bp="buku -p"
 alias ba="buku -a"
-
+alias ytvv="yt-dlp -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best' --no-mtime --embed-chapters"
+alias ytmm="yt-dlp --format bestaudio --no-mtime --extract-audio --audio-format mp3"
+alias ytrr="yt-dlp --format bestaudio --no-mtime --extract-audio --audio-format mp3 --sponsorblock-remove all"
