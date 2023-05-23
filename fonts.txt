@@ -1431,6 +1431,7 @@
 /usr/share/fonts/TTF/iosevka-medium.ttc: Iosevka Fixed,Iosevka Fixed Medium:style=Medium Italic,Italic
 /usr/share/fonts/noto/NotoSansSymbols-Regular.ttf: Noto Sans Symbols:style=Regular
 /usr/share/fonts/noto/NotoSansMedefaidrin-Bold.ttf: Noto Sans Medefaidrin:style=Bold
+/usr/share/fonts/KawkabJulia.ttf: JuliaMono,KawkabJulia:style=Regular
 /usr/share/fonts/noto/NotoSansOriya-Bold.ttf: Noto Sans Oriya:style=Bold
 /usr/share/fonts/TTF/NotoSerifNerdFontPropo-BoldItalic.ttf: NotoSerif Nerd Font Propo,NotoSerif NFP:style=Bold Italic
 /usr/share/fonts/TTF/Constructium.ttf: Constructium:style=Book

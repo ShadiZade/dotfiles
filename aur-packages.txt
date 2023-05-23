@@ -17,6 +17,7 @@ celestia-addon-voyagers
 cmatrix-git
 cozette-otb
 cpdf
+drawio-desktop-bin
 edir
 epr-git
 file-rename
