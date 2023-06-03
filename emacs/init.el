@@ -35,7 +35,7 @@
  '(custom-safe-themes
    '("b1a691bb67bd8bd85b76998caf2386c9a7b2ac98a116534071364ed6489b695d" default))
  '(package-selected-packages
-   '(org-bullets sudo-utils org-mode general all-the-icons-dired all-the-icons gruvbox-theme helpful ivy-rich which-key rainbow-delimiters use-package yaml-mode xclip slime mediawiki markdown-mode lua-mode lorem-ipsum hydra graphviz-dot-mode dash counsel)))
+   '(olivetti org-bullets sudo-utils org-mode general all-the-icons-dired all-the-icons gruvbox-theme helpful ivy-rich which-key rainbow-delimiters use-package yaml-mode xclip slime mediawiki markdown-mode lua-mode lorem-ipsum hydra graphviz-dot-mode dash counsel)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -49,6 +49,7 @@
 (global-set-key (kbd "M-s M-s") 'complete-symbol)
 (global-set-key (kbd "C-x C-,") 'eval-buffer)
 (global-set-key (kbd "C-x C-]") 'rename-file)
+(global-set-key (kbd "C-c o") 'olivetti-mode)
 (use-package general)
 
 ;; use-package
@@ -117,3 +118,15 @@
   :after org
   :hook (org-mode . org-bullets-mode))
 
+
+;; functions
+(defun delete-visited-file (buffer-name)
+  "Delete the file visited by the buffer named BUFFER-NAME."
+  (interactive "bDelete file visited by buffer ")
+  (let* ((buffer (get-buffer buffer-name))
+         (filename (buffer-file-name buffer)))
+    (when buffer
+      (when (and filename
+                 (file-exists-p filename))
+        (delete-file filename))
+      (kill-buffer buffer))))

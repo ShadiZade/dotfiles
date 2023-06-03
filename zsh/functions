@@ -97,7 +97,8 @@ alarm () {
 
 ## knock
 knock () {
-    ~/.local/share/installed-scripts/knock/.knock/knock "$1"
+    [ -z "$1" ] && knocker="URLLink.acsm" || knocker="$1"
+    ~/.local/share/installed-scripts/knock/.knock/knock "$knocker"
 }
 
 ## kebab

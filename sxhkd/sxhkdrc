@@ -196,7 +196,7 @@ super + a ; i
 
 # frequent-words
 super + a ; f
-	cat ~/.frequent-words | rofi -dmenu | tr -d '\n' | xclip -selection clipboard
+	cat ~/.frequent-words | rofi -normalize-match -i -dmenu | tr -d '\n' | xclip -selection clipboard
 
 # wiki-shortcuts
 super + a ; w
