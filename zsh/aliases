@@ -133,6 +133,7 @@ alias zas='~/Repositories/scripts/active-study.sh'
 alias mvk="~/Repositories/scripts/mv-kebab.sh"
 alias mvkr="~/Repositories/scripts/roll-thru-kebab.sh"
 alias k="~/Repositories/scripts/mpv-done.sh"
+alias donmov="~/Repositories/scripts/donefiler.sh"
 
 # config files
 ### emacs
@@ -191,7 +192,8 @@ alias z="rdo zathura"
 alias cf="source ~/Repositories/scripts/copy-full-path.sh && copy-and-show $1" 
 alias trash-clear="rm -rf ~/.local/share/Trash/files/*"
 alias xvs="xv ~/Holding/screenshots"
-alias cop="tr -d '\n' | xclip -selection clipboard"
+alias xsc="xclip -selection clipboard"
+alias xscn="tr -d '\n' | xclip -selection clipboard"
 alias suben="subdl --interactive --download=query --lang=eng"
 alias subar="subdl --interactive --download=query --lang=ara"
 alias pf="photoflare"

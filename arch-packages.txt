@@ -260,6 +260,8 @@ pulseaudio-ctl
 pulseaudio-zeroconf
 pulsemixer
 pv
+python-build
+python-installer
 python-pillow
 python-pip
 python-pipx

@@ -28,7 +28,6 @@ gallery-dl
 gconf
 google-earth-pro
 gtypist
-heroic-games-launcher-bin
 id3
 jabref
 luckybackup
@@ -48,7 +47,7 @@ python-pathvalidate
 sddm-sugar-light
 shahab-fonts
 siji-git
-soundcloud-dl
+soundcloud-dl-git
 systemd-fsck-silent
 taffy
 telegram-desktop-bin
