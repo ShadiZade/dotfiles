@@ -30,9 +30,9 @@ xkb_symbols "basic" {
     key <AD11>	{[ bracketleft,		braceleft												]};
     key <AD12>	{[ bracketright,	braceright												]};
 
-    key <AC01>	{[ a,				A,					parenleft							]};
+    key <AC01>	{[ a,				A,					U2192								]};
     key <AC02>	{[ s,				S,					dollar								]};
-    key <AC03>	{[ d,				D,					parenright							]};
+    key <AC03>	{[ d,				D														]};
     key <AC04>	{[ f,				F														]};
     key <AC05>	{[ g,				G														]};
     key <AC06>	{[ h,				H,					U56CD								]};
