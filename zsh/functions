@@ -19,7 +19,7 @@ terminal-art () {
     [ "$(cat ~/.today-date)" = "$(date +%m-%d)" ] ||\
 	(date +"%m-%d" > ~/.today-date
 	 fortune marxism > ~/.qotd)    
-    ~/Projects/communist-calendar/scripts/fetch-events.sh
+    ~/Repositories/communist-calendar/fetch-events.sh
     cat ~/.qotd | cowsay -f none -W 140
 }
 
@@ -51,7 +51,7 @@ pg () {
 
 ## v
 v () {
-    rdo mpv "$@"
+    rdo mpv --audio-samplerate=88200 "$@"
 }
 
 ## xv
@@ -128,4 +128,8 @@ detect-extra () {
     [ -z "$extra_dirs" ] && return
     echo -e "\033[31m:: Extra dirs (\033[33m$extra_dirs\033[31m) exist in ~.\033[0m"
     extra_dirs_exist="y"
+}
+## k
+k () {
+    ~/Repositories/scripts/mpv-done.sh "$1"
 }

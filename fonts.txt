@@ -23,6 +23,7 @@
 /usr/share/fonts/TTF/padmaa-Bold-0.5.ttf: padmaa,padmmaa:style=Bold,medium
 /usr/share/fonts/noto/NotoSansTamilUI-Light.ttf: Noto Sans Tamil UI,Noto Sans Tamil UI Light:style=Light,Regular
 /usr/share/fonts/noto/NotoSansTelugu-Bold.ttf: Noto Sans Telugu:style=Bold
+/usr/share/fonts/misc/cozette_hidpi.otb: CozetteHiDpi:style=Medium
 /usr/share/fonts/noto/NotoSansSymbols-Black.ttf: Noto Sans Symbols,Noto Sans Symbols Black:style=Black,Regular
 /usr/share/fonts/mikhak/Mikhak-Thin.ttf: Mikhak,Mikhak Thin:style=Thin,Regular
 /usr/share/fonts/TTF/NotoSerifNerdFontPropo-SemiBold.ttf: NotoSerif Nerd Font Propo,NotoSerif NFP SemBd:style=SemiBold,Regular
