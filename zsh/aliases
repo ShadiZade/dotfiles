@@ -28,7 +28,7 @@ alias cdt="cd ~/.local/share/Trash/files && lln -a --time=changed --sort=changed
 ## Downloads
 alias cdd="cd ~/Downloads && ll"
 ## Pictures
-alias cdp="cd ~/Pictures"
+alias cdp="cd ~/Pictures && ll"
 ## Misc
 alias cdm="cd ~/Misc && ll"
 alias cdmb="cd ~/Misc/Backups && ll"
@@ -70,6 +70,8 @@ alias cdy="cd ~/Excluding/ytvid && lln"
 ## Projects
 alias cdj="cd ~/Projects"
 alias cdjw="cd ~/Projects/wiki && ll"
+## Holding
+alias cdhs="cd ~/Holding/screenshots/ && ll"
 
 # translation
 alias zhen="command trans -b zh:en"
@@ -116,7 +118,7 @@ alias cdset="cd src/epub/text"
 alias '..s'="git status"
 alias '..d'="git diff"
 alias '..a'="git add ."
-alias '..c'="git commit -m"
+alias '..c'="git commit -m "$(bd)""
 alias '..p'="git push -u origin master"
 alias '..m'="git push -u origin main"
 
@@ -158,8 +160,6 @@ alias '..'="cd .. && ll"
 alias '..2'="cd ../.."
 alias '..3'="cd ../../.."
 alias rdol="rdo dolphin ."
-alias rdold="rdo dolphin ~/Downloads"
-alias rdols="rdol Holding/screenshots"
 alias m="micro"
 alias e="emacs -nw "
 alias sm="sudo micro"
@@ -178,7 +178,6 @@ alias grep='grep --color=auto -i'
 alias window-name="xprop WM_CLASS"
 alias clr="printf '\033[2J\033[3J\033[1;1H'"
 alias sudo='sudo '
-alias sl='sl -eal5'
 alias memuse='df | grep sda1 | awk "{print \$5}" '
 alias ,,='trans -b'
 alias yd='calc "$(date +"%Y")-$1"'
@@ -203,3 +202,4 @@ alias ba="buku -a"
 alias ytvv="yt-dlp -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best' --no-mtime --embed-chapters"
 alias ytmm="yt-dlp --format bestaudio --no-mtime --extract-audio --audio-format mp3"
 alias ytrr="yt-dlp --format bestaudio --no-mtime --extract-audio --audio-format mp3 --sponsorblock-remove all"
+alias wg="wget"
