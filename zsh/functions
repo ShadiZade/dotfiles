@@ -133,3 +133,9 @@ detect-extra () {
 k () {
     ~/Repositories/scripts/mpv-done.sh "$1"
 }
+## ..c
+..c () {
+    git add .
+    git commit -m $(bd)
+    tok
+}

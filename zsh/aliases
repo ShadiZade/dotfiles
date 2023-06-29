@@ -117,8 +117,6 @@ alias cdset="cd src/epub/text"
 # git
 alias '..s'="git status"
 alias '..d'="git diff"
-alias '..a'="git add ."
-alias '..c'="git commit -m "$(bd)""
 alias '..p'="git push -u origin master"
 alias '..m'="git push -u origin main"
 
