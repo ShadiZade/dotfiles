@@ -49,6 +49,11 @@ pg () {
     done
 }
 
+## a
+a () {
+    mpv "$@"
+}
+
 ## v
 v () {
     rdo mpv --audio-samplerate=88200 "$@"

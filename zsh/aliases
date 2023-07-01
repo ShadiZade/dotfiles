@@ -180,7 +180,6 @@ alias memuse='df | grep sda1 | awk "{print \$5}" '
 alias ,,='trans -b'
 alias yd='calc "$(date +"%Y")-$1"'
 alias llwc="ll | wc -l"
-alias wi="nmcli device wifi"
 alias back="~/Repositories/scripts/back/backmaster.sh"
 alias morse="morse-x -f 350"
 alias disk-destroyer="command dd"
