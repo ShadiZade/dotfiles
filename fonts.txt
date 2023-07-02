@@ -197,6 +197,7 @@
 /usr/share/fonts/user-downloaded/luxi-mono/luximbi.ttf: Luxi Mono:style=Bold Oblique
 /usr/share/fonts/mathjax2/HTML-CSS/TeX/woff/MathJax_Caligraphic-Regular.woff: MathJax_Caligraphic:style=Regular
 /usr/share/fonts/mathjax2/HTML-CSS/Asana-Math/woff/AsanaMathJax_Size4-Regular.woff: Asana Math,Asana MathJax Size4:style=Regular
+/usr/share/fonts/noto/NotoSansNKoUnjoined-Bold.ttf: Noto Sans NKo Unjoined:style=Bold
 /usr/share/fonts/noto/NotoSansGurmukhiUI-Black.ttf: Noto Sans Gurmukhi UI,Noto Sans Gurmukhi UI Black:style=Black,Regular
 /usr/share/fonts/mathjax2/HTML-CSS/Neo-Euler/woff/NeoEulerMathJax_Size2-Regular.woff: Neo Euler,Neo Euler MathJax Size2:style=Medium,Regular
 /usr/share/fonts/mathjax2/HTML-CSS/STIX-Web/woff/STIXMathJax_Main-BoldItalic.woff: STIX MathJax Main:style=Bold Italic
@@ -399,6 +400,7 @@
 /usr/share/fonts/noto/NotoSans-Black.ttf: Noto Sans,Noto Sans Black:style=Black,Regular
 /usr/share/fonts/mathjax2/HTML-CSS/Gyre-Pagella/woff/GyrePagellaMathJax_Misc-Regular.woff: TeX Gyre Pagella Math,Gyre Pagella MathJax Misc:style=Regular
 /usr/share/fonts/droid/DroidSansJapanese.ttf: Droid Sans:style=Regular
+/usr/share/fonts/noto/NotoSansKawi-Regular.ttf: Noto Sans Kawi:style=Regular
 /usr/share/fonts/mathjax2/HTML-CSS/Asana-Math/woff/AsanaMathJax_Marks-Regular.woff: Asana Math,Asana MathJax Marks:style=Regular
 /usr/share/fonts/noto/NotoSerifMyanmar-Black.ttf: Noto Serif Myanmar,Noto Serif Myanmar Black:style=Black,Regular
 /usr/share/fonts/noto/NotoSansPauCinHau-Regular.ttf: Noto Sans Pau Cin Hau:style=Regular
@@ -487,6 +489,7 @@
 /usr/share/fonts/noto/NotoSerifGurmukhi-Bold.ttf: Noto Serif Gurmukhi:style=Bold
 /usr/share/fonts/TTF/NotoSansMNerdFont-CondensedBlack.ttf: NotoSansM Nerd Font,NotoSansM NF Cond Black:style=Condensed Black,Regular
 /usr/share/fonts/gsfonts/NimbusSans-Italic.otf: Nimbus Sans:style=Italic
+/usr/share/fonts/noto/NotoSansNKoUnjoined-Regular.ttf: Noto Sans NKo Unjoined:style=Regular
 /usr/share/fonts/TTF/iosevka-medium.ttc: Iosevka,Iosevka Md Ex Obl:style=Medium Extended Oblique,Regular
 /usr/share/fonts/TTF/iosevka-thin.ttc: Iosevka Term,Iosevka Term Thin Oblique:style=Thin Oblique,Regular
 /usr/share/fonts/OTF/NotoSansMonoCJKsc-Regular.otf: Noto Sans Mono CJK SC:style=Regular
@@ -1116,6 +1119,7 @@
 /usr/share/fonts/gsfonts/NimbusRoman-Regular.otf: Nimbus Roman:style=Regular
 /usr/share/fonts/mathjax2/HTML-CSS/Asana-Math/woff/AsanaMathJax_Size1-Regular.woff: Asana Math,Asana MathJax Size1:style=Regular
 /usr/share/fonts/TTF/raleway_regular.ttf: Raleway:style=Regular
+/usr/share/fonts/noto/NotoSansKawi-Bold.ttf: Noto Sans Kawi:style=Bold
 /usr/share/fonts/noto/NotoSerif-Medium.ttf: Noto Serif,Noto Serif Medium:style=Medium,Regular
 /usr/share/fonts/noto/NotoSansNagMundari-Bold.ttf: Noto Sans Nag Mundari:style=Bold
 /usr/share/fonts/TTF/iosevka-semibold.ttc: Iosevka Fixed,Iosevka Fixed SmBd Ex:style=Semibold Extended,Regular

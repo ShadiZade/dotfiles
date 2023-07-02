@@ -13,7 +13,6 @@ google-earth-pro
 luckybackup
 manjaro-firmware
 mikhak-fonts
-mimeo
 minecraft-launcher
 mkinitcpio-firmware
 morse-x
@@ -36,6 +35,5 @@ ttf-ms-fonts
 ttf-teletext2
 ttf-ubuntu-arabic
 ttf-unifont
-vimix-icon-theme
 xdg-ninja-git
 zathura-git
