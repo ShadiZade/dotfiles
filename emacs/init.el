@@ -45,7 +45,7 @@
 
 ;; keybindings
 (global-set-key (kbd "<escape>") 'keyboard-escape-quit)
-(global-set-key (kbd "C-!") 'ispell-buffer)
+(global-set-key (kbd "C-c i") 'ispell-buffer)
 (global-set-key (kbd "M-s M-s") 'complete-symbol)
 (global-set-key (kbd "C-x C-,") 'eval-buffer)
 (global-set-key (kbd "C-x C-]") 'rename-file)
