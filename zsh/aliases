@@ -150,7 +150,7 @@ alias ’s="micro ~/Repositories/dotfiles/sxhkd/sxhkdrc"
 alias ’p="emacs -nw ~/Repositories/dotfiles/polybar/config.ini"
 alias ’tc="emacs -nw ~/Repositories/scripts/bspwm-theme.sh"
 alias ’tp="~/Repositories/scripts/theme-picker.sh"
-alias ’cr="emacs -nw ~/Misc/cooking/rotation.org"
+alias ’cl="emacs -nw ~/Misc/cooking/cooklist.org"
 alias ’cp="emacs -nw ~/Misc/cooking/potential.org"
 
 # misc aliases
