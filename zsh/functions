@@ -144,3 +144,15 @@ k () {
     git commit -m $(bd)
     tok
 }
+
+## gv
+gv () {
+    working="$1"
+    [ -z "$working" ] && echo -e "\033[31m:: Missing argument!\033[0m" && return
+    [ "$(file --extension "$working" | awk -F ': ' '{print $NF}')" != "gif" ] && echo -e "\033[31m:: Not a GIF!\033[0m" && return
+    working="$(echo "$working" | sed 's/\.gif$//g')"
+    ffmpeg -i "$1" -movflags faststart -pix_fmt yuv420p -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" "$working".mp4
+    mpv "$working".mp4
+    agreedel="$(echo -e "yes\nno" | fzf --prompt='Delete original? ')"
+    [ "$agreedel" = "yes" ] && rm -vf "$1"
+}
