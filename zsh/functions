@@ -51,7 +51,7 @@ pg () {
 
 ## a
 a () {
-    mpv "$@"
+    mpv --no-audio-display "$@"
 }
 
 ## v
