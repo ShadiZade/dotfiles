@@ -65,12 +65,15 @@ alias cdao="cd ~/Archives/Other && ll"
 alias cdaos="cd ~/Archives/Other/safekeeping/ && ll"
 ## Wallpapers
 alias cdwall="cd /usr/share/wallpapers/use && ll"
-## Youtube
-alias cdy="cd ~/Excluding/ytvid && lln"
+## Excluding
+alias cde="cd ~/Excluding/ && ll"
+alias cdep="cd ~/Excluding/podcasts && lln"
+alias cdey="cd ~/Excluding/ytvid && lln"
 ## Projects
 alias cdj="cd ~/Projects"
 alias cdjw="cd ~/Projects/wiki && ll"
 ## Holding
+alias cdh="cd ~/Holding/ && ll"
 alias cdhs="cd ~/Holding/screenshots/ && ll"
 
 # translation
