@@ -124,7 +124,6 @@ java-commons-lang
 jfsutils
 jp2a
 kaccounts-providers
-kasts
 kcharselect
 kcolorchooser
 kdeconnect
@@ -348,6 +347,7 @@ usb_modeswitch
 usbutils
 util-linux
 vcdimager
+virtualbox
 vivaldi
 vulkan-intel
 vulkan-radeon
