@@ -14,7 +14,7 @@ xkb_symbols "basic" {
     key <AE08>	{[ 8,				asterisk,			asterisk							]};
     key <AE09>	{[ 9,				parenleft,			parenleft							]};
     key <AE10>	{[ 0,				parenright,			parenright							]};
-    key <AE11>	{[ minus,			underscore												]};
+    key <AE11>	{[ minus,			underscore,			asterisk							]};
     key <AE12>	{[ equal,			plus,				notequal,			U2248			]};
 
     key <AD01>	{[ q,				Q														]};
