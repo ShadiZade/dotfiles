@@ -200,7 +200,11 @@ super + a ; f
 
 # wiki-shortcuts
 super + a ; w
-	~/Repositories/scripts/wiki-shortcuts.sh
+	export which_shortcuts=wiki-shortcuts; ~/Repositories/scripts/wiki-shortcuts.sh
+
+# afc-shortcuts
+super + a ; c
+	export which_shortcuts=afc-shortcuts; ~/Repositories/scripts/wiki-shortcuts.sh
 
 # ---------------------------------------------------------------------	
 #
