@@ -28,6 +28,7 @@ soundcloud-dl-git
 systemd-fsck-silent
 taffy
 telegram-desktop-bin
+thunderbird-bin
 trashf
 ttf-amiri
 ttf-arabeyes-fonts
