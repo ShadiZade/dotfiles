@@ -32,6 +32,7 @@ alias cdp="cd ~/Pictures && ll"
 ## Misc
 alias cdm="cd ~/Misc && ll"
 alias cdmb="cd ~/Misc/Backups && ll"
+alias cdmbp="cd ~/Misc/Backups/private-scripts/ && ll"
 alias cdmr="cd ~/Misc/research-topics && ll"
 alias cdmn="cd ~/Misc/notes && ll"
 alias cdmc="cd ~/Misc/cooking && ll"
@@ -72,6 +73,7 @@ alias cdey="cd ~/Excluding/ytvid && lln"
 ## Projects
 alias cdj="cd ~/Projects"
 alias cdjw="cd ~/Projects/wiki && ll"
+alias cdjr="cd ~/Projects/writings/ && ll"
 ## Holding
 alias cdh="cd ~/Holding/ && ll"
 alias cdhs="cd ~/Holding/screenshots/ && ll"

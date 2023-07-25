@@ -62,14 +62,14 @@ v () {
 ## xv
 xv () {
     [ -z "$1" ] && location_se='.' || location_se="$1"
-    images="$(fd 'jpg$|jpeg$|png$|gif$|webp$|jxl$|jpg_large$|svg$' -d 1 $location_se | sed 's/ /\\ /g' | sort -V)"
+    images="$(fd -H 'jpg$|jpeg$|png$|gif$|webp$|jxl$|jpg_large$|svg$' -d 1 $location_se | sed 's/ /\\ /g' | sort -V)"
     [ -z "$images" ] && echo "No images found in this directory." || echo "$images" | xargs sxiv
 }
 
 ## xt
 xt () {
-    fd -q "$1" || echo "No results."
-    fd -q "$1" && fd "$1" | xargs sxiv
+    fd -qH "$1" || echo "No results."
+    fd -qH "$1" && fd "$1" | xargs sxiv
 }
 
 ## xpa
@@ -155,4 +155,11 @@ gv () {
     mpv "$working".mp4
     agreedel="$(echo -e "yes\nno" | fzf --prompt='Delete original? ')"
     [ "$agreedel" = "yes" ] && rm -vf "$1"
+}
+
+## dr
+dr () {
+    rnd_string="$(head /dev/urandom | tr -dc A-Za-z0-9 | head -c 13)"
+    wget -O "$rnd_string".mp4 "$1"
+    mpv "$rnd_string".mp4
 }
