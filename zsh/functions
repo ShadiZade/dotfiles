@@ -159,7 +159,22 @@ gv () {
 
 ## dr
 dr () {
-    rnd_string="$(head /dev/urandom | tr -dc A-Za-z0-9 | head -c 13)"
-    wget -O "$rnd_string".mp4 "$1"
-    mpv "$rnd_string".mp4
+    ext="mp4"
+    [ -z "$2" ] || ext="$2"
+    name_string="$(head /dev/urandom | tr -dc A-Za-z0-9 | head -c 13)"
+    [ -z "$3" ] || name_string="$3"
+    wget -O "$name_string"."$ext" "$1" && xdg-open "$name_string"."$ext"
+}
+
+## lof
+function lof {
+    listoffiles="$(ls -1p | grep -v '/' | sort -V)"
+    beginfile=1
+    [ -z "$1" ] || beginfile="$1"
+    listoffiles="$(echo $listoffiles | tail -n +"$beginfile")"
+    while true
+    do
+	xdg-open "$(echo $listoffiles | sed 1q)" || break
+	listoffiles="$(echo $listoffiles | tail -n +2)"
+    done
 }
