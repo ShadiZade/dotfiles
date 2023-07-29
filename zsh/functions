@@ -176,9 +176,9 @@ function lof {
     while true
     do
 	current_file="$(echo $listoffiles | sed 1q)"
-	ftc="$(file -b $current_file | awk '{print $3}')"
-	[ "$ftc" = "MP4" ] && mpv --no-terminal --loop=inf "$current_file"
-	[ "$ftc" != "MP4" ] && xdg-open "$current_file"
+	ftc="$(file -b $current_file | awk '{print $1}')"
+	[ "$ftc" = "ISO" ] && mpv --no-terminal --loop=inf "$current_file"
+	[ "$ftc" != "ISO" ] && xdg-open "$current_file"
 	echo -e ":: opened file \033[32m$i\033[0m"
 	listoffiles="$(echo $listoffiles | tail -n +2)"
 	[ -z "$listoffiles" ] && break
