@@ -36,7 +36,7 @@
  '(custom-safe-themes
    '("b1a691bb67bd8bd85b76998caf2386c9a7b2ac98a116534071364ed6489b695d" default))
  '(package-selected-packages
-   '(slime xwiki-mode olivetti org-bullets sudo-utils org-mode general all-the-icons-dired all-the-icons gruvbox-theme helpful ivy-rich which-key rainbow-delimiters use-package yaml-mode xclip mediawiki markdown-mode lua-mode lorem-ipsum hydra graphviz-dot-mode dash counsel)))
+   '(elfeed slime xwiki-mode olivetti org-bullets sudo-utils org-mode general all-the-icons-dired all-the-icons gruvbox-theme helpful ivy-rich which-key rainbow-delimiters use-package yaml-mode xclip mediawiki markdown-mode lua-mode lorem-ipsum hydra graphviz-dot-mode dash counsel)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -47,10 +47,12 @@
 ;; keybindings
 (global-set-key (kbd "<escape>") 'keyboard-escape-quit)
 (global-set-key (kbd "C-c i") 'ispell-buffer)
+(global-set-key (kbd "C-c p c") 'shadi--reload-config-file)
 (global-set-key (kbd "M-s M-s") 'complete-symbol)
 (global-set-key (kbd "C-x C-,") 'eval-buffer)
 (global-set-key (kbd "C-x C-]") 'rename-file)
 (global-set-key (kbd "C-c o") 'olivetti-mode)
+(global-set-key (kbd "C-x w") 'shadi--load-elfeed)
 (use-package general)
 
 ;; use-package
@@ -119,6 +121,7 @@
   :after org
   :hook (org-mode . org-bullets-mode))
 
+(use-package elfeed)
 
 ;; functions
 (defun delete-visited-file (buffer-name)
@@ -131,3 +134,14 @@
                  (file-exists-p filename))
         (delete-file filename))
       (kill-buffer buffer))))
+
+(defun shadi--load-elfeed ()
+  (interactive)
+  (load "~/.config/emacs/elfeed-feeds.el")
+  (elfeed)
+  (text-scale-set -1))
+
+(defun shadi--reload-config-file ()
+  (interactive)
+  (load "~/.config/emacs/init.el"))
+

@@ -118,7 +118,7 @@ super + t ; {t,p,f}
 
 # rofi
 super + q ; a
-	pkill dunst; dunst & notify-send -t 1000 'Launcher' 'Launching "rofi"' & rofi -show drun && pkill dunst
+	rofi -show drun
 
 # terminal
 super + q ; s
