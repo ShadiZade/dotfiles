@@ -142,6 +142,7 @@ alias tf='~/Repositories/scripts/music-tagger.sh'
 alias zas='~/Repositories/scripts/active-study.sh'
 alias mvk="~/Repositories/scripts/mv-kebab.sh"
 alias mvkr="~/Repositories/scripts/roll-thru-kebab.sh"
+alias lor="~/Repositories/scripts/rename-list-of-files.sh"
 
 # files
 alias ’e="emacs -nw ~/Repositories/dotfiles/emacs/init.el"
