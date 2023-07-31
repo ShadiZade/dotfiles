@@ -180,7 +180,8 @@ function lof {
 	[ "$ftc" = "ISO" ] && mpv --no-terminal --loop=inf "$current_file"
 	[ "$ftc" != "ISO" ] && xdg-open "$current_file"
 	echo -e "--------------------------------"
-	echo -e ":: opened file \033[32m$i\033[0m"
+	echo -e ":: Opened file \033[32m$i\033[0m"
+	echo -e ":: This file is \033[31m$current_file\033[0m"
 	listoffiles="$(echo -e "$listoffiles" | tail -n +2)"
 	[ -z "$listoffiles" ] && break
 	i=$((i+1))
