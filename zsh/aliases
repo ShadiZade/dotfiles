@@ -206,3 +206,4 @@ alias ytvv="yt-dlp -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best'
 alias ytmm="yt-dlp --format bestaudio --no-mtime --extract-audio --audio-format mp3"
 alias ytrr="yt-dlp --format bestaudio --no-mtime --extract-audio --audio-format mp3 --sponsorblock-remove all"
 alias wg="wget"
+alias duh="du -h"

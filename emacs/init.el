@@ -53,6 +53,7 @@
 (global-set-key (kbd "C-x C-]") 'rename-file)
 (global-set-key (kbd "C-c o") 'olivetti-mode)
 (global-set-key (kbd "C-x w") 'shadi--load-elfeed)
+(global-set-key (kbd "M-]") 'other-window)
 (use-package general)
 
 ;; use-package

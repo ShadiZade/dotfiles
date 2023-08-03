@@ -15,31 +15,35 @@
 ####### symlink location: ~/.config/sxiv/ #########################################################
 
 sort () {
-loc=$(ls -1 "$HOME/Pictures/mobile/3-finished" | rofi -dmenu -i -p 'choose folder')
-[ -z "$loc" ] || mv -vn -- "$file" "$HOME/Pictures/mobile/3-finished/$loc"
+    loc=$(ls -1 "$HOME/Pictures/mobile/3-finished" | rofi -dmenu -i -p 'choose folder')
+    [ -z "$loc" ] || mv -vn -- "$file" "$HOME/Pictures/mobile/3-finished/$loc"
 }
 
 describe () {
-ext=$(echo "$file" | awk -F '.' '{print $NF}')
-newname="$(fd 'jpg|jpeg|png|gif|webp|jxl|jpg_large|svg' $(pwd) | awk -F '/' '{print $NF}' | rofi -dmenu -i -p 'rename image')"
-[ -z "$newname" ] || mv -vn -- "$file" "$newname"."$ext"
+    ext=$(echo "$file" | awk -F '.' '{print $NF}')
+    newname="$(fd 'jpg|jpeg|png|gif|webp|jxl|jpg_large|svg' $(pwd) | awk -F '/' '{print $NF}' | rofi -dmenu -i -p 'rename image')"
+    [ -z "$newname" ] || mv -vn -- "$file" "$newname"."$ext"
 }
 
 move () {
-mv -vn -- "$file" .
+    mv -vn -- "$file" .
 }
 
 trash () {
-rt "$file"
+    rt "$file"
 }
 
 copy () {
-echo -n "$(pwd)/$file" | sed 's|/\./|/|g' | xclip -selection clipboard
+    echo -n "$(pwd)/$file" | sed 's|/\./|/|g' | xclip -selection clipboard
 }
 
 
 edit () {
-photoflare "$file"
+    photoflare "$file"
+}
+
+editgimp () {
+    gimp "$file"
 }
 
 while read file
@@ -51,6 +55,7 @@ do
         "C-d")	describe ;;
 	"C-m")  move ;;
 	"C-e")  edit ;;
+	"C-g")  editgimp ;;
         esac
 done
 
