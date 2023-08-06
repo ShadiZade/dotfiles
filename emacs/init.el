@@ -5,12 +5,14 @@
 (tooltip-mode -1)
 (set-fringe-mode 16)
 (menu-bar-mode -1)
+(beacon-mode 1)
 (setq visible-bell t)
 (setq make-backup-files nil)
 (setq line-move-visual t)
-(setq inferior-lisp-program (executable-find "sbcl"))
+(setq inferior-lisp-program (executable-find "clisp"))
 (global-visual-line-mode 1)
 (xclip-mode 1)
+(size-indication-mode 1)
 (column-number-mode)
 (set-face-attribute 'default nil :font "JuliaMono" :height 120)
 (set-fontset-font "fontset-default" 'arabic "Kawkab Mono")
@@ -36,7 +38,7 @@
  '(custom-safe-themes
    '("b1a691bb67bd8bd85b76998caf2386c9a7b2ac98a116534071364ed6489b695d" default))
  '(package-selected-packages
-   '(elfeed slime xwiki-mode olivetti org-bullets sudo-utils org-mode general all-the-icons-dired all-the-icons gruvbox-theme helpful ivy-rich which-key rainbow-delimiters use-package yaml-mode xclip mediawiki markdown-mode lua-mode lorem-ipsum hydra graphviz-dot-mode dash counsel)))
+   '(yaml-mode calmer-forest-theme beacon atom-one-dark-theme arjen-grey-theme elfeed slime xwiki-mode olivetti org-bullets sudo-utils org-mode general all-the-icons-dired all-the-icons gruvbox-theme helpful ivy-rich which-key rainbow-delimiters use-package xclip mediawiki markdown-mode lua-mode lorem-ipsum hydra graphviz-dot-mode dash counsel)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -44,23 +46,20 @@
  ;; If there is more than one, they won't work right.
  )
 
-;; keybindings
-(global-set-key (kbd "<escape>") 'keyboard-escape-quit)
-(global-set-key (kbd "C-c i") 'ispell-buffer)
-(global-set-key (kbd "C-c p c") 'shadi--reload-config-file)
-(global-set-key (kbd "M-s M-s") 'complete-symbol)
-(global-set-key (kbd "C-x C-,") 'eval-buffer)
-(global-set-key (kbd "C-x C-]") 'rename-file)
-(global-set-key (kbd "C-c o") 'olivetti-mode)
-(global-set-key (kbd "C-x w") 'shadi--load-elfeed)
-(global-set-key (kbd "M-]") 'other-window)
 (use-package general)
 
-;; use-package
+;; install themes
 (unless (package-installed-p 'gruvbox-theme)
   (package-install 'gruvbox-theme))
-(load-theme 'gruvbox t)
+(unless (package-installed-p 'atom-one-dark-theme)
+  (package-install 'atom-one-dark-theme))
 
+;; load themes
+(load-theme 'gruvbox t)
+; (load-theme 'atom-one-dark t)
+
+
+;; use-package
 (use-package ivy
   :diminish
   :bind (("C-s" . swiper))
@@ -140,9 +139,30 @@
   (interactive)
   (load "~/.config/emacs/elfeed-feeds.el")
   (elfeed)
-  (text-scale-set -1))
+  (text-scale-set -1)
+  (elfeed-update))
 
 (defun shadi--reload-config-file ()
   (interactive)
   (load "~/.config/emacs/init.el"))
 
+(defun shadi--edit-config ()
+  (interactive)
+  (find-file "~/Repositories/dotfiles/emacs/init.el"))
+
+(defun shadi--open-notes-dir ()
+  (interactive)
+  (dired "~/Misc/notes"))
+
+;; keybindings
+(global-set-key (kbd "<escape>") 'keyboard-escape-quit)
+(global-set-key (kbd "M-s M-s") 'complete-symbol)
+(global-set-key (kbd "C-x C-,") 'eval-buffer)
+(global-set-key (kbd "C-x w") 'shadi--load-elfeed)
+(global-set-key (kbd "M-]") 'other-window)
+(global-set-key (kbd "C-’ i") 'ispell-buffer)
+(global-set-key (kbd "C-’ c") 'shadi--reload-config-file)
+(global-set-key (kbd "C-’ r") 'rename-file)
+(global-set-key (kbd "C-’ o") 'olivetti-mode)
+(global-set-key (kbd "C-’ e") 'shadi--edit-config)
+(global-set-key (kbd "C-’ n") 'shadi--open-notes-dir)
