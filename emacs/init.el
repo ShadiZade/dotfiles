@@ -10,12 +10,13 @@
 (setq make-backup-files nil)
 (setq line-move-visual t)
 (setq inferior-lisp-program (executable-find "clisp"))
+(setq initial-scratch-message nil)
 (global-visual-line-mode 1)
 (xclip-mode 1)
 (size-indication-mode 1)
 (column-number-mode)
 (set-face-attribute 'default nil :font "JuliaMono" :height 120)
-(set-fontset-font "fontset-default" 'arabic "Kawkab Mono")
+(shadi/set-arabic-font '9)
 
 ;; init package sources
 (require 'package)
@@ -135,34 +136,55 @@
         (delete-file filename))
       (kill-buffer buffer))))
 
-(defun shadi--load-elfeed ()
+(defun shadi/load-elfeed ()
   (interactive)
   (load "~/.config/emacs/elfeed-feeds.el")
   (elfeed)
   (text-scale-set -1)
   (elfeed-update))
 
-(defun shadi--reload-config-file ()
+(defun shadi/reload-config-file ()
   (interactive)
-  (load "~/.config/emacs/init.el"))
+  (load-file "~/.config/emacs/init.el"))
 
-(defun shadi--edit-config ()
+(defun shadi/edit-config ()
   (interactive)
   (find-file "~/Repositories/dotfiles/emacs/init.el"))
 
-(defun shadi--open-notes-dir ()
+(defun shadi/open-notes-dir ()
   (interactive)
   (dired "~/Misc/notes"))
+
+(defun shadi/set-arabic-font (font-size-var)
+  (interactive)
+  (set-fontset-font "fontset-default" 'arabic
+		    (font-spec :family "Kawkab Mono" :size font-size-var)))
+
+(defun shadi/arabic-font-huge ()
+  (interactive)
+  (shadi/set-arabic-font '16))
+
+(defun shadi/arabic-font-large ()
+  (interactive)
+  (shadi/set-arabic-font '12))
+
+(defun shadi/arabic-font-normal ()
+  (interactive)
+  (shadi/set-arabic-font '9))
 
 ;; keybindings
 (global-set-key (kbd "<escape>") 'keyboard-escape-quit)
 (global-set-key (kbd "M-s M-s") 'complete-symbol)
 (global-set-key (kbd "C-x C-,") 'eval-buffer)
-(global-set-key (kbd "C-x w") 'shadi--load-elfeed)
+(global-set-key (kbd "C-x w") 'shadi/load-elfeed)
 (global-set-key (kbd "M-]") 'other-window)
 (global-set-key (kbd "C-’ i") 'ispell-buffer)
-(global-set-key (kbd "C-’ c") 'shadi--reload-config-file)
+(global-set-key (kbd "C-’ c") 'shadi/reload-config-file)
 (global-set-key (kbd "C-’ r") 'rename-file)
 (global-set-key (kbd "C-’ o") 'olivetti-mode)
-(global-set-key (kbd "C-’ e") 'shadi--edit-config)
-(global-set-key (kbd "C-’ n") 'shadi--open-notes-dir)
+(global-set-key (kbd "C-’ e") 'shadi/edit-config)
+(global-set-key (kbd "C-’ n") 'shadi/open-notes-dir)
+(global-set-key (kbd "C-’ a h") 'shadi/arabic-font-huge)
+(global-set-key (kbd "C-’ a l") 'shadi/arabic-font-large)
+(global-set-key (kbd "C-’ a n") 'shadi/arabic-font-normal)
+

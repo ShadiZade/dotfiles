@@ -22,6 +22,7 @@ phantomjs-bin
 plymouth-theme-angular-git
 plymouth-theme-aperture-git
 python-pathvalidate
+ripdrag-git
 shahab-fonts
 siji-git
 soundcloud-dl-git
