@@ -1,5 +1,7 @@
-(setq inhibit-startup-message t)
+(load "~/.config/emacs/functions.el")
+(load "~/.config/emacs/bind.el")
 
+(setq inhibit-startup-message t)
 (scroll-bar-mode -1)
 (tool-bar-mode -1)
 (tooltip-mode -1)
@@ -123,68 +125,4 @@
   :hook (org-mode . org-bullets-mode))
 
 (use-package elfeed)
-
-;; functions
-(defun delete-visited-file (buffer-name)
-  "Delete the file visited by the buffer named BUFFER-NAME."
-  (interactive "bDelete file visited by buffer ")
-  (let* ((buffer (get-buffer buffer-name))
-         (filename (buffer-file-name buffer)))
-    (when buffer
-      (when (and filename
-                 (file-exists-p filename))
-        (delete-file filename))
-      (kill-buffer buffer))))
-
-(defun shadi/load-elfeed ()
-  (interactive)
-  (load "~/.config/emacs/elfeed-feeds.el")
-  (elfeed)
-  (text-scale-set -1)
-  (elfeed-update))
-
-(defun shadi/reload-config-file ()
-  (interactive)
-  (load-file "~/.config/emacs/init.el"))
-
-(defun shadi/edit-config ()
-  (interactive)
-  (find-file "~/Repositories/dotfiles/emacs/init.el"))
-
-(defun shadi/open-notes-dir ()
-  (interactive)
-  (dired "~/Misc/notes"))
-
-(defun shadi/set-arabic-font (font-size-var)
-  (interactive)
-  (set-fontset-font "fontset-default" 'arabic
-		    (font-spec :family "Kawkab Mono" :size font-size-var)))
-
-(defun shadi/arabic-font-huge ()
-  (interactive)
-  (shadi/set-arabic-font '16))
-
-(defun shadi/arabic-font-large ()
-  (interactive)
-  (shadi/set-arabic-font '12))
-
-(defun shadi/arabic-font-normal ()
-  (interactive)
-  (shadi/set-arabic-font '9))
-
-;; keybindings
-(global-set-key (kbd "<escape>") 'keyboard-escape-quit)
-(global-set-key (kbd "M-s M-s") 'complete-symbol)
-(global-set-key (kbd "C-x C-,") 'eval-buffer)
-(global-set-key (kbd "C-x w") 'shadi/load-elfeed)
-(global-set-key (kbd "M-]") 'other-window)
-(global-set-key (kbd "C-’ i") 'ispell-buffer)
-(global-set-key (kbd "C-’ c") 'shadi/reload-config-file)
-(global-set-key (kbd "C-’ r") 'rename-file)
-(global-set-key (kbd "C-’ o") 'olivetti-mode)
-(global-set-key (kbd "C-’ e") 'shadi/edit-config)
-(global-set-key (kbd "C-’ n") 'shadi/open-notes-dir)
-(global-set-key (kbd "C-’ a h") 'shadi/arabic-font-huge)
-(global-set-key (kbd "C-’ a l") 'shadi/arabic-font-large)
-(global-set-key (kbd "C-’ a n") 'shadi/arabic-font-normal)
 
