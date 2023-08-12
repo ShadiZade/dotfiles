@@ -385,6 +385,7 @@ xorg-xinit
 xorg-xkill
 xorg-xsetroot
 xsel
+xsv
 xwallpaper
 xz
 yay

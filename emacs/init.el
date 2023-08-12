@@ -1,3 +1,11 @@
+;; themes
+(unless (package-installed-p 'gruvbox-theme)
+  (package-install 'gruvbox-theme))
+(unless (package-installed-p 'atom-one-dark-theme)
+  (package-install 'atom-one-dark-theme))
+(load-theme 'gruvbox t)
+; (load-theme 'atom-one-dark t)
+
 (load "~/.config/emacs/functions.el")
 (load "~/.config/emacs/bind.el")
 
@@ -50,17 +58,6 @@
  )
 
 (use-package general)
-
-;; install themes
-(unless (package-installed-p 'gruvbox-theme)
-  (package-install 'gruvbox-theme))
-(unless (package-installed-p 'atom-one-dark-theme)
-  (package-install 'atom-one-dark-theme))
-
-;; load themes
-(load-theme 'gruvbox t)
-; (load-theme 'atom-one-dark t)
-
 
 ;; use-package
 (use-package ivy

@@ -10,6 +10,7 @@
       (kill-buffer buffer))))
 
 (defun shadi/load-elfeed ()
+  "Load elfeed, shrink font, and update feed"
   (interactive)
   (load "~/.config/emacs/elfeed-feeds.el")
   (elfeed)
