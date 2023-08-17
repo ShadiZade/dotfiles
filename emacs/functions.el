@@ -10,7 +10,7 @@
       (kill-buffer buffer))))
 
 (defun shadi/load-elfeed ()
-  "Load elfeed, shrink font, and update feed"
+  "Load elfeed, shrink font, and update feed."
   (interactive)
   (load "~/.config/emacs/elfeed-feeds.el")
   (elfeed)
@@ -18,26 +18,32 @@
   (elfeed-update))
 
 (defun shadi/reload-config-file ()
+  "Reloads my config."
   (interactive)
   (load-file "~/.config/emacs/init.el"))
 
 (defun shadi/edit-init ()
+  "Shows my init.el file in a buffer."
   (interactive)
   (find-file "~/Repositories/dotfiles/emacs/init.el"))
 
 (defun shadi/edit-functions ()
+  "Shows my functions.el file in a buffer."
   (interactive)
   (find-file "~/Repositories/dotfiles/emacs/functions.el"))
 
 (defun shadi/edit-bind ()
+  "Shows my bind.el file in a buffer."
   (interactive)
   (find-file "~/Repositories/dotfiles/emacs/bind.el"))
 
 (defun shadi/open-notes-dir ()
+  "Opens my notes directory in dired."
   (interactive)
   (dired "~/Misc/notes"))
 
 (defun shadi/set-arabic-font (arabic-font-size)
+  "Sets my emacs Arabic font and size."
   (interactive)
   (set-fontset-font "fontset-default" 'arabic
 		    (font-spec :family "Kawkab Mono" :size arabic-font-size)))
@@ -49,3 +55,12 @@
 (defun shadi/arabic-font-normal ()
   (interactive)
   (shadi/set-arabic-font '9))
+
+
+;; macros
+
+(defalias 'do-xhtml-refs
+   (kmacro "C-f M-b C-b <delete> <delete> <delete> <delete> C-SPC M-f M-w <delete> M-b <backspace> < s m a l l > < a SPC h r e f = \" # f n M-f \" > C-y C-c / C-c / M-> < p SPC i d = \" f n C-y \" > C-c / C-b C-b C-b C-b C-y . SPC"))
+
+(defalias 'do-xhtml-blockquote
+  (kmacro "< b l o c k q u o t e > C-y C-c / <return> C-p C-a <delete> <delete> C-n <return>"))

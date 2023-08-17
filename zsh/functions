@@ -165,26 +165,3 @@ dr () {
     [ -z "$3" ] || name_string="$3"
     wget -O "$name_string"."$ext" "$1" && xdg-open "$name_string"."$ext"
 }
-
-## lof
-function lof {
-    listoffiles="$(ls -1p | grep -v '/' | sort -V)"
-    echo -e "\033[33m:: $(echo "$listoffiles" | wc -l) files detected\033[0m"
-    i=1
-    [ -z "$1" ] || i="$1"
-    listoffiles="$(echo $listoffiles | tail -n +"$i")"
-    while true
-    do
-	export current_file="$(echo -e "$listoffiles" | sed 1q)"
-	ftc="$(file -b "$current_file" | awk '{print $1}')"
-	[ "$ftc" = "ISO" ] && mpv --no-terminal --loop=inf "$current_file"
-	[ "$ftc" != "ISO" ] && xdg-open "$current_file"
-	echo -e "--------------------------------"
-	echo -e ":: Opened file \033[32m$i\033[0m"
-	echo -e ":: This file is \033[31m$current_file\033[0m"
-	listoffiles="$(echo -e "$listoffiles" | tail -n +2)"
-	[ -z "$listoffiles" ] && break
-	i=$((i+1))
-	read "?:: Press <return> to continue."
-    done
-}

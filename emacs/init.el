@@ -122,4 +122,3 @@
   :hook (org-mode . org-bullets-mode))
 
 (use-package elfeed)
-

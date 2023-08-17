@@ -75,9 +75,12 @@ alias cdey="cd ~/Excluding/ytvid && lln"
 alias cdj="cd ~/Projects"
 alias cdjw="cd ~/Projects/wiki && ll"
 alias cdjr="cd ~/Projects/writings/ && ll"
+alias cdjm="cd ~/Projects/motif/ && ll"
 ## Holding
 alias cdh="cd ~/Holding/ && ll"
 alias cdhs="cd ~/Holding/screenshots/ && ll"
+## Videos
+alias cdv="cd ~/Videos/ && ll"
 
 # translation
 alias zhen="command trans -b zh:en"
@@ -143,7 +146,8 @@ alias tf='~/Repositories/scripts/music-tagger.sh'
 alias zas='~/Repositories/scripts/active-study.sh'
 alias mvk="~/Repositories/scripts/mv-kebab.sh"
 alias mvkr="~/Repositories/scripts/roll-thru-kebab.sh"
-alias lor="~/Repositories/scripts/rename-list-of-files.sh"
+alias obo="~/Repositories/scripts/one-by-one.sh"
+alias tagger="~/Repositories/scripts/tagger.sh"
 
 # files
 alias ’e="emacs -nw ~/Repositories/dotfiles/emacs/init.el"
