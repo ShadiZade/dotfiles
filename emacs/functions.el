@@ -9,6 +9,16 @@
         (delete-file filename))
       (kill-buffer buffer))))
 
+(defun resize-window-to (window size)
+  "Resizes a window to a specific, absolute value"
+  (let* ((old-size (window-size))
+	 (size-diff (- size old-size)))
+    (window-resize window (cond ((< size 4)
+				 (- 4 old-size))
+				((> size 32)
+				 (- 32 old-size))
+				(t size-diff)))))
+
 (defun shadi/load-elfeed ()
   "Load elfeed, shrink font, and update feed."
   (interactive)
@@ -71,9 +81,9 @@
     (shell-command (format "~/Repositories/communist-calendar/fetch-events.sh %s" targeted-date-file)
 		   (current-buffer))
     (let* ((number-of-lines (count-lines (point-min) (point-max)))
-	   (difference (+ 1 (- number-of-lines (window-size)))))
-      (window-resize nil (if (< difference -13)
-			     -13
+	   (difference (+ 1 (- number-of-lines (window-size))))
+      (window-resize nil (if (< (+ difference (window-size)) 4)                ; windows cannot be <4 tall
+			     (- 0 (- (window-size) 4))        
 			   difference))
     (other-window 1))))
 
