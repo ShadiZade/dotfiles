@@ -13,5 +13,6 @@
 (global-set-key (kbd "C-’ n") 'shadi/open-notes-dir)
 (global-set-key (kbd "C-’ a l") 'shadi/arabic-font-large)
 (global-set-key (kbd "C-’ a n") 'shadi/arabic-font-normal)
+(global-set-key (kbd "C-’ f") 'shadi/fetch-events)
 (global-set-key (kbd "C-c r") 'do-xhtml-refs)
 (global-set-key (kbd "C-c b") 'do-xhtml-blockquote)

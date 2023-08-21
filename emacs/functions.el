@@ -56,6 +56,26 @@
   (interactive)
   (shadi/set-arabic-font '9))
 
+(defun shadi/fetch-events ()
+  (interactive)
+  (let ((targeted-date-file (buffer-name))
+	 (new-buffer-name "fetch-events"))
+    (delete-other-windows)
+    (split-window-below)
+    (other-window 1)
+    (get-buffer-create new-buffer-name)
+    (switch-to-buffer new-buffer-name)
+    (mark-whole-buffer)
+    (kill-region (point) (mark))
+    (text-scale-set -1)
+    (shell-command (format "~/Repositories/communist-calendar/fetch-events.sh %s" targeted-date-file)
+		   (current-buffer))
+    (let* ((number-of-lines (count-lines (point-min) (point-max)))
+	   (difference (+ 1 (- number-of-lines (window-size)))))
+      (window-resize nil (if (< difference -13)
+			     -13
+			   difference))
+    (other-window 1))))
 
 ;; macros
 
