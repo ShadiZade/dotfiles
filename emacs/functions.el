@@ -10,7 +10,7 @@
       (kill-buffer buffer))))
 
 (defun resize-window-to (window size)
-  "Resizes a window to a specific, absolute value"
+  "Resizes a window to a specific, absolute value."
   (let* ((old-size (window-size))
 	 (size-diff (- size old-size)))
     (window-resize window (cond ((< size 4)
@@ -80,12 +80,9 @@
     (text-scale-set -1)
     (shell-command (format "~/Repositories/communist-calendar/fetch-events.sh %s" targeted-date-file)
 		   (current-buffer))
-    (let* ((number-of-lines (count-lines (point-min) (point-max)))
-	   (difference (+ 1 (- number-of-lines (window-size))))
-      (window-resize nil (if (< (+ difference (window-size)) 4)                ; windows cannot be <4 tall
-			     (- 0 (- (window-size) 4))        
-			   difference))
-    (other-window 1))))
+    (let* ((number-of-lines (count-lines (point-min) (point-max))))
+      (resize-window-to nil (+ 1 number-of-lines))
+      (other-window 1))))
 
 ;; macros
 
