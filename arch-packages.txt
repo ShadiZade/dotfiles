@@ -248,7 +248,6 @@ python-pipx
 python-pyqt5
 python-pysmbc
 python-reportlab
-qbittorrent
 qt5-imageformats
 qt5-tools
 qt5-virtualkeyboard

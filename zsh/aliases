@@ -20,6 +20,7 @@ alias cdqb="cd ~/Aquire/books && ll"
 alias cdqm="cd ~/Aquire/music && ll"
 alias cdqp="cd ~/Aquire/pictures && ll"
 alias cdqv="cd ~/Aquire/video && ll"
+alias cdqt="cd ~/Aquire/torrents/ && ll"
 ## Desktop
 alias cdk="cd ~/Desktop && ll"
 alias cdkt="cd ~/Desktop/try && ll"
