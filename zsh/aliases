@@ -49,6 +49,7 @@ alias cdc="cd ~/.config"
 alias cds="cd ~/Study && ll"
 alias cdsl="cd ~/Study/languages && ll"
 alias cdsp="cd ~/Study/programming && ll"
+alias cdsu="cd ~/Study/uni/ && ll"
 ## TV
 alias cdtv="cd ~/TV && ll"
 ## Repositories

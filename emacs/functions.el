@@ -69,7 +69,7 @@
 (defun shadi/fetch-events ()
   (interactive)
   (let ((targeted-date-file (buffer-name))
-	 (new-buffer-name "fetch-events"))
+	 (new-buffer-name "*fetch-events*"))
     (delete-other-windows)
     (split-window-below)
     (other-window 1)
@@ -82,7 +82,7 @@
 		   (current-buffer))
     (let* ((number-of-lines (count-lines (point-min) (point-max))))
       (resize-window-to nil (+ 1 number-of-lines))
-      (other-window 1))))
+      (other-window 1)))) ; could have used (shrink-window-if-larger-than-buffer)
 
 ;; macros
 

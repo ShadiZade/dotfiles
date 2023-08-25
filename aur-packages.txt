@@ -4,6 +4,7 @@ buku
 cmatrix-git
 cozette-otb
 cpdf
+edir
 epr-git
 file-rename
 freetube-bin
