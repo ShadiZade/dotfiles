@@ -101,3 +101,8 @@
 
 (defalias 'do-xhtml-blockquote
   (kmacro "< b l o c k q u o t e > C-y C-c / <return> C-p C-a <delete> <delete> C-n <return>"))
+
+(defalias 'do-xhtml-italic-region
+  (kmacro "C-x C-x < i > C-x C-x < / i >"))
+
+

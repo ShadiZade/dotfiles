@@ -18,4 +18,5 @@
 (global-set-key (kbd "C-’ f") 'shadi/fetch-events)
 (global-set-key (kbd "C-c r") 'do-xhtml-refs)
 (global-set-key (kbd "C-c b") 'do-xhtml-blockquote)
+(global-set-key (kbd "C-c i") 'do-xhtml-italic-region)
 (global-set-key (kbd "C-c a") 'org-agenda-list) 
