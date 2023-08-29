@@ -47,10 +47,20 @@
   (interactive)
   (find-file "~/Repositories/dotfiles/emacs/bind.el"))
 
+(defun shadi/edit-org ()
+  "Shows my bind.el file in a buffer."
+  (interactive)
+  (find-file "~/Repositories/dotfiles/emacs/org.el"))
+
 (defun shadi/open-notes-dir ()
   "Opens my notes directory in dired."
   (interactive)
   (dired "~/Misc/notes"))
+
+(defun shadi/open-org-dir ()
+  "Opens my notes directory in dired."
+  (interactive)
+  (dired "~/Misc/org"))
 
 (defun shadi/set-arabic-font (arabic-font-size)
   "Sets my emacs Arabic font and size."

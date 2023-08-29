@@ -48,6 +48,7 @@ alias cdc="cd ~/.config"
 ## Study
 alias cds="cd ~/Study && ll"
 alias cdsl="cd ~/Study/languages && ll"
+alias cdslc="cd ~/Study/languages/chinese/ && ll"
 alias cdsp="cd ~/Study/programming && ll"
 alias cdsu="cd ~/Study/uni/ && ll"
 ## TV
@@ -83,6 +84,9 @@ alias cdh="cd ~/Holding/ && ll"
 alias cdhs="cd ~/Holding/screenshots/ && ll"
 ## Videos
 alias cdv="cd ~/Videos/ && ll"
+## Documents
+alias cdo="cd ~/Documents/ && ll"
+alias cdol="cd ~/Documents/lisan-al-3arab/ && ll"
 
 # translation
 alias zhen="command trans -b zh:en"

@@ -8,7 +8,9 @@
 
 (load "~/.config/emacs/functions.el")
 (load "~/.config/emacs/bind.el")
-
+(load "~/.config/emacs/org.el")
+(load "~/Misc/Backups/private-scripts/private.el")
+ 
 (setq inhibit-startup-message t)
 (scroll-bar-mode -1)
 (tool-bar-mode -1)
@@ -49,7 +51,7 @@
  '(custom-safe-themes
    '("b1a691bb67bd8bd85b76998caf2386c9a7b2ac98a116534071364ed6489b695d" default))
  '(package-selected-packages
-   '(yaml-mode calmer-forest-theme beacon atom-one-dark-theme arjen-grey-theme elfeed slime xwiki-mode olivetti org-bullets sudo-utils org-mode general all-the-icons-dired all-the-icons gruvbox-theme helpful ivy-rich which-key rainbow-delimiters use-package xclip mediawiki markdown-mode lua-mode lorem-ipsum hydra graphviz-dot-mode dash counsel)))
+   '(nov yaml-mode calmer-forest-theme beacon atom-one-dark-theme arjen-grey-theme elfeed slime xwiki-mode olivetti org-bullets sudo-utils org-mode general all-the-icons-dired all-the-icons gruvbox-theme helpful ivy-rich which-key rainbow-delimiters use-package xclip mediawiki markdown-mode lua-mode lorem-ipsum hydra graphviz-dot-mode dash counsel)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -116,7 +118,11 @@
   :hook (org-mode . org-mode-setup)
   :config
   (setq org-ellipsis " ☈"
-	org-hide-emphasis-markers t))
+	org-hide-emphasis-markers t
+	org-log-done 'time
+	org-todo-keywords
+	'((sequence "TODO" "WAIT" "|" "DONE" "CANC"))))
+
 (use-package org-bullets
   :after org
   :hook (org-mode . org-bullets-mode))
