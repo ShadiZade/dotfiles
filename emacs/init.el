@@ -9,7 +9,6 @@
 (load "~/.config/emacs/functions.el")
 (load "~/.config/emacs/bind.el")
 (load "~/.config/emacs/org.el")
-(load "~/Misc/Backups/private-scripts/private.el")
  
 (setq inhibit-startup-message t)
 (scroll-bar-mode -1)
@@ -119,8 +118,8 @@
   :config
   (setq org-ellipsis " ☈"
 	org-hide-emphasis-markers t
-	org-log-done 'time
 	org-todo-keywords
+	org-log-done 'time
 	'((sequence "TODO" "WAIT" "|" "DONE" "CANC"))))
 
 (use-package org-bullets
