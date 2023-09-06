@@ -232,7 +232,6 @@ plymouth
 polybar
 poppler-data
 powertop
-print-manager
 procps-ng
 psmisc
 pulseaudio-bluetooth

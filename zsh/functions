@@ -62,7 +62,7 @@ v () {
 ## xv
 xv () {
     [ -z "$1" ] && location_se='.' || location_se="$1"
-    images="$(fd -H 'jpg$|jpeg$|png$|gif$|webp$|jxl$|jpg_large$|svg$' -d 1 $location_se | sed 's/ /\\ /g' | sort -V)"
+    images="$(fd -H 'jpg$|jpeg$|png$|gif$|webp$|jxl$|jpg_large$|svg$|tif$' -d 1 $location_se | sed 's/ /\\ /g' | sort -V)"
     [ -z "$images" ] && echo "No images found in this directory." || echo "$images" | xargs sxiv
 }
 
