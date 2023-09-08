@@ -106,9 +106,9 @@ knock () {
     ~/.local/share/installed-scripts/knock/.knock/knock "$knocker"
 }
 
-## kebab
-kebab () {
-    ~/Repositories/scripts/kebabization.sh "$1"
+## kbb
+kbb () {
+    ~/Repositories/scripts/kebabization.sh "$@"
     cat ~/.kebab | xclip -selection clipboard
     cat ~/.kebab
 }
