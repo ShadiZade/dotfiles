@@ -14,6 +14,8 @@
 ###################################################################################################
 ####### symlink location: ~/.config/zsh/ ##########################################################
 ## terminal-art
+source ~/Repositories/dotfiles/zsh/aliases
+
 terminal-art () {
     touch ~/.qotd ~/.today-date
     [ "$(cat ~/.today-date)" = "$(date +%m-%d)" ] ||\
@@ -159,7 +161,7 @@ gv () {
 
 ## dr
 dr () {
-    ext="mp4"
+    ext="$(echo "$1" | awk -F '.' '{print $NF}' | awk -F '?' '{print $1}')"
     [ -z "$2" ] || ext="$2"
     name_string="$(head /dev/urandom | tr -dc A-Za-z0-9 | head -c 13)"
     [ -z "$3" ] || name_string="$3"

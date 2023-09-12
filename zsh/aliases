@@ -107,13 +107,13 @@ alias iten="command trans -b it:en"
 alias enit="command trans -b en:it"
 
 # list
-alias l="exa --icons --sort=ext --group-directories-first"
-alias ll="exa -l --icons --no-user --time-style=iso --sort=ext --group-directories-first --color-scale"
-alias lnl="exa -l --icons --no-user --time-style=iso --sort=name --group-directories-first --color-scale"
-alias lla="exa -la --icons --no-user --group-directories-first --sort=ext --time-style=iso --color-scale"
-alias lln="exa -l --icons --no-user --time-style=iso --sort=newest --color-scale"
-alias lls="exa -l --icons --no-user --time-style=iso --sort=size --group-directories-first --color-scale"
-alias llt="exa -l --icons --no-user --time-style=iso --sort=ext --group-directories-first --color-scale --tree"
+alias l="eza --icons --sort=ext --group-directories-first"
+alias ll="eza -l --icons --no-user --time-style=iso --sort=ext --group-directories-first --color-scale"
+alias lnl="eza -l --icons --no-user --time-style=iso --sort=name --group-directories-first --color-scale"
+alias lla="eza -la --icons --no-user --group-directories-first --sort=ext --time-style=iso --color-scale"
+alias lln="eza -l --icons --no-user --time-style=iso --sort=newest --color-scale"
+alias lls="eza -l --icons --no-user --time-style=iso --sort=size --group-directories-first --color-scale"
+alias llt="eza -l --icons --no-user --time-style=iso --sort=ext --group-directories-first --color-scale --tree"
 
 # package management
 alias pacs="sudo pacman -S "
