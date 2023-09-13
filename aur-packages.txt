@@ -10,6 +10,7 @@ freetube-bin
 gallery-dl
 gconf
 google-earth-pro
+heroic-games-launcher-bin
 luckybackup
 manjaro-firmware
 mikhak-fonts
