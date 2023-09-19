@@ -159,6 +159,7 @@ alias mvk="~/Repositories/scripts/mv-kebab.sh"
 alias mvkr="~/Repositories/scripts/roll-thru-kebab.sh"
 alias obo="~/Repositories/scripts/one-by-one.sh"
 alias tagger="~/Repositories/scripts/tagger.sh"
+alias gv="~/Repositories/scripts/convert-to-mp4.sh"
 
 # files
 alias ’e="emacs -nw ~/Repositories/dotfiles/emacs/init.el"
