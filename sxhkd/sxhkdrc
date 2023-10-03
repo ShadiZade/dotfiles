@@ -160,6 +160,10 @@ super + q ; c
 super + q ; r
 	pkill dunst; dunst & notify-send -t 1000 'Launcher' 'Launching "google earth pro"' & google-earth-pro && pkill dunst	
 
+# windscribe
+super + q ; w
+	pkill dunst; dunst & notify-send -t 1000 'Launcher' 'Launching "windscribe"' & windscribe && pkill dunst	
+
 # flameshot
 {_,ctrl + }Print
 	flameshot {full,gui}

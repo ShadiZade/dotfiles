@@ -57,6 +57,11 @@
   (interactive)
   (dired "~/Misc/notes"))
 
+(defun shadi/open-diary-dir ()
+  "Opens my diary directory in dired."
+  (interactive)
+  (dired "~/Misc/diary"))
+
 (defun shadi/open-org-dir ()
   "Opens my notes directory in dired."
   (interactive)
@@ -79,7 +84,7 @@
 (defun shadi/fetch-events ()
   (interactive)
   (let ((targeted-date-file (buffer-name))
-	 (new-buffer-name "*fetch-events*"))
+	(new-buffer-name "*fetch-events*"))
     (delete-other-windows)
     (split-window-below)
     (other-window 1)
@@ -94,6 +99,18 @@
       (resize-window-to nil (+ 1 number-of-lines))
       (other-window 1)))) ; could have used (shrink-window-if-larger-than-buffer)
 
+(defun shadi/start-diary-entry ()
+  (interactive)
+  (switch-to-buffer
+   (find-file
+    (format "~/Misc/diary/%s"
+	    (format-time-string "%Y-%m-%d")))
+  (olivetti-mode)))
+
+(defun shadi/open-org-task ()
+  (interactive)
+  (find-file "~/Misc/org/task.org"))
+
 ;; macros
 
 (defalias 'do-xhtml-refs
@@ -104,5 +121,3 @@
 
 (defalias 'do-xhtml-italic-region
   (kmacro "C-x C-x < i > C-x C-x < / i >"))
-
-

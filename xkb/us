@@ -22,7 +22,7 @@ xkb_symbols "basic" {
     key <AD03>	{[ e,				E														]};
     key <AD04>	{[ r,				R														]};
     key <AD05>	{[ t,				T,					U2713								]};
-    key <AD06>	{[ y,				Y														]};
+    key <AD06>	{[ y,				Y,					U5143								]};
     key <AD07>	{[ u,				U														]};
     key <AD08>	{[ i,				I														]};
     key <AD09>	{[ o,				O														]};

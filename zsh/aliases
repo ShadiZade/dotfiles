@@ -41,6 +41,8 @@ alias cdmbvd="cd ~/Misc/Backups/video/donefiles/ && cat *"
 alias cdmbp="cd ~/Misc/Backups/private-scripts/ && ll"
 alias cdmr="cd ~/Misc/research-topics && ll"
 alias cdmn="cd ~/Misc/notes && ll"
+alias cdmo="cd ~/Misc/org/ && ll"
+alias cdmd="cd ~/Misc/diary/ && ll"
 alias cdmc="cd ~/Misc/cooking && ll"
 ## Movies
 alias cdmov="cd ~/Movies && l"
