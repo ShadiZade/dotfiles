@@ -27,7 +27,7 @@ alias cdkt="cd ~/Desktop/try && ll"
 ## Trash
 alias cdt="cd ~/.local/share/Trash/files && lln -a --time=changed --sort=changed && du -sh"
 ## Downloads
-alias cdd="cd ~/Downloads && ll"
+alias cdd="cd ~/Downloads && lln"
 ## Pictures
 alias cdp="cd ~/Pictures && ll"
 alias cdpd="cd ~/Pictures/design/ && ll"
@@ -57,6 +57,7 @@ alias cdsl="cd ~/Study/languages && ll"
 alias cdslc="cd ~/Study/languages/chinese/ && ll"
 alias cdsp="cd ~/Study/programming && ll"
 alias cdsu="cd ~/Study/uni/ && ll"
+alias cdsuc="cd ~/Study/uni/courses && ll"
 ## TV
 alias cdtv="cd ~/TV && ll"
 ## Repositories
@@ -186,7 +187,6 @@ alias rdol="rdo dolphin ."
 alias m="micro"
 alias e="emacs -nw "
 alias sm="sudo micro"
-alias ff="ranger"
 alias q="source ~/.config/zsh/.zshrc"
 alias qq="clr; cd; terminal-art"
 alias qqq="clr; cd; source ~/.config/zsh/.zshrc"
@@ -224,3 +224,5 @@ alias ytmm="yt-dlp --format bestaudio --no-mtime --extract-audio --audio-format 
 alias ytrr="yt-dlp --format bestaudio --no-mtime --extract-audio --audio-format mp3 --sponsorblock-remove all"
 alias wg="wget"
 alias duh="du -h"
+alias rq="R -q -f "
+alias rqq="R -s -f "

@@ -130,7 +130,7 @@ kdeconnect
 kdegraphics-thumbnailers
 kdenetwork-filesharing
 keditbookmarks
-kimageformats
+kimageformats5
 kinit
 kio-extras
 kitty
@@ -328,7 +328,6 @@ timeshift
 timeshift-autosnap-manjaro
 tldr
 tlp
-transcode
 translate-shell
 tre
 ttc-iosevka

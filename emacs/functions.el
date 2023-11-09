@@ -111,6 +111,10 @@
   (interactive)
   (find-file "~/Misc/org/task.org"))
 
+(defun shadi/open-courses ()
+  (interactive)
+  (dired "~/Study/uni/courses"))
+
 ;; macros
 
 (defalias 'do-xhtml-refs

@@ -23,3 +23,4 @@
 (global-set-key (kbd "C-c b") 'do-xhtml-blockquote)
 (global-set-key (kbd "C-c i") 'do-xhtml-italic-region)
 (global-set-key (kbd "C-c a") 'org-agenda-list) 
+(global-set-key (kbd "C-’ u c") 'shadi/open-courses)

@@ -32,6 +32,7 @@ systemd-fsck-silent
 taffy
 telegram-desktop-bin
 thunderbird-bin
+transcode
 trashf
 ttf-amiri
 ttf-arabeyes-fonts
@@ -39,5 +40,6 @@ ttf-ms-fonts
 ttf-teletext2
 ttf-ubuntu-arabic
 ttf-unifont
+windscribe
 xdg-ninja-git
 zathura-git

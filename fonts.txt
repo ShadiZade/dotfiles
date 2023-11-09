@@ -138,7 +138,6 @@
 /usr/share/fonts/TTF/NotoSansMNerdFontPropo-ExtraCondensed.ttf: NotoSansM Nerd Font Propo,NotoSansM NFP ExtCond:style=ExtraCondensed,Regular
 /usr/share/fonts/TTF/Inconsolata-ExtraExpandedBlack.ttf: Inconsolata,Inconsolata Extra Expanded Black:style=Extra Expanded Black,Regular
 /usr/share/fonts/TTF/arabeyes/ae_Mashq-Bold.ttf: Mashq,Mashq\-Bold:style=Bold
-/usr/share/fonts/noto/NotoSansSundanese-Medium.ttf: Noto Sans Sundanese,Noto Sans Sundanese Medium:style=Medium,Regular
 /usr/share/fonts/mathjax2/HTML-CSS/Neo-Euler/woff/NeoEulerMathJax_Size1-Regular.woff: Neo Euler,Neo Euler MathJax Size1:style=Medium,Regular
 /usr/share/fonts/noto/NotoSansTifinaghHawad-Regular.ttf: Noto Sans Tifinagh Hawad:style=Regular
 /usr/share/fonts/misc/ter-u24n.otb: Terminus:style=Regular
@@ -176,7 +175,6 @@
 /usr/share/fonts/TTF/arabeyes/elham.ttf: Elham:style=Regular
 /usr/share/fonts/TTF/NotoSansNerdFontPropo-Regular.ttf: NotoSans Nerd Font Propo,NotoSans NFP:style=Regular
 /usr/share/fonts/noto/NotoSansKayahLi-Bold.ttf: Noto Sans Kayah Li:style=Bold
-/usr/share/fonts/noto/NotoSansThai-Black.ttf: Noto Sans Thai,Noto Sans Thai Black:style=Black,Regular
 /usr/share/fonts/adobe-source-code-pro/SourceCodePro-LightIt.otf: Source Code Pro,Source Code Pro Light:style=Light Italic,Italic
 /usr/share/fonts/noto/NotoSansKhmer-Medium.ttf: Noto Sans Khmer,Noto Sans Khmer Medium:style=Medium,Regular
 /usr/share/fonts/TTF/NotoSansMNerdFontPropo-CondensedExtraBold.ttf: NotoSansM Nerd Font Propo,NotoSansM NFP Cond ExtBd:style=Condensed ExtraBold,Regular
@@ -208,7 +206,6 @@
 /usr/share/fonts/gsfonts/NimbusRoman-Bold.otf: Nimbus Roman:style=Bold
 /usr/share/fonts/TTF/DejaVuSansCondensed.ttf: DejaVu Sans,DejaVu Sans Condensed:style=Condensed,Book
 /usr/share/fonts/TTF/Inconsolata-ExtraCondensed.ttf: Inconsolata,Inconsolata Extra Condensed:style=Extra Condensed,Regular
-/usr/share/fonts/noto/NotoSerifGeorgian-Light.ttf: Noto Serif Georgian,Noto Serif Georgian Light:style=Light,Regular
 /usr/share/fonts/TTF/iosevka-heavy.ttc: Iosevka Term,Iosevka Term Heavy Extended:style=Heavy Extended Italic,Italic
 /usr/share/fonts/mathjax2/HTML-CSS/Neo-Euler/woff/NeoEulerMathJax_Fraktur-Regular.woff: Neo Euler,Neo Euler MathJax Fraktur:style=Medium,Regular
 /usr/share/fonts/misc/ter-u24b.otb: Terminus:style=Bold
@@ -232,6 +229,7 @@
 /usr/share/fonts/noto/NotoSansPhoenician-Regular.ttf: Noto Sans Phoenician:style=Regular
 /usr/share/fonts/noto/NotoSansKannadaUI-Bold.ttf: Noto Sans Kannada UI:style=Bold
 /usr/share/fonts/TTF/NotoMonoNerdFontMono-Regular.ttf: NotoMono Nerd Font Mono,NotoMono NFM:style=Regular
+/usr/share/fonts/noto/NotoSansGeorgian-Medium.ttf: Noto Sans Georgian,Noto Sans Georgian Med:style=Medium,Regular
 /usr/share/fonts/mathjax2/HTML-CSS/Latin-Modern/woff/LatinModernMathJax_Symbols-Regular.woff: Latin Modern Math,Latin Modern MathJax Symbols:style=Regular
 /usr/share/fonts/mikhak/Mikhak-DS1-FD-ExtraBold.ttf: Mikhak\-DS1\-FD,Mikhak\-DS1\-FD ExtraBold:style=Mikhak-DS1-FD-ExtraBold,Regular
 /usr/share/fonts/TTF/iosevka-thin.ttc: Iosevka,Iosevka Thin Extended Oblique:style=Thin Extended Oblique,Regular
@@ -312,7 +310,6 @@
 /usr/share/fonts/worksans/WorkSans-BoldItalic.ttf: Work Sans:style=Bold Italic
 /usr/share/fonts/TTF/NotoSansNerdFont-ThinItalic.ttf: NotoSans Nerd Font,NotoSans NF Thin:style=Thin Italic,Italic
 /usr/share/fonts/noto/NotoLoopedThai-Thin.ttf: Noto Looped Thai,Noto Looped Thai Thin:style=Thin,Regular
-/usr/share/fonts/noto/NotoSansThai-Medium.ttf: Noto Sans Thai,Noto Sans Thai Medium:style=Medium,Regular
 /usr/share/fonts/TTF/akruti1.ttf: AkrutiTml1:style=Normal
 /usr/share/fonts/noto/NotoSansGujarati-Bold.ttf: Noto Sans Gujarati:style=Bold
 /usr/share/fonts/noto/NotoSansBengaliUI-Black.ttf: Noto Sans Bengali UI,Noto Sans Bengali UI Black:style=Black,Regular
@@ -595,6 +592,7 @@
 /usr/share/fonts/TTF/Inconsolata-ExpandedSemiBold.ttf: Inconsolata,Inconsolata Expanded SemiBold:style=Expanded SemiBold,Regular
 /usr/share/fonts/user-downloaded/luxi-mono/luximr.ttf: Luxi Mono:style=Regular
 /usr/share/fonts/mikhak/Mikhak-DS1-ExtraBold.ttf: Mikhak\-DS1,Mikhak\-DS1 ExtraBold:style=ExtraBold,Regular
+/usr/share/fonts/noto/NotoSerifGeorgian-Light.ttf: Noto Serif Georgian,Noto Serif Georgian Lt:style=Light,Regular
 /usr/share/fonts/TTF/pacifico_regular.ttf: Pacifico:style=Regular
 /usr/share/fonts/worksans/WorkSans-VariableFont_wght.ttf: Work Sans
 /usr/share/fonts/TTF/NotoSerifNerdFontPropo-SemiCondensedThinItalic.ttf: NotoSerif Nerd Font Propo,NotoSerif NFP SemCond Thin:style=SemiCondensed Thin Italic,Italic
@@ -611,7 +609,6 @@
 /usr/share/fonts/mathjax2/HTML-CSS/Gyre-Pagella/woff/GyrePagellaMathJax_Normal-Regular.woff: TeX Gyre Pagella Math,Gyre Pagella MathJax Normal:style=Regular
 /usr/share/fonts/TTF/NotoSerifNerdFontPropo-CondensedExtraBold.ttf: NotoSerif Nerd Font Propo,NotoSerif NFP Cond ExtBd:style=Condensed ExtraBold,Regular
 /usr/share/fonts/mikhak/Mikhak[DSTY,KSHD,wght].ttf: Mikhak,Mikhak VF:style=Bold
-/usr/share/fonts/noto/NotoSerifGeorgian-Black.ttf: Noto Serif Georgian,Noto Serif Georgian Black:style=Black,Regular
 /usr/share/fonts/TTF/NotoSansMNerdFontPropo-SemiCondensedExtraBold.ttf: NotoSansM Nerd Font Propo,NotoSansM NFP SemCond ExtBd:style=SemiCondensed ExtraBold,Regular
 /usr/share/fonts/TTF/sniglet_regular.ttf: Sniglet:style=Regular
 /usr/share/fonts/noto/NotoSansArmenian-Thin.ttf: Noto Sans Armenian,Noto Sans Armenian Thin:style=Thin,Regular
@@ -782,10 +779,12 @@
 /usr/share/fonts/noto/NotoSansTelugu-Black.ttf: Noto Sans Telugu,Noto Sans Telugu Black:style=Black,Regular
 /usr/share/fonts/mathjax2/HTML-CSS/STIX-Web/woff/STIXMathJax_Shapes-BoldItalic.woff: STIX MathJax Shapes:style=Bold Italic
 /usr/share/fonts/noto/NotoSansSymbols-Medium.ttf: Noto Sans Symbols,Noto Sans Symbols Medium:style=Medium,Regular
+/usr/share/fonts/noto/NotoSansSundanese-Medium.ttf: Noto Sans Sundanese:style=Medium,Regular
 /usr/share/fonts/noto/NotoSerif-Bold.ttf: Noto Serif:style=Bold
 /usr/share/fonts/TTF/NotoSerifNerdFont-CondensedThinItalic.ttf: NotoSerif Nerd Font,NotoSerif NF Cond Thin:style=Condensed Thin Italic,Italic
 /usr/share/fonts/TTF/iosevka-thin.ttc: Iosevka Fixed,Iosevka Fixed Thin Extended:style=Thin Extended,Regular
 /usr/share/fonts/TTF/Inconsolata-CondensedBold.ttf: Inconsolata,Inconsolata Condensed Bold:style=Condensed Bold,Regular
+/usr/share/fonts/noto/NotoSansThai-Medium.ttf: Noto Sans Thai,Noto Sans Thai Med:style=Medium,Regular
 /usr/share/fonts/TTF/NotoSerifNerdFont-ExtraCondensedItalic.ttf: NotoSerif Nerd Font,NotoSerif NF ExtCond:style=ExtraCondensed Italic,Italic
 /usr/share/fonts/TTF/Inconsolata-SemiCondensedBold.ttf: Inconsolata,Inconsolata Semi Condensed Bold:style=Semi Condensed Bold,Regular
 /usr/share/fonts/TTF/iosevka-heavy.ttc: Iosevka Term,Iosevka Term Heavy Oblique:style=Heavy Oblique,Regular
@@ -851,6 +850,7 @@
 /usr/share/fonts/TTF/Cairo-VariableFont_slnt,wght.ttf: Cairo:style=Medium
 /usr/share/fonts/noto/NotoSansArabic-Regular.ttf: Noto Sans Arabic:style=Regular
 /usr/share/fonts/TTF/montserrat_medium.ttf: Montserrat,Montserrat Medium:style=Medium,Regular
+/usr/share/fonts/noto/NotoSansThai-Black.ttf: Noto Sans Thai,Noto Sans Thai Blk:style=Black,Regular
 /usr/share/fonts/TTF/berkshireswash_regular.ttf: Berkshire Swash:style=Regular
 /usr/share/fonts/TTF/cabinsketch_regular.ttf: Cabin Sketch:style=Regular
 /usr/share/fonts/noto/NotoSansBengali-Bold.ttf: Noto Sans Bengali:style=Bold
@@ -1118,6 +1118,7 @@
 /usr/share/fonts/TTF/TAMu_Kalyani.ttf: TAMu_Kalyani:style=Regular
 /usr/share/fonts/TTF/Ligconsolata-Regular.ttf: Ligconsolata:style=Regular
 /usr/share/fonts/gsfonts/NimbusRoman-Regular.otf: Nimbus Roman:style=Regular
+/usr/share/fonts/noto/NotoSerifGeorgian-Medium.ttf: Noto Serif Georgian,Noto Serif Georgian Md:style=Medium,Regular
 /usr/share/fonts/mathjax2/HTML-CSS/Asana-Math/woff/AsanaMathJax_Size1-Regular.woff: Asana Math,Asana MathJax Size1:style=Regular
 /usr/share/fonts/TTF/raleway_regular.ttf: Raleway:style=Regular
 /usr/share/fonts/noto/NotoSansKawi-Bold.ttf: Noto Sans Kawi:style=Bold
@@ -1374,7 +1375,6 @@
 /usr/share/fonts/mathjax2/HTML-CSS/STIX-Web/woff/STIXMathJax_Variants-Italic.woff: STIX MathJax Variants:style=Italic
 /usr/share/fonts/noto/NotoSerifKhmer-Bold.ttf: Noto Serif Khmer:style=Bold
 /usr/share/fonts/TTF/NotoSerifNerdFontPropo-SemiCondensedThin.ttf: NotoSerif Nerd Font Propo,NotoSerif NFP SemCond Thin:style=SemiCondensed Thin,Regular
-/usr/share/fonts/noto/NotoSansGeorgian-Medium.ttf: Noto Sans Georgian,Noto Sans Georgian Medium:style=Medium,Regular
 /usr/share/fonts/TTF/NotoSansNerdFont-CondensedSemiBoldItalic.ttf: NotoSans Nerd Font,NotoSans NF Cond SemBd:style=Condensed SemiBold Italic,Italic
 /usr/share/fonts/TTF/sacramento_regular.ttf: Sacramento:style=Regular
 /usr/share/fonts/adobe-source-sans/SourceSansVariable-Italic.otf: Source Sans Variable:style=Black Italic
@@ -1433,6 +1433,7 @@
 /usr/share/fonts/mathjax2/HTML-CSS/Gyre-Pagella/woff/GyrePagellaMathJax_Size1-Regular.woff: TeX Gyre Pagella Math,Gyre Pagella MathJax Size1:style=Regular
 /usr/share/fonts/adobe-source-han-sans/SourceHanSansCN-Medium.otf: Source Han Sans CN,思源黑体 CN,Source Han Sans CN Medium,思源黑体 CN Medium:style=Medium,Regular
 /usr/share/fonts/TTF/iosevka-medium.ttc: Iosevka Fixed,Iosevka Fixed Medium:style=Medium Italic,Italic
+/usr/share/fonts/noto/NotoSerifGeorgian-Thin.ttf: Noto Serif Georgian,Noto Serif Georgian Th:style=Thin,Regular
 /usr/share/fonts/noto/NotoSansSymbols-Regular.ttf: Noto Sans Symbols:style=Regular
 /usr/share/fonts/noto/NotoSansMedefaidrin-Bold.ttf: Noto Sans Medefaidrin:style=Bold
 /usr/share/fonts/KawkabJulia.ttf: JuliaMono,KawkabJulia:style=Regular
@@ -1694,7 +1695,6 @@
 /usr/share/fonts/user-downloaded/bedstead/bedstead-ultracondensed.otf: Bedstead,Bedstead Ultra Condensed:style=Ultra Condensed,Regular
 /usr/share/fonts/TTF/hammersmithone_regular.ttf: HammersmithOne:style=Regular
 /usr/share/fonts/mikhak/Mikhak-FD[DSTY,KSHD,wght].ttf: Mikhak\-FD,Mikhak\-FD VF:style=Light
-/usr/share/fonts/noto/NotoSerifGeorgian-Medium.ttf: Noto Serif Georgian,Noto Serif Georgian Medium:style=Medium,Regular
 /usr/share/fonts/mathjax2/HTML-CSS/TeX/woff/MathJax_SansSerif-Italic.woff: MathJax_SansSerif:style=Italic
 /usr/share/fonts/TTF/NotoSansNerdFont-Medium.ttf: NotoSans Nerd Font,NotoSans NF Med:style=Medium,Regular
 /usr/share/fonts/TTF/NotoSansMNerdFontPropo-Condensed.ttf: NotoSansM Nerd Font Propo,NotoSansM NFP Cond:style=Condensed,Regular
@@ -1786,6 +1786,7 @@
 /usr/share/fonts/TTF/NotoSerifNerdFontPropo-CondensedExtraLightItalic.ttf: NotoSerif Nerd Font Propo,NotoSerif NFP Cond ExtLt:style=Condensed ExtraLight Italic,Italic
 /usr/share/fonts/noto/NotoSansDuployan-Bold.ttf: Noto Sans Duployan:style=Bold
 /usr/share/fonts/TTF/iosevka-medium.ttc: Iosevka Fixed,Iosevka Fixed Medium Extended:style=Medium Extended Italic,Italic
+/usr/share/fonts/noto/NotoSerifGeorgian-Black.ttf: Noto Serif Georgian,Noto Serif Georgian Bk:style=Black,Regular
 /usr/share/fonts/mathjax2/HTML-CSS/STIX-Web/woff/STIXMathJax_Variants-BoldItalic.woff: STIX MathJax Variants:style=Bold Italic
 /usr/share/fonts/TTF/NotoSansNerdFont-ExtraBold.ttf: NotoSans Nerd Font,NotoSans NF ExtBd:style=ExtraBold,Regular
 /usr/share/fonts/adobe-source-han-sans/SourceHanSansKR-Bold.otf: Source Han Sans KR,본고딕 KR:style=Bold
@@ -1826,7 +1827,6 @@
 /usr/share/fonts/TTF/ScheherazadeNew-Bold.ttf: Scheherazade New:style=Bold
 /usr/share/fonts/TTF/NotoSansMNerdFontPropo-ExtraCondensedExtraLight.ttf: NotoSansM Nerd Font Propo,NotoSansM NFP ExtCond ExtLt:style=ExtraCondensed ExtraLight,Regular
 /usr/share/fonts/adobe-source-sans/SourceSansVariable-Italic.otf: Source Sans Variable:style=Italic
-/usr/share/fonts/noto/NotoSerifGeorgian-Thin.ttf: Noto Serif Georgian,Noto Serif Georgian Thin:style=Thin,Regular
 /usr/share/fonts/noto/NotoSerifTamil-BoldItalic.ttf: Noto Serif Tamil:style=Bold Italic
 /usr/share/fonts/noto/NotoSansGeorgian-Bold.ttf: Noto Sans Georgian:style=Bold
 /usr/share/fonts/misc/ter-u12b.otb: Terminus:style=Bold
@@ -1887,7 +1887,6 @@
 /usr/share/fonts/TTF/DejaVuSansCondensed-Bold.ttf: DejaVu Sans,DejaVu Sans Condensed:style=Condensed Bold,Bold
 /usr/share/fonts/TTF/Inconsolata-ExtraCondensedExtraLight.ttf: Inconsolata,Inconsolata Extra Condensed ExtraLight:style=Extra Condensed ExtraLight,Regular
 /usr/share/fonts/OTF/NotoSerifCJKsc-Black.otf: Noto Serif CJK SC,Noto Serif CJK SC Black:style=Black,Regular
-/usr/share/fonts/noto/NotoSansGeorgian-Black.ttf: Noto Sans Georgian,Noto Sans Georgian Black:style=Black,Regular
 /usr/share/fonts/mathjax2/HTML-CSS/Gyre-Pagella/woff/GyrePagellaMathJax_Monospace-Regular.woff: TeX Gyre Pagella Math,Gyre Pagella MathJax Monospace:style=Regular
 /usr/share/fonts/TTF/MuktiNarrow.ttf: Mukti Narrow,à¦®à§à¦•à§à¦¤à¦¿:style=Regular
 /usr/share/fonts/noto/NotoSansKhojki-Regular.ttf: Noto Sans Khojki:style=Regular
@@ -2060,6 +2059,7 @@
 /usr/share/fonts/TTF/Inconsolata-SemiExpandedExtraLight.ttf: Inconsolata,Inconsolata Semi Expanded ExtraLight:style=Semi Expanded ExtraLight,Regular
 /usr/share/fonts/adobe-source-han-sans/SourceHanSansJP-Light.otf: Source Han Sans JP,源ノ角ゴシック JP,Source Han Sans JP Light,源ノ角ゴシック JP Light:style=Light,Regular
 /usr/share/fonts/mathjax2/HTML-CSS/Gyre-Pagella/woff/GyrePagellaMathJax_Variants-Regular.woff: TeX Gyre Pagella Math,Gyre Pagella MathJax Variants:style=Regular
+/usr/share/fonts/noto/NotoSansGeorgian-Black.ttf: Noto Sans Georgian,Noto Sans Georgian Blk:style=Black,Regular
 /usr/share/fonts/mathjax2/HTML-CSS/Gyre-Termes/woff/GyreTermesMathJax_NonUnicode-Regular.woff: TeX Gyre Termes Math,Gyre Termes MathJax NonUnicode:style=Regular
 /usr/share/fonts/mathjax2/HTML-CSS/Latin-Modern/woff/LatinModernMathJax_Size6-Regular.woff: Latin Modern Math,Latin Modern MathJax Size6:style=Regular
 /usr/share/fonts/mathjax2/HTML-CSS/STIX-Web/woff/STIXMathJax_DoubleStruck-Regular.woff: STIX MathJax DoubleStruck:style=Regular
