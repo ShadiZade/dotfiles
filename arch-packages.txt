@@ -126,7 +126,6 @@ jp2a
 kaccounts-providers
 kcharselect
 kcolorchooser
-kdeconnect
 kdegraphics-thumbnailers
 kdenetwork-filesharing
 keditbookmarks
@@ -275,6 +274,7 @@ qt6-wayland
 qt6-websockets
 qt6-webview
 quodlibet
+r
 reiserfsprogs
 ripgrep
 rmlint

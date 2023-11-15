@@ -696,6 +696,7 @@
 /usr/share/fonts/TTF/trebucit.ttf: Trebuchet MS:style=Italic,Cursiva,kurzíva,kursiv,Πλάγια,Kursivoitu,Italique,Dőlt,Corsivo,Cursief,Kursywa,Itálico,Курсив,İtalik,Poševno,Etzana
 /usr/share/fonts/TTF/arabeyes/sharif-univ.ttf: Nesf2:style=Regular
 /usr/share/fonts/noto/NotoSansKannada-Regular.ttf: Noto Sans Kannada:style=Regular
+/usr/share/fonts/TTF/Uni Sans Heavy.otf: Uni Sans,Uni Sans Heavy CAPS:style=Heavy CAPS,Regular
 /usr/share/fonts/TTF/Inconsolata-Bold.ttf: Inconsolata:style=Bold
 /usr/share/fonts/TTF/NotoSansNerdFontPropo-ExtraLightItalic.ttf: NotoSans Nerd Font Propo,NotoSans NFP ExtLt:style=ExtraLight Italic,Italic
 /usr/share/fonts/noto/NotoNaskhArabicUI-Medium.ttf: Noto Naskh Arabic UI,Noto Naskh Arabic UI Medium:style=Medium,Regular
@@ -887,6 +888,7 @@
 /usr/share/fonts/noto/NotoSerifMakasar-Regular.ttf: Noto Serif Makasar:style=Regular
 /usr/share/fonts/noto/NotoSerifKannada-Black.ttf: Noto Serif Kannada,Noto Serif Kannada Black:style=Black,Regular
 /usr/share/fonts/TTF/AriBlk.TTF: Arial Black:style=Regular,Normal,obyčejné,Standard,Κανονικά,Normaali,Normál,Normale,Standaard,Normalny,Обычный,Normálne,Navadno,Arrunta
+/usr/share/fonts/TTF/Uni Sans Thin Italic.otf: Uni Sans,Uni Sans Thin Italic CAPS:style=Thin Italic CAPS,Regular
 /usr/share/fonts/TTF/iosevka-regular.ttc: Iosevka Fixed,Iosevka Fixed Extended:style=Extended,Regular
 /usr/share/fonts/TTF/NotoSansNerdFontPropo-SemiCondensedLightItalic.ttf: NotoSans Nerd Font Propo,NotoSans NFP SemCond Light:style=SemiCondensed Light Italic,Italic
 /usr/share/fonts/eczar/Eczar-VariableFont_wght.ttf: Eczar:style=SemiBold
@@ -915,6 +917,7 @@
 /usr/share/fonts/TTF/NotoSansNerdFontPropo-CondensedExtraLight.ttf: NotoSans Nerd Font Propo,NotoSans NFP Cond ExtLt:style=Condensed ExtraLight,Regular
 /usr/share/fonts/noto/NotoSansBengali-Regular.ttf: Noto Sans Bengali:style=Regular
 /usr/share/fonts/adobe-source-sans/SourceSans3-LightIt.otf: Source Sans 3,Source Sans 3 Light:style=Light Italic,Italic
+/usr/share/fonts/TTF/Pastry Paradise.otf: Pastry Paradise:style=Regular
 /usr/share/fonts/TTF/NotoSansMNerdFontPropo-CondensedSemiBold.ttf: NotoSansM Nerd Font Propo,NotoSansM NFP Cond SemBd:style=Condensed SemiBold,Regular
 /usr/share/fonts/mikhak/Mikhak-DS2-FD-Bold.ttf: Mikhak\-DS2\-FD,Mikhak\-DS2\-FD Bold:style=Mikhak-DS2-FD-Bold,Bold
 /usr/share/fonts/noto/NotoSerifToto-Bold.ttf: Noto Serif Toto:style=Bold
@@ -1369,6 +1372,7 @@
 /usr/share/fonts/TTF/iosevka-extralight.ttc: Iosevka,Iosevka Extralight Extended:style=Extralight Extended,Regular
 /usr/share/fonts/noto/NotoSerifLao-Bold.ttf: Noto Serif Lao:style=Bold
 /usr/share/fonts/noto/NotoSerifTelugu-Thin.ttf: Noto Serif Telugu,Noto Serif Telugu Thin:style=Thin,Regular
+/usr/share/fonts/TTF/HanyiSentyBubbleTea Regular.ttf: HanyiSentyBubbleTea,漢儀新蒂珍珠奶茶,汉仪新蒂珍珠奶茶:style=Regular
 /usr/share/fonts/TTF/NotoSansMNerdFontPropo-SemiCondensedLight.ttf: NotoSansM Nerd Font Propo,NotoSansM NFP SemCond Light:style=SemiCondensed Light,Regular
 /usr/share/fonts/TTF/iosevka-semibold.ttc: Iosevka Term,Iosevka Term Semibold:style=Semibold Italic,Italic
 /usr/share/fonts/noto/NotoSansMendeKikakui-Regular.ttf: Noto Sans Mende Kikakui:style=Regular
@@ -1431,6 +1435,7 @@
 /usr/share/fonts/mathjax2/HTML-CSS/STIX-Web/woff/STIXMathJax_Size4-Regular.woff: STIX MathJax Size4:style=Regular
 /usr/share/fonts/TTF/Inconsolata-CondensedLight.ttf: Inconsolata,Inconsolata Condensed Light:style=Condensed Light,Regular
 /usr/share/fonts/mathjax2/HTML-CSS/Gyre-Pagella/woff/GyrePagellaMathJax_Size1-Regular.woff: TeX Gyre Pagella Math,Gyre Pagella MathJax Size1:style=Regular
+/usr/share/fonts/TTF/Uni Sans Heavy Italic.otf: Uni Sans,Uni Sans Heavy Italic CAPS:style=Heavy Italic CAPS,Regular
 /usr/share/fonts/adobe-source-han-sans/SourceHanSansCN-Medium.otf: Source Han Sans CN,思源黑体 CN,Source Han Sans CN Medium,思源黑体 CN Medium:style=Medium,Regular
 /usr/share/fonts/TTF/iosevka-medium.ttc: Iosevka Fixed,Iosevka Fixed Medium:style=Medium Italic,Italic
 /usr/share/fonts/noto/NotoSerifGeorgian-Thin.ttf: Noto Serif Georgian,Noto Serif Georgian Th:style=Thin,Regular
@@ -1537,6 +1542,7 @@
 /usr/share/fonts/TTF/Inconsolata-UltraCondensedExtraLight.ttf: Inconsolata,Inconsolata Ultra Condensed ExtraLight:style=Ultra Condensed ExtraLight,Regular
 /usr/share/fonts/noto/NotoSerifTamil-Italic.ttf: Noto Serif Tamil:style=Italic
 /usr/share/fonts/TTF/NotoSerifNerdFont-CondensedBlack.ttf: NotoSerif Nerd Font,NotoSerif NF Cond Black:style=Condensed Black,Regular
+/usr/share/fonts/TTF/Uni Sans Thin.otf: Uni Sans,Uni Sans Thin CAPS:style=Thin CAPS,Regular
 /usr/share/fonts/adobe-source-code-pro/SourceCodeVF-Upright.otf: SourceCodeVF:style=Regular
 /usr/share/fonts/noto/NotoSansKannada-Medium.ttf: Noto Sans Kannada,Noto Sans Kannada Medium:style=Medium,Regular
 /usr/share/fonts/noto/NotoSansTamilUI-Bold.ttf: Noto Sans Tamil UI:style=Bold

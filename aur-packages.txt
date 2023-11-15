@@ -4,6 +4,7 @@ buku
 cmatrix-git
 cozette-otb
 cpdf
+czkawka-git
 edir
 epr-git
 freetube-bin
@@ -24,6 +25,7 @@ plymouth-theme-angular-git
 plymouth-theme-aperture-git
 python-pathvalidate
 qbittorrent-git
+r-widgettools
 ripdrag-git
 shahab-fonts
 siji-git

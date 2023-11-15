@@ -165,17 +165,8 @@ lv () {
 	tput cuu $(lln | wc -l)
     done
 }
-
-## takenote
-takenote () {
-    name_file="markdown-topic-"$1".md"
-    [[ -e "$name_file" ]] &&\
-	(echo -e "\033[33m:: Setting document...\033[0m"
-	 pandoc "$name_file" -o document-topic-"$1".pdf
-	 echo -e "\033[33m:: Setting slideshow...\033[0m"
-	 pandoc "$name_file" -t beamer -o slideshow-topic-"$1".pdf
-	 read "w_doc?:: Open document or slideshow? [d/s] "
-         [[ "$w_doc" = "d" ]] && zathura document-topic-"$1".pdf
-	 [[ "$w_doc" = "s" ]] && zathura slideshow-topic-"$1".pdf)
-    [[ -e "$name_file" ]] || touch "$name_file"
+## wg
+wg () {
+    [[ -z "$2" ]] && wget -t 0 -- "$1" || wget -O "$2" -t 0 -- "$1"
 }
+
