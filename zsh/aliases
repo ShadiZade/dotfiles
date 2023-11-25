@@ -166,6 +166,7 @@ alias obo="~/Repositories/scripts/one-by-one.sh"
 alias tagger="~/Repositories/scripts/tagger.sh"
 alias gv="~/Repositories/scripts/convert-to-mp4.sh"
 alias tn="~/Repositories/scripts/takenote.sh"
+alias scr="~/Repositories/scripts/scientifier.sh"
 
 # files
 alias ’e="emacs -nw ~/Repositories/dotfiles/emacs/init.el"
