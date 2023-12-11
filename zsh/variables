@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# one_book_per_x_days: used in scripts/book-goal-calc.sh
+obpxd=14
