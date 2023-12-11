@@ -1,8 +1,9 @@
+;; global bindings
 (global-set-key (kbd "<escape>") 'keyboard-escape-quit)
 (global-set-key (kbd "M-s M-s") 'complete-symbol)
 (global-set-key (kbd "C-x C-,") 'eval-buffer)
 (global-set-key (kbd "C-x w") 'shadi/load-elfeed)
-(global-set-key (kbd "M-]") 'other-window)
+(global-set-key (kbd "C-<tab>") 'other-window)
 (global-set-key (kbd "C-’ i b") 'ispell-buffer)
 (global-set-key (kbd "C-’ i r") 'ispell-region)
 (global-set-key (kbd "C-’ c") 'shadi/reload-config-file)
@@ -21,8 +22,13 @@
 (global-set-key (kbd "C-’ f") 'shadi/fetch-events)
 (global-set-key (kbd "C-’ t") 'shadi/open-org-task)
 (global-set-key (kbd "C-’ d") 'shadi/start-diary-entry)
-(global-set-key (kbd "C-c r") 'do-xhtml-refs)
-(global-set-key (kbd "C-c b") 'do-xhtml-blockquote)
-(global-set-key (kbd "C-c i") 'do-xhtml-italic-region)
-(global-set-key (kbd "C-c a") 'org-agenda-list) 
+(global-set-key (kbd "C-c r") 'do-xhtml-refs)                 ;;  migrate to local
+(global-set-key (kbd "C-c b") 'do-xhtml-blockquote)	      ;;  migrate to local
+(global-set-key (kbd "C-c i") 'do-xhtml-italic-region)        ;;  migrate to local                                   
+(global-set-key (kbd "C-c a") 'org-agenda-list)                   
 (global-set-key (kbd "C-’ u c") 'shadi/open-courses)
+
+;; local bindings
+(add-hook 'bibtex-mode-hook
+	  (lambda ()
+	    (local-set-key (kbd "C-c C-~") 'yank-bib-and-copy-name)))
