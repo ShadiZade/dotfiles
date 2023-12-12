@@ -26,12 +26,10 @@ terminal-art () {
 }
 
 ## disown
-function run_disowned() {
+run_disowned () {
     "$@" & disown
 }
-function rdo() {
-    # run_disowned and silenced
-
+rdo () {
     run_disowned "$@" 1>/dev/null 2>/dev/null
 }
 

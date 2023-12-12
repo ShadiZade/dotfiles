@@ -22,7 +22,8 @@ sort () {
 describe () {
     ext=$(echo "$file" | awk -F '.' '{print $NF}')
     newname="$(fd 'jpg|jpeg|png|gif|webp|jxl|jpg_large|svg' $(pwd) | awk -F '/' '{print $NF}' | rofi -dmenu -i -p 'rename image')"
-    [ -z "$newname" ] || mv -vn -- "$file" "$newname"."$ext"
+    newname="$(~/Repositories/scripts/kebabization.sh "$newname"; cat ~/.kebab)"
+    [ -z "$newname" ] || (mv -vn -- "$file" "$newname"."$ext"; touch "$newname"."$ext")
 }
 
 move () {
@@ -46,6 +47,10 @@ editgimp () {
     gimp "$file"
 }
 
+changedate () {
+    touch "$file"
+}
+
 while read file
 do
         case "$1" in
@@ -56,6 +61,7 @@ do
 	"C-m")  move ;;
 	"C-e")  edit ;;
 	"C-g")  editgimp ;;
+	"C-0")  changedate ;;
         esac
 done
 
