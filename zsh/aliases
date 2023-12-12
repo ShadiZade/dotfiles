@@ -230,4 +230,5 @@ alias ytrr="yt-dlp --format bestaudio --no-mtime --extract-audio --audio-format 
 alias duh="du -h"
 alias rq="R -q -f "
 alias rqq="R -s -f "
+alias Q="R -s"
 alias o="rdo okular"
