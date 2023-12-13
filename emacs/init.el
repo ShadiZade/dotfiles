@@ -17,6 +17,7 @@
 (set-fringe-mode 16)
 (menu-bar-mode -1)
 (beacon-mode 1)
+(add-hook 'after-init-hook 'global-company-mode)
 (setq visible-bell t)
 (setq make-backup-files nil)
 (setq line-move-visual t)
@@ -50,7 +51,7 @@
  '(custom-safe-themes
    '("b1a691bb67bd8bd85b76998caf2386c9a7b2ac98a116534071364ed6489b695d" default))
  '(package-selected-packages
-   '(magit auto-complete-auctex auctex unbound jumblr mines quiz gscholar-bibtex ess poly-R csv-mode nov yaml-mode calmer-forest-theme beacon atom-one-dark-theme arjen-grey-theme elfeed slime xwiki-mode olivetti org-bullets sudo-utils org-mode general all-the-icons-dired all-the-icons gruvbox-theme helpful ivy-rich which-key rainbow-delimiters use-package xclip mediawiki markdown-mode lua-mode lorem-ipsum hydra graphviz-dot-mode dash counsel)))
+   '(company-spell company-emoji company-auctex company magit auctex unbound jumblr mines quiz gscholar-bibtex ess poly-R csv-mode nov yaml-mode calmer-forest-theme beacon atom-one-dark-theme arjen-grey-theme elfeed slime xwiki-mode olivetti org-bullets sudo-utils org-mode general all-the-icons-dired all-the-icons gruvbox-theme helpful ivy-rich which-key rainbow-delimiters use-package xclip mediawiki markdown-mode lua-mode lorem-ipsum hydra graphviz-dot-mode dash counsel)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

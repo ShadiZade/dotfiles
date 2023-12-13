@@ -1,6 +1,6 @@
 ;; global bindings
 (global-set-key (kbd "<escape>") 'keyboard-escape-quit)
-(global-set-key (kbd "M-s M-s") 'complete-symbol)
+(global-set-key (kbd "M-s M-s") 'company-complete)
 (global-set-key (kbd "C-x C-,") 'eval-buffer)
 (global-set-key (kbd "C-x w") 'shadi/load-elfeed)
 (global-set-key (kbd "C-<tab>") 'other-window)
@@ -27,6 +27,14 @@
 (global-set-key (kbd "C-c i") 'do-xhtml-italic-region)        ;;  migrate to local                                   
 (global-set-key (kbd "C-c a") 'org-agenda-list)                   
 (global-set-key (kbd "C-’ u c") 'shadi/open-courses)
+
+;; mode bindings
+(global-set-key (kbd "C-| t") 'text-mode)
+(global-set-key (kbd "C-| o") 'org-mode)
+(global-set-key (kbd "C-| m") 'markdown-mode)
+(global-set-key (kbd "C-| e") 'emacs-lisp-mode)
+(global-set-key (kbd "C-| b") 'shell-script-mode)
+(global-set-key (kbd "C-| l") 'TeX-tex-mode)
 
 ;; local bindings
 (add-hook 'bibtex-mode-hook
