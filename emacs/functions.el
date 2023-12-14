@@ -127,4 +127,10 @@
   (kmacro "C-x C-x < i > C-x C-x < / i >"))
 
 (defalias 'yank-bib-and-copy-name
-   (kmacro "M-> C-y <return> C-s @ <return> M-f M-f C-SPC M-b M-w C-c C-c M-> C-x C-s"))
+   (kmacro "M-> C-y <return> C-s @ <return> M-f M-f C-SPC M-b M-w C-c C-c M-> C-x C-s C-~"))
+
+(defalias 'insert-paper-name-as-comment
+  (kmacro "<return> % SPC \\ c i t e { C-y }"))
+
+(defalias 'uncomment-cite-and-copy
+  (kmacro "C-a C-s \\ \\ <return> C-b C-SPC C-e M-w"))

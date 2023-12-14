@@ -25,8 +25,10 @@
 (global-set-key (kbd "C-c r") 'do-xhtml-refs)                 ;;  migrate to local
 (global-set-key (kbd "C-c b") 'do-xhtml-blockquote)	      ;;  migrate to local
 (global-set-key (kbd "C-c i") 'do-xhtml-italic-region)        ;;  migrate to local                                   
-(global-set-key (kbd "C-c a") 'org-agenda-list)                   
+(global-set-key (kbd "C-c a") 'org-agenda-list)
+(global-set-key (kbd "C-c s") 'scratch-buffer)
 (global-set-key (kbd "C-’ u c") 'shadi/open-courses)
+(global-set-key (kbd "C-~") 'mode-line-other-buffer)
 
 ;; mode bindings
 (global-set-key (kbd "C-| t") 'text-mode)
@@ -39,4 +41,12 @@
 ;; local bindings
 (add-hook 'bibtex-mode-hook
 	  (lambda ()
-	    (local-set-key (kbd "C-c C-~") 'yank-bib-and-copy-name)))
+	    (local-set-key (kbd "C-c C-~") 'yank-bib-and-copy-name)
+	    ))
+
+(add-hook 'LaTeX-mode-hook
+	  (lambda ()
+	    (local-set-key (kbd "C-c C-~") 'insert-paper-name-as-comment)
+	    (local-set-key (kbd "C-c C-/") 'uncomment-cite-and-copy)
+	    ))
+
