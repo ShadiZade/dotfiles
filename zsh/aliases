@@ -49,6 +49,7 @@ alias cdmov="cd ~/Movies && ll"
 ## Books
 alias cdb="cd ~/Books"
 alias cdba="cd ~/Books/add && delete-opf; ll"
+alias cdbx="cd ~/Books/xdone/; ll"
 ## Config
 alias cdc="cd ~/.config"
 ## Study
@@ -114,7 +115,7 @@ alias enit="command trans -b en:it"
 # list
 alias l="eza --icons --sort=ext --group-directories-first"
 alias ll="eza -l --icons --no-user --time-style=iso --sort=ext --group-directories-first --color-scale all"
-alias lnl="eza -l --icons --no-user --time-style=iso --sort=name --group-directories-first --color-scale all"
+alias lnl="eza -l --icons --no-user --time-style=iso --sort=name --color-scale all"
 alias lla="eza -la --icons --no-user --group-directories-first --sort=ext --time-style=iso --color-scale all"
 alias lln="eza -l --icons --no-user --time-style=iso --sort=newest --color-scale all"
 alias lls="eza -l --icons --no-user --time-style=iso --sort=size --group-directories-first --color-scale all"
