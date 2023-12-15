@@ -168,7 +168,7 @@ alias tagger="~/Repositories/scripts/tagger.sh"
 alias gv="~/Repositories/scripts/convert-to-mp4.sh"
 alias tn="~/Repositories/scripts/takenote.sh"
 alias scr="~/Repositories/scripts/scientifier.sh"
-alias cf="~/Repositories/scripts/copy-full-path.sh" 
+alias cf="~/Repositories/scripts/copy-full-path.sh"
 
 # files
 alias ’e="emacs -nw ~/Repositories/dotfiles/emacs/init.el"
@@ -204,7 +204,7 @@ alias cp="cp -iv"
 alias mv='mv -iv'
 alias rm='rm -iv'
 alias rmdir='rmdir -v'
-alias grep='grep --color=auto -i'
+alias grep='grep --color=auto -is'
 alias window-name="xprop WM_CLASS"
 alias clr="printf '\033[2J\033[3J\033[1;1H'"
 alias sudo='sudo '

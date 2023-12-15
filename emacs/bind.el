@@ -29,6 +29,7 @@
 (global-set-key (kbd "C-c s") 'scratch-buffer)
 (global-set-key (kbd "C-’ u c") 'shadi/open-courses)
 (global-set-key (kbd "C-~") 'mode-line-other-buffer)
+(global-set-key (kbd "C-c ’") 'ispell-word)
 
 ;; mode bindings
 (global-set-key (kbd "C-| t") 'text-mode)
