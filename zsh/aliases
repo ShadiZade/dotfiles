@@ -120,6 +120,7 @@ alias lla="eza -la --icons --no-user --group-directories-first --sort=ext --time
 alias lln="eza -l --icons --no-user --time-style=iso --sort=newest --color-scale all"
 alias lls="eza -l --icons --no-user --time-style=iso --sort=size --group-directories-first --color-scale all"
 alias llt="eza -l --icons --no-user --time-style=iso --sort=ext --group-directories-first --color-scale all --tree"
+alias llg="eza -l --icons --no-user --time-style=iso --sort=ext --group-directories-first --color-scale all --git"
 
 # package management
 alias pacs="sudo pacman -S "
