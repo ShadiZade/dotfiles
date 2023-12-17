@@ -15,6 +15,7 @@
 ####### symlink location: ~/.config/zsh/ ##########################################################
 ## terminal-art
 source ~/Repositories/dotfiles/zsh/aliases
+source ~/Misc/Backups/private-scripts/private-aliases.sh 
 
 terminal-art () {
     touch ~/.qotd ~/.today-date

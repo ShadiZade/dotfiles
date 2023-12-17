@@ -170,6 +170,7 @@ alias gv="~/Repositories/scripts/convert-to-mp4.sh"
 alias tn="~/Repositories/scripts/takenote.sh"
 alias scr="~/Repositories/scripts/scientifier.sh"
 alias cf="~/Repositories/scripts/copy-full-path.sh"
+alias λ="~/Repositories/scripts/latex-project-manager.sh"
 
 # files
 alias ’e="emacs -nw ~/Repositories/dotfiles/emacs/init.el"
