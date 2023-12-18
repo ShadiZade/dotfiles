@@ -51,3 +51,6 @@
 	    (local-set-key (kbd "C-c C-/") 'uncomment-cite-and-copy)
 	    ))
 
+(add-hook 'shell-mode-hook
+	  (lambda ()
+	    (local-set-key (kbd "C-c n o t") 'bash-not-structure)))

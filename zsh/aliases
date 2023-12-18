@@ -58,7 +58,7 @@ alias cdsl="cd ~/Study/languages && ll"
 alias cdslc="cd ~/Study/languages/chinese/ && ll"
 alias cdsp="cd ~/Study/programming && ll"
 alias cdsu="cd ~/Study/uni/ && ll"
-alias cdsuc="cd ~/Study/uni/courses && ll"
+alias cdsuc="cd ~/Study/uni/courses && fzf-choose-directory"
 alias cdsm="cd ~/Study/marxism/ && ll"
 ## TV
 alias cdtv="cd ~/TV && ll"
@@ -170,7 +170,7 @@ alias gv="~/Repositories/scripts/convert-to-mp4.sh"
 alias tn="~/Repositories/scripts/takenote.sh"
 alias scr="~/Repositories/scripts/scientifier.sh"
 alias cf="~/Repositories/scripts/copy-full-path.sh"
-alias λ="~/Repositories/scripts/latex-project-manager.sh"
+alias λ="~/Repositories/scripts/OpenShennong.sh"
 
 # files
 alias ’e="emacs -nw ~/Repositories/dotfiles/emacs/init.el"

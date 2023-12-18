@@ -176,3 +176,8 @@ netc () {
     echo -e "\033[33m:: Connecting to $DEFAULT_WIFI_NETWORK\033[0m"
     nmcli device wifi connect "$DEFAULT_WIFI_NETWORK"
 }
+
+## fzf-choose-directory
+fzf-choose-directory () {
+    cd "$(eza -1D | fzf)"
+}
