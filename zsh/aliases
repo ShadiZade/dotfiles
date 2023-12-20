@@ -53,8 +53,8 @@ alias cdbx="cd ~/Books/xdone/; ll"
 ## Config
 alias cdc="cd ~/.config"
 ## Study
-alias cds="cd ~/Study && ll"
-alias cdsl="cd ~/Study/languages && ll"
+alias cds="cd ~/Study && fzf-choose-directory"
+alias cdsl="cd ~/Study/languages && fzf-choose-directory && ll"
 alias cdslc="cd ~/Study/languages/chinese/ && ll"
 alias cdsp="cd ~/Study/programming && ll"
 alias cdsu="cd ~/Study/uni/ && ll"
@@ -63,10 +63,9 @@ alias cdsm="cd ~/Study/marxism/ && ll"
 ## TV
 alias cdtv="cd ~/TV && ll"
 ## Repositories
-alias cdr="cd ~/Repositories/ && ll"
+alias cdr="cd ~/Repositories/ && fzf-choose-directory"
 alias cdrs="cd ~/Repositories/scripts && ll"
 alias cdrd="cd ~/Repositories/dotfiles && ll"
-alias cdrz="cd ~/Repositories/ShadiZade && ll"
 alias cdrcd="cd ~/Repositories/communist-calendar/dates/ && ll"
 ## Archives
 alias cda="cd ~/Archives && ll"

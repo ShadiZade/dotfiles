@@ -22,14 +22,13 @@
 (global-set-key (kbd "C-’ f") 'shadi/fetch-events)
 (global-set-key (kbd "C-’ t") 'shadi/open-org-task)
 (global-set-key (kbd "C-’ d") 'shadi/start-diary-entry)
-(global-set-key (kbd "C-c r") 'do-xhtml-refs)                 ;;  migrate to local
-(global-set-key (kbd "C-c b") 'do-xhtml-blockquote)	      ;;  migrate to local
-(global-set-key (kbd "C-c i") 'do-xhtml-italic-region)        ;;  migrate to local                                   
 (global-set-key (kbd "C-c a") 'org-agenda-list)
 (global-set-key (kbd "C-c s") 'scratch-buffer)
 (global-set-key (kbd "C-’ u c") 'shadi/open-courses)
 (global-set-key (kbd "C-~") 'mode-line-other-buffer)
 (global-set-key (kbd "C-c ’") 'ispell-word)
+(global-set-key (kbd "M-<up>") 'move-text-up)
+(global-set-key (kbd "M-<down>") 'move-text-down)
 
 ;; mode bindings
 (global-set-key (kbd "C-| t") 'text-mode)
@@ -49,8 +48,23 @@
 	  (lambda ()
 	    (local-set-key (kbd "C-c C-~") 'insert-paper-name-as-comment)
 	    (local-set-key (kbd "C-c C-/") 'uncomment-cite-and-copy)
+	    (local-set-key (kbd "C-c c")   'tex-insert-ci)
+	    (local-set-key (kbd "C-c i")   'tex-italic-region)
+	    (local-set-key (kbd "C-c b")   'tex-bold-region)
+	    (local-set-key (kbd "\"")      'tex-enquote)
 	    ))
 
 (add-hook 'shell-mode-hook
 	  (lambda ()
-	    (local-set-key (kbd "C-c n o t") 'bash-not-structure)))
+	    (local-set-key (kbd "C-c n o t") 'bash-not-structure)
+	    ))
+
+(add-hook 'mhtml-mode-hook
+	  (lambda ()
+	    (local-set-key (kbd "C-c r") 'do-xhtml-refs)
+	    (local-set-key (kbd "C-c b") 'do-xhtml-blockquote)
+	    (local-set-key (kbd "C-c i") 'do-xhtml-italic-region)
+	    ))
+
+
+			   
