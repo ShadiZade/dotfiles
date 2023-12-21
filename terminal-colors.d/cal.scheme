@@ -1,0 +1,5 @@
+# colors for the "cal" terminal calendar command
+header 37
+today 4
+weekend 33
+workday 35

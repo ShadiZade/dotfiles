@@ -66,5 +66,7 @@
 	    (local-set-key (kbd "C-c i") 'do-xhtml-italic-region)
 	    ))
 
-
-			   
+(add-hook 'pdf-view-mode-hook
+	  (lambda ()
+	    (local-set-key (kbd "C-s") 'isearch-forward)
+	    ))
