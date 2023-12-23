@@ -46,12 +46,13 @@
 
 (add-hook 'LaTeX-mode-hook
 	  (lambda ()
-	    (local-set-key (kbd "C-c C-~") 'insert-paper-name-as-comment)
-	    (local-set-key (kbd "C-c C-/") 'uncomment-cite-and-copy)
+	    (local-set-key (kbd "C-c C-~") 'tex-insert-paper-name-as-comment)
+	    (local-set-key (kbd "C-c C-/") 'tex-uncomment-cite-and-copy)
 	    (local-set-key (kbd "C-c c")   'tex-insert-ci)
 	    (local-set-key (kbd "C-c i")   'tex-italic-region)
 	    (local-set-key (kbd "C-c b")   'tex-bold-region)
 	    (local-set-key (kbd "\"")      'tex-enquote)
+	    (local-set-key (kbd "; ;")     'tex-insert-comment)
 	    ))
 
 (add-hook 'shell-mode-hook

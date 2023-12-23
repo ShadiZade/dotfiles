@@ -127,11 +127,11 @@
   (kmacro "C-x C-x < i > C-x C-x < / i >"))
 
 ;;; TeX-tex-mode (LaTeX-mode-hook)
-(defalias 'insert-paper-name-as-comment
+(defalias 'tex-insert-paper-name-as-comment
   (kmacro "<return> % SPC ~ \\ c i { C-y }"))
 
-(defalias 'uncomment-cite-and-copy
-  (kmacro "C-a C-s \\ \\ <return> C-b C-SPC C-e M-w"))
+(defalias 'tex-uncomment-cite-and-copy
+  (kmacro "C-a C-s ~ <return> C-b C-SPC C-e M-w"))
 
 (defalias 'tex-insert-ci
   (kmacro "~ \\ c i { } C-b"))
@@ -144,6 +144,9 @@
 
 (defalias 'tex-enquote
   (kmacro "\\ e n q u o t e { } C-b"))
+
+(defalias 'tex-insert-comment
+  (kmacro "%"))
 
 ;;; bibtex-mode (bibtex-mode-hook)
 (defalias 'yank-bib-and-copy-name
