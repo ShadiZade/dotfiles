@@ -48,11 +48,29 @@
 	  (lambda ()
 	    (local-set-key (kbd "C-c C-~") 'tex-insert-paper-name-as-comment)
 	    (local-set-key (kbd "C-c C-/") 'tex-uncomment-cite-and-copy)
-	    (local-set-key (kbd "C-c c")   'tex-insert-ci)
-	    (local-set-key (kbd "C-c i")   'tex-italic-region)
-	    (local-set-key (kbd "C-c b")   'tex-bold-region)
-	    (local-set-key (kbd "\"")      'tex-enquote)
+	    (local-set-key (kbd "; c")     'tex-insert-ci)
+	    (local-set-key (kbd "; i")     'tex-italic-region)
+	    (local-set-key (kbd "; b")     'tex-bold-region)
+	    (local-set-key (kbd "; s")     'tex-insert-species)
 	    (local-set-key (kbd "; ;")     'tex-insert-comment)
+	    (local-set-key (kbd "\"")      'tex-enquote)
+	    ;; ispell skip new commands
+	    (setq ispell-tex-skip-alists
+                   (list
+                    (append
+                     (car ispell-tex-skip-alists) 
+                     '(
+		       ("\\\\ci"       ispell-tex-arg-end)
+		       ("\\\\species"  ispell-tex-arg-end)
+		       ))
+                    (cadr ispell-tex-skip-alists)))
+	    ;; custom syntax highlighting
+	    (font-lock-add-keywords nil
+				    '(("\\\\ci\\>"          0   font-lock-constant-face      t)
+				      ("\\\\enquote\\>"     0   font-lock-warning-face       t)
+				      ("\\\\species\\>"     0   font-lock-warning-face       t)
+				      ("\\\\csection\\>"    0   font-lock-warning-face       t)
+				      ))
 	    ))
 
 (add-hook 'shell-mode-hook

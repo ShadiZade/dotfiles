@@ -136,6 +136,9 @@
 (defalias 'tex-insert-ci
   (kmacro "~ \\ c i { } C-b"))
 
+(defalias 'tex-insert-species
+  (kmacro "\\ s p e c i e s { } C-b"))
+
 (defalias 'tex-bold-region
   (kmacro "\\ t e x t b f { } C-b"))
 
