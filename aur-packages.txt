@@ -5,8 +5,8 @@ cmatrix-git
 cozette-otb
 cpdf
 czkawka-git
+dwdiff
 edir
-epr-git
 freetube-bin
 gallery-dl
 gconf
@@ -19,6 +19,7 @@ minecraft-launcher
 mkinitcpio-firmware
 morse-x
 noto-fonts-sc
+otf-gfs
 otf-kawkab-mono
 phantomjs-bin
 plymouth-theme-angular-git
@@ -31,6 +32,7 @@ shahab-fonts
 siji-git
 soundcloud-dl-git
 systemd-fsck-silent
+tabbed
 taffy
 telegram-desktop-bin
 thunderbird-bin
@@ -38,10 +40,11 @@ transcode
 trashf
 ttf-amiri
 ttf-arabeyes-fonts
+ttf-lxgw-wenkai
 ttf-ms-fonts
 ttf-teletext2
 ttf-ubuntu-arabic
 ttf-unifont
+vdhcoapp-bin
 windscribe
 xdg-ninja-git
-zathura-git

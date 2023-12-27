@@ -179,5 +179,9 @@ netc () {
 
 ## fzf-choose-directory
 fzf-choose-directory () {
-    cd "$(eza -1D | fzf)"
+    chosen_dir="$(eza -1D | fzf)"
+    [ -z "$chosen_dir" ] \
+	&& echo -e "\033[33m:: Nothing done.\033[0m" \
+	&& return
+    cd "$chosen_dir" && ll
 }

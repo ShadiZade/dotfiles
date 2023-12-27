@@ -122,7 +122,7 @@
 	org-hide-emphasis-markers t
 	org-todo-keywords
 ;	org-log-done 'time
-	'((sequence "TODO" "WAIT" "|" "DONE" "CANC"))))
+	'((sequence "TODO" "INPR" "|" "DONE" "CANC"))))
 
 (use-package org-bullets
   :after org

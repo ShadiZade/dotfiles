@@ -59,7 +59,7 @@ alias cdslc="cd ~/Study/languages/chinese/ && ll"
 alias cdsp="cd ~/Study/programming && ll"
 alias cdsu="cd ~/Study/uni/ && ll"
 alias cdsuc="cd ~/Study/uni/courses && fzf-choose-directory"
-alias cdsm="cd ~/Study/marxism/ && ll"
+alias cdsm="cd ~/Study/marxism/ && fzf-choose-directory"
 ## TV
 alias cdtv="cd ~/TV && fzf-choose-directory"
 ## Repositories
@@ -170,6 +170,8 @@ alias tn="~/Repositories/scripts/takenote.sh"
 alias scr="~/Repositories/scripts/scientifier.sh"
 alias cf="~/Repositories/scripts/copy-full-path.sh"
 alias λ="~/Repositories/scripts/OpenShennong.sh"
+alias knife='~/Repositories/scripts/kebab-knife.sh'
+
 
 # files
 alias ’e="emacs -nw ~/Repositories/dotfiles/emacs/init.el"
@@ -235,3 +237,4 @@ alias rqq="R -s -f "
 alias Q="R -s"
 alias o="rdo okular"
 alias cal="cal --color=always -m"
+alias f="fzf-choose-directory"

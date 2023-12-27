@@ -24,6 +24,7 @@ bat
 bcprov
 bison
 bitwarden
+blueman
 breeze
 breeze-gtk
 breeze-icons
@@ -36,11 +37,13 @@ calc
 calibre
 cdparanoia
 cdrdao
+chrpath
 clisp
 coreutils
 cowsay
 cronie
 cryptsetup
+curlie
 device-mapper
 dhclient
 dhcpcd
@@ -89,6 +92,7 @@ gawk
 gcc-libs
 gettext
 gimp
+girara
 glibc
 glibc-locales
 glow
@@ -113,6 +117,7 @@ gvfs-smb
 gzip
 handlr
 haveged
+hck
 httrack
 hunspell-en_us
 inetutils
@@ -121,6 +126,7 @@ inxi
 iproute2
 iputils
 java-commons-lang
+jdk-openjdk
 jfsutils
 jp2a
 kaccounts-providers
@@ -208,8 +214,10 @@ ntfs-3g
 ntp
 numlockx
 nyxt
+okular
 openresolv
 openssh
+openvpn
 os-prober
 otf-hermit
 p7zip
@@ -219,6 +227,7 @@ pandoc-cli
 pandoc-crossref
 patch
 pciutils
+pdfgrep
 pdftk
 perl
 perl-file-mimeinfo
@@ -310,6 +319,7 @@ tesseract
 texinfo
 texlive-basic
 texlive-bibtexextra
+texlive-binextra
 texlive-fontsextra
 texlive-formatsextra
 texlive-games
@@ -335,10 +345,12 @@ ttf-dejavu
 ttf-droid
 ttf-fira-code
 ttf-font-awesome
+ttf-hannom
 ttf-inconsolata
 ttf-indic-otf
 ttf-liberation
 ttf-nerd-fonts-symbols
+ttf-noto-nerd
 ttf-scheherazade-new
 udiskie
 udisks2
@@ -357,8 +369,9 @@ which
 wine
 wireless-regdb
 wmctrl
+words
 wpa_supplicant
-xautolock
+wqy-bitmapfont
 xcb-imdkit
 xclip
 xcompmgr
@@ -389,8 +402,8 @@ xwallpaper
 xz
 yay
 yt-dlp
+zathura
 zathura-cb
 zathura-djvu
 zathura-pdf-poppler
 zathura-ps
-zensu
