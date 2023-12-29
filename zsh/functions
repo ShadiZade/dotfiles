@@ -179,11 +179,11 @@ netc () {
 
 ## fzf-choose-directory
 fzf-choose-directory () {
-    chosen_dir="$(eza -1D | fzf)"
+    chosen_dir="$(eza $hide_flag -1D | fzf)"
     [ -z "$chosen_dir" ] \
 	&& echo -e "\033[33m:: Nothing done.\033[0m" \
 	&& return
-    cd "$chosen_dir" && ll
+    cd "$chosen_dir"
 }
 
 ## cat-donefiles
@@ -191,3 +191,15 @@ cat-donefiles () {
     echo -e "$(cat * | sed 's/^/\\033[4\;37m/g;s/ is done on /\\033[0m is done on \\033[33m/g;s/$/\\033[0m/g')"
 }
 
+## ff
+ff () {
+    while true
+    do
+	fzf-choose-directory
+	[ -z "$chosen_dir" ] \
+	    && break
+	[ -z "$(eza $hide_flag -1D)" ] \
+	    && break
+    done
+    ll
+}
