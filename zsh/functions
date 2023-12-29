@@ -185,3 +185,9 @@ fzf-choose-directory () {
 	&& return
     cd "$chosen_dir" && ll
 }
+
+## cat-donefiles
+cat-donefiles () {
+    echo -e "$(cat * | sed 's/^/\\033[4\;37m/g;s/ is done on /\\033[0m is done on \\033[33m/g;s/$/\\033[0m/g')"
+}
+
