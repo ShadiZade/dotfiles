@@ -28,6 +28,7 @@
 (global-set-key (kbd "C-’ u c")     'shadi/open-courses)
 (global-set-key (kbd "C-~")         'mode-line-other-buffer)
 (global-set-key (kbd "C-c ’")       'ispell-word)
+(global-set-key (kbd "C-c l")       'counsel-unicode-char)
 (global-set-key (kbd "M-<up>")      'move-text-up)
 (global-set-key (kbd "M-<down>")    'move-text-down)
 

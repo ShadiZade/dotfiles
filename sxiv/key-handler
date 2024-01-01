@@ -35,11 +35,16 @@ move () {
     mv -vn -- "$file" .
 }
 
+copyhere () {
+    cp -vn -- "$file" .
+
+}
+
 trash () {
     rt "$file"
 }
 
-copy () {
+copypath () {
     echo -n "$(pwd)/$file" | sed 's|/\./|/|g' | xclip -selection clipboard
 }
 
@@ -60,7 +65,8 @@ while read file
 do
         case "$1" in
         "C-t")  trash ;;
-        "C-c")  copy ;;
+        "C-p")  copypath ;;
+	"C-c")  copyhere ;;
         "C-s")	sort ;;
         "C-d")	describe ;;
 	"C-m")  move ;;
