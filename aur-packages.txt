@@ -36,7 +36,6 @@ tabbed
 taffy
 telegram-desktop-bin
 thunderbird-bin
-transcode
 trashf
 ttf-amiri
 ttf-arabeyes-fonts
