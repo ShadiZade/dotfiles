@@ -204,3 +204,16 @@ ff () {
     done
     ll
 }
+
+## submv
+submv () {
+    eps=($(eza -1D -I renamed-subs))
+    i=1
+    mkdir "./renamed-subs"
+    while [ "$i" -le "${#eps[@]}" ]; do
+	curdir="${eps[$i]}"
+	curep="$(eza -1 "$curdir" | sed 1q)"
+	cp "$curdir"/"$curep" ./renamed-subs/"$curdir".en.srt
+	((i++))
+    done
+}
