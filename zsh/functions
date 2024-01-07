@@ -217,3 +217,29 @@ submv () {
 	((i++))
     done
 }
+
+’ () {
+    dir="$1"
+    [ -z "$1" ] \
+	&& dir="."
+    fl="$(eza -1f "$dir" | sort | fzf)"
+    [ -z "$fl" ] \
+	&& echo -e "\033[33m:: Nothing selected.\033[0m" \
+	&& return
+    file_ext="$(echo "$fl" | awk -F '.' '{print $NF}')"
+    fw="$(echo "$dir/$fl")"
+    case "$file_ext" in
+	pdf|ps|djvu|epub)
+	    rdo zathura "$fw" ;;
+	mp3|wav|wmv)
+            mpv --no-audio-display "$fw" ;;
+	mp4|mkv|ts|webm)
+	    rdo mpv --audio-samplerate=88200 "$fw" ;;
+	jpg|png|jpeg|svg|jxl|jpeg_large|webp|gif)
+	    rdo sxiv "$fw" ;;
+	txt|md|org|tex|bib|csv|sh)
+	    bat "$fw" ;;
+	*)
+	    rdo xdg-open "$fw" ;;
+    esac
+}
