@@ -237,7 +237,7 @@ submv () {
 	    rdo mpv --audio-samplerate=88200 "$fw" ;;
 	jpg|png|jpeg|svg|jxl|jpeg_large|webp|gif)
 	    rdo sxiv "$fw" ;;
-	txt|md|org|tex|bib|csv|sh)
+	txt|md|org|tex|bib|csv|sh|el|lisp|html|css)
 	    bat "$fw" ;;
 	*)
 	    rdo xdg-open "$fw" ;;
