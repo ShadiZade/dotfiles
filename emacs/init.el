@@ -8,6 +8,7 @@
 
 (load "~/.config/emacs/functions.el")
 (load "~/.config/emacs/bind.el")
+(load "~/.config/emacs/hooks.el")
 (load "~/.config/emacs/org.el")
  
 (setq inhibit-startup-message t)

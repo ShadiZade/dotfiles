@@ -47,6 +47,11 @@
   (interactive)
   (find-file "~/Repositories/dotfiles/emacs/bind.el"))
 
+(defun shadi/edit-hook ()
+  "Shows my hooks.el file in a buffer."
+  (interactive)
+  (find-file "~/Repositories/dotfiles/emacs/hooks.el"))
+
 (defun shadi/edit-org ()
   "Shows my bind.el file in a buffer."
   (interactive)
