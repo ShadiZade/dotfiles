@@ -24,7 +24,8 @@ alias cdqt="cd ~/Aquire/torrents/ && ll"
 ## Desktop
 alias cdk="cd ~/Desktop && ll"
 alias cdkt="cd ~/Desktop/try && ll"
-## Trash
+## Local
+alias cdl="cd ~/.local/mobile/Internal\ shared\ storage/Home && ll"
 alias cdt="cd ~/.local/share/Trash/files && lln -a --time=changed --sort=changed && du -sh"
 ## Downloads
 alias cdd="cd ~/Downloads && lln"
@@ -240,3 +241,4 @@ alias cal="cal --color=always -m"
 alias f="fzf-choose-directory && ll"
 alias f~='hide_flag="-a"; f; hide_flag=""'
 alias ff~='hide_flag="-a"; ff; hide_flag=""'
+alias →="rsync -Paru" 

@@ -243,3 +243,17 @@ submv () {
 	    rdo xdg-open "$fw" ;;
     esac
 }
+
+xmm () {
+    case "$1" in
+	"") pkill kiod5
+	    jmtpfs ~/.local/mobile/
+	    ;;
+	end) cd
+	     umount ~/.local/mobile/
+	     ;;
+	*) echo ":: unknown command"
+	   ;;
+    esac
+}
+    

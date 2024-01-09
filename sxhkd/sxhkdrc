@@ -140,10 +140,6 @@ super + q ; d
 super + q ; l
 	pkill dunst; dunst & notify-send -t 1000 'Launcher' 'Launching "quodlibet"' & quodlibet
 
-# kdeconnect
-super + q ; k
-	pkill dunst; dunst & notify-send -t 1000 'Launcher' 'Launching "kdeconnect"' & kdeconnect-app
-
 # freetube
 super + q ; f
 	pkill dunst; dunst & notify-send -t 1000 'Launcher' 'Launching "freetube"' & freetube && pkill dunst
