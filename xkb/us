@@ -18,8 +18,8 @@ xkb_symbols "basic" {
     key <AE12>	{[ equal,			plus,				notequal,			U2248			]};
 
     key <AD01>	{[ q,				Q														]};
-    key <AD02>	{[ w,				W,					numbersign							]};
-    key <AD03>	{[ e,				E														]};
+    key <AD02>	{[ w,				W,					U2235							]};
+    key <AD03>	{[ e,				E,					U2234									]};
     key <AD04>	{[ r,				R														]};
     key <AD05>	{[ t,				T,					U2713								]};
     key <AD06>	{[ y,				Y,					U5143								]};
