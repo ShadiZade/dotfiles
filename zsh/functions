@@ -228,6 +228,7 @@ submv () {
 	&& return
     file_ext="$(echo "$fl" | awk -F '.' '{print $NF}')"
     fw="$(echo "$dir/$fl")"
+    echo -e "\033[33m:: Opening \033[37m$fw\033[0m"
     case "$file_ext" in
 	pdf|ps|djvu|epub)
 	    rdo zathura "$fw" ;;

@@ -54,7 +54,7 @@ alias cdbx="cd ~/Books/xdone/; ll"
 ## Config
 alias cdc="cd ~/.config"
 ## Study
-alias cds="cd ~/Study && fzf-choose-directory && ll"
+alias cds="cd ~/Study && ff"
 alias cdsl="cd ~/Study/languages && fzf-choose-directory && ll"
 alias cdslc="cd ~/Study/languages/chinese/ && ll"
 alias cdsp="cd ~/Study/programming && fzf-choose-directory && ll"
@@ -89,8 +89,9 @@ alias cdj="cd ~/Projects"
 alias cdjw="cd ~/Projects/wiki && ll"
 alias cdjr="cd ~/Projects/writings/ && ll"
 alias cdjm="cd ~/Projects/motif/ && ll"
+alias cdjt="cd ~/Projects/translation/ && ll"
 ## Holding
-alias cdh="cd ~/Holding/ && ll"
+alias cdh="cd ~/Holding/ && lln"
 alias cdhs="cd ~/Holding/screenshots/ && ll"
 ## Videos
 alias cdv="cd ~/Videos/ && ll"
