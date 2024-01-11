@@ -6,6 +6,8 @@ case "$state" in
 	symbol=Ʇ ;;
     discharging)
 	symbol=T ;;
+    fully-charged)
+	symbol=ꟻ ;;
     *)
 	symbol=Ꝋ ;;
 esac
