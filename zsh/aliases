@@ -112,6 +112,8 @@ alias laen="command trans -b la:en"
 alias enla="command trans -b en:la"
 alias iten="command trans -b it:en"
 alias enit="command trans -b en:it"
+alias pten="command trans -b pt:en"
+alias enpt="command trans -b en:pt"
 
 # list
 alias l="eza --icons --sort=ext --group-directories-first"
