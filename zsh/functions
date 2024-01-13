@@ -207,15 +207,19 @@ ff () {
 
 ## submv
 submv () {
+    [ -z "$1" ] \
+	&& whichsub=1 \
+	    || whichsub="$1"
     eps=($(eza -1D -I renamed-subs))
     i=1
     mkdir "./renamed-subs"
     while [ "$i" -le "${#eps[@]}" ]; do
 	curdir="${eps[$i]}"
-	curep="$(eza -1 "$curdir" | sed 1q)"
+	curep="$(eza -1 "$curdir" | tail -n +"$whichsub" | sed 1q)"
 	cp "$curdir"/"$curep" ./renamed-subs/"$curdir".en.srt
 	((i++))
     done
+    echo -e "\033[33m:: Renamed the No. $whichsub subtitle files\033[0m"
 }
 
 ’ () {
