@@ -1,6 +1,6 @@
 ;; global bindings
 (global-set-key (kbd "<escape>")    'keyboard-escape-quit)
-(global-set-key (kbd "M-s M-s")     'company-complete)
+(global-set-key (kbd "M-s M-s")     'company-refresh-and-complete)
 (global-set-key (kbd "C-x C-,")     'eval-buffer)
 (global-set-key (kbd "C-x w")       'shadi/load-elfeed)
 (global-set-key (kbd "C-<tab>")     'other-window)

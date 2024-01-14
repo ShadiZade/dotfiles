@@ -124,6 +124,11 @@
   (interactive)
   (dired "~/Study/uni/courses"))
 
+(defun company-refresh-and-complete ()
+  (interactive)
+  (company-mode 1)
+  (company-complete))
+  
 ;; macros
 ;;; mhtml-mode (mhtml-mode-hook)
 (defalias 'do-xhtml-refs
