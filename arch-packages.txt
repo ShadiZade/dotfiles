@@ -51,8 +51,6 @@ diffutils
 dmidecode
 dmraid
 dnsmasq
-dolphin
-dolphin-plugins
 dosfstools
 downgrade
 dunst
@@ -196,7 +194,6 @@ modemmanager
 moreutils
 mp3wrap
 mpv
-mtpfs
 musescore
 ncdu
 neofetch
@@ -298,6 +295,7 @@ sbcl
 scantailor-advanced
 sed
 shadow
+shuffle
 sigil
 sof-firmware
 spectre-meltdown-checker

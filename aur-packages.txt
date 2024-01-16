@@ -12,6 +12,7 @@ gallery-dl
 gconf
 google-earth-pro
 heroic-games-launcher-bin
+jmtpfs
 luckybackup
 manjaro-firmware
 mikhak-fonts
