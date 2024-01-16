@@ -126,6 +126,7 @@
 
 (defun company-refresh-and-complete ()
   (interactive)
+  (company-mode nil)
   (company-mode 1)
   (company-complete))
   

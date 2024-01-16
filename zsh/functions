@@ -184,7 +184,11 @@ cat-donefiles () {
 
 ## fzf-choose-directory
 fzf-choose-directory () {
-    chosen_dir="$(eza $hide_flag -1D --no-quotes | fzf)"
+    dir_list="$(eza $hide_flag -1D --no-quotes)"
+    [ -z "$dir_list" ] \
+	&& echo -e "\033[33m:: No directories.\033[0m" \
+	&& return
+    chosen_dir="$(echo "$dir_list" | fzf)"
     [ -z "$chosen_dir" ] \
 	&& echo -e "\033[33m:: Nothing done.\033[0m" \
 	&& return

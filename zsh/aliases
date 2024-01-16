@@ -24,8 +24,11 @@ alias cdqt="cd ~/Aquire/torrents/ && ll"
 ## Desktop
 alias cdk="cd ~/Desktop && ll"
 alias cdkt="cd ~/Desktop/try && ll"
-## Local
+## Mobile
 alias cdl="cd ~/.local/mobile/Internal\ shared\ storage/Home && ll"
+alias cdld="cd ~/.local/mobile/Internal\ shared\ storage/Download && ll"
+alias cdlp="cd ~/.local/mobile/Internal\ shared\ storage/Pictures && ll"
+## Local
 alias cdt="cd ~/.local/share/Trash/files && lln -a --time=changed --sort=changed && du -sh"
 ## Downloads
 alias cdd="cd ~/Downloads && lln"
@@ -57,9 +60,11 @@ alias cdc="cd ~/.config"
 alias cds="cd ~/Study && ff"
 alias cdsl="cd ~/Study/languages && fzf-choose-directory && ll"
 alias cdslc="cd ~/Study/languages/chinese/ && ll"
+alias cdsb="cd ~/Study/biology && fzf-choose-directory && ll"
 alias cdsp="cd ~/Study/programming && fzf-choose-directory && ll"
 alias cdsu="cd ~/Study/uni/ && ll"
 alias cdsuc="cd ~/Study/uni/courses && fzf-choose-directory && ll"
+alias cdsul="cd ~/Study/uni/lab && fzf-choose-directory && ll"
 alias cdsm="cd ~/Study/marxism/ && fzf-choose-directory && ll"
 ## TV
 alias cdtv="cd ~/TV && fzf-choose-directory && ll"
@@ -124,6 +129,8 @@ alias lln="eza -l --icons --no-user --time-style=iso --sort=newest --color-scale
 alias lls="eza -l --icons --no-user --time-style=iso --sort=size --group-directories-first --color-scale all"
 alias llt="eza -l --icons --no-user --time-style=iso --sort=ext --group-directories-first --color-scale all --tree"
 alias llg="eza -l --icons --no-user --time-style=iso --sort=ext --group-directories-first --color-scale all --git"
+alias lld="eza -Dl --icons --no-user --time-style=iso --sort=ext --group-directories-first --color-scale all"
+alias llf="eza -fl --icons --no-user --time-style=iso --sort=ext --group-directories-first --color-scale all"
 
 # package management
 alias pacs="sudo pacman -S "
