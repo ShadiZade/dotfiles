@@ -28,6 +28,7 @@ alias cdkt="cd ~/Desktop/try && ll"
 alias cdl="cd ~/.local/mobile/Internal\ shared\ storage/Home && ll"
 alias cdld="cd ~/.local/mobile/Internal\ shared\ storage/Download && ll"
 alias cdlp="cd ~/.local/mobile/Internal\ shared\ storage/Pictures && ll"
+alias cdlc="cd ~/.local/mobile/Internal\ shared\ storage/DCIM/Camera && ll"
 ## Local
 alias cdt="cd ~/.local/share/Trash/files && lln -a --time=changed --sort=changed && du -sh"
 ## Downloads
