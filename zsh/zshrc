@@ -14,6 +14,7 @@
 ###################################################################################################
 ####### symlink location: ~/.config/zsh/ ##########################################################
 source /etc/zsh/zshenv
+source ~/Repositories/scripts/essential-functions.sh
 source ~/.config/zsh/extra
 source ~/.config/zsh/functions
 source ~/.config/zsh/aliases

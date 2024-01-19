@@ -75,6 +75,7 @@ fcitx5-material-color
 fcitx5-qt
 fcitx5-rime
 fd
+fdupes
 ffmpeg
 ffmpegthumbs
 figlet

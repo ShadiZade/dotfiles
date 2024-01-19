@@ -266,3 +266,12 @@ xmm () {
     esac
 }
     
+urt () {
+    trash_dir="$HOME/.local/share/Trash/files"
+    [ -z "$1" ] \
+	&& rest_file="$(eza -1 --sort=newest "$trash_dir" | tail -n 1 )" \
+	&& echo -e "\033[33m:: Restoring latest file from trash.\033[0m" \
+	    || rest_file="$1"
+    mv -nv "$trash_dir"/"$rest_file" .
+
+}

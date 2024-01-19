@@ -4,7 +4,7 @@ buku
 cmatrix-git
 cozette-otb
 cpdf
-czkawka-git
+dupeguru
 dwdiff
 edir
 freetube-bin
