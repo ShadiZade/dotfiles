@@ -92,8 +92,9 @@ alias cdep="cd ~/Excluding/podcasts && lln"
 alias cdey="cd ~/Excluding/ytvid && lln"
 ## Projects
 alias cdj="cd ~/Projects"
-alias cdjw="cd ~/Projects/wiki && ll"
-alias cdjr="cd ~/Projects/writings/ && ll"
+alias cdjw="cd ~/Projects/writings/ && ll"
+alias cdjwa="cd ~/Projects/writings/articles/ && ll"
+alias cdjwp="cd ~/Projects/writings/poetry/ && ll"
 alias cdjm="cd ~/Projects/motif/ && ll"
 alias cdjt="cd ~/Projects/translation/ && ll"
 ## Holding
