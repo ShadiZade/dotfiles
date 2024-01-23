@@ -132,10 +132,6 @@ super + q ; v
 super + q ; e
 	pkill dunst; dunst & notify-send -t 1000 'Launcher' 'Launching "emacs"' & emacs
 
-# dolphin
-super + q ; d
-	pkill dunst; dunst & notify-send -t 1000 'Launcher' 'Launching "dolphin"' & dolphin
-
 # quodlibet
 super + q ; l
 	pkill dunst; dunst & notify-send -t 1000 'Launcher' 'Launching "quodlibet"' & quodlibet
