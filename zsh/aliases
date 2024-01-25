@@ -67,6 +67,7 @@ alias cdsu="cd ~/Study/uni/ && ll"
 alias cdsuc="cd ~/Study/uni/courses && fzf-choose-directory && ll"
 alias cdsul="cd ~/Study/uni/lab && fzf-choose-directory && ll"
 alias cdsm="cd ~/Study/marxism/ && fzf-choose-directory && ll"
+alias cdsa="cd ~/Study/academia/ && ff"
 ## TV
 alias cdtv="cd ~/TV && fzf-choose-directory && ll"
 ## Repositories
