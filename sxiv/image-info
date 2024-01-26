@@ -1,0 +1,16 @@
+#!/bin/sh
+
+# Example for ~/.config/sxiv/exec/image-info
+# Called by sxiv(1) whenever an image gets loaded,
+# with the name of the image file as its first argument.
+# The output is displayed in sxiv's status bar.
+
+s=" | " # field separator
+s2="                                                    "
+
+filename=$(basename "$1")
+# The '[0]' stands for the first frame of a multi-frame file, e.g. gif.
+geometry=$(identify -format '%wx%h' "$1[0]")
+datec="$(exiftool -q "$1" | grep "Create Date" -m 1 | sed 's/Create Date                     : //;')"
+
+echo -e "${datec:-–––––––––––––––––––}${s}${geometry}${s2}${filename}"

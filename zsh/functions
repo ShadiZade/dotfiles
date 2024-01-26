@@ -16,6 +16,7 @@
 ## terminal-art
 source ~/Repositories/dotfiles/zsh/aliases
 source ~/Misc/Backups/private-scripts/private-aliases.sh 
+source ~/Repositories/scripts/essential-functions.sh
 
 terminal-art () {
     touch ~/.qotd ~/.today-date
@@ -62,14 +63,14 @@ v () {
 
 ## xv
 xv () {
-    [ -z "$1" ] && location_se='.' || location_se="$1"
-    images="$(fd -H 'jpg$|jpeg$|png$|gif$|webp$|jxl$|jpg_large$|svg$|tif$' -d 1 $location_se | sed 's/ /\\ /g' | sort -V)"
-    [ -z "$images" ] && echo "No images found in this directory." || echo "$images" | xargs sxiv
+    [ -z "$1" ] && location_se="$(pwd)" || location_se="$1"
+    images="$(fd -H 'jpg$|jpeg$|png$|gif$|webp$|jxl$|jpg_large$|svg$|tif$' -d 1 "$location_se" | sed 's/ /\\ /g' | sort -V)"
+    [ -z "$images" ] && echolor yellow ":: No images found in this directory." || echo "$images" | xargs sxiv
 }
 
 ## xt
 xt () {
-    fd -qH "$1" || echo "No results."
+    fd -qH "$1" || echolor yellow ":: No results."
     fd -qH "$1" && fd "$1" | xargs sxiv
 }
 

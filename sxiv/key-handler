@@ -23,7 +23,7 @@ describe () {
     ext=$(echo "$file" | awk -F '.' '{print $NF}')
     killall dunst
     notify-send -t 10000000 "Old name:" "$file"
-    newname="$(fd 'jpg|jpeg|png|gif|webp|jxl|jpg_large|svg' $(pwd) | awk -F '/' '{print $NF}' | rofi -dmenu -i -p 'rename image')"
+    newname="$(fd 'jpg|jpeg|png|gif|webp|jxl|jpg_large|svg' "$(pwd)" | awk -F '/' '{print $NF}' | rofi -dmenu -i -p 'rename image')"
     newname="$(~/Repositories/scripts/kebabization.sh "$newname"; cat ~/.kebab)"
     [ -z "$newname" ] || (mv -vn -- "$file" "$newname"."$ext"
 			  touch "$newname"."$ext"
