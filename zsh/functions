@@ -63,15 +63,30 @@ v () {
 
 ## xv
 xv () {
-    [ -z "$1" ] && location_se="$(pwd)" || location_se="$1"
-    images="$(fd -H 'jpg$|jpeg$|png$|gif$|webp$|jxl$|jpg_large$|svg$|tif$' -d 1 "$location_se" | sed 's/ /\\ /g' | sort -V)"
-    [ -z "$images" ] && echolor yellow ":: No images found in this directory." || echo "$images" | xargs sxiv
+    [ -z "$1" ] \
+	&& location_se="$(pwd)" \
+	    || location_se="$1"
+    images=($(fd -H 'jpg$|jpeg$|png$|gif$|webp$|jxl$|jpg_large$|svg$|tif$' -d 1 "$location_se" | sort -V))
+    [ -z "$images" ] \
+	&& echolor yellow ":: No images found in this directory." \
+	&& return
+	sxiv ${images[@]}
 }
 
 ## xt
 xt () {
-    fd -qH "$1" || echolor yellow ":: No results."
-    fd -qH "$1" && fd "$1" | xargs sxiv
+    [ -z "$1" ] \
+	&& echolor yellow ":: Please enter search term." \
+	&& return
+    [ -z "$2" ] \
+	&& location_se="$(pwd)" \
+	    || location_se="$2"
+    images=($(fd -H 'jpg$|jpeg$|png$|gif$|webp$|jxl$|jpg_large$|svg$|tif$' -d 1 "$location_se" | sort -V | grep -i "$1" ))
+    [ -z "$images" ] \
+	&& echolor yellow ":: No images matching \033[37m$1\033[33m found in \033[37m$location_se" \
+	&& return
+    sxiv ${images[@]}
+    echolor green ":: found \033[37m${#images[@]}\033[32m results matching \033[37m$1\033[32m in \033[37m$location_se"
 }
 
 ## xpa

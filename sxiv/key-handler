@@ -49,6 +49,16 @@ copypath () {
 }
 
 
+showinfo () {
+    filename="$(basename "$file")"
+    geometry="$(identify -format '%wx%h' "$file[0]")"
+    datec="$(exiftool -q "$file" | grep "Create Date" -m 1 | ifne sed 's/Create Date                     : //;')"
+    filesize="$(du -h "$file" | awk '{print $1}')"
+    killall dunst
+    notify-send -t 20000 "File info:" "${filename}\n${filesize}\n${geometry}\n${datec:-––NO DATE––}"
+}
+
+
 edit () {
     photoflare "$file"
 }
@@ -73,6 +83,7 @@ do
 	"C-e")  edit ;;
 	"C-g")  editgimp ;;
 	"C-0")  changedate ;;
+	"C-i")  showinfo ;;
         esac
 done
 
