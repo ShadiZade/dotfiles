@@ -66,6 +66,7 @@ xv () {
     [ -z "$1" ] \
 	&& location_se="$(pwd)" \
 	    || location_se="$1"
+    IFS=$'\n'
     images=($(fd -H 'jpg$|jpeg$|png$|gif$|webp$|jxl$|jpg_large$|svg$|tif$' -d 1 "$location_se" | sort -V))
     [ -z "$images" ] \
 	&& echolor yellow ":: No images found in this directory." \
@@ -81,6 +82,7 @@ xt () {
     [ -z "$2" ] \
 	&& location_se="$(pwd)" \
 	    || location_se="$2"
+    IFS=$'\n'
     images=($(fd -H 'jpg$|jpeg$|png$|gif$|webp$|jxl$|jpg_large$|svg$|tif$' -d 1 "$location_se" | sort -V | grep -i "$1" ))
     [ -z "$images" ] \
 	&& echolor yellow ":: No images matching \033[37m$1\033[33m found in \033[37m$location_se" \
