@@ -71,7 +71,7 @@ xv () {
     [ -z "$images" ] \
 	&& echolor yellow ":: No images found in this directory." \
 	&& return
-	sxiv -q ${images[@]}
+	sxiv -q -- ${images[@]}
 }
 
 ## xt
@@ -89,6 +89,35 @@ xt () {
 	&& return
     sxiv -q -- ${images[@]}
     echolor green ":: found \033[37m${#images[@]}\033[32m results matching \033[37m$1\033[32m in \033[37m$location_se"
+}
+## xvv
+xvv () {
+    [ -z "$1" ] \
+	&& location_se="$(pwd)" \
+	    || location_se="$1"
+    IFS=$'\n'
+    videos=($(fd -H 'mkv$|avi$|mp4$|ts$|mov$|webm$' -d 1 "$location_se" | sort -V))
+    [ -z "$videos" ] \
+	&& echolor yellow ":: No videos found in this directory." \
+	&& return
+	v --no-resume-playback --loop=inf -- ${videos[@]}
+}
+
+## xtt
+xtt () {
+    [ -z "$1" ] \
+	&& echolor yellow ":: Please enter search term." \
+	&& return
+    [ -z "$2" ] \
+	&& location_se="$(pwd)" \
+	    || location_se="$2"
+    IFS=$'\n'
+    videos=($(fd -H 'mkv$|avi$|mp4$|ts$|mov$|webm$' -d 1 "$location_se" | sort -V | grep -i -- "$1"))
+    [ -z "$videos" ] \
+	&& echolor yellow ":: No videos matching \033[37m$1\033[33m found in \033[37m$location_se" \
+	&& return
+    v --no-resume-playback --loop=inf -- ${videos[@]}
+    echolor green ":: found \033[37m${#videos[@]}\033[32m results matching \033[37m$1\033[32m in \033[37m$location_se"
 }
 
 ## xpa
