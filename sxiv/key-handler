@@ -45,7 +45,7 @@ trash () {
 }
 
 copypath () {
-    echo -n "$(pwd)/$file" | sed 's|/\./|/|g' | xclip -selection clipboard
+    realpath "$file" | tr -d '\n' | xclip -selection clipboard
 }
 
 

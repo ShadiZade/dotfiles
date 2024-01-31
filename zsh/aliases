@@ -97,7 +97,7 @@ alias cdjw="cd ~/Projects/writings/ && ll"
 alias cdjwa="cd ~/Projects/writings/articles/ && ll"
 alias cdjwp="cd ~/Projects/writings/poetry/ && ll"
 alias cdjm="cd ~/Projects/motif/ && ll"
-alias cdjt="cd ~/Projects/translation/ && ll"
+alias cdjt="cd ~/Projects/translation/ && fzf-choose-directory && ll"
 ## Holding
 alias cdh="cd ~/Holding/ && lln"
 alias cdhs="cd ~/Holding/screenshots/ && ll"
@@ -253,4 +253,4 @@ alias cal="cal --color=always -m"
 alias f="fzf-choose-directory && ll"
 alias f~='hide_flag="-a"; f; hide_flag=""'
 alias ff~='hide_flag="-a"; ff; hide_flag=""'
-alias →="rsync -Paru" 
+alias →="rsync -Paru --" 
