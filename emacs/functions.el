@@ -124,6 +124,10 @@
   (interactive)
   (dired "~/Study/uni/courses"))
 
+(defun shadi/open-marxism ()
+  (interactive)
+  (dired "~/Study/marxism/current"))
+
 (defun company-refresh-and-complete ()
   (interactive)
   (company-mode nil)

@@ -322,3 +322,8 @@ urt () {
     mv -nv "$trash_dir"/"$rest_file" .
 
 }
+
+←←← () {
+    realpath "${1:-.}" | ←
+    realpath "${1:-.}"
+}
