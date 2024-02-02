@@ -24,11 +24,12 @@ alias cdqt="cd ~/Aquire/torrents/ && ll"
 ## Desktop
 alias cdk="cd ~/Desktop && ll"
 alias cdkt="cd ~/Desktop/try && ll"
-## Mobile
-alias cdl="cd ~/.local/mobile/Internal\ shared\ storage/Home && ll"
-alias cdld="cd ~/.local/mobile/Internal\ shared\ storage/Download && ll"
-alias cdlp="cd ~/.local/mobile/Internal\ shared\ storage/Pictures && ll"
-alias cdlc="cd ~/.local/mobile/Internal\ shared\ storage/DCIM/Camera && ll"
+## Local
+alias cdls="cd ~/.local/share/ && fzf-choose-directory && ll"
+alias cdlm="cd ~/.local/mobile/Internal\ shared\ storage/Home && ll"
+alias cdlmd="cd ~/.local/mobile/Internal\ shared\ storage/Download && ll"
+alias cdlmp="cd ~/.local/mobile/Internal\ shared\ storage/Pictures && ll"
+alias cdlmc="cd ~/.local/mobile/Internal\ shared\ storage/DCIM/Camera && ll"
 ## Local
 alias cdt="cd ~/.local/share/Trash/files && lln -a --time=changed --sort=changed && du -sh"
 ## Downloads
