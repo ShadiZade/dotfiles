@@ -15,8 +15,8 @@
 ####### symlink location: ~/.config/sxiv/ #########################################################
 
 sort () {
-    loc=$(ls -1 "$HOME/Pictures/mobile/3-finished" | rofi -dmenu -i -p 'choose folder')
-    [ -z "$loc" ] || mv -vn -- "$file" "$HOME/Pictures/mobile/3-finished/$loc"
+    loc=$(ls -1 "$HOME/Pictures/" | rofi -dmenu -i -p 'choose folder')
+    [ -z "$loc" ] || mv -vn -- "$file" "$HOME/Pictures/$loc"
 }
 
 describe () {
