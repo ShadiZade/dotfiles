@@ -35,7 +35,7 @@ alias cdt="cd ~/.local/share/Trash/files && lln -a --time=changed --sort=changed
 ## Downloads
 alias cdd="cd ~/Downloads && lln"
 ## Pictures
-alias cdp="cd ~/Pictures && ll"
+alias cdp="cd ~/Pictures && ff"
 alias cdpd="cd ~/Pictures/design/ && ll"
 ## Misc
 alias cdm="cd ~/Misc && ll"
