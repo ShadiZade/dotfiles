@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 ##################################################################################################
 #
 #					 ____  _   _    _    ____ ___     _____   _    ____  _____ 
@@ -13,6 +13,7 @@
 #
 ###################################################################################################
 ####### symlink location: ~/.config/sxiv/ #########################################################
+source /home/oak/Repositories/scripts/essential-functions.sh 
 
 sort () {
     loc=$(ls -1 "$HOME/Pictures/" | rofi -dmenu -i -p 'choose folder')
@@ -40,7 +41,7 @@ copyhere () {
 }
 
 trash () {
-    rt "$file"
+    move-to-trash "$file"
 }
 
 copypath () {

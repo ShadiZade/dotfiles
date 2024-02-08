@@ -170,8 +170,8 @@ mkk () {
 ## delete-opf
 delete-opf () {
     [ "$(pwd)" = "$HOME/Books/add" ] || return
-    fd -q 'opf$' && rt *.opf || echo -e "\033[33m:: No .opf files to delete.\033[0m"
-    fd -q 'jpg$' && rt *.jpg || echo -e "\033[33m:: No .jpg files to delete.\033[0m"
+    fd -q 'opf$' && move-to-trash *.opf
+    fd -q 'jpg$' && move-to-trash *.jpg
 }
 
 ## detect-extra
