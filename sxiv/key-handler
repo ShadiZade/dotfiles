@@ -16,8 +16,8 @@
 source /home/oak/Repositories/scripts/essential-functions.sh 
 
 sort () {
-    loc=$(ls -1 "$HOME/Pictures/" | rofi -dmenu -i -p 'choose folder')
-    [ -z "$loc" ] || mv -vn -- "$file" "$HOME/Pictures/$loc"
+    loc="$(eza --no-quotes -1Daa "$(pwd)" | rofi -dmenu -i -p 'choose folder')"
+    [ -z "$loc" ] || mv -vn -- "$file" "$(pwd)/$loc"
 }
 
 describe () {
