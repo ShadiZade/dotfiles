@@ -195,11 +195,12 @@ k () {
 
 ## dr
 dr () {
-    ext="$(echo "$1" | awk -F '.' '{print $NF}' | awk -F '?' '{print $1}')"
-    [ -z "$2" ] || ext="$2"
-    name_string="$(head /dev/urandom | tr -dc A-Za-z0-9 | head -c 13)"
-    [ -z "$3" ] || name_string="$3"
-    wget -O "$name_string"."$ext" "$1" && xdg-open "$name_string"."$ext"
+    basename="$(random-string)"
+    [ -z "$2" ] || basename="$2"
+    wget -nc -O "$basename" -- "$1"
+    ext="$(extension-determiner "$basename")"
+    mv "$basename" "$basename$ext"
+    xdg-open "$basename$ext"
 }
 
 ## lv
@@ -213,7 +214,13 @@ lv () {
 }
 ## wg
 wg () {
-    [[ -z "$2" ]] && wget -t 0 -- "$1" || wget -O "$2" -t 0 -- "$1"
+    [[ -z "$2" ]] && {
+	wget -nc -t 0 -- "$1"
+    } || {
+	wget -O "$2" -t 0 -- "$1"
+	ext="$(extension-determiner "$2")"
+	mv "$2" "$2$ext"
+    }
 }
 
 ## netc
