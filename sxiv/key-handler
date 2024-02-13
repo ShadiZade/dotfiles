@@ -61,15 +61,23 @@ showinfo () {
 
 
 edit () {
+    echolor yellow ":: image ““$file”” opened using PhotoFlare"
     photoflare "$file" 2> /dev/null 
 }
 
 editgimp () {
-    gimp "$file"
+    echolor yellow ":: image ““$file”” opened using GIMP"
+    gimp "$file" 2>/dev/null
 }
 
 changedate () {
+    lasttime="$(stat -c "%y" "$file" | awk -F '.' '{print $1}')"
+    currentdate="$(date +"%Y-%m-%d %H:%M:%S")"
+    echolor yellow ":: Updated date on image ““$file””"
+    echolor yellow-blue ":: ─────── from ““$lasttime”” to ““$currentdate””"
     touch "$file"
+    killall dunst
+    notify-send -t 7000 "Gentle touch" "${file}\n${lasttime}\n${currentdate}"
 }
 
 while read file
