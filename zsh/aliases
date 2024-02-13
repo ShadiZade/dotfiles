@@ -15,7 +15,7 @@
 ####### symlink location: ~/.config/zsh/ ##########################################################
 # cd aliases
 ## Aquire (YOU KNOW WHAT? FUCK YOU. *REFORMS YOUR SPELLING*)
-alias cdq="cd ~/Aquire && ll"
+alias cdq="cd ~/Aquire && fzf-choose-directory && ll"
 alias cdqb="cd ~/Aquire/books && ll"
 alias cdqm="cd ~/Aquire/music && ll"
 alias cdqp="cd ~/Aquire/pictures && ll"
