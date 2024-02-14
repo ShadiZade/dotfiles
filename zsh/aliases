@@ -97,7 +97,7 @@ alias cdj="cd ~/Projects"
 alias cdjw="cd ~/Projects/writings/ && ll"
 alias cdjwa="cd ~/Projects/writings/articles/ && ll"
 alias cdjwp="cd ~/Projects/writings/poetry/ && ll"
-alias cdjm="cd ~/Projects/motif/ && ll"
+alias cdjb="cd ~/Projects/book-restoration/current/ && fzf-choose-directory && ll"
 alias cdjt="cd ~/Projects/translation/ && fzf-choose-directory && ll"
 ## Holding
 alias cdh="cd ~/Holding/ && lln"
