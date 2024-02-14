@@ -163,9 +163,6 @@ alias '..m'="git push -u origin main"
 
 # scripts 
 alias get-image="~/Repositories/scripts/extract-pdf-image.sh"
-alias ytm="remove_p='n' ~/Repositories/scripts/ytmp3.sh"
-alias ytr="remove_p='y' ~/Repositories/scripts/ytmp3.sh"
-alias ytv="~/Repositories/scripts/ytvid.sh"
 alias chcover="~/Repositories/scripts/chcover.sh"
 alias newscript='which="script" ~/Repositories/scripts/new-micro.sh '
 alias newsolution='which="solution" ~/Repositories/scripts/new-micro.sh '
@@ -241,9 +238,10 @@ alias pf="photoflare"
 alias sxiv="sxiv -a"
 alias bp="buku -p"
 alias ba="buku -a"
-alias ytvv="yt-dlp --fragment-retries infinite -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best' --no-mtime --embed-chapters"
-alias ytmm="yt-dlp --fragment-retries infinite --format bestaudio --no-mtime --extract-audio --audio-format mp3"
-alias ytrr="yt-dlp --fragment-retries infinite --format bestaudio --no-mtime --extract-audio --audio-format mp3 --sponsorblock-remove all"
+alias ytv="yt-dlp --fragment-retries infinite -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best' --no-mtime --embed-chapters"
+alias ytm="yt-dlp --fragment-retries infinite --format bestaudio --no-mtime --extract-audio --audio-format mp3"
+alias ytvr="yt-dlp --fragment-retries infinite -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best' --no-mtime --embed-chapters --sponsorblock-remove all"
+alias ytmr="yt-dlp --fragment-retries infinite --format bestaudio --no-mtime --extract-audio --audio-format mp3 --sponsorblock-remove all"
 alias duh="du -h"
 alias rq="R -q -f "
 alias rqq="R -s -f "
