@@ -284,12 +284,13 @@ submv () {
     dir="$1"
     [ -z "$1" ] \
 	&& dir="."
-    fl="$(eza -1f "$dir" | sort | fzf)"
+    fl="$(eza --no-quotes -1f "$dir" | sort | fzf)"
     [ -z "$fl" ] \
 	&& echo -e "\033[33m:: Nothing selected.\033[0m" \
 	&& return
     file_ext="$(echo "$fl" | awk -F '.' '{print $NF}')"
     fw="$(echo "$dir/$fl")"
+    echo "$fl" | ←
     echo -e "\033[33m:: Opening \033[37m$fw\033[0m"
     case "$file_ext" in
 	pdf|ps|djvu|epub)
