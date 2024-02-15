@@ -340,5 +340,3 @@ xmm () {
     cat "$copyfile" | ←n
     echolor yellow ":: Copied contents of ““$copyfile”” to clipboard."
 }
-    
-		      
