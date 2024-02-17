@@ -94,6 +94,7 @@ alias cdep="cd ~/Excluding/podcasts && lln"
 alias cdey="cd ~/Excluding/ytvid && lln"
 ## Projects
 alias cdj="cd ~/Projects"
+alias cdja="cd ~/Projects/academia/ && fzf-choose-directory"
 alias cdjw="cd ~/Projects/writings/ && ll"
 alias cdjwa="cd ~/Projects/writings/articles/ && ll"
 alias cdjwp="cd ~/Projects/writings/poetry/ && ll"
@@ -106,7 +107,8 @@ alias cdhs="cd ~/Holding/screenshots/ && ll"
 alias cdv="cd ~/Videos/ && ll"
 ## Documents
 alias cdo="cd ~/Documents/ && ll"
-alias cdol="cd ~/Documents/lisan-al-3arab/ && ll"
+alias cdod="cd ~/Documents/dictionaries/ && ll"
+alias cdodl="cd ~/Documents/dictionaries/lisan-al-3arab/ && ll"
 
 # translation
 alias zhen="command trans -b zh:en"
