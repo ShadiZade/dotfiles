@@ -213,7 +213,6 @@ alias q="source ~/.config/zsh/.zshrc"
 alias qq="clr; cd; terminal-art"
 alias qqq="clr; cd; source ~/.config/zsh/.zshrc"
 alias xx="xdg-open"
-alias mk="mkdir -pv"
 alias fd="fd -i"
 alias cp="cp -iv"
 alias mv='mv -iv'

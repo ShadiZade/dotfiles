@@ -161,9 +161,9 @@ kbb () {
     cat ~/.kebab
 }
 
-## mkk
-mkk () {
-    ~/Repositories/scripts/kebabization.sh "$1"
+## mk
+mk () {
+    ~/Repositories/scripts/kebabization.sh "$@"
     mkdir -pv $(cat ~/.kebab)
 }
 
