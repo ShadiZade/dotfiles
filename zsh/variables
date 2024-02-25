@@ -2,3 +2,6 @@
 
 # one_book_per_x_days: used in scripts/book-goal-calc.sh
 obpxd=21
+
+# user-script data dir
+usdr="$HOME/.local/share/user-scripts/"

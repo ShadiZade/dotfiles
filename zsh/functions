@@ -19,12 +19,12 @@ source ~/Misc/Backups/private-scripts/private-aliases.sh
 source ~/Repositories/scripts/essential-functions.sh
 
 terminal-art () {
-    touch ~/.qotd ~/.today-date
-    [ "$(cat ~/.today-date)" = "$(date +%m-%d)" ] ||\
-	(date +"%m-%d" > ~/.today-date
-	 fortune marxism > ~/.qotd)    
+    touch "$HOME/.local/share/user-scripts/qotd" "$HOME/.local/share/user-scripts/today-date"
+    [ "$(cat "$HOME/.local/share/user-scripts/today-date")" = "$(date +%m-%d)" ] ||\
+	(date +"%m-%d" > "$HOME/.local/share/user-scripts/today-date"
+	 fortune marxism > "$HOME/.local/share/user-scripts/qotd")    
     ~/Repositories/communist-calendar/fetch-events.sh
-    cat ~/.qotd | cowsay -f none -W 140
+    cat "$HOME/.local/share/user-scripts/qotd" | cowsay -f none -W 140
 }
 
 ## disown
@@ -157,14 +157,14 @@ knock () {
 ## kbb
 kbb () {
     ~/Repositories/scripts/kebabization.sh "$@"
-    cat ~/.kebab | xclip -selection clipboard
-    cat ~/.kebab
+    cat "$HOME/.local/share/user-scripts/kebab" | xclip -selection clipboard
+    cat "$HOME/.local/share/user-scripts/kebab"
 }
 
 ## mk
 mk () {
     ~/Repositories/scripts/kebabization.sh "$@"
-    mkdir -pv $(cat ~/.kebab)
+    mkdir -pv $(cat "$HOME/.local/share/user-scripts/kebab")
 }
 
 ## delete-opf
