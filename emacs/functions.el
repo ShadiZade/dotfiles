@@ -190,3 +190,8 @@
 ;;; shell-script-mode (shell-mode-hook)
 (defalias 'bash-not-structure
    (kmacro "[ SPC ! SPC \" $ ( ) \" SPC ] C-b C-b C-b C-b"))
+
+;;; text-mode (text-mode-hook)
+(defalias 'move-progress-forward
+   (kmacro "C-r ⨯ SPC P R O G R E S S SPC ⨯ <return> C-k C-x C-x C-y"))
+

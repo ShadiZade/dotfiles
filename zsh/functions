@@ -170,8 +170,8 @@ mk () {
 ## delete-opf
 delete-opf () {
     [ "$(pwd)" = "$HOME/Books/add" ] || return
-    fd -q 'opf$' && move-to-trash *.opf
-    fd -q 'jpg$' && move-to-trash *.jpg
+    fd -q 'opf$' && ⨯⨯ *.opf
+    fd -q 'jpg$' && ⨯⨯ *.jpg
 }
 
 ## detect-extra
@@ -199,6 +199,12 @@ dr () {
     [ -z "$2" ] || basename="$2"
     wget -nc -O "$basename" -- "$1"
     ext="$(extension-determiner "$basename")"
+    [[ -z "$ext" ]] && {
+	echolor red ":: File type for ““$2”” not detected. Please enter extension manually."
+	echo -n "> "
+	read -r ext
+	    ext=".$ext"
+    }
     mv "$basename" "$basename$ext"
     xdg-open "$basename$ext"
 }
@@ -217,8 +223,15 @@ wg () {
     [[ -z "$2" ]] && {
 	wget -nc -t 0 -- "$1"
     } || {
-	wget -O "$2" -t 0 -- "$1"
+	wget -O "$2" -t 0 -- "$1" || return
+	echolor yellow ":: Determining extension..."
 	ext="$(extension-determiner "$2")"
+	[[ -z "$ext" ]] && {
+	    echolor red ":: File type for ““$2”” not detected. Please enter extension manually."
+	    echo -n "> "
+	    read -r ext
+	    ext=".$ext"
+	}
 	mv "$2" "$2$ext"
     }
 }

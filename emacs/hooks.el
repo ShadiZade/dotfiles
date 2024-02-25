@@ -49,5 +49,10 @@
 	    (local-set-key (kbd "C-s") 'isearch-forward)
 	    ))
 
+(add-hook 'text-mode-hook
+	  (lambda ()
+	    (local-set-key (kbd "C-c f") 'move-progress-forward)
+	    ))
+
 (add-hook 'dired-mode-hook
 	  'auto-revert-mode)
