@@ -180,7 +180,7 @@ super + shift + n
 
 # emoji
 super + a ; e
-	rofimoji
+	rofimoji -a copy
 
 # latin supplement
 super + a ; l
