@@ -140,7 +140,6 @@ alias llf="eza -fl --icons --no-user --time-style=iso --sort=ext --group-directo
 
 # package management
 alias pacs="sudo pacman -S "
-alias pacrsc="sudo pacman -Rsc"
 alias pacr="sudo pacman -Rns"
 alias pacss="pacman -Ss"
 alias pacsi="pacman -Si"
@@ -153,10 +152,6 @@ alias sua="yay --removemake -Sua"
 alias tree="pactree -r "
 alias align-mirrors="sudo pacman-mirrors --fasttrack && sudo pacman -Syyu"
 
-# ebooks
-alias cdset="cd src/epub/text"
-
-
 # git
 alias '..s'="git status"
 alias '..d'="git diff"
@@ -164,14 +159,6 @@ alias '..p'="git push -u origin master"
 alias '..m'="git push -u origin main"
 
 # scripts 
-alias get-image="~/Repositories/scripts/extract-pdf-image.sh"
-alias chcover="~/Repositories/scripts/chcover.sh"
-alias newscript='which="script" ~/Repositories/scripts/new-micro.sh '
-alias newsolution='which="solution" ~/Repositories/scripts/new-micro.sh '
-alias newpbmodule='which="polybar-module" ~/Repositories/scripts/new-micro.sh '
-alias newfont="~/Repositories/scripts/font-downloader.sh"
-alias newmotif="~/Repositories/scripts/newmotif.sh"
-alias tess='~/Repositories/scripts/tess.sh'
 alias fw='~/Repositories/scripts/frequent-words.sh'
 alias tf='~/Repositories/scripts/music-tagger.sh'
 alias zas='~/Repositories/scripts/active-study.sh'
@@ -181,14 +168,10 @@ alias obo="~/Repositories/scripts/one-by-one.sh"
 alias tagger="~/Repositories/scripts/tagger.sh"
 alias gv="~/Repositories/scripts/convert-to-mp4.sh"
 alias tn="~/Repositories/scripts/takenote.sh"
-alias scr="~/Repositories/scripts/scientifier.sh"
 alias λ="~/Repositories/scripts/OpenShennong.sh"
 alias knife='~/Repositories/scripts/kebab-knife.sh'
 
-
 # files
-alias ’e="emacs -nw ~/Repositories/dotfiles/emacs/init.el"
-alias ’k="emacs -nw ~/Repositories/dotfiles/kitty/kitty.conf"
 alias ’z="emacs -nw ~/Repositories/dotfiles/zsh/zshrc"
 alias ’za="emacs -nw ~/Repositories/dotfiles/zsh/aliases"
 alias ’zf="emacs -nw ~/Repositories/dotfiles/zsh/functions"
@@ -198,15 +181,9 @@ alias ’b="emacs -nw ~/Repositories/dotfiles/bspwm/bspwmrc"
 alias ’s="emacs -nw ~/Repositories/dotfiles/sxhkd/sxhkdrc"
 alias ’p="emacs -nw ~/Repositories/dotfiles/polybar/config.ini"
 alias ’tc="emacs -nw ~/Repositories/scripts/bspwm-theme.sh"
-alias ’tp="~/Repositories/scripts/theme-picker.sh"
-alias ’cl="emacs -nw ~/Misc/cooking/cooklist.org"
-alias ’cp="emacs -nw ~/Misc/cooking/potential.org"
 
 # misc aliases
 alias '..'="cd .. && ll"
-alias '..2'="cd ../.."
-alias '..3'="cd ../../.."
-alias m="micro"
 alias e="emacs -nw "
 alias sm="sudo micro"
 alias q="source ~/.config/zsh/.zshrc"
@@ -221,21 +198,15 @@ alias rmdir='rmdir -v'
 alias grep='grep --color=auto -is'
 alias window-name="xprop WM_CLASS"
 alias clr="printf '\033[2J\033[3J\033[1;1H'"
-alias sudo='sudo '
 alias memuse='df | grep sda1 | awk "{print \$5}" '
 alias ,,='trans -b'
-alias yd='calc "$(date +"%Y")-$1"'
 alias llwc="ll | wc -l"
 alias back="~/Repositories/scripts/back/backmaster.sh"
 alias morse="morse-x -f 350"
 alias z="rdo zathura"
-alias trash-clear="rm -rf ~/.local/share/Trash/files/*"
 alias xvs="xv ~/Holding/screenshots"
 alias ←n="xclip -selection clipboard"
 alias ←="tr -d '\n' | xclip -selection clipboard"
-alias suben="subdl --interactive --download=query --lang=eng"
-alias subar="subdl --interactive --download=query --lang=ara"
-alias pf="photoflare"
 alias sxiv="sxiv -a"
 alias bp="buku -p"
 alias ba="buku -a"
@@ -252,4 +223,4 @@ alias cal="cal --color=always -m"
 alias f="fzf-choose-directory && ll"
 alias f~='hide_flag="-a"; f; hide_flag=""'
 alias ff~='hide_flag="-a"; ff; hide_flag=""'
-alias →="rsync -Paru --" 
+alias →="rsync -Paru --"

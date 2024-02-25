@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Example for ~/.config/sxiv/exec/image-info
 # Called by sxiv(1) whenever an image gets loaded,
