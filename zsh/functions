@@ -361,3 +361,21 @@ function ren {
     read -r temp
     rename -va -- "$1" "$2" *
 }
+
+function pandocjk {
+    [[ -z "$1" ]] && {
+	echolor red ":: No input."
+	return
+    }
+    [[ -z "$2" ]] && {
+	echolor red ":: No output."
+	return
+    }
+    cjk_font="$(fc-list :lang=zh | awk -F ':' '{print $2}' | awk -F ',' '{print $1}' | sort | uniq | fzf | sed 's/^ *//g')"
+    [[ -z "$cjk_font" ]] && {
+	echolor red ":: Font not chosen."
+	return
+    }
+    echolor yellow-green ":: Using ““$cjk_font””"
+    pandoc --pdf-engine=xelatex -V mainfont="$cjk_font" "$1" -o "$2"
+}
