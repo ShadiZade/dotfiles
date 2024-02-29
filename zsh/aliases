@@ -224,3 +224,5 @@ alias f="fzf-choose-directory && ll"
 alias f~='hide_flag="-a"; f; hide_flag=""'
 alias ff~='hide_flag="-a"; ff; hide_flag=""'
 alias →="rsync -Paru --"
+alias ezad="ll -D"
+alias ezaf="ll -f"
