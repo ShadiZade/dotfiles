@@ -61,12 +61,12 @@ showinfo () {
 
 
 edit () {
-    echolor yellow ":: image ““$file”” opened using PhotoFlare"
+    echolor yellow ":: Image ““$file”” opened using PhotoFlare"
     photoflare "$file" 2> /dev/null 
 }
 
 editgimp () {
-    echolor yellow ":: image ““$file”” opened using GIMP"
+    echolor yellow ":: Image ““$file”” opened using GIMP"
     gimp "$file" 2>/dev/null
 }
 
