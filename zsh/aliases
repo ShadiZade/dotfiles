@@ -226,3 +226,6 @@ alias ff~='hide_flag="-a"; ff; hide_flag=""'
 alias →="rsync -Paru --"
 alias ezad="ll -D"
 alias ezaf="ll -f"
+alias ⨯→="restore-files-from-trash"
+alias ko="output-kebabized-string"
+alias koc="copy-kebabized-string"

@@ -154,13 +154,6 @@ knock () {
     ~/.local/share/installed-scripts/knock/.knock/knock "$knocker"
 }
 
-## kbb
-kbb () {
-    ~/Repositories/scripts/kebabization.sh "$@"
-    cat "$HOME/.local/share/user-scripts/kebab" | xclip -selection clipboard
-    cat "$HOME/.local/share/user-scripts/kebab"
-}
-
 ## mk
 mk () {
     ~/Repositories/scripts/kebabization.sh "$@"
@@ -170,8 +163,8 @@ mk () {
 ## delete-opf
 delete-opf () {
     [ "$(pwd)" = "$HOME/Books/add" ] || return
-    fd -q 'opf$' && ⨯⨯ *.opf
-    fd -q 'jpg$' && ⨯⨯ *.jpg
+    fd -q 'opf$' && move-to-trash-recursively *.opf
+    fd -q 'jpg$' && move-to-trash-recursively *.jpg
 }
 
 ## detect-extra
@@ -303,7 +296,7 @@ submv () {
 	&& return
     file_ext="$(echo "$fl" | awk -F '.' '{print $NF}')"
     fw="$(echo "$dir/$fl")"
-    echo "$fl" | ←
+    realpath "$fl" | ←
     echo -e "\033[33m:: Opening \033[37m$fw\033[0m"
     case "$file_ext" in
 	pdf|ps|djvu|epub)
@@ -379,3 +372,9 @@ function pandocjk {
     echolor yellow-green ":: Using ““$cjk_font””"
     pandoc --pdf-engine=xelatex -V mainfont="$cjk_font" "$1" -o "$2"
 }
+
+function ⨯⨯ {
+    move-to-trash-recursively $@
+    echolor yellow ":: ““$number_of_files_trashed”” files trashed."
+}
+
