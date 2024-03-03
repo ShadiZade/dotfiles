@@ -378,3 +378,8 @@ function ⨯⨯ {
     echolor yellow ":: ““$number_of_files_trashed”” files trashed."
 }
 
+function determine-if-git-repo {
+    fd -qHd 1 ".git" \
+	&& export CUR_DIR_IS_GIT=1 \
+		  || export CUR_DIR_IS_GIT=0
+}
