@@ -385,10 +385,15 @@ function determine-if-git-repo {
 }
 
 function change-prompt-for-git {
+    green="#55ff55"
+    pink="#ff55ff"
+    blue="#34a7dd"
     case $(determine-if-git-repo; echo $CUR_DIR_IS_GIT) in
-	0) PROMPT=" %F{#55ff55}%2~%f %S%F{#55ff55} 囍 %D{%H:%M} 🠦 %f%s " ;;
-	1) PROMPT=" %F{#ff55ff}%2~%f %S%F{#ff55ff} 囍 %D{%H:%M} 🠦 %f%s " ;;
-	*) PROMPT=" %F{#345abc}%2~%f %S%F{#345abc} 囍 %D{%H:%M} 🠦 %f%s " ;;
+	0) PROMPT=" %F{$green}%2~%f %S%F{$green} 囍 %D{%H:%M} 🠦 %f%s " ;;
+	1) [[ "$(git status -s | wc -l)" -gt 0 ]] \
+	       && PROMPT=" %F{$pink}%2~%f %S%F{$pink} 囍 %D{%H:%M} 🠦 %f%s " \
+		   || PROMPT=" %F{$blue}%2~%f %S%F{$blue} 囍 %D{%H:%M} 🠦 %f%s " ;;
+	*) PROMPT=" %F{#ffffff}%2~%f %S%F{#ffffff} 囍 %D{%H:%M} 🠦 %f%s " ;;
     esac
 }
 	
