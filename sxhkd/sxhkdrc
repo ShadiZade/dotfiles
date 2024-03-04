@@ -188,7 +188,7 @@ super + a ; l
 
 # IPA
 super + a ; i
-	rofimoji --files "$HOME/Repositories/dotfiles/rofimoji/used-files/ipa/*"
+	rofimoji -a copy --files "$HOME/Repositories/dotfiles/rofimoji/used-files/ipa/*"
 
 # frequent-words
 super + a ; f
