@@ -379,7 +379,16 @@ function ⨯⨯ {
 }
 
 function determine-if-git-repo {
-    fd -qHd 1 ".git" \
+    fd --no-ignore -qHd 1 "^.git$" \
 	&& export CUR_DIR_IS_GIT=1 \
 		  || export CUR_DIR_IS_GIT=0
 }
+
+function change-prompt-for-git {
+    case $(determine-if-git-repo; echo $CUR_DIR_IS_GIT) in
+	0) PROMPT=" %F{#55ff55}%2~%f %S%F{#55ff55} 囍 %D{%H:%M} 🠦 %f%s " ;;
+	1) PROMPT=" %F{#ff55ff}%2~%f %S%F{#ff55ff} 囍 %D{%H:%M} 🠦 %f%s " ;;
+	*) PROMPT=" %F{#345abc}%2~%f %S%F{#345abc} 囍 %D{%H:%M} 🠦 %f%s " ;;
+    esac
+}
+	
