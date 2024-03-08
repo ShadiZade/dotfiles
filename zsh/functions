@@ -217,16 +217,17 @@ wg () {
     [[ -z "$2" ]] && {
 	wget -nc -t 0 -- "$1"
     } || {
-	wget -O "$2" -t 0 -- "$1" || return
+	outname="$(ko "$2")"
+	wget -O "$outname" -t 0 -- "$1" || return
 	echolor yellow ":: Determining extension..."
-	ext="$(extension-determiner "$2")"
+	ext="$(extension-determiner "$outname")"
 	[[ -z "$ext" ]] && {
-	    echolor red ":: File type for ““$2”” not detected. Please enter extension manually."
+	    echolor red ":: File type for ““$outname”” not detected. Please enter extension manually."
 	    echo -n "> "
 	    read -r ext
 	    ext=".$ext"
 	}
-	mv "$2" "$2$ext"
+	mv "$outname" "$outname$ext"
     }
 }
 
