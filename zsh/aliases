@@ -26,6 +26,7 @@ alias cdk="cd ~/Desktop && ll"
 alias cdkt="cd ~/Desktop/try && ll"
 ## Local
 alias cdls="cd ~/.local/share/ && fzf-choose-directory && ll"
+alias cdlsu="cd ~/.local/share/user-scripts && ll"
 alias cdlm="cd ~/.local/mobile/Internal\ shared\ storage/Home && ll"
 alias cdlmd="cd ~/.local/mobile/Internal\ shared\ storage/Download && ll"
 alias cdlmp="cd ~/.local/mobile/Internal\ shared\ storage/Pictures && ll"
