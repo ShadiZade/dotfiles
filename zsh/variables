@@ -4,4 +4,4 @@
 obpxd=60
 
 # user-script data dir
-usdd="$HOME/.local/share/user-scripts/"
+usdd="$HOME/.local/share/user-scripts"
