@@ -25,8 +25,8 @@ detect-extra
 setxkbmap
 export ZSH_COMPDUMP="$XDG_CACHE_HOME"/zsh/zcompdump-"$ZSH_VERSION" 
 export HISTCONTROL=ignorespace
+export EDITOR="emacs -nw"
 autoload -U compinit; compinit
-EDITOR="emacs -nw"
 compdef _gnu_generic mkdir
 compdef '_files -g "*.acsm"' knock
 compdef '_files -g "*.(mp4|mkv|avi|mp3|ogg|flac)"' mpv
