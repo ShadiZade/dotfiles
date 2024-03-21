@@ -195,7 +195,7 @@ dr () {
     ext="$(extension-determiner "$basename")"
     [[ -z "$ext" ]] && {
 	echolor red ":: File type for ““$2”” not detected. Please enter extension manually."
-	echo -n "> "
+	echo -ne "\033[37m>>> \033[0m"
 	read -r ext
 	    ext=".$ext"
     }
@@ -223,7 +223,7 @@ wg () {
 	ext="$(extension-determiner "$outname")"
 	[[ -z "$ext" ]] && {
 	    echolor red ":: File type for ““$outname”” not detected. Please enter extension manually."
-	    echo -n "> "
+	    echo -ne "\033[37m>>> \033[0m"
 	    read -r ext
 	    ext=".$ext"
 	}
