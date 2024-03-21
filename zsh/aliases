@@ -21,6 +21,8 @@ alias cdqm="cd ~/Aquire/music && ll"
 alias cdqp="cd ~/Aquire/pictures && ll"
 alias cdqv="cd ~/Aquire/video && ll"
 alias cdqt="cd ~/Aquire/torrents/ && ll"
+## Athenaeum
+alias cdae="cd ~/Athenaeum/ && ff"
 ## Desktop
 alias cdk="cd ~/Desktop && ll"
 alias cdkt="cd ~/Desktop/try && ll"
