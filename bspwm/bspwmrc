@@ -20,13 +20,14 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 picom &
 xwallpaper --zoom "$bspwm_theme_wallpaper" &
 fcitx5 -d &
-$HOME/.config/polybar/scripts/polybar-launch.sh &
 copyq &
 
 bspc monitor -d 1 2 3 4 5 6 7 8 9
 
-bspc config border_width         7
-bspc config window_gap          12
+$HOME/.config/polybar/scripts/polybar-launch.sh &
+bspc config top_padding 35
+bspc config border_width 5
+bspc config window_gap 8
 
 bspc config pointer_modifier mod4
 bspc config pointer_action1 move
@@ -40,9 +41,7 @@ bspc config gapless_monocle      true
 bspc config normal_border_color		      "#$bspwm_theme_secondary_color"
 bspc config focused_border_color	      "#$bspwm_theme_primary_color"
 
-bspc rule -a persepolis state=floating 
 bspc rule -a Steam state=floating 
-bspc rule -a Howl state=floating 
 
 bspc rule -a Emacs state=tiled
 
@@ -53,5 +52,5 @@ bspc rule -a okular state=fullscreen
 bspc rule -a FreeTube state=fullscreen
 bspc rule -a calibre state=fullscreen
 bspc rule -a Zathura state=fullscreen
-bspc rule -a Xdg-desktop-portal-gtk state=fullscreen
+#bspc rule -a Xdg-desktop-portal-gtk state=fullscreen
 #bspc rule -a Gimp-2.10 state=fullscreen

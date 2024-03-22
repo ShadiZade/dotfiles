@@ -105,12 +105,9 @@ super + {Left,Down,Up,Right}
 super + f
 	bspc node -t fullscreen || bspc node -t tiled
 
-# set the window state
-super + t ; {t,p,f}
-	bspc node -t {tiled,pseudo_tiled,floating}
-
-
-
+# set windowing mode
+super + slash
+        ~/Repositories/scripts/window-tiling.sh 
 
 	
 ############################################# program shortcuts
