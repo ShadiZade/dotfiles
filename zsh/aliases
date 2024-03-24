@@ -112,9 +112,6 @@ alias cdhs="cd ~/Holding/screenshots/ && ll"
 alias cdv="cd ~/Videos/ && ll"
 ## Documents
 alias cdo="cd ~/Documents/ && ll"
-alias cdod="cd ~/Documents/dictionaries/ && ll"
-alias cdodl="cd ~/Documents/dictionaries/lisan-al-3arab/ && ll"
-
 # translation
 alias zhen="command trans -b zh:en"
 alias enzh="command trans -b en:zh"
