@@ -22,6 +22,9 @@ xwallpaper --zoom "$bspwm_theme_wallpaper" &
 fcitx5 -d &
 copyq &
 
+killall battery-warner.sh
+~/Repositories/scripts/battery-warner.sh &
+
 bspc monitor -d 1 2 3 4 5 6 7 8 9
 
 $HOME/.config/polybar/scripts/polybar-launch.sh &

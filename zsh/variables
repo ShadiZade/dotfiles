@@ -5,3 +5,6 @@ obpxd=60
 
 # user-script data dir
 usdd="$HOME/.local/share/user-scripts"
+
+# checked by battery-warner.sh, 1 is on, 0 is off
+battery_warning_on=1
