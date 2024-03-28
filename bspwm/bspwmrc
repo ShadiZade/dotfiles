@@ -15,6 +15,7 @@
 ####### symlink location: ~/.config/bspwm/ ########################################################
 
 source ~/Repositories/scripts/bspwm-theme.sh
+source ~/Repositories/scripts/essential-functions.sh
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 picom &
@@ -24,6 +25,10 @@ copyq &
 
 killall battery-warner.sh
 ~/Repositories/scripts/battery-warner.sh &
+
+[[ "$battery_warning_on" -eq 0 ]] && {
+    notify-send -u critical -t 10000 "BATTERY WARNER OFF" "You will not be notified if the battery level becomes too low".
+}
 
 bspc monitor -d 1 2 3 4 5 6 7 8 9
 
