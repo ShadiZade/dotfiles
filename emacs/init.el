@@ -30,6 +30,7 @@
 (size-indication-mode 1)
 (column-number-mode)
 (set-face-attribute 'default nil :font "JuliaMono" :height 120)
+(setq default-frame-alist '((font . "JuliaMono")))
 (shadi/set-arabic-font '9)
 (pdf-tools-install)
 
@@ -132,3 +133,7 @@
   :hook (org-mode . org-bullets-mode))
 
 (use-package elfeed)
+
+(if (daemonp)
+    (message "Loading new daemon...")
+  (message "Loading new independent session..."))

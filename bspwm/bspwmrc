@@ -22,12 +22,13 @@ picom &
 xwallpaper --zoom "$bspwm_theme_wallpaper" &
 fcitx5 -d &
 copyq &
+# emacs --daemon &
 
 killall battery-warner.sh
 ~/Repositories/scripts/battery-warner.sh &
 
 [[ "$battery_warning_on" -eq 0 ]] && {
-    notify-send -u critical -t 10000 "BATTERY WARNER OFF" "You will not be notified if the battery level becomes too low".
+    notify-send -u critical -t 100000 "BATTERY WARNER OFF" "You will not be notified if the battery level becomes too low".
 }
 
 bspc monitor -d 1 2 3 4 5 6 7 8 9
