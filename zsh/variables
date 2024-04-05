@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # one_book_per_x_days: used in scripts/book-goal-calc.sh
-obpxd=60
+export obpxd=60
 
 # user-script data dir
-usdd="$HOME/.local/share/user-scripts"
+export usdd="$HOME/.local/share/user-scripts"
 
 # checked by battery-warner.sh, 1 is on, 0 is off
-battery_warning_on=1
+export battery_warning_on=1
