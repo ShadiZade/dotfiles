@@ -24,6 +24,7 @@ bat
 bcprov
 bison
 bitwarden
+blas
 blueman
 breeze
 breeze-gtk
@@ -52,7 +53,6 @@ dmidecode
 dmraid
 dnsmasq
 dosfstools
-downgrade
 dunst
 dvd+rw-tools
 e2fsprogs
@@ -66,6 +66,7 @@ exfat-utils
 expac
 eza
 f2fs-tools
+f3
 fcitx5
 fcitx5-chinese-addons
 fcitx5-configtool
@@ -93,7 +94,6 @@ gettext
 gimp
 girara
 glibc
-glibc-locales
 glow
 gnome-keyring
 gnome-themes-extra
@@ -138,6 +138,7 @@ kimageformats5
 kinit
 kio-extras
 kitty
+krita
 less
 lib32-libcanberra
 lib32-libva-intel-driver
@@ -171,6 +172,7 @@ man-db
 man-pages
 manjaro-alsa
 manjaro-browser-settings
+manjaro-downgrade
 manjaro-hotfixes
 manjaro-pulse
 manjaro-release
@@ -296,8 +298,9 @@ sbcl
 scantailor-advanced
 sed
 shadow
+shellcheck
 shuffle
-sigil
+smartmontools
 sof-firmware
 spectre-meltdown-checker
 sshfs
@@ -315,6 +318,8 @@ tar
 tellico
 terminus-font
 tesseract
+tesseract-data-ara
+tesseract-data-chi_sim
 texinfo
 texlive-basic
 texlive-bibtexextra
@@ -400,7 +405,6 @@ xsv
 xwallpaper
 xz
 yay
-yt-dlp
 zathura
 zathura-cb
 zathura-djvu

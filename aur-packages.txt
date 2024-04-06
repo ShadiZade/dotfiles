@@ -48,3 +48,4 @@ ttf-unifont
 vdhcoapp-bin
 windscribe
 xdg-ninja-git
+yt-dlp-git

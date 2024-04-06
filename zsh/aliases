@@ -33,6 +33,7 @@ alias cdlm="cd ~/.local/mobile/Internal\ shared\ storage/Home && ll"
 alias cdlmd="cd ~/.local/mobile/Internal\ shared\ storage/Download && ll"
 alias cdlmp="cd ~/.local/mobile/Internal\ shared\ storage/Pictures && ll"
 alias cdlmc="cd ~/.local/mobile/Internal\ shared\ storage/DCIM/Camera && ll"
+alias cdlog="cd ~/.local/logs/ && ff"
 ## Local
 alias cdt="cd ~/.local/share/Trash/files && lln -a --time=changed --sort=changed && du -sh"
 ## Downloads
@@ -172,6 +173,7 @@ alias gv="~/Repositories/scripts/convert-to-mp4.sh"
 alias tn="~/Repositories/scripts/takenote.sh"
 alias λ="~/Repositories/scripts/OpenShennong.sh"
 alias knife='~/Repositories/scripts/kebab-knife.sh'
+alias ⨯⨯⨯⨯="~/Repositories/scripts/trash-emptier.sh"
 
 # files
 alias ’z="emacs -nw ~/Repositories/dotfiles/zsh/zshrc"
