@@ -12,6 +12,7 @@
 (load "~/.config/emacs/hooks.el")
 (load "~/.config/emacs/org.el")
  
+
 (setq inhibit-startup-message t)
 (scroll-bar-mode -1)
 (tool-bar-mode -1)
@@ -29,8 +30,19 @@
 (xclip-mode 1)
 (size-indication-mode 1)
 (column-number-mode)
-(set-face-attribute 'default nil :font "JuliaMono" :height 120)
-(setq default-frame-alist '((font . "JuliaMono")))
+(defun shadi/set-font-faces ()
+  (message "Setting faces...")
+  (set-face-attribute 'default nil :font "JuliaMono" :height 120))
+
+;; (setq default-frame-alist '((font . "JuliaMono")))
+
+(if (daemonp)
+    (add-hook 'after-make-frame-functions
+	      (lambda (frame)
+		(with-selected-frame frame
+		  (shadi/set-font-faces))))
+  (shadi/set-font-faces))
+
 (shadi/set-arabic-font '9)
 (pdf-tools-install)
 
@@ -134,6 +146,3 @@
 
 (use-package elfeed)
 
-(if (daemonp)
-    (message "Loading new daemon...")
-  (message "Loading new independent session..."))

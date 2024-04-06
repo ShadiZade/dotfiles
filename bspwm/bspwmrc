@@ -22,7 +22,7 @@ picom &
 xwallpaper --zoom "$bspwm_theme_wallpaper" &
 fcitx5 -d &
 copyq &
-# emacs --daemon &
+emacs --daemon &
 
 killall battery-warner.sh
 ~/Repositories/scripts/battery-warner.sh &

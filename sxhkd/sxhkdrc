@@ -127,7 +127,7 @@ super + q ; v
 
 # emacs
 super + q ; e
-	pkill dunst; dunst & notify-send -t 1000 'Launcher' 'Launching "emacs"' & emacs
+	pkill dunst; dunst & notify-send -t 1000 'Launcher' 'Launching "emacs"' & emacsclient -c -a emacs
 
 # quodlibet
 super + q ; l
