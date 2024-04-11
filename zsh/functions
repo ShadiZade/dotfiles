@@ -145,7 +145,7 @@ key-names () {
 ## alarm
 alarm () {
     echo -e "\033[33m:: Alarm set on $(date +%H:%M:%S) for $1\033[0m"
-    sleep "$1"; mpv --loop-file=inf /usr/share/sounds/freedesktop/stereo/alarm-clock-elapsed.oga
+    sleep "$1"; mpv --loop-file=inf /home/oak/.local/share/sounds/glass-hit.wav
     # Does not actually loop. Investigate.
 }
 
