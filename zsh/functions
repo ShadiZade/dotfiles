@@ -400,3 +400,21 @@ function change-prompt-for-git {
     esac
 }
 	
+function mkmd {
+    projname="$(ko "$@")"
+    [[ -z "$projname" ]] && {
+	echolor red ":: Please enter project name."
+	return
+    }
+    [[ -e "$projname" ]] && {
+	echolor red ":: ““$projname”” already exists. Please choose another name."
+	return
+    }
+    echolor yellow ":: Creating new markdown project ““$projname””"
+    mkdir "$projname"
+    cd "$projname"
+    cp ~/Misc/templates/markdown/* .
+    sed -i "s/NAMEHERE/$projname/g" ./set.sh
+    echolor yellow ":: Project ““$projname”” created."
+    cd - > /dev/null
+}
