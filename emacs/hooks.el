@@ -13,6 +13,7 @@
 	    (local-set-key (kbd "; s")     'tex-insert-species)
 	    (local-set-key (kbd "; ;")     'tex-insert-comment)
 	    (local-set-key (kbd "\"")      'tex-enquote)
+	    (local-set-key (kbd "C-=") 'run-setsh-script)
 	    ;; ispell skip new commands
 	    (setq ispell-tex-skip-alists
                    (list
@@ -35,6 +36,11 @@
 (add-hook 'shell-mode-hook
 	  (lambda ()
 	    (local-set-key (kbd "C-c n o t") 'bash-not-structure)
+	    ))
+
+(add-hook 'markdown-mode-hook
+	  (lambda ()
+	    (local-set-key (kbd "C-=") 'run-setsh-script)
 	    ))
 
 (add-hook 'mhtml-mode-hook

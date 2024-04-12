@@ -150,3 +150,17 @@
   (interactive)
   (su)
   (read-only-mode 0))
+
+(defun run-script-in-same-dir (filename)
+  (interactive)
+  (save-buffer)
+  (if (and (file-exists-p filename) (file-executable-p filename))
+      (progn
+	(executable-interpret filename)
+	(delete-other-windows)
+	(message (format "Executing script %s..." filename)))
+    (message (format "Script %s not found." filename))))
+
+(defun run-setsh-script ()
+  (interactive)
+  (run-script-in-same-dir "./set.sh"))
