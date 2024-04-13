@@ -144,9 +144,10 @@ key-names () {
 
 ## alarm
 alarm () {
-    echo -e "\033[33m:: Alarm set on $(date +%H:%M:%S) for $1\033[0m"
-    sleep "$1"; mpv --loop-file=inf /home/oak/.local/share/sounds/glass-hit.wav
-    # Does not actually loop. Investigate.
+    echolor yellow ":: Alarm set on ““$(date +%H:%M:%S)”” for ““$1””"
+    sleep "$1"
+    echolor red-green ":: ALARM RINGING! IT'S ““$(date +%H:%M:%S)”” NOW!" 
+    mpv --loop-file=inf --really-quiet /home/oak/.local/share/user-scripts/sounds/glass-hit.wav
 }
 
 ## knock
@@ -418,3 +419,5 @@ function mkmd {
     echolor yellow ":: Project ““$projname”” created."
     cd - > /dev/null
 }
+
+# TODO convert all \033 to echolor
