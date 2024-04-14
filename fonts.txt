@@ -1,5 +1,6 @@
 /usr/share/fonts/TTF/NotoSansMNerdFontPropo-SemiCondensedThin.ttf: NotoSansM Nerd Font Propo,NotoSansM NFP SemCond Thin:style=SemiCondensed Thin,Regular
 /usr/share/fonts/TTF/montserrat_regular.ttf: Montserrat:style=Regular
+/usr/share/fonts/TTF/IBMPlexSerif-ExtraLightItalic.ttf: IBM Plex Serif,IBM Plex Serif ExtraLight:style=ExtraLight Italic,Italic
 /usr/share/fonts/TTF/allura_regular.ttf: Allura:style=Regular
 /usr/share/fonts/noto/NotoSansTaiLe-Regular.ttf: Noto Sans Tai Le:style=Regular
 /usr/share/fonts/noto/NotoSerifTest-Bold.ttf: Noto Serif Test:style=Bold
@@ -18,6 +19,7 @@
 /usr/share/fonts/otf-gfs/GFSGeorgiou-Light.otf: GFS Georgiou:style=Light,Regular
 /usr/share/fonts/TTF/arabeyes/Naqsh.ttf: Naqsh:style=Regular
 /usr/share/fonts/noto/NotoSerifDevanagari-Thin.ttf: Noto Serif Devanagari,Noto Serif Devanagari Thin:style=Thin,Regular
+/usr/share/fonts/TTF/Sedan-Italic.ttf: Sedan:style=Italic
 /usr/share/fonts/TTF/NotoSansNerdFontPropo-ExtraCondensedBlack.ttf: NotoSans Nerd Font Propo,NotoSans NFP ExtCond Black:style=ExtraCondensed Black,Regular
 /usr/share/fonts/TTF/NotoSansNerdFontPropo-SemiCondensedBlack.ttf: NotoSans Nerd Font Propo,NotoSans NFP SemCond Black:style=SemiCondensed Black,Regular
 /usr/share/fonts/TTF/padmaa-Bold-0.5.ttf: padmaa,padmmaa:style=Bold,medium
@@ -27,10 +29,13 @@
 /usr/share/fonts/misc/cozette_hidpi.otb: CozetteHiDpi:style=Medium
 /usr/share/fonts/noto/NotoSansSymbols-Black.ttf: Noto Sans Symbols,Noto Sans Symbols Black:style=Black,Regular
 /usr/share/fonts/mikhak/Mikhak-Thin.ttf: Mikhak,Mikhak Thin:style=Thin,Regular
+/usr/share/fonts/TTF/IBMPlexSerif-SemiBold.ttf: IBM Plex Serif,IBM Plex Serif SemiBold:style=SemiBold,Regular
 /usr/share/fonts/TTF/NotoSerifNerdFontPropo-SemiBold.ttf: NotoSerif Nerd Font Propo,NotoSerif NFP SemBd:style=SemiBold,Regular
 /usr/share/fonts/noto/NotoSansDevanagari-Medium.ttf: Noto Sans Devanagari,Noto Sans Devanagari Medium:style=Medium,Regular
 /usr/share/fonts/TTF/NotoSansMNerdFont-SemiCondensedExtraBold.ttf: NotoSansM Nerd Font,NotoSansM NF SemCond ExtBd:style=SemiCondensed ExtraBold,Regular
+/usr/share/fonts/wenquanyi/wenquanyi_11pt.pcf: WenQuanYi WenQuanYi Bitmap Song:style=Regular
 /usr/share/fonts/noto/NotoSerifKannada-Medium.ttf: Noto Serif Kannada,Noto Serif Kannada Medium:style=Medium,Regular
+/usr/share/fonts/wenquanyi/wenquanyi_12pt.pcf: WenQuanYi WenQuanYi Bitmap Song:style=Regular
 /usr/share/fonts/TTF/NotoSansMNerdFont-SemiCondensedLight.ttf: NotoSansM Nerd Font,NotoSansM NF SemCond Light:style=SemiCondensed Light,Regular
 /usr/share/fonts/noto/NotoSansLaoLooped-Thin.ttf: Noto Sans Lao Looped,Noto Sans Lao Looped Thin:style=Thin,Regular
 /usr/share/fonts/TTF/NotoSerifNerdFontPropo-ExtraCondensedMediumItalic.ttf: NotoSerif Nerd Font Propo,NotoSerif NFP ExtCond Med:style=ExtraCondensed Medium Italic,Italic
@@ -64,6 +69,7 @@
 /usr/share/fonts/TTF/iosevka-thin.ttc: Iosevka Term,Iosevka Term Thin Extended:style=Thin Extended,Regular
 /usr/share/fonts/droid/DroidSansEthiopic-Regular.ttf: Droid Sans:style=Regular
 /usr/share/fonts/TTF/iosevka-extrabold.ttc: Iosevka Fixed,Iosevka Fixed Extrabold:style=Extrabold Italic,Italic
+/usr/share/fonts/TTF/IBMPlexSerif-ExtraLight.ttf: IBM Plex Serif,IBM Plex Serif ExtraLight:style=ExtraLight,Regular
 /usr/share/fonts/noto/NotoSansGurmukhiUI-Bold.ttf: Noto Sans Gurmukhi UI:style=Bold
 /usr/share/fonts/mikhak/Mikhak-FD[DSTY,KSHD,wght].ttf: Mikhak\-FD,Mikhak\-FD VF:style=Medium
 /usr/share/fonts/TTF/CooperHewitt-LightItalic.otf: Cooper Hewitt:style=Light Italic
@@ -152,6 +158,7 @@
 /usr/share/fonts/TTF/chewy_regular.ttf: Chewy:style=Regular
 /usr/share/fonts/adobe-source-sans/SourceSans3-MediumIt.otf: Source Sans 3,Source Sans 3 Medium:style=Medium Italic,Italic
 /usr/share/fonts/TTF/Inconsolata-UltraExpandedLight.ttf: Inconsolata,Inconsolata Ultra Expanded Light:style=Ultra Expanded Light,Regular
+/usr/share/fonts/TTF/Neuton-ExtraLight.ttf: Neuton,Neuton ExtraLight:style=ExtraLight,Regular
 /usr/share/fonts/adobe-source-sans/SourceSansPro-Bold.otf: Source Sans Pro:style=Bold
 /usr/share/fonts/noto/NotoSansTifinaghAdrar-Regular.ttf: Noto Sans Tifinagh Adrar:style=Regular
 /usr/share/fonts/mikhak/Mikhak-DS1-FD-Black.ttf: Mikhak\-DS1\-FD,Mikhak\-DS1\-FD Black:style=Mikhak-DS1-FD-Black,Regular
@@ -167,7 +174,9 @@
 /usr/share/fonts/gsfonts/URWBookman-LightItalic.otf: URW Bookman:style=Light Italic
 /usr/share/fonts/noto/NotoSansVithkuqi-Regular.ttf: Noto Sans Vithkuqi:style=Regular
 /usr/share/fonts/noto/NotoTraditionalNushu-Regular.ttf: Noto Traditional Nushu:style=Regular
+/usr/share/fonts/wenquanyi/wenquanyi_10pt.pcf: WenQuanYi WenQuanYi Bitmap Song:style=Regular
 /usr/share/fonts/TTF/NotoSansMNerdFont-ExtraCondensedMedium.ttf: NotoSansM Nerd Font,NotoSansM NF ExtCond Med:style=ExtraCondensed Medium,Regular
+/usr/share/fonts/TTF/IBMPlexSerif-BoldItalic.ttf: IBM Plex Serif:style=Bold Italic
 /usr/share/fonts/TTF/arabeyes/elham.ttf: Elham:style=Regular
 /usr/share/fonts/TTF/NotoSansNerdFontPropo-Regular.ttf: NotoSans Nerd Font Propo,NotoSans NFP:style=Regular
 /usr/share/fonts/noto/NotoSansKayahLi-Bold.ttf: Noto Sans Kayah Li:style=Bold
@@ -176,12 +185,14 @@
 /usr/share/fonts/otf-gfs/GFSTheokritos.otf: GFS Theokritos:style=Regular
 /usr/share/fonts/TTF/NotoSansMNerdFontPropo-CondensedExtraBold.ttf: NotoSansM Nerd Font Propo,NotoSansM NFP Cond ExtBd:style=Condensed ExtraBold,Regular
 /usr/share/fonts/TTF/Nautilus.otf: Nautilus Pompilius:style=Regular
+/usr/share/fonts/TTF/CrimsonText-Italic.ttf: Crimson Text:style=Italic
 /usr/share/fonts/noto/NotoSansKayahLi-Regular.ttf: Noto Sans Kayah Li:style=Regular
 /usr/share/fonts/noto/NotoSansUgaritic-Regular.ttf: Noto Sans Ugaritic:style=Regular
 /usr/share/fonts/TTF/NotoSansNerdFontPropo-SemiCondensedThin.ttf: NotoSans Nerd Font Propo,NotoSans NFP SemCond Thin:style=SemiCondensed Thin,Regular
 /usr/share/fonts/TTF/NotoSansNerdFont-CondensedBlackItalic.ttf: NotoSans Nerd Font,NotoSans NF Cond Black:style=Condensed Black Italic,Italic
 /usr/share/fonts/TTF/NotoSansNerdFontPropo-CondensedMediumItalic.ttf: NotoSans Nerd Font Propo,NotoSans NFP Cond Med:style=Condensed Medium Italic,Italic
 /usr/share/fonts/misc/ter-u28n.otb: Terminus:style=Regular
+/usr/share/fonts/TTF/Neuton-Light.ttf: Neuton,Neuton Light:style=Light,Regular
 /usr/share/fonts/liberation/LiberationSans-Bold.ttf: Liberation Sans:style=Bold
 /usr/share/fonts/TTF/NotoSerifNerdFontPropo-ExtraCondensedExtraLightItalic.ttf: NotoSerif Nerd Font Propo,NotoSerif NFP ExtCond ExtLt:style=ExtraCondensed ExtraLight Italic,Italic
 /usr/share/fonts/TTF/arabeyes/ae_Jet.ttf: Jet:style=Regular
@@ -240,6 +251,7 @@
 /usr/share/fonts/TTF/engagement_regular.ttf: Engagement:style=Regular
 /usr/share/fonts/noto/NotoSansBalinese-Regular.ttf: Noto Sans Balinese:style=Regular
 /usr/share/fonts/noto/NotoSansTifinagh-Regular.ttf: Noto Sans Tifinagh:style=Regular
+/usr/share/fonts/TTF/ZillaSlab-Italic.ttf: Zilla Slab:style=Italic
 /usr/share/fonts/TTF/iosevka-bold.ttc: Iosevka Fixed:style=Bold
 /usr/share/fonts/TTF/arabeyes/titr.ttf: Titr:style=Bold
 /usr/share/fonts/TTF/iosevka-regular.ttc: Iosevka Fixed:style=Regular
@@ -408,6 +420,7 @@
 /usr/share/fonts/TTF/NotoSansNerdFont-ExtraCondensedBlack.ttf: NotoSans Nerd Font,NotoSans NF ExtCond Black:style=ExtraCondensed Black,Regular
 /usr/share/fonts/TTF/sanchez_regular.ttf: Sanchez:style=Regular
 /usr/share/fonts/TTF/arabeyes/royab.ttf: Roya:style=Bold
+/usr/share/fonts/TTF/CrimsonText-Regular.ttf: Crimson Text:style=Regular
 /usr/share/fonts/noto/NotoRashiHebrew-Thin.ttf: Noto Rashi Hebrew,Noto Rashi Hebrew Thin:style=Thin,Regular
 /usr/share/fonts/TTF/AdventPro-Regular.ttf: Advent Pro:style=Regular
 /usr/share/fonts/otf-gfs/GFSArtemisia.otf: GFS Artemisia:style=Regular
@@ -428,6 +441,7 @@
 /usr/share/fonts/TTF/iosevka-thin.ttc: Iosevka,Iosevka Thin Oblique:style=Thin Oblique,Regular
 /usr/share/fonts/cantarell/Cantarell-VF.otf: Cantarell:style=Bold
 /usr/share/fonts/noto/NotoSerifArmenian-Medium.ttf: Noto Serif Armenian,Noto Serif Armenian Medium:style=Medium,Regular
+/usr/share/fonts/TTF/Neuton-Regular.ttf: Neuton:style=Regular
 /usr/share/fonts/TTF/NotoSansNerdFontPropo-ExtraCondensedExtraBoldItalic.ttf: NotoSans Nerd Font Propo,NotoSans NFP ExtCond ExtBd:style=ExtraCondensed ExtraBold Italic,Italic
 /usr/share/fonts/TTF/NotoSerifNerdFont-ExtraCondensedBold.ttf: NotoSerif Nerd Font,NotoSerif NF ExtCond:style=ExtraCondensed Bold,Bold
 /usr/share/fonts/noto/NotoSerifMalayalam-Thin.ttf: Noto Serif Malayalam,Noto Serif Malayalam Thin:style=Thin,Regular
@@ -510,6 +524,7 @@
 /usr/share/fonts/noto/NotoSansMyanmar-Black.ttf: Noto Sans Myanmar,Noto Sans Myanmar Black:style=Black,Regular
 /usr/share/fonts/noto/NotoSansSinhalaUI-Black.ttf: Noto Sans Sinhala UI,Noto Sans Sinhala UI Black:style=Black,Regular
 /usr/share/fonts/noto/NotoSansLinearB-Regular.ttf: Noto Sans Linear B:style=Regular
+/usr/share/fonts/TTF/IBMPlexSerif-ThinItalic.ttf: IBM Plex Serif,IBM Plex Serif Thin:style=Thin Italic,Italic
 /usr/share/fonts/TTF/NotoSansMNerdFont-Bold.ttf: NotoSansM Nerd Font,NotoSansM NF:style=Bold
 /usr/share/fonts/droid/DroidKufi-Bold.ttf: Droid Arabic Kufi:style=Bold
 /usr/share/fonts/kanit/Kanit-Medium.ttf: Kanit,Kanit Medium:style=Medium,Regular
@@ -567,6 +582,7 @@
 /usr/share/fonts/otf-gfs/GFS_Orpheus_Classic.otf: GFS Orpheus Classic:style=Regular
 /usr/share/fonts/TTF/Tinos-Italic.ttf: Tinos:style=Italic
 /usr/share/fonts/noto/NotoSerifDisplay-Italic.ttf: Noto Serif Display:style=Italic
+/usr/share/fonts/TTF/CrimsonText-SemiBold.ttf: Crimson Text,Crimson Text SemiBold:style=SemiBold,Regular
 /usr/share/fonts/TTF/JosefinSlab-SemiBold.ttf: Josefin Slab:style=SemiBold
 /usr/share/fonts/TTF/Inconsolata-UltraExpandedExtraBold.ttf: Inconsolata,Inconsolata Ultra Expanded ExtraBold:style=Ultra Expanded ExtraBold,Regular
 /usr/share/fonts/TTF/Times.TTF: Times New Roman:style=Regular,Normal,obyčejné,Standard,Κανονικά,Normaali,Normál,Normale,Standaard,Normalny,Обычный,Normálne,Navadno,thường,Arrunta
@@ -597,6 +613,7 @@
 /usr/share/fonts/noto/NotoSansKhmer-Regular.ttf: Noto Sans Khmer:style=Regular
 /usr/share/fonts/TTF/NotoSerifNerdFontPropo-ExtraBoldItalic.ttf: NotoSerif Nerd Font Propo,NotoSerif NFP ExtBd:style=ExtraBold Italic,Italic
 /usr/share/fonts/noto/NotoSansBamum-Medium.ttf: Noto Sans Bamum,Noto Sans Bamum Medium:style=Medium,Regular
+/usr/share/fonts/TTF/ZillaSlab-Regular.ttf: Zilla Slab:style=Regular
 /usr/share/fonts/noto/NotoSansLaoLooped-Medium.ttf: Noto Sans Lao Looped,Noto Sans Lao Looped Medium:style=Medium,Regular
 /usr/share/fonts/noto/NotoSerifThai-Light.ttf: Noto Serif Thai,Noto Serif Thai Light:style=Light,Regular
 /usr/share/fonts/worksans/WorkSans-Italic-VariableFont_wght.ttf: Work Sans:style=Medium Italic
@@ -632,8 +649,10 @@
 /usr/share/fonts/microgramma/Microgramma Bold.ttf: Microgramma:style=Bold
 /usr/share/fonts/kanit/Kanit-Black.ttf: Kanit,Kanit Black:style=Black,Regular
 /usr/share/fonts/noto/NotoSansTamil-Thin.ttf: Noto Sans Tamil,Noto Sans Tamil Thin:style=Thin,Regular
+/usr/share/fonts/misc/ter-x12b.pcf.gz: xos4 Terminus:style=Bold
 /usr/share/fonts/noto/NotoSansBassaVah-Bold.ttf: Noto Sans Bassa Vah:style=Bold
 /usr/share/fonts/otf-gfs/GFS_Galatea_Bold.otf: GFS Galatea:style=Bold
+/usr/share/fonts/misc/siji.bdf: Siji:style=Regular
 /usr/share/fonts/noto/NotoSerifTamil-LightItalic.ttf: Noto Serif Tamil,Noto Serif Tamil Light:style=Light Italic,Italic
 /usr/share/fonts/TTF/iosevka-heavy.ttc: Iosevka,Iosevka Heavy:style=Heavy,Regular
 /usr/share/fonts/eczar/Eczar-VariableFont_wght.ttf: Eczar:style=Bold
@@ -668,6 +687,7 @@
 /usr/share/fonts/TTF/JungleRanger.ttf: Jungle Ranger:style=Regular
 /usr/share/fonts/TTF/NewtSerif.otf: Newt Serif:style=Regular
 /usr/share/fonts/TTF/NotoSansMNerdFont-ExtraCondensedThin.ttf: NotoSansM Nerd Font,NotoSansM NF ExtCond Thin:style=ExtraCondensed Thin,Regular
+/usr/share/fonts/TTF/Neuton-Bold.ttf: Neuton:style=Bold
 /usr/share/fonts/adobe-source-sans/SourceSans3-SemiboldIt.otf: Source Sans 3,Source Sans 3 Semibold:style=Semibold Italic,Italic
 /usr/share/fonts/noto/NotoSansSyriacEastern-Regular.ttf: Noto Sans Syriac Eastern:style=Regular
 /usr/share/fonts/mikhak/Mikhak-DS1-Light.ttf: Mikhak\-DS1,Mikhak\-DS1 Light:style=Light,Regular
@@ -688,7 +708,9 @@
 /usr/share/fonts/TTF/iosevka-light.ttc: Iosevka Fixed,Iosevka Fixed Lt Ex Obl:style=Light Extended Oblique,Regular
 /usr/share/fonts/droid/DroidSerif-Bold.ttf: Droid Serif:style=Bold
 /usr/share/fonts/otf-gfs/GFSBodoniBoldIt.otf: GFS Bodoni,GFS Bodoni Rg:style=Bold Italic
+/usr/share/fonts/TTF/ZillaSlab-Medium.ttf: Zilla Slab,Zilla Slab Medium:style=Medium,Regular
 /usr/share/fonts/TTF/iosevka-extralight.ttc: Iosevka,Iosevka XLt Ex Obl:style=Extralight Extended Oblique,Regular
+/usr/share/fonts/misc/ter-x22b.pcf.gz: xos4 Terminus:style=Bold
 /usr/share/fonts/noto/NotoSansSyriacEastern-Black.ttf: Noto Sans Syriac Eastern,Noto Sans Syriac Eastern Black:style=Black,Regular
 /usr/share/fonts/TTF/NotoSansMNerdFontPropo-Light.ttf: NotoSansM Nerd Font Propo,NotoSansM NFP Light:style=Light,Regular
 /usr/share/fonts/TTF/trebucit.ttf: Trebuchet MS:style=Italic,Cursiva,kurzíva,kursiv,Πλάγια,Kursivoitu,Italique,Dőlt,Corsivo,Cursief,Kursywa,Itálico,Курсив,İtalik,Poševno,Etzana
@@ -713,6 +735,7 @@
 /usr/share/fonts/noto/NotoSansGurmukhi-Bold.ttf: Noto Sans Gurmukhi:style=Bold
 /usr/share/fonts/TTF/NotoSansNerdFontPropo-ExtraCondensedExtraBold.ttf: NotoSans Nerd Font Propo,NotoSans NFP ExtCond ExtBd:style=ExtraCondensed ExtraBold,Regular
 /usr/share/fonts/TTF/iosevka-extrabold.ttc: Iosevka Term,Iosevka Term Extrabold:style=Extrabold,Regular
+/usr/share/fonts/TTF/IBMPlexSerif-Italic.ttf: IBM Plex Serif:style=Italic
 /usr/share/fonts/worksans/WorkSans-Italic.ttf: Work Sans:style=Italic
 /usr/share/fonts/worksans/WorkSans-VariableFont_wght.ttf: Work Sans:style=Regular
 /usr/share/fonts/TTF/DejaVuSerif.ttf: DejaVu Serif:style=Book
@@ -737,6 +760,7 @@
 /usr/share/fonts/TTF/Cairo-VariableFont_slnt,wght.ttf: Cairo:style=Black
 /usr/share/fonts/TTF/Webdings.TTF: Webdings:style=Regular,Normal,obyčejné,Standard,Κανονικά,Normaali,Normál,Normale,Standaard,Normalny,Обычный,Normálne,Navadno,Arrunta
 /usr/share/fonts/OTF/NotoSansCJKsc-Thin.otf: Noto Sans CJK SC,Noto Sans CJK SC Thin:style=Thin,Regular
+/usr/share/fonts/misc/ter-x32b.pcf.gz: xos4 Terminus:style=Bold
 /usr/share/fonts/otf-gfs/GFSSolomos.otf: GFS Solomos:style=Regular
 /usr/share/fonts/worksans/WorkSans-Bold.ttf: Work Sans:style=Bold
 /usr/share/fonts/gsfonts/NimbusMonoPS-Regular.otf: Nimbus Mono PS:style=Regular
@@ -747,6 +771,7 @@
 /usr/share/fonts/kanit/Kanit-MediumItalic.ttf: Kanit,Kanit Medium:style=Medium Italic,Italic
 /usr/share/fonts/TTF/iosevka-medium.ttc: Iosevka,Iosevka Medium:style=Medium Italic,Italic
 /usr/share/fonts/noto/NotoSansSinhala-Medium.ttf: Noto Sans Sinhala,Noto Sans Sinhala Medium:style=Medium,Regular
+/usr/share/fonts/wenquanyi/wenquanyi_9pt.pcf: WenQuanYi WenQuanYi Bitmap Song:style=Regular
 /usr/share/fonts/droid/DroidSansArabic.ttf: Droid Sans:style=Regular
 /usr/share/fonts/noto/NotoSerifLao-Light.ttf: Noto Serif Lao,Noto Serif Lao Light:style=Light,Regular
 /usr/share/fonts/noto/NotoSerifTelugu-Medium.ttf: Noto Serif Telugu,Noto Serif Telugu Medium:style=Medium,Regular
@@ -772,12 +797,14 @@
 /home/oak/.fonts/f/Fontspring_DEMO_manifoldextendedcf_bold.otf: FONTSPRING DEMO \- Manifold Extended CF,FSP DEMO \- Manifold Extended CF:style=Bold
 /usr/share/fonts/eczar/Eczar-Medium.ttf: Eczar,Eczar Medium:style=Medium,Regular
 /usr/share/fonts/TTF/NotoSansMNerdFontMono-SemiCondensedBlack.ttf: NotoSansM Nerd Font Mono,NotoSansM NFM SemCond Black:style=SemiCondensed Black,Regular
+/usr/share/fonts/misc/ter-x18b.pcf.gz: xos4 Terminus:style=Bold
 /usr/share/fonts/TTF/iosevka-light.ttc: Iosevka,Iosevka Light Extended:style=Light Extended Italic,Italic
 /usr/share/fonts/noto/NotoSans-Medium.ttf: Noto Sans,Noto Sans Medium:style=Medium,Regular
 /usr/share/fonts/noto/NotoSerifKhmer-Thin.ttf: Noto Serif Khmer,Noto Serif Khmer Thin:style=Thin,Regular
 /usr/share/fonts/noto/NotoSansTelugu-Black.ttf: Noto Sans Telugu,Noto Sans Telugu Black:style=Black,Regular
 /usr/share/fonts/TTF/IBMPlexSansCondensed-Regular.ttf: IBM Plex Sans Condensed:style=Regular
 /usr/share/fonts/noto/NotoSansSymbols-Medium.ttf: Noto Sans Symbols,Noto Sans Symbols Medium:style=Medium,Regular
+/usr/share/fonts/TTF/IBMPlexSerif-Bold.ttf: IBM Plex Serif:style=Bold
 /usr/share/fonts/noto/NotoSansSundanese-Medium.ttf: Noto Sans Sundanese:style=Medium,Regular
 /usr/share/fonts/TTF/NotoSerifNerdFont-CondensedThinItalic.ttf: NotoSerif Nerd Font,NotoSerif NF Cond Thin:style=Condensed Thin Italic,Italic
 /usr/share/fonts/TTF/iosevka-thin.ttc: Iosevka Fixed,Iosevka Fixed Thin Extended:style=Thin Extended,Regular
@@ -811,7 +838,9 @@
 /usr/share/fonts/OTF/NotoSansCJKsc-Regular.otf: Noto Sans CJK SC:style=Regular
 /usr/share/fonts/noto/NotoSansTeluguUI-Regular.ttf: Noto Sans Telugu UI:style=Regular
 /usr/share/fonts/noto/NotoSerifTelugu-Light.ttf: Noto Serif Telugu,Noto Serif Telugu Light:style=Light,Regular
+/usr/share/fonts/TTF/ZillaSlab-Light.ttf: Zilla Slab,Zilla Slab Light:style=Light,Regular
 /usr/share/fonts/noto/NotoSansBengaliUI-Medium.ttf: Noto Sans Bengali UI,Noto Sans Bengali UI Medium:style=Medium,Regular
+/usr/share/fonts/TTF/IBMPlexSerif-SemiBoldItalic.ttf: IBM Plex Serif,IBM Plex Serif SemiBold:style=SemiBold Italic,Italic
 /usr/share/fonts/TTF/NotoSerifNerdFontPropo-ExtraCondensedMedium.ttf: NotoSerif Nerd Font Propo,NotoSerif NFP ExtCond Med:style=ExtraCondensed Medium,Regular
 /usr/share/fonts/adobe-source-sans/SourceSansPro-ExtraLight.otf: Source Sans Pro,Source Sans Pro ExtraLight:style=ExtraLight,Regular
 /usr/share/fonts/TTF/NotoSerifNerdFontPropo-ExtraCondensedBold.ttf: NotoSerif Nerd Font Propo,NotoSerif NFP ExtCond:style=ExtraCondensed Bold,Bold
@@ -864,6 +893,7 @@
 /usr/share/fonts/microgramma/Microgramma Normal.ttf: Microgramma:style=Normal
 /usr/share/fonts/noto/NotoSerifDisplay-MediumItalic.ttf: Noto Serif Display,Noto Serif Display Medium:style=Medium Italic,Italic
 /usr/share/fonts/noto/NotoSansDuployan-Regular.ttf: Noto Sans Duployan:style=Regular
+/usr/share/fonts/misc/ter-x20b.pcf.gz: xos4 Terminus:style=Bold
 /usr/share/fonts/TTF/Economica-Regular.ttf: Economica:style=Regular
 /usr/share/fonts/mikhak/Mikhak[DSTY,KSHD,wght].ttf: Mikhak,Mikhak VF:style=Light
 /usr/share/fonts/TTF/LifeSavers-ExtraBold.ttf: Life Savers:style=ExtraBold
@@ -904,6 +934,7 @@
 /usr/share/fonts/TTF/courbi.ttf: Courier New:style=Bold Italic,Negreta cursiva,tučné kurzíva,fed kursiv,Fett Kursiv,Έντονα Πλάγια,Negrita Cursiva,Lihavoitu Kursivoi,Gras Italique,Félkövér dőlt,Grassetto Corsivo,Vet Cursief,Halvfet Kursiv,Pogrubiona kursywa,Negrito Itálico,Полужирный Курсив,Tučná kurzíva,Fet Kursiv,Kalın İtalik,Krepko poševno,Lodi etzana
 /usr/share/fonts/noto/NotoSerifDisplay-Regular.ttf: Noto Serif Display:style=Regular
 /usr/share/fonts/TTF/iosevka-heavy.ttc: Iosevka,Iosevka Heavy Extended:style=Heavy Extended,Regular
+/usr/share/fonts/misc/ter-x28b.pcf.gz: xos4 Terminus:style=Bold
 /usr/share/fonts/OTF/NotoSansMonoCJKsc-Bold.otf: Noto Sans Mono CJK SC:style=Bold
 /usr/share/fonts/noto/NotoSansGujarati-Thin.ttf: Noto Sans Gujarati,Noto Sans Gujarati Thin:style=Thin,Regular
 /usr/share/fonts/noto/NotoSerifOriya-Regular.ttf: Noto Serif Oriya:style=Regular
@@ -913,6 +944,7 @@
 /usr/share/fonts/worksans/WorkSans-Italic-VariableFont_wght.ttf: Work Sans:style=Italic
 /usr/share/fonts/TTF/NotoSansNerdFontPropo-CondensedExtraLight.ttf: NotoSans Nerd Font Propo,NotoSans NFP Cond ExtLt:style=Condensed ExtraLight,Regular
 /usr/share/fonts/noto/NotoSansBengali-Regular.ttf: Noto Sans Bengali:style=Regular
+/usr/share/fonts/TTF/CrimsonText-BoldItalic.ttf: Crimson Text:style=Bold Italic
 /usr/share/fonts/adobe-source-sans/SourceSans3-LightIt.otf: Source Sans 3,Source Sans 3 Light:style=Light Italic,Italic
 /usr/share/fonts/TTF/Pastry Paradise.otf: Pastry Paradise:style=Regular
 /usr/share/fonts/TTF/NotoSansMNerdFontPropo-CondensedSemiBold.ttf: NotoSansM Nerd Font Propo,NotoSansM NFP Cond SemBd:style=Condensed SemiBold,Regular
@@ -949,14 +981,17 @@
 /usr/share/fonts/TTF/NotoSerifNerdFont-ExtraCondensedLightItalic.ttf: NotoSerif Nerd Font,NotoSerif NF ExtCond Light:style=ExtraCondensed Light Italic,Italic
 /usr/share/fonts/TTF/iosevka-bold.ttc: Iosevka Term,Iosevka Term Oblique:style=Bold Oblique,Bold
 /usr/share/fonts/TTF/textmeone_regular.ttf: Text Me One:style=Regular
+/usr/share/fonts/TTF/Sedan-Regular.ttf: Sedan:style=Regular
 /usr/share/fonts/noto/NotoSansTagbanwa-Regular.ttf: Noto Sans Tagbanwa:style=Regular
 /usr/share/fonts/TTF/iosevka-extralight.ttc: Iosevka,Iosevka Extralight Extended:style=Extralight Extended Italic,Italic
 /usr/share/fonts/TTF/iosevka-light.ttc: Iosevka Term,Iosevka Term Light:style=Light Italic,Italic
 /usr/share/fonts/TTF/NotoSerifNerdFontPropo-ExtraCondensedThin.ttf: NotoSerif Nerd Font Propo,NotoSerif NFP ExtCond Thin:style=ExtraCondensed Thin,Regular
+/usr/share/fonts/TTF/IBMPlexSerif-MediumItalic.ttf: IBM Plex Serif,IBM Plex Serif Medium:style=Medium Italic,Italic
 /usr/share/fonts/noto/NotoSansTifinaghAzawagh-Regular.ttf: Noto Sans Tifinagh Azawagh:style=Regular
 /usr/share/fonts/noto/NotoSansBamum-Regular.ttf: Noto Sans Bamum:style=Regular
 /usr/share/fonts/noto/NotoSansTeluguUI-Thin.ttf: Noto Sans Telugu UI,Noto Sans Telugu UI Thin:style=Thin,Regular
 /usr/share/fonts/noto/NotoSerifGujarati-Black.ttf: Noto Serif Gujarati,Noto Serif Gujarati Black:style=Black,Regular
+/usr/share/fonts/TTF/CrimsonText-Bold.ttf: Crimson Text:style=Bold
 /usr/share/fonts/droid/DroidSansHebrew-Bold.ttf: Droid Sans:style=Bold
 /usr/share/fonts/TTF/NotoSansNerdFont-MediumItalic.ttf: NotoSans Nerd Font,NotoSans NF Med:style=Medium Italic,Italic
 /usr/share/fonts/worksans/WorkSans-Regular.ttf: Work Sans:style=Regular
@@ -985,10 +1020,12 @@
 /usr/share/fonts/TTF/iosevka-semibold.ttc: Iosevka Term,Iosevka Term Semibold:style=Semibold,Regular
 /usr/share/fonts/noto/NotoSansSyriacWestern-Black.ttf: Noto Sans Syriac Western,Noto Sans Syriac Western Black:style=Black,Regular
 /usr/share/fonts/TTF/NotoSansMNerdFontMono-SemiBold.ttf: NotoSansM Nerd Font Mono,NotoSansM NFM SemBd:style=SemiBold,Regular
+/usr/share/fonts/TTF/ZillaSlab-Bold.ttf: Zilla Slab:style=Bold
 /usr/share/fonts/noto/NotoSerifDisplay-Medium.ttf: Noto Serif Display,Noto Serif Display Medium:style=Medium,Regular
 /usr/share/fonts/mikhak/Mikhak-FD-Light.ttf: Mikhak\-FD,Mikhak\-FD Light:style=Mikhak-FD-Light,Regular
 /usr/share/fonts/droid/DroidNaskh-Regular-SystemUI.ttf: Droid Naskh Shift Alt:style=Regular
 /usr/share/fonts/noto/NotoSansSymbols2-Regular.ttf: Noto Sans Symbols 2:style=Regular
+/usr/share/fonts/misc/ter-x16b.pcf.gz: xos4 Terminus:style=Bold
 /usr/share/fonts/TTF/arabeyes/ae_AlBattar.ttf: AlBattar:style=Regular
 /usr/share/fonts/noto/NotoSerifArmenian-Light.ttf: Noto Serif Armenian,Noto Serif Armenian Light:style=Light,Regular
 /usr/share/fonts/TTF/Inconsolata-SemiCondensedExtraBold.ttf: Inconsolata,Inconsolata Semi Condensed ExtraBold:style=Semi Condensed ExtraBold,Regular
@@ -1039,6 +1076,7 @@
 /usr/share/fonts/user-downloaded/bedstead/bedstead-condensed.otf: Bedstead,Bedstead Condensed:style=Condensed,Regular
 /usr/share/fonts/OTF/KawkabMono-Regular.otf: Kawkab Mono,Kawkab Mono Light:style=Regular,Bold
 /usr/share/fonts/TTF/NotoSansNerdFontPropo-CondensedBold.ttf: NotoSans Nerd Font Propo,NotoSans NFP Cond:style=Condensed Bold,Bold
+/usr/share/fonts/TTF/IBMPlexSerif-Thin.ttf: IBM Plex Serif,IBM Plex Serif Thin:style=Thin,Regular
 /usr/share/fonts/TTF/kiteone_regular.ttf: Kite One:style=Regular
 /usr/share/fonts/noto/NotoRashiHebrew-Medium.ttf: Noto Rashi Hebrew,Noto Rashi Hebrew Medium:style=Medium,Regular
 /usr/share/fonts/gsfonts/NimbusMonoPS-Bold.otf: Nimbus Mono PS:style=Bold
@@ -1151,6 +1189,7 @@
 /usr/share/fonts/noto/NotoSansLao-Regular.ttf: Noto Sans Lao:style=Regular
 /usr/share/fonts/TTF/NotoSansNerdFont-ExtraCondensedBlackItalic.ttf: NotoSans Nerd Font,NotoSans NF ExtCond Black:style=ExtraCondensed Black Italic,Italic
 /usr/share/fonts/TTF/grandhotel_regular.ttf: Grand Hotel:style=Regular
+/usr/share/fonts/misc/ter-x14n.pcf.gz: xos4 Terminus:style=Regular
 /usr/share/fonts/adobe-source-han-sans/SourceHanSansKR-Medium.otf: Source Han Sans KR,본고딕 KR,Source Han Sans KR Medium,본고딕 KR Medium:style=Medium,Regular
 /usr/share/fonts/adobe-source-sans/SourceSans3VF-Upright.otf: SourceSans3VF:style=Bold
 /usr/share/fonts/otf-gfs/GFSHeraklit.otf: GFS Heraklit:style=Regular
@@ -1191,13 +1230,16 @@
 /usr/share/fonts/TTF/NotoSansMNerdFontMono-CondensedExtraLight.ttf: NotoSansM Nerd Font Mono,NotoSansM NFM Cond ExtLt:style=Condensed ExtraLight,Regular
 /usr/share/fonts/noto/NotoSansBalinese-Medium.ttf: Noto Sans Balinese,Noto Sans Balinese Medium:style=Medium,Regular
 /usr/share/fonts/TTF/NotoSansNerdFontPropo-LightItalic.ttf: NotoSans Nerd Font Propo,NotoSans NFP Light:style=Light Italic,Italic
+/usr/share/fonts/misc/ter-x14b.pcf.gz: xos4 Terminus:style=Bold
 /usr/share/fonts/noto/NotoSansCherokee-Black.ttf: Noto Sans Cherokee,Noto Sans Cherokee Black:style=Black,Regular
 /home/oak/.local/share/fonts/material-design-icons.ttf: Material Icons:style=Regular
+/usr/share/fonts/TTF/IBMPlexSerif-Medium.ttf: IBM Plex Serif,IBM Plex Serif Medium:style=Medium,Regular
 /usr/share/fonts/adobe-source-sans/SourceSans3-Regular.otf: Source Sans 3:style=Regular
 /usr/share/fonts/TTF/Inconsolata-CondensedBlack.ttf: Inconsolata,Inconsolata Condensed Black:style=Condensed Black,Regular
 /usr/share/fonts/noto/NotoSansTangsa-Bold.ttf: Noto Sans Tangsa:style=Bold
 /usr/share/fonts/gsfonts/NimbusRoman-Italic.otf: Nimbus Roman:style=Italic
 /usr/share/fonts/noto/NotoSansKhmer-Thin.ttf: Noto Sans Khmer,Noto Sans Khmer Thin:style=Thin,Regular
+/usr/share/fonts/misc/ter-x24n.pcf.gz: xos4 Terminus:style=Regular
 /usr/share/fonts/user-downloaded/julia-mono/JuliaMono-SemiBoldItalic.ttf: JuliaMono,JuliaMono SemiBoldItalic:style=SemiBoldItalic,Regular
 /usr/share/fonts/TTF/Inconsolata-ExpandedExtraLight.ttf: Inconsolata,Inconsolata Expanded ExtraLight:style=Expanded ExtraLight,Regular
 /usr/share/fonts/TTF/LXGWWenKai-Regular.ttf: LXGW WenKai,霞鹜文楷:style=Regular
@@ -1232,6 +1274,8 @@
 /usr/share/fonts/Hack/Hack-Bold.ttf: Hack:style=Bold
 /usr/share/fonts/TTF/CooperHewitt-Heavy.otf: Cooper Hewitt:style=Heavy
 /usr/share/fonts/gsfonts/URWGothic-Demi.otf: URW Gothic:style=Demi
+/usr/share/fonts/misc/ter-x24b.pcf.gz: xos4 Terminus:style=Bold
+/usr/share/fonts/TTF/Neuton-ExtraBold.ttf: Neuton,Neuton ExtraBold:style=ExtraBold,Regular
 /usr/share/fonts/noto/NotoSansBengali-Thin.ttf: Noto Sans Bengali,Noto Sans Bengali Thin:style=Thin,Regular
 /usr/share/fonts/TTF/MAXWELL LIGHT.ttf: MAXWELL LIGHT,MAXWELL:style=Regular,Normal,obyčejné,Standard,Κανονικά,Normaali,Normál,Normale,Standaard,Normalny,Обычный,Normálne,Navadno,Arrunta
 /usr/share/fonts/TTF/arabeyes/ae_Dimnah.ttf: Dimnah:style=Regular
@@ -1268,6 +1312,7 @@
 /usr/share/fonts/user-downloaded/julia-mono/JuliaMono-RegularLatin.ttf: JuliaMono,JuliaMono Latin:style=RegularLatin,Regular
 /usr/share/fonts/TTF/LifeSavers-Bold.ttf: Life Savers:style=Bold
 /usr/share/fonts/TTF/Bowhouse-Black.otf: Bowhouse,Bowhouse Black:style=Black,Regular
+/usr/share/fonts/TTF/ZillaSlab-SemiBoldItalic.ttf: Zilla Slab,Zilla Slab SemiBold:style=SemiBold Italic,Italic
 /usr/share/fonts/worksans/WorkSans-ExtraBoldItalic.ttf: Work Sans,Work Sans ExtraBold:style=ExtraBold Italic,Italic
 /usr/share/fonts/noto/NotoSansLao-Medium.ttf: Noto Sans Lao,Noto Sans Lao Medium:style=Medium,Regular
 /usr/share/fonts/noto/NotoSerifSinhala-Black.ttf: Noto Serif Sinhala,Noto Serif Sinhala Black:style=Black,Regular
@@ -1341,11 +1386,13 @@
 /usr/share/fonts/TTF/TSCu_Comic.ttf: TSCu_Comic:style=Normal
 /usr/share/fonts/noto/NotoSansHanifiRohingya-Bold.ttf: Noto Sans Hanifi Rohingya:style=Bold
 /usr/share/fonts/noto/NotoSansLepcha-Regular.ttf: Noto Sans Lepcha:style=Regular
+/usr/share/fonts/TTF/IBMPlexSerif-Light.ttf: IBM Plex Serif,IBM Plex Serif Light:style=Light,Regular
 /usr/share/fonts/eczar/Eczar-VariableFont_wght.ttf: Eczar
 /usr/share/fonts/noto/NotoSansSinhalaUI-Medium.ttf: Noto Sans Sinhala UI,Noto Sans Sinhala UI Medium:style=Medium,Regular
 /usr/share/fonts/TTF/NotoSansMNerdFontPropo-Bold.ttf: NotoSansM Nerd Font Propo,NotoSansM NFP:style=Bold
 /usr/share/fonts/adobe-source-sans/SourceSans3-Medium.otf: Source Sans 3,Source Sans 3 Medium:style=Medium,Regular
 /usr/share/fonts/noto/NotoSansTifinaghAir-Regular.ttf: Noto Sans Tifinagh Air:style=Regular
+/usr/share/fonts/TTF/ZillaSlab-SemiBold.ttf: Zilla Slab,Zilla Slab SemiBold:style=SemiBold,Regular
 /usr/share/fonts/TTF/iosevka-medium.ttc: Iosevka Term,Iosevka Term Medium:style=Medium,Regular
 /usr/share/fonts/TTF/Ligconsolata-Bold.ttf: Ligconsolata:style=Bold
 /usr/share/fonts/noto/NotoSansGujarati-Regular.ttf: Noto Sans Gujarati:style=Regular
@@ -1359,6 +1406,7 @@
 /usr/share/fonts/gsfonts/NimbusSansNarrow-Oblique.otf: Nimbus Sans Narrow:style=Oblique
 /usr/share/fonts/TTF/NotoSerifNerdFont-Regular.ttf: NotoSerif Nerd Font,NotoSerif NF:style=Regular
 /usr/share/fonts/adobe-source-sans/SourceSansVariable-Roman.otf: Source Sans Variable:style=Bold
+/usr/share/fonts/misc/ter-x16n.pcf.gz: xos4 Terminus:style=Regular
 /usr/share/fonts/TTF/Ubuntu-Arabic_B.ttf: Ubuntu Arabic:style=Bold
 /usr/share/fonts/noto/NotoSansMeeteiMayek-Black.ttf: Noto Sans Meetei Mayek,Noto Sans Meetei Mayek Black:style=Black,Regular
 /usr/share/fonts/noto/NotoSerifKhmer-Light.ttf: Noto Serif Khmer,Noto Serif Khmer Light:style=Light,Regular
@@ -1431,6 +1479,7 @@
 /usr/share/fonts/TTF/IBMPlexSansCondensed-SemiBoldItalic.ttf: IBM Plex Sans Condensed SemiBold:style=Italic
 /usr/share/fonts/TTF/Inconsolata-CondensedLight.ttf: Inconsolata,Inconsolata Condensed Light:style=Condensed Light,Regular
 /usr/share/fonts/TTF/Uni Sans Heavy Italic.otf: Uni Sans,Uni Sans Heavy Italic CAPS:style=Heavy Italic CAPS,Regular
+/usr/share/fonts/TTF/ZillaSlab-BoldItalic.ttf: Zilla Slab:style=Bold Italic
 /usr/share/fonts/adobe-source-han-sans/SourceHanSansCN-Medium.otf: Source Han Sans CN,思源黑体 CN,Source Han Sans CN Medium,思源黑体 CN Medium:style=Medium,Regular
 /usr/share/fonts/TTF/iosevka-medium.ttc: Iosevka Fixed,Iosevka Fixed Medium:style=Medium Italic,Italic
 /usr/share/fonts/noto/NotoSerifGeorgian-Thin.ttf: Noto Serif Georgian,Noto Serif Georgian Th:style=Thin,Regular
@@ -1510,11 +1559,13 @@
 /usr/share/fonts/TTF/Sampige.ttf: Sampige:style=Regular
 /usr/share/fonts/TTF/fa-regular-400.ttf: Font Awesome 6 Free,Font Awesome 6 Free Regular:style=Regular
 /usr/share/fonts/liberation/LiberationMono-Regular.ttf: Liberation Mono:style=Regular
+/usr/share/fonts/misc/ter-x18n.pcf.gz: xos4 Terminus:style=Regular
 /usr/share/fonts/noto/NotoSansSinhala-Black.ttf: Noto Sans Sinhala,Noto Sans Sinhala Black:style=Black,Regular
 /usr/share/fonts/TTF/forgotten futurist rg.otf: Forgotten Futurist,Forgotten Futurist Rg:style=Regular
 /usr/share/fonts/TTF/Timesbi.TTF: Times New Roman:style=Bold Italic,Negreta cursiva,tučné kurzíva,fed kursiv,Fett Kursiv,Έντονα Πλάγια,Negrita Cursiva,Lihavoitu Kursivoi,Gras Italique,Félkövér dőlt,Grassetto Corsivo,Vet Cursief,Halvfet Kursiv,Pogrubiona kursywa,Negrito Itálico,Полужирный Курсив,Tučná kurzíva,Fet Kursiv,Kalın İtalik,Krepko poševno,nghiêng đậm,Lodi etzana
 /usr/share/fonts/kanit/Kanit-Bold.ttf: Kanit:style=Bold
 /usr/share/fonts/TTF/Amiri-Regular.ttf: Amiri:style=Regular
+/usr/share/fonts/TTF/CrimsonText-SemiBoldItalic.ttf: Crimson Text,Crimson Text SemiBold:style=SemiBold Italic,Italic
 /usr/share/fonts/mikhak/Mikhak-DS2-Light.ttf: Mikhak\-DS2,Mikhak\-DS2 Light:style=Light,Regular
 /usr/share/fonts/noto/NotoSansArabic-Thin.ttf: Noto Sans Arabic,Noto Sans Arabic Thin:style=Thin,Regular
 /usr/share/fonts/noto/NotoSerifThai-Medium.ttf: Noto Serif Thai,Noto Serif Thai Medium:style=Medium,Regular
@@ -1622,7 +1673,9 @@
 /usr/share/fonts/TTF/Economica-Italic.ttf: Economica:style=Italic
 /usr/share/fonts/TTF/arabeyes/ae_AlManzomah.ttf: AlManzomah:style=Regular
 /usr/share/fonts/TTF/NotoSansMNerdFontMono-ExtraCondensedExtraBold.ttf: NotoSansM Nerd Font Mono,NotoSansM NFM ExtCond ExtBd:style=ExtraCondensed ExtraBold,Regular
+/usr/share/fonts/TTF/ZillaSlab-LightItalic.ttf: Zilla Slab,Zilla Slab Light:style=Light Italic,Italic
 /usr/share/fonts/TTF/iosevka-bold.ttc: Iosevka Fixed,Iosevka Fixed Extended:style=Bold Extended,Bold
+/usr/share/fonts/misc/ter-x20n.pcf.gz: xos4 Terminus:style=Regular
 /usr/share/fonts/TTF/iosevka-extralight.ttc: Iosevka Term,Iosevka Term Extralight:style=Extralight,Regular
 /usr/share/fonts/kanit/Kanit-BlackItalic.ttf: Kanit,Kanit Black:style=Black Italic,Italic
 /usr/share/fonts/adobe-source-sans/SourceSans3-It.otf: Source Sans 3:style=Italic
@@ -1679,6 +1732,7 @@
 /usr/share/fonts/TTF/Cairo-ExtraBold.ttf: Cairo,Cairo ExtraBold:style=ExtraBold,Regular
 /usr/share/fonts/TTF/IBMPlexSansCondensed-Light.ttf: IBM Plex Sans Condensed Light:style=Regular
 /usr/share/fonts/noto/NotoSansTangsa-Medium.ttf: Noto Sans Tangsa,Noto Sans Tangsa Medium:style=Medium,Regular
+/usr/share/fonts/misc/ter-x28n.pcf.gz: xos4 Terminus:style=Regular
 /usr/share/fonts/noto/NotoSerifDevanagari-Light.ttf: Noto Serif Devanagari,Noto Serif Devanagari Light:style=Light,Regular
 /usr/share/fonts/TTF/oriya.ttf: orya:style=Medium
 /usr/share/fonts/user-downloaded/julia-mono/JuliaMono-LightItalic.ttf: JuliaMono,JuliaMono LightItalic:style=LightItalic,Regular
@@ -1783,6 +1837,7 @@
 /usr/share/fonts/droid/DroidSans-Bold.ttf: Droid Sans:style=Bold
 /usr/share/fonts/otf-gfs/GFSPolyglot.otf: GFS Complutum:style=Regular
 /usr/share/fonts/TTF/modern_sans_serif_7.ttf: Modern Sans Serif 7:style=Regular
+/usr/share/fonts/misc/ter-x12n.pcf.gz: xos4 Terminus:style=Regular
 /usr/share/fonts/TTF/NotoSansMNerdFont-Black.ttf: NotoSansM Nerd Font,NotoSansM NF Black:style=Black,Regular
 /usr/share/fonts/TTF/iosevka-extrabold.ttc: Iosevka Fixed,Iosevka Fixed XBd Ex Obl:style=Extrabold Extended Oblique,Regular
 /usr/share/fonts/droid/DroidSansFallbackLegacy.ttf: Droid Sans:style=Regular
@@ -1807,6 +1862,7 @@
 /usr/share/fonts/TTF/NotoSansMNerdFont-CondensedBold.ttf: NotoSansM Nerd Font,NotoSansM NF Cond:style=Condensed Bold,Bold
 /usr/share/fonts/noto/NotoSerifSinhala-Medium.ttf: Noto Serif Sinhala,Noto Serif Sinhala Medium:style=Medium,Regular
 /usr/share/fonts/TTF/iosevka-heavy.ttc: Iosevka,Iosevka Heavy Extended:style=Heavy Extended Italic,Italic
+/usr/share/fonts/TTF/IBMPlexSerif-LightItalic.ttf: IBM Plex Serif,IBM Plex Serif Light:style=Light Italic,Italic
 /usr/share/fonts/noto/NotoSansTangsa-Regular.ttf: Noto Sans Tangsa:style=Regular
 /usr/share/fonts/noto/NotoSansPhagsPa-Regular.ttf: Noto Sans PhagsPa:style=Regular
 /usr/share/fonts/TTF/SairaCondensed-SemiBold.ttf: Saira Condensed,Saira Condensed SemiBold:style=SemiBold,Regular
@@ -1831,6 +1887,7 @@
 /usr/share/fonts/noto/NotoSansGunjalaGondi-Medium.ttf: Noto Sans Gunjala Gondi,Noto Sans Gunjala Gondi Medium:style=Medium,Regular
 /usr/share/fonts/TTF/NotoSansNerdFontPropo-ExtraCondensedExtraLight.ttf: NotoSans Nerd Font Propo,NotoSans NFP ExtCond ExtLt:style=ExtraCondensed ExtraLight,Regular
 /usr/share/fonts/noto/NotoSans-Thin.ttf: Noto Sans,Noto Sans Thin:style=Thin,Regular
+/usr/share/fonts/misc/ter-x22n.pcf.gz: xos4 Terminus:style=Regular
 /usr/share/fonts/TTF/NotoSansNerdFont-SemiCondensedExtraLightItalic.ttf: NotoSans Nerd Font,NotoSans NF SemCond ExtLt:style=SemiCondensed ExtraLight Italic,Italic
 /usr/share/fonts/TTF/juliussansone_regular.ttf: Julius Sans One:style=Regular
 /usr/share/fonts/eczar/Eczar-Regular.ttf: Eczar:style=Regular
@@ -1884,6 +1941,7 @@
 /usr/share/fonts/TTF/NotoSansNerdFontPropo-ExtraBoldItalic.ttf: NotoSans Nerd Font Propo,NotoSans NFP ExtBd:style=ExtraBold Italic,Italic
 /usr/share/fonts/noto/NotoSansHebrew-Light.ttf: Noto Sans Hebrew,Noto Sans Hebrew Light:style=Light,Regular
 /usr/share/fonts/TTF/codystar_regular.ttf: Codystar:style=Regular
+/usr/share/fonts/misc/ter-x32n.pcf.gz: xos4 Terminus:style=Regular
 /usr/share/fonts/noto/NotoSerifBengali-Black.ttf: Noto Serif Bengali,Noto Serif Bengali Black:style=Black,Regular
 /usr/share/fonts/noto/NotoSans-Regular.ttf: Noto Sans:style=Regular
 /usr/share/fonts/noto/NotoSansGurmukhi-Light.ttf: Noto Sans Gurmukhi,Noto Sans Gurmukhi Light:style=Light,Regular
@@ -1891,6 +1949,7 @@
 /usr/share/fonts/TTF/NotoSansNerdFont-CondensedBlack.ttf: NotoSans Nerd Font,NotoSans NF Cond Black:style=Condensed Black,Regular
 /usr/share/fonts/TTF/iosevka-medium.ttc: Iosevka Fixed,Iosevka Fixed Medium Oblique:style=Medium Oblique,Regular
 /usr/share/fonts/adobe-source-code-pro/SourceCodePro-It.otf: Source Code Pro:style=Italic
+/usr/share/fonts/TTF/IBMPlexSerif-Regular.ttf: IBM Plex Serif:style=Regular
 /usr/share/fonts/noto/NotoSansNewTaiLue-Medium.ttf: Noto Sans New Tai Lue,Noto Sans New Tai Lue Medium:style=Medium,Regular
 /usr/share/fonts/TTF/DejaVuSansCondensed-Bold.ttf: DejaVu Sans,DejaVu Sans Condensed:style=Condensed Bold,Bold
 /usr/share/fonts/TTF/Inconsolata-ExtraCondensedExtraLight.ttf: Inconsolata,Inconsolata Extra Condensed ExtraLight:style=Extra Condensed ExtraLight,Regular
@@ -1910,6 +1969,7 @@
 /usr/share/fonts/TTF/NotoSerifNerdFontPropo-SemiCondensedMediumItalic.ttf: NotoSerif Nerd Font Propo,NotoSerif NFP SemCond Med:style=SemiCondensed Medium Italic,Italic
 /usr/share/fonts/TTF/JosefinSlab-Bold.ttf: Josefin Slab:style=Bold
 /usr/share/fonts/noto/NotoSansGujaratiUI-Medium.ttf: Noto Sans Gujarati UI,Noto Sans Gujarati UI Medium:style=Medium,Regular
+/usr/share/fonts/wenquanyi/wenquanyi_13px.pcf: WenQuanYi WenQuanYi Bitmap Song:style=Regular
 /usr/share/fonts/adobe-source-sans/SourceSans3-ExtraLightIt.otf: Source Sans 3,Source Sans 3 ExtraLight:style=ExtraLight Italic,Italic
 /usr/share/fonts/TTF/NotoSerifNerdFont-ExtraCondensedBlack.ttf: NotoSerif Nerd Font,NotoSerif NF ExtCond Black:style=ExtraCondensed Black,Regular
 /usr/share/fonts/otf-gfs/GFSArtemisiaBoldIt.otf: GFS Artemisia,GFS Didot:style=Bold Italic
@@ -1931,6 +1991,7 @@
 /usr/share/fonts/misc/ter-u14b.otb: Terminus:style=Bold
 /usr/share/fonts/mikhak/Mikhak-FD-Regular.ttf: Mikhak\-FD,Mikhak\-FD Regular:style=Mikhak-FD-Regular,FD-Regular
 /usr/share/fonts/TTF/Inconsolata-ExtraCondensedLight.ttf: Inconsolata,Inconsolata Extra Condensed Light:style=Extra Condensed Light,Regular
+/usr/share/fonts/TTF/Neuton-Italic.ttf: Neuton:style=Italic
 /usr/share/fonts/noto/NotoSansOldHungarian-Regular.ttf: Noto Sans Old Hungarian:style=Regular
 /usr/share/fonts/otf-gfs/GFSBaskerville.otf: GFS Baskerville:style=Regular
 /usr/share/fonts/droid/DroidNaskh-Bold.ttf: Droid Serif:style=Bold
@@ -2074,6 +2135,7 @@
 /usr/share/fonts/TTF/archivoblack_regular.ttf: Archivo Black:style=Regular
 /usr/share/fonts/droid/DroidSansMono.ttf: Droid Sans Mono:style=Regular
 /usr/share/fonts/OTF/NotoSerifCJKsc-Regular.otf: Noto Serif CJK SC:style=Regular
+/usr/share/fonts/misc/mtx.pcf: mtx:style=Regular
 /usr/share/fonts/noto/NotoSansSyriac-Regular.ttf: Noto Sans Syriac:style=Regular
 /usr/share/fonts/TTF/Bowhouse-Bold.otf: Bowhouse,Bowhouse Bold:style=Bold,Regular
 /usr/share/fonts/TTF/iosevka-light.ttc: Iosevka,Iosevka Light Oblique:style=Light Oblique,Regular
@@ -2110,6 +2172,7 @@
 /usr/share/fonts/noto/NotoSerifSinhala-Bold.ttf: Noto Serif Sinhala:style=Bold
 /usr/share/fonts/TTF/NotoSansNerdFont-CondensedItalic.ttf: NotoSans Nerd Font,NotoSans NF Cond:style=Condensed Italic,Italic
 /usr/share/fonts/misc/ter-u32b.otb: Terminus:style=Bold
+/usr/share/fonts/TTF/ZillaSlab-MediumItalic.ttf: Zilla Slab,Zilla Slab Medium:style=Medium Italic,Italic
 /usr/share/fonts/mikhak/Mikhak[DSTY,KSHD,wght].ttf: Mikhak,Mikhak VF:style=Thin
 /usr/share/fonts/noto/NotoSerifMyanmar-Thin.ttf: Noto Serif Myanmar,Noto Serif Myanmar Thin:style=Thin,Regular
 /usr/share/fonts/TTF/NotoSerifNerdFont-ExtraCondensedThin.ttf: NotoSerif Nerd Font,NotoSerif NF ExtCond Thin:style=ExtraCondensed Thin,Regular
