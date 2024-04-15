@@ -111,6 +111,7 @@ alias cdh="cd ~/Holding/ && lln"
 alias cdhs="cd ~/Holding/screenshots/ && ll"
 ## Videos
 alias cdv="cd ~/Videos/ && ll"
+alias cdvc="cd ~/Videos/clips/ && ll"
 ## Documents
 alias cdo="cd ~/Documents/ && ll"
 # translation
