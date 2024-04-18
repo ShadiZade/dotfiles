@@ -35,7 +35,7 @@
 
 ;;; bibtex-mode (bibtex-mode-hook)
 (defalias 'yank-bib-and-copy-name
-   (kmacro "M-> C-y <return> C-s @ <return> M-f M-f C-SPC M-b M-w C-c C-c M-> C-x C-s"))
+   (kmacro "M-> C-y <return> C-s @ <return> M-f M-f C-SPC M-b M-w C-c C-c C-s t i t l e = { <return> { C-s } RET } M-> C-x C-s"))
 
 ;;; shell-script-mode (shell-mode-hook)
 (defalias 'bash-not-structure
