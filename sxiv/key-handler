@@ -81,7 +81,8 @@ changedate () {
 }
 
 label () {
-    echo "$(realpath "$file")" >> ./$(date-string ymd)-label-list
+    echo "$(realpath "$file")" >> "$HOME"/Desktop/"$(basename "$(realpath .)")"-$(date-string ymd)-label-list
+    notify-send -t 3000 "Label added" "$(basename "$file")"
 }
 
 while read file
