@@ -80,6 +80,10 @@ changedate () {
     notify-send -t 7000 "Gentle touch" "${file}\n${lasttime}\n${currentdate}"
 }
 
+label () {
+    echo "$(realpath "$file")" >> ./$(date-string ymd)-label-list
+}
+
 while read file
 do
         case "$1" in
@@ -93,6 +97,7 @@ do
 	"C-g")  editgimp ;;
 	"C-0")  changedate ;;
 	"C-i")  showinfo ;;
+	"C-l")  label ;;
         esac
 done
 
