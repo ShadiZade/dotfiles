@@ -63,7 +63,7 @@ v () {
 
 ## xv
 xv () {
-    [ -z "$1" ] \
+    [[ -z "$1" ]] \
 	&& location_se="$(pwd)" \
 	    || location_se="$1"
     IFS=$'\n'
@@ -166,9 +166,10 @@ mk () {
 
 ## delete-opf
 delete-opf () {
-    [ "$(pwd)" = "$HOME/Books/add" ] || return
+    [ "$(pwd)" = "$HOME/Books/xadd" ] || return
     fd -q 'opf$' && move-to-trash-recursively *.opf
     fd -q 'jpg$' && move-to-trash-recursively *.jpg
+    fd -q 'original_epub$' && move-to-trash-recursively *.original_epub
 }
 
 ## detect-extra

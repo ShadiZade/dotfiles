@@ -8,6 +8,7 @@
 (global-set-key (kbd "C-’ i r")     'ispell-region)
 (global-set-key (kbd "C-’ c")       'shadi/reload-config-file)
 (global-set-key (kbd "C-’ r")       'rename-file)
+(global-set-key (kbd "C-’ C-’")     'lingva-translate)
 (global-set-key (kbd "C-’ o")       'olivetti-mode)
 (global-set-key (kbd "C-’ <")       'diff-buffer-with-file)
 (global-set-key (kbd "C-’ e i")     'shadi/edit-init)

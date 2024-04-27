@@ -68,9 +68,6 @@ super + shift + BackSpace
 # theme picker
 super + shift + t
 	$HOME/Repositories/scripts/theme-picker.sh
-
-super + b
-    mpv /home/oak/.local/share/user-scripts/sounds/sfx/bruh.mp3
 	
 
 ############################################# window management
@@ -200,6 +197,18 @@ super + a ; w
 # afc-shortcuts
 super + a ; c
 	export which_shortcuts=afc-shortcuts; ~/Repositories/scripts/wiki-shortcuts.sh
+
+
+############################################ misc
+
+super + b
+    mpv /home/oak/.local/share/user-scripts/sounds/bruh.mp3
+
+super + shift + b
+    for j in {1..5}; do killall xdg-desktop-portal; done
+
+
+
 
 # ---------------------------------------------------------------------	
 #

@@ -58,7 +58,7 @@ alias cdmc="cd ~/Misc/cooking && ll"
 alias cdmov="cd ~/Movies && ll"
 ## Books
 alias cdb="cd ~/Books"
-alias cdba="cd ~/Books/add && delete-opf; ll"
+alias cdba="cd ~/Books/xadd && delete-opf; ll"
 alias cdbx="cd ~/Books/xdone/; ll"
 ## Config
 alias cdc="cd ~/.config"
