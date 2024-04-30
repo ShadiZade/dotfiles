@@ -53,12 +53,12 @@ pg () {
 
 ## a
 a () {
-    mpv --no-audio-display "$@"
+    mpv --no-audio-display --osd-fractions "$@"
 }
 
 ## v
 v () {
-    rdo mpv --audio-samplerate=88200 "$@"
+    rdo mpv --osd-fractions --audio-samplerate=88200 "$@"
 }
 
 ## xv
