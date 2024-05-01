@@ -177,6 +177,7 @@ alias knife='~/Repositories/scripts/kebab-knife.sh'
 alias ⨯⨯⨯⨯="~/Repositories/scripts/trash-emptier.sh"
 alias ¿="~/Repositories/scripts/system-check.sh"
 alias tv="~/Repositories/scripts/upcoming-shows.sh"
+alias clip-"~/Repositories/scripts/video-clipper.sh"
 
 # files
 alias ’z="e ~/Repositories/dotfiles/zsh/zshrc"
