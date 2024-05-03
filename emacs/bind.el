@@ -2,7 +2,6 @@
 (global-set-key (kbd "<escape>")    'keyboard-escape-quit)
 (global-set-key (kbd "M-s M-s")     'company-refresh-and-complete)
 (global-set-key (kbd "C-x C-,")     'eval-buffer)
-(global-set-key (kbd "C-x w")       'shadi/load-elfeed)
 (global-set-key (kbd "C-<tab>")     'other-window)
 (global-set-key (kbd "C-’ i b")     'ispell-buffer)
 (global-set-key (kbd "C-’ i r")     'ispell-region)
@@ -37,6 +36,10 @@
 (global-set-key (kbd "C-~")         'mode-line-other-buffer)
 (global-set-key (kbd "M-<up>")      'move-text-up)
 (global-set-key (kbd "M-<down>")    'move-text-down)
+
+;; apps
+(global-set-key (kbd "C-← b")       'ebuku)
+(global-set-key (kbd "C-← f")       'shadi/load-elfeed)
 
 ;; mode bindings
 (global-set-key (kbd "C-| t") 'text-mode)
