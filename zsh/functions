@@ -146,7 +146,12 @@ key-names () {
 alarm () {
     echolor yellow ":: Alarm set on ““$(date +%H:%M:%S)”” for ““$1””"
     echolor yellow ":: Wait for alarm..." 1
-    sleep "$1"
+    sleep "$1" 2>/dev/null || {
+	echo
+	echolor red ":: ““$1”” is an invalid value!"
+	sfx ten-bloops
+	return
+    }
     printf '\r'
     echolor red-green ":: ALARM RINGING! IT'S ““$(date +%H:%M:%S)”” NOW!" 
     mpv --loop-file=inf --really-quiet /home/oak/.local/share/user-scripts/sounds/glass-hit.wav
@@ -311,7 +316,7 @@ submv () {
 	mp3|wav|wmv)
             mpv --no-audio-display "$fw" ;;
 	mp4|mkv|ts|webm)
-	    rdo mpv --audio-samplerate=88200 "$fw" ;;
+	    rdo mpv --osd-fractions --audio-samplerate=88200 "$fw" ;;
 	jpg|png|jpeg|svg|jxl|jpeg_large|webp|gif)
 	    rdo sxiv "$fw" ;;
 	txt|md|org|tex|bib|csv|sh|el|lisp|html|css)
