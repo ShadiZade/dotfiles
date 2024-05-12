@@ -9,7 +9,7 @@ alsa-utils
 android-tools
 android-udev
 apparmor
-appimagelauncher
+aria2
 asciiquarium
 aspell
 aspell-en
@@ -247,6 +247,7 @@ pulseaudio-bluetooth
 pulseaudio-ctl
 pulseaudio-zeroconf
 pulsemixer
+pv
 python-build
 python-installer
 python-pillow

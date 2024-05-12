@@ -37,7 +37,6 @@ tabbed
 taffy
 telegram-desktop-bin
 thunderbird-bin
-trashf
 ttf-amiri
 ttf-arabeyes-fonts
 ttf-lxgw-wenkai
@@ -48,4 +47,5 @@ ttf-unifont
 vdhcoapp-bin
 windscribe
 xdg-ninja-git
+xephem
 yt-dlp-git
