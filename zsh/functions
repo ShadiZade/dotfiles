@@ -20,9 +20,16 @@ source ~/Repositories/scripts/essential-functions.sh
 
 terminal-art () {
     touch "$HOME/.local/share/user-scripts/qotd" "$HOME/.local/share/user-scripts/today-date"
-    [ "$(cat "$HOME/.local/share/user-scripts/today-date")" = "$(date +%m-%d)" ] ||\
-	(date +"%m-%d" > "$HOME/.local/share/user-scripts/today-date"
-	 fortune marxism > "$HOME/.local/share/user-scripts/qotd")    
+    [[ "$(cat "$HOME/.local/share/user-scripts/today-date")" != "$(date +%m-%d)" ]] && {
+	date +"%m-%d" > "$HOME/.local/share/user-scripts/today-date"
+	fortune marxism > "$HOME/.local/share/user-scripts/qotd"
+	~/Repositories/scripts/french-republican-time.sh > "$HOME/.local/share/user-scripts/today-date-french"
+    }
+    [[ "$(cat "$HOME/.local/share/user-scripts/today-date")" != "$(TZ=GMT date +%m-%d)" ]] && {
+	
+    }
+    echo "$(date +"%d %B %Y")"
+    cat "$HOME/.local/share/user-scripts/today-date-french"
     ~/Repositories/communist-calendar/fetch-events.sh
     cat "$HOME/.local/share/user-scripts/qotd" | cowsay -f none -W 140
 }
