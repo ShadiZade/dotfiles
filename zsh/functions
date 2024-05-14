@@ -23,7 +23,9 @@ terminal-art () {
     [[ "$(cat "$HOME/.local/share/user-scripts/today-date")" != "$(date +%m-%d)" ]] && {
 	date +"%m-%d" > "$HOME/.local/share/user-scripts/today-date"
 	fortune marxism > "$HOME/.local/share/user-scripts/qotd"
+	echolor green ":: Updating..." 1
 	~/Repositories/scripts/french-republican-time.sh > "$HOME/.local/share/user-scripts/today-date-french"
+	clear-line
     }
     [[ "$(cat "$HOME/.local/share/user-scripts/today-date")" != "$(TZ=GMT date +%m-%d)" ]] && {
 	
