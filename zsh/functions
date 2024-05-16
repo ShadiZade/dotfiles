@@ -21,9 +21,9 @@ source ~/Repositories/scripts/essential-functions.sh
 terminal-art () {
     touch "$HOME/.local/share/user-scripts/qotd" "$HOME/.local/share/user-scripts/today-date"
     [[ "$(cat "$HOME/.local/share/user-scripts/today-date")" != "$(date +%m-%d)" ]] && {
+	echolor green ":: Updating..." 1
 	date +"%m-%d" > "$HOME/.local/share/user-scripts/today-date"
 	fortune marxism > "$HOME/.local/share/user-scripts/qotd"
-	echolor green ":: Updating..." 1
 	~/Repositories/scripts/french-republican-time.sh > "$HOME/.local/share/user-scripts/today-date-french"
 	clear-line
     }
