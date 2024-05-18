@@ -438,4 +438,25 @@ function mkmd {
     cd - > /dev/null
 }
 
+function pdftoimg {
+    [[ -z "$1" ]] && {
+	echolor red ":: No input."
+	return
+    }
+    burstdir="slides-"$(ko "$1" | sed 's/-pdf//g')""
+    mkdir ./"$burstdir"
+    cd ./"$burstdir"
+    pdftk ../"$1" burst output "$burstdir-" && {
+	echolor yellow ":: PDF file burst into $(eza -1f "$burstdir"*pdf | wc -l) pages."
+    }
+    IFS=$'\n'
+    i=1
+    for j in $(eza -1f *pdf)
+    do
+	pdftoppm -jpeg "$j" "img-$(ko "$j" | sed 's/-pdf//g')"
+	echolor blue-yellow ":: Page no. ““$i”” converted."
+	((i++))
+    done
+}
+
 # TODO convert all \033 to echolor
