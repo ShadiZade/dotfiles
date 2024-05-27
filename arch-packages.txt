@@ -26,9 +26,9 @@ bison
 bitwarden
 blas
 blueman
-breeze
 breeze-gtk
 breeze-icons
+breeze5
 brightnessctl
 bspwm
 btop
@@ -114,7 +114,7 @@ gvfs-mtp
 gvfs-nfs
 gvfs-smb
 gzip
-handlr
+handlr-regex
 haveged
 hck
 httrack
@@ -173,10 +173,8 @@ man-pages
 manjaro-alsa
 manjaro-browser-settings
 manjaro-downgrade
-manjaro-hotfixes
 manjaro-pulse
 manjaro-release
-manjaro-settings-manager-kcm
 manjaro-settings-manager-knotifier
 manjaro-system
 manjaro-zsh-config
@@ -236,7 +234,6 @@ phonon-qt5-gstreamer
 photoflare
 picom
 pkgconf
-plasma-simplemenu
 plymouth
 polybar
 poppler-data
@@ -303,7 +300,6 @@ shellcheck
 shuffle
 smartmontools
 sof-firmware
-spectre-meltdown-checker
 sshfs
 steam
 steam-native-runtime
@@ -339,6 +335,7 @@ texlive-music
 texlive-pictures
 texlive-pstricks
 texlive-publishers
+texlive-xetex
 timeshift
 timeshift-autosnap-manjaro
 tldr
