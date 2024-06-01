@@ -163,7 +163,7 @@ alarm () {
     }
     printf '\r'
     echolor red-green ":: ALARM RINGING! IT'S ““$(date +%H:%M:%S)”” NOW!" 
-    mpv --loop-file=inf --really-quiet /home/oak/.local/share/user-scripts/sounds/glass-hit.wav
+    mpv --loop-file=inf --really-quiet "$HOME/.local/share/user-scripts/sounds/glass-hit.wav"
 }
 
 ## knock

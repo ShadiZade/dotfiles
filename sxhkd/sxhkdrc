@@ -202,7 +202,7 @@ super + a ; c
 ############################################ misc
 
 super + b
-    mpv /home/oak/.local/share/user-scripts/sounds/bruh.mp3
+    mpv "$HOME/.local/share/user-scripts/sounds/bruh.mp3"
 
 super + shift + b
     for j in {1..5}; do killall xdg-desktop-portal; done; ~/Repositories/scripts/sound-effects.sh "jumpy-laser"
