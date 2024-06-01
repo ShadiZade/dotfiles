@@ -263,8 +263,8 @@ cat-donefiles () {
     echo -e "$(cat * | sed 's/^/\\033[4\;37m/g;s/ is done on /\\033[0m is done on \\033[33m/g;s/$/\\033[0m/g')"
 }
 
-## fzf-choose-directory
-fzf-choose-directory () {
+## fzf-dir
+fzf-dir () {
     dir_list="$(eza $hide_flag -1D --no-quotes)"
     [ -z "$dir_list" ] \
 	&& echo -e "\033[33m:: No directories.\033[0m" \
@@ -281,7 +281,7 @@ fzf-choose-directory () {
 ff () {
     while true
     do
-	fzf-choose-directory
+	fzf-dir
 	[ -z "$chosen_dir" ] \
 	    && break
 	[ -z "$(eza $hide_flag -1D)" ] \
