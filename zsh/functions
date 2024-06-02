@@ -234,10 +234,10 @@ lv () {
 ## wg
 wg () {
     [[ -z "$2" ]] && {
-	wget -nc -t 0 -- "$1"
+	wget --no-use-server-timestamps -nc -t 0 -- "$1"
     } || {
 	outname="$(ko "$2")"
-	wget -O "$outname" -t 0 -- "$1" || return
+	wget --no-use-server-timestamps -O "$outname" -t 0 -- "$1" || return
 	echolor yellow ":: Determining extension..."
 	ext="$(extension-determiner "$outname")"
 	[[ -z "$ext" ]] && {
