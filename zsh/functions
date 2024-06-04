@@ -460,11 +460,11 @@ function pdftoimg {
 }
 
 function xmmv {
-    [[ -z "$1" ]] && {
+    [[ -z "$@" ]] && {
 	echolor red ":: No input"
 	return
     }
-    → "$1" ~/.local/mobile/Internal\ shared\ storage/Home/Desktop
+    → "$@" ~/.local/mobile/Internal\ shared\ storage/Home/Desktop
 }
 
 function xmmb {

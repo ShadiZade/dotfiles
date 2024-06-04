@@ -98,7 +98,7 @@ alias cde="cd ~/Excluding/ && ll"
 alias cdep="cd ~/Excluding/podcasts && lln"
 alias cdey="cd ~/Excluding/ytvid && lln"
 ## Projects
-alias cdj="cd ~/Projects && fzf-dir"
+alias cdj="cd ~/Projects && ff"
 alias cdja="cd ~/Projects/academia/ && fzf-dir"
 alias cdjw="cd ~/Projects/writings/ && ll"
 alias cdjwa="cd ~/Projects/writings/articles/ && ll"
