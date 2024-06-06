@@ -474,9 +474,31 @@ function xmmb {
 function open-newsletter {
     loc="$HOME/Documents/newsletters"
     nlname="$(eza -1D "$loc" | fzf)"
+    [[ -z "$nlname" ]] && return
     nlfile="$(eza -1f --sort=name "$loc"/"$nlname" | grep "pdf$" | tail -n 1)"
     echolor green ":: Opened newsletter ““${nlfile%'.'*}””"
     zathura "$loc"/"$nlname"/"$nlfile" 2>/dev/null
+}
+
+function unread-newsletter {
+    loc="$HOME/Documents/newsletters"
+    [[ -z "$(cat "$loc"/.unread)" ]] && {
+	echolor yellow ":: No unread newsletters."
+	return
+    }
+    nlfile="$(cat "$loc"/.unread | awk -F '/' '{print $NF}' | awk -F '.' '{print $1}' | fzf)"
+    [[ -z "$nlfile" ]] && return
+    nlfilefull="$(grep "${nlfile}.pdf$" "$loc"/.unread)"
+    echolor green ":: Opened newsletter ““$nlfile””"
+    zathura "$nlfilefull" 2>/dev/null
+    echolor yellow ":: Remove ““$nlfile”” from unread? (Y/n) " 1
+    read -r remove_from_unread_p
+    [[ "$remove_from_unread_p" = "n" ]] && {
+	echolor red ":: ““$nlfile”” not removed."
+    } || {
+	sed -i "s|$nlfilefull||;/^$/d" "$loc"/.unread && \
+	    echolor green ":: ““$nlfile”” removed."
+    }
 }
 
 # TODO convert all \033 to echolor
