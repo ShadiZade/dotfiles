@@ -115,6 +115,7 @@ alias cdvc="cd ~/Videos/clips/ && ll"
 ## Documents
 alias cdo="cd ~/Documents/ && ll"
 alias cdon="cd ~/Documents/newsletters/ && fzf-dir && ll"
+alias cdoc="cd ~/Documents/clippings/ && ll"
 # translation
 alias zhen="command trans -b zh:en"
 alias enzh="command trans -b en:zh"
