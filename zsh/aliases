@@ -114,6 +114,7 @@ alias cdv="cd ~/Videos/ && ll"
 alias cdvc="cd ~/Videos/clips/ && ll"
 ## Documents
 alias cdo="cd ~/Documents/ && ll"
+alias cdon="cd ~/Documents/newsletters/ && fzf-dir && ll"
 # translation
 alias zhen="command trans -b zh:en"
 alias enzh="command trans -b en:zh"
@@ -241,3 +242,4 @@ alias ko="output-kebabized-string"
 alias koc="copy-kebabized-string"
 alias cpfg="change-prompt-for-git"
 alias —="realpath"
+alias znl="open-newsletter"

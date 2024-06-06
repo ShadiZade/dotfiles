@@ -471,4 +471,12 @@ function xmmb {
     → ~/Books/xadd/* ~/.local/mobile/Internal\ shared\ storage/Books
 }
 
+function open-newsletter {
+    loc="$HOME/Documents/newsletters"
+    nlname="$(eza -1D "$loc" | fzf)"
+    nlfile="$(eza -1f --sort=name "$loc"/"$nlname" | grep "pdf$" | tail -n 1)"
+    echolor green ":: Opened newsletter ““${nlfile%'.'*}””"
+    zathura "$loc"/"$nlname"/"$nlfile" 2>/dev/null
+}
+
 # TODO convert all \033 to echolor
