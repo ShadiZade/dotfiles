@@ -48,6 +48,7 @@ curlie
 device-mapper
 dhclient
 dhcpcd
+dice
 diffutils
 dmidecode
 dmraid
@@ -120,6 +121,7 @@ hck
 httrack
 hunspell-en_us
 inetutils
+inkscape
 intel-ucode
 inxi
 iproute2
@@ -254,6 +256,7 @@ python-platformdirs
 python-pyqt5
 python-pysmbc
 python-reportlab
+python-setuptools-scm
 qt5-imageformats
 qt5-tools
 qt5-virtualkeyboard

@@ -34,7 +34,6 @@ r-widgettools
 ripdrag-git
 shahab-fonts
 siji-git
-soundcloud-dl-git
 spectre-meltdown-checker
 systemd-fsck-silent
 tabbed
