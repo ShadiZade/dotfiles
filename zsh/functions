@@ -482,13 +482,14 @@ function open-newsletter {
 
 function unread-newsletter {
     loc="$HOME/Documents/newsletters"
-    [[ -z "$(cat "$loc"/.unread)" ]] && {
+    ufile="$usdd/unread-newsletters"
+    [[ -z "$(cat "$ufile")" ]] && {
 	echolor yellow ":: No unread newsletters."
 	return
     }
-    nlfile="$(cat "$loc"/.unread | awk -F '/' '{print $NF}' | awk -F '.' '{print $1}' | fzf)"
+    nlfile="$(cat "$ufile" | awk -F '/' '{print $NF}' | awk -F '.' '{print $1}' | fzf)"
     [[ -z "$nlfile" ]] && return
-    nlfilefull="$(grep "${nlfile}.pdf$" "$loc"/.unread)"
+    nlfilefull="$(grep "${nlfile}.pdf$" "$ufile")"
     echolor green ":: Opened newsletter ““$nlfile””"
     zathura "$nlfilefull" 2>/dev/null
     echolor yellow ":: Remove ““$nlfile”” from unread? (Y/n) " 1
@@ -496,7 +497,7 @@ function unread-newsletter {
     [[ "$remove_from_unread_p" = "n" ]] && {
 	echolor red ":: ““$nlfile”” not removed."
     } || {
-	sed -i "s|$nlfilefull||;/^$/d" "$loc"/.unread && \
+	sed -i "s|$nlfilefull||;/^$/d" "$ufile" && \
 	    echolor green ":: ““$nlfile”” removed."
     }
 }
