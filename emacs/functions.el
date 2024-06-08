@@ -164,3 +164,11 @@
 (defun run-setsh-script ()
   (interactive)
   (run-script-in-same-dir "./set.sh"))
+
+(defun shadi/arabic-rtl ()
+  (interactive)
+  (setq bidi-display-reordering t))
+
+(defun shadi/arabic-ltr ()
+  (interactive)
+  (setq bidi-display-reordering nil))
