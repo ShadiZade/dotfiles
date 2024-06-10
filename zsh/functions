@@ -328,8 +328,10 @@ submv () {
 	    rdo mpv --osd-fractions --audio-samplerate=88200 "$fw" ;;
 	jpg|png|jpeg|svg|jxl|jpeg_large|webp|gif|tif|avif|jp2)
 	    rdo sxiv "$fw" ;;
-	txt|md|org|tex|bib|csv|sh|el|lisp|html|css)
+	txt|md|org|tex|bib|sh|el|lisp|html|css)
 	    bat "$fw" ;;
+	csv)
+	    csvlens "$fw" ;;
 	*)
 	    rdo xdg-open "$fw" ;;
     esac
