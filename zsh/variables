@@ -11,3 +11,6 @@ export battery_warning_on=1
 
 # trash directory
 export TRASH_DIR="$HOME/.local/share/Trash/files"
+
+# backup directory
+export BACK_DIR="$HOME/Misc/Backups/"
