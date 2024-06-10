@@ -85,6 +85,10 @@ label () {
     notify-send -t 3000 "Label added" "$(basename "$file")"
 }
 
+clipboard () {
+    xclip -selection clipboard -target image/png -i "$(realpath "$file")"
+}
+
 while read file
 do
         case "$1" in
@@ -99,6 +103,7 @@ do
 	"C-0")  changedate ;;
 	"C-i")  showinfo ;;
 	"C-l")  label ;;
+	"C-x")  clipboard ;;
         esac
 done
 
