@@ -169,7 +169,11 @@ super + z
 
 # give-in-notif
 super + shift + n 
-	~/Repositories/scripts/give-in-notif.sh
+    ~/Repositories/scripts/give-in-notif.sh
+
+# Give QR
+super + asciitilde
+    ~/Repositories/scripts/give-qr.sh
 
 	
 ############################################ copy-paste scripts
