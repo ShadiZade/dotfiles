@@ -171,14 +171,9 @@ super + z
 super + shift + n 
     ~/Repositories/scripts/give-in-notif.sh
 
-# Give QR unquoted
-super + asciitilde ; super + asciitilde
+# Give QR
+super + asciitilde
     ~/Repositories/scripts/give-qr.sh
-
-# Give QR quoted
-super + asciitilde ; q
-    quote_p=y ~/Repositories/scripts/give-qr.sh
-
 	
 ############################################ copy-paste scripts
 
