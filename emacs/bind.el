@@ -15,9 +15,6 @@
 (global-set-key (kbd "C-’ e h")         'shadi/edit-hook)
 (global-set-key (kbd "C-’ e b")         'shadi/edit-bind)
 (global-set-key (kbd "C-’ e o")         'shadi/edit-org)
-(global-set-key (kbd "C-’ m n")         'shadi/open-notes-dir)
-(global-set-key (kbd "C-’ m d")         'shadi/open-diary-dir)
-(global-set-key (kbd "C-’ m o")         'shadi/open-org-dir)
 (global-set-key (kbd "C-’ a <up>")      'shadi/arabic-font-large)
 (global-set-key (kbd "C-’ a <down>")    'shadi/arabic-font-normal)
 (global-set-key (kbd "C-’ a <right>")   'set-buffer-directionality-right)
@@ -33,11 +30,17 @@
 (global-set-key (kbd "C-c SPC")         'ispell-word)
 (global-set-key (kbd "C-c ’")           'su-read-only)
 (global-set-key (kbd "C-c l")           'counsel-unicode-char)
-(global-set-key (kbd "C-’ s c")         'shadi/open-courses)
-(global-set-key (kbd "C-’ s m")         'shadi/open-marxism)
 (global-set-key (kbd "C-~")             'mode-line-other-buffer)
 (global-set-key (kbd "M-<up>")          'move-text-up)
 (global-set-key (kbd "M-<down>")        'move-text-down)
+
+;; dired
+(global-set-key (kbd "C-c C-d m n")         'shadi/dired/notes)
+(global-set-key (kbd "C-c C-d m d")         'shadi/dired/diary)
+(global-set-key (kbd "C-c C-d m o")         'shadi/dired/org)
+(global-set-key (kbd "C-c C-d s u c")       'shadi/dired/courses)
+(global-set-key (kbd "C-c C-d s m")         'shadi/dired/marxism)
+(global-set-key (kbd "C-c C-d j w")         'shadi/dired/writings)
 
 ;; apps
 (global-set-key (kbd "C-← b")       'ebuku)

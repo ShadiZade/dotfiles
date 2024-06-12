@@ -57,21 +57,6 @@
   (interactive)
   (find-file "~/Repositories/dotfiles/emacs/org.el"))
 
-(defun shadi/open-notes-dir ()
-  "Opens my notes directory in dired."
-  (interactive)
-  (dired "~/Misc/notes"))
-
-(defun shadi/open-diary-dir ()
-  "Opens my diary directory in dired."
-  (interactive)
-  (dired "~/Misc/diary"))
-
-(defun shadi/open-org-dir ()
-  "Opens my notes directory in dired."
-  (interactive)
-  (dired "~/Misc/org"))
-
 (defun shadi/set-arabic-font (arabic-font-size)
   "Sets my emacs Arabic font and size."
   (interactive)
@@ -120,14 +105,6 @@
   (interactive)
   (find-file "~/Misc/org/tiasut.org"))
 
-(defun shadi/open-courses ()
-  (interactive)
-  (dired "~/Study/uni/courses"))
-
-(defun shadi/open-marxism ()
-  (interactive)
-  (dired "~/Study/marxism/current"))
-
 (defun company-refresh-and-complete ()
   (interactive)
   (company-mode nil)
@@ -172,3 +149,32 @@
 (defun shadi/arabic-ltr ()
   (interactive)
   (setq bidi-display-reordering nil))
+
+;; dired
+
+(defun shadi/dired/notes ()
+  "Opens my notes directory in dired."
+  (interactive)
+  (dired "~/Misc/notes"))
+
+(defun shadi/dired/diary ()
+  "Opens my diary directory in dired."
+  (interactive)
+  (dired "~/Misc/diary"))
+
+(defun shadi/dired/org ()
+  "Opens my notes directory in dired."
+  (interactive)
+  (dired "~/Misc/org"))
+
+(defun shadi/dired/courses ()
+  (interactive)
+  (dired "~/Study/uni/courses"))
+
+(defun shadi/dired/marxism ()
+  (interactive)
+  (dired "~/Study/marxism/current"))
+
+(defun shadi/dired/writings ()
+  (interactive)
+  (dired "~/Projects/writings/articles/wip"))
