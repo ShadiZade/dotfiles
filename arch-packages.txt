@@ -44,6 +44,7 @@ coreutils
 cowsay
 cronie
 cryptsetup
+csvlens
 curlie
 device-mapper
 dhclient
