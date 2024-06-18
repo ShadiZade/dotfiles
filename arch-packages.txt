@@ -8,6 +8,7 @@ alsa-firmware
 alsa-utils
 android-tools
 android-udev
+antiword
 apparmor
 aria2
 asciiquarium
@@ -54,6 +55,7 @@ diffutils
 dmidecode
 dmraid
 dnsmasq
+docx2txt
 dosfstools
 dunst
 dvd+rw-tools
