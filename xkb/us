@@ -41,7 +41,7 @@ xkb_symbols "basic" {
     key <AC09>	{[ l,				L,					U03BB								]};
     key <AC10>	{[ semicolon,		colon,				U201C								]};
     key <AC11>	{[ apostrophe,		quotedbl,			U201D								]};
-    key <BKSL>	{[ asciitilde,		backslash												]};
+    key <BKSL>	{[ asciitilde,		backslash,			U00A0									]};
 
     key <AB01>	{[ z,				Z														]};
     key <AB02>	{[ x,				X,					U2A2F								]};
