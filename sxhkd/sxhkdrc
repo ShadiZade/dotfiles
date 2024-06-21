@@ -207,6 +207,8 @@ super + a ; c
 super + b
     mpv "$HOME/.local/share/user-scripts/sounds/bruh.mp3"
 
+super + d
+    ~/Repositories/scripts/sound-effects.sh d2a-d2i
 super + shift + b
     for j in {1..5}; do killall xdg-desktop-portal; done; ~/Repositories/scripts/sound-effects.sh "jumpy-laser"
 
