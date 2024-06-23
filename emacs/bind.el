@@ -35,12 +35,12 @@
 (global-set-key (kbd "M-<down>")        'move-text-down)
 
 ;; dired
-(global-set-key (kbd "C-c C-d m n")         'shadi/dired/notes)
-(global-set-key (kbd "C-c C-d m d")         'shadi/dired/diary)
-(global-set-key (kbd "C-c C-d m o")         'shadi/dired/org)
-(global-set-key (kbd "C-c C-d s u c")       'shadi/dired/courses)
-(global-set-key (kbd "C-c C-d s m")         'shadi/dired/marxism)
-(global-set-key (kbd "C-c C-d j w")         'shadi/dired/writings)
+(global-set-key (kbd "C-c v m n")         'shadi/dired/notes)
+(global-set-key (kbd "C-c v m d")         'shadi/dired/diary)
+(global-set-key (kbd "C-c v m o")         'shadi/dired/org)
+(global-set-key (kbd "C-c v s u c")       'shadi/dired/courses)
+(global-set-key (kbd "C-c v s m")         'shadi/dired/marxism)
+(global-set-key (kbd "C-c v j w")         'shadi/dired/writings)
 
 ;; apps
 (global-set-key (kbd "C-← b")       'ebuku)
