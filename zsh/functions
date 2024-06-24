@@ -121,7 +121,7 @@ xtt () {
 	&& location_se="$(pwd)" \
 	    || location_se="$2"
     IFS=$'\n'
-    videos=($(fd -H 'mkv$|avi$|mp4$|ts$|mov$|webm$' -d 1 "$location_se" | sort -V | grep -i -- "$1"))
+    videos=($(fd -H 'mkv$|avi$|mp4$|ts$|mov$|webm$|m4v$' -d 1 "$location_se" | sort -V | grep -i -- "$1"))
     [ -z "$videos" ] \
 	&& echolor yellow ":: No videos matching \033[37m$1\033[33m found in \033[37m$location_se" \
 	&& return
