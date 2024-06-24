@@ -105,7 +105,7 @@ xvv () {
 	&& location_se="$(pwd)" \
 	    || location_se="$1"
     IFS=$'\n'
-    videos=($(fd -H 'mkv$|avi$|mp4$|ts$|mov$|webm$' -d 1 "$location_se" | sort -V))
+    videos=($(fd -H 'mkv$|avi$|mp4$|ts$|mov$|webm$|m4v$' -d 1 "$location_se" | sort -V))
     [ -z "$videos" ] \
 	&& echolor yellow ":: No videos found in this directory." \
 	&& return
@@ -234,10 +234,10 @@ lv () {
 ## wg
 wg () {
     [[ -z "$2" ]] && {
-	wget --no-use-server-timestamps -nc -t 0 -- "$1"
+	wget --continue --no-use-server-timestamps -nc -t 0 -- "$1"
     } || {
 	outname="$(ko "$2")"
-	wget --no-use-server-timestamps -O "$outname" -t 0 -- "$1" || return
+	wget --continue --no-use-server-timestamps -O "$outname" -t 0 -- "$1" || return
 	echolor yellow ":: Determining extension..."
 	ext="$(extension-determiner "$outname")"
 	[[ -z "$ext" ]] && {
