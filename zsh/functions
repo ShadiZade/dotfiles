@@ -311,7 +311,7 @@ submv () {
     dir="$1"
     [ -z "$1" ] \
 	&& dir="."
-    fl="$(eza --no-quotes -1f "$dir" | sort | fzf)"
+    fl="$(echo -e "$(eza --no-quotes -1f "$dir")\n$(fd -t l -d 1)" | sed '/^$/d' | sort | fzf)"
     [ -z "$fl" ] \
 	&& echo -e "\033[33m:: Nothing selected.\033[0m" \
 	&& return
