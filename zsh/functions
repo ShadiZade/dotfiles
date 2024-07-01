@@ -254,8 +254,9 @@ wg () {
 netc () {
     nmcli device disconnect wlp4s0
     sleep 1s
+    # defined in /etc/zsh/zshenv
     echo -e "\033[33m:: Connecting to $DEFAULT_WIFI_NETWORK\033[0m"
-    nmcli device wifi connect "$DEFAULT_WIFI_NETWORK"
+    nmcli device wifi connect "$DEFAULT_WIFI_NETWORK" password "$DEFAULT_WIFI_PASSWORD"
 }
 
 ## cat-donefiles
