@@ -252,11 +252,34 @@ wg () {
 
 ## netc
 netc () {
-    nmcli device disconnect wlp4s0
+    nmcli device disconnect wlp4s0 >/dev/null 2>/dev/null && {
+	echolor green ":: Disconnected successfully."
+    }
     sleep 1s
     # defined in /etc/zsh/zshenv
-    echo -e "\033[33m:: Connecting to $DEFAULT_WIFI_NETWORK\033[0m"
-    nmcli device wifi connect "$DEFAULT_WIFI_NETWORK" password "$DEFAULT_WIFI_PASSWORD"
+    echolor yellow ":: Connecting to network ““$DEFAULT_WIFI_NETWORK””"
+    i=0
+    found=1
+    until [[ "$found" -eq 0 ]]
+    do
+	[[ -z "$DEFAULT_WIFI_PASSWORD" ]] && {
+	    nmcli device wifi connect "$DEFAULT_WIFI_NETWORK" password "$DEFAULT_WIFI_PASSWORD" \
+		  >/dev/null 2>/dev/null && found=0 || found=1
+	} || {
+	    nmcli device wifi connect "$DEFAULT_WIFI_NETWORK" \
+		  >/dev/null 2>/dev/null && found=0 || found=1
+	}
+	[[ "$found" -eq 1 ]] && {
+	    ((i++))
+	    clear-line
+	    echolor red ":: No network named ““$DEFAULT_WIFI_NETWORK”” found. Retrying ($i)..." 1
+	    sleep 1s
+	}
+	[[ "$found" -eq 0 ]] && {
+	    clear-line
+	    echolor green ":: Network ““$DEFAULT_WIFI_NETWORK”” connected after ““$i”” retries."
+	}
+    done
 }
 
 ## cat-donefiles
