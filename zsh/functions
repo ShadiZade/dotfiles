@@ -539,7 +539,11 @@ function unread-newsletter {
 
 function change-wifi {
     [[ -z "$1" ]] && {
+	wifi-connected-p
 	echolor purple-yellow ":: Network: ““$DEFAULT_WIFI_NETWORK””\n:: Password: ““$DEFAULT_WIFI_PASSWORD””"
+	[[ "$wc_p" -eq 0 ]] && {
+	    echolor green ":: Currently connected to ““$(nmcli device status | grep '^wlp4s0' | awk '{print $4}')””"
+	}
 	return
     }
     export DEFAULT_WIFI_NETWORK="$1"
