@@ -19,21 +19,28 @@ source ~/Misc/Backups/private-scripts/private-aliases.sh
 source ~/Repositories/scripts/essential-functions.sh
 
 terminal-art () {
-    touch "$HOME/.local/share/user-scripts/qotd" "$HOME/.local/share/user-scripts/today-date"
-    [[ "$(cat "$HOME/.local/share/user-scripts/today-date")" != "$(date +%m-%d)" ]] && {
+    touch "$usdd/qotd" "$usdd/today-date"
+    [[ "$(cat "$usdd/today-date")" != "$(date +%m-%d)" ]] && {
 	echolor green ":: Updating..." 1
-	date +"%m-%d" > "$HOME/.local/share/user-scripts/today-date"
-	fortune marxism > "$HOME/.local/share/user-scripts/qotd"
-	~/Repositories/scripts/french-republican-time.sh > "$HOME/.local/share/user-scripts/today-date-french"
-	clear-line
+	date +"%m-%d" > "$usdd/today-date"
+	fortune marxism > "$usdd/qotd"
+	echo -n > "$usdd/today-date-french"
     }
-    [[ "$(cat "$HOME/.local/share/user-scripts/today-date")" != "$(TZ=GMT date +%m-%d)" ]] && {
-	
+    wifi-connected-p
+     if [[ "$wc_p" -eq 0 ]] && [[ -z "$(cat "$usdd/today-date-french")" ]] 
+     then
+	 echolor green ":: Updating French date..." 1 
+	 ~/Repositories/scripts/french-republican-time.sh > "$usdd/today-date-french"
+	 clear-line
+     fi
+       clear-line
+    [[ "$(cat "$usdd/today-date")" != "$(TZ=GMT date +%m-%d)" ]] && {
+	# what is this?
     }
     echo "$(date +"%d %B %Y")"
-    cat "$HOME/.local/share/user-scripts/today-date-french"
+    cat "$usdd/today-date-french"
     ~/Repositories/communist-calendar/fetch-events.sh
-    cat "$HOME/.local/share/user-scripts/qotd" | cowsay -f none -W 140
+    cat "$usdd/qotd" | cowsay -f none -W 140
 }
 
 ## disown
@@ -163,7 +170,7 @@ alarm () {
     }
     printf '\r'
     echolor red-green ":: ALARM RINGING! IT'S ““$(date +%H:%M:%S)”” NOW!" 
-    mpv --loop-file=inf --really-quiet "$HOME/.local/share/user-scripts/sounds/glass-hit.wav"
+    mpv --loop-file=inf --really-quiet "$usdd/sounds/glass-hit.wav"
 }
 
 ## knock
@@ -175,7 +182,7 @@ knock () {
 ## mk
 mk () {
     ~/Repositories/scripts/kebabization.sh "$@"
-    mkdir -pv $(cat "$HOME/.local/share/user-scripts/kebab")
+    mkdir -pv $(cat "$usdd/kebab")
 }
 
 ## delete-opf
@@ -256,6 +263,7 @@ netc () {
 	echolor green ":: Disconnected successfully."
     }
     sleep 1s
+    wifi-connected-p
     # defined in /etc/zsh/zshenv
     echolor yellow ":: Connecting to network ““$DEFAULT_WIFI_NETWORK””"
     i=0
@@ -280,6 +288,7 @@ netc () {
 	    echolor green ":: Network ““$DEFAULT_WIFI_NETWORK”” connected after ““$i”” retries."
 	}
     done
+    wifi-connected-p
 }
 
 ## cat-donefiles
@@ -525,6 +534,20 @@ function unread-newsletter {
     } || {
 	sed -i "s|$nlfilefull||;/^$/d" "$ufile" && \
 	    echolor green ":: ““$nlfile”” removed."
+    }
+}
+
+function change-wifi {
+    [[ -z "$1" ]] && {
+	echolor purple-yellow ":: Network: ““$DEFAULT_WIFI_NETWORK””\n:: Password: ““$DEFAULT_WIFI_PASSWORD””"
+	return
+    }
+    export DEFAULT_WIFI_NETWORK="$1"
+    export DEFAULT_WIFI_PASSWORD="$2"
+    echolor green ":: Default network for netc command defined as ““$1””"
+    [[ -z "$2" ]] && {
+	export DEFAULT_WIFI_PASSWORD=''
+	echolor yellow ":: Network was defined without a password."
     }
 }
 
