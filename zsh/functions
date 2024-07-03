@@ -537,12 +537,19 @@ function unread-newsletter {
     }
 }
 
-function change-wifi {
+function ws {
     [[ -z "$1" ]] && {
 	wifi-connected-p
 	echolor purple-yellow ":: Network: ““$DEFAULT_WIFI_NETWORK””\n:: Password: ““$DEFAULT_WIFI_PASSWORD””"
 	[[ "$wc_p" -eq 0 ]] && {
 	    echolor green ":: Currently connected to ““$(nmcli device status | grep '^wlp4s0' | awk '{print $4}')””"
+	}
+	echolor yellow ":: Reset to default? (y/N) " 1
+	reset_p="n"
+	read -r reset_p
+	[[ "$reset_p" = "y" ]] && {
+	    source /etc/zsh/zshenv
+	    echolor green ":: Default network reset to ““$DEFAULT_WIFI_NETWORK””"
 	}
 	return
     }
