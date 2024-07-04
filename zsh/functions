@@ -15,8 +15,8 @@
 ####### symlink location: ~/.config/zsh/ ##########################################################
 ## terminal-art
 source ~/Repositories/dotfiles/zsh/aliases
-source ~/Misc/Backups/private-scripts/private-aliases.sh 
 source ~/Repositories/scripts/essential-functions.sh
+source ~/Repositories/private/private-aliases.sh
 
 terminal-art () {
     touch "$usdd/qotd" "$usdd/today-date"
@@ -548,7 +548,7 @@ function ws {
 	reset_p="n"
 	read -r reset_p
 	[[ "$reset_p" = "y" ]] && {
-	    source /etc/zsh/zshenv
+	    source ~/Repositories/private/wifi-creds.sh
 	    echolor green ":: Default network reset to ““$DEFAULT_WIFI_NETWORK””"
 	}
 	return

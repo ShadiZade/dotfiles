@@ -18,7 +18,9 @@ source ~/Repositories/scripts/essential-functions.sh
 source ~/.config/zsh/extra
 source ~/.config/zsh/functions
 source ~/.config/zsh/aliases
-source ~/Misc/Backups/private-scripts/private-aliases.sh
+source ~/Repositories/private/wifi-creds.sh
+source ~/Repositories/private/private-aliases.sh
+
 wifi-connected-p
 PROMPT=" %F{#55ff55}%2~%f %S%F{#55ff55} 囍 %D{%H:%M} 🠦 %f%s "
 detect-extra
