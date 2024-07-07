@@ -170,6 +170,7 @@ alarm () {
     }
     printf '\r'
     echolor red-green ":: ALARM RINGING! IT'S ““$(date +%H:%M:%S)”” NOW!" 
+    quodlibet --pause
     mpv --loop-file=inf --really-quiet "$usdd/sounds/glass-hit.wav"
 }
 
