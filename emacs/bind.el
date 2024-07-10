@@ -41,6 +41,7 @@
 (global-set-key (kbd "C-c v s u c")       'shadi/dired/courses)
 (global-set-key (kbd "C-c v s m")         'shadi/dired/marxism)
 (global-set-key (kbd "C-c v j w")         'shadi/dired/writings)
+(global-set-key (kbd "C-c v l s u")       'shadi/dired/user-script-data)
 
 ;; apps
 (global-set-key (kbd "C-← b")       'ebuku)

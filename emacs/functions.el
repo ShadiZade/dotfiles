@@ -178,3 +178,7 @@
 (defun shadi/dired/writings ()
   (interactive)
   (dired "~/Projects/writings/articles/wip"))
+
+(defun shadi/dired/user-script-data ()
+  (interactive)
+  (dired "~/.local/share/user-scripts"))
