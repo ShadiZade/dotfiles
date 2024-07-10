@@ -52,3 +52,5 @@ windscribe
 xdg-ninja-git
 xephem
 yt-dlp-git
+zathura-git
+zathura-pdf-poppler-git

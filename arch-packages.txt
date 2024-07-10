@@ -96,7 +96,6 @@ gawk
 gcc-libs
 gettext
 gimp
-girara
 glibc
 glow
 gnome-keyring
@@ -409,8 +408,6 @@ xsv
 xwallpaper
 xz
 yay
-zathura
 zathura-cb
 zathura-djvu
-zathura-pdf-poppler
 zathura-ps
