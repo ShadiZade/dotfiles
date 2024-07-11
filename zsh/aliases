@@ -185,6 +185,7 @@ alias clip="~/Repositories/scripts/video-clipper.sh"
 alias unl="~/Repositories/scripts/update-newsletter.sh"
 alias pall="~/Repositories/scripts/palladium.sh"
 alias t="~/Repositories/scripts/world-clock.sh"
+alias banna="~/Repositories/scripts/banna.sh"
 
 # files
 alias ’z="e ~/Repositories/dotfiles/zsh/zshrc"

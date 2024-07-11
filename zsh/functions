@@ -34,9 +34,10 @@ terminal-art () {
 	 clear-line
      fi
        clear-line
-    [[ "$(cat "$usdd/today-date")" != "$(TZ=GMT date +%m-%d)" ]] && {
+#    [[ "$(cat "$usdd/today-date")" != "$(TZ=GMT date +%m-%d)" ]] && {
 	# what is this?
-    }
+#	echo -n
+ #   }
     echo "$(date +"%d %B %Y")"
     cat "$usdd/today-date-french"
     ~/Repositories/communist-calendar/fetch-events.sh
