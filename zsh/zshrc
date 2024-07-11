@@ -28,7 +28,7 @@ detect-extra
 setxkbmap
 export ZSH_COMPDUMP="$XDG_CACHE_HOME"/zsh/zcompdump-"$ZSH_VERSION" 
 export HISTCONTROL=ignorespace
-export EDITOR="emacs -nw"
+export EDITOR="emacsclient -nw -a emacs"
 autoload -U compinit; compinit
 compdef _gnu_generic mkdir
 compdef '_files -g "*.acsm"' knock
