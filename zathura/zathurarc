@@ -1,5 +1,4 @@
 set selection-clipboard clipboard
-unmap d
 set page-padding 1
 set guioptions "sv"
 set notification-bg "#ccff44"
