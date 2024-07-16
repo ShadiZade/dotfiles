@@ -24,7 +24,11 @@ terminal-art () {
 	echolor green ":: Updating..." 1
 	date +"%m-%d" > "$usdd/today-date"
 	fortune marxism > "$usdd/qotd"
+	clear-line
+    }
+    [[ "$(cat "$usdd/today-date-utc")" != "$(TZ=UTC date +%m-%d)" ]] && {
 	echo -n > "$usdd/today-date-french"
+	TZ=UTC date +"%m-%d" > "$usdd/today-date-utc"
     }
     wifi-connected-p
      if [[ "$wc_p" -eq 0 ]] && [[ -z "$(cat "$usdd/today-date-french")" ]] 
@@ -33,7 +37,6 @@ terminal-art () {
 	 ~/Repositories/scripts/french-republican-time.sh > "$usdd/today-date-french"
 	 clear-line
      fi
-       clear-line
 #    [[ "$(cat "$usdd/today-date")" != "$(TZ=GMT date +%m-%d)" ]] && {
 	# what is this?
 #	echo -n
