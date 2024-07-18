@@ -231,7 +231,6 @@ dr () {
 	    ext=".$ext"
     }
     mv "$basename" "$basename$ext"
-    xdg-open "$basename$ext"
 }
 
 ## lv
