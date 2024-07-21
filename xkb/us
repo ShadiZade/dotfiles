@@ -18,8 +18,8 @@ xkb_symbols "basic" {
     key <AE12>	{[ equal,			plus,				notequal,			U2248			]};
 
     key <AD01>	{[ q,				Q,                                      U2190						]};
-    key <AD02>	{[ w,				W,					U2235							]};
-    key <AD03>	{[ e,				E,					U2234									]};
+    key <AD02>	{[ w,				W												]};
+    key <AD03>	{[ e,				E,					U220E									]};
     key <AD04>	{[ r,				R														]};
     key <AD05>	{[ t,				T,					U2713								]};
     key <AD06>	{[ y,				Y,					U5143								]};
@@ -35,7 +35,7 @@ xkb_symbols "basic" {
     key <AC03>	{[ d,				D														]};
     key <AC04>	{[ f,				F														]};
     key <AC05>	{[ g,				G,					grave								]};
-    key <AC06>	{[ h,				H,					U56CD								]};
+    key <AC06>	{[ h,				H,					U2234								]};
     key <AC07>	{[ j,				J														]};
     key <AC08>	{[ k,				K														]};
     key <AC09>	{[ l,				L,					U03BB								]};
@@ -47,7 +47,7 @@ xkb_symbols "basic" {
     key <AB02>	{[ x,				X,					U2A2F								]};
     key <AB03>	{[ c,				C,					U262D								]};
     key <AB04>	{[ v,				V														]};
-    key <AB05>	{[ b,				B														]};
+    key <AB05>	{[ b,				B, 					U2235	     					]};
     key <AB06>	{[ n,				N,					U2013								]};
     key <AB07>	{[ m,				M,					U2014								]};
     key <AB08>	{[ comma,			less,				U2019								]};
