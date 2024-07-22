@@ -38,6 +38,8 @@ alias cdlog="cd ~/.local/logs/ && ff"
 alias cdt="cd ~/.local/share/Trash/files && lln -a --time=changed --sort=changed && du -sh"
 ## Downloads
 alias cdd="cd ~/Downloads && lln"
+## P2P
+alias cd2="cd ~/P2P/ && ff"
 ## Pictures
 alias cdp="cd ~/Pictures && ff"
 alias cdpd="cd ~/Pictures/design/ && ll"
