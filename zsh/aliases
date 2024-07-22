@@ -189,6 +189,7 @@ alias pall="~/Repositories/scripts/palladium.sh"
 alias t="~/Repositories/scripts/world-clock.sh"
 alias banna="~/Repositories/scripts/banna.sh"
 alias sub="~/Repositories/scripts/subtitle-downloader.sh"
+alias xv="~/Repositories/scripts/monet.sh"
 
 # files
 alias ’z="e ~/Repositories/dotfiles/zsh/zshrc"
