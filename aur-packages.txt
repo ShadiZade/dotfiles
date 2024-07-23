@@ -21,6 +21,7 @@ mikhak-fonts
 minecraft-launcher
 mkinitcpio-firmware
 morse-x
+mp3wrap
 noto-fonts-sc
 otf-gfs
 otf-kawkab-mono

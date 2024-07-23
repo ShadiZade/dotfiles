@@ -171,6 +171,7 @@ linux-steam-integration
 linux61
 logrotate
 lvm2
+lynx
 make
 man-db
 man-pages
@@ -197,7 +198,6 @@ mkvtoolnix-gui
 mobile-broadband-provider-info
 modemmanager
 moreutils
-mp3wrap
 mpv
 musescore
 ncdu
