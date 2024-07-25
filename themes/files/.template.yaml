@@ -1,7 +1,7 @@
 theme_name: 
 
 colors:
-  color1:	
+  color1:
     name: 
     hex: 
   color2:
@@ -21,4 +21,3 @@ wallpaper:
 files:
   rofi: "$HOME/Repositories/dotfiles/rofi/themes/.rasi"
   polybar: "$HOME/Repositories/dotfiles/polybar/themes/.ini"
-

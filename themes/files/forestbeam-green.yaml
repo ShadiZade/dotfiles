@@ -1,0 +1,25 @@
+theme_name: Forestbeam Green
+
+colors:
+  color1:
+    name: Forestbeam Green
+    hex: 82b066
+  color2:
+    name: Autumnleaf Purple 
+    hex: 391e27
+  color3:
+    name: Light Forestbeam Green
+    hex: bedc90
+  color4:
+    name: Autumnleaf Yellow
+    hex: bcae19
+
+wallpaper: 
+  name: Forestbeam
+  path: "$HOME/Pictures/wallpapers/use/forestbeam.jpg"
+
+files:
+  rofi: "$HOME/Repositories/dotfiles/rofi/themes/forestbeamgreen.rasi"
+  polybar: "$HOME/Repositories/dotfiles/polybar/themes/forestbeam-green.ini"
+
+

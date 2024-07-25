@@ -1,0 +1,23 @@
+theme_name: Collective Green
+
+colors:
+  color1:
+    name: Collective Green
+    hex: 2c4235
+  color2:
+    name: Monumental Gold
+    hex: d7b57d
+  color3:
+    name: Dark Collective Green
+    hex: 1d2c23
+  color4:
+    name: Glorious Red
+    hex: aa3b3d
+
+wallpaper: 
+  name: Collective Terrace
+  path: "$HOME/Pictures/wallpapers/use/collective-terrace.jpg"
+
+files:
+  rofi: "$HOME/Repositories/dotfiles/rofi/themes/collective-green.rasi"
+  polybar: "$HOME/Repositories/dotfiles/polybar/themes/collective-green.ini"

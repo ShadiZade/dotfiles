@@ -1,0 +1,23 @@
+theme_name: Pinestone Grey
+
+colors:
+  color1:
+    name: Pinestone Grey
+    hex: 2f322b
+  color2:
+    name: Pinestone White
+    hex: acab8c 
+  color3:
+    name: Mountain Ash
+    hex: 1d2321 
+  color4:
+    name: Overcast Blue 
+    hex: 7e99a0 
+
+wallpaper: 
+  name: Casson’s White Pine
+  path: "$HOME/Pictures/wallpapers/use/go7-casson-white-pine.jpg"
+
+files:
+  rofi: "$HOME/Repositories/dotfiles/rofi/themes/pinestone-grey.rasi"
+  polybar: "$HOME/Repositories/dotfiles/polybar/themes/pinestone-grey.ini"
