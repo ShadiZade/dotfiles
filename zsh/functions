@@ -21,7 +21,7 @@ source ~/Repositories/private/private-aliases.sh
 terminal-art () {
     touch "$usdd/qotd" "$usdd/today-date"
     [[ "$(cat "$usdd/today-date")" != "$(date +%m-%d)" ]] && {
-	echolor green ":: Updating..." 1
+	echolor green ":: Updating date..." 1
 	date +"%m-%d" > "$usdd/today-date"
 	fortune marxism > "$usdd/qotd"
 	clear-line
@@ -33,7 +33,7 @@ terminal-art () {
     wifi-connected-p
      if [[ "$wc_p" -eq 0 ]] && [[ -z "$(cat "$usdd/today-date-french")" ]] 
      then
-	 echolor green ":: Updating French date..." 1 
+	 echolor green ":: Updating French Republican date..." 1 
 	 ~/Repositories/scripts/french-republican-time.sh > "$usdd/today-date-french"
 	 clear-line
      fi

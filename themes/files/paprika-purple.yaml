@@ -1,0 +1,18 @@
+theme_name: Paprika Purple
+colors:
+  color1:	
+    name: Paprika Purple
+    hex: 85132d
+  color2:
+    name: Dignified Beige
+    hex: c48e5c
+  color3:
+    name: Dark Paprika Purple
+    hex: 9c1635
+  color4:
+    name: Deep Purple
+    hex: 55007f
+
+wallpaper: 
+  name: Soul Essence 2
+  path: /usr/share/wallpapers/use/essence-2.png
