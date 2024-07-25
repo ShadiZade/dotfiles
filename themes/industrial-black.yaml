@@ -23,4 +23,5 @@ wallpaper:
 files:
   rofi: "$HOME/Repositories/dotfiles/rofi/themes/industrial-black.rasi"
   polybar: "$HOME/Repositories/dotfiles/polybar/themes/industrial-black.ini"
+  dunst: "$HOME/Repositories/dotfiles/dunst/themes/industrial-black"
 

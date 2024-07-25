@@ -23,4 +23,5 @@ wallpaper:
 files:
   rofi: "$HOME/Repositories/dotfiles/rofi/themes/aero-white.rasi"
   polybar: "$HOME/Repositories/dotfiles/polybar/themes/aero-white.ini"
+  dunst: "$HOME/Repositories/dotfiles/dunst/themes/aero-white"
 

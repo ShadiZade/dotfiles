@@ -23,3 +23,4 @@ wallpaper:
 files:
   rofi: "$HOME/Repositories/dotfiles/rofi/themes/paprika-purple.rasi"
   polybar: "$HOME/Repositories/dotfiles/polybar/themes/paprika-purple.ini"
+  dunst: "$HOME/Repositories/dotfiles/dunst/themes/paprika-purple"

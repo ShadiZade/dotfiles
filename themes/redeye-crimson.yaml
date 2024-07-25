@@ -23,4 +23,5 @@ wallpaper:
 files:
   rofi: "$HOME/Repositories/dotfiles/rofi/themes/redeye-crimson.rasi"
   polybar: "$HOME/Repositories/dotfiles/polybar/themes/redeye-crimson.ini"
+  dunst: "$HOME/Repositories/dotfiles/dunst/themes/redeye-crimson"
 

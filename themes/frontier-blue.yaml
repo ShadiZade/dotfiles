@@ -23,3 +23,4 @@ wallpaper:
 files:
   rofi: "$HOME/Repositories/dotfiles/rofi/themes/frontier-blue.rasi"
   polybar: "$HOME/Repositories/dotfiles/polybar/themes/frontier-blue.ini"
+  dunst: "$HOME/Repositories/dotfiles/dunst/themes/frontier-blue"

@@ -12,9 +12,9 @@
 	offset = 11x56
 	transparency = 0
 	frame_width = 2
-	frame_color = "#b89388" #normal-frame-color
+	frame_color = "#b89388" #color2
 	font = Monospace 8
-	alignment = left
+	alignment = center
 	vertical_alignment = center
 	
 	
@@ -297,23 +297,20 @@
     background = "#222222"
     foreground = "#888888"
     timeout = 10
-    # Icon for notifications with low urgency, uncomment to enable
-    #default_icon = /path/to/icon
+    default_icon = " "
 
 [urgency_normal]
-    background = "#314664" #normal-background-color
-    foreground = "#b89388" #normal-foreground-color
+    background = "#314664" #color1
+    foreground = "#b89388" #color2
     timeout = 10
-    # Icon for notifications with normal urgency, uncomment to enable
-    #default_icon = /path/to/icon
+    default_icon = " "
 
 [urgency_critical]
     background = "#900000"
     foreground = "#ffffff"
     frame_color = "#ff0000"
     timeout = 0
-    # Icon for notifications with critical urgency, uncomment to enable
-    #default_icon = /path/to/icon
+    default_icon = " "
 
 # Every section that isn't one of the above is interpreted as a rules to
 # override settings for certain messages.

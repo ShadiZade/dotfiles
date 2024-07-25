@@ -1,0 +1,14 @@
+# See dunst(5) for all configuration options
+
+[global]
+
+
+	### Important ###
+
+	
+	width = (200,500)
+	height = 300
+	origin = top-right
+	offset = 11x56
+	transparency = 0
+	frame_width = 2

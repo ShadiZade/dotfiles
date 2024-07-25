@@ -23,4 +23,5 @@ wallpaper:
 files:
   rofi: "$HOME/Repositories/dotfiles/rofi/themes/triumphal-white.rasi"
   polybar: "$HOME/Repositories/dotfiles/polybar/themes/triumphal-white.ini"
+  dunst: "$HOME/Repositories/dotfiles/dunst/themes/triumphal-white"
 

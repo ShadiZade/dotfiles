@@ -23,5 +23,6 @@ wallpaper:
 files:
   rofi: "$HOME/Repositories/dotfiles/rofi/themes/forestbeam-green.rasi"
   polybar: "$HOME/Repositories/dotfiles/polybar/themes/forestbeam-green.ini"
+  dunst: "$HOME/Repositories/dotfiles/dunst/themes/forestbeam-green"
 
 
