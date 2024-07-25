@@ -23,6 +23,7 @@ terminal-art () {
     [[ "$(cat "$usdd/today-date")" != "$(date +%m-%d)" ]] && {
 	echolor green ":: Updating date..." 1
 	date +"%m-%d" > "$usdd/today-date"
+	echo -n > "$usdd/today-date-hijri"
 	fortune marxism > "$usdd/qotd"
 	clear-line
     }
@@ -37,11 +38,18 @@ terminal-art () {
 	 ~/Repositories/scripts/french-republican-time.sh > "$usdd/today-date-french"
 	 clear-line
      fi
+     if [[ "$wc_p" -eq 0 ]] && [[ -z "$(cat "$usdd/today-date-hijri")" ]] 
+     then
+	 echolor green ":: Updating Hijri date..." 1 
+	 ~/Repositories/scripts/hijri-date.sh > "$usdd/today-date-hijri"
+	 clear-line
+     fi
 #    [[ "$(cat "$usdd/today-date")" != "$(TZ=GMT date +%m-%d)" ]] && {
 	# what is this?
 #	echo -n
  #   }
-    echo "$(date +"%d %B %Y")"
+    echo -n "$(date +"%d %B %Y")"
+    echo ", $(cat "$usdd/today-date-hijri")"
     cat "$usdd/today-date-french"
     ~/Repositories/communist-calendar/fetch-events.sh
     cat "$usdd/qotd" | cowsay -f none -W 140
