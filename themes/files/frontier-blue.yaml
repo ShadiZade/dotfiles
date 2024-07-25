@@ -18,4 +18,6 @@ wallpaper:
   name: The Last Frontier
   path: '$HOME/Pictures/wallpapers/use/the-frontier.jpg'
 
-rofi_file: "$HOME/Repositories/dotfiles/rofi/themes/frontier-blue.rasi"
+files:
+  rofi: "$HOME/Repositories/dotfiles/rofi/themes/frontier-blue.rasi"
+  polybar: "$HOME/Repositories/dotfiles/polybar/themes/frontier-blue.ini"
