@@ -1,9 +1,3 @@
-* {
-    /* Theme colors */
-    color1: #314664;
-    color2: #b89388;
-    color5: #1f2c3f;
-
     /* Theme settings */
     highlight: bold italic;
     scrollbar: true;

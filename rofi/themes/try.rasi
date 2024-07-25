@@ -1,8 +1,8 @@
 * {
     /* Theme colors */
-    color1: #314664;
-    color2: #b89388;
-    color5: #1f2c3f;
+    color1: #198263;
+    color2: #ce726a;
+    color5: #ff0000;
 
     /* Theme settings */
     highlight: bold italic;
@@ -48,4 +48,3 @@
 }
 
 @import "gruvbox-common.rasi"
-
