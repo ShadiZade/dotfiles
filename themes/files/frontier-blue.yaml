@@ -16,7 +16,7 @@ colors:
 
 wallpaper: 
   name: The Last Frontier
-  path: '$HOME/Pictures/wallpapers/use/the-frontier.jpg'
+  path: "$HOME/Pictures/wallpapers/use/the-frontier.jpg"
 
 files:
   rofi: "$HOME/Repositories/dotfiles/rofi/themes/frontier-blue.rasi"
