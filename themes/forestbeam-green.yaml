@@ -13,7 +13,9 @@ colors:
   color4:
     name: Autumnleaf Yellow
     hex: "bcae19"
-
+  color5:
+    name:
+    hex: "6a7c52"
 wallpaper: 
   name: Forestbeam
   path: "$HOME/Pictures/wallpapers/use/forestbeam.jpg"

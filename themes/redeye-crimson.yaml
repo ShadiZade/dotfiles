@@ -13,7 +13,9 @@ colors:
   color4:
     name: Redeye Blue
     hex: "54b1c0"
-
+  color5:
+    name:
+    hex: "181815"
 wallpaper: 
   name: Redeyes
   path: "$HOME/Pictures/wallpapers/use/redeyes.jpg"

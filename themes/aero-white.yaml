@@ -13,7 +13,9 @@ colors:
   color4:
     name: Aero Gold
     hex: "c0a02f"
-
+  color5:
+    name:
+    hex: "c8c8c8"
 wallpaper: 
   name: Aero
   path: "$HOME/Pictures/wallpapers/use/aero.jpg"

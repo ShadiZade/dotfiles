@@ -13,7 +13,9 @@ colors:
   color4:
     name: Overcast Blue 
     hex: "7e99a0"
-
+  color5:
+    name:
+    hex: "390814"
 wallpaper: 
   name: Casson’s White Pine
   path: "$HOME/Pictures/wallpapers/use/go7-casson-white-pine.jpg"

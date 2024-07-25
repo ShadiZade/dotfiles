@@ -13,7 +13,9 @@ colors:
   color4:
     name: Glorious Red
     hex: "aa3b3d"
-
+  color5:
+    name:
+    hex: "213127"
 wallpaper: 
   name: Collective Terrace
   path: "$HOME/Pictures/wallpapers/use/collective-terrace.jpg"

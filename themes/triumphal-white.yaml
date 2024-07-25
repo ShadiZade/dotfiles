@@ -13,7 +13,9 @@ colors:
   color4:
     name: Triumphal Black
     hex: "070707"
-
+  color5:
+    name:
+    hex: "5d1110"
 wallpaper: 
   name: Triumphal Revolution
   path: "$HOME/Pictures/wallpapers/use/triumphal-revolution.jpg"

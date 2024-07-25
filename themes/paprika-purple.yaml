@@ -13,7 +13,9 @@ colors:
   color4:
     name: Deep Purple
     hex: "55007f"
-
+  color5:
+    name:
+    hex: "1b1a21"
 wallpaper: 
   name: Soul Essence 2
   path: "$HOME/Pictures/wallpapers/use/essence-2.png"

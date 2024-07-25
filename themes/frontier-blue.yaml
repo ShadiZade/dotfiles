@@ -13,7 +13,9 @@ colors:
   color4:
     name: Wispy Pink
     hex: "d8787b"
-
+  color5:
+    name:
+    hex: "1f2c3f"
 wallpaper: 
   name: The Last Frontier
   path: "$HOME/Pictures/wallpapers/use/the-frontier.jpg"
