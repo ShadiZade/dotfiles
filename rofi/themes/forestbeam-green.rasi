@@ -1,34 +1,36 @@
 * {
+    /* Theme colors */
+    color1: #82b066;
+    color2: #391e27;
+    color5: #6a7c52;
+
     /* Theme settings */
     highlight: bold italic;
     scrollbar: true;
 
     /* Gruvbox dark colors */
-    gruvbox-dark-bg0-hard:     #97b074;
-    gruvbox-dark-bg0:          #6a7c52;
-	gruvbox-dark-bg2:          #391e27;
+    gruvbox-dark-bg2:          #587eb3;
     gruvbox-dark-fg0:          #fbf1c7;
-    gruvbox-dark-fg1:          #d7b57d;
+    gruvbox-dark-fg1:          #ebdbb2;
     gruvbox-dark-red-dark:     #cc241d;
     gruvbox-dark-red-light:    #fb4934;
     gruvbox-dark-yellow-dark:  #d79921;
     gruvbox-dark-yellow-light: #fabd2f;
-    gruvbox-dark-gray:         #391e27;
     
     /* Theme colors */
-    background:                  @gruvbox-dark-bg0-hard;
+    background:                  @color1;
     background-color:            @background;
-    foreground:                  @gruvbox-dark-gray;
-    border-color:                @gruvbox-dark-gray;
+    foreground:                  @color2;
+    border-color:                @color2;
     separatorcolor:              @border-color;
     scrollbar-handle:            @border-color;
 
     normal-background:           @background;
     normal-foreground:           @foreground;
-    alternate-normal-background: @gruvbox-dark-bg0;
+    alternate-normal-background: @color5;
     alternate-normal-foreground: @foreground;
-    selected-normal-background:  @gruvbox-dark-gray;
-    selected-normal-foreground:  @gruvbox-dark-bg0-hard;
+    selected-normal-background:  @color2;
+    selected-normal-foreground:  @color1;
 
     active-background:           @gruvbox-dark-yellow-dark;
     active-foreground:           @background;
@@ -46,4 +48,3 @@
 }
 
 @import "gruvbox-common.rasi"
-
