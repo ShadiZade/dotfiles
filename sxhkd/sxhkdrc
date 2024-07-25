@@ -162,10 +162,6 @@ super + q ; w
 super + z
 	~/Repositories/scripts/lockscreen.sh
 
-# give-in-notif
-super + shift + n 
-    ~/Repositories/scripts/give-in-notif.sh
-
 # Give QR
 super + asciitilde
     ~/Repositories/scripts/give-qr.sh
