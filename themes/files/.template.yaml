@@ -16,7 +16,7 @@ colors:
 
 wallpaper: 
   name: 
-  path: 
+  path: "$HOME/Pictures/wallpapers/use/.jpg"
 
 files:
   rofi: "$HOME/Repositories/dotfiles/rofi/themes/.rasi"
