@@ -160,7 +160,7 @@ super + q ; w
 
 # lockscreen
 super + z
-	~/Repositories/scripts/lockscreen-bspwm.sh
+	~/Repositories/scripts/lockscreen.sh
 
 # give-in-notif
 super + shift + n 
