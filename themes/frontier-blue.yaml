@@ -3,16 +3,16 @@ theme_name: Frontier Blue
 colors:
   color1:
     name: Frontier Blue
-    hex: 314664
+    hex: "314664"
   color2:
     name: Mountainside Red-White
-    hex: b89388
+    hex: "b89388"
   color3:
     name: Dark Frontier Blue
-    hex: 1a2636
+    hex: "1a2636"
   color4:
     name: Wispy Pink
-    hex: d8787b
+    hex: "d8787b"
 
 wallpaper: 
   name: The Last Frontier

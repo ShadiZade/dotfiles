@@ -3,16 +3,16 @@ theme_name: Collective Green
 colors:
   color1:
     name: Collective Green
-    hex: 2c4235
+    hex: "2c4235"
   color2:
     name: Monumental Gold
-    hex: d7b57d
+    hex: "d7b57d"
   color3:
     name: Dark Collective Green
-    hex: 1d2c23
+    hex: "1d2c23"
   color4:
     name: Glorious Red
-    hex: aa3b3d
+    hex: "aa3b3d"
 
 wallpaper: 
   name: Collective Terrace

@@ -65,11 +65,6 @@ super + alt + ctrl + asciitilde
 super + shift + BackSpace
 	xsel -cb
 
-# theme picker
-super + shift + t
-	$HOME/Repositories/scripts/theme-picker.sh
-	
-
 ############################################# window management
 
 # focus the last desktop

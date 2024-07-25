@@ -3,16 +3,16 @@ theme_name: Pinestone Grey
 colors:
   color1:
     name: Pinestone Grey
-    hex: 2f322b
+    hex: "2f322b"
   color2:
     name: Pinestone White
-    hex: acab8c 
+    hex: "acab8c"
   color3:
     name: Mountain Ash
-    hex: 1d2321 
+    hex: "1d2321"
   color4:
     name: Overcast Blue 
-    hex: 7e99a0 
+    hex: "7e99a0"
 
 wallpaper: 
   name: Casson’s White Pine

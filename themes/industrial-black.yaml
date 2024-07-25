@@ -3,19 +3,19 @@ theme_name: Industrial Black
 colors:
   color1:
     name: Industrial Black 
-    hex: 201f27
+    hex: "201f27"
   color2:
     name: Scaffolding Tan
-    hex: 9f773f
+    hex: "9f773f"
   color3:
     name: Light Industrial Black
-    hex: 302f3b
+    hex: "302f3b"
   color4:
     name: Banner Red
-    hex: a41828
+    hex: "a41828"
 
 wallpaper: 
-  name: 
+  name: Industrial 2058
   path: "$HOME/Pictures/wallpapers/use/industrial-2058.jpg"
 
 files:

@@ -3,16 +3,16 @@ theme_name: Redeye Crimson
 colors:
   color1:
     name: Redeye Crimson
-    hex: 821916
+    hex: "821916"
   color2:
     name: Festive Beige
-    hex: fae19f
+    hex: "fae19f"
   color3:
     name: Dark Redeye Crimson
-    hex: 3a0b0a
+    hex: "3a0b0a"
   color4:
     name: Redeye Blue
-    hex: 54b1c0
+    hex: "54b1c0"
 
 wallpaper: 
   name: Redeyes

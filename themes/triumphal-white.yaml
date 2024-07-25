@@ -3,16 +3,16 @@ theme_name: Triumphal White
 colors:
   color1:
     name: Triumphal White
-    hex: bcbcbc
+    hex: "bcbcbc"
   color2:
     name: Triumphal Red
-    hex: 961f0a
+    hex: "961f0a"
   color3:
     name: Triumphal Grey
-    hex: 8d8d8d
+    hex: "8d8d8d"
   color4:
     name: Triumphal Black
-    hex: 070707
+    hex: "070707"
 
 wallpaper: 
   name: Triumphal Revolution

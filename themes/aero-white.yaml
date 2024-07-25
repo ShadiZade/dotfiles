@@ -3,16 +3,16 @@ theme_name: Aero White
 colors:
   color1:
     name: Aero White
-    hex: ffffff
+    hex: "ffffff"
   color2:
     name: Aero Orange
-    hex: ca5917
+    hex: "ca5917"
   color3:
     name: Aero Grey
-    hex: c8c8c8
+    hex: "c8c8c8"
   color4:
     name: Aero Gold
-    hex: c0a02f
+    hex: "c0a02f"
 
 wallpaper: 
   name: Aero
