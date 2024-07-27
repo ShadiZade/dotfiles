@@ -48,7 +48,7 @@ terminal-art () {
 	# what is this?
 #	echo -n
  #   }
-    echo -n "$(date +"%d %B %Y")"
+    echo -n "$(date +%A), $(date +"%d %B %Y")"
     echo ", $(cat "$usdd/today-date-hijri")"
     cat "$usdd/today-date-french"
     ~/Repositories/communist-calendar/fetch-events.sh
@@ -251,7 +251,7 @@ cat-donefiles () {
 
 ## fzf-dir
 fzf-dir () {
-    dir_list="$(eza $hide_flag -1D --no-quotes)"
+    dir_list="$(eza $hide_flag -1DX --show-symlinks --no-quotes)"
     [ -z "$dir_list" ] \
 	&& echo -e "\033[33m:: No directories.\033[0m" \
 	&& return
@@ -408,6 +408,7 @@ function change-prompt-for-git {
 	
 function mkmd {
     projname="$(ko "$@")"
+    fontname="$(choose-font)"
     [[ -z "$projname" ]] && {
 	echolor red ":: Please enter project name."
 	return
@@ -420,8 +421,11 @@ function mkmd {
     mkdir "$projname"
     cd "$projname"
     cp ~/Misc/templates/markdown/* .
-    sed -i "s/NAMEHERE/$projname/g" ./set.sh
+    sed -i "s/NAMEHERE/$projname/g;s/FONTHERE/$fontname/g" ./set.sh
     mv ./template.md ./"$projname".md
+    git init
+    git add -A
+    git commit -m 'first commit'
     echolor yellow ":: Project ““$projname”” created."
     cd - > /dev/null
 }
