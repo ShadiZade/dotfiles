@@ -7,7 +7,7 @@ cpdf
 dupeguru
 dwdiff
 edir
-freetube-bin
+freetube-git
 gallery-dl
 gconf
 google-earth-pro

@@ -408,6 +408,7 @@ xsv
 xwallpaper
 xz
 yay
+yq
 zathura-cb
 zathura-djvu
 zathura-ps
