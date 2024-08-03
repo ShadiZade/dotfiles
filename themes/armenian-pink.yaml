@@ -1,0 +1,27 @@
+theme_name: Armenian Pink
+
+colors:
+  color1: 
+    name: Armenian Pink
+    hex: "be8e8f"
+  color2:
+    name: Mountainous Cyan
+    hex: "32494f"
+  color3:
+    name: Sandy Beige
+    hex: "d0b987"
+  color4: 
+    name: Alarm Red
+    hex: "ff0000"
+  color5:
+    name: Dark Armenian Pink
+    hex: "bd6965"
+  
+wallpaper: 
+  name: To The Defense Front
+  path: "$HOME/Pictures/wallpapers/use/eranuhi-aslamazyan-to-the-defense-front.jpg"
+
+files:
+  rofi: "$HOME/Repositories/dotfiles/rofi/themes/armenian-pink.rasi"
+  polybar: "$HOME/Repositories/dotfiles/polybar/themes/armenian-pink.ini"
+  dunst: "$HOME/Repositories/dotfiles/dunst/themes/armenian-pink"
