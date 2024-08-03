@@ -1,0 +1,27 @@
+theme_name: Bazonka Chocolate
+
+colors:
+  color1: 
+    name: Bazonka Chocolate
+    hex: "452c1c"
+  color2:
+    name: Aura Pink
+    hex: "bd9a8d"
+  color3:
+    name: Unadulterated Cacao
+    hex: "0b0603"
+  color4: 
+    name: Alarm Red
+    hex: "ff0000"
+  color5:
+    name: Dark Bazonka Chocolate
+    hex: "2c1c12"
+  
+wallpaper: 
+  name: Bazonka Chocs
+  path: "$HOME/Pictures/wallpapers/use/bazonka-chocs.jpg"
+
+files:
+  rofi: "$HOME/Repositories/dotfiles/rofi/themes/bazonka-chocolate.rasi"
+  polybar: "$HOME/Repositories/dotfiles/polybar/themes/bazonka-chocolate.ini"
+  dunst: "$HOME/Repositories/dotfiles/dunst/themes/bazonka-chocolate"
