@@ -1,0 +1,27 @@
+theme_name: Brewers’ Marble
+
+colors:
+  color1: 
+    name: Brewers’ Marble
+    hex: "392c1c"
+  color2:
+    name: Aura Pink
+    hex: "bd9a8d"
+  color3:
+    name: Unadulterated Cacao
+    hex: "0b0603"
+  color4: 
+    name: Alarm Red
+    hex: "ff0000"
+  color5:
+    name: Dark Bazonka Chocolate
+    hex: "2c1c12"
+  
+wallpaper: 
+  name: Bazonka Chocs
+  path: "$HOME/Pictures/wallpapers/use/loring-wyle-brewers.jpg"
+
+files:
+  rofi: "$HOME/Repositories/dotfiles/rofi/themes/brewers-marble.rasi"
+  polybar: "$HOME/Repositories/dotfiles/polybar/themes/brewers-marble.ini"
+  dunst: "$HOME/Repositories/dotfiles/dunst/themes/brewers-marble"
