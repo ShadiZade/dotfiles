@@ -23,6 +23,7 @@ picom &
 xwallpaper --zoom "$lin_wallpaper" &
 fcitx5 -d &
 copyq &
+flameshot &
 emacs --daemon &
 
 killall battery-warner.sh
