@@ -49,7 +49,8 @@ terminal-art () {
 #	echo -n
  #   }
     echo -n "$(date +%A), $(date +"%d %B %Y")"
-    [[ ! -z "$(cat "$usdd/today-date-hijri")" ]] && echo ", $(cat "$usdd/today-date-hijri")"
+    [[ ! -z "$(cat "$usdd/today-date-hijri")" ]] && echo -n ", $(cat "$usdd/today-date-hijri")"
+    echo
     cat "$usdd/today-date-french"
     ~/Repositories/communist-calendar/fetch-events.sh
     cat "$usdd/qotd" | cowsay -f none -W 140

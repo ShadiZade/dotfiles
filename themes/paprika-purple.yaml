@@ -18,7 +18,7 @@ colors:
     hex: "390814"
 wallpaper: 
   name: Soul Essence 2
-  path: "$HOME/Pictures/wallpapers/use/essence-2.png"
+  path: "$HOME/.local/share/user-scripts/wallpapers/essence-2.png"
 
 files:
   rofi: "$HOME/Repositories/dotfiles/rofi/themes/paprika-purple.rasi"

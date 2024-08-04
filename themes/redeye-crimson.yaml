@@ -18,7 +18,7 @@ colors:
     hex: "5d1110"
 wallpaper: 
   name: Redeyes
-  path: "$HOME/Pictures/wallpapers/use/redeyes.jpg"
+  path: "$HOME/.local/share/user-scripts/wallpapers/redeyes.jpg"
 
 files:
   rofi: "$HOME/Repositories/dotfiles/rofi/themes/redeye-crimson.rasi"

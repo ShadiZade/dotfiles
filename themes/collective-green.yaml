@@ -18,7 +18,7 @@ colors:
     hex: "213127"
 wallpaper: 
   name: Collective Terrace
-  path: "$HOME/Pictures/wallpapers/use/collective-terrace.jpg"
+  path: "$HOME/.local/share/user-scripts/wallpapers/collective-terrace.jpg"
 
 files:
   rofi: "$HOME/Repositories/dotfiles/rofi/themes/collective-green.rasi"

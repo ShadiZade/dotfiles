@@ -18,7 +18,7 @@ colors:
     hex: "6a7c52"
 wallpaper: 
   name: Forestbeam
-  path: "$HOME/Pictures/wallpapers/use/forestbeam.jpg"
+  path: "$HOME/.local/share/user-scripts/wallpapers/forestbeam.jpg"
 
 files:
   rofi: "$HOME/Repositories/dotfiles/rofi/themes/forestbeam-green.rasi"

@@ -18,7 +18,7 @@ colors:
     hex: "1b1a21"
 wallpaper: 
   name: Industrial 2058
-  path: "$HOME/Pictures/wallpapers/use/industrial-2058.jpg"
+  path: "$HOME/.local/share/user-scripts/wallpapers/industrial-2058.jpg"
 
 files:
   rofi: "$HOME/Repositories/dotfiles/rofi/themes/industrial-black.rasi"

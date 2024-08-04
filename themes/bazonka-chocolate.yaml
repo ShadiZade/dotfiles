@@ -19,7 +19,7 @@ colors:
   
 wallpaper: 
   name: Bazonka Chocs
-  path: "$HOME/Pictures/wallpapers/use/bazonka-chocs.jpg"
+  path: "$HOME/.local/share/user-scripts/wallpapers/bazonka-chocs.jpg"
 
 files:
   rofi: "$HOME/Repositories/dotfiles/rofi/themes/bazonka-chocolate.rasi"

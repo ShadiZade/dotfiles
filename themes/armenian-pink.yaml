@@ -19,7 +19,7 @@ colors:
   
 wallpaper: 
   name: To The Defense Front
-  path: "$HOME/Pictures/wallpapers/use/eranuhi-aslamazyan-to-the-defense-front.jpg"
+  path: "$HOME/.local/share/user-scripts/wallpapers/eranuhi-aslamazyan-to-the-defense-front.jpg"
 
 files:
   rofi: "$HOME/Repositories/dotfiles/rofi/themes/armenian-pink.rasi"

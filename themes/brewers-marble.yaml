@@ -19,7 +19,7 @@ colors:
   
 wallpaper: 
   name: Bazonka Chocs
-  path: "$HOME/Pictures/wallpapers/use/loring-wyle-brewers.jpg"
+  path: "$HOME/.local/share/user-scripts/wallpapers/loring-wyle-brewers.jpg"
 
 files:
   rofi: "$HOME/Repositories/dotfiles/rofi/themes/brewers-marble.rasi"
