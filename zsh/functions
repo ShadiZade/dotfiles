@@ -170,17 +170,19 @@ k () {
 
 ## dr
 dr () {
-    basename="$(random-string)"
-    [ -z "$2" ] || basename="$2"
-    wget -nc -O "$basename" -- "$1"
-    ext="$(extension-determiner "$basename")"
-    [[ -z "$ext" ]] && {
-	echolor red ":: File type for ““$2”” not detected. Please enter extension manually."
-	echo -ne "\033[37m>>> \033[0m"
+    for j in "${@}"
+    do
+	basename="$(random-string)"
+	wget -nc --no-use-server-timestamps -O "$basename" -- "$j"
+	ext="$(extension-determiner "$basename")"
+	[[ -z "$ext" ]] && {
+	echolor red-aquamarine ":: File type for ““$basename”” not detected. Please enter extension manually."
+	echolor white ">>> " 1
 	read -r ext
 	    ext=".$ext"
     }
-    mv "$basename" "$basename$ext"
+	mv "$basename" "$basename$ext"
+    done
 }
 
 ## lv
