@@ -173,7 +173,7 @@ dr () {
     for j in "${@}"
     do
 	basename="$(random-string)"
-	wget -nc --no-use-server-timestamps -O "$basename" -- "$j"
+	wget -nc --no-use-server-timestamps -O "$basename" -- "$j" || continue
 	ext="$(extension-determiner "$basename")"
 	[[ -z "$ext" ]] && {
 	echolor red-aquamarine ":: File type for ““$basename”” not detected. Please enter extension manually."
