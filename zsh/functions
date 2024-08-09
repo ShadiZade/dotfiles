@@ -522,4 +522,11 @@ function ws {
     }
 }
 
+function all-colors {
+    IFS=$'\n'
+    for j in $(xsv select -n 1 "$usdd"/echolors.csv)
+    do
+	eval echolor "$j" "$j"
+    done
+}
 # TODO convert all \033 to echolor
