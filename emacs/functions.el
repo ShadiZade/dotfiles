@@ -97,6 +97,15 @@
 	    (format-time-string "%Y-%m-%d")))
   (olivetti-mode)))
 
+(defun shadi/sign ()
+  (interactive)
+  (shell-command
+   "echo -n '——— Shadi, '; date '+%A %Y/%m/%d %H:%M:%S %Z'"
+   (current-buffer))
+  (end-of-visual-line)
+  (newline)
+  (newline))
+
 (defun shadi/open-org-task ()
   (interactive)
   (find-file "~/Misc/org/task.org"))
@@ -104,6 +113,12 @@
 (defun shadi/open-org-tiasut ()
   (interactive)
   (find-file "~/Misc/org/tiasut.org"))
+
+(defun shadi/open-notebook ()
+  (interactive)
+  (find-file "~/Archives/Personal/notebook/notebook.md")
+  (end-of-buffer)
+  (olivetti-mode))
 
 (defun company-refresh-and-complete ()
   (interactive)
@@ -182,3 +197,4 @@
 (defun shadi/dired/user-script-data ()
   (interactive)
   (dired "~/.local/share/user-scripts"))
+
