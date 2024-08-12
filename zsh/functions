@@ -301,15 +301,13 @@ submv () {
     [ -z "$1" ] \
 	&& dir="."
     fl="$(eza --no-quotes -1fX --show-symlinks "$dir" | sed '/^$/d' | sort | fzf)"
-    [ -z "$fl" ] \
-	&& echo -e "\033[33m:: Nothing selected.\033[0m" \
-	&& return
+    [ -z "$fl" ] && return
     file_ext="$(echo "$fl" | awk -F '.' '{print $NF}')"
     fw="$(echo "$dir/$fl")"
     realpath "$fl" | ←
     echo -e "\033[33m:: Opening \033[37m$fw\033[0m"
     case "$file_ext" in
-	pdf|ps|djvu|epub)
+	pdf|ps|djvu)
 	    rdo zathura "$fw" ;;
 	mp3|wav|wmv|flv|flac|opus|ogg)
             mpv --no-audio-display "$fw" ;;
@@ -321,6 +319,8 @@ submv () {
 	    bat "$fw" ;;
 	csv)
 	    csvlens "$fw" ;;
+	epub)
+	    echolor red ":: Can't open epub files" ;;
 	*)
 	    rdo xdg-open "$fw" ;;
     esac
