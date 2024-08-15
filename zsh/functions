@@ -307,7 +307,7 @@ submv () {
     realpath "$fl" | ←
     echo -e "\033[33m:: Opening \033[37m$fw\033[0m"
     case "$file_ext" in
-	pdf|ps|djvu)
+	pdf|ps|djvu|epub)
 	    rdo zathura "$fw" ;;
 	mp3|wav|wmv|flv|flac|opus|ogg)
             mpv --no-audio-display "$fw" ;;
@@ -319,8 +319,6 @@ submv () {
 	    bat "$fw" ;;
 	csv)
 	    csvlens "$fw" ;;
-	epub)
-	    echolor red ":: Can't open epub files" ;;
 	*)
 	    rdo xdg-open "$fw" ;;
     esac

@@ -145,3 +145,4 @@
   :hook (org-mode . org-bullets-mode))
 
 (use-package elfeed)
+(put 'set-goal-column 'disabled nil)
