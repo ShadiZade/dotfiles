@@ -204,6 +204,38 @@ super + shift + b
     for j in {1..5}; do killall xdg-desktop-portal; done; ~/Repositories/scripts/sound-effects.sh "jumpy-laser"
 
 
+############################################ frequent-words
+
+super + 0 ; super + 0
+    ~/Repositories/scripts/frequent-words.sh
+
+super + 0 ; super + 1
+    ~/Repositories/scripts/frequent-words.sh copy 1
+
+super + 0 ; super + 2
+    ~/Repositories/scripts/frequent-words.sh copy 2
+
+super + 0 ; super + 3
+    ~/Repositories/scripts/frequent-words.sh copy 3
+
+super + 0 ; super + 4
+    ~/Repositories/scripts/frequent-words.sh copy 4
+
+super + 0 ; super + 5
+    ~/Repositories/scripts/frequent-words.sh copy 5
+
+super + 0 ; super + 6
+    ~/Repositories/scripts/frequent-words.sh copy 6
+
+super + 0 ; super + 7
+    ~/Repositories/scripts/frequent-words.sh copy 7
+
+super + 0 ; super + 8
+    ~/Repositories/scripts/frequent-words.sh copy 8
+
+super + 0 ; super + 9
+    ~/Repositories/scripts/frequent-words.sh copy 9
+    
 
 
 
