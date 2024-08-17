@@ -198,3 +198,9 @@
   (interactive)
   (dired "~/.local/share/user-scripts"))
 
+(defun shadi/fw (slot)
+  (interactive)
+  (shell-command
+   (format "~/Repositories/scripts/frequent-words.sh out %s" slot)
+   (current-buffer))
+  (end-of-visual-line))

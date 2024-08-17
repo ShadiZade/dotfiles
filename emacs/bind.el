@@ -56,3 +56,14 @@
 (global-set-key (kbd "C-| e") 'emacs-lisp-mode)
 (global-set-key (kbd "C-| b") 'shell-script-mode)
 (global-set-key (kbd "C-| l") 'TeX-tex-mode)
+
+;; frequent-words
+(global-set-key (kbd "C-c 1") (lambda () (interactive) (shadi/fw 1)))
+(global-set-key (kbd "C-c 2") (lambda () (interactive) (shadi/fw 2)))
+(global-set-key (kbd "C-c 3") (lambda () (interactive) (shadi/fw 3)))
+(global-set-key (kbd "C-c 4") (lambda () (interactive) (shadi/fw 4)))
+(global-set-key (kbd "C-c 5") (lambda () (interactive) (shadi/fw 5)))
+(global-set-key (kbd "C-c 6") (lambda () (interactive) (shadi/fw 6)))
+(global-set-key (kbd "C-c 7") (lambda () (interactive) (shadi/fw 7)))
+(global-set-key (kbd "C-c 8") (lambda () (interactive) (shadi/fw 8)))
+(global-set-key (kbd "C-c 9") (lambda () (interactive) (shadi/fw 9)))
