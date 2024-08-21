@@ -21,19 +21,27 @@ source ~/.config/zsh/aliases
 source ~/Repositories/private/wifi-creds.sh
 source ~/Repositories/private/private-aliases.sh
 
-wifi-connected-p
-PROMPT=" %F{#55ff55}%2~%f %S%F{#55ff55} 囍 %D{%H:%M} 🠦 %f%s "
-detect-extra
-[ "$extra_dirs_exist" = "y" ] || terminal-art
-setxkbmap
 export ZSH_COMPDUMP="$XDG_CACHE_HOME"/zsh/zcompdump-"$ZSH_VERSION" 
 export HISTCONTROL=ignorespace
 export EDITOR="emacsclient -nw -a emacs"
-autoload -U compinit; compinit
+PROMPT=" %F{#55ff55}%2~%f %S%F{#55ff55} 囍 %D{%H:%M} 🠦 %f%s "
+# snippet from https://gist.github.com/ctechols/ca1035271ad134841284?permalink_comment_id=3365691#file-compinit-zsh
+# autoload -U compinit; compinit
+if [[ -n ${ZDOTDIR}/.zcompdump(#qN.mh+24) ]]
+then
+    echolor green ":: Updating compinit for .zcompdump file..." 1
+    compinit
+    clear-line
+else
+    compinit -C
+fi
+detect-extra
+wifi-connected-p
+[ "$extra_dirs_exist" = "y" ] || terminal-art
+setxkbmap
 compdef _gnu_generic mkdir
-compdef '_files -g "*.(mp4|mkv|avi|mp3|ogg|flac)"' mpv
-compdef '_files -g "*.(pdf|ps)"' zathura
+compdef '_files -g "*.(mp4|mkv|avi|mp3|ogg|flac|wmv)"' mpv
+compdef '_files -g "*.(pdf|ps|djvu|epub)"' zathura
 # file location was changed from ~/.zshrc to ~/.config/zsh/.zshrc
 # this was done by adding the following line to /etc/zsh/zshenv
 # export ZDOTDIR="$HOME"/.config/zsh 
-
