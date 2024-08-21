@@ -29,12 +29,14 @@ PROMPT=" %F{#55ff55}%2~%f %S%F{#55ff55} 囍 %D{%H:%M} 🠦 %f%s "
 # autoload -U compinit; compinit
 if [[ -n ${ZDOTDIR}/.zcompdump(#qN.mh+24) ]]
 then
-    echolor green ":: Updating compinit for .zcompdump file..." 1
-    compinit
+    echolor green ":: Generating $XDG_CONFIG_HOME/zsh/.zcompdump file using compinit..." 1
+    compinit                           # working as intended?
     clear-line
+    touch ${ZDOTDIR}/.zcompdump        # bad idea?
 else
     compinit -C
 fi
+# end snippet
 detect-extra
 wifi-connected-p
 [ "$extra_dirs_exist" = "y" ] || terminal-art
