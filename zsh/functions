@@ -450,6 +450,7 @@ function pdftoimg {
 	echolor blue-yellow ":: Page no. ““$i”” converted."
 	((i++))
     done
+    unset IFS
 }
 
 function xmmv {
@@ -526,5 +527,6 @@ function all-colors {
     do
 	eval echolor "$j" "$j"
     done
+    unset IFS
 }
 # TODO convert all \033 to echolor

@@ -31,9 +31,9 @@ export HISTCONTROL=ignorespace
 export EDITOR="emacsclient -nw -a emacs"
 autoload -U compinit; compinit
 compdef _gnu_generic mkdir
-compdef '_files -g "*.acsm"' knock
 compdef '_files -g "*.(mp4|mkv|avi|mp3|ogg|flac)"' mpv
 compdef '_files -g "*.(pdf|ps)"' zathura
 # file location was changed from ~/.zshrc to ~/.config/zsh/.zshrc
 # this was done by adding the following line to /etc/zsh/zshenv
 # export ZDOTDIR="$HOME"/.config/zsh 
+
