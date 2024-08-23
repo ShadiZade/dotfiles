@@ -211,7 +211,7 @@ wg () {
 	}
 	mv "$outname" "$outname$ext"
     }
-    sfx done
+    sfx done 110
 }
 
 ## netc
