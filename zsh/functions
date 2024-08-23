@@ -211,6 +211,7 @@ wg () {
 	}
 	mv "$outname" "$outname$ext"
     }
+    sfx done
 }
 
 ## netc
@@ -529,4 +530,10 @@ function all-colors {
     done
     unset IFS
 }
+
+random-file () {
+    [[ "$(fd -d 1 "$1" | wc -l)" -eq 0 ]] && return
+    fd -i -d 1 "$1" | sed -n "$(($(random-number 5) % $(fd -d 1 "$1" | wc -l) + 1))"p
+}
+
 # TODO convert all \033 to echolor
