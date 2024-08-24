@@ -1,4 +1,3 @@
-authy
 bgs-git
 buku
 cmatrix-git
@@ -10,8 +9,6 @@ edir
 freetube-git
 gallery-dl
 gconf
-google-earth-pro
-heroic-games-launcher-bin
 jmtpfs
 luckybackup
 manjaro-firmware
@@ -40,7 +37,6 @@ systemd-fsck-silent
 tabbed
 taffy
 telegram-desktop-bin
-thunderbird-bin
 ttf-amiri
 ttf-arabeyes-fonts
 ttf-lxgw-wenkai
@@ -53,5 +49,3 @@ windscribe
 xdg-ninja-git
 xephem
 yt-dlp-git
-zathura-git
-zathura-pdf-poppler-git

@@ -80,6 +80,7 @@
 /usr/share/fonts/TTF/forgotten futurist rg it.otf: Forgotten Futurist,Forgotten Futurist Rg:style=Italic,Regular
 /usr/share/fonts/noto/NotoSansVithkuqi-Bold.ttf: Noto Sans Vithkuqi:style=Bold
 /usr/share/fonts/TTF/NotoSansNerdFontPropo-ExtraCondensedMedium.ttf: NotoSans Nerd Font Propo,NotoSans NFP,NotoSans NFP ExtCond Med:style=ExtraCondensed Medium,Regular
+/usr/share/fonts/noto/NotoSansArabicUI-Thin.ttf: Noto Sans Arabic UI,Noto Sans Arabic UI Th:style=Thin,Regular
 /usr/share/fonts/TTF/racingsansone_regular.ttf: Racing Sans One:style=Regular
 /usr/share/fonts/otf-gfs/GFSDecker.otf: GFS Decker:style=Normal
 /usr/share/fonts/noto/NotoSansLaoLooped-Black.ttf: Noto Sans Lao Looped,Noto Sans Lao Looped Black:style=Black,Regular
@@ -349,6 +350,7 @@
 /usr/share/fonts/noto/NotoSansSymbols-Thin.ttf: Noto Sans Symbols,Noto Sans Symbols Thin:style=Thin,Regular
 /usr/share/fonts/noto/NotoSansDevanagariUI-Medium.ttf: Noto Sans Devanagari UI,Noto Sans Devanagari UI Medium:style=Medium,Regular
 /usr/share/fonts/droid/DroidSansThai.ttf: Droid Sans:style=Regular
+/usr/share/fonts/noto/NotoSansArabicUI-Medium.ttf: Noto Sans Arabic UI,Noto Sans Arabic UI Md:style=Medium,Regular
 /usr/share/fonts/adobe-source-code-pro/SourceCodePro-Regular.otf: Source Code Pro:style=Regular
 /usr/share/fonts/TTF/Idealist Sans Light.otf: Idealist Sans:style=Light
 /usr/share/fonts/TTF/arabeyes/homa.ttf: Homa:style=Regular
@@ -425,6 +427,7 @@
 /usr/share/fonts/TTF/NotoSansNerdFontPropo-SemiCondensedRegular.ttf: NotoSans Nerd Font Propo,NotoSans NFP,NotoSans NFP SemCond:style=SemiCondensed Regular,Regular
 /usr/share/fonts/adobe-source-code-pro/SourceCodeVF-Italic.otf: SourceCodeVF:style=Semibold Italic
 /usr/share/fonts/mikhak/Mikhak-SemiBold.ttf: Mikhak,Mikhak SemiBold:style=SemiBold,Regular
+/usr/share/fonts/noto/NotoSansPsalterPahlavi-Regular.ttf: Noto Sans Psalter Pahlavi,Noto Sans PsaPahlavi:style=Regular
 /usr/share/fonts/otf-gfs/GFSDidotItalic.otf: GFS Didot:style=Italic
 /usr/share/fonts/TTF/Iosevka-ExtraLight.ttc: Iosevka Fixed,Iosevka Fixed XLt Ex:style=Extralight Extended,Regular
 /usr/share/fonts/TTF/sanchez_regular.ttf: Sanchez:style=Regular
@@ -490,6 +493,7 @@
 /usr/share/fonts/TTF/craftygirls_regular.ttf: Crafty Girls:style=Regular
 /usr/share/fonts/TTF/NewtSerifLight-Italic.otf: Newt Serif Light:style=Italic,Regular
 /usr/share/fonts/TTF/IBMPlexSansCondensed-BoldItalic.ttf: IBM Plex Sans Condensed:style=Bold Italic
+/usr/share/fonts/noto/NotoSansArabicUI-Regular.ttf: Noto Sans Arabic UI:style=Regular
 /usr/share/fonts/user-downloaded/bedstead/bedstead.otf: Bedstead:style=Regular
 /usr/share/fonts/TTF/JosefinSlab-SemiBoldItalic.ttf: Josefin Slab:style=SemiBold Italic
 /usr/share/fonts/noto/NotoSansKannada-Bold.ttf: Noto Sans Kannada:style=Bold
@@ -832,6 +836,7 @@
 /usr/share/fonts/TTF/NotoSansNerdFont-Medium.ttf: NotoSans Nerd Font,NotoSans NF,NotoSans NF Med:style=Medium,Regular
 /usr/share/fonts/TTF/NotoSansNerdFontPropo-CondensedMediumItalic.ttf: NotoSans Nerd Font Propo,NotoSans NFP,NotoSans NFP Cond Med:style=Condensed Medium Italic,Italic
 /usr/share/fonts/TTF/NotoSansNerdFontPropo-SemiCondensedMediumItalic.ttf: NotoSans Nerd Font Propo,NotoSans NFP,NotoSans NFP SemCond Med:style=SemiCondensed Medium Italic,Italic
+/usr/share/fonts/noto/NotoSansArabicUI-Black.ttf: Noto Sans Arabic UI,Noto Sans Arabic UI Bk:style=Black,Regular
 /usr/share/fonts/noto/NotoSansBengaliUI-Medium.ttf: Noto Sans Bengali UI,Noto Sans Bengali UI Medium:style=Medium,Regular
 /usr/share/fonts/TTF/IBMPlexSerif-SemiBoldItalic.ttf: IBM Plex Serif,IBM Plex Serif SemiBold:style=SemiBold Italic,Italic
 /usr/share/fonts/adobe-source-sans/SourceSansPro-ExtraLight.otf: Source Sans Pro,Source Sans Pro ExtraLight:style=ExtraLight,Regular
@@ -1755,6 +1760,7 @@
 /usr/share/fonts/noto/NotoNaskhArabic-Bold.ttf: Noto Naskh Arabic:style=Bold
 /usr/share/fonts/noto/NotoSansGunjalaGondi-Regular.ttf: Noto Sans Gunjala Gondi:style=Regular
 /usr/share/fonts/noto/NotoSansMayanNumerals-Regular.ttf: Noto Sans Mayan Numerals:style=Regular
+/usr/share/fonts/noto/NotoSansArabicUI-Light.ttf: Noto Sans Arabic UI,Noto Sans Arabic UI Lt:style=Light,Regular
 /usr/share/fonts/TTF/NotoSansNerdFontPropo-SemiCondensedSemiBoldItalic.ttf: NotoSans Nerd Font Propo,NotoSans NFP,NotoSans NFP SemCond SemBd:style=SemiCondensed SemiBold Italic,Italic
 /usr/share/fonts/TTF/rimouski sb.otf: Rimouski,Rimouski Sb:style=SemiBold,Regular
 /usr/share/fonts/TTF/slabo_regular.ttf: Slabo 27px:style=Regular
@@ -1831,6 +1837,7 @@
 /usr/share/fonts/TTF/NotoSansNerdFontPropo-SemiCondensedExtraBoldItalic.ttf: NotoSans Nerd Font Propo,NotoSans NFP,NotoSans NFP SemCond ExtBd:style=SemiCondensed ExtraBold Italic,Italic
 /usr/share/fonts/noto/NotoSansDuployan-Bold.ttf: Noto Sans Duployan:style=Bold
 /usr/share/fonts/TTF/Iosevka-Medium.ttc: Iosevka Fixed,Iosevka Fixed Medium Extended:style=Medium Extended Italic,Italic
+/usr/share/fonts/noto/NotoSansArabicUI-Bold.ttf: Noto Sans Arabic UI:style=Bold
 /usr/share/fonts/noto/NotoSerifGeorgian-Black.ttf: Noto Serif Georgian,Noto Serif Georgian Bk:style=Black,Regular
 /usr/share/fonts/TTF/NotoSerifNerdFont-CondensedExtraBold.ttf: NotoSerif Nerd Font,NotoSerif NF,NotoSerif NF Cond ExtBd:style=Condensed ExtraBold,Regular
 /usr/share/fonts/adobe-source-han-sans/SourceHanSansKR-Bold.otf: Source Han Sans KR,본고딕 KR:style=Bold
@@ -2072,7 +2079,6 @@
 /usr/share/fonts/noto/NotoSansSinhala-Bold.ttf: Noto Sans Sinhala:style=Bold
 /usr/share/fonts/TTF/Inconsolata-ExtraCondensedExtraBold.ttf: Inconsolata,Inconsolata Extra Condensed ExtraBold:style=Extra Condensed ExtraBold,Regular
 /usr/share/fonts/TTF/Cianan-ur-Regular.otf: Cianan\-ur:style=Regular
-/usr/share/fonts/noto/NotoSansPsalterPahlavi-Regular.ttf: Noto Sans Psalter Pahlavi:style=Regular
 /usr/share/fonts/OTF/NotoSerifCJKsc-Light.otf: Noto Serif CJK SC,Noto Serif CJK SC Light:style=Light,Regular
 /usr/share/fonts/TTF/CooperHewitt-MediumItalic.otf: Cooper Hewitt:style=Medium Italic
 /usr/share/fonts/TTF/NotoSansNerdFontPropo-SemiCondensedExtraLight.ttf: NotoSans Nerd Font Propo,NotoSans NFP,NotoSans NFP SemCond ExtLt:style=SemiCondensed ExtraLight,Regular

@@ -123,7 +123,6 @@ hck
 httrack
 hunspell-en_us
 inetutils
-inkscape
 intel-ucode
 inxi
 iproute2
@@ -142,7 +141,6 @@ kimageformats5
 kinit
 kio-extras
 kitty
-krita
 less
 lib32-libcanberra
 lib32-libva-intel-driver
@@ -183,6 +181,7 @@ manjaro-release
 manjaro-settings-manager-knotifier
 manjaro-system
 manjaro-zsh-config
+marble
 mdadm
 meld
 memtest86+
@@ -199,7 +198,6 @@ mobile-broadband-provider-info
 modemmanager
 moreutils
 mpv
-musescore
 ncdu
 neofetch
 network-manager-applet
@@ -215,7 +213,6 @@ nss-mdns
 ntfs-3g
 ntp
 numlockx
-nyxt
 okular
 openresolv
 openssh
@@ -301,7 +298,6 @@ sbcl
 scantailor-advanced
 sed
 shadow
-shellcheck
 shuffle
 smartmontools
 sof-firmware
@@ -366,7 +362,6 @@ usb_modeswitch
 usbutils
 util-linux
 vcdimager
-virtualbox
 vivaldi
 vulkan-intel
 vulkan-radeon
@@ -409,6 +404,8 @@ xwallpaper
 xz
 yay
 yq
+zathura
 zathura-cb
 zathura-djvu
+zathura-pdf-mupdf
 zathura-ps
