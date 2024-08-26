@@ -35,7 +35,7 @@ siji-git
 spectre-meltdown-checker
 systemd-fsck-silent
 tabbed
-taffy
+tagutil
 telegram-desktop-bin
 ttf-amiri
 ttf-arabeyes-fonts
