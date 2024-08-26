@@ -20,7 +20,6 @@ alias cdqb="cd ~/Aquire/books && ll"
 alias cdqm="cd ~/Aquire/music && ll"
 alias cdqp="cd ~/Aquire/pictures && ll"
 alias cdqv="cd ~/Aquire/video && ll"
-alias cdqt="cd ~/Aquire/torrents/ && ll"
 ## Athenaeum
 alias cdae="cd ~/Athenaeum/add/ && ll"
 ## Desktop
