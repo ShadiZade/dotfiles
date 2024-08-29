@@ -56,7 +56,7 @@ alias cdmo="cd ~/Misc/org/ && ll"
 alias cdmd="cd ~/Misc/diary/ && ll"
 alias cdmc="cd ~/Misc/cooking && ll"
 ## Movies
-alias cdmov="cd ~/Movies && ll"
+alias cdf="cd ~/Films && ll"
 ## Books
 alias cdb="cd ~/Books"
 alias cdba="cd ~/Books/xadd && delete-opf; ll"
