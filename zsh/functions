@@ -24,11 +24,12 @@ terminal-art () {
 	echolor green ":: Updating date..." 1
 	date +"%m-%d" > "$usdd/today-date"
 	echo -n > "$usdd/today-date-hijri"
+	echo -n > "$usdd/today-date-french"
 	fortune marxism > "$usdd/qotd"
 	clear-line
     }
     [[ "$(cat "$usdd/today-date-utc")" != "$(TZ=UTC date +%m-%d)" ]] && {
-	echo -n > "$usdd/today-date-french"
+	# vestigial test, useful to keep to track UTC time in the future
 	TZ=UTC date +"%m-%d" > "$usdd/today-date-utc"
     }
     wifi-connected-p
