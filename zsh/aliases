@@ -191,6 +191,7 @@ alias banna="~/Repositories/scripts/banna.sh"
 alias sub="~/Repositories/scripts/subtitle-downloader.sh"
 alias xv="~/Repositories/scripts/monet.sh"
 alias lin="~/Repositories/scripts/huiyin.sh"
+alias wpc="~/Repositories/scripts/webp-annihilator.sh"
 
 # files
 alias ’z="e ~/Repositories/dotfiles/zsh/zshrc"
