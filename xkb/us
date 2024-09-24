@@ -3,19 +3,19 @@ xkb_symbols "basic" {
 
     name[Group1]= "English (US)";
 
-    key <TLDE>	{[ yen,				backslash												]};
+    key <TLDE>	{[ yen,				backslash											]};
     key <AE01>	{[ 1,				exclam,				U00A1								]};
-    key <AE02>	{[ 2,				at,					U00BD								]};
+    key <AE02>	{[ 2,				at,				U00BD								]};
     key <AE03>	{[ 3,				numbersign,			U2153								]};
     key <AE04>	{[ 4,				dollar,				U00BC								]};
-    key <AE05>	{[ 5,				percent													]};
-    key <AE06>	{[ 6,				asciicircum,		U2154								]};
+    key <AE05>	{[ 5,				percent												]};
+    key <AE06>	{[ 6,				asciicircum,		        U2154								]};
     key <AE07>	{[ 7,				ampersand,			U00BE								]};
     key <AE08>	{[ 8,				asterisk,			asterisk							]};
-    key <AE09>	{[ 9,				parenleft,			parenleft							]};
-    key <AE10>	{[ 0,				parenright,			parenright							]};
+    key <AE09>	{[ 9,				parenleft,			parenleft,                        U27EE				]};
+    key <AE10>	{[ 0,				parenright,			parenright,			  U27EF				]};
     key <AE11>	{[ minus,			underscore,			asterisk							]};
-    key <AE12>	{[ equal,			plus,				notequal,			U2248			]};
+    key <AE12>	{[ equal,			plus,				notequal,			  U2248	         		]};
 
     key <AD01>	{[ q,				Q,                                      U2190						]};
     key <AD02>	{[ w,				W												]};
@@ -50,9 +50,9 @@ xkb_symbols "basic" {
     key <AB05>	{[ b,				B, 					U2235	     					]};
     key <AB06>	{[ n,				N,					U2013								]};
     key <AB07>	{[ m,				M,					U2014								]};
-    key <AB08>	{[ comma,			less,				U2019								]};
-    key <AB09>	{[ period,			greater,			U2022								]};
-    key <AB10>	{[ slash,			question,			U00BF,				U203D			]};
+    key <AB08>	{[ comma,			less,				        U2019,                          U201A				]};
+    key <AB09>	{[ period,			greater,		     	        U2022								]};
+    key <AB10>	{[ slash,			question,			        U00BF,				U203D    			]};
 
     include "level3(ralt_switch)"
 };
