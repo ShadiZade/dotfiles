@@ -165,39 +165,6 @@
   (interactive)
   (setq bidi-display-reordering nil))
 
-;; dired
-
-(defun shadi/dired/notes ()
-  "Opens my notes directory in dired."
-  (interactive)
-  (dired "~/Misc/notes"))
-
-(defun shadi/dired/diary ()
-  "Opens my diary directory in dired."
-  (interactive)
-  (dired "~/Misc/diary"))
-
-(defun shadi/dired/org ()
-  "Opens my notes directory in dired."
-  (interactive)
-  (dired "~/Misc/org"))
-
-(defun shadi/dired/courses ()
-  (interactive)
-  (dired "~/Study/uni/courses"))
-
-(defun shadi/dired/marxism ()
-  (interactive)
-  (dired "~/Study/marxism/current"))
-
-(defun shadi/dired/writings ()
-  (interactive)
-  (dired "~/Projects/writings/articles/wip"))
-
-(defun shadi/dired/user-script-data ()
-  (interactive)
-  (dired "~/.local/share/user-scripts"))
-
 (defun shadi/fw (slot)
   (interactive)
   (shell-command
