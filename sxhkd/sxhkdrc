@@ -31,11 +31,11 @@ super + shift + Delete
 
 # reload sxhkd configs:
 super + shift + s
-	pkill sxhkd; sxhkd
+	pkill sxhkd; sxhkd; notify-send -t 2000 "Reloading sxhkd"
 
 # volume down/up
 super + alt + ctrl + {Down,Up}
-	pulsemixer --change-volume {-,+}10
+       pulsemixer --change-volume {-,+}10
 
 # volume mute/100
 super + alt + ctrl + {slash,BackSpace}
