@@ -147,13 +147,15 @@
   (interactive)
   (run-script-in-same-dir "./set.sh"))
 
-(defun shadi/arabic-rtl ()
+(defun shadi/text-force-rtl ()
   (interactive)
-  (setq bidi-display-reordering t))
+  (setq bidi-display-reordering t)
+  (message "All text forced RTL"))
 
-(defun shadi/arabic-ltr ()
+(defun shadi/text-force-ltr ()
   (interactive)
-  (setq bidi-display-reordering nil))
+  (setq bidi-display-reordering nil)
+  (message "All text forced LTR"))
 
 (defun shadi/fw (slot)
   (interactive)
