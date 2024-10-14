@@ -61,15 +61,7 @@
   "Sets my emacs Arabic font and size."
   (interactive)
   (set-fontset-font "fontset-default" 'arabic
-		    (font-spec :family "Kawkab Mono" :size arabic-font-size)))
-
-(defun shadi/arabic-font-large ()
-  (interactive)
-  (shadi/set-arabic-font '16))
-
-(defun shadi/arabic-font-normal ()
-  (interactive)
-  (shadi/set-arabic-font '9))
+		    (font-spec :family "Amiri" :size arabic-font-size)))
 
 (defun shadi/fetch-events ()
   (interactive)
@@ -129,13 +121,11 @@
 (defun set-buffer-directionality-right ()
   (interactive)
   (setq bidi-paragraph-direction 'right-to-left)
-  (shadi/arabic-font-large)
   (message "Shifted to Arabic mode"))
 
 (defun set-buffer-directionality-left ()
   (interactive)
   (setq bidi-paragraph-direction nil)
-  (shadi/arabic-font-normal)
   (message "Exiting Arabic mode"))
 
 (defun su-read-only ()

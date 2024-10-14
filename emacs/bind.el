@@ -16,8 +16,6 @@
 (global-set-key (kbd "C-’ e h")         'shadi/edit-hook)
 (global-set-key (kbd "C-’ e b")         'shadi/edit-bind)
 (global-set-key (kbd "C-’ e o")         'shadi/edit-org)
-(global-set-key (kbd "C-’ a <up>")      'shadi/arabic-font-large)
-(global-set-key (kbd "C-’ a <down>")    'shadi/arabic-font-normal)
 (global-set-key (kbd "C-’ a <right>")   'set-buffer-directionality-right)
 (global-set-key (kbd "C-’ a <left>")    'set-buffer-directionality-left)
 (global-set-key (kbd "C-’ a <prior>")   'shadi/arabic-ltr)
