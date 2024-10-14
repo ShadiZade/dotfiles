@@ -8,8 +8,8 @@ ln -sf ~/Repositories/private/elfeed-feeds.el ~/.config/emacs/
 mkdir ~/.config/zsh/
 ln -sf ~/Repositories/dotfiles/zsh/{aliases,extra,functions,variables}  ~/.config/zsh/
 ln -sf ~/Repositories/dotfiles/zsh/zshrc  ~/.config/zsh/.zshrc
-mkdir ~/.config/sxiv
-ln -sf ~/Repositories/dotfiles/sxiv/key-handler ~/.config/sxiv
+mkdir ~/.config/sxiv/exec
+ln -sf ~/Repositories/dotfiles/sxiv/key-handler ~/.config/sxiv/exec
 mkdir -p ~/.config/rofi/themes
 ln -sf ~/Repositories/dotfiles/rofi/config.rasi ~/.config/rofi
 ln -sf ~/Repositories/dotfiles/rofi/themes/* ~/.config/rofi/themes
@@ -42,3 +42,5 @@ ln -sf ~/Repositories/dotfiles/mpv/*conf ~/.config/mpv/
 ln -sf ~/Repositories/dotfiles/mpv/scripts/* ~/.config/mpv/scripts/
 ln -sf ~/Repositories/dotfiles/mpv/script-modules/* ~/.config/mpv/script-modules/
 sudo ln -sf ~/Repositories/dotfiles/profiles/profile /etc/profile 
+mkdir -p ~/.config/nsxiv/exec
+ln -sf ~/Repositories/dotfiles/nsxiv/key-handler ~/.config/nsxiv/exec/
