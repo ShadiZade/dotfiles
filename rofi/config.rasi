@@ -4,4 +4,4 @@ configuration {
 	show-icons: true;
 	icon-theme: "Vimix-Ruby";
 }
-@theme "/home/oak/.config/rofi/current-theme.rasi"
+@theme "~/.config/rofi/current-theme.rasi"

@@ -35,11 +35,11 @@ super + shift + s
 
 # volume down/up
 super + alt + ctrl + {Down,Up}
-       pulsemixer --change-volume {-,+}10
+        pamixer --allow-boost {-d 10,-i 10}
 
 # volume mute/100
 super + alt + ctrl + {slash,BackSpace}
-	pulsemixer {--toggle-mute,--set-volume 100}
+        pamixer {-t,--set-volume 50}
 
 # brightness down/up
 super + alt + ctrl + {minus,equal}

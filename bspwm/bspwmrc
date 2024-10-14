@@ -13,13 +13,13 @@
 #
 ###################################################################################################
 ####### symlink location: ~/.config/bspwm/ ########################################################
-
 source ~/Repositories/scripts/bspwm-theme.sh
 source ~/.local/share/user-scripts/current-theme
 source ~/Repositories/scripts/essential-functions.sh
 
+cmp -s /etc/hostname <(echo "zookeeper") && xrandr -s 1280x720
 pgrep -x sxhkd > /dev/null || sxhkd &
-picom &
+picom --config ~/.config/picom/picom.conf &
 xwallpaper --zoom "$lin_wallpaper" &
 fcitx5 -d &
 copyq &

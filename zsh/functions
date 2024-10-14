@@ -75,7 +75,7 @@ pg () {
     i=1
     while true;
     do echo -e "\033[31m:: Attempting...\033[0m ($i)"
-       ping -qc 1 thecradle.co && break
+       ping -qc 1 archlinux.org && break
        i=$((i+1))
        sleep 3
     done
