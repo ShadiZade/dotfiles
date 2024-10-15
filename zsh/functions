@@ -503,7 +503,7 @@ function ws {
 	wifi-connected-p
 	echolor purple-yellow ":: Network: ““$DEFAULT_WIFI_NETWORK””\n:: Password: ““$DEFAULT_WIFI_PASSWORD””"
 	[[ "$wc_p" -eq 0 ]] && {
-	    echolor green ":: Currently connected to ““$(nmcli device status | grep '^wlp4s0' | awk '{print $4}')””"
+	    echolor green ":: Currently connected to ““$(nmcli device status | grep '^wlp' | awk '{print $4}')””"
 	}
 	echolor yellow ":: Reset to default? (y/N) " 1
 	reset_p="n"

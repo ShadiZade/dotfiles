@@ -44,3 +44,10 @@ ln -sf ~/Repositories/dotfiles/mpv/script-modules/* ~/.config/mpv/script-modules
 sudo ln -sf ~/Repositories/dotfiles/profiles/profile /etc/profile 
 mkdir -p ~/.config/nsxiv/exec
 ln -sf ~/Repositories/dotfiles/nsxiv/key-handler ~/.config/nsxiv/exec/
+mkdir -p ~/.config/rofimoji/used-files/{latin,languages,ipa}
+ln -sf ~/Repositories/dotfiles/rofimoji/rofimoji.rc ~/.config/rofimoji/
+ln -sf ~/Repositories/dotfiles/rofimoji/used-files/languages/* ~/.config/rofimoji/used-files/languages/
+ln -sf ~/Repositories/dotfiles/rofimoji/used-files/latin/* ~/.config/rofimoji/used-files/latin/
+ln -sf ~/Repositories/dotfiles/rofimoji/used-files/ipa/* ~/.config/rofimoji/used-files/ipa/
+mkdir ~/.config/zathura/
+ln -sf ~/Repositories/dotfiles/zathura/zathurarc ~/.config/zathura/
