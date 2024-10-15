@@ -54,7 +54,7 @@ terminal-art () {
     echo
     cat "$usdd/today-date-french"
     ~/Repositories/communist-calendar/fetch-events.sh
-    cat "$usdd/qotd" | cowsay -f none -W 140
+    cat "$usdd/qotd" | cowsay -f none -W $(tput cols)
 }
 
 ## disown
