@@ -137,8 +137,7 @@ knock () {
 
 ## mk
 mk () {
-    ~/Repositories/scripts/kebabization.sh "$@"
-    mkdir -pv $(cat "$usdd/kebab")
+    mkdir -pv $(kebab "$@")
 }
 
 ## delete-opf
@@ -200,7 +199,7 @@ wg () {
     [[ -z "$2" ]] && {
 	wget --continue --no-use-server-timestamps -nc -t 0 -- "$1"
     } || {
-	outname="$(ko "$2")"
+	outname="$(kebab "$2")"
 	wget --continue --no-use-server-timestamps -O "$outname" -t 0 -- "$1" || return
 	echolor yellow ":: Determining extension..."
 	ext="$(extension-determiner "$outname")"
@@ -410,7 +409,7 @@ function change-prompt-for-git {
 }
 	
 function mkmd {
-    projname="$(ko "$@")"
+    projname="$(kebab "$@")"
     fontname="$(choose-font)"
     [[ -z "$projname" ]] && {
 	echolor red ":: Please enter project name."
@@ -438,7 +437,7 @@ function pdftoimg {
 	echolor red ":: No input."
 	return
     }
-    burstdir="slides-"$(ko "$1" | sed 's/-pdf//g')""
+    burstdir="slides-"$(kebab "$1" | sed 's/-pdf//g')""
     mkdir ./"$burstdir"
     cd ./"$burstdir"
     pdftk ../"$1" burst output "$burstdir-" && {
@@ -446,9 +445,9 @@ function pdftoimg {
     }
     IFS=$'\n'
     i=1
-    for j in $(eza -1f *pdf)
+    for j in *pdf
     do
-	pdftoppm -jpeg "$j" "img-$(ko "$j" | sed 's/-pdf//g')"
+	pdftoppm -jpeg "$j" "img-$(kebab "$j" | sed 's/-pdf//g')"
 	echolor blue-yellow ":: Page no. ““$i”” converted."
 	((i++))
     done
