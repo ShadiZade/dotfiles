@@ -6,12 +6,18 @@
 (load-theme 'gruvbox t)
 ; (load-theme 'atom-one-dark t)
 
+(setq-default abbrev-mode t)
+(abbrev-mode nil)
+(setq abbrev-suggest 1)
+(setq abbrev-file-name "~/Repositories/private/abbrev_defs")
+(setq save-abbrevs 'silently)
+(read-abbrev-file nil)
+
 (load "~/.config/emacs/functions.el")
 (load "~/.config/emacs/macros.el")
 (load "~/.config/emacs/bind.el")
 (load "~/.config/emacs/hooks.el")
 (load "~/.config/emacs/org.el")
- 
 
 (setq inhibit-startup-message t)
 (scroll-bar-mode -1)
