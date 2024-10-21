@@ -250,3 +250,4 @@ alias shellcheck="shellcheck -e SC1111"
 alias ййй="sudo ln -sf ~/Repositories/dotfiles/xkb/us ~/Repositories/dotfiles/xkb/ara /usr/share/X11/xkb/symbols/"
 alias tt="tagutil"
 alias baw="bat --wrap never"
+alias sl='ln -s'
