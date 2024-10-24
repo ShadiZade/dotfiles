@@ -536,4 +536,9 @@ random-file () {
     fd -i -d 1 "$1" | sed -n "$(($(random-number 5) % $(fd -d 1 "$1" | wc -l) + 1))"p
 }
 
+function sl {
+    echolor purple-aquamarine ":: Linking ““$(realpath "$1")””"
+    echolor purple-aquamarine ":: To ““$(realpath "${2:-.}")””"
+    ln -s "$(realpath "$1")" "$(realpath "${2:-.}")"
+}
 # TODO convert all \033 to echolor
