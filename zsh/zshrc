@@ -39,7 +39,7 @@ fi
 # end snippet
 detect-extra
 wifi-connected-p
-[ "$extra_dirs_exist" = "y" ] || terminal-art
+[[ "$extra_dirs_exist" = "y" ]] || terminal-art
 setxkbmap
 compdef _gnu_generic mkdir
 compdef '_files -g "*.(mp4|mkv|avi|mp3|ogg|flac|wmv)"' mpv

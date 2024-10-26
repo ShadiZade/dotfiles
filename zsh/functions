@@ -19,6 +19,7 @@ source ~/Repositories/scripts/essential-functions.sh
 source ~/Repositories/private/private-aliases.sh
 
 terminal-art () {
+    last-updated
     touch "$usdd/qotd" "$usdd/today-date"
     [[ "$(cat "$usdd/today-date")" != "$(date +%m-%d)" ]] && {
 	echolor green ":: Updating date..." 1
@@ -542,3 +543,9 @@ function sl {
     ln -s "$(realpath "$1")" "$(realpath "${2:-.}")"
 }
 # TODO convert all \033 to echolor
+
+function last-updated {
+    lud="$(datediff -f %d $(tac /var/log/pacman.log | grep -m 1 upgraded | awk -F 'T' '{print $1}' | tr -d '[') $(date +"%Y-%m-%d"))"
+    [[ "$lud" -lt 2 ]] && return
+    echolor beige-blue ":: System was last updated ““$lud”” days ago."
+}
