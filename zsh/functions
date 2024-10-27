@@ -555,9 +555,9 @@ function sl {
 # TODO convert all \033 to echolor
 
 function last-updated {
-    lud="$(tac /var/log/pacman.log | grep -m 1 'full system upgrade' | awk -F 'T' '{print $1}' | tr -d '[')"
-    [[ "$(datediff -f %d $lud $(date +"%Y-%m-%d"))" -lt 2 ]] && return
-    echolor beige-blue ":: System was last updated ““$(datediff -f %d $lud $(date +"%Y-%m-%d"))”” days ago."
+    lud="$(datediff -f %d $(tac /var/log/pacman.log | grep -m 1 'full system upgrade' | awk -F 'T' '{print $1}' | tr -d '[') $(date +"%Y-%m-%d"))"
+    [[ "$lud" -lt 2 ]] && return
+    echolor beige-blue ":: System was last updated ““$lud”” days ago."
 }
 
 update-wsc () {
