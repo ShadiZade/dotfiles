@@ -540,6 +540,14 @@ random-file () {
 }
 
 function sl {
+    [[ ! -z "$3" ]] && {
+	echolor red ":: Error: more than two arguments!"
+	return 1
+    }
+    [[ ! -e "$(realpath "$1")" ]] && {
+	echolor red ":: ““$(realpath $1)”” does not exist!"
+	return 1
+    }
     echolor purple-aquamarine ":: Linking ““$(realpath "$1")””"
     echolor purple-aquamarine ":: To ““$(realpath "${2:-.}")””"
     ln -s "$(realpath "$1")" "$(realpath "${2:-.}")"
@@ -547,27 +555,28 @@ function sl {
 # TODO convert all \033 to echolor
 
 function last-updated {
-    lud="$(datediff -f %d $(tac /var/log/pacman.log | grep -m 1 upgraded | awk -F 'T' '{print $1}' | tr -d '[') $(date +"%Y-%m-%d"))"
+    lud="$(tac /var/log/pacman.log | grep -m 1 'full system upgrade' | awk -F 'T' '{print $1}' | tr -d '[')"
     [[ "$lud" -lt 2 ]] && return
-    echolor beige-blue ":: System was last updated ““$lud”” days ago."
+    echolor beige-blue ":: System was last updated ““$(datediff -f %d $lud $(date +"%Y-%m-%d"))”” days ago."
 }
 
 update-wsc () {
     spiderdir="$HOME/Study/academia/wsc"
     curspider="${${${$(fd -- spider-catalog "$spiderdir" | sort -Vr | sed 1q)##*-}%.*}:-19700101}"
-    [[ "$curspider" = "$(date-string ymd)" ]] && {
+    yester="$(date -d yesterday +"%Y%m%d")"
+    [[ "$curspider" = "$yester" ]] && {
 	echolor green-white ":: ✓  ““World Spider Catalog”” is up to date. Current edition: ““$curspider””"
 	return
     }
     echolor blue  ":: ❯❯ Updating ““World Spider Catalog”” now. " 1
     echolor red "$curspider ““→”” " 1
-    echolor green "$(date-string ymd)" 1
-    wget --no-use-server-timestamps -O "$spiderdir/spider-catalog-$(date-string ymd).csv" -nc -q -t 0 -- \
-	  "https://wsc.nmbe.ch/resources/species_export_$(date-string ymd).csv"
+    echolor green "$yester" 1
+    wget --no-use-server-timestamps -O "$spiderdir/spider-catalog-$yester.csv" -nc -q -t 0 -- \
+	  "https://wsc.nmbe.ch/resources/species_export_$yester.csv"
     clear-line
     echolor blue ":: ✓  Updated ““World Spider Catalog””: " 1
     echolor red "$curspider ““→”” " 1
-    echolor green "$(date-string ymd)"
+    echolor green "$yester"
     [[ "$(fd -- spider-catalog "$spiderdir" | wc -l)" -gt 9 ]] && {
 	echolor beige-blue ":: There are too many versions of the WSC in ““$spiderdir””. Please clean."
     }
