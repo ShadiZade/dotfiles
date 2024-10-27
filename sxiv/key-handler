@@ -15,9 +15,12 @@
 ####### symlink location: ~/.config/sxiv/ #########################################################
 source ~/Repositories/scripts/essential-functions.sh 
 
-sort () {
-    loc="$(eza --no-quotes -1Daa "$(pwd)" | rofi -dmenu -i -p 'choose folder')"
-    [ -z "$loc" ] || mv -vn -- "$file" "$(pwd)/$loc"
+symlink () {
+    ln -s "$(realpath "$file")" . && {
+	echolor purple-aquamarine ":: Linking ““$(realpath "$file")””"
+	return 0
+    }
+    echolor red-aquamarine ":: Linking ““$(realpath "$1")”” has failed"
 }
 
 describe () {
@@ -95,7 +98,7 @@ do
         "C-t")  trash ;;
         "C-p")  copypath ;;
 	"C-c")  copyhere ;;
-        "C-s")	sort ;;
+        "C-s")	symlink ;;
         "C-d")	describe ;;
 	"C-m")  move ;;
 	"C-e")  edit ;;

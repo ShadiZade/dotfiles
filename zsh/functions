@@ -229,9 +229,11 @@ netc () {
     until [[ "$found" -eq 0 ]]
     do
 	[[ -z "$DEFAULT_WIFI_PASSWORD" ]] && {
+	    nmcli device wifi rescan
 	    nmcli device wifi connect "$DEFAULT_WIFI_NETWORK" password "$DEFAULT_WIFI_PASSWORD" \
 		  >/dev/null 2>/dev/null && found=0 || found=1
 	} || {
+ 	    nmcli device wifi rescan
 	    nmcli device wifi connect "$DEFAULT_WIFI_NETWORK" \
 		  >/dev/null 2>/dev/null && found=0 || found=1
 	}
