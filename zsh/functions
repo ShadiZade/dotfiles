@@ -556,7 +556,7 @@ function sl {
 
 function last-updated {
     lud="$(tac /var/log/pacman.log | grep -m 1 'full system upgrade' | awk -F 'T' '{print $1}' | tr -d '[')"
-    [[ "$lud" -lt 2 ]] && return
+    [[ "$(datediff -f %d $lud $(date +"%Y-%m-%d"))" -lt 2 ]] && return
     echolor beige-blue ":: System was last updated ““$(datediff -f %d $lud $(date +"%Y-%m-%d"))”” days ago."
 }
 
