@@ -193,6 +193,7 @@ alias xv="~/Repositories/scripts/monet.sh"
 alias lin="~/Repositories/scripts/huiyin.sh"
 alias wpc="~/Repositories/scripts/webp-annihilator.sh"
 alias roll="~/Repositories/scripts/roll"
+alias spider="~/Repositories/scripts/spider-finder"
 
 # files
 alias ’z="e ~/Repositories/dotfiles/zsh/zshrc"
