@@ -16,8 +16,8 @@
 source ~/Repositories/scripts/essential-functions.sh 
 
 symlink () {
-    ln -s "$(realpath "$file")" . && {
-	echolor purple-aquamarine ":: Linking ““$(realpath "$file")””"
+    ln -sv "$(realpath "$file")" . && {
+	echolor purple-aquamarine ":: Linked ““$(realpath "$file")””"
 	return 0
     }
     echolor red-aquamarine ":: Linking ““$(realpath "$1")”” has failed"

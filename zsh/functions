@@ -559,26 +559,3 @@ function last-updated {
     [[ "$lud" -lt 2 ]] && return
     echolor beige-blue ":: System was last updated ““$lud”” days ago."
 }
-
-update-wsc () {
-    spiderdir="$HOME/Study/academia/wsc"
-    curspider="${${${$(fd -- spider-catalog "$spiderdir" | sort -Vr | sed 1q)##*-}%.*}:-19700101}"
-    yester="$(date -d yesterday +"%Y%m%d")"
-    [[ "$curspider" = "$yester" ]] && {
-	echolor green-white ":: ✓  ““World Spider Catalog”” is up to date. Current edition: ““$curspider””"
-	return
-    }
-    echolor blue  ":: ❯❯ Updating ““World Spider Catalog”” now. " 1
-    echolor red "$curspider ““→”” " 1
-    echolor green "$yester" 1
-    wget --no-use-server-timestamps -O "$spiderdir/spider-catalog-$yester.csv" -nc -q -t 0 -- \
-	  "https://wsc.nmbe.ch/resources/species_export_$yester.csv"
-    clear-line
-    echolor blue ":: ✓  Updated ““World Spider Catalog””: " 1
-    echolor red "$curspider ““→”” " 1
-    echolor green "$yester"
-    [[ "$(fd -- spider-catalog "$spiderdir" | wc -l)" -gt 9 ]] && {
-	echolor beige-blue ":: There are too many versions of the WSC in ““$spiderdir””. Please clean."
-    }
-    unset spiderdir
-}

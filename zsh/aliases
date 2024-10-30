@@ -194,6 +194,7 @@ alias lin="~/Repositories/scripts/huiyin.sh"
 alias wpc="~/Repositories/scripts/webp-annihilator.sh"
 alias roll="~/Repositories/scripts/roll"
 alias spider="~/Repositories/scripts/spider-finder"
+alias update-wsc="~/Repositories/scripts/update-wsc"
 
 # files
 alias ’z="e ~/Repositories/dotfiles/zsh/zshrc"
