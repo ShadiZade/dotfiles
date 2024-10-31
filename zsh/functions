@@ -256,31 +256,21 @@ cat-donefiles () {
     echo -e "$(cat * | sed 's/^/\\033[4\;37m/g;s/ is done on /\\033[0m is done on \\033[33m/g;s/$/\\033[0m/g')"
 }
 
-## fzf-dir
-fzf-dir () {
+fresco () {
     dir_list="$(eza $hide_flag -1DX --show-symlinks --no-quotes)"
-    [ -z "$dir_list" ] \
-	&& echo -e "\033[33m:: No directories.\033[0m" \
-	&& return
+    [[ -z "$dir_list" ]] && return 1
     chosen_dir="$(echo "$dir_list" | fzf)"
-    [ -z "$chosen_dir" ] \
-	&& echo -e "\033[33m:: Nothing done.\033[0m" \
-	&& return
+    [[ -z "$chosen_dir" ]] && return 1
     cd "$chosen_dir"
 }
 
 
 ## ff
-ff () {
+fresco-fresco () {
     while true
     do
-	fzf-dir
-	[ -z "$chosen_dir" ] \
-	    && break
-	[ -z "$(eza $hide_flag -1D)" ] \
-	    && break
+	fresco || break
     done
-    ll
 }
 
 ## submv
