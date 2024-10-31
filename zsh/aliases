@@ -76,7 +76,7 @@ alias cdsul="cd ~/Study/uni/lab && fzf-dir && ll"
 alias cdsm="cd ~/Study/marxism/current/ && ff"
 alias cdsa="cd ~/Study/academia/ && ff"
 ## TV
-alias cdtv="cd ~/TV && fzf-dir && ll"
+alias cdtv="cd ~/TV && fzf-dir && fd -t f -t l -d 2"
 ## Repositories
 alias cdr="cd ~/Repositories/ && fzf-dir && ll"
 alias cdrs="cd ~/Repositories/scripts && ll"
