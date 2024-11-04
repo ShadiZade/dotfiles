@@ -549,3 +549,14 @@ function last-updated {
     [[ "$lud" -lt 2 ]] && return
     echolor beige-blue ":: System was last updated ““$lud”” days ago."
 }
+
+function enzh {
+    command trans -b en:zh "$1" | tee /tmp/chinesetranslation
+    pypinyin < /tmp/chinesetranslation
+}
+
+function zhen {
+    pypinyin "$1"
+    command trans -b zh:en "$1"
+}
+

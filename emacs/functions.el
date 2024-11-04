@@ -133,6 +133,12 @@
   (su)
   (read-only-mode 0))
 
+(defun clear-scratch-buffer ()
+  (interactive)
+  (scratch-buffer)
+  (mark-whole-buffer)
+  (backward-delete-char-untabify 1))
+
 (defun run-script-in-same-dir (filename)
   (interactive)
   (save-buffer)
