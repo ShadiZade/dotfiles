@@ -116,13 +116,26 @@ key-names () {
 
 ## alarm
 alarm () {
-    echolor yellow ":: Alarm set on ““$(date +%H:%M:%S)”” for ““$1””"
+    starttime="$(date +%H:%M:%S)"
+    echolor yellow ":: Alarm set on ““$starttime”” for ““$1””"
+    willring="$(dateadd $starttime $1 2>/dev/null)"
+    [[ "$starttime" = "$willring" ]] && {
+	echolor red ":: Error! ““$1”” is an unrecognized value"
+	sfx ten-bloops
+	return 1
+    }
+    [[ -z "$willring" ]] && {
+	echolor red ":: Error! ““$1”” is an unrecognized value"
+	sfx ten-bloops
+	return 1
+    }
+    echolor yellow ":: Alarm will ring at ““$willring””"
     echolor yellow ":: Wait for alarm..." 1
     sleep "$1" 2>/dev/null || {
 	echo
-	echolor red ":: ““$1”” is an invalid value!"
+	echolor red ":: Error! ““$1”” is an unrecognized value"
 	sfx ten-bloops
-	return
+	return 1
     }
     printf '\r'
     echolor red-green ":: ALARM RINGING! IT'S ““$(date +%H:%M:%S)”” NOW!" 

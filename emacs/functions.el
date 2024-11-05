@@ -137,7 +137,8 @@
   (interactive)
   (scratch-buffer)
   (mark-whole-buffer)
-  (backward-delete-char-untabify 1))
+  (backward-delete-char-untabify 1)
+  (message "Cleared scratch buffer"))
 
 (defun run-script-in-same-dir (filename)
   (interactive)
