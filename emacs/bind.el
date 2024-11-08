@@ -33,7 +33,8 @@
 (global-set-key (kbd "C-~")             'mode-line-other-buffer)
 (global-set-key (kbd "M-<up>")          'move-text-up)
 (global-set-key (kbd "M-<down>")        'move-text-down)
-(global-set-key (kbd "C-c <backspace>")         'clear-scratch-buffer)
+(global-set-key (kbd "C-c <backspace>") 'clear-scratch-buffer)
+(global-set-key (kbd "C-=")             'full-calc)
 
 ;; dired
 (global-set-key (kbd "C-c v m n")         (lambda () (interactive)

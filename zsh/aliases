@@ -93,8 +93,6 @@ alias cdar="cd ~/Archives/Personal && ll"
 alias cdard="cd ~/Archives/Personal/documents/ && ll"
 alias cdao="cd ~/Archives/Other && ll"
 alias cdaos="cd ~/Archives/Other/safekeeping/ && ll"
-## Wallpapers
-alias cdwall="cd /usr/share/wallpapers/use && ll"
 ## Excluding
 alias cde="cd ~/Excluding/ && ll"
 alias cdep="cd ~/Excluding/podcasts && lln"
@@ -252,3 +250,4 @@ alias shellcheck="shellcheck -e SC1111"
 alias ййй="sudo ln -sf ~/Repositories/dotfiles/xkb/us ~/Repositories/dotfiles/xkb/ara /usr/share/X11/xkb/symbols/"
 alias tt="tagutil"
 alias baw="bat --wrap never"
+alias pp="pypinyin"
