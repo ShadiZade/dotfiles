@@ -9,21 +9,21 @@
 	width = (200,500)
 	height = 300
 	origin = top-right
-	offset = 11x56
+	offset = 9x44
 	transparency = 0
-	frame_width = 2
-	frame_color = "#9f773f" #color2
-	font = Monospace 8
+	frame_width = 5
+ 	frame_color = "#9f773f" #color2
+	font = Monospace 14
 	alignment = center
 	vertical_alignment = center
-	
+		
 	
     ### Display ###
 
     monitor = 0
     follow = none
     scale = 0
-    notification_limit = 20
+    notification_limit = 1
 
     ### Progress bar ###
 
