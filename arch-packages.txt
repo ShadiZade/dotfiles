@@ -1,7 +1,9 @@
+acpi
 alsa-plugins
 alsa-utils
 aspell
 aspell-en
+audacity
 base
 base-devel
 bash-completion
@@ -18,6 +20,7 @@ calibre
 cmatrix
 cowsay
 csvlens
+dateutils
 dialog
 dice
 dosfstools
@@ -30,6 +33,7 @@ fcitx5-configtool
 fcitx5-gtk
 fcitx5-lua
 fcitx5-pinyin-zhwiki
+fclones
 fd
 flameshot
 flatpak
@@ -42,11 +46,13 @@ gst-plugins-good
 imagemagick
 inetutils
 inkscape
+inxi
 jack2
 kcharselect
 kcolorchooser
 kitty
 less
+libreoffice-fresh
 linux
 linux-firmware
 linux-headers
@@ -57,9 +63,14 @@ mat2
 moreutils
 mpv
 mtools
+musescore
 neofetch
 network-manager-applet
 networkmanager
+noto-fonts
+noto-fonts-cjk
+noto-fonts-emoji
+noto-fonts-extra
 nsxiv
 ntfs-3g
 okular
@@ -75,8 +86,10 @@ otf-hermit-nerd
 otf-monaspace-nerd
 otf-opendyslexic-nerd
 otf-overpass-nerd
+pacman-contrib
 pamixer
 pandoc-cli
+pdfgrep
 pdftk
 perl-file-mimeinfo
 perl-image-exiftool
@@ -86,6 +99,7 @@ pipewire-alsa
 pipewire-docs
 pipewire-pulse
 polybar
+pypinyin
 python-pipx
 qbittorrent
 qrencode
@@ -97,12 +111,15 @@ rofi
 rofi-emoji
 rofimoji
 rsync
+scrapy
 shuffle
 snapper
 steam
 sxhkd
 sxiv
 terminus-font
+tesseract-data-chi_sim
+tesseract-data-deu
 tesseract-data-eng
 texlive-basic
 texlive-bibtexextra
@@ -198,6 +215,7 @@ vulkan-nouveau
 wget
 wpa_supplicant
 xclip
+xdg-desktop-portal-gtk
 xdg-user-dirs
 xdg-utils
 xf86-video-intel

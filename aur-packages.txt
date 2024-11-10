@@ -6,6 +6,7 @@ gallery-dl
 i3lock-color
 jmtpfs
 mikhak-fonts
+mimeo
 minecraft-launcher
 noto-fonts-sc
 otf-gfs
@@ -18,9 +19,9 @@ tagutil
 telegram-desktop-bin
 ttf-juliamono
 ttf-unifont-csur
+units
 vdhcoapp-bin
 windscribe
 xdg-ninja-git
 yay
-yay-debug
 yt-dlp-git
