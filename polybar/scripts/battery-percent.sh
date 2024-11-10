@@ -1,14 +1,10 @@
 #!/bin/bash
 
-state="$(upower -i /org/freedesktop/UPower/devices/battery_BAT1 | grep state | awk '{print $2}')"
+state="$(acpi -a | awk '{print $NF}')"
 case "$state" in
-    charging)
-	symbol=Ʇ ;;
-    discharging)
-	symbol=T ;;
-    fully-charged)
-	symbol=ꟻ ;;
-    *)
-	symbol=Ꝋ ;;
+    "on-line")
+	symbol=▲ ;;
+    "off-line")
+	symbol=▼ ;;
 esac
-echo $symbol $(upower -i /org/freedesktop/UPower/devices/battery_BAT1 | grep percentage | awk '{print $2}')
+echo $symbol $(acpi -b | sed -n 2p | awk -F ', ' '{print $2}')
