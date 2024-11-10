@@ -574,8 +574,12 @@ function zhen {
 }
 
 function glyph {
-    codepoint="$(echo -n "$1" | iconv -f utf8 -t utf32be | xxd -p | sed -E 's/^0+//g')"
-    echolor blue-beige ":: ““$1”” is ““U+$codepoint””"
+    codepoint=''
+    echo "$1" | grep -qi "^U+" && codepoint="${1#*+}"
+    [[ -z "$codepoint" ]] && {
+	codepoint="$(echo -n "$1" | iconv -f utf8 -t utf32be | xxd -p | sed -E 's/^0+//g')"
+	echolor blue-beige ":: ““$1”” is ““U+$codepoint””"
+    }
     fc-list :charset="$codepoint" | awk -F ':' '{print $2}' | awk -F ',' '{print $1}' | sort | uniq
 }
     
