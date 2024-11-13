@@ -586,3 +586,9 @@ function glyph {
 function find-font {
     fc-list | grep -i "$1" | awk -F ': ' '{print $2}' | sort | uniq
 }
+
+function pp {
+    tmpfile="/tmp/$(random-string)"
+    pypinyin "$@" | tee "$tmpfile"
+    sed '/^$/d' "$tmpfile" | tr -d '\n' | xclip -selection clipboard
+}

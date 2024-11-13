@@ -1239,6 +1239,7 @@
 /usr/share/fonts/oldschool/Mx437_TsengEVA_132_6x8.ttf: Mx437 TsengEVA 132 6x8:style=Regular
 /usr/share/fonts/noto/NotoNaskhArabic-Medium.ttf: Noto Naskh Arabic,Noto Naskh Arabic Medium:style=Medium,Regular
 /usr/share/fonts/user-fonts/NotoSansMNerdFont-CondensedLight.ttf: NotoSansM Nerd Font,NotoSansM NF,NotoSansM NF Cond Light:style=Condensed Light,Regular
+/usr/share/fonts/TTF/Symbola.ttf: Symbola:style=Regular
 /usr/share/fonts/noto/NotoSans-CondensedExtraBold.ttf: Noto Sans,Noto Sans Condensed ExtraBold:style=Condensed ExtraBold,Regular
 /usr/share/fonts/noto/NotoSerifLao-CondensedMedium.ttf: Noto Serif Lao Condensed,Noto Serif Lao Condensed Medium:style=Medium,Regular
 /usr/share/fonts/noto/NotoSerifLao-ExtraCondensedBold.ttf: Noto Serif Lao ExtraCondensed:style=Bold
@@ -3502,6 +3503,7 @@
 /usr/share/fonts/noto/NotoSerifTamil-ExtraCondensedExtraBold.ttf: Noto Serif Tamil ExtraCondensed,Noto Serif Tamil ExtraCondensed ExtraBold:style=ExtraBold,Regular
 /usr/share/fonts/user-fonts/IBMPlexSansCondensed-LightItalic.ttf: IBM Plex Sans Condensed Light:style=Italic
 /usr/share/fonts/user-fonts/quicksand_light.ttf: Quicksand,Quicksand Light:style=Light,Regular
+/usr/share/fonts/TTF/CODE2002.TTF: Code2002:style=Regular,Normal,obyčejné,Standard,Κανονικά,Normaali,Normál,Normale,Standaard,Normalny,Обычный,Normalan,Normálne,Navadno,thường,Arrunta
 /usr/share/fonts/noto/NotoSansKawi-Bold.ttf: Noto Sans Kawi:style=Bold
 /usr/share/fonts/noto/NotoSerif-Medium.ttf: Noto Serif,Noto Serif Medium:style=Medium,Regular
 /usr/share/fonts/OTF/MonaspiceRnNerdFont-BoldItalic.otf: MonaspiceRn Nerd Font,MonaspiceRn NF:style=Bold Italic
@@ -6300,6 +6302,7 @@
 /usr/share/fonts/user-fonts/NotoSansMNerdFont-Regular.ttf: NotoSansM Nerd Font,NotoSansM NF:style=Regular
 /usr/share/fonts/noto/NotoSerifBengali-SemiBold.ttf: Noto Serif Bengali,Noto Serif Bengali SemiBold:style=SemiBold,Regular
 /usr/share/fonts/oldschool/Mx437_Olivetti_M15-2y.ttf: Mx437 Olivetti M15\-2y:style=Regular
+/usr/share/fonts/TTF/Symbola_hint.ttf: Symbola:style=Regular
 /usr/share/fonts/noto/NotoSansOriya-Black.ttf: Noto Sans Oriya,Noto Sans Oriya Blk:style=Black,Regular
 /usr/share/fonts/noto/NotoSerifGujarati-ExtraBold.ttf: Noto Serif Gujarati,Noto Serif Gujarati ExtraBold:style=ExtraBold,Regular
 /usr/share/fonts/misc/ter-u18b.otb: Terminus:style=Bold

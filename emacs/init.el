@@ -74,7 +74,7 @@
  '(custom-safe-themes
    '("b1a691bb67bd8bd85b76998caf2386c9a7b2ac98a116534071364ed6489b695d" default))
  '(package-selected-packages
-   '(casual-calc mbsync pdf-tools circe zotra yaml-pro reverso ebuku lines-at-once linguistic baidu-translate lingva org-translate su mu4easy insert-char-preview unipoint sxhkdrc-mode sxiv counsel-tramp auto-compile paperless pdfgrep scholar-import auctex company-auctex move-text company-spell company-emoji company magit unbound jumblr mines quiz gscholar-bibtex ess poly-R csv-mode nov yaml-mode calmer-forest-theme beacon atom-one-dark-theme arjen-grey-theme elfeed slime xwiki-mode olivetti org-bullets sudo-utils org-mode general all-the-icons-dired all-the-icons gruvbox-theme helpful ivy-rich which-key rainbow-delimiters use-package xclip mediawiki markdown-mode lua-mode lorem-ipsum hydra graphviz-dot-mode dash counsel)))
+   '(openwith casual-calc mbsync pdf-tools circe zotra yaml-pro reverso ebuku lines-at-once linguistic baidu-translate lingva org-translate su mu4easy insert-char-preview unipoint sxhkdrc-mode sxiv counsel-tramp auto-compile paperless pdfgrep scholar-import auctex company-auctex move-text company-spell company-emoji company magit unbound jumblr mines quiz gscholar-bibtex ess poly-R csv-mode nov yaml-mode calmer-forest-theme beacon atom-one-dark-theme arjen-grey-theme elfeed slime xwiki-mode olivetti org-bullets sudo-utils org-mode general all-the-icons-dired all-the-icons gruvbox-theme helpful ivy-rich which-key rainbow-delimiters use-package xclip mediawiki markdown-mode lua-mode lorem-ipsum hydra graphviz-dot-mode dash counsel)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -152,3 +152,39 @@
 
 (use-package elfeed)
 (put 'set-goal-column 'disabled nil)
+
+(setq org-file-apps
+      '(
+	(auto-mode . emacs)
+	(directory . emacs)
+	("\\.mm\\'" . default)
+	("\\.x?html?\\'" . default)
+	("\\.pdf\\'" . "zathura %s")
+	("\\.ps\\'" . "zathura %s")
+	("\\.djvu\\'" . "zathura %s")
+	("\\.epub\\'" . "zathura %s")
+	("\\.mobi\\'" . "zathura %s")
+	("\\.jpg\\'" . "sxiv %s")
+	("\\.jpeg\\'" . "sxiv %s")
+	("\\.png\\'" . "sxiv %s")
+	("\\.gif\\'" . "sxiv %s")
+	("\\.webp\\'" . "sxiv %s")
+	("\\.jxl\\'" . "sxiv %s")
+	("\\.jpg_large\\'" . "sxiv %s")
+	("\\.jp2\\'" . "sxiv %s")
+	("\\.svg\\'" . "sxiv %s")
+	("\\.tif\\'" . "sxiv %s")
+	("\\.avif\\'" . "sxiv %s")
+	("\\.mp4\\'" . "mpv --osd-fractions --audio-samplerate=88200 %s")
+	("\\.mkv\\'" . "mpv --osd-fractions --audio-samplerate=88200 %s")
+	("\\.avi\\'" . "mpv --osd-fractions --audio-samplerate=88200 %s")
+	("\\.ts\\'" . "mpv --osd-fractions --audio-samplerate=88200 %s")
+	("\\.mov\\'" . "mpv --osd-fractions --audio-samplerate=88200 %s")
+	("\\.webm\\'" . "mpv --osd-fractions --audio-samplerate=88200 %s")
+	("\\.m4v\\'" . "mpv --osd-fractions --audio-samplerate=88200 %s")
+	("\\.mp3\\'" . "mpv --osd-fractions --audio-samplerate=88200 %s")
+	("\\.flac\\'" . "mpv --osd-fractions --audio-samplerate=88200 %s")
+	("\\.ogg\\'" . "mpv --osd-fractions --audio-samplerate=88200 %s")
+	("\\.opus\\'" . "mpv --osd-fractions --audio-samplerate=88200 %s")
+	)
+      )

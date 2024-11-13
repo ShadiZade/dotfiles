@@ -35,6 +35,7 @@ fcitx5-lua
 fcitx5-pinyin-zhwiki
 fclones
 fd
+figlet
 flameshot
 flatpak
 fortune-mod
@@ -43,12 +44,12 @@ gimp
 git
 grub
 gst-plugins-good
+gucharmap
 imagemagick
 inetutils
 inkscape
 inxi
 jack2
-kcharselect
 kcolorchooser
 kitty
 less
@@ -117,6 +118,7 @@ snapper
 steam
 sxhkd
 sxiv
+termdown
 terminus-font
 tesseract-data-chi_sim
 tesseract-data-deu

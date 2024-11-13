@@ -170,3 +170,11 @@
    (format "~/Repositories/scripts/frequent-words.sh out %s" slot)
    (current-buffer))
   (end-of-visual-line))
+
+(defun dired-open-file ()
+  (interactive)
+  (let* ((file (dired-get-filename nil t)))
+    (message "Opening %s..." file)
+    (call-process "xdg-open" nil 0 nil file)
+    (message "Opened %s." file)))
+	     
