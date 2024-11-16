@@ -43,7 +43,7 @@ xkb_symbols "basic" {
     key <AC11>	{[ apostrophe,		quotedbl,			U201D								]};
     key <BKSL>	{[ asciitilde,		backslash,			U00A0									]};
 
-    key <AB01>	{[ z,				Z														]};
+    key <AB01>	{[ z,				Z,					U1F577									]};
     key <AB02>	{[ x,				X,					U2A2F								]};
     key <AB03>	{[ c,				C,					U262D								]};
     key <AB04>	{[ v,				V														]};

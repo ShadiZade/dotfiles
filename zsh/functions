@@ -163,12 +163,22 @@ delete-opf () {
 }
 
 ## detect-extra
-detect-extra () {
-    extra_dirs_exist=""
-    extra_dirs="$(diff <(eza -1D ~) <(cat ~/.local/share/user-scripts/home-dirs) | tail -n +2 | tr '\n' ',' | sed 's/< //g;s/,$//g;s/,/ - /g')"
-    [ -z "$extra_dirs" ] && return
-    echo -e "\033[31m:: Extra dirs (\033[33m$extra_dirs\033[31m) exist in ~.\033[0m"
-    extra_dirs_exist="y"
+detect-extra-home-dirs () {
+    diff -w                                                               \
+	  --unchanged-line-format=''                                      \
+	 --old-line-format=''                                             \
+	 --new-line-format=''                                             \
+	 <(sort < "$HOME"/.local/share/user-scripts/home-dirs)            \
+	 <(eza -1D --no-quotes "$HOME" | sort)                            \
+	&& return						         
+    echo -e $(diff -w                                                     \
+	 --unchanged-line-format=''                                       \
+	 --old-line-format='\033[31mMissing directory in ~:\033[0m %L\n'  \
+	 --new-line-format='\033[33mExtra directory in ~:\033[0m %L\n'    \
+	 <(sort < "$HOME"/.local/share/user-scripts/home-dirs)            \
+ 	 <(eza -1D --no-quotes "$HOME" | sort ))                          \
+	| sed '/^$/d'
+    return 1
 }
 ## k
 k () {
