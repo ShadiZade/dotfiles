@@ -65,6 +65,7 @@ moreutils
 mpv
 mtools
 musescore
+ncdu
 neofetch
 network-manager-applet
 networkmanager

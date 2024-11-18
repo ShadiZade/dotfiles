@@ -145,7 +145,11 @@ super + q ; r
 
 # windscribe
 super + q ; w
-	pkill dunst; dunst & notify-send -t 1000 'Launcher' 'Launching "windscribe"' & windscribe && pkill dunst	
+	pkill dunst; dunst & notify-send -t 1000 'Launcher' 'Launching "windscribe"' & windscribe && pkill dunst
+
+# net-surfer
+super + q ; n
+        ~/Repositories/scripts/net-surfer
 
 # flameshot
 {_,ctrl + }Print
