@@ -26,8 +26,8 @@ copyq &
 flameshot &
 emacs --daemon &
 
-killall battery-warner.sh
-~/Repositories/scripts/battery-warner.sh &
+killall battery-warner
+~/Repositories/scripts/battery-warner &
 
 [[ "$battery_warning_on" -eq 0 ]] && {
     notify-send -u critical -t 100000 "BATTERY WARNER OFF" "You will not be notified if the battery level becomes too low".

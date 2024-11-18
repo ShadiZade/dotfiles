@@ -6,7 +6,7 @@ export obpxd=60
 # user-script data dir
 export usdd="$HOME/.local/share/user-scripts"
 
-# checked by battery-warner.sh, 1 is on, 0 is off
+# checked by battery-warner, 1 is on, 0 is off
 export battery_warning_on=1
 
 # trash directory

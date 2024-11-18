@@ -200,12 +200,12 @@ super + a ; c
 ############################################ misc
 
 super + b
-    mpv "$HOME/.local/share/user-scripts/sounds/bruh.mp3"
+    ~/Repositories/scripts/sound-effects bruh
 
 super + d
-    ~/Repositories/scripts/sound-effects.sh d2a-d2i
+    ~/Repositories/scripts/sound-effects d2a-d2i
 super + shift + b
-    for j in {1..5}; do killall xdg-desktop-portal; done; ~/Repositories/scripts/sound-effects.sh "jumpy-laser"
+    for j in {1..5}; do killall xdg-desktop-portal; done; ~/Repositories/scripts/sound-effects jumpy-laser
 
 
 ############################################ frequent-words
