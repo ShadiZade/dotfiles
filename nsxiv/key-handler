@@ -13,7 +13,7 @@
 #
 ###################################################################################################
 ####### symlink location: ~/.config/sxiv/ #########################################################
-source ~/Repositories/scripts/essential-functions.sh 
+source ~/Repositories/scripts/essential-functions 
 
 sort () {
     loc="$(eza --no-quotes -1Daa "$(pwd)" | rofi -dmenu -i -p 'choose folder')"

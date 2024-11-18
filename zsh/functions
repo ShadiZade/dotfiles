@@ -15,7 +15,7 @@
 ####### symlink location: ~/.config/zsh/ ##########################################################
 ## terminal-art
 source ~/Repositories/dotfiles/zsh/aliases
-source ~/Repositories/scripts/essential-functions.sh
+source ~/Repositories/scripts/essential-functions
 source ~/Repositories/private/private-aliases.sh
 
 terminal-art () {

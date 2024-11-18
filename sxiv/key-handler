@@ -13,7 +13,7 @@
 #
 ###################################################################################################
 ####### symlink location: ~/.config/sxiv/ #########################################################
-source ~/Repositories/scripts/essential-functions.sh 
+source ~/Repositories/scripts/essential-functions 
 
 symlink () {
     ln -sv "$(realpath "$file")" . && {

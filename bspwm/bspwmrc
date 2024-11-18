@@ -15,7 +15,7 @@
 ####### symlink location: ~/.config/bspwm/ ########################################################
 source ~/Repositories/scripts/bspwm-theme.sh
 source ~/.local/share/user-scripts/current-theme
-source ~/Repositories/scripts/essential-functions.sh
+source ~/Repositories/scripts/essential-functions
 
 cmp -s /etc/hostname <(echo "zookeeper") && xrandr -s 1280x720
 pgrep -x sxhkd > /dev/null || sxhkd &
