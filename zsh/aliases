@@ -119,6 +119,7 @@ alias cdvc="cd ~/Videos/clips/ && ll"
 ## Documents
 alias cdo="cd ~/Documents/ && ll"
 alias cdon="cd ~/Documents/newsletters/ && fresco && ll"
+alias cdoa="cd ~/Documents/articles/ && ll"
 alias cdoc="cd ~/Documents/clippings/ && ll"
 alias cdop="cd ~/Documents/papers/ && ll"
 # translation

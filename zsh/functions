@@ -315,14 +315,13 @@ submv () {
 
 ’ () {
     dir="$1"
-    [ -z "$1" ] \
-	&& dir="."
+    [[ -z "$1" ]] && dir="."
     fl="$(eza --no-quotes -1fX --show-symlinks "$dir" | sed '/^$/d' | sort | fzf)"
-    [ -z "$fl" ] && return
+    [[ -z "$fl" ]] && return 1
     file_ext="$(echo "$fl" | awk -F '.' '{print $NF}')"
     fw="$(echo "$dir/$fl")"
     realpath "$fl" | ←
-    echo -e "\033[33m:: Opening \033[37m$fw\033[0m"
+    echolor yellow ":: Opening ““$fw””"
     case "$file_ext" in
 	pdf|ps|djvu|epub)
 	    rdo zathura "$fw" ;;
