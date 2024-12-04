@@ -319,8 +319,8 @@ submv () {
     fl="$(eza --no-quotes -1fX --show-symlinks "$dir" | sed '/^$/d' | sort | fzf)"
     [[ -z "$fl" ]] && return 1
     file_ext="$(echo "$fl" | awk -F '.' '{print $NF}')"
-    fw="$(echo "$dir/$fl")"
-    realpath "$fl" | ←
+    fw="$dir/$fl"
+    realpath "$fw" | ←
     echolor yellow ":: Opening ““$fw””"
     case "$file_ext" in
 	pdf|ps|djvu|epub)
