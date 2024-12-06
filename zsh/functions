@@ -116,19 +116,23 @@ key-names () {
 
 ## alarm
 alarm () {
+    alarmdesktop="$(bspc query -d -D --names)"
     starttime="$(date +%H:%M:%S)"
     echolor yellow ":: Alarm set on ““$starttime”” for ““$1””"
     willring="$(dateadd $starttime $1 2>/dev/null)"
     [[ "$starttime" = "$willring" ]] && {
 	echolor red ":: Error! ““$1”” is an unrecognized value"
 	sfx ten-bloops
+	notify-send -u critical -t 4000 "Alarm not set!" "$starttime\n$1\n$willring\nDesktop #$alarmdesktop"
 	return 1
     }
     [[ -z "$willring" ]] && {
 	echolor red ":: Error! ““$1”” is an unrecognized value"
 	sfx ten-bloops
+	notify-send -u critical -t 4000 "Alarm not set!" "$starttime\n$1\n$willring\nDesktop #$alarmdesktop"
 	return 1
     }
+    notify-send -t 3000 "Alarm set." "$starttime\n$1\n$willring\nDesktop #$alarmdesktop"
     echolor yellow ":: Alarm will ring at ““$willring””"
     echolor yellow ":: Wait for alarm..." 1
     sleep "$1" 2>/dev/null || {
@@ -138,7 +142,8 @@ alarm () {
 	return 1
     }
     printf '\r'
-    echolor red-green ":: ALARM RINGING! IT'S ““$(date +%H:%M:%S)”” NOW!" 
+    echolor red-green ":: ALARM RINGING! IT'S ““$(date +%H:%M:%S)”” NOW!"
+    notify-send -t 10000 "Alarm Ringing!" "$starttime\n$1\n$willring\nDesktop #$alarmdesktop"
     quodlibet --pause
     mpv --loop-file=inf --really-quiet "$usdd/sounds/glass-hit.wav"
 }
