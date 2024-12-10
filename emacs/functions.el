@@ -178,3 +178,34 @@
     (call-process "xdg-open" nil 0 nil file)
     (message "Opened %s." file)))
 	     
+(defun explain-auto-mode (file)
+  "Explain in which mode FILE gets visited according to `auto-mode-alist'.
+With prefix arg, prompt the user for FILE; else, use function `buffer-file-name'."
+  (interactive
+   (list
+    (if current-prefix-arg
+	(read-file-name "Explain the automatic mode of (possibly non-existing) file: " )
+      (buffer-file-name))))
+
+ (if (equal "" file)
+   (error "I need some file name to work with"))
+
+ (let* ((file (expand-file-name file))
+	(index 0)
+	assoc)
+   (setq assoc
+	 (catch 'match
+	   (while (setq assoc (nth index auto-mode-alist))
+	     (if (string-match (car assoc) file)
+		 (throw 'match assoc)
+	       (setq index (1+ index))))
+	   (setq assoc nil)))
+   
+   (if assoc
+       (message "First match in `auto-mode-alist' is at position %d:
+\"%s\"  <=>  \"%s\".
+The corresponding mode is `%s'."
+		(1+ index)
+		file (car assoc)
+		(cdr assoc))
+     (message "No match in `auto-mode-alist' for %s." file))))

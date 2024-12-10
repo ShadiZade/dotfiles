@@ -20,6 +20,7 @@ source ~/Repositories/private/private-aliases.sh
 
 terminal-art () {
     last-updated
+    display-unread-arch-news
     touch "$usdd/qotd" "$usdd/today-date"
     [[ "$(cat "$usdd/today-date")" != "$(date +%m-%d)" ]] && {
 	echolor green ":: Updating date..." 1
@@ -33,14 +34,14 @@ terminal-art () {
 	# vestigial test, useful to keep to track UTC time in the future
 	TZ=UTC date +"%m-%d" > "$usdd/today-date-utc"
     }
-    wifi-connected-p
-     if [[ "$wc_p" -eq 0 ]] && [[ -z "$(cat "$usdd/today-date-french")" ]] 
+
+    if wifi-connected-p && [[ -z "$(cat "$usdd/today-date-french")" ]] 
      then
 	 echolor green ":: Updating French Republican date..." 1 
 	 ~/Repositories/scripts/french-republican-time.sh > "$usdd/today-date-french"
 	 clear-line
      fi
-     if [[ "$wc_p" -eq 0 ]] && [[ -z "$(cat "$usdd/today-date-hijri")" ]] 
+     if wifi-connected-p && [[ -z "$(cat "$usdd/today-date-hijri")" ]] 
      then
 	 echolor green ":: Updating Hijri date..." 1 
 	 ~/Repositories/scripts/hijri-date.sh > "$usdd/today-date-hijri"
@@ -75,10 +76,13 @@ bd () {
 pg () {
     i=1
     while true;
-    do echo -e "\033[31m:: Attempting...\033[0m ($i)"
-       ping -qc 1 archlinux.org && break
-       i=$((i+1))
-       sleep 3
+    do
+	echolor orange-aquamarine ":: Attempting... (#““$i””)"
+	ping -qc 1 -w 2 archlinux.org && {
+	    sfx done
+	    break
+	}
+	i=$((i+1))
     done
 }
 
@@ -245,7 +249,7 @@ wg () {
 
 ## netc
 netc () {
-    nmcli device disconnect wlp4s0 >/dev/null 2>/dev/null && {
+    nmcli device disconnect wlp3s0 >/dev/null 2>/dev/null && {
 	echolor green ":: Disconnected successfully."
     }
     sleep 1s
@@ -521,7 +525,7 @@ function ws {
     [[ -z "$1" ]] && {
 	wifi-connected-p
 	echolor purple-yellow ":: Network: ““$DEFAULT_WIFI_NETWORK””\n:: Password: ““$DEFAULT_WIFI_PASSWORD””"
-	[[ "$wc_p" -eq 0 ]] && {
+	wifi-connected-p && {
 	    echolor green ":: Currently connected to ““$(nmcli device status | grep '^wlp' | awk '{print $4}')””"
 	}
 	echolor yellow ":: Reset to default? (y/N) " 1
@@ -606,3 +610,10 @@ function pp {
     pypinyin "$@" | tee "$tmpfile"
     sed '/^$/d' "$tmpfile" | tr -d '\n' | xclip -selection clipboard
 }
+
+function display-unread-arch-news {
+    [[ -z "$(cat "$usdd/latest-arch-news-title")" ]] && return 1
+    echolor beige ":: Unread Arch News!"
+    echolor blue "   “$(cat $usdd/latest-arch-news-title)”"
+}
+    

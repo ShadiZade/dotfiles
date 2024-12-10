@@ -188,3 +188,7 @@
 	("\\.opus\\'" . "mpv --osd-fractions --audio-samplerate=88200 %s")
 	)
       )
+
+;;(add-to-list 'auto-mode-alist '("/athenaeum-index.csv\\'" . read-only-mode))
+;;(add-to-list 'auto-mode-alist '("/athenaeum-index.csv\\'" . auto-revert-mode))
+;;(add-to-list 'auto-mode-alist '("/sxhkdrc\\'"             . sxhkdrc-mode))
