@@ -45,6 +45,7 @@ git
 grub
 gst-plugins-good
 gucharmap
+hq
 imagemagick
 inetutils
 inkscape
@@ -57,6 +58,7 @@ libreoffice-fresh
 linux
 linux-firmware
 linux-headers
+linux-lts
 lsp-plugins-gst
 lvm2
 man-db
@@ -121,6 +123,7 @@ sxhkd
 sxiv
 termdown
 terminus-font
+tesseract-data-ara
 tesseract-data-chi_sim
 tesseract-data-deu
 tesseract-data-eng
