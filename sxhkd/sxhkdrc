@@ -155,9 +155,9 @@ super + q ; n
 {_,ctrl + }Print
 	flameshot {full,gui}
 
-
-
-
+# flameshot ocr
+ctrl + shift + Print
+        ~/Repositories/scripts/ocr-screenshot
 
 
 ############################################# run scripts
