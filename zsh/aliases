@@ -208,6 +208,7 @@ alias ’zv="e ~/Repositories/dotfiles/zsh/variables"
 
 # misc aliases
 alias '..'="cd .. && ll"
+alias '..f'="cd .. && ff"
 alias e="emacsclient -nw -a emacs"
 alias q="source ~/.config/zsh/.zshrc; cpfg"
 alias qq="clr; cd; cpfg; source ~/.config/zsh/.zshrc"

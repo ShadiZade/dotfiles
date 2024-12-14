@@ -247,9 +247,8 @@ wg () {
   #  sfx done 110
 }
 
-## netc
 netc () {
-    nmcli device disconnect wlp3s0 >/dev/null 2>/dev/null && {
+    nmcli device disconnect wlan0 >/dev/null 2>/dev/null && {
 	echolor green ":: Disconnected successfully."
     }
     sleep 1s
@@ -262,11 +261,11 @@ netc () {
     do
 	[[ -z "$DEFAULT_WIFI_PASSWORD" ]] && {
 	    nmcli device wifi rescan
-	    nmcli device wifi connect "$DEFAULT_WIFI_NETWORK" password "$DEFAULT_WIFI_PASSWORD" \
+	    nmcli --wait 4 device wifi connect "$DEFAULT_WIFI_NETWORK" password "$DEFAULT_WIFI_PASSWORD" \
 		  >/dev/null 2>/dev/null && found=0 || found=1
 	} || {
  	    nmcli device wifi rescan
-	    nmcli device wifi connect "$DEFAULT_WIFI_NETWORK" \
+	    nmcli --wait 4 device wifi connect "$DEFAULT_WIFI_NETWORK" \
 		  >/dev/null 2>/dev/null && found=0 || found=1
 	}
 	[[ "$found" -eq 1 ]] && {
@@ -526,7 +525,7 @@ function ws {
 	wifi-connected-p
 	echolor purple-yellow ":: Network: ““$DEFAULT_WIFI_NETWORK””\n:: Password: ““$DEFAULT_WIFI_PASSWORD””"
 	wifi-connected-p && {
-	    echolor green ":: Currently connected to ““$(nmcli device status | grep '^wlp' | awk '{print $4}')””"
+	    echolor green ":: Currently connected to ““$(nmcli device status | grep '^wlan0' | awk '{print $4}')””"
 	}
 	echolor yellow ":: Reset to default? (y/N) " 1
 	reset_p="n"
