@@ -1,6 +1,7 @@
 bible-kjv
 buku
 cozette-otb
+downgrade
 edir
 freetube-git
 gallery-dl

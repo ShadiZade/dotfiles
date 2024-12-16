@@ -50,6 +50,7 @@ imagemagick
 inetutils
 inkscape
 inxi
+iwd
 jack2
 kcolorchooser
 kitty
