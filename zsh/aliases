@@ -222,7 +222,6 @@ alias rmdir='rmdir -v'
 alias grep='grep --color=auto -is'
 alias window-name="xprop WM_CLASS"
 alias clr="printf '\033[2J\033[3J\033[1;1H'"
-alias memuse='df | grep " /$" | awk "{print \$5}" '
 alias ,,='trans -b'
 alias llwc="ll | wc -l"
 alias back="~/Repositories/scripts/back/backmaster.sh"

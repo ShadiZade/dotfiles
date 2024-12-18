@@ -616,3 +616,10 @@ function display-unread-arch-news {
     echolor blue "   “$(cat $usdd/latest-arch-news-title)”"
 }
     
+function memuse {
+    local rootdisk="$(df -h --sync | grep " /$")"
+    echolor aquamarine-beige ":: ““$(echo $rootdisk | awk '{print $5}')”” of disk space on " 1
+    echolor aquamarine-beige "““$(echo $rootdisk | awk '{print $1}')”” is used " 1
+    echolor aquamarine-beige "(““$(echo $rootdisk | awk '{print $3}')”” out of " 1
+    echolor aquamarine-beige "““$(echo $rootdisk | awk '{print $2}')””)"
+}
