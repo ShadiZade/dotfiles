@@ -3,7 +3,7 @@ buku
 cozette-otb
 downgrade
 edir
-freetube-git
+freetube-bin
 gallery-dl
 i3lock-color
 jmtpfs
