@@ -209,3 +209,23 @@ The corresponding mode is `%s'."
 		file (car assoc)
 		(cdr assoc))
      (message "No match in `auto-mode-alist' for %s." file))))
+
+(defun shadi/kebab (text)
+  (substring
+   (shell-command-to-string
+    (format "source ~/Repositories/scripts/essential-functions; kebab %s"
+	    (shell-quote-argument text)))
+   ))
+
+(defun shadi/kebab-region ()
+  (interactive)
+  (kill-region (point) (mark))
+  (kill-new
+   (shadi/kebab (current-kill 0 t)))
+  (yank))
+
+(defun shadi/kebab-and-yank ()
+  (interactive)
+  (kill-new
+   (shadi/kebab (current-kill 0 t)))
+  (yank))

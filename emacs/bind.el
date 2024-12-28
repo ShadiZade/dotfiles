@@ -22,6 +22,8 @@
 (global-set-key (kbd "C-’ a <next>")    'shadi/text-force-rtl)
 (global-set-key (kbd "C-’ f")           'shadi/fetch-events)
 (global-set-key (kbd "C-’ t")           'shadi/open-org-task)
+(global-set-key (kbd "C-c r")           'shadi/kebab-region)
+(global-set-key (kbd "C-c y")           'shadi/kebab-and-yank)
 (global-set-key (kbd "C-’ w")           'shadi/open-org-tiasut)
 (global-set-key (kbd "C-’ n")           'shadi/open-notebook)
 (global-set-key (kbd "C-’ d")           'shadi/start-diary-entry)
