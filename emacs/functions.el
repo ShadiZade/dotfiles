@@ -222,10 +222,14 @@ The corresponding mode is `%s'."
   (kill-region (point) (mark))
   (kill-new
    (shadi/kebab (current-kill 0 t)))
+  (kill-new
+   (shadi/kebab (current-kill 0 t)))
   (yank))
 
 (defun shadi/kebab-and-yank ()
   (interactive)
+  (kill-new
+   (shadi/kebab (current-kill 0 t)))
   (kill-new
    (shadi/kebab (current-kill 0 t)))
   (yank))
