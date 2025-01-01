@@ -418,16 +418,24 @@ function determine-if-git-repo {
 		  || export CUR_DIR_IS_GIT=0
 }
 
+function set-prompt-design {
+    case "$1" in
+	"green") prompt_color="#55ff55" ;;
+	"pink" ) prompt_color="#ff55ff" ;;
+	"blue" ) prompt_color="#34a7dd" ;;
+	"white") prompt_color="#ffffff" ;;
+	*)       prompt_color="#55ff55" ;;
+    esac
+    PROMPT=" %F{$prompt_color}%2~%f %S%F{$prompt_color} 闯 %D{%H:%M} 🠦 %f%s "
+}
+
 function change-prompt-for-git {
-    green="#55ff55"
-    pink="#ff55ff"
-    blue="#34a7dd"
     case $(determine-if-git-repo; echo $CUR_DIR_IS_GIT) in
-	0) PROMPT=" %F{$green}%2~%f %S%F{$green} 囍 %D{%H:%M} 🠦 %f%s " ;;
+	0) set-prompt-design green ;;
 	1) [[ "$(git status -s | wc -l)" -gt 0 ]] \
-	       && PROMPT=" %F{$pink}%2~%f %S%F{$pink} 囍 %D{%H:%M} 🠦 %f%s " \
-		   || PROMPT=" %F{$blue}%2~%f %S%F{$blue} 囍 %D{%H:%M} 🠦 %f%s " ;;
-	*) PROMPT=" %F{#ffffff}%2~%f %S%F{#ffffff} 囍 %D{%H:%M} 🠦 %f%s " ;;
+	       && set-prompt-design pink          \
+		   || set-prompt-design blue ;;
+	*) set-prompt-design white ;;
     esac
 }
 	
@@ -623,3 +631,4 @@ function memuse {
     echolor aquamarine-beige "(““$(echo $rootdisk | awk '{print $3}')”” out of " 1
     echolor aquamarine-beige "““$(echo $rootdisk | awk '{print $2}')””)"
 }
+

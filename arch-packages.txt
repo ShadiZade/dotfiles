@@ -65,10 +65,13 @@ lvm2
 man-db
 mat2
 moreutils
+mpc
+mpd
 mpv
 mtools
 musescore
 ncdu
+ncmpcpp
 neofetch
 network-manager-applet
 networkmanager
@@ -103,11 +106,11 @@ pipewire
 pipewire-alsa
 pipewire-docs
 pipewire-pulse
+playerctl
 polybar
 pypinyin
 python-pipx
 qbittorrent
-qrencode
 qrtool
 qt5-tools
 quodlibet
