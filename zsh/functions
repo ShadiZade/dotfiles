@@ -15,6 +15,7 @@
 ####### symlink location: ~/.config/zsh/ ##########################################################
 ## terminal-art
 source ~/Repositories/dotfiles/zsh/aliases
+source ~/Repositories/dotfiles/zsh/variables
 source ~/Repositories/scripts/essential-functions
 source ~/Repositories/private/private-aliases.sh
 
@@ -47,16 +48,19 @@ terminal-art () {
 	 ~/Repositories/scripts/hijri-date.sh > "$usdd/today-date-hijri"
 	 clear-line
      fi
-#    [[ "$(cat "$usdd/today-date")" != "$(TZ=GMT date +%m-%d)" ]] && {
-	# what is this?
-#	echo -n
- #   }
-    echo -n "$(date +%A), $(date +"%d %B %Y")"
-    [[ ! -z "$(cat "$usdd/today-date-hijri")" ]] && echo -n ", $(cat "$usdd/today-date-hijri")"
+    echolor neonblue "$(date +%A), $(date +"%d %B %Y")" 1
+    [[ ! -z "$(cat "$usdd/today-date-hijri")" ]] && echolor mintgreen-neonblue "““,”” $(cat "$usdd/today-date-hijri")" 1
     echo
-    cat "$usdd/today-date-french"
+    echolor neonblue "$(cat "$usdd/today-date-french")"
+    reading-stats
     ~/Repositories/communist-calendar/fetch-events.sh
     cat "$usdd/qotd" | cowsay -f none -W $(($(tput cols) - 10))
+}
+
+function cd {
+    builtin cd "$1"
+    change-prompt-for-git
+    check-for-relevant-function
 }
 
 ## disown
@@ -418,27 +422,49 @@ function determine-if-git-repo {
 		  || export CUR_DIR_IS_GIT=0
 }
 
-function set-prompt-design {
-    case "$1" in
-	"green") prompt_color="#55ff55" ;;
-	"pink" ) prompt_color="#ff55ff" ;;
-	"blue" ) prompt_color="#34a7dd" ;;
-	"white") prompt_color="#ffffff" ;;
-	*)       prompt_color="#55ff55" ;;
-    esac
-    PROMPT=" %F{$prompt_color}%2~%f %S%F{$prompt_color} 闯 %D{%H:%M} 🠦 %f%s "
+function set-prompt {
+    [[ -z "$prompt_color" ]] && export prompt_color="$DEFAULT_PROMPT_COLOR"
+    [[ -z "$prompt_symbol" ]] && export prompt_symbol="$DEFAULT_PROMPT_SYMBOL"
+    export PROMPT=" %F{$prompt_color}%2~%f %S%F{$prompt_color} $prompt_symbol %D{%H:%M} 🠦 %f%s "
 }
+
+function set-prompt-color {
+    case "$1" in
+	"green")   export prompt_color="#55ff55" ;;
+	"pink" )   export prompt_color="#ff55ff" ;;
+	"blue" )   export prompt_color="#34a7dd" ;;
+	"white")   export prompt_color="#ffffff" ;;
+	"default") export prompt_color="$DEFAULT_PROMPT_COLOR" ;;
+	*)         export prompt_color="$DEFAULT_PROMPT_COLOR" ;;
+    esac
+    set-prompt
+}
+
+function set-prompt-symbol {
+    case "$1" in
+	'') export prompt_symbol="$DEFAULT_PROMPT_SYMBOL" ;;
+	*)  export prompt_symbol="$@" ;;
+    esac
+    set-prompt
+}
+
 
 function change-prompt-for-git {
     case $(determine-if-git-repo; echo $CUR_DIR_IS_GIT) in
-	0) set-prompt-design green ;;
+	0) set-prompt-color green ;;
 	1) [[ "$(git status -s | wc -l)" -gt 0 ]] \
-	       && set-prompt-design pink          \
-		   || set-prompt-design blue ;;
-	*) set-prompt-design white ;;
+	       && set-prompt-color pink          \
+		   || set-prompt-color blue ;;
+	*) set-prompt-color white ;;
     esac
 }
-	
+
+function check-for-relevant-function {
+    fd -q -H -d 1 ".relevant-function.sh" .    \
+	&& set-prompt-symbol "RELEVANT"          \
+	    || set-prompt-symbol
+}
+
 function mkmd {
     projname="$(kebab "$@")"
     fontname="$(choose-font)"
@@ -630,5 +656,20 @@ function memuse {
     echolor aquamarine-beige "““$(echo $rootdisk | awk '{print $1}')”” is used " 1
     echolor aquamarine-beige "(““$(echo $rootdisk | awk '{print $3}')”” out of " 1
     echolor aquamarine-beige "““$(echo $rootdisk | awk '{print $2}')””)"
+}
+
+function reading-stats {
+    [[ ! -d "$HOME/Projects/reading/" ]] && echolor mintgreen-default "““::”” No reading directory found."
+    tbr100_number="$(fd . ~/Projects/reading/tbr/tbr-100/ | wc -l)"
+    [[ "$tbr100_number" -gt 100 ]] && tbr100_number="$(echolor red "$tbr100_number")"
+    tbr20_number="$(fd . ~/Projects/reading/tbr/tbr-20/ | wc -l)"
+    [[ "$tbr20_number" -gt 20 ]] && tbr20_number="$(echolor red "$tbr20_number")"
+    tbr5_number="$(fd . ~/Projects/reading/tbr/tbr-5/ | wc -l)"
+    [[ "$tbr5_number" -gt 5 ]] && tbr5_number="$(echolor red "$tbr5_number")"
+    readingnow_number="$(fd -d 1 -t l -t f . ~/Projects/reading/ | wc -l)"
+    [[ "$readingnow_number" -gt 6 ]] && readingnow_number=="$(echolor red "$readingnow_number")"
+    done_number="$(fd . ~/Projects/reading/done/$(date +%Y) | wc -l)"
+    [[ "$done_number" -eq 0 ]] && done_number="$(echolor red "$done_number")"
+    echolor mintgreen-neonblue "Reading statistics: ““TBR”” $tbr100_number““/””$tbr20_number““/””$tbr5_number ““NOW”” $readingnow_number ““DONE”” $done_number"
 }
 
