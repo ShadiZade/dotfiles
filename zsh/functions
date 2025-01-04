@@ -48,13 +48,13 @@ terminal-art () {
 	 ~/Repositories/scripts/hijri-date.sh > "$usdd/today-date-hijri"
 	 clear-line
      fi
-    echolor neonblue "$(date +%A), $(date +"%d %B %Y")" 1
-    [[ ! -z "$(cat "$usdd/today-date-hijri")" ]] && echolor mintgreen-neonblue "““,”” $(cat "$usdd/today-date-hijri")" 1
+    echolor ←neonblue "$(date +%A), $(date +"%d %B %Y")" 1
+    [[ ! -z "$(cat "$usdd/today-date-hijri")" ]] && echolor ←mintgreen-←neonblue "““,”” $(cat "$usdd/today-date-hijri")" 1
     echo
     echolor neonblue "$(cat "$usdd/today-date-french")"
     reading-stats
-    ~/Repositories/communist-calendar/fetch-events.sh
-    cat "$usdd/qotd" | cowsay -f none -W $(($(tput cols) - 10))
+    echolor pink "$(~/Repositories/communist-calendar/fetch-events.sh)"
+    echolor pink "$(cat "$usdd/qotd" | cowsay -f none -W $(($(tput cols) - 10)))"
 }
 
 function cd {

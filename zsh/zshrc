@@ -36,11 +36,12 @@ else
     compinit -C
 fi
 # end snippet
-set-prompt-design green
+set-prompt-color
+set-prompt-symbol
 wifi-connected-p
 detect-extra-home-dirs && terminal-art
 setxkbmap
-stty -ixon
+stty -ixon # remove C-s pausing of the terminal
 compdef _gnu_generic mkdir
 compdef '_files -g "*.(mp4|mkv|avi|mp3|ogg|flac|wmv)"' mpv
 compdef '_files -g "*.(pdf|ps|djvu|epub)"' zathura
