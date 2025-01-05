@@ -58,7 +58,7 @@ terminal-art () {
 }
 
 function cd {
-    builtin cd "$1"
+    builtin cd "${1:-$HOME}"
     change-prompt-for-git
     check-for-relevant-function
 }
