@@ -49,9 +49,10 @@ terminal-art () {
 	 clear-line
      fi
      reading-stats
-     echo -n "→ $(date +%A), $(date +"%d %B %Y")"
+     echolor mintgreen-violet "∎∎““∎∎”” " 1
+     echo -n "$(date +%A), $(date +"%d %B %Y")"
      [[ ! -z "$(cat "$usdd/today-date-hijri")" ]] && echo -n ", $(cat "$usdd/today-date-hijri")"
-     echo -en "\n→ "
+     echolor violet-mintgreen "\n∎∎““∎∎”” " 1
      cat "$usdd/today-date-french"
      ~/Repositories/communist-calendar/fetch-events.sh
      cat "$usdd/qotd" | cowsay -f none -W $(($(tput cols) - 10))
@@ -659,7 +660,7 @@ function memuse {
 }
 
 function reading-stats {
-    [[ ! -d "$HOME/Projects/reading/" ]] && echolor mintgreen-default "““::”” No reading directory found."
+    [[ ! -d "$HOME/Projects/reading/" ]] && echolor mintgreen-violet "““::”” No reading directory found."
     tbr100_number="$(fd . ~/Projects/reading/tbr/tbr-100/ | wc -l)"
     [[ "$tbr100_number" -gt 100 ]] && tbr100_number="$(echolor red "$tbr100_number")"
     tbr20_number="$(fd . ~/Projects/reading/tbr/tbr-20/ | wc -l)"
@@ -670,6 +671,6 @@ function reading-stats {
     [[ "$readingnow_number" -gt 6 ]] && readingnow_number=="$(echolor red "$readingnow_number")"
     done_number="$(fd . ~/Projects/reading/done/$(date +%Y) | wc -l)"
     [[ "$done_number" -eq 0 ]] && done_number="$(echolor red "$done_number")"
-    echolor mintgreen-neonblue "Reading statistics: ““TBR”” $tbr100_number““/””$tbr20_number““/””$tbr5_number ““NOW”” $readingnow_number ““DONE”” $done_number"
+    echolor mintgreen-violet "Reading statistics: ““TBR”” $tbr100_number““/””$tbr20_number““/””$tbr5_number ““NOW”” $readingnow_number ““DONE”” $done_number"
 }
 
