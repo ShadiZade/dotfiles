@@ -49,11 +49,9 @@ terminal-art () {
 	 clear-line
      fi
      reading-stats
-     echolor mintgreen-violet "∎∎““∎∎”” " 1
-     echo -n "$(date +%A), $(date +"%d %B %Y")"
-     [[ ! -z "$(cat "$usdd/today-date-hijri")" ]] && echo -n ", $(cat "$usdd/today-date-hijri")"
-     echolor violet-mintgreen "\n∎∎““∎∎”” " 1
-     cat "$usdd/today-date-french"
+     echolor mintgreen-violet "∎∎““∎∎”” $(date +%A), $(date +"%d %B %Y")" 1
+     [[ ! -z "$(cat "$usdd/today-date-hijri")" ]] && echolor mintgreen ", $(cat "$usdd/today-date-hijri")" 1
+     echolor violet-mintgreen "\n∎∎““∎∎ $(cat "$usdd/today-date-french")””" 
      ~/Repositories/communist-calendar/fetch-events.sh
      cat "$usdd/qotd" | cowsay -f none -W $(($(tput cols) - 10))
 }
