@@ -671,4 +671,3 @@ function reading-stats {
     [[ "$done_number" -eq 0 ]] && done_number="$(echolor red "$done_number")"
     echolor mintgreen-violet "Reading statistics: ““TBR”” $tbr100_number““/””$tbr20_number““/””$tbr5_number ““NOW”” $readingnow_number ““DONE”” $done_number"
 }
-
