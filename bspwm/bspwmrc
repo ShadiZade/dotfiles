@@ -64,6 +64,7 @@ bspc rule -a okular state=fullscreen
 bspc rule -a FreeTube state=fullscreen
 bspc rule -a calibre state=fullscreen
 bspc rule -a Zathura state=fullscreen
+bspc rule -a sioyek state=fullscreen
 #bspc rule -a Xdg-desktop-portal-gtk state=fullscreen
 #bspc rule -a Gimp-2.10 state=fullscreen
 

@@ -51,3 +51,4 @@ ln -sf ~/Repositories/dotfiles/rofimoji/used-files/latin/* ~/.config/rofimoji/us
 ln -sf ~/Repositories/dotfiles/rofimoji/used-files/ipa/* ~/.config/rofimoji/used-files/ipa/
 mkdir ~/.config/zathura/
 ln -sf ~/Repositories/dotfiles/zathura/zathurarc ~/.config/zathura/
+ln -sf ~/Repositories/dotfiles/sioyek/*user.config ~/.config/sioyek
