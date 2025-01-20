@@ -335,7 +335,7 @@ submv () {
     echolor yellow ":: Opening ““$fw””"
     case "$file_ext" in
 	pdf|ps|djvu|epub)
-	    rdo zathura "$fw" ;;
+	    rdo sioyek "$fw" ;;
 	mp3|wav|wmv|flv|flac|opus|ogg)
             mpv --no-audio-display "$fw" ;;
 	mp4|mkv|ts|webm|ogv)

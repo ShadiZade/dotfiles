@@ -72,3 +72,4 @@ xdg-mime default sxiv.desktop image/{jpg,jpeg,png,tiff,bmp,svg+xml,jxl,webp}
 xdg-mime default gimp.desktop image/x-xcf
 xdg-mime default org.pwmt.zathura.desktop application/{pdf,postscript}
 xdg-mime default mpv.desktop audio/{mp3,flac,ogg} video/{mp4,webm}
+xdg-mime default sioyek.desktop application/pdf

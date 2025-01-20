@@ -259,3 +259,4 @@ alias ййй="sudo ln -sf ~/Repositories/dotfiles/xkb/us ~/Repositories/dotfiles
 alias tt="tagutil"
 alias baw="bat --wrap never"
 alias mark="booky.sh"
+alias 31="rdo sioyek"
