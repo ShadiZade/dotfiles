@@ -18,16 +18,12 @@
 ############################################# basic bindings
 
 # quit or restart bspwm
-super + shift + {q,r}
+super + shift + {Delete,r}
 	bspc {quit,wm -r}
 
 # close or kill program
 super + shift + {c,k}
 	bspc node -{c,k}
-
-# activate dalek mode
-super + shift + Delete
-	xkill
 
 # reload sxhkd configs:
 super + shift + s

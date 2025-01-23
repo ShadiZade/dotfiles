@@ -91,7 +91,7 @@ pg () {
 
 ## a
 a () {
-    mpv --no-audio-display --osd-fractions "$@"
+    mpv --no-audio-display --no-video --osd-fractions "$@"
 }
 
 ## v
