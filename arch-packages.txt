@@ -40,6 +40,7 @@ flameshot
 flatpak
 fortune-mod
 fzf
+ghostty
 gimp
 git
 grub
@@ -255,7 +256,7 @@ yq
 zathura
 zathura-cb
 zathura-djvu
-zathura-pdf-mupdf
+zathura-pdf-poppler
 zathura-ps
 zsh
 zsh-history-substring-search

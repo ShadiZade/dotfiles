@@ -17,6 +17,7 @@ ripdrag-git
 scantailor-advanced-git
 shahab-fonts
 siji-git
+sioyek-git
 tagutil
 telegram-desktop-bin
 ttf-juliamono
