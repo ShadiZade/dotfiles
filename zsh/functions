@@ -19,8 +19,9 @@ source ~/Repositories/dotfiles/zsh/variables
 source ~/Repositories/scripts/essential-functions
 source ~/Repositories/private/private-aliases.sh
 
-terminal-art () {
+function terminal-art {
     last-updated
+    last-backed
     display-unread-arch-news
     touch "$usdd/qotd" "$usdd/today-date"
     [[ "$(cat "$usdd/today-date")" != "$(date +%m-%d)" ]] && {
@@ -62,21 +63,19 @@ function cd {
     check-for-relevant-function
 }
 
-## disown
-run_disowned () {
+function run_disowned {
     "$@" & disown
 }
-rdo () {
+
+function rdo {
     run_disowned "$@" 1>/dev/null 2>/dev/null
 }
 
-## bigdate
-bd () {
+function bd  {
     date +"%Y%m%d%H%M"
 }
 
-## pg
-pg () {
+function pg {
     i=1
     while true;
     do
@@ -615,6 +614,13 @@ function last-updated {
     lud="$(datediff -f %d $(tac /var/log/pacman.log | grep -m 1 'full system upgrade' | awk -F 'T' '{print $1}' | tr -d '[') $(date +"%Y-%m-%d"))"
     [[ "$lud" -lt 2 ]] && return
     echolor beige-blue ":: System was last updated ““$lud”” days ago."
+}
+
+function last-backed {
+    caravan_log_dir="$HOME/.local/logs/caravan"
+    lcb="$(datediff -f %d $(stat -c '%w' "$caravan_log_dir"/"$(eza -1fX --sort=newest "$caravan_log_dir" | tail -n 1)" | awk '{print $1}') $(date +"%Y-%m-%d"))"
+    [[ "$lcb" -lt 2 ]] && return
+    echolor beige-blue ":: System was last backed ““$lcb”” days ago."
 }
 
 function enzh {
