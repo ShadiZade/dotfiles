@@ -522,6 +522,10 @@ function xmmb {
     → ~/Books/xadd/* ~/.local/mobile/Internal\ shared\ storage/Books
 }
 
+function xmmp {
+    → "$(pall path)" ~/.local/mobile/Internal\ shared\ storage/Home/Desktop
+}
+
 function open-newsletter {
     loc="$HOME/Documents/newsletters"
     nlname="$(eza -1D "$loc" | fzf)"
@@ -670,4 +674,30 @@ function reading-stats {
     done_number="$(fd . ~/Projects/reading/done/$(date +%Y) | wc -l)"
     [[ "$done_number" -eq 0 ]] && done_number="$(echolor red "$done_number")"
     echolor mintgreen-violet "Reading statistics: ““TBR”” $tbr100_number““/””$tbr20_number““/””$tbr5_number ““NOW”” $readingnow_number ““DONE”” $done_number"
+}
+
+function zap-to-directory {
+    zap_before="$(realpath .)"
+    [[ -z "$1" ]] && {
+	case "$(fd -t d . | wc -l)" in
+	    "1") zap_after="$(realpath "$(fd -t d .)")"
+		 cd "$zap_after"
+		 echolor violet-beige ":: One subdirectory detected\n:: Zapped from ““$zap_before””\n:: Zapped to   ““$zap_after””"
+		 return 0 ;;
+	    "0") echolor violet-beige ":: No subdirectories found."
+		 return 1 ;;
+	    *)   echolor violet-beige ":: Found more than one subdirectory.\n““$(fd -d 1 -t d .)””"
+		 return 1 ;;
+	esac
+	}
+    case "$(fd -t d "^$1$" . | wc -l)" in
+	"1") zap_after="$(realpath "$(fd -t d "^$1$" .)")"
+	     cd "$zap_after"
+	     echolor violet-beige ":: Found term  ““$1””\n:: Zapped from ““$zap_before””\n:: Zapped to   ““$zap_after””"
+	     return 0 ;;
+	"0") echolor violet-beige ":: Term ““$1”” not found."
+	     return 1 ;;
+	*)   echolor violet-beige ":: Found term ““$1”” more than once.\n““$(fd -t d "^$1$" .)””"
+	     return 1 ;;
+    esac
 }
