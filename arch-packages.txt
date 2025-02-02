@@ -122,6 +122,7 @@ rofi-emoji
 rofimoji
 rsync
 scrapy
+shellcheck
 shuffle
 snapper
 steam

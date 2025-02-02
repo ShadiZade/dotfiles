@@ -76,7 +76,6 @@
 /usr/share/fonts/noto/NotoSansTelugu-Bold.ttf: Noto Sans Telugu:style=Bold
 /usr/share/fonts/noto/NotoSerifHebrew-ExtraCondensedExtraLight.ttf: Noto Serif Hebrew,Noto Serif Hebrew ExtraCondensed ExtraLight:style=ExtraCondensed ExtraLight,Regular
 /usr/share/fonts/TTF/SauceCodeProNerdFont-SemiBoldItalic.ttf: SauceCodePro Nerd Font,SauceCodePro NF,SauceCodePro NF SemiBold:style=SemiBold Italic,Italic
-/usr/share/fonts/misc/cozette_hidpi.otb: CozetteHiDpi:style=Medium
 /usr/share/fonts/noto/NotoSansGujarati-Condensed.ttf: Noto Sans Gujarati,Noto Sans Gujarati Condensed:style=Condensed,Regular
 /usr/share/fonts/noto/NotoSansSymbols-Black.ttf: Noto Sans Symbols,Noto Sans Symbols Black:style=Black,Regular
 /usr/share/fonts/user-fonts/TitilliumWeb-Italic.ttf: Titillium Web:style=Italic
@@ -1962,6 +1961,7 @@
 /usr/share/fonts/TTF/NotoSerifNerdFont-SemiCondensedThin.ttf: NotoSerif Nerd Font,NotoSerif NF,NotoSerif NF SemCond Thin:style=SemiCondensed Thin,Regular
 /usr/share/fonts/OTF/NotoSerifCJKsc-Bold.otf: Noto Serif CJK SC:style=Bold
 /usr/share/fonts/user-fonts/IBMPlexSerif-BoldItalic.ttf: IBM Plex Serif:style=Bold Italic
+/usr/share/fonts/misc/cozettecrossedseven.otb: CozetteCrossedSeven:style=Medium
 /usr/share/fonts/noto/NotoSansTamilUI-SemiBold.ttf: Noto Sans Tamil UI,Noto Sans Tamil UI SemiBold:style=SemiBold,Regular
 /usr/share/fonts/user-fonts/NotoSansMNerdFont-ExtraLight.ttf: NotoSansM Nerd Font,NotoSansM NF,NotoSansM NF ExtLt:style=ExtraLight,Regular
 /usr/share/fonts/TTF/BlexMonoNerdFontMono-Italic.ttf: BlexMono Nerd Font Mono:style=Italic
@@ -3076,6 +3076,7 @@
 /usr/share/fonts/TTF/NotoSansNerdFontPropo-ExtraCondensedExtraLight.ttf: NotoSans Nerd Font Propo,NotoSans NFP,NotoSans NFP ExtCond ExtLt:style=ExtraCondensed ExtraLight,Regular
 /usr/share/fonts/oldschool/Ac437_Verite_9x14.ttf: Ac437 Verite 9x14:style=Regular
 /usr/share/fonts/TTF/BlexMonoNerdFontMono-Bold.ttf: BlexMono Nerd Font Mono:style=Bold
+/usr/share/fonts/misc/cozettecrossedseven_hidpi.otb: Cozette:style=HiDpiCrossedSeven
 /usr/share/fonts/noto/NotoSerifGrantha-Regular.ttf: Noto Serif Grantha:style=Regular
 /usr/share/fonts/chinese/long-cang/long-cang-66-400-normal.ttf: Long Cang:style=Regular
 /usr/share/fonts/TTF/UbuntuMonoNerdFont-BoldItalic.ttf: UbuntuMono Nerd Font:style=Bold Italic
@@ -5225,6 +5226,7 @@
 /usr/share/fonts/noto/NotoSansSinhala-ExtraLight.ttf: Noto Sans Sinhala,Noto Sans Sinhala ExtraLight:style=ExtraLight,Regular
 /usr/share/fonts/user-fonts/NotoSansMNerdFontPropo-Medium.ttf: NotoSansM Nerd Font Propo,NotoSansM NFP,NotoSansM NFP Med:style=Medium,Regular
 /usr/share/fonts/TTF/VictorMonoNerdFont-ExtraLightItalic.ttf: VictorMono Nerd Font,VictorMono NF,VictorMono NF ExtraLight:style=ExtraLight Italic,Italic
+/usr/share/fonts/misc/cozette_hidpi.otb: Cozette:style=HiDpi
 /usr/share/fonts/noto/NotoSansMultani-Regular.ttf: Noto Sans Multani:style=Regular
 /usr/share/fonts/noto/NotoSerifTamil-SemiCondensedLightItalic.ttf: Noto Serif Tamil SemiCondensed,Noto Serif Tamil SemiCondensed Light:style=Light Italic,Italic
 /usr/share/fonts/TTF/JetBrainsMonoNerdFontPropo-ExtraBold.ttf: JetBrainsMono Nerd Font Propo,JetBrainsMono NFP,JetBrainsMono NFP ExtraBold:style=ExtraBold,Regular

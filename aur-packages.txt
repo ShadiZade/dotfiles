@@ -13,6 +13,7 @@ minecraft-launcher
 noto-fonts-sc
 otf-gfs
 otf-kawkab-mono
+potato
 ripdrag-git
 scantailor-advanced-git
 shahab-fonts
