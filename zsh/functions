@@ -21,7 +21,8 @@ source ~/Repositories/private/private-aliases.sh
 
 function terminal-art {
     last-updated
-    last-backed
+    last-back-caravan
+    last-back-mobile
     display-unread-arch-news
     touch "$usdd/qotd" "$usdd/today-date"
     [[ "$(cat "$usdd/today-date")" != "$(date +%m-%d)" ]] && {
@@ -591,8 +592,13 @@ function all-colors {
 }
 
 random-file () {
-    [[ "$(fd -d 1 "$1" | wc -l)" -eq 0 ]] && return
-    fd -i -d 1 "$1" | sed -n "$(($(random-number 5) % $(fd -d 1 "$1" | wc -l) + 1))"p
+    random_files=()
+    until [[ "${#random_files[@]}" -ge ${2:-1} ]]
+    do
+	[[ "$(fd -d 1 "$1" | wc -l)" -eq 0 ]] && return
+	random_files+="$(fd -i -d 1 "$1" | sed -n "$(($(random-number 5) % $(fd -d 1 "$1" | wc -l) + 1))"p)"
+    done
+    echo ${random_files[@]}
 }
 
 function sl {
@@ -616,11 +622,18 @@ function last-updated {
     echolor beige-blue ":: System was last updated ““$lud”” days ago."
 }
 
-function last-backed {
+function last-back-caravan {
     caravan_log_dir="$HOME/.local/logs/caravan"
     lcb="$(datediff -f %d $(stat -c '%w' "$caravan_log_dir"/"$(eza -1fX --sort=newest "$caravan_log_dir" | tail -n 1)" | awk '{print $1}') $(date +"%Y-%m-%d"))"
     [[ "$lcb" -lt 2 ]] && return
     echolor beige-blue ":: System was last backed ““$lcb”” days ago."
+}
+
+function last-back-mobile {
+    backmobile_log_file="$HOME/.local/logs/backmobile/backmobile-times"
+    lbm="$(datediff -f %d $(tail -n 1 "$backmobile_log_file" | awk '{print $1}') $(date +"%Y-%m-%d"))"
+    [[ "$lbm" -lt 2 ]] && return
+    echolor beige-blue ":: Mobile was last backed ““$lbm”” days ago."
 }
 
 function enzh {
