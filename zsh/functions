@@ -720,3 +720,13 @@ function zap-to-directory {
 	     return 1 ;;
     esac
 }
+
+function mvk {
+    [[ -z "$1" ]] && return 1
+    [[ -z "$2" ]] && return 1
+    local ext="${1##*.}"
+    [[ -n "$ext" ]] && local ext=".$ext"
+    grep -q '\.' <<< "$1" || local ext=''
+    mv -vn "$1" "$(kebab "$2")""$ext" || return 1
+    echolor purple-aquamarine ":: From ““$1””\n:: Into ““$(kebab "$2")$ext””"
+}
