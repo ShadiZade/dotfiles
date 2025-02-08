@@ -26,6 +26,7 @@ alias cdae="cd ~/Athenaeum/add/ && ll"
 alias cdk="cd ~/Desktop && ll"
 alias cdkt="cd ~/Desktop/try && ll"
 ## Local
+alias cdl="cd ~/.local/ && fresco && ll"
 alias cdls="cd ~/.local/share/ && fresco && ll"
 alias cdlsu="cd ~/.local/share/user-scripts && ll"
 alias cdlm="cd ~/.local/mobile/Internal\ shared\ storage/Home && ll"

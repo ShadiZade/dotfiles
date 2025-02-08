@@ -586,9 +586,11 @@ function ws {
 
 function all-colors {
     IFS=$'\n'
-    for j in $(xsv select -n 1 "$usdd"/echolors.csv)
+    for j in $(xsv select -n 1,2 "$usdd"/echolors.csv)
     do
-	eval echolor "$j" "$j"
+	local color_name="$(awk -F ',' '{print $1}' <<< "$j")"
+	local color_code="$(awk -F ',' '{print $2}' <<< "$j")"
+	 echolor "$color_name" "\t$color_name          $color_code"
     done
     unset IFS
 }
