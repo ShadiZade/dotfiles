@@ -45,3 +45,8 @@
 (defalias 'move-progress-forward
    (kmacro "C-r ⨯ SPC P R O G R E S S SPC ⨯ <return> C-k C-x C-x C-y"))
 
+(defalias 'nroff-bold-region
+  (kmacro "C-x C-x \\ f B C-x C-x \\ f R"))
+
+(defalias 'nroff-italic-region
+  (kmacro "C-x C-x \\ f I C-x C-x \\ f R"))

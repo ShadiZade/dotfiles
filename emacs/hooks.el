@@ -50,6 +50,12 @@
 	    (local-set-key (kbd "C-c i") 'do-xhtml-italic-region)
 	    ))
 
+(add-hook 'nroff-mode-hook
+	  (lambda ()
+	    (local-set-key (kbd "C-c b") 'nroff-bold-region)
+	    (local-set-key (kbd "C-c i") 'nroff-italic-region)
+	    ))
+
 (add-hook 'pdf-view-mode-hook
 	  (lambda ()
 	    (local-set-key (kbd "C-s") 'isearch-forward)

@@ -50,6 +50,8 @@ function terminal-art {
 	 ~/Repositories/scripts/hijri-date.sh > "$usdd/today-date-hijri"
 	 clear-line
      fi
+     dodec -c "pretty $(date +%Y-%m-%d)"
+     dodec -c "pretty 2025-02-10"
      reading-stats
      echolor mintgreen-violet "∎∎““∎∎”” $(date +%A), $(date +"%d %B %Y")" 1
      [[ ! -z "$(cat "$usdd/today-date-hijri")" ]] && echolor mintgreen ", $(cat "$usdd/today-date-hijri")" 1

@@ -233,3 +233,4 @@ The corresponding mode is `%s'."
   (kill-new
    (shadi/kebab (current-kill 0 t)))
   (yank))
+
