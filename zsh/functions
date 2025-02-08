@@ -534,7 +534,7 @@ function open-newsletter {
     [[ -z "$nlname" ]] && return
     nlfile="$(eza -1f --sort=name "$loc"/"$nlname" | grep "pdf$" | tail -n 1)"
     echolor green ":: Opened newsletter ““${nlfile%'.'*}””"
-    zathura "$loc"/"$nlname"/"$nlfile" 2>/dev/null
+    sioyek "$loc"/"$nlname"/"$nlfile" 2>/dev/null >/dev/null
 }
 
 function unread-newsletter {
@@ -548,7 +548,7 @@ function unread-newsletter {
     [[ -z "$nlfile" ]] && return
     nlfilefull="$(grep "${nlfile}.pdf$" "$ufile")"
     echolor green ":: Opened newsletter ““$nlfile””"
-    zathura "$nlfilefull" 2>/dev/null
+    sioyek "$nlfilefull" 2>/dev/null >/dev/null
     echolor yellow ":: Remove ““$nlfile”” from unread? (Y/n) " 1
     read -r remove_from_unread_p
     [[ "$remove_from_unread_p" = "n" ]] && {

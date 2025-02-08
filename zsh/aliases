@@ -228,7 +228,6 @@ alias ,,='trans -b'
 alias llwc="ll | wc -l"
 alias back="~/Repositories/scripts/back/backmaster.sh"
 alias morse="morse-x -f 350"
-alias z="rdo zathura"
 alias xvs="xv -d ~/Holding/screenshots"
 alias ←n="xclip -selection clipboard"
 alias ←="tr -d '\n' | xclip -selection clipboard"

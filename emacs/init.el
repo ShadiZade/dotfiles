@@ -74,7 +74,7 @@
  '(custom-safe-themes
    '("b1a691bb67bd8bd85b76998caf2386c9a7b2ac98a116534071364ed6489b695d" default))
  '(package-selected-packages
-   '(clojure-mode nerd-icons-dired pyim pyim-basedict pyim-cangjiedict openwith casual-calc mbsync pdf-tools circe zotra yaml-pro reverso ebuku lines-at-once linguistic baidu-translate lingva org-translate su mu4easy insert-char-preview unipoint sxhkdrc-mode sxiv counsel-tramp auto-compile paperless pdfgrep scholar-import auctex company-auctex move-text company-spell company-emoji company magit unbound jumblr mines quiz gscholar-bibtex ess poly-R csv-mode nov yaml-mode calmer-forest-theme beacon atom-one-dark-theme arjen-grey-theme elfeed slime xwiki-mode olivetti org-bullets sudo-utils org-mode general all-the-icons-dired all-the-icons gruvbox-theme helpful ivy-rich which-key rainbow-delimiters use-package xclip mediawiki markdown-mode lua-mode lorem-ipsum hydra graphviz-dot-mode dash counsel)))
+   '(paredit cider clojure-mode nerd-icons-dired pyim pyim-basedict pyim-cangjiedict openwith casual-calc mbsync pdf-tools circe zotra yaml-pro reverso ebuku lines-at-once linguistic baidu-translate lingva org-translate su mu4easy insert-char-preview unipoint sxhkdrc-mode sxiv counsel-tramp auto-compile paperless pdfgrep scholar-import auctex company-auctex move-text company-spell company-emoji company magit unbound jumblr mines quiz gscholar-bibtex ess poly-R csv-mode nov yaml-mode calmer-forest-theme beacon atom-one-dark-theme arjen-grey-theme elfeed slime xwiki-mode olivetti org-bullets sudo-utils org-mode general all-the-icons-dired all-the-icons gruvbox-theme helpful ivy-rich which-key rainbow-delimiters use-package xclip mediawiki markdown-mode lua-mode lorem-ipsum hydra graphviz-dot-mode dash counsel)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -159,11 +159,11 @@
 	(directory . emacs)
 	("\\.mm\\'" . default)
 	("\\.x?html?\\'" . default)
-	("\\.pdf\\'" . "zathura %s")
-	("\\.ps\\'" . "zathura %s")
-	("\\.djvu\\'" . "zathura %s")
-	("\\.epub\\'" . "zathura %s")
-	("\\.mobi\\'" . "zathura %s")
+	("\\.pdf\\'" . "sioyek %s")
+	("\\.ps\\'" . "sioyek %s")
+	("\\.djvu\\'" . "sioyek %s")
+	("\\.epub\\'" . "sioyek %s")
+	("\\.mobi\\'" . "sioyek %s")
 	("\\.jpg\\'" . "sxiv %s")
 	("\\.jpeg\\'" . "sxiv %s")
 	("\\.png\\'" . "sxiv %s")
