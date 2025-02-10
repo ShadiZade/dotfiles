@@ -70,7 +70,7 @@ function run_disowned {
 }
 
 function rdo {
-    run_disowned "$@" 1>/dev/null 2>/dev/null
+    ( run_disowned "$@" 1>/dev/null 2>/dev/null )
 }
 
 function bd  {
