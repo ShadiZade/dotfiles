@@ -66,6 +66,8 @@ linux-lts
 lsp-plugins-gst
 lvm2
 man-db
+marble
+marble-maps
 mat2
 moreutils
 mpc
@@ -118,6 +120,7 @@ qrtool
 qt5-tools
 quodlibet
 r
+racket-minimal
 reflector
 rofi
 rofi-emoji
