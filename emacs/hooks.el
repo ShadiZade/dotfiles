@@ -66,9 +66,22 @@
 	    (local-set-key (kbd "C-c f") 'move-progress-forward)
 	    ))
 
+(add-hook 'racket-mode-hook
+	  (lambda ()
+	    (local-set-key (kbd "C-x C-e") 'racket-eval-last-sexp)
+	    (local-set-key (kbd "<f5>"   ) 'racket-run)
+	    ))
+
+(add-hook 'racket-repl-mode-hook
+	  (lambda ()
+	    (local-set-key (kbd "<up>"   ) 'racket-repl-previous-input)
+	    (local-set-key (kbd "<down>" ) 'racket-repl-next-input)
+	    (local-set-key (kbd "M-p"    ) 'racket-repl-previous-prompt)
+	    (local-set-key (kbd "M-n"    ) 'racket-repl-next-prompt)
+	    ))
+
 (add-hook 'dired-mode-hook
 	  'auto-revert-mode)
-
 
 
 
