@@ -153,6 +153,10 @@
 (use-package elfeed)
 (put 'set-goal-column 'disabled nil)
 
+(add-to-list
+ 'auto-mode-alist
+ '("\\.rkt\\'" . racket-mode))
+
 (setq org-file-apps
       '(
 	(auto-mode . emacs)
