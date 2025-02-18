@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo ln -sf ~/Repositories/dotfiles/xkb/en /usr/share/X11/xkb/symbols/
+sudo ln -sf ~/Repositories/dotfiles/xkb/us /usr/share/X11/xkb/symbols/
 sudo ln -sf ~/Repositories/dotfiles/xkb/ara /usr/share/X11/xkb/symbols/
 mkdir ~/.config/emacs/
 ln -sf ~/Repositories/dotfiles/emacs/*  ~/.config/emacs/
