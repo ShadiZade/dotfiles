@@ -85,6 +85,7 @@
 
 
 
+
 (defun athenaeum-index.csv_file_hook ()
   (when (string= (file-name-nondirectory (buffer-file-name)) "athenaeum-index.csv")
     (read-only-mode)
@@ -92,5 +93,19 @@
     )
 )
 
-(add-hook 'find-file-hook
-	  'athenaeum-index.csv_file_hook)
+(defun refs.bib_file_hook ()
+  (when (string= (file-name-nondirectory (buffer-file-name)) "refs.bib")
+    (read-only-mode)
+    (auto-revert-mode t)
+    )
+)
+
+(defun sxhkdrc_file_hook ()
+  (when (string= (file-name-nondirectory (buffer-file-name)) "sxhkdrc")
+    (sxhkdrc-mode)
+    )
+)
+
+(add-hook 'find-file-hook 'athenaeum-index.csv_file_hook)
+(add-hook 'find-file-hook 'refs.bib_file_hook)
+(add-hook 'find-file-hook 'sxhkdrc_file_hook)

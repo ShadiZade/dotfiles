@@ -50,7 +50,7 @@
   (shadi/set-font-faces))
 
 (shadi/set-arabic-font '21)
-(pdf-tools-install)
+;; (pdf-tools-install)
 
 ;; init package sources
 (require 'package)
