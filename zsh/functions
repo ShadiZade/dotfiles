@@ -733,3 +733,30 @@ function mvk {
     mv -vn "$1" "$(kebab "$2")""$ext" || return 1
     echolor purple-aquamarine ":: From ““$1””\n:: Into ““$(kebab "$2")$ext””"
 }
+
+
+function rl {
+    # remove symlinks safely
+    [[ -z "$@" ]] && {
+	echolor red ":: No arguments found."
+	return 1
+    }
+    [[ "${#@}" -ge 3 ]] && {
+	echolor yellow ":: About to remove ““${#@}”” symlinks. (press <return> to continue) " 1
+	read
+    }
+    for j in "${@}"
+    do
+	[[ ! -e "$j" ]] && {
+	    echolor red ":: File ““$j”” does not exist."
+	    return 1
+	}
+	[[ "$(stat -c '%F' "$j")" != "symbolic link" ]] && {
+	    echolor red ":: File ““$j”” is not a symlink."
+	    return 1
+	}
+	echolor yellow ":: Removing symlink ““$(realpath -s "$j")””"
+	echolor yellow-liteorange "             Target ““$(realpath -P "$j")””"
+	rm -I "$j" >/dev/null && echolor green "      ✓ Done."
+    done
+}
