@@ -60,7 +60,13 @@ function terminal-art {
 }
 
 function cd {
-    builtin cd "${1:-$HOME}"
+    case "$1" in
+	"")  local new_dir="$HOME" ;;
+	"-") local new_dir="$PREVIOUS_CD_DIR" ;;
+	*)   local new_dir="$1" ;;
+    esac
+    export PREVIOUS_CD_DIR="$(pwd)"
+    builtin cd "$new_dir"
     change-prompt-for-git
     check-for-relevant-function
 }
