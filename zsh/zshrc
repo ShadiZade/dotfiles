@@ -45,6 +45,11 @@ stty -ixon # remove C-s pausing of the terminal
 compdef _gnu_generic mkdir
 compdef '_files -g "*.(mp4|mkv|avi|mp3|ogg|flac|wmv)"' mpv
 compdef '_files -g "*.(pdf|ps|djvu|epub)"' sioyek
+
+[[ -e '/usr/share/racket' ]] && {
+    source /usr/share/racket/pkgs/shell-completion/racket-completion.zsh
+}
+
 # file location was changed from ~/.zshrc to ~/.config/zsh/.zshrc
 # this was done by adding the following line to /etc/zsh/zshenv
 # export ZDOTDIR="$HOME"/.config/zsh 

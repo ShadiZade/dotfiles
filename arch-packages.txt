@@ -2,6 +2,7 @@
 acpi
 alsa-plugins
 alsa-utils
+android-file-transfer
 aspell
 aspell-en
 audacity
@@ -24,6 +25,7 @@ csvlens
 dateutils
 dialog
 dice
+docx2txt
 dosfstools
 dunst
 efibootmgr
@@ -69,6 +71,7 @@ man-db
 marble
 marble-maps
 mat2
+meld
 moreutils
 mpc
 mpd
@@ -120,7 +123,7 @@ qrtool
 qt5-tools
 quodlibet
 r
-racket-minimal
+racket
 reflector
 rofi
 rofi-emoji

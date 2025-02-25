@@ -153,6 +153,8 @@
 (use-package elfeed)
 (put 'set-goal-column 'disabled nil)
 
+(delete
+ '("\\.rkt\\'" . scheme-mode) auto-mode-alist)
 (add-to-list
  'auto-mode-alist
  '("\\.rkt\\'" . racket-mode))
