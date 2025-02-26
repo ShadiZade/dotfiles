@@ -150,7 +150,6 @@
   :after org
   :hook (org-mode . org-bullets-mode))
 
-(use-package elfeed)
 (put 'set-goal-column 'disabled nil)
 
 (delete
@@ -201,3 +200,4 @@
 
 (setq dired-kill-when-opening-new-dired-buffer t)
 (setq dired-listing-switches "-alh")
+(use-package elfeed)

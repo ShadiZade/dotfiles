@@ -42,6 +42,12 @@
 (global-set-key (kbd "M-<down>")        'move-text-down)
 (global-set-key (kbd "C-c <backspace>") 'clear-scratch-buffer)
 (global-set-key (kbd "C-=")             'full-calc)
+(global-set-key (kbd "<end>")           'kill-buffer)
+(global-set-key (kbd "<f5>")            'kmacro-set-counter)
+(global-set-key (kbd "<f6>")            'kmacro-edit-macro)
+(global-set-key (kbd "<f7>")            'kmacro-name-last-macro)
+(global-set-key (kbd "<f8>")            'insert-kbd-macro)
+
 
 ;; dired
 (global-set-key (kbd "C-c v m n")         (lambda () (interactive)
