@@ -56,7 +56,10 @@ function terminal-art {
      [[ ! -z "$(cat "$usdd/today-date-hijri")" ]] && echolor mintgreen ", $(cat "$usdd/today-date-hijri")" 1
      echolor violet-mintgreen "\n∎∎““∎∎ $(cat "$usdd/today-date-french")””" 
      ~/Repositories/communist-calendar/fetch-events.sh
-     cat "$usdd/qotd" | cowsay -f none -W $(($(tput cols) - 10))
+     local quote_margin=30
+     echolor mintgreen "$(horizontal-line ▣ "$quote_margin")"
+     cat <(echo -ne "\t > ") "$usdd/qotd" | fold -w $(($(tput cols) - "$quote_margin")) -s
+     echolor mintgreen "$(horizontal-line ▣ "$quote_margin")"
 }
 
 function cd {
@@ -765,4 +768,12 @@ function rl {
 	echolor yellow-liteorange "             Target ““$(realpath -P "$j")””"
 	rm -I "$j" >/dev/null && echolor green "      ✓ Done."
     done
+}
+
+horizontal-line () {
+    for j in {1..$(($(tput cols) - ${2:-0}))}
+    do
+	echo -n "${1-—}"
+    done
+    echo
 }
