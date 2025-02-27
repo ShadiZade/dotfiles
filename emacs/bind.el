@@ -48,6 +48,7 @@
 (keymap-global-set "<f6>"            'kmacro-edit-macro)
 (keymap-global-set "<f7>"            'kmacro-name-last-macro)
 (keymap-global-set "<f8>"            'insert-kbd-macro)
+(keymap-global-set "C-x a d"         'edit-abbrevs)
 
 (keymap-global-unset "C-x C-k <return>")
 ;; dired

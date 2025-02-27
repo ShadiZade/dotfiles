@@ -58,7 +58,7 @@ function terminal-art {
      ~/Repositories/communist-calendar/fetch-events.sh
      local quote_margin=30
      echolor mintgreen "$(horizontal-line ▣ "$quote_margin")"
-     cat <(echo -ne "\t > ") "$usdd/qotd" | fold -w $(($(tput cols) - "$quote_margin")) -s
+     cat <(echo -ne "\t") "$usdd/qotd" | fold -w $(($(tput cols) - "$quote_margin")) -s
      echolor mintgreen "$(horizontal-line ▣ "$quote_margin")"
 }
 
