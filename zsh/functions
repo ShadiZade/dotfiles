@@ -57,9 +57,9 @@ function terminal-art {
      echolor violet-mintgreen "\n∎∎““∎∎ $(cat "$usdd/today-date-french")””" 
      ~/Repositories/communist-calendar/fetch-events.sh
      local quote_margin=30
-     echolor mintgreen "$(horizontal-line ▣ "$quote_margin")"
-     cat <(echo -ne "\t") "$usdd/qotd" | fold -w $(($(tput cols) - "$quote_margin")) -s
-     echolor mintgreen "$(horizontal-line ▣ "$quote_margin")"
+     echolor mintgreen "$(horizontal-line ■▣□ $quote_margin)"
+     cat <(echo -ne "\t") "$usdd/qotd" | fold -w $(($(tput cols) - $quote_margin)) -s
+     echolor mintgreen "$(horizontal-line ■▣□ $quote_margin)"
 }
 
 function cd {
@@ -771,9 +771,13 @@ function rl {
 }
 
 horizontal-line () {
-    for j in {1..$(($(tput cols) - ${2:-0}))}
+    local hl_inpattern="$(echo -n "${1:-—}" | wc -m)"
+    local hl_chars="$(($(tput cols) / $hl_inpattern))"
+    local hl_iterations="$((${2:-0} / $hl_inpattern))"
+    local hl_remainder="$(((${2:-0} % $hl_inpattern) - 1))"
+    for j in {1..$((hl_chars - hl_iterations))}
     do
 	echo -n "${1-—}"
     done
-    echo
+    echo -e "\033[${hl_remainder}D\033[K"
 }
