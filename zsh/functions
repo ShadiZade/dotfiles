@@ -52,8 +52,8 @@ function terminal-art {
      fi
      dodec -c "pretty $(date +%Y-%m-%d)"
      reading-stats
-     echolor mintgreen-violet "∎∎““∎∎”” $(date +%A), $(date +"%d %B %Y")" 1
-     [[ ! -z "$(cat "$usdd/today-date-hijri")" ]] && echolor mintgreen ", $(cat "$usdd/today-date-hijri")" 1
+     echolor mintgreen-violet "∎∎““∎∎”” $(date +%A), $(date +"%d %B 1%Y") HE" 1
+     [[ ! -z "$(cat "$usdd/today-date-hijri")" ]] && echolor mintgreen ", $(cat "$usdd/today-date-hijri") AH" 1
      echolor violet-mintgreen "\n∎∎““∎∎ $(cat "$usdd/today-date-french")””" 
      ~/Repositories/communist-calendar/fetch-events.sh
      local quote_margin=30

@@ -72,9 +72,28 @@
  ;; If there is more than one, they won't work right.
  '(auth-source-save-behavior nil)
  '(custom-safe-themes
-   '("b1a691bb67bd8bd85b76998caf2386c9a7b2ac98a116534071364ed6489b695d" default))
+   '("b1a691bb67bd8bd85b76998caf2386c9a7b2ac98a116534071364ed6489b695d"
+     default))
  '(package-selected-packages
-   '(geiser-racket racket-mode geiser anki-editor anki-editor-view anki-connect paredit nerd-icons-dired pyim pyim-basedict pyim-cangjiedict openwith casual-calc mbsync pdf-tools circe zotra yaml-pro reverso ebuku lines-at-once linguistic baidu-translate lingva org-translate su mu4easy insert-char-preview unipoint sxhkdrc-mode sxiv counsel-tramp auto-compile paperless pdfgrep scholar-import auctex company-auctex move-text company-spell company-emoji company magit unbound jumblr mines quiz gscholar-bibtex ess poly-R csv-mode nov yaml-mode calmer-forest-theme beacon atom-one-dark-theme arjen-grey-theme elfeed slime xwiki-mode olivetti org-bullets sudo-utils org-mode general all-the-icons-dired all-the-icons gruvbox-theme helpful ivy-rich which-key rainbow-delimiters use-package xclip mediawiki markdown-mode lua-mode lorem-ipsum hydra graphviz-dot-mode dash counsel)))
+   '(all-the-icons all-the-icons-dired anki-connect anki-editor
+		   anki-editor-view arjen-grey-theme
+		   atom-one-dark-theme auctex auto-compile
+		   baidu-translate beacon calmer-forest-theme
+		   casual-calc circe company company-auctex
+		   company-emoji company-spell counsel counsel-tramp
+		   csv-mode dash ebuku elfeed ess geiser geiser-racket
+		   general graphviz-dot-mode gruvbox-theme
+		   gscholar-bibtex helpful hydra insert-char-preview
+		   ivy-rich jumblr lines-at-once linguistic lingva
+		   lorem-ipsum lua-mode magit markdown-mode mbsync
+		   mediawiki mines move-text mu4easy nerd-icons-dired
+		   nov olivetti openwith org-bullets org-mode
+		   org-translate paperless paredit pdf-tools pdfgrep
+		   poly-R pyim pyim-basedict pyim-cangjiedict quiz
+		   racket-mode rainbow-delimiters reverso
+		   scholar-import slime su sudo-utils sxhkdrc-mode
+		   sxiv unbound unipoint use-package which-key xclip
+		   xwiki-mode yaml-mode yaml-pro zotra)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
