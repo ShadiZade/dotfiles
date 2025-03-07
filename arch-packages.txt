@@ -245,6 +245,7 @@ ttf-ubuntu-nerd
 ttf-victor-mono-nerd
 ttf-zed-mono-nerd
 vim
+visidata
 vivaldi
 vulkan-nouveau
 wget

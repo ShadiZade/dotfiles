@@ -1,3 +1,4 @@
+beancount
 bible-kjv
 buku
 cozette-otb

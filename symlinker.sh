@@ -2,8 +2,9 @@
 
 sudo ln -sf ~/Repositories/dotfiles/xkb/us /usr/share/X11/xkb/symbols/
 sudo ln -sf ~/Repositories/dotfiles/xkb/ara /usr/share/X11/xkb/symbols/
-mkdir ~/.config/emacs/
-ln -sf ~/Repositories/dotfiles/emacs/*  ~/.config/emacs/
+mkdir -p ~/.config/emacs/lisp
+ln -sf ~/Repositories/dotfiles/emacs/lisp/*  ~/.config/emacs/lisp
+ln -sf ~/Repositories/dotfiles/emacs/*el  ~/.config/emacs/
 ln -sf ~/Repositories/private/elfeed-feeds.el ~/.config/emacs/
 mkdir ~/.config/zsh/
 ln -sf ~/Repositories/dotfiles/zsh/{aliases,extra,functions,variables}  ~/.config/zsh/
@@ -54,4 +55,7 @@ ln -sf ~/Repositories/dotfiles/rofimoji/used-files/latin/* ~/.config/rofimoji/us
 ln -sf ~/Repositories/dotfiles/rofimoji/used-files/ipa/* ~/.config/rofimoji/used-files/ipa/
 mkdir ~/.config/zathura/
 ln -sf ~/Repositories/dotfiles/zathura/zathurarc ~/.config/zathura/
-ln -sf ~/Repositories/dotfiles/sioyek/*user.config ~/.config/sioyek
+mkdir -p ~/.config/sioyek/
+ln -sf ~/Repositories/dotfiles/sioyek/*user.config ~/.config/sioyek/
+mkdir -p ~/.config/eza/
+ln -sf ~/Repositories/dotfiles/eza/my-eza-theme.yml ~/.config/eza/theme.yml
