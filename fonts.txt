@@ -1543,7 +1543,7 @@
 /usr/share/fonts/oldschool/PxPlus_IBM_EGA_9x14-2x.ttf: PxPlus IBM EGA 9x14\-2x:style=Regular
 /usr/share/fonts/TTF/Inconsolata-Expanded.ttf: Inconsolata,Inconsolata Expanded:style=Expanded,Regular
 /usr/share/fonts/user-fonts/ZillaSlab-SemiBold.ttf: Zilla Slab,Zilla Slab SemiBold:style=SemiBold,Regular
-/usr/share/fonts/noto/NotoSansThaiLooped-ExtraBold.ttf: Noto Sans Thai Looped,Noto Sans Thai Looped ExtraBold:style=ExtraBold,Regular
+/usr/share/fonts/noto/NotoSansThaiLooped-ExtraBold.ttf: Noto Sans Thai Looped,Noto Sans Thai Looped ExtraBold:style=Extrabold,Regular
 /usr/share/fonts/noto/NotoSerifKhmer-Condensed.ttf: Noto Serif Khmer,Noto Serif Khmer Condensed:style=Condensed,Regular
 /usr/share/fonts/noto/NotoSans-ExtraLight.ttf: Noto Sans,Noto Sans ExtraLight:style=ExtraLight,Regular
 /usr/share/fonts/noto/NotoSansGurmukhi-ExtraCondensedSemiBold.ttf: Noto Sans Gurmukhi ExtraCondensed,Noto Sans Gurmukhi ExtraCondensed SemiBold:style=SemiBold,Regular
