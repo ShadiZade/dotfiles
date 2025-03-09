@@ -16,21 +16,13 @@
 (keymap-global-set "C-’ o"           'olivetti-mode)
 (keymap-global-set "C-’ <"           'diff-buffer-with-file)
 (keymap-global-set "C-’ ~"           'shadi/sign)
-(keymap-global-set "C-’ e i"         'shadi/edit-init)
-(keymap-global-set "C-’ e f"         'shadi/edit-functions)
-(keymap-global-set "C-’ e h"         'shadi/edit-hook)
-(keymap-global-set "C-’ e b"         'shadi/edit-bind)
-(keymap-global-set "C-’ e o"         'shadi/edit-org)
 (keymap-global-set "C-’ a <right>"   'set-buffer-directionality-right)
 (keymap-global-set "C-’ a <left>"    'set-buffer-directionality-left)
 (keymap-global-set "C-’ a <prior>"   'shadi/text-force-ltr)
 (keymap-global-set "C-’ a <next>"    'shadi/text-force-rtl)
 (keymap-global-set "C-’ f"           'shadi/fetch-events)
-(keymap-global-set "C-’ t"           'shadi/open-org-task)
 (keymap-global-set "C-c r"           'shadi/kebab-region)
 (keymap-global-set "C-c y"           'shadi/kebab-and-yank)
-(keymap-global-set "C-’ w"           'shadi/open-org-tiasut)
-(keymap-global-set "C-’ n"           'shadi/open-notebook)
 (keymap-global-set "C-’ d"           'shadi/start-diary-entry)
 (keymap-global-set "C-c a"           'org-agenda-list)
 (keymap-global-set "C-c s"           'scratch-buffer)
@@ -50,7 +42,6 @@
 (keymap-global-set "<f8>"            'insert-kbd-macro)
 (keymap-global-set "C-x a d"         'edit-abbrevs)
 
-(keymap-global-unset "C-x C-k <return>")
 ;; dired
 (keymap-global-set "C-c v m n"         (lambda () (interactive)
 					    (dired "~/Misc/notes")))
@@ -68,6 +59,27 @@
 					    (dired "~/.local/share/user-scripts")))
 (keymap-global-set "C-c v s a"         (lambda () (interactive)
 					    (dired "~/Study/academia")))
+;; specific files
+(keymap-global-set "C-’ e i"           (lambda () (interactive)
+					 (find-file "~/Repositories/dotfiles/emacs/init.el")))
+(keymap-global-set "C-’ e f"           (lambda () (interactive)
+					 (find-file "~/Repositories/dotfiles/emacs/functions.el")))         
+(keymap-global-set "C-’ e h"           (lambda () (interactive)
+					 (find-file "~/Repositories/dotfiles/emacs/hooks.el")))                  
+(keymap-global-set "C-’ e b"           (lambda () (interactive)
+					 (find-file "~/Repositories/dotfiles/emacs/bind.el")))                           
+(keymap-global-set "C-’ e o"           (lambda () (interactive)
+					 (find-file "~/Repositories/dotfiles/emacs/org.el")))                           
+(keymap-global-set "C-’ t"             (lambda () (interactive)
+					 (find-file "~/Misc/org/task.org")))
+(keymap-global-set "C-’ w"             (lambda () (interactive)
+					 (find-file "~/Misc/org/tiasut.org")))
+(keymap-global-set "C-’ n"             (lambda () (interactive)
+					 (find-file "~/Archives/Personal/notebook/notebook.md")
+					 (end-of-buffer)
+					 (olivetti-mode)))
+(keymap-global-set "C-’ $"             (lambda () (interactive)
+					 (find-file "~/Archives/Personal/bookkeeping/book.beancount")))
 
 ;; apps
 (keymap-global-set "C-← b"       'ebuku)
@@ -100,3 +112,9 @@
 					(shadi/fw 8)))
 (keymap-global-set "C-c 9"         (lambda () (interactive)
 					(shadi/fw 9)))
+
+
+
+
+;; unset
+(keymap-global-unset "C-x C-k <return>")

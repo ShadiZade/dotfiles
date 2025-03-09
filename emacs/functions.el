@@ -32,31 +32,6 @@
   (interactive)
   (load-file "~/.config/emacs/init.el"))
 
-(defun shadi/edit-init ()
-  "Shows my init.el file in a buffer."
-  (interactive)
-  (find-file "~/Repositories/dotfiles/emacs/init.el"))
-
-(defun shadi/edit-functions ()
-  "Shows my functions.el file in a buffer."
-  (interactive)
-  (find-file "~/Repositories/dotfiles/emacs/functions.el"))
-
-(defun shadi/edit-bind ()
-  "Shows my bind.el file in a buffer."
-  (interactive)
-  (find-file "~/Repositories/dotfiles/emacs/bind.el"))
-
-(defun shadi/edit-hook ()
-  "Shows my hooks.el file in a buffer."
-  (interactive)
-  (find-file "~/Repositories/dotfiles/emacs/hooks.el"))
-
-(defun shadi/edit-org ()
-  "Shows my bind.el file in a buffer."
-  (interactive)
-  (find-file "~/Repositories/dotfiles/emacs/org.el"))
-
 (defun shadi/set-arabic-font (arabic-font-size)
   "Sets my emacs Arabic font and size."
   (interactive)
@@ -97,20 +72,6 @@
   (end-of-visual-line)
   (newline)
   (newline))
-
-(defun shadi/open-org-task ()
-  (interactive)
-  (find-file "~/Misc/org/task.org"))
-
-(defun shadi/open-org-tiasut ()
-  (interactive)
-  (find-file "~/Misc/org/tiasut.org"))
-
-(defun shadi/open-notebook ()
-  (interactive)
-  (find-file "~/Archives/Personal/notebook/notebook.md")
-  (end-of-buffer)
-  (olivetti-mode))
 
 (defun company-refresh-and-complete ()
   (interactive)
