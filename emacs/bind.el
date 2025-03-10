@@ -79,7 +79,9 @@
 					 (end-of-buffer)
 					 (olivetti-mode)))
 (keymap-global-set "C-’ $"             (lambda () (interactive)
-					 (find-file "~/Archives/Personal/bookkeeping/book.beancount")))
+					 (find-file "~/Archives/Personal/bookkeeping/book.beancount")
+					 (text-scale-set 2)
+					 (end-of-buffer)))
 
 ;; apps
 (keymap-global-set "C-← b"       'ebuku)
