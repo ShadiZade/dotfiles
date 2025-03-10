@@ -93,7 +93,7 @@ alias cdasc="cd ~/Archives/Socialist/countries && l"
 alias cdap="cd ~/Archives/Palestine && ll"
 alias cdar="cd ~/Archives/Personal && ll"
 alias cdard="cd ~/Archives/Personal/documents/ && ll"
-alias cdarb="cd ~/Archives/Personal/bookkeeping/ && ll"
+alias "cd$"="cd ~/Archives/Personal/bookkeeping/ && ll"
 alias cdao="cd ~/Archives/Other && ll"
 alias cdaos="cd ~/Archives/Other/safekeeping/ && ll"
 ## Data

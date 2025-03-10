@@ -1,3 +1,7 @@
+;; unset
+(keymap-global-unset "C-x C-k <return>")
+(keymap-global-unset "C-x C-p")
+
 ;; global bindings
 (keymap-global-set "<escape>"        'keyboard-escape-quit)
 (keymap-global-set "M-s M-s"         'company-refresh-and-complete)
@@ -41,6 +45,9 @@
 (keymap-global-set "<f7>"            'kmacro-name-last-macro)
 (keymap-global-set "<f8>"            'insert-kbd-macro)
 (keymap-global-set "C-x a d"         'edit-abbrevs)
+(keymap-global-set "C-x C-p l"       'package-list-packages)
+(keymap-global-set "C-x C-p i"       'package-install)
+(keymap-global-set "C-x C-p d"       'package-delete)
 
 ;; dired
 (keymap-global-set "C-c v m n"         (lambda () (interactive)
@@ -118,5 +125,3 @@
 
 
 
-;; unset
-(keymap-global-unset "C-x C-k <return>")

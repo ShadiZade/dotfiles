@@ -82,10 +82,10 @@
 		   anki-editor-view arjen-grey-theme
 		   atom-one-dark-theme auctex auto-compile
 		   baidu-translate beacon calmer-forest-theme
-		   casual-calc charmap circe company company-auctex
-		   company-emoji company-spell counsel counsel-tramp
-		   csv-mode ct dash ebuku elfeed ess geiser
-		   geiser-racket general graphviz-dot-mode
+		   casual-calc charmap chess circe company
+		   company-auctex company-emoji company-spell counsel
+		   counsel-tramp csv-mode ct dash ebuku elfeed ess
+		   geiser geiser-racket general graphviz-dot-mode
 		   gruvbox-theme gscholar-bibtex helpful hydra
 		   insert-char-preview ivy-rich jumblr lines-at-once
 		   linguistic lingva lorem-ipsum lua-mode magit

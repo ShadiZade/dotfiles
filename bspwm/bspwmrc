@@ -25,9 +25,10 @@ fcitx5 -d &
 copyq &
 flameshot &
 emacs --daemon &
-
 killall battery-warner
 ~/Repositories/scripts/battery-warner &
+~/Repositories/scripts/chart-disk &
+
 
 [[ "$battery_warning_on" -eq 0 ]] && {
     notify-send -u critical -t 100000 "BATTERY WARNER OFF" "You will not be notified if the battery level becomes too low".
