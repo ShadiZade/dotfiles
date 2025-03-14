@@ -781,3 +781,46 @@ horizontal-line () {
     done
     echo -e "\033[${hl_remainder}D\033[K"
 }
+
+function ytv {
+    yt-dlp                                                                               \
+	-f 'bestvideo[height<=1080][ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best'      \
+	--fragment-retries infinite                                                      \
+	--no-mtime                                                                       \
+	--embed-chapters                                                                 \
+	--embed-subs                                                                     \
+	"$@"
+}
+
+function ytvr {
+    yt-dlp                                                                               \
+	-f 'bestvideo[height<=1080][ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best'      \
+	--fragment-retries infinite                                                      \
+	--no-mtime                                                                       \
+	--embed-chapters                                                                 \
+	--embed-subs                                                                     \
+	--sponsorblock-remove all                                                        \
+	"$@"
+}
+
+function ytm {
+    yt-dlp                               \
+	--fragment-retries infinite      \
+	--format bestaudio               \
+	--no-mtime                       \
+	--extract-audio                  \
+	--audio-format mp3               \
+	"$@"
+}
+
+
+function ytmr {
+    yt-dlp                               \
+	--fragment-retries infinite      \
+	--format bestaudio               \
+	--no-mtime                       \
+	--extract-audio                  \
+	--audio-format mp3               \
+	--sponsorblock-remove all        \
+	"$@"
+}

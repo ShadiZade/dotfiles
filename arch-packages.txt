@@ -46,6 +46,7 @@ fzf
 ghostty
 gimp
 git
+gpick
 grub
 gst-plugins-good
 gucharmap
@@ -89,7 +90,6 @@ noto-fonts-emoji
 noto-fonts-extra
 nsxiv
 ntfs-3g
-okular
 otf-aurulent-nerd
 otf-codenewroman-nerd
 otf-comicshanns-nerd
