@@ -125,7 +125,7 @@ super + q ; l
 
 # freetube
 super + q ; f
-	pkill dunst; dunst & notify-send -t 1000 'Launcher' 'Launching "freetube"' & dbus-launch freetube
+	pkill dunst; dunst & notify-send -t 1000 'Launcher' 'Launching "freetube"' & freetube
 
 # qbittorrent
 super + q ; b

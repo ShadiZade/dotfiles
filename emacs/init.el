@@ -93,9 +93,9 @@
 		   org-mode org-translate paperless paredit pdf-tools
 		   pdfgrep poly-R pyim pyim-basedict pyim-cangjiedict
 		   quiz racket-mode rainbow-delimiters reverso
-		   scholar-import slime su sudo-utils sxhkdrc-mode
-		   sxiv unbound unipoint use-package which-key xclip
-		   xwiki-mode yaml-mode yaml-pro zotra)))
+		   scholar-import slime su sudo-utils swagg
+		   sxhkdrc-mode sxiv unbound unipoint use-package
+		   which-key xclip xwiki-mode yaml-mode yaml-pro zotra)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
