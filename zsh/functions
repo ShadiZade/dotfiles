@@ -824,3 +824,12 @@ function ytmr {
 	--sponsorblock-remove all        \
 	"$@"
 }
+
+function fof {
+    [[ ! -z "$1" ]] && {
+	local fof_type=".$1$"
+    }
+    local fof_num="$(fd -d 1 -t f -- "$fof_type" . | wc -l)"
+    echolor beige-aquamarine ":: Found ““$fof_num”” files."
+}
+    
