@@ -694,16 +694,16 @@ function memuse {
 
 function reading-stats {
     [[ ! -d "$HOME/Projects/reading/" ]] && echolor mintgreen-violet "““::”” No reading directory found."
-    tbr100_number="$(fd . ~/Projects/reading/tbr/tbr-100/ | wc -l)"
-    [[ "$tbr100_number" -gt 100 ]] && tbr100_number="$(echolor red "$tbr100_number")"
-    tbr20_number="$(fd . ~/Projects/reading/tbr/tbr-20/ | wc -l)"
-    [[ "$tbr20_number" -gt 20 ]] && tbr20_number="$(echolor red "$tbr20_number")"
-    tbr5_number="$(fd . ~/Projects/reading/tbr/tbr-5/ | wc -l)"
-    [[ "$tbr5_number" -gt 5 ]] && tbr5_number="$(echolor red "$tbr5_number")"
-    readingnow_number="$(fd -d 1 -t l -t f . ~/Projects/reading/ | wc -l)"
-    [[ "$readingnow_number" -gt 6 ]] && readingnow_number=="$(echolor red "$readingnow_number")"
-    done_number="$(fd . ~/Projects/reading/done/$(date +%Y) | wc -l)"
-    [[ "$done_number" -eq 0 ]] && done_number="$(echolor red "$done_number")"
+    local tbr100_number="$(fd . ~/Projects/reading/tbr/tbr-100/ | wc -l)"
+    [[ "$tbr100_number" -gt 100 ]] && local tbr100_number="$(echolor red "$tbr100_number")"
+    local tbr20_number="$(fd . ~/Projects/reading/tbr/tbr-20/ | wc -l)"
+    [[ "$tbr20_number" -gt 20 ]] && local tbr20_number="$(echolor red "$tbr20_number")"
+    local tbr5_number="$(fd . ~/Projects/reading/tbr/tbr-5/ | wc -l)"
+    [[ "$tbr5_number" -gt 5 ]] && local tbr5_number="$(echolor red "$tbr5_number")"
+    local readingnow_number="$(fd -d 1 -t l -t f . ~/Projects/reading/ | wc -l)"
+    [[ "$readingnow_number" -gt 6 ]] && local readingnow_number=="$(echolor red "$readingnow_number")"
+    local done_number="$(fd . ~/Projects/reading/done/$(date +%Y) | wc -l)"
+    [[ "$done_number" -eq 0 ]] && local done_number="$(echolor red "$done_number")"
     echolor mintgreen-violet "Reading statistics: ““TBR”” $tbr100_number““/””$tbr20_number““/””$tbr5_number ““NOW”” $readingnow_number ““DONE”” $done_number"
 }
 
