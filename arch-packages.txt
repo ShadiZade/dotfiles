@@ -43,7 +43,6 @@ flameshot
 flatpak
 fortune-mod
 fzf
-ghostty
 gimp
 git
 gpick

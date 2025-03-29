@@ -4,13 +4,14 @@ buku
 cozette-otb
 downgrade
 edir
-freetube-bin
+freetube-git
 gallery-dl
 i3lock-color
 jmtpfs
 mikhak-fonts
 mimeo
 minecraft-launcher
+multimc-bin
 noto-fonts-sc
 otf-gfs
 otf-kawkab-mono
