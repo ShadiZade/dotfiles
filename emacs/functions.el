@@ -195,3 +195,29 @@ The corresponding mode is `%s'."
    (shadi/kebab (current-kill 0 t)))
   (yank))
 
+(defun upcase-region-or-word ()
+  (interactive)
+  (if (use-region-p)
+      (upcase-region
+       (region-beginning)
+       (region-end)
+       (region-noncontiguous-p))
+    (upcase-word 1)))
+
+(defun downcase-region-or-word ()
+  (interactive)
+  (if (use-region-p)
+      (downcase-region
+       (region-beginning)
+       (region-end)
+       (region-noncontiguous-p))
+    (downcase-word 1)))
+
+(defun capitalize-region-or-word ()
+  (interactive)
+  (if (use-region-p)
+      (capitalize-region
+       (region-beginning)
+       (region-end)
+       (region-noncontiguous-p))
+    (capitalize-word 1)))

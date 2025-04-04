@@ -1,6 +1,8 @@
 ;; unset
 (keymap-global-unset "C-x C-k <return>")
 (keymap-global-unset "C-x C-p")
+(keymap-global-unset "C-x C-u")
+(keymap-global-unset "C-x C-l")
 
 ;; global bindings
 (keymap-global-set "<escape>"        'keyboard-escape-quit)
@@ -48,6 +50,11 @@
 (keymap-global-set "C-x C-p l"       'package-list-packages)
 (keymap-global-set "C-x C-p i"       'package-install)
 (keymap-global-set "C-x C-p d"       'package-delete)
+(keymap-global-set "M-u"             'upcase-region-or-word)
+(keymap-global-set "M-l"             'downcase-region-or-word)
+(keymap-global-set "M-c"             'capitalize-region-or-word)
+(keymap-global-set "C-x C-l"         'lorem-ipsum-insert-sentences)
+
 
 ;; dired
 (keymap-global-set "C-c v m n"         (lambda () (interactive)

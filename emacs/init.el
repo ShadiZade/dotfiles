@@ -222,3 +222,5 @@
 (setq dired-kill-when-opening-new-dired-buffer t)
 (setq dired-listing-switches "-alh")
 (use-package elfeed)
+(put 'upcase-region 'disabled nil)
+(put 'downcase-region 'disabled nil)
