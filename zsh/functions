@@ -20,6 +20,7 @@ source ~/Repositories/scripts/essential-functions
 source ~/Repositories/private/private-aliases.sh
 
 function terminal-art {
+    show-excessive-uptime
     last-updated
     last-back-caravan
     last-back-mobile
@@ -833,3 +834,8 @@ function fof {
     echolor beige-aquamarine ":: Found ““$fof_num”” files."
 }
     
+function show-excessive-uptime {
+    # 259200 is the numeber of seconds in 3 days
+    [[ "$(uptime -r | awk '{print $2}')" -lt 259200 ]] && return 1
+    echolor beige-blue ":: $(uptime -p | awk '{print "Excessive uptime: ““"$2"”” days, ““"$4"”” hours."}')"
+}

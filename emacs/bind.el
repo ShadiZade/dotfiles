@@ -54,6 +54,7 @@
 (keymap-global-set "M-l"             'downcase-region-or-word)
 (keymap-global-set "M-c"             'capitalize-region-or-word)
 (keymap-global-set "C-x C-l"         'lorem-ipsum-insert-sentences)
+(keymap-global-set "C-,"             'mark-whole-buffer)
 
 
 ;; dired

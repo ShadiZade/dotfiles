@@ -50,6 +50,7 @@ grub
 gst-plugins-good
 gucharmap
 hq
+htmlq
 imagemagick
 inetutils
 inkscape
