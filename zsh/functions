@@ -740,7 +740,11 @@ function mvk {
     local ext="${1##*.}"
     [[ -n "$ext" ]] && local ext=".$ext"
     grep -q '\.' <<< "$1" || local ext=''
-    mv -vn "$1" "$(kebab "$2")""$ext" || return 1
+    [[ -e "$(kebab "$2")$ext" ]] && {
+	echolor red ":: ““$(kebab "$2")$ext”” already exists here."
+	return 1
+    }
+    mv -vn "$1" "$(kebab "$2")$ext" || return 1
     echolor purple-aquamarine ":: From ““$1””\n:: Into ““$(kebab "$2")$ext””"
 }
 
@@ -837,5 +841,5 @@ function fof {
 function show-excessive-uptime {
     # 259200 is the numeber of seconds in 3 days
     [[ "$(uptime -r | awk '{print $2}')" -lt 259200 ]] && return 1
-    echolor beige-blue ":: $(uptime -p | awk '{print "Excessive uptime: ““"$2"”” days, ““"$4"”” hours."}')"
+    echolor beige-blue ":: $(uptime -p | awk '{print "Excessive uptime: ““"$2"”” "$3" ““"$4"”” "$5}' | sed 's/,$/./')"
 }
