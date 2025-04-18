@@ -221,3 +221,13 @@ The corresponding mode is `%s'."
        (region-end)
        (region-noncontiguous-p))
     (capitalize-word 1)))
+
+(defun date-string ()
+  (interactive) 
+   (shell-command
+    "date +%Y%m%d%H%M%S"
+    (current-buffer))
+   (end-of-visual-line))
+20250418174540
+20250418174551
+20250418174626
