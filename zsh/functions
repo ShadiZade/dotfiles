@@ -736,16 +736,22 @@ function zap-to-directory {
 
 function mvk {
     [[ -z "$1" ]] && return 1
-    [[ -z "$2" ]] && return 1
-    local ext="${1##*.}"
+    [[ ! -e "$1" ]] && return 1
+    local fname="$1"
+    local ext="${fname##*.}"
+    case "$2" in
+	'.'|'') nname="$(basename "${fname%.*}")" ;;
+	*)      nname="$2" ;;
+    esac
+    [[ -z "$nname" ]] && return 1
     [[ -n "$ext" ]] && local ext=".$ext"
-    grep -q '\.' <<< "$1" || local ext=''
-    [[ -e "$(kebab "$2")$ext" ]] && {
-	echolor red ":: ““$(kebab "$2")$ext”” already exists here."
+    grep -q '\.' <<< "$fname" || local ext=''
+    [[ -e "$(kebab "$nname")$ext" ]] && {
+	echolor red ":: ““$(kebab "$nname")$ext”” already exists here."
 	return 1
     }
-    mv -vn "$1" "$(kebab "$2")$ext" || return 1
-    echolor purple-aquamarine ":: From ““$1””\n:: Into ““$(kebab "$2")$ext””"
+    mv -vn "$fname" "$(kebab "$nname")$ext" || return 1
+    echolor purple-aquamarine ":: From ““$fname””\n:: Into ““$(kebab "$nname")$ext””"
 }
 
 
