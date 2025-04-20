@@ -6,6 +6,7 @@ downgrade
 edir
 freetube-git
 gallery-dl
+hq
 i3lock-color
 jmtpfs
 mikhak-fonts

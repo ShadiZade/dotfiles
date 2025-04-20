@@ -49,7 +49,6 @@ gpick
 grub
 gst-plugins-good
 gucharmap
-hq
 htmlq
 imagemagick
 inetutils
@@ -67,6 +66,7 @@ linux-firmware
 linux-headers
 linux-lts
 lsp-plugins-gst
+lutris
 lvm2
 man-db
 marble
