@@ -849,3 +849,14 @@ function show-excessive-uptime {
     [[ "$(uptime -r | awk '{print $2}')" -lt 259200 ]] && return 1
     echolor beige-blue ":: $(uptime -p | awk '{print "Excessive uptime: ““"$2"”” "$3" ““"$4"”” "$5}' | sed 's/,$/./')"
 }
+
+function uggx {
+    [[ -z "$1" ]] && {
+	xdg-open ~/Data/zhengma/zhengma-layout.jpg
+	return 0
+    }
+    local hanzi_to_code="$(xsv search -n -s 2 "^$1$" ~/Data/zhengma/zhengma-dict.csv | ifne xsv select -n 1)"
+    local code_to_hanzi="$(xsv search -n -s 1 "^$1$" ~/Data/zhengma/zhengma-dict.csv | ifne xsv select -n 2)"
+    [[ ! -z "$hanzi_to_code" ]] && echo "$hanzi_to_code"
+    [[ ! -z "$code_to_hanzi" ]] && echo "$code_to_hanzi"
+} 
