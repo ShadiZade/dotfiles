@@ -53,6 +53,10 @@
   (shadi/set-font-faces))
 
 (shadi/set-arabic-font '21)
+(shadi/set-chinese-font "LXGW WenKai")
+;(shadi/set-chinese-font "Noto Serif CJK SC")
+;(shadi/set-chinese-font "Unifont\-JP")
+
 ;; (pdf-tools-install)
 
 ;; init package sources

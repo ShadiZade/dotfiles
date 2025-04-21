@@ -38,6 +38,22 @@
   (set-fontset-font "fontset-default" 'arabic
 		    (font-spec :family "Amiri" :size arabic-font-size)))
 
+(defun shadi/set-chinese-font (chinese-font)
+  "Sets my emacs Chinese font and size."
+  (interactive)
+  (defun set-chinese-font-for-charset (charset)
+    (set-fontset-font "fontset-default" charset
+		      (font-spec :family chinese-font)))
+  (mapcar 'set-chinese-font-for-charset
+	  '(big5 big5-hkscs chinese-cns11643-1
+		 chinese-cns11643-2 chinese-cns11643-3
+		 chinese-cns11643-4 chinese-cns11643-5
+		 chinese-cns11643-6 chinese-cns11643-7
+		 chinese-cns11643-15 chinese-gbk
+		 chinese-gb2312 gb18030)))
+
+
+
 (defun shadi/fetch-events ()
   (interactive)
   (let ((targeted-date-file (buffer-name))
