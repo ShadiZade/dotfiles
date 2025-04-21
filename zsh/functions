@@ -350,7 +350,7 @@ submv () {
 	mp3|wav|wmv|flv|flac|opus|ogg)
             mpv --no-audio-display "$fw" ;;
 	mp4|mkv|ts|webm|ogv)
-	    rdo mpv --osd-fractions --audio-samplerate=88200 "$fw" ;;
+	    rdo mpv --osd-fractions --loop=inf --audio-samplerate=88200 "$fw" ;;
 	jpg|png|jpeg|svg|jxl|jpeg_large|webp|gif|tif|avif|jp2)
 	    rdo sxiv "$fw" ;;
 	txt|md|org|tex|bib|sh|el|lisp|html|css)
