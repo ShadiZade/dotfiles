@@ -24,6 +24,8 @@ source ~/Repositories/private/private-aliases.sh
 export ZSH_COMPDUMP="$XDG_CACHE_HOME"/zsh/zcompdump-"$ZSH_VERSION" 
 export HISTCONTROL=ignorespace
 export EDITOR="emacsclient -nw -a emacs"
+export WORDCHARS='*?_.[]~=;!#%^(){}<>'
+
 # snippet from https://gist.github.com/ctechols/ca1035271ad134841284?permalink_comment_id=3365691#file-compinit-zsh
 # autoload -U compinit; compinit
 if [[ -n ${ZDOTDIR}/.zcompdump(#qN.mh+24) ]]

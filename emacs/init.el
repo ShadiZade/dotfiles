@@ -43,8 +43,6 @@
   (message "Setting faces...")
   (set-face-attribute 'default nil :font "JuliaMono" :height 120))
 
-;; (setq default-frame-alist '((font . "JuliaMono")))
-
 (if (daemonp)
     (add-hook 'after-make-frame-functions
 	      (lambda (frame)
@@ -52,7 +50,7 @@
 		  (shadi/set-font-faces))))
   (shadi/set-font-faces))
 
-(shadi/set-arabic-font '21)
+(shadi/set-arabic-font '18)
 (shadi/set-chinese-font "LXGW WenKai")
 ;(shadi/set-chinese-font "Noto Serif CJK SC")
 ;(shadi/set-chinese-font "Unifont\-JP")
@@ -194,6 +192,7 @@
 	("\\.djvu\\'" . "sioyek %s")
 	("\\.epub\\'" . "sioyek %s")
 	("\\.mobi\\'" . "sioyek %s")
+	("\\.cbz\\'" . "sioyek %s")
 	("\\.jpg\\'" . "sxiv %s")
 	("\\.jpeg\\'" . "sxiv %s")
 	("\\.png\\'" . "sxiv %s")
