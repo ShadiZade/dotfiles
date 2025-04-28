@@ -50,8 +50,8 @@
 		  (shadi/set-font-faces))))
   (shadi/set-font-faces))
 
-(shadi/set-arabic-font '18)
 (shadi/set-chinese-font "LXGW WenKai")
+(shadi/set-arabic-font '18)
 ;(shadi/set-chinese-font "Noto Serif CJK SC")
 ;(shadi/set-chinese-font "Unifont\-JP")
 
