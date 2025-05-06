@@ -201,6 +201,8 @@ alias wpc="~/Repositories/scripts/webp-annihilator.sh"
 alias spider="~/Repositories/scripts/spider-finder"
 alias update-wsc="~/Repositories/scripts/update-wsc"
 alias archnews="~/Repositories/scripts/arch-news"
+alias pl="~/Repositories/scripts/link-from-p2p"
+alias plu="~/Repositories/scripts/link-from-p2p -u"
 
 # files
 alias ’z="e ~/Repositories/dotfiles/zsh/zshrc"
