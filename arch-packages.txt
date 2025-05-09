@@ -31,6 +31,7 @@ dunst
 efibootmgr
 emacs
 eza
+f3d
 fcitx5-chinese-addons
 fcitx5-configtool
 fcitx5-gtk

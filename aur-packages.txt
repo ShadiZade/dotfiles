@@ -4,7 +4,7 @@ buku
 cozette-otb
 downgrade
 edir
-freetube-git
+freetube-bin
 gallery-dl
 hq
 i3lock-color
