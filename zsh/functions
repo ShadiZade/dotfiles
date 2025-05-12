@@ -861,3 +861,6 @@ function uggx {
     [[ ! -z "$code_to_hanzi" ]] && echo "$code_to_hanzi"
 } 
 
+function yayss {
+    echo -e "$(yay -Ssa "$1" | sed '/^aur/s/ /\\033[0m /;/^aur/s/^aur\//aur\/\\033[38;2;255;175;105m/')"
+}
