@@ -7,8 +7,8 @@
 
 	
 	width = (200,500)
-	height = 300
+	height = 100
 	origin = top-right
-	offset = 11x56
+	offset = 9x44
 	transparency = 0
-	frame_width = 2
+	frame_width = 5

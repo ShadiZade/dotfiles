@@ -47,6 +47,7 @@
 /usr/share/fonts/oldschool/Mx437_ITT_Xtra.ttf: Mx437 ITT Xtra:style=Regular
 /usr/share/fonts/user-fonts/NotoSansNerdFontPropo-CondensedMediumItalic.ttf: NotoSans Nerd Font Propo,NotoSans NFP,NotoSans NFP Cond Med:style=Condensed Medium Italic,Italic
 /usr/share/fonts/TTF/BlexMonoNerdFontPropo-Light.ttf: BlexMono Nerd Font Propo,BlexMono Nerd Font Propo Light:style=Light,Regular
+/usr/share/fonts/TTF/Minion Pro Semibold.ttf: Minion Pro,Minion Pro SmBd:style=Semibold,Regular
 /usr/share/fonts/noto/NotoSerifSinhala-SemiCondensedExtraLight.ttf: Noto Serif Sinhala SemiCondensed,Noto Serif Sinhala SemiCondensed ExtraLight:style=ExtraLight,Regular
 /usr/share/fonts/user-fonts/CooperHewitt-Semibold.otf: Cooper Hewitt:style=Semibold
 /usr/share/fonts/otf-gfs/GFSGeorgiou-Light.otf: GFS Georgiou:style=Light,Regular
@@ -1775,6 +1776,7 @@
 /usr/share/fonts/noto-cjk/NotoSerifCJK-Black.ttc: Noto Serif CJK JP,Noto Serif CJK JP Black:style=Black,Regular
 /usr/share/fonts/TTF/NotoMonoNerdFont-Regular.ttf: NotoMono Nerd Font,NotoMono NF:style=Regular
 /usr/share/fonts/user-fonts/NotoSansNerdFont-ThinItalic.ttf: NotoSans Nerd Font,NotoSans NF,NotoSans NF Thin:style=Thin Italic,Italic
+/usr/share/fonts/TTF/Minion Pro Regular.ttf: Minion Pro:style=Regular
 /usr/share/fonts/TTF/NotoSerifNerdFont-CondensedBoldItalic.ttf: NotoSerif Nerd Font,NotoSerif NF,NotoSerif NF Cond:style=Condensed Bold Italic,Bold Italic
 /usr/share/fonts/noto/NotoSans-Light.ttf: Noto Sans,Noto Sans Light:style=Light,Regular
 /usr/share/fonts/noto/NotoSansArabic-CondensedSemiBold.ttf: Noto Sans Arabic,Noto Sans Arabic Cond SemBd:style=Condensed SemiBold,Regular
@@ -2473,6 +2475,7 @@
 /usr/share/fonts/TTF/3270NerdFontMono-SemiCondensed.ttf: 3270 Nerd Font Mono,3270 Nerd Font Mono SemCond:style=SemiCondensed,Regular
 /usr/share/fonts/TTF/iMWritingDuoNerdFontPropo-BoldItalic.ttf: iMWritingDuo Nerd Font Propo:style=Bold Italic
 /usr/share/fonts/noto/NotoSerifGeorgian-CondensedMedium.ttf: Noto Serif Georgian,Noto Serif Georgian Cn Md:style=Condensed Medium,Regular
+/usr/share/fonts/TTF/Minion Pro Medium.ttf: Minion Pro,Minion Pro Med:style=Medium,Regular
 /usr/share/fonts/user-fonts/NotoSerifNerdFontPropo-ExtraCondensedBold.ttf: NotoSerif Nerd Font Propo,NotoSerif NFP,NotoSerif NFP ExtCond:style=ExtraCondensed Bold,Bold
 /usr/share/fonts/misc/ter-x18b.pcf.gz: xos4 Terminus:style=Bold
 /usr/share/fonts/TTF/Iosevka-Light.ttc: Iosevka,Iosevka Light Extended:style=Light Extended Italic,Italic

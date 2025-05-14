@@ -1,0 +1,27 @@
+theme_name: Opal Mud Coral
+
+colors:
+  color1: 
+    name: Opal Mud Coral
+    hex: "e466a3"
+  color2:
+    name: Continental Black
+    hex: "131213"
+  color3:
+    name: Deep Clay Grey
+    hex: "a8a9ab"
+  color4: 
+    name: Alarm Red
+    hex: "ff0000"
+  color5:
+    name: Calcium Carbonate Pink
+    hex: "ee9bc0"
+    
+wallpaper: 
+  name: Opal Mud Color Background
+  path: "$HOME/.local/share/user-scripts/wallpapers/opalmud-color.png"
+
+files:
+  rofi: "$HOME/Repositories/dotfiles/rofi/themes/opalmud-coral.rasi"
+  polybar: "$HOME/Repositories/dotfiles/polybar/themes/opalmud-coral.ini"
+  dunst: "$HOME/Repositories/dotfiles/dunst/themes/opalmud-coral"
