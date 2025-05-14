@@ -64,8 +64,8 @@ showinfo () {
 
 
 edit () {
-    echolor yellow ":: Image ““$file”” opened using PhotoFlare"
-    photoflare "$file" 2> /dev/null 
+    echolor yellow ":: Image ““$file”” opened using cropgui"
+    cropgui "$file" >/dev/null 2>/dev/null 
 }
 
 editgimp () {

@@ -3,19 +3,22 @@ theme_name: Opal Mud Coral
 colors:
   color1: 
     name: Opal Mud Coral
-    hex: "e466a3"
+    hex: "8c2c66"
+#    hex: "e466a3" in the paper
   color2:
-    name: Continental Black
-    hex: "131213"
+    name: Continental White
+    hex: "ffffff"
   color3:
-    name: Deep Clay Grey
-    hex: "a8a9ab"
+    name: Continental Black 
+    hex: 131213
+#    hex: "a8a9ab" Deep Clay Grey
   color4: 
     name: Alarm Red
     hex: "ff0000"
   color5:
     name: Calcium Carbonate Pink
-    hex: "ee9bc0"
+    hex: "b13880"
+#    hex: "ee9bc0" in the paper
     
 wallpaper: 
   name: Opal Mud Color Background
