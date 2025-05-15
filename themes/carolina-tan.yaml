@@ -1,0 +1,27 @@
+theme_name: Carolina Tan
+
+colors:
+  color1: 
+    name: Carolina Tan
+    hex: 4c1f0e
+  color2:
+    name: Carolina Light
+    hex: d1823d
+  color3:
+    name: Carolina Black
+    hex: 090a07
+  color4:
+    name: Alarm Red
+    hex: ff0000
+  color5:
+    name: Carolina Light
+    hex: 77351d
+  
+wallpaper: 
+  name: 
+  path: "$HOME/.local/share/user-scripts/wallpapers/carolina-tan.png"
+
+files:
+  rofi: "$HOME/Repositories/dotfiles/rofi/themes/carolina-tan.rasi"
+  polybar: "$HOME/Repositories/dotfiles/polybar/themes/carolina-tan.ini"
+  dunst: "$HOME/Repositories/dotfiles/dunst/themes/carolina-tan"
