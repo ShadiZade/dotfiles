@@ -122,7 +122,6 @@ polybar
 pypinyin
 python-pipx
 qbittorrent
-qrtool
 qt5-tools
 quodlibet
 r
@@ -271,6 +270,7 @@ zathura-cb
 zathura-djvu
 zathura-pdf-poppler
 zathura-ps
+zint
 zsh
 zsh-history-substring-search
 zsh-syntax-highlighting

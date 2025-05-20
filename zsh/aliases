@@ -202,6 +202,7 @@ alias update-wsc="~/Repositories/scripts/update-wsc"
 alias archnews="~/Repositories/scripts/arch-news"
 alias pl="~/Repositories/scripts/link-from-p2p"
 alias plu="~/Repositories/scripts/link-from-p2p -u"
+alias qr="~/Repositories/scripts/give-qr.sh"
 
 # files
 alias ’z="e ~/Repositories/dotfiles/zsh/zshrc"
