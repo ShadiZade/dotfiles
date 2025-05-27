@@ -32,4 +32,3 @@ vdhcoapp-bin
 windscribe
 xdg-ninja-git
 yay
-yt-dlp-git

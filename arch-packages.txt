@@ -13,7 +13,6 @@ bat
 bitwarden
 bluez
 bluez-utils
-boinc
 brightnessctl
 bspwm
 btop
@@ -73,6 +72,7 @@ lvm2
 man-db
 marble
 marble-maps
+mariadb
 mat2
 meld
 moreutils
@@ -83,7 +83,6 @@ mtools
 musescore
 ncdu
 ncmpcpp
-neofetch
 network-manager-applet
 networkmanager
 noto-fonts
@@ -265,6 +264,7 @@ xsel
 xsv
 xwallpaper
 yq
+yt-dlp
 zathura
 zathura-cb
 zathura-djvu
