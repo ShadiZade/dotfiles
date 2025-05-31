@@ -263,3 +263,4 @@ alias zd="zap-to-directory"
 alias sn="shutdown now"
 alias rp="realpath"
 alias 郑码="uggx"
+alias db='sudo mariadb -u root'

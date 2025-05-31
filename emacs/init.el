@@ -88,16 +88,17 @@
 		   csv-mode ct dash ebuku elfeed ess geiser
 		   geiser-racket general graphviz-dot-mode
 		   gruvbox-theme gscholar-bibtex helpful hydra
-		   insert-char-preview ivy-rich jumblr lines-at-once
-		   linguistic lingva lorem-ipsum lua-mode magit
-		   markdown-mode mbsync mediawiki move-text mu4easy
-		   nerd-icons-dired nov olivetti openwith org-bullets
-		   org-mode org-translate paperless paredit pdf-tools
-		   pdfgrep poly-R pyim pyim-basedict pyim-cangjiedict
-		   quiz racket-mode rainbow-delimiters reverso
-		   scholar-import slime su sudo-utils swagg
-		   sxhkdrc-mode sxiv unbound unipoint use-package
-		   which-key xclip xwiki-mode yaml-mode yaml-pro zotra)))
+		   insert-char-preview ivy-rich jumblr languagetool
+		   lines-at-once linguistic lingva lorem-ipsum
+		   lua-mode magit markdown-mode mbsync mediawiki
+		   move-text mu4easy nerd-icons-dired nov olivetti
+		   openwith org-bullets org-mode org-translate
+		   paperless paredit pdf-tools pdfgrep poly-R pyim
+		   pyim-basedict pyim-cangjiedict quiz racket-mode
+		   rainbow-delimiters reverso scholar-import slime su
+		   sudo-utils swagg sxhkdrc-mode sxiv unbound unipoint
+		   use-package which-key xclip xwiki-mode yaml-mode
+		   yaml-pro zotra)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

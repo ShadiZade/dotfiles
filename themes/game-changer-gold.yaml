@@ -1,0 +1,27 @@
+theme_name: Game Changer Gold
+
+colors:
+  color1: 
+    name: Game Changer Gold
+    hex: bf911c
+  color2:
+    name: Game Changer Red
+    hex: 810623
+  color3:
+    name: Game Changer White
+    hex: d0d0d0
+  color4:
+    name: Alarm Red
+    hex: ff0000
+  color5:
+    name: Game Changer Yellow
+    hex: c5be26
+  
+wallpaper: 
+  name: 
+  path: "$HOME/.local/share/user-scripts/wallpapers/game-changer-moon-monolith.jpg"
+  
+files:
+  rofi: "$HOME/Repositories/dotfiles/rofi/themes/game-changer-gold.rasi"
+  polybar: "$HOME/Repositories/dotfiles/polybar/themes/game-changer-gold.ini"
+  dunst: "$HOME/Repositories/dotfiles/dunst/themes/game-changer-gold"
