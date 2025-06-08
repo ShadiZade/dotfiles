@@ -244,3 +244,4 @@ The corresponding mode is `%s'."
    "date +%Y%m%d%H%M%S"
    (current-buffer))
   (end-of-visual-line))
+
