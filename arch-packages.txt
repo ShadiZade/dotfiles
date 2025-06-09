@@ -16,14 +16,12 @@ bluez-utils
 brightnessctl
 bspwm
 btop
-calc
 calibre
 cmatrix
 cowsay
 csvlens
 dateutils
 dialog
-dice
 docx2txt
 dosfstools
 dunst
@@ -138,6 +136,7 @@ snapper
 steam
 sxhkd
 sxiv
+tealdeer
 termdown
 terminus-font
 tesseract-data-ara
@@ -182,7 +181,6 @@ texlive-plaingeneric
 texlive-pstricks
 texlive-publishers
 texlive-xetex
-tldr
 translate-shell
 ttc-iosevka
 ttf-0xproto-nerd

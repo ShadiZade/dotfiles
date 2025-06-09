@@ -1,10 +1,7 @@
-akregator
 aspell
-audacity
 bitwarden
 bspwm
 btop
-calc
 calibre
 cowsay
 downgrade
@@ -16,11 +13,7 @@ fd
 ffmpeg
 fzf
 gimp
-kdeconnect
-lightdm
-lightdm-slick-greeter
 mpv
-okular
 picom
 polybar
 qbittorrent
@@ -30,7 +23,6 @@ rofimoji
 steam
 sxhkd
 sxiv
-tldr
 ttc-iosevka
 ttf-fira-code
 ttf-inconsolata
@@ -38,6 +30,5 @@ ttf-liberation
 ttf-scheherazade-new
 vivaldi
 xclip
-xsel
 xwallpaper
 yay
