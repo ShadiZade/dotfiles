@@ -28,7 +28,6 @@ telegram-desktop-bin
 ttf-juliamono
 ttf-unifont-csur
 units
-vdhcoapp-bin
 windscribe
 xdg-ninja-git
 yay

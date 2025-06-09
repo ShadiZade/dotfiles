@@ -243,11 +243,12 @@ lv () {
 }
 ## wg
 wg () {
+    extract-cookies
     [[ -z "$2" ]] && {
-	wget --continue --no-use-server-timestamps -nc -t 0 -- "$1"
+	wget --continue --load-cookies "$COOKIE_FILE" --no-use-server-timestamps -nc -t 0 -- "$1"
     } || {
 	outname="$(kebab "$2")"
-	wget --continue --no-use-server-timestamps -O "$outname" -t 0 -- "$1" || return
+	wget --continue --load-cookies "$COOKIE_FILE" --no-use-server-timestamps -O "$outname" -t 0 -- "$1" || return
 	echolor yellow ":: Determining extension..."
 	ext="$(extension-determiner "$outname")"
 	[[ -z "$ext" ]] && {
@@ -864,3 +865,4 @@ function uggx {
 function yayss {
     echo -e "$(yay -Ssa "$1" | sed '/^aur/s/ /\\033[0m /;/^aur/s/^aur\//aur\/\\033[38;2;255;175;105m/')"
 }
+

@@ -15,9 +15,6 @@ export TRASH_DIR="$HOME/.local/share/Trash/files"
 # backup directory
 export BACK_DIR="$HOME/Misc/Backups/"
 
-# browser
-export browser_cookies="/home/shadi/.config/vivaldi/Default/Cookies"
-
 # default prompt
 export DEFAULT_PROMPT=" %F{#55ff55}%2~%f %S%F{#55ff55} 闯 %D{%H:%M} 🠦 %f%s "
 export DEFAULT_PROMPT_SYMBOL="闯"

@@ -57,6 +57,7 @@ inkscape
 inxi
 iwd
 jack2
+julia
 kcolorchooser
 kitty
 leiningen
@@ -72,7 +73,6 @@ lvm2
 man-db
 marble
 marble-maps
-mariadb
 mat2
 meld
 moreutils
@@ -126,6 +126,7 @@ quodlibet
 r
 racket
 reflector
+ripgrep
 rofi
 rofi-emoji
 rofimoji
@@ -251,6 +252,7 @@ vivaldi
 vulkan-nouveau
 wget
 wpa_supplicant
+xan
 xclip
 xdg-desktop-portal-gtk
 xdg-user-dirs
