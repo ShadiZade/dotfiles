@@ -33,7 +33,6 @@
   (load-file "~/.config/emacs/init.el"))
 
 (defun shadi/set-latin-font (latin-font)
-  (message "Setting faces...")
   (set-face-attribute 'default nil :font latin-font :height 120))
 
 (defun shadi/set-arabic-font (arabic-font)

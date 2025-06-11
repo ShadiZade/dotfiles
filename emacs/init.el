@@ -39,19 +39,14 @@
 (xclip-mode 1)
 (size-indication-mode 1)
 (column-number-mode)
-(defun shadi/set-font-faces ()
-  (message "Setting faces...")
-  (set-face-attribute 'default nil :font "JuliaMono" :height 120))
-
 (if (daemonp)
     (add-hook 'after-make-frame-functions
 	      (lambda (frame)
 		(with-selected-frame frame
-		  (shadi/set-font-faces))))
-  (shadi/set-font-faces))
-
+		  (shadi/set-latin-font "JuliaMono"))))
+  (shadi/set-latin-font "JuliaMono"))
 (shadi/set-chinese-font "LXGW WenKai")
-(shadi/set-arabic-font '18)
+(shadi/set-arabic-font "Kawkab Mono")
 ;(shadi/set-chinese-font "Noto Serif CJK SC")
 ;(shadi/set-chinese-font "Unifont\-JP")
 
@@ -91,14 +86,14 @@
 		   insert-char-preview ivy-rich jumblr languagetool
 		   lines-at-once linguistic lingva lorem-ipsum
 		   lua-mode magit markdown-mode mbsync mediawiki
-		   move-text mu4easy nerd-icons-dired nov olivetti
-		   openwith org-bullets org-mode org-translate
-		   paperless paredit pdf-tools pdfgrep poly-R pyim
-		   pyim-basedict pyim-cangjiedict quiz racket-mode
-		   rainbow-delimiters reverso scholar-import slime su
-		   sudo-utils swagg sxhkdrc-mode sxiv unbound unipoint
-		   use-package which-key xclip xwiki-mode yaml-mode
-		   yaml-pro zotra)))
+		   mingus move-text mu4easy nerd-icons-dired nov
+		   olivetti openwith org-bullets org-mode
+		   org-translate paperless paredit pdf-tools pdfgrep
+		   poly-R pyim pyim-basedict pyim-cangjiedict quiz
+		   racket-mode rainbow-delimiters reverso
+		   scholar-import slime su sudo-utils swagg
+		   sxhkdrc-mode sxiv unbound unipoint use-package
+		   which-key xclip xwiki-mode yaml-mode yaml-pro zotra)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
