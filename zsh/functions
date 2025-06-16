@@ -703,7 +703,7 @@ function reading-stats {
     local tbr5_number="$(fd . ~/Projects/reading/tbr/tbr-5/ | wc -l)"
     [[ "$tbr5_number" -gt 5 ]] && local tbr5_number="$(echolor red "$tbr5_number")"
     local readingnow_number="$(fd -d 1 -t l -t f . ~/Projects/reading/ | wc -l)"
-    [[ "$readingnow_number" -gt 6 ]] && local readingnow_number=="$(echolor red "$readingnow_number")"
+    [[ "$readingnow_number" -gt 6 ]] && local readingnow_number="$(echolor red "$readingnow_number")"
     local done_number="$(fd . ~/Projects/reading/done/$(date +%Y) | wc -l)"
     [[ "$done_number" -eq 0 ]] && local done_number="$(echolor red "$done_number")"
     echolor mintgreen-violet "Reading statistics: ““TBR”” $tbr100_number““/””$tbr20_number““/””$tbr5_number ““NOW”” $readingnow_number ““DONE”” $done_number"

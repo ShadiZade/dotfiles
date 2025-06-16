@@ -39,6 +39,9 @@
 (xclip-mode 1)
 (size-indication-mode 1)
 (column-number-mode)
+(add-to-list 'face-font-rescale-alist '(".*JuliaMono.*" . 1.0))
+(add-to-list 'face-font-rescale-alist '(".*Amiri.*" . 0.4))
+(add-to-list 'face-font-rescale-alist '(".*Kawkab.*" . 0.4))
 (if (daemonp)
     (add-hook 'after-make-frame-functions
 	      (lambda (frame)
