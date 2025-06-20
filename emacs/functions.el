@@ -32,31 +32,28 @@
   (interactive)
   (load-file "~/.config/emacs/init.el"))
 
-(defun shadi/set-latin-font (latin-font)
-  (set-face-attribute 'default nil :font latin-font :height 120))
+(defun shadi/set-latin-font ()
+  "Sets my emacs Latin font and size."
+  (interactive)
+  (custom-set-faces
+   '(default ((t (:inherit nil :height 160 :family "ZedMono Nerd Font"))))
+   '(default ((t (:inherit nil :height 160 :family "0xProto Nerd Font Mono"))))
+   '(default ((t (:inherit nil :height 160 :family "CaskaydiaMono Nerd Font Mono"))))
+   '(default ((t (:inherit nil :height 180 :family "Agave Nerd Font Mono"))))
+ ))
 
 (defun shadi/set-arabic-font (arabic-font)
   "Sets my emacs Arabic font and size."
   (interactive)
-  (set-fontset-font "fontset-default" 'arabic
+  (set-fontset-font nil 'arabic
 		    (font-spec :family arabic-font)))
 
 (defun shadi/set-chinese-font (chinese-font)
   "Sets my emacs Chinese font and size."
   (interactive)
-  (defun set-chinese-font-for-charset (charset)
-    (set-fontset-font "fontset-default" charset
-		      (font-spec :family chinese-font)))
-  (mapcar 'set-chinese-font-for-charset
-	  '(big5 big5-hkscs chinese-cns11643-1
-		 chinese-cns11643-2 chinese-cns11643-3
-		 chinese-cns11643-4 chinese-cns11643-5
-		 chinese-cns11643-6 chinese-cns11643-7
-		 chinese-cns11643-15 chinese-gbk
-		 chinese-gb2312 gb18030)))
-
-
-
+  (set-fontset-font nil 'han
+		    (font-spec :family chinese-font)))
+ 
 (defun shadi/fetch-events ()
   (interactive)
   (let ((targeted-date-file (buffer-name))

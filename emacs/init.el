@@ -39,19 +39,6 @@
 (xclip-mode 1)
 (size-indication-mode 1)
 (column-number-mode)
-(add-to-list 'face-font-rescale-alist '(".*JuliaMono.*" . 1.0))
-(add-to-list 'face-font-rescale-alist '(".*Amiri.*" . 0.4))
-(add-to-list 'face-font-rescale-alist '(".*Kawkab.*" . 0.4))
-(if (daemonp)
-    (add-hook 'after-make-frame-functions
-	      (lambda (frame)
-		(with-selected-frame frame
-		  (shadi/set-latin-font "JuliaMono"))))
-  (shadi/set-latin-font "JuliaMono"))
-(shadi/set-chinese-font "LXGW WenKai")
-(shadi/set-arabic-font "Kawkab Mono")
-;(shadi/set-chinese-font "Noto Serif CJK SC")
-;(shadi/set-chinese-font "Unifont\-JP")
 
 ;; (pdf-tools-install)
 
@@ -226,3 +213,29 @@
 (use-package elfeed)
 (put 'upcase-region 'disabled nil)
 (put 'downcase-region 'disabled nil)
+
+;; (if (daemonp)
+;;     (add-hook 'after-make-frame-functions
+;;              (lambda (frame)
+;;                (with-selected-frame frame
+;;                  (shadi/set-latin-font "JuliaMono"))))
+;;   (shadi/set-latin-font "JuliaMono"))
+;; (shadi/set-chinese-font "LXGW WenKai")
+;; (shadi/set-arabic-font "Kawkab Mono")
+
+;; (shadi/set-chinese-font "Noto Serif CJK SC")
+;; (shadi/set-chinese-font "Unifont\-JP")
+
+;; (shadi/set-arabic-font "Kawkab Mono")
+;; (add-to-list 'face-font-rescale-alist '(".*JuliaMono.*" . 1.0))
+;; (add-to-list 'face-font-rescale-alist '(".*Amiri.*" . 0.4))
+;; (add-to-list 'face-font-rescale-alist '(".*Kawkab.*" . 0.4))
+;; (shadi/set-chinese-font "Noto Serif CJK SC")
+;; (shadi/set-chinese-font "Unifont\-JP")
+
+;; (shadi/set-all-fonts "Fira Code" "Kawkab Mono" "LXGW WenKai")
+
+(shadi/set-latin-font)
+(shadi/set-chinese-font "LXGW WenKai")
+(shadi/set-arabic-font "Kawkab Mono")
+

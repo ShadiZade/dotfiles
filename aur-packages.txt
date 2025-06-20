@@ -13,6 +13,7 @@ jmtpfs
 mikhak-fonts
 mimeo
 minecraft-launcher
+mpdris2
 multimc-bin
 noto-fonts-sc
 otf-gfs
