@@ -160,10 +160,14 @@ alarm () {
 	return 1
     }
     printf '\r'
-    echolor red-green ":: ALARM RINGING! IT'S ““$(date +%H:%M:%S)”” NOW!"
-    notify-send -t 10000 "Alarm Ringing!" "$starttime\n$1\n$willring\nDesktop #$alarmdesktop"
-    quodlibet --pause
-    mpv --loop-file=inf --really-quiet "$usdd/sounds/glass-hit.wav"
+    while true
+    do
+	quodlibet --pause
+	echolor red-green ":: ALARM RINGING! IT'S ““$(date +%H:%M:%S)”” NOW!"
+	notify-send -t 10000 "Alarm Ringing!" "$starttime\n$1\n$willring\nDesktop #$alarmdesktop"
+	mpv --loop-file=30 --really-quiet "$usdd/sounds/glass-hit.wav"
+	sleep 3s
+    done
 }
 
 ## knock
