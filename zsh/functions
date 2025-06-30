@@ -800,21 +800,25 @@ horizontal-line () {
 
 function ytv {
     yt-dlp                                                                               \
-	-f 'bestvideo[height<=1080][ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best'      \
+	-f 'bestvideo[height=1080][ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best'       \
 	--fragment-retries infinite                                                      \
 	--no-mtime                                                                       \
+	--write-auto-subs                                                                \
 	--embed-chapters                                                                 \
 	--embed-subs                                                                     \
+	--sub-langs en,-live_chat                                                        \
 	"$@"
 }
 
 function ytvr {
     yt-dlp                                                                               \
-	-f 'bestvideo[height<=1080][ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best'      \
+	-f 'bestvideo[height=1080][ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best'       \
 	--fragment-retries infinite                                                      \
 	--no-mtime                                                                       \
+	--write-auto-subs                                                                \
 	--embed-chapters                                                                 \
 	--embed-subs                                                                     \
+	--sub-langs en,-live_chat                                                        \
 	--sponsorblock-remove all                                                        \
 	"$@"
 }
