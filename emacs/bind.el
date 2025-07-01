@@ -35,12 +35,10 @@
 (keymap-global-set "C-c SPC"         'ispell-word)
 (keymap-global-set "C-c ’"           'su-read-only)
 (keymap-global-set "C-c l"           'counsel-unicode-char)
-(keymap-global-set "C-~"             'mode-line-other-buffer)
 (keymap-global-set "M-<up>"          'move-text-up)
 (keymap-global-set "M-<down>"        'move-text-down)
 (keymap-global-set "C-c <backspace>" 'clear-scratch-buffer)
 (keymap-global-set "C-="             'full-calc)
-(keymap-global-set "<end>"           'kill-buffer)
 (keymap-global-set "C-x <end>"       'save-buffers-kill-emacs)
 (keymap-global-set "<f5>"            'kmacro-set-counter)
 (keymap-global-set "<f6>"            'kmacro-edit-macro)
@@ -54,7 +52,9 @@
 (keymap-global-set "M-l"             'downcase-region-or-word)
 (keymap-global-set "M-c"             'capitalize-region-or-word)
 (keymap-global-set "C-x C-l"         'lorem-ipsum-insert-sentences)
-(keymap-global-set "C-,"             'mark-whole-buffer)
+(keymap-global-set "C-,"             'nswbuff-switch-to-previous-buffer)
+(keymap-global-set "C-."             'nswbuff-switch-to-next-buffer)
+(keymap-global-set "C-'"             'nswbuff-kill-this-buffer)
 
 
 ;; dired
@@ -112,24 +112,22 @@
 
 ;; frequent-words
 (keymap-global-set "C-c 1"         (lambda () (interactive)
-					(shadi/fw 1)))
+				     (shadi/fw 1)))
 (keymap-global-set "C-c 2"         (lambda () (interactive)
-					(shadi/fw 2)))
+				     (shadi/fw 2)))
 (keymap-global-set "C-c 3"         (lambda () (interactive)
-					(shadi/fw 3)))
+				     (shadi/fw 3)))
 (keymap-global-set "C-c 4"         (lambda () (interactive)
-					(shadi/fw 4)))
+				     (shadi/fw 4)))
 (keymap-global-set "C-c 5"         (lambda () (interactive)
-					(shadi/fw 5)))
+				     (shadi/fw 5)))
 (keymap-global-set "C-c 6"         (lambda () (interactive)
-					(shadi/fw 6)))
+				     (shadi/fw 6)))
 (keymap-global-set "C-c 7"         (lambda () (interactive)
-					(shadi/fw 7)))
+				     (shadi/fw 7)))
 (keymap-global-set "C-c 8"         (lambda () (interactive)
-					(shadi/fw 8)))
+				     (shadi/fw 8)))
 (keymap-global-set "C-c 9"         (lambda () (interactive)
-					(shadi/fw 9)))
-
-
+				     (shadi/fw 9)))
 
 

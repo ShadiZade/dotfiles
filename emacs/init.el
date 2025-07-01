@@ -159,6 +159,10 @@
   :after org
   :hook (org-mode . org-bullets-mode))
 
+(use-package nswbuff
+  :config
+  (setq nswbuff-display-intermediate-buffers t)) 
+
 (put 'set-goal-column 'disabled nil)
 
 (delete
