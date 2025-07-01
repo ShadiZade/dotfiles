@@ -1,3 +1,4 @@
+anki-bin
 beancount
 bible-kjv
 buku
