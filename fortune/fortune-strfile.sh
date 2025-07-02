@@ -7,8 +7,8 @@ do
     echolor neonblue "——————————————————————————————————————————"
     echolor neonblue-orange "\t--> Doing ““$j””"
     echolor neonblue "——————————————————————————————————————————"
-    strfile "$HOME"/Repositories/dotfiles/fortune/"$j" "$HOME"/Repositories/dotfiles/fortune/"$j".dat 
-    grep --color=auto -is —— "$j"               \
+    strfile "$HOME"/Repositories/dotfiles/fortune/"$j".strfile "$HOME"/Repositories/dotfiles/fortune/"$j".dat 
+    grep --color=auto -is —— "$j".strfile       \
 	| awk -F ',' '{print $1}'               \
 	| awk -F '(' '{print $1}'               \
 	| sed 's/ *$//g;s/—— //g;s/ and /\n/g'  \

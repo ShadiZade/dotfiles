@@ -39,7 +39,7 @@
 (keymap-global-set "M-<down>"        'move-text-down)
 (keymap-global-set "C-c <backspace>" 'clear-scratch-buffer)
 (keymap-global-set "C-="             'full-calc)
-(keymap-global-set "C-x <end>"       'save-buffers-kill-emacs)
+(keymap-global-set "C-x C-'"         'save-buffers-kill-emacs)
 (keymap-global-set "<f5>"            'kmacro-set-counter)
 (keymap-global-set "<f6>"            'kmacro-edit-macro)
 (keymap-global-set "<f7>"            'kmacro-name-last-macro)
