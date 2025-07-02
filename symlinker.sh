@@ -26,9 +26,9 @@ ln -sf ~/Repositories/dotfiles/cowsay/none.cow ~/.config/cowsay
 sudo ln -sf ~/Repositories/dotfiles/cowsay/none.cow /usr/share/cowsay/cows/
 mkdir ~/.local/share/user-scripts/
 ln -sf ~/Repositories/scripts/src/echolors.csv ~/.local/share/user-scripts/
-sudo ln -sf ~/Repositories/dotfiles/fortune/marxism /usr/share/fortune
+sudo ln -sf ~/Repositories/dotfiles/fortune/marxism.strfile /usr/share/fortune
 sudo ln -sf ~/Repositories/dotfiles/fortune/marxism.dat /usr/share/fortune
-sudo ln -sf ~/Repositories/dotfiles/fortune/general /usr/share/fortune
+sudo ln -sf ~/Repositories/dotfiles/fortune/general.strfile /usr/share/fortune
 sudo ln -sf ~/Repositories/dotfiles/fortune/general.dat /usr/share/fortune
 mkdir -p ~/.config/polybar/scripts
 ln -sf ~/Repositories/dotfiles/polybar/config.ini ~/.config/polybar/

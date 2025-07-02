@@ -1,6 +1,6 @@
 (add-hook 'bibtex-mode-hook
 	  (lambda ()
-	    (keymap-local-set "C-c C-~3" 'yank-bib-and-copy-name)
+	    (keymap-local-set "C-c C-~" 'yank-bib-and-copy-name)
 	    ))
 
 (add-hook 'org-mode-hook
