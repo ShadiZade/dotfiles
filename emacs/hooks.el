@@ -1,19 +1,24 @@
 (add-hook 'bibtex-mode-hook
 	  (lambda ()
-	    (local-set-key (kbd "C-c C-~") 'yank-bib-and-copy-name)
+	    (keymap-local-set "C-c C-~3" 'yank-bib-and-copy-name)
 	    ))
+
+(add-hook 'org-mode-hook
+	  (lambda ()
+	      (keymap-local-unset "C-'")
+	      (keymap-local-unset "C-,") ))
 
 (add-hook 'LaTeX-mode-hook
 	  (lambda ()
-	    (local-set-key (kbd "C-c C-~") 'tex-insert-paper-name-as-comment)
-	    (local-set-key (kbd "C-c C-/") 'tex-uncomment-cite-and-copy)
-	    (local-set-key (kbd "; c")     'tex-insert-ci)
-	    (local-set-key (kbd "; i")     'tex-italic-region)
-	    (local-set-key (kbd "; b")     'tex-bold-region)
-	    (local-set-key (kbd "; s")     'tex-insert-species)
-	    (local-set-key (kbd "; ;")     'tex-insert-comment)
-	    (local-set-key (kbd "\"")      'tex-enquote)
-	    (local-set-key (kbd "C-=") 'run-setsh-script)
+	    (keymap-local-set "C-c C-~" 'tex-insert-paper-name-as-comment)
+	    (keymap-local-set "C-c C-/" 'tex-uncomment-cite-and-copy)
+	    (keymap-local-set "; c"     'tex-insert-ci)
+	    (keymap-local-set "; i"     'tex-italic-region)
+	    (keymap-local-set "; b"     'tex-bold-region)
+	    (keymap-local-set "; s"     'tex-insert-species)
+	    (keymap-local-set "; ;"     'tex-insert-comment)
+	    (keymap-local-set "\""      'tex-enquote)
+	    (keymap-local-set "C-="     'run-setsh-script)
 	    ;; ispell skip new commands
 	    (setq ispell-tex-skip-alists
                    (list
@@ -35,49 +40,49 @@
 
 (add-hook 'shell-mode-hook
 	  (lambda ()
-	    (local-set-key (kbd "C-c n o t") 'bash-not-structure)
+	    (keymap-local-set "C-c n o t" 'bash-not-structure)
 	    ))
 
 (add-hook 'markdown-mode-hook
 	  (lambda ()
-	    (local-set-key (kbd "C-=") 'run-setsh-script)
+	    (keymap-local-set "C-=" 'run-setsh-script)
 	    ))
 
 (add-hook 'mhtml-mode-hook
 	  (lambda ()
-	    (local-set-key (kbd "C-c r") 'do-xhtml-refs)
-	    (local-set-key (kbd "C-c b") 'do-xhtml-blockquote)
-	    (local-set-key (kbd "C-c i") 'do-xhtml-italic-region)
+	    (keymap-local-set "C-c r" 'do-xhtml-refs)
+	    (keymap-local-set "C-c b" 'do-xhtml-blockquote)
+	    (keymap-local-set "C-c i" 'do-xhtml-italic-region)
 	    ))
 
 (add-hook 'nroff-mode-hook
 	  (lambda ()
-	    (local-set-key (kbd "C-c b") 'nroff-bold-region)
-	    (local-set-key (kbd "C-c i") 'nroff-italic-region)
+	    (keymap-local-set "C-c b" 'nroff-bold-region)
+	    (keymap-local-set "C-c i" 'nroff-italic-region)
 	    ))
 
 (add-hook 'pdf-view-mode-hook
 	  (lambda ()
-	    (local-set-key (kbd "C-s") 'isearch-forward)
+	    (keymap-local-set "C-s" 'isearch-forward)
 	    ))
 
 (add-hook 'text-mode-hook
 	  (lambda ()
-	    (local-set-key (kbd "C-c f") 'move-progress-forward)
+	    (keymap-local-set "C-c f" 'move-progress-forward)
 	    ))
 
 (add-hook 'racket-mode-hook
 	  (lambda ()
-	    (local-set-key (kbd "C-x C-e") 'racket-eval-last-sexp)
-	    (local-set-key (kbd "<f5>"   ) 'racket-run)
+	    (keymap-local-set "C-x C-e" 'racket-eval-last-sexp)
+	    (keymap-local-set "<f5>"    'racket-run)
 	    ))
 
 (add-hook 'racket-repl-mode-hook
 	  (lambda ()
-	    (local-set-key (kbd "<up>"   ) 'racket-repl-previous-input)
-	    (local-set-key (kbd "<down>" ) 'racket-repl-next-input)
-	    (local-set-key (kbd "M-p"    ) 'racket-repl-previous-prompt)
-	    (local-set-key (kbd "M-n"    ) 'racket-repl-next-prompt)
+	    (keymap-local-set "<up>"    'racket-repl-previous-input)
+	    (keymap-local-set "<down>"  'racket-repl-next-input)
+	    (keymap-local-set "M-p"     'racket-repl-previous-prompt)
+	    (keymap-local-set "M-n"     'racket-repl-next-prompt)
 	    ))
 
 (add-hook 'dired-mode-hook
