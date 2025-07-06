@@ -1,0 +1,27 @@
+theme_name: Protein Rainbow
+
+colors:
+  color1:
+    name: Protein Dark 
+    hex: 221143
+  color2:
+    name: Protein Azure
+    hex: acf1f4
+  color3:
+    name: Protein Black
+    hex: 200740
+  color4:
+    name: Alarm Red
+    hex: ff0000
+  color5:
+    name: Protein Navy
+    hex: 0c3775
+  
+wallpaper: 
+  name: Protein Rainbow
+  path: "$HOME/.local/share/user-scripts/wallpapers/protein-rainbow.png"
+
+files:
+  rofi: "$HOME/Repositories/dotfiles/rofi/themes/protein-rainbow.rasi"
+  polybar: "$HOME/Repositories/dotfiles/polybar/themes/protein-rainbow.ini"
+  dunst: "$HOME/Repositories/dotfiles/dunst/themes/protein-rainbow"

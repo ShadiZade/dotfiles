@@ -722,20 +722,36 @@ function zap-to-directory {
 		 echolor violet-beige ":: One subdirectory detected\n:: Zapped from ““$zap_before””\n:: Zapped to   ““$zap_after””"
 		 return 0 ;;
 	    "0") echolor violet-beige ":: No subdirectories found."
+		 echolor violet-beige ":: Nothing done."
 		 return 1 ;;
 	    *)   echolor violet-beige ":: Found more than one subdirectory.\n““$(fd -d 1 -t d .)””"
+		 echolor violet-beige ":: Nothing done."
 		 return 1 ;;
 	esac
 	}
-    case "$(fd -t d "^$1$" . | wc -l)" in
-	"1") zap_after="$(realpath "$(fd -t d "^$1$" .)")"
+    case "$(fd -t d -- "$1" . | wc -l)" in
+	"1") zap_after="$(realpath "$(fd -t d -- "$1" .)")"
 	     cd "$zap_after"
 	     echolor violet-beige ":: Found term  ““$1””\n:: Zapped from ““$zap_before””\n:: Zapped to   ““$zap_after””"
 	     return 0 ;;
 	"0") echolor violet-beige ":: Term ““$1”” not found."
+	     echolor violet-beige ":: Nothing done."
 	     return 1 ;;
-	*)   echolor violet-beige ":: Found term ““$1”” more than once.\n““$(fd -t d "^$1$" .)””"
-	     return 1 ;;
+	*)  [[ "$(fd -t d "^$1$" . | wc -l)" -eq 1 ]] && {
+		zap_after="$(realpath "$(fd -t d "^$1$" .)")"
+		echolor violet-beige ":: Found exact term ““$1””\n:: Zapped from ““$zap_before””\n:: Zapped to   ““$zap_after””"
+		echolor violet-beige ":: However, other less-exact terms were also found\n““$(fd -t d -- "$1" .)””"
+		cd "$zap_after"
+		return 0
+	    }
+	    [[ "$(fd -t d "^$1$" . | wc -l)" -gt 1 ]] && {
+		echolor violet-beige ":: Found exact term ““$1”” more than once.\n““$(fd -t d "^$1$" .)””"
+		echolor violet-beige ":: Nothing done."
+		return 1
+	    }
+	    echolor violet-beige ":: Found term ““$1”” more than once.\n““$(fd -t d -- "$1" .)””"
+	    echolor violet-beige ":: Nothing done."
+	    return 1 ;;
     esac
 }
 
@@ -803,7 +819,6 @@ function ytv {
 	-f 'bestvideo[height=1080][ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best'       \
 	--fragment-retries infinite                                                      \
 	--no-mtime                                                                       \
-	--write-auto-subs                                                                \
 	--embed-chapters                                                                 \
 	--embed-subs                                                                     \
 	--sub-langs en,-live_chat                                                        \
@@ -815,7 +830,6 @@ function ytvr {
 	-f 'bestvideo[height=1080][ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best'       \
 	--fragment-retries infinite                                                      \
 	--no-mtime                                                                       \
-	--write-auto-subs                                                                \
 	--embed-chapters                                                                 \
 	--embed-subs                                                                     \
 	--sub-langs en,-live_chat                                                        \
