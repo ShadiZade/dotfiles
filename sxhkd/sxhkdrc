@@ -145,15 +145,18 @@ super + q ; w
 
 # net-surfer
 super + n
-        ~/Repositories/scripts/net-surfer
+    ~/Repositories/scripts/net-surfer
 
 # flameshot
-{_,ctrl + }Print
-	flameshot {full,gui}
+shift + Print
+    flameshot full
+
+ctrl + shift + Print
+    flameshot gui
 
 # flameshot ocr
-ctrl + shift + Print
-        ~/Repositories/scripts/ocr-screenshot
+ctrl + shift + asciitilde
+    ~/Repositories/scripts/ocr-screenshot
 
 
 ############################################# run scripts
