@@ -243,3 +243,4 @@
 (shadi/set-chinese-font "LXGW WenKai")
 (shadi/set-arabic-font "Kawkab Mono")
 
+;; (package-refresh-contents) ;; takes too long when reloading config

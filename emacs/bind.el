@@ -3,6 +3,12 @@
 (keymap-global-unset "C-x C-p")
 (keymap-global-unset "C-x C-u")
 (keymap-global-unset "C-x C-l")
+(keymap-global-unset "C-z")
+(keymap-global-unset "M-z")
+;(keymap-global-unset "C-m")
+(keymap-global-unset "M-m")
+(keymap-global-unset "M-h")
+(keymap-global-unset "M-j")
 
 ;; global bindings
 (keymap-global-set "<escape>"        'keyboard-escape-quit)

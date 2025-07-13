@@ -149,7 +149,7 @@ super + n
 
 # flameshot
 shift + Print
-    flameshot full
+    flameshot full; ~/Repositories/scripts/sound-effects shutter
 
 ctrl + shift + Print
     flameshot gui
@@ -200,6 +200,9 @@ super + a ; c
 
 super + b
     ~/Repositories/scripts/sound-effects bruh
+
+super + v
+    ~/Repositories/scripts/sound-effects vine-boom
 
 super + d
     ~/Repositories/scripts/sound-effects d2a-d2i

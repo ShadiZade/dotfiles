@@ -64,12 +64,18 @@ function terminal-art {
 }
 
 function cd {
+    touch /tmp/ppd
+    PREVIOUS_CD_DIR="$(cat /tmp/ppd)"
     case "$1" in
 	"")  local new_dir="$HOME" ;;
-	"-") local new_dir="$PREVIOUS_CD_DIR" ;;
-	*)   local new_dir="$1" ;;
+	"-") [[ -d "$PREVIOUS_CD_DIR" ]] || {
+		 echolor red ":: Did not find directory '““$PREVIOUS_CD_DIR””'"
+		 return 1
+	     }
+	     local new_dir="$PREVIOUS_CD_DIR" ;;
+	*)   local new_dir="$(realpath "$1")" ;;
     esac
-    export PREVIOUS_CD_DIR="$(pwd)"
+    [[ "$(pwd)" = "$new_dir" ]] || pwd > /tmp/ppd
     builtin cd "$new_dir"
     change-prompt-for-git
     check-for-relevant-function
@@ -214,7 +220,7 @@ k () {
 ## ..c
 ..c () {
     git add .
-    git commit -m $(bd)
+    git commit -m "${@:-$(bd)}"
     tok
     change-prompt-for-git
 }
@@ -887,4 +893,3 @@ function uggx {
 function yayss {
     echo -e "$(yay -Ssa "$1" | sed '/^aur/s/ /\\033[0m /;/^aur/s/^aur\//aur\/\\033[38;2;255;175;105m/')"
 }
-

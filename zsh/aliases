@@ -22,6 +22,7 @@ alias cdqp="cd ~/Aquire/pictures && ll"
 alias cdqv="cd ~/Aquire/video && ll"
 ## Athenaeum
 alias cdae="cd ~/Athenaeum/add/ && ll"
+alias cdaes="cd ~/Athenaeum/sql/ && ll"
 ## Desktop
 alias cdk="cd ~/Desktop && ll"
 alias cdkt="cd ~/Desktop/try && ll"
@@ -264,3 +265,4 @@ alias sn="shutdown now"
 alias rp="realpath"
 alias 郑码="uggx"
 alias db='sudo mariadb -u root'
+alias gpl='wget -O LICENSE https://www.gnu.org/licenses/gpl-3.0.txt'
