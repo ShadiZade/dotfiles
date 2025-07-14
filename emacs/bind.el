@@ -105,8 +105,8 @@
 					 (end-of-buffer)))
 
 ;; apps
-(keymap-global-set "C-← b"       'ebuku)
-(keymap-global-set "C-← f"       'shadi/load-elfeed)
+(keymap-global-set "C-z b"       'ebuku)
+(keymap-global-set "C-z f"       'shadi/load-elfeed)
 
 ;; mode bindings
 (keymap-global-set "C-| t" 'text-mode)
