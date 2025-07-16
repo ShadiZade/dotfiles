@@ -11,6 +11,7 @@ base-devel
 bash-completion
 bat
 bitwarden
+bluetui
 bluez
 bluez-utils
 brightnessctl

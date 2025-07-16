@@ -6,7 +6,7 @@
 (add-hook 'org-mode-hook
 	  (lambda ()
 	      (keymap-local-unset "C-'")
-	      (keymap-local-unset "C-,") ))
+	      (keymap-local-unset "C-,")))
 
 (add-hook 'LaTeX-mode-hook
 	  (lambda ()
@@ -68,8 +68,8 @@
 
 (add-hook 'text-mode-hook
 	  (lambda ()
-	    (keymap-local-set "C-c f" 'move-progress-forward)
-	    ))
+	    (keymap-local-set "C-c f" 'move-progress-forward)))
+	    
 
 (add-hook 'racket-mode-hook
 	  (lambda ()

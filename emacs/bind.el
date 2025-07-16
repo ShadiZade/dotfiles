@@ -3,9 +3,13 @@
 (keymap-global-unset "C-x C-p")
 (keymap-global-unset "C-x C-u")
 (keymap-global-unset "C-x C-l")
+(keymap-global-unset "C-x C-d")
+(keymap-global-unset "C-x C-r")
+(keymap-global-unset "C-x C-n")
+(keymap-global-unset "C-x C-j")
+(keymap-global-unset "C-x C-z")
 (keymap-global-unset "C-z")
 (keymap-global-unset "M-z")
-;(keymap-global-unset "C-m")
 (keymap-global-unset "M-m")
 (keymap-global-unset "M-h")
 (keymap-global-unset "M-j")
@@ -64,22 +68,12 @@
 
 
 ;; dired
-(keymap-global-set "C-c v m n"         (lambda () (interactive)
-					    (dired "~/Misc/notes")))
-(keymap-global-set "C-c v m d"         (lambda () (interactive)
-					    (dired "~/Misc/diary")))
-(keymap-global-set "C-c v m o"         (lambda () (interactive)
-					    (dired "~/Misc/org")))
-(keymap-global-set "C-c v s u c"       (lambda () (interactive)
-					    (dired "~/Study/uni/courses")))
-(keymap-global-set "C-c v s m"         (lambda () (interactive)
-					    (dired "~/Study/marxism/current")))
-(keymap-global-set "C-c v j w"         (lambda () (interactive)
-					    (dired "~/Projects/writings")))
-(keymap-global-set "C-c v l s u"       (lambda () (interactive)
-					    (dired "~/.local/share/user-scripts")))
-(keymap-global-set "C-c v s a"         (lambda () (interactive)
-					    (dired "~/Study/academia")))
+(keymap-global-set "C-c v m n"         (lambda () (interactive) (dired "~/Misc/notes")))
+(keymap-global-set "C-c v m d"         (lambda () (interactive) (dired "~/Misc/diary")))
+(keymap-global-set "C-c v m o"         (lambda () (interactive) (dired "~/Misc/org")))
+(keymap-global-set "C-c v j w"         (lambda () (interactive) (dired "~/Projects/writings")))
+(keymap-global-set "C-c v l s u"       (lambda () (interactive) (dired "~/.local/share/user-scripts")))
+
 ;; specific files
 (keymap-global-set "C-’ e i"           (lambda () (interactive)
 					 (find-file "~/Repositories/dotfiles/emacs/init.el")))
@@ -105,8 +99,8 @@
 					 (end-of-buffer)))
 
 ;; apps
-(keymap-global-set "C-z b"       'ebuku)
-(keymap-global-set "C-z f"       'shadi/load-elfeed)
+(keymap-global-set "C-z b"   'ebuku)
+(keymap-global-set "C-z f"   'shadi/load-elfeed)
 
 ;; mode bindings
 (keymap-global-set "C-| t" 'text-mode)
@@ -117,23 +111,14 @@
 (keymap-global-set "C-| l" 'TeX-tex-mode)
 
 ;; frequent-words
-(keymap-global-set "C-c 1"         (lambda () (interactive)
-				     (shadi/fw 1)))
-(keymap-global-set "C-c 2"         (lambda () (interactive)
-				     (shadi/fw 2)))
-(keymap-global-set "C-c 3"         (lambda () (interactive)
-				     (shadi/fw 3)))
-(keymap-global-set "C-c 4"         (lambda () (interactive)
-				     (shadi/fw 4)))
-(keymap-global-set "C-c 5"         (lambda () (interactive)
-				     (shadi/fw 5)))
-(keymap-global-set "C-c 6"         (lambda () (interactive)
-				     (shadi/fw 6)))
-(keymap-global-set "C-c 7"         (lambda () (interactive)
-				     (shadi/fw 7)))
-(keymap-global-set "C-c 8"         (lambda () (interactive)
-				     (shadi/fw 8)))
-(keymap-global-set "C-c 9"         (lambda () (interactive)
-				     (shadi/fw 9)))
+(keymap-global-set "C-c 1"  (lambda () (interactive) (shadi/fw 1)))
+(keymap-global-set "C-c 2"  (lambda () (interactive) (shadi/fw 2)))
+(keymap-global-set "C-c 3"  (lambda () (interactive) (shadi/fw 3)))
+(keymap-global-set "C-c 4"  (lambda () (interactive) (shadi/fw 4)))
+(keymap-global-set "C-c 5"  (lambda () (interactive) (shadi/fw 5)))
+(keymap-global-set "C-c 6"  (lambda () (interactive) (shadi/fw 6)))
+(keymap-global-set "C-c 7"  (lambda () (interactive) (shadi/fw 7)))
+(keymap-global-set "C-c 8"  (lambda () (interactive) (shadi/fw 8)))
+(keymap-global-set "C-c 9"  (lambda () (interactive) (shadi/fw 9)))
 
 
