@@ -73,7 +73,7 @@ function cd {
 		 return 1
 	     }
 	     local new_dir="$PREVIOUS_CD_DIR" ;;
-	*)   local new_dir="$(realpath "$1")" ;;
+	*)   local new_dir="$(realpath -- "$1")" ;;
     esac
     [[ "$(pwd)" = "$new_dir" ]] || pwd > /tmp/ppd
     builtin cd "$new_dir"
@@ -353,7 +353,7 @@ submv () {
     [[ -z "$fl" ]] && return 1
     file_ext="$(echo "$fl" | awk -F '.' '{print $NF}')"
     fw="$dir/$fl"
-    realpath "$fw" | ←
+    realpath -- "$fw" | ←
     echolor yellow ":: Opening ““$fw””"
     case "$file_ext" in
 	pdf|ps|djvu|epub)
@@ -387,8 +387,8 @@ xmm () {
 }
 
 ←←← () {
-    realpath "${1:-.}" | ←
-    realpath "${1:-.}"
+    realpath -- "${1:-.}" | ←
+    realpath -- "${1:-.}"
 }
 
 relevant () {
@@ -630,13 +630,13 @@ function sl {
 	echolor red ":: Error: more than two arguments!"
 	return 1
     }
-    [[ ! -e "$(realpath "$1")" ]] && {
-	echolor red ":: ““$(realpath $1)”” does not exist!"
+    [[ ! -e "$(realpath -- "$1")" ]] && {
+	echolor red ":: ““$(realpath -- $1)”” does not exist!"
 	return 1
     }
-    echolor purple-aquamarine ":: Linking ““$(realpath "$1")””"
-    echolor purple-aquamarine ":: To ““$(realpath "${2:-.}")””"
-    ln -s "$(realpath "$1")" "$(realpath "${2:-.}")"
+    echolor purple-aquamarine ":: Linking ““$(realpath -- "$1")””"
+    echolor purple-aquamarine ":: To ““$(realpath -- "${2:-.}")””"
+    ln -s "$(realpath -- "$1")" "$(realpath -- "${2:-.}")"
 }
 # TODO convert all \033 to echolor
 
@@ -720,10 +720,10 @@ function reading-stats {
 }
 
 function zap-to-directory {
-    zap_before="$(realpath .)"
+    zap_before="$(realpath -- .)"
     [[ -z "$1" ]] && {
 	case "$(fd -t d . | wc -l)" in
-	    "1") zap_after="$(realpath "$(fd -t d .)")"
+	    "1") zap_after="$(realpath -- "$(fd -t d .)")"
 		 cd "$zap_after"
 		 echolor violet-beige ":: One subdirectory detected\n:: Zapped from ““$zap_before””\n:: Zapped to   ““$zap_after””"
 		 return 0 ;;
@@ -744,7 +744,7 @@ function zap-to-directory {
 	     echolor violet-beige ":: Nothing done."
 	     return 1 ;;
 	*)  [[ "$(fd -t d "^$1$" . | wc -l)" -eq 1 ]] && {
-		zap_after="$(realpath "$(fd -t d "^$1$" .)")"
+		zap_after="$(realpath "$(fd -t d -- "^$1$" .)")"
 		echolor violet-beige ":: Found exact term ““$1””\n:: Zapped from ““$zap_before””\n:: Zapped to   ““$zap_after””"
 		echolor violet-beige ":: However, other less-exact terms were also found\n““$(fd -t d -- "$1" .)””"
 		cd "$zap_after"
@@ -802,8 +802,8 @@ function rl {
 	    echolor red ":: File ““$j”” is not a symlink."
 	    return 1
 	}
-	echolor yellow ":: Removing symlink ““$(realpath -s "$j")””"
-	echolor yellow-liteorange "             Target ““$(realpath -P "$j")””"
+	echolor yellow ":: Removing symlink ““$(realpath -s -- "$j")””"
+	echolor yellow-liteorange "             Target ““$(realpath -P -- "$j")””"
 	rm -I "$j" >/dev/null && echolor green "      ✓ Done."
     done
 }
