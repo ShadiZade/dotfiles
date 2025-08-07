@@ -763,7 +763,10 @@ function zap-to-directory {
 
 function mvk {
     [[ -z "$1" ]] && return 1
-    [[ ! -e "$1" ]] && return 1
+    [[ ! -e "$1" ]] && {
+	echolor red ":: File ““$1”” not found."
+	return 1
+    }
     local fname="$1"
     local ext="${fname##*.}"
     case "$2" in
@@ -777,10 +780,19 @@ function mvk {
 	echolor red ":: ““$(kebab "$nname")$ext”” already exists here."
 	return 1
     }
+    [[ -z "$ext"  ]] && ext="$(extension-determiner "$fname")"
     mv -vn "$fname" "$(kebab "$nname")$ext" || return 1
     echolor purple-aquamarine ":: From ““$fname””\n:: Into ““$(kebab "$nname")$ext””"
 }
 
+
+function mva {
+    fd -q "^aaa" "$HOME/Downloads/" || {
+	echolor red ":: No file beginning with “aaa” was found in ~/Downloads"
+	return 1
+    }
+    mvk "$HOME/Downloads/aaa"* "${@:-.}"
+}
 
 function rl {
     # remove symlinks safely

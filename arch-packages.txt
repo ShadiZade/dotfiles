@@ -79,6 +79,7 @@ mpc
 mpd
 mpv
 mtools
+mupdf
 musescore
 ncdu
 ncmpcpp
@@ -91,6 +92,7 @@ noto-fonts-extra
 npm
 nsxiv
 ntfs-3g
+ntp
 otf-aurulent-nerd
 otf-codenewroman-nerd
 otf-comicshanns-nerd
