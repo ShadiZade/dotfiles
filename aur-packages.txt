@@ -33,3 +33,4 @@ units
 windscribe
 xdg-ninja-git
 yay
+zoom

@@ -356,7 +356,7 @@ submv () {
     realpath -- "$fw" | ←
     echolor yellow ":: Opening ““$fw””"
     case "$file_ext" in
-	pdf|ps|djvu|epub)
+	pdf|ps|djvu|epub|cbz)
 	    rdo sioyek "$fw" ;;
 	mp3|wav|wmv|flv|flac|opus|ogg)
             mpv --no-audio-display "$fw" ;;

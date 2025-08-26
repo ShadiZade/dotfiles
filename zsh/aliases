@@ -223,6 +223,7 @@ alias open="xdg-open"
 alias fd="fd -i"
 alias cp="cp -iv"
 alias mv='mv -iv'
+alias mvar="mva "$(random-string)""
 alias rm='rm -iv'
 alias rmdir='rmdir -v'
 alias grep='grep --color=auto -is'
