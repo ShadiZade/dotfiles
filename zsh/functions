@@ -794,6 +794,10 @@ function mva {
     mvk "$HOME/Downloads/aaa"* "${@:-.}"
 }
 
+function mvar {
+    mva "$(random-string)"
+}
+
 function rl {
     # remove symlinks safely
     [[ -z "$@" ]] && {

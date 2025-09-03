@@ -18,7 +18,7 @@
 	    (keymap-local-set "; s"     'tex-insert-species)
 	    (keymap-local-set "; ;"     'tex-insert-comment)
 	    (keymap-local-set "\""      'tex-enquote)
-	    (keymap-local-set "C-="     'run-setsh-script)
+	    (keymap-local-set "C-≠" 'run-setsh-script)
 	    ;; ispell skip new commands
 	    (setq ispell-tex-skip-alists
                    (list
@@ -45,7 +45,7 @@
 
 (add-hook 'markdown-mode-hook
 	  (lambda ()
-	    (keymap-local-set "C-=" 'run-setsh-script)
+	    (keymap-local-set "C-≠" 'run-setsh-script)
 	    ))
 
 (add-hook 'mhtml-mode-hook
