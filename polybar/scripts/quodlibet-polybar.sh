@@ -14,6 +14,10 @@
 ###################################################################################################
 ####### symlink location: ~/.config/polybar/scripts/ ##############################################
 
+[[ -e "/tmp/brown-noise-pid" ]] && {
+    echo "[BROWN NOISE]"
+    exit
+}
 quodlibet --print-playing 2>&1 | grep -qi 'not running' && exit
 fullname=$(quodlibet --print-playing)
 echo "$fullname" | grep -q 'Unknown Audio' && exit

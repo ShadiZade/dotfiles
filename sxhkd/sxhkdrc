@@ -56,6 +56,10 @@ super + alt + ctrl + Return
 # quodlibet enqueue classical
 super + alt + ctrl + asciitilde
 	$HOME/Repositories/scripts/choose-classical.sh
+
+# brown noise mode
+super + alt + ctrl + b
+	$HOME/Repositories/scripts/brown-noise
 	
 # clear clipboard
 super + shift + BackSpace
@@ -194,20 +198,6 @@ super + a ; w
 # afc-shortcuts
 super + a ; c
 	export which_shortcuts=afc-shortcuts; ~/Repositories/scripts/wiki-shortcuts.sh
-
-
-############################################ misc
-
-super + b
-    ~/Repositories/scripts/sound-effects bruh
-
-super + v
-    ~/Repositories/scripts/sound-effects vine-boom
-
-super + d
-    ~/Repositories/scripts/sound-effects d2a-d2i
-super + shift + b
-    for j in {1..5}; do killall xdg-desktop-portal; done; ~/Repositories/scripts/sound-effects jumpy-laser
 
 
 ############################################ frequent-words
