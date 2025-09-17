@@ -39,7 +39,7 @@ super + alt + ctrl + {slash,BackSpace}
 
 # brightness down/up
 super + alt + ctrl + {minus,equal}
-	brightnessctl s 40{-,+}
+	brightnessctl s 40{-,+}; killall dunst; notify-send -t 1000 "$(brightnessctl i | sed -n 2p | tr -d '\t')"
 
 # quodlibet controls
 super + alt + ctrl + {space,Right,Prior,Next,0}

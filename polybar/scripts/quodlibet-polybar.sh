@@ -5,10 +5,11 @@
     echo "[BROWN NOISE]"
     exit
 }
-quodlibet --print-playing 2>&1 | grep -qi 'not running' && {
+quodlibet --print-playing 2>&1 | grep -qi 'Quod Libet is not running' && {
     echo ''
     exit
 }
+
 fullname=$(quodlibet --print-playing)
 echo "$fullname" | grep -q 'Unknown Audio' && {
     echo '[UNKNOWN AUDIO]'

@@ -101,6 +101,7 @@
 ;; apps
 (keymap-global-set "C-z b"   'ebuku)
 (keymap-global-set "C-z f"   'shadi/load-elfeed)
+(keymap-global-set "C-z p"   'pomidor)
 
 ;; mode bindings
 (keymap-global-set "C-| t" 'text-mode)

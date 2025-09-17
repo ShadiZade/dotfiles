@@ -102,7 +102,8 @@ alias cdt="cd /tmp && lln"
 ## Excluding
 alias cde="cd ~/Excluding/ && ll"
 alias cdep="cd ~/Excluding/podcasts && lln"
-alias cdey="cd ~/Excluding/ytvid && lln"
+alias cdec="cd ~/Excluding/courses/ && ll"
+alias cdey="cd ~/Excluding/ytvid && lln *mp4"
 ## Projects
 alias cdj="cd ~/Projects && ff"
 alias cdjm="cd ~/Projects/misc/ && ff"
@@ -264,6 +265,5 @@ alias zd="zap-to-directory"
 alias sn="shutdown now"
 alias rp="realpath"
 alias 郑码="uggx"
-alias db='sudo mariadb -u root'
 alias gpl='wget -O LICENSE https://www.gnu.org/licenses/gpl-3.0.txt'
 alias bt="bluetui"
