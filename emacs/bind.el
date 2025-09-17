@@ -30,6 +30,7 @@
 (keymap-global-set "C-’ r"           'rename-file)
 (keymap-global-set "C-’ C-’"         'lingva-translate)
 (keymap-global-set "C-’ o"           'olivetti-mode)
+(keymap-global-set "C-’ l"           'emacs-lock-mode)
 (keymap-global-set "C-’ <"           'diff-buffer-with-file)
 (keymap-global-set "C-’ ~"           'shadi/sign)
 (keymap-global-set "C-’ a <right>"   'set-buffer-directionality-right)

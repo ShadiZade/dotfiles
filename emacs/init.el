@@ -246,7 +246,16 @@
 ;; (package-refresh-contents) ;; takes too long when reloading config
 (setq indent-tabs-mode 'only)
 
-(setq pomidor-sound-tick nil 
-      pomidor-sound-tack nil 
-      pomidor-sound-overwork (expand-file-name (concat pomidor-dir "overwork.wav"))
-      pomidor-sound-break-over (expand-file-name (concat (getenv "HOME") "/Music/overwork.wav")))
+
+(use-package pomidor
+  :bind (("<f12>" . pomidor))
+  :config (setq pomidor-sound-tick nil 
+		pomidor-sound-tack nil 
+		pomidor-sound-overwork (expand-file-name (concat pomidor-dir "overwork.wav"))
+		pomidor-sound-break-over (expand-file-name (concat (getenv "HOME") "/Music/overwork.wav")))
+  :hook (pomidor-mode . (lambda ()
+                          (setq left-fringe-width 0 right-fringe-width 0)
+                          (setq left-margin-width 2 right-margin-width 0)
+                          (set-window-buffer nil (current-buffer))
+			  (text-scale-set -1)
+			  (emacs-lock-mode))))
