@@ -1,0 +1,2 @@
+* yt-dlp plugins ([[https://github.com/yt-dlp/yt-dlp#installing-plugins][how to install]])
+** https://github.com/QuantumWarpCode/yt-dlp-dearrow
