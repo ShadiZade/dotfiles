@@ -844,6 +844,7 @@ function ytv {
 	--embed-chapters                                                                 \
 	--embed-subs                                                                     \
 	--sub-langs en,-live_chat                                                        \
+	--use-postprocessor DeArrow:when=pre_process                                     \
 	"$@"
 }
 
@@ -856,6 +857,7 @@ function ytvr {
 	--embed-subs                                                                     \
 	--sub-langs en,-live_chat                                                        \
 	--sponsorblock-remove all                                                        \
+	--use-postprocessor DeArrow:when=pre_process                                     \
 	"$@"
 }
 
