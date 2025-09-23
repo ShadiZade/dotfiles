@@ -360,7 +360,7 @@ submv () {
 	    rdo sioyek "$fw" ;;
 	mp3|wav|wmv|flv|flac|opus|ogg)
             mpv --no-audio-display --loop=inf "$fw" ;;
-	mp4|mkv|ts|webm|ogv)
+	mp4|mkv|ts|webm|ogv|m4v)
 	    rdo mpv --osd-fractions --volume=100 --volume-max=200 --loop=inf --audio-samplerate=88200 "$fw" ;;
 	jpg|png|jpeg|svg|jxl|jpeg_large|webp|gif|tif|avif|jp2)
 	    rdo sxiv "$fw" ;;
