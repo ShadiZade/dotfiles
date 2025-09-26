@@ -10,7 +10,9 @@ freetube-bin
 gallery-dl
 hq
 i3lock-color
+iqtree
 jmtpfs
+mega
 mikhak-fonts
 mimeo
 minecraft-launcher
@@ -33,4 +35,4 @@ units
 windscribe
 xdg-ninja-git
 yay
-zoom
+yt-dlp-git

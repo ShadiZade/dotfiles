@@ -5,6 +5,8 @@
   (package-install 'atom-one-dark-theme))
 (load-theme 'gruvbox t)
 ; (load-theme 'atom-one-dark t)
+(disable-theme 'catppuccin)
+
 
 (setq-default abbrev-mode t)
 (abbrev-mode nil)
@@ -46,7 +48,8 @@
 (require 'package)
 (setq package-archives '(("melpa" . "https://melpa.org/packages/")
 			;; ("org" . "https://orgmode.org/elpa")
-			 ("elpa" . "https://elpa.gnu.org/packages/")))
+			 ("elpa" . "https://elpa.gnu.org/packages/")
+			 ("nongnu" . "https://elpa.nongnu.org/nongnu/")))
 (package-initialize)
 (unless package-archive-contents
   (package-refresh-contents))
@@ -89,6 +92,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(default ((t (:inherit nil :height 160 :family "ZedMono Nerd Font"))))
  '(mode-line-active ((t (:inherit mode-line :background "dark olive green" :foreground "white smoke")))))
 
 (use-package general)

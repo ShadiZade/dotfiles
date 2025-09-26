@@ -22,12 +22,14 @@ cmatrix
 cowsay
 csvlens
 dateutils
+deno
 dialog
 docx2txt
 dosfstools
 dunst
 efibootmgr
 emacs
+expac
 eza
 f3d
 fcitx5-chinese-addons
@@ -120,7 +122,11 @@ pipewire-pulse
 playerctl
 polybar
 pypinyin
+python-matplotlib
 python-pipx
+python-scipy
+python-seaborn
+python-soundfile
 qbittorrent
 qt5-tools
 quodlibet
@@ -269,7 +275,6 @@ xsel
 xsv
 xwallpaper
 yq
-yt-dlp
 zathura
 zathura-cb
 zathura-djvu

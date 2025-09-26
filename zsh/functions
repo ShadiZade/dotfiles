@@ -845,6 +845,7 @@ function ytv {
 	--embed-subs                                                                     \
 	--sub-langs en,-live_chat                                                        \
 	--use-postprocessor DeArrow:when=pre_process                                     \
+	--extractor-args "youtube:player-client=default,-tv_simply"                      \
 	"$@"
 }
 
@@ -858,28 +859,31 @@ function ytvr {
 	--sub-langs en,-live_chat                                                        \
 	--sponsorblock-remove all                                                        \
 	--use-postprocessor DeArrow:when=pre_process                                     \
+	--extractor-args "youtube:player-client=default,-tv_simply"                      \
 	"$@"
 }
 
 function ytm {
-    yt-dlp                               \
-	--fragment-retries infinite      \
-	--format bestaudio               \
-	--no-mtime                       \
-	--extract-audio                  \
-	--audio-format mp3               \
+    yt-dlp                                                                       \
+	--fragment-retries infinite                                              \
+	--format bestaudio                                                       \
+	--no-mtime                                                               \
+	--extract-audio                                                          \
+	--audio-format mp3                                                       \
+	--extractor-args "youtube:player-client=default,-tv_simply"              \
 	"$@"
 }
 
 
 function ytmr {
-    yt-dlp                               \
-	--fragment-retries infinite      \
-	--format bestaudio               \
-	--no-mtime                       \
-	--extract-audio                  \
-	--audio-format mp3               \
-	--sponsorblock-remove all        \
+    yt-dlp                                                                       \
+	--fragment-retries infinite                                              \
+	--format bestaudio                                                       \
+	--no-mtime                                                               \
+	--extract-audio                                                          \
+	--audio-format mp3                                                       \
+	--sponsorblock-remove all                                                \
+	--extractor-args "youtube:player-client=default,-tv_simply"              \
 	"$@"
 }
 
