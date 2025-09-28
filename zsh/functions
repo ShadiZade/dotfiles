@@ -562,6 +562,11 @@ function unread-newsletter {
     ufile="$usdd/unread-newsletters"
     [[ -z "$(cat "$ufile")" ]] && {
 	echolor yellow ":: No unread newsletters."
+	return 1
+    }
+    [[ "$1" = "clear" ]] && {
+	echo -n > "$ufile"
+	echolor green ":: Newsletters cleared."
 	return
     }
     nlfile="$(cat "$ufile" | awk -F '/' '{print $NF}' | awk -F '.' '{print $1}' | fzf)"
