@@ -378,7 +378,7 @@ xmm () {
 	"") pkill kiod5
 	    jmtpfs ~/.local/mobile/
 	    ;;
-	end) cd
+	end) grep -q "$HOME/.local/mobile/" <<< "$(pwd)" && cd
 	     umount ~/.local/mobile/
 	     ;;
 	*) echo ":: unknown command"

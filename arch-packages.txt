@@ -128,6 +128,7 @@ python-scipy
 python-seaborn
 python-soundfile
 qbittorrent
+qt5-svg
 qt5-tools
 quodlibet
 r
@@ -151,8 +152,10 @@ termdown
 terminus-font
 tesseract-data-ara
 tesseract-data-chi_sim
+tesseract-data-chi_tra
 tesseract-data-deu
 tesseract-data-eng
+tesseract-data-por
 texlive-basic
 texlive-bibtexextra
 texlive-binextra
