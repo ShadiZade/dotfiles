@@ -113,35 +113,27 @@ super + q ; a
 
 # terminal
 super + q ; s
-	pkill dunst; dunst & notify-send -t 1000 'Launcher' 'Launching "kitty"' & kitty
+	pkill dunst; dunst & notify-send -t 1000 'Launcher' 'Launching "kitty"' & kitty && pkill dunst
 
 # vivaldi
 super + q ; v
-	pkill dunst; dunst & notify-send -t 1000 'Launcher' 'Launching "vivaldi"' & vivaldi-stable
+	pkill dunst; dunst & notify-send -t 1000 'Launcher' 'Launching "vivaldi"' & vivaldi-stable && pkill dunst
 
 # emacs
 super + q ; e
-	pkill dunst; dunst & notify-send -t 1000 'Launcher' 'Launching "emacs"' & emacsclient -c -a emacs
+	pkill dunst; dunst & notify-send -t 1000 'Launcher' 'Launching "emacs"' & emacsclient -c -a emacs && pkill dunst
 
-# quodlibet
+# quodlibet (doesn't work for some reason)
 super + q ; l
-	pkill dunst; dunst & notify-send -t 1000 'Launcher' 'Launching "quodlibet"' & quodlibet
+	pkill dunst; dunst & notify-send -t 1000 'Launcher' 'Launching "quodlibet"' & quodlibet --run && pkill dunst
 
 # freetube
 super + q ; f
-	pkill dunst; dunst & notify-send -t 1000 'Launcher' 'Launching "freetube"' & freetube
+	pkill dunst; dunst & notify-send -t 1000 'Launcher' 'Launching "freetube"' & freetube && pkill dunst
 
 # qbittorrent
 super + q ; b
 	pkill dunst; dunst & notify-send -t 1000 'Launcher' 'Launching "qbittorrent"' & qbittorrent && pkill dunst
-
-# calibre
-super + q ; c
-	pkill dunst; dunst & notify-send -t 1000 'Launcher' 'Launching "calibre"' & calibre && pkill dunst
-
-# google-earth-pro
-super + q ; r
-	pkill dunst; dunst & notify-send -t 1000 'Launcher' 'Launching "google earth pro"' & google-earth-pro && pkill dunst	
 
 # windscribe
 super + q ; w
