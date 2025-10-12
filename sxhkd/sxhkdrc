@@ -60,6 +60,10 @@ super + alt + ctrl + asciitilde
 # brown noise mode
 super + alt + ctrl + b
 	$HOME/Repositories/scripts/brown-noise
+
+# reconnect bluetooth
+super + alt + ctrl + c
+	$HOME/Repositories/scripts/connect-bluetooth
 	
 # clear clipboard
 super + shift + BackSpace

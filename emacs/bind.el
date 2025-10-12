@@ -44,7 +44,6 @@
 (keymap-global-set "C-c a"           'org-agenda-list)
 (keymap-global-set "C-c s"           'scratch-buffer)
 (keymap-global-set "C-c SPC"         'ispell-word)
-(keymap-global-set "C-c ’"           'su-read-only)
 (keymap-global-set "C-c l"           'counsel-unicode-char)
 (keymap-global-set "M-<up>"          'move-text-up)
 (keymap-global-set "M-<down>"        'move-text-down)
@@ -66,6 +65,8 @@
 (keymap-global-set "C-,"             'nswbuff-switch-to-previous-buffer)
 (keymap-global-set "C-."             'nswbuff-switch-to-next-buffer)
 (keymap-global-set "C-'"             'nswbuff-kill-this-buffer)
+(keymap-global-set "C-z d"           'duplicate-line)
+(keymap-global-set "C-z t"           'delete-trailing-whitespace)
 
 
 ;; dired
@@ -103,6 +104,7 @@
 (keymap-global-set "C-z b"   'ebuku)
 (keymap-global-set "C-z f"   'shadi/load-elfeed)
 (keymap-global-set "C-z p"   'pomidor)
+(keymap-global-set "C-z s"   'su-read-only)
 
 ;; mode bindings
 (keymap-global-set "C-| t" 'text-mode)
@@ -122,5 +124,3 @@
 (keymap-global-set "C-c 7"  (lambda () (interactive) (shadi/fw 7)))
 (keymap-global-set "C-c 8"  (lambda () (interactive) (shadi/fw 8)))
 (keymap-global-set "C-c 9"  (lambda () (interactive) (shadi/fw 9)))
-
-

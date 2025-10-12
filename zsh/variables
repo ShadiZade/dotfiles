@@ -7,7 +7,7 @@ export obpxd=60
 export usdd="$HOME/.local/share/user-scripts"
 
 # checked by battery-warner, 1 is on, 0 is off
-export battery_warning_on=0
+export battery_warning_on=1
 
 # trash directory
 export TRASH_DIR="$HOME/.local/share/Trash/files"

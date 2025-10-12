@@ -841,6 +841,19 @@ horizontal-line () {
     echo -e "\033[${hl_remainder}D\033[K"
 }
 
+function ytv137 {
+    yt-dlp                                                                               \
+	-f '137/399/299/303+140/251'                                                     \
+	--fragment-retries infinite                                                      \
+	--no-mtime                                                                       \
+	--embed-chapters                                                                 \
+	--embed-subs                                                                     \
+	--sub-langs en,-live_chat                                                        \
+	--use-postprocessor DeArrow:when=pre_process                                     \
+	--extractor-args "youtube:player-client=default,-tv_simply"                      \
+	"$@"
+}
+
 function ytv {
     yt-dlp                                                                               \
 	-f 'bestvideo[height=1080][ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best'       \

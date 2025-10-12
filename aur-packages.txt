@@ -30,6 +30,7 @@ siji-git
 sioyek-git
 tagutil
 telegram-desktop-bin
+tlpui
 ttf-juliamono
 ttf-unifont-csur
 ugene-bin
