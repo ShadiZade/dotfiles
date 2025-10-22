@@ -48,6 +48,7 @@ fwupd
 fzf
 gimp
 git
+git-filter-repo
 gpick
 grub
 gst-plugins-good
@@ -136,10 +137,12 @@ r
 racket
 reflector
 ripgrep
+river
 rofi
 rofi-emoji
 rofimoji
 rsync
+rustlings
 rustup
 scrapy
 shellcheck

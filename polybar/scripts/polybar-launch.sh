@@ -19,4 +19,7 @@ while pgrep -u $UID -x polybar >/dev/null
 do
     sleep 1
 done
-polybar bspwm1 -c ~/.config/polybar/config.ini 2>/dev/null
+polybar laptop -c ~/.config/polybar/config.ini 2>/dev/null &
+xrandr -q | grep -q "HDMI2 connected" && {
+    polybar monitor -c ~/.config/polybar/config.ini 2>/dev/null &
+}

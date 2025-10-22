@@ -250,10 +250,11 @@
 (use-package pomidor
   :config (setq pomidor-sound-tick nil 
 		pomidor-sound-tack nil 
-		pomidor-sound-overwork (expand-file-name (concat pomidor-dir "overwork.wav"))
-		pomidor-sound-break-over (expand-file-name (concat (getenv "HOME") "/Music/overwork.wav"))
-		pomidor-break-seconds (* 10 60)
-		pomidor-long-break-seconds (* 30 60)
+		pomidor-sound-overwork (expand-file-name (concat (getenv "usdd") "/sounds/rolodex-clicketyclack.wav"))
+		pomidor-sound-break-over (expand-file-name (concat (getenv "usdd") "/sounds/magical-chimes.wav"))
+		pomidor-seconds (* 35 60)
+		pomidor-break-seconds (* 14 60)
+		pomidor-long-break-seconds (* 35 60)
 		pomidor-save-session-file "~/.local/logs/pomidor/pomidor-sessions.json")
   :hook (pomidor-mode . (lambda ()
                           (setq left-fringe-width 0 right-fringe-width 0)

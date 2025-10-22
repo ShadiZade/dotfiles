@@ -80,12 +80,12 @@ super + {j,k}
 	bspc node -f {prev.local.!hidden.window,next.local.!hidden.window}
 
 # focus on desktop
-super + {1-9}
-	bspc desktop -f '^{1-9}'
+super + {1,2,3,4,5,6,7,8,9,0}
+	bspc desktop --focus '^{1-9,10}'
 
 # send to desktop
-super + shift + {1-9}
-	bspc node -d '^{1-9}' follow=on
+super + shift + {1,2,3,4,5,6,7,8,9,0}
+	bspc node --to-desktop '^{1-9,10}'
 
 # expand a window by moving one of its side outward
 super + alt + {h,j,k,l}
@@ -127,7 +127,7 @@ super + q ; v
 super + q ; e
 	pkill dunst; dunst & notify-send -t 1000 'Launcher' 'Launching "emacs"' & emacsclient -c -a emacs && pkill dunst
 
-# quodlibet (doesn't work for some reason)
+# quodlibet
 super + q ; l
 	pkill dunst; dunst & notify-send -t 1000 'Launcher' 'Launching "quodlibet"' & quodlibet --run && pkill dunst
 
@@ -142,6 +142,10 @@ super + q ; b
 # windscribe
 super + q ; w
 	pkill dunst; dunst & notify-send -t 1000 'Launcher' 'Launching "windscribe"' & windscribe && pkill dunst
+
+# sioyek
+super + q ; p
+	pkill dunst; dunst & notify-send -t 1000 'Launcher' 'Launching "sioyek"' & sioyek && pkill dunst
 
 # net-surfer
 super + n
@@ -198,34 +202,34 @@ super + a ; c
 
 ############################################ frequent-words
 
-super + 0 ; super + 0
+super + q ; super + 0
     ~/Repositories/scripts/frequent-words.sh
 
-super + 0 ; super + 1
+super + q ; super + 1
     ~/Repositories/scripts/frequent-words.sh copy 1
 
-super + 0 ; super + 2
+super + q ; super + 2
     ~/Repositories/scripts/frequent-words.sh copy 2
 
-super + 0 ; super + 3
+super + q ; super + 3
     ~/Repositories/scripts/frequent-words.sh copy 3
 
-super + 0 ; super + 4
+super + q ; super + 4
     ~/Repositories/scripts/frequent-words.sh copy 4
 
-super + 0 ; super + 5
+super + q ; super + 5
     ~/Repositories/scripts/frequent-words.sh copy 5
 
-super + 0 ; super + 6
+super + q ; super + 6
     ~/Repositories/scripts/frequent-words.sh copy 6
 
-super + 0 ; super + 7
+super + q ; super + 7
     ~/Repositories/scripts/frequent-words.sh copy 7
 
-super + 0 ; super + 8
+super + q ; super + 8
     ~/Repositories/scripts/frequent-words.sh copy 8
 
-super + 0 ; super + 9
+super + q ; super + 9
     ~/Repositories/scripts/frequent-words.sh copy 9
     
 
