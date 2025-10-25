@@ -25,6 +25,14 @@ super + shift + {Delete,r}
 super + shift + {c,k}
 	bspc node -{c,k}
 
+# hide node
+super + h
+        bspc node --flag hidden=on
+
+# unhide nodes
+super + shift + h
+        $HOME/Repositories/scripts/unhide-nodes
+
 # reload sxhkd configs:
 super + shift + s
 	pkill sxhkd; sxhkd; notify-send -t 2000 "Reloading sxhkd"
