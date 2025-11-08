@@ -49,7 +49,6 @@ fzf
 gimp
 git
 git-filter-repo
-gpick
 grub
 gst-plugins-good
 gucharmap

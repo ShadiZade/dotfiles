@@ -172,7 +172,7 @@ alias align-mirrors="sudo pacman-mirrors --fasttrack && sudo pacman -Syyu"
 
 # git
 alias '..s'="git status"
-alias '..d'="git diff"
+alias '..d'="git diff --word-diff=color"
 alias '..p'="git push -u origin master"
 alias '..m'="git push -u origin main"
 

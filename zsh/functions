@@ -391,7 +391,7 @@ xmm () {
     realpath -- "${1:-.}"
 }
 
-relevant () {
+function relevant {
     [ -z "$1" ] && {
 	fd -qH '.relevant-function.sh' \
 	    && copyfile='.relevant-function.sh' \
@@ -402,7 +402,7 @@ relevant () {
     } || {
 	copyfile="$1"
     }
-    cat "$copyfile" | ←n
+    cat "$copyfile" | sed '/^#/d;/^$/d' | ←n
     echolor yellow ":: Copied contents of ““$copyfile”” to clipboard."
 }
 
