@@ -197,6 +197,7 @@ texlive-plaingeneric
 texlive-pstricks
 texlive-publishers
 texlive-xetex
+tlpui
 translate-shell
 ttc-iosevka
 ttf-0xproto-nerd

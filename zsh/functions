@@ -736,7 +736,10 @@ function zap-to-directory {
 		 echolor violet-beige ":: Nothing done."
 		 return 1 ;;
 	    *)   echolor violet-beige ":: Found more than one subdirectory.\n““$(fd -d 1 -t d .)””"
-		 echolor violet-beige ":: Nothing done."
+		 zap_after="$(realpath "$(fd -d 1 -t d . | fzf)")"
+		 [[ -z "$zap_after" ]] && return 1
+		 echolor violet-beige ":: Zapped to ““$zap_after““"
+		 cd "$zap_after"
 		 return 1 ;;
 	esac
 	}
@@ -748,20 +751,35 @@ function zap-to-directory {
 	"0") echolor violet-beige ":: Term ““$1”” not found."
 	     echolor violet-beige ":: Nothing done."
 	     return 1 ;;
-	*)  [[ "$(fd -t d "^$1$" . | wc -l)" -eq 1 ]] && {
+	*)  [[ "$(fd -t d "^$1$" . | wc -l)" -eq 1 && ${#1} -gt 2 ]] && {
 		zap_after="$(realpath "$(fd -t d -- "^$1$" .)")"
 		echolor violet-beige ":: Found exact term ““$1””\n:: Zapped from ““$zap_before””\n:: Zapped to   ““$zap_after””"
-		echolor violet-beige ":: However, other less-exact terms were also found\n““$(fd -t d -- "$1" .)””"
+		echolor violet-beige ":: However, other less-exact terms were also found:\n““$(fd -t d -- "$1" .)””"
+		cd "$zap_after"
+		return 0
+	    }
+	    [[ "$(fd -t d "^$1$" . | wc -l)" -eq 1 && ${#1} -lt 3 ]] && {
+		echolor violet-beige ":: Found exact term ““$1””, but it is less than 3 characters long."
+		echolor violet-beige ":: Other less-exact terms were also found:\n““$(fd -t d -- "$1" .)””"
+		zap_after="$(realpath "$(fd -t d -- "$1" . | fzf)")"
+		[[ -z "$zap_after" ]] && return 1
+		echolor violet-beige ":: Zapped to ““$zap_after““"
 		cd "$zap_after"
 		return 0
 	    }
 	    [[ "$(fd -t d "^$1$" . | wc -l)" -gt 1 ]] && {
 		echolor violet-beige ":: Found exact term ““$1”” more than once.\n““$(fd -t d "^$1$" .)””"
-		echolor violet-beige ":: Nothing done."
+		zap_after="$(realpath "$(fd -t d -- "^$1$" . | fzf)")"
+		[[ -z "$zap_after" ]] && return 1
+		echolor violet-beige ":: Zapped to ““$zap_after““"
+		cd "$zap_after"
 		return 1
 	    }
 	    echolor violet-beige ":: Found term ““$1”” more than once.\n““$(fd -t d -- "$1" .)””"
-	    echolor violet-beige ":: Nothing done."
+	    zap_after="$(realpath "$(fd -t d -- "$1" . | fzf)")"
+	    [[ -z "$zap_after" ]] && return 1
+	    echolor violet-beige ":: Zapped to ““$zap_after““"
+	    cd "$zap_after"
 	    return 1 ;;
     esac
 }
@@ -800,7 +818,11 @@ function mva {
 }
 
 function mvar {
-    mva "$(random-string)"
+    fd -q "^aaa" "$HOME/Downloads/" || {
+	echolor red ":: No file beginning with “aaa” was found in ~/Downloads"
+	return 1
+    }
+    mvk "$HOME/Downloads/aaa"* "${1} $(random-string ${3:-13}) ${2}"
 }
 
 function rl {

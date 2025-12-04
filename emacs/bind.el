@@ -65,8 +65,8 @@
 (keymap-global-set "C-,"             'nswbuff-switch-to-previous-buffer)
 (keymap-global-set "C-."             'nswbuff-switch-to-next-buffer)
 (keymap-global-set "C-'"             'nswbuff-kill-this-buffer)
-(keymap-global-set "C-z d"           'duplicate-line)
-(keymap-global-set "C-z t"           'delete-trailing-whitespace)
+(keymap-global-set "C-z C-d"           'duplicate-line)
+(keymap-global-set "C-z C-t"           'delete-trailing-whitespace)
 
 
 ;; dired
