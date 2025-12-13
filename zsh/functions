@@ -955,3 +955,43 @@ function uggx {
 function yayss {
     echo -e "$(yay -Ssa "$1" | sed '/^aur/s/ /\\033[0m /;/^aur/s/^aur\//aur\/\\033[38;2;255;175;105m/')"
 }
+
+function throw {
+    [[ -z "$1" || -z "$2" ]] && {
+	echolor red ":: More arguments needed."
+	return 1
+    }
+    [[ ! -e "$1" ]] && {
+	echolor red ":: File does not exist."
+	return 1
+    }	
+    [[ -h "$1" ]] && {
+	echolor red ":: File is already a symlink."
+	return 1
+    }	
+    [[ ! -d "$2" ]] && {
+	echolor red ":: Destination is not a directory."
+	return 1
+    }	
+    printf "$3" | grep -q '/' && {
+	echolor red ":: Illegal frontslash."
+	return 1
+    }	
+    fullfile="$(realpath "$1")"
+    basefile="$(basename "$1")"
+    destinat="$(realpath "$2")"
+    afterthrow="$destinat/$basefile"
+    mv "$1" "$2" || {
+	echolor red ":: Move failed."
+	return 1
+    }
+    ln -sf "$afterthrow" ./"${3:-$basefile}" || {
+	echolor red ":: Link failed."
+	return 1
+    }	
+    echolor violet-beige ":: File      ““$fullfile””"
+    echolor violet-beige ":: Moved to  $destinat"
+    echolor violet-beige ":: As        ““$(realpath "$afterthrow")””"
+    echolor violet-beige ":: Linked in $(pwd)"
+    echolor violet-beige ":: As        ““$(realpath -s "${3:-$basefile}")””"
+}

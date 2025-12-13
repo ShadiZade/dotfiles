@@ -16,6 +16,6 @@ export TRASH_DIR="$HOME/.local/share/Trash/files"
 export BACK_DIR="$HOME/Misc/Backups/"
 
 # default prompt
-export DEFAULT_PROMPT_SYMBOL="苏"
+export DEFAULT_PROMPT_SYMBOL="宁"
 export DEFAULT_PROMPT_COLOR="#55ff55"
 export DEFAULT_PROMPT=" %F{$DEFAULT_PROMPT_COLOR}%2~%f %S%F{$DEFAULT_PROMPT_COLOR} $DEFAULT_PROMPT_SYMBOL %D{%H:%M} 🠦 %f%s "
