@@ -872,6 +872,7 @@ function ytv137 {
 	--embed-subs                                                                     \
 	--sub-langs en,-live_chat                                                        \
 	--use-postprocessor DeArrow:when=pre_process                                     \
+	--remote-components ejs:github                                                   \
 	--extractor-args "youtube:player-client=default,-tv_simply"                      \
 	"$@"
 }
@@ -885,6 +886,7 @@ function ytv {
 	--embed-subs                                                                     \
 	--sub-langs en,-live_chat                                                        \
 	--use-postprocessor DeArrow:when=pre_process                                     \
+	--remote-components ejs:github                                                   \
 	--extractor-args "youtube:player-client=default,-tv_simply"                      \
 	"$@"
 }
@@ -899,6 +901,7 @@ function ytvr {
 	--sub-langs en,-live_chat                                                        \
 	--sponsorblock-remove all                                                        \
 	--use-postprocessor DeArrow:when=pre_process                                     \
+	--remote-components ejs:github                                                   \
 	--extractor-args "youtube:player-client=default,-tv_simply"                      \
 	"$@"
 }
@@ -910,6 +913,7 @@ function ytm {
 	--no-mtime                                                               \
 	--extract-audio                                                          \
 	--audio-format mp3                                                       \
+	--remote-components ejs:github                                                   \
 	--extractor-args "youtube:player-client=default,-tv_simply"              \
 	"$@"
 }
@@ -923,6 +927,7 @@ function ytmr {
 	--extract-audio                                                          \
 	--audio-format mp3                                                       \
 	--sponsorblock-remove all                                                \
+	--remote-components ejs:github                                                   \
 	--extractor-args "youtube:player-client=default,-tv_simply"              \
 	"$@"
 }
