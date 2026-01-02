@@ -37,5 +37,6 @@ units
 wemeet-bin
 windscribe
 xdg-ninja-git
-yay
+yay-bin
+yay-bin-debug
 yt-dlp-git
