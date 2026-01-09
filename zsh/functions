@@ -1000,3 +1000,14 @@ function throw {
     echolor violet-beige ":: Linked in $(pwd)"
     echolor violet-beige ":: As        ““$(realpath -s "${3:-$basefile}")””"
 }
+
+function autocommit {
+    timestarted="$(date -Ins)" 
+    while true
+    do
+	git diff --quiet && continue
+	git add .
+	git commit -m "Automatic commit function (${1:-2} seconds) started on ($timestarted); Timestamp ($(date -Ins))"
+	sleep ${1:-2}s
+    done
+}

@@ -13,6 +13,8 @@ image/gif,.gif
 image/svg+xml,.svg
 image/tiff,.tif
 image/jp2,.jp2
+image/bmp,.bmp
 application/pdf,.pdf
 application/postscript,.ps
 application/vnd.android.package-archive,.apk
+application/msword,.doc
