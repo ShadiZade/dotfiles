@@ -28,6 +28,7 @@ scantailor-advanced-git
 shahab-fonts
 siji-git
 sioyek-git
+subtitleedit
 tagutil
 telegram-desktop-bin
 ttf-juliamono

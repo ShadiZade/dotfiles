@@ -30,7 +30,7 @@ echo "$fullname" | grep -q '[ابتثجحخدذرزسشصضطظعغفقكلمن�
 
 function isolate-fullname {
 	# checks for a hyphen to ascertain if the song has a known artist
-	songitself=$(printf "$1" | awk -F " - " '{print $2}' | awk -F '(' '{print $1}' | sed 's/\s*$//g')
+	songitself=$(printf "$1" | awk -F " - " '{print $NF}' | awk -F '(' '{print $1}' | sed 's/\s*$//g')
 	artistname=$(printf "$1" | awk -F " - " '{print $1}')
 	# removes II, III, Jr, or Jr. from artist name, isolates surname, and finalizes structure
 	songname=$(printf "$artistname" | awk -F " (Jr[.]*|II[I]*)" '{print $1}' | awk -F ' ' '{print $NF}')"'s "$songitself
