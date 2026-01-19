@@ -69,7 +69,7 @@
 
 
 ;; dired
-(keymap-global-set "C-c v m n"         (lambda () (interactive) (dired "~/Misc/notes")))
+(keymap-global-set "C-c v n"           (lambda () (interactive) (dired "~/Notes")))
 (keymap-global-set "C-c v m d"         (lambda () (interactive) (dired "~/Misc/diary")))
 (keymap-global-set "C-c v m o"         (lambda () (interactive) (dired "~/Misc/org")))
 (keymap-global-set "C-c v j w"         (lambda () (interactive) (dired "~/Projects/writings")))

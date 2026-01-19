@@ -54,12 +54,14 @@ alias cdmbvt="cd ~/Misc/Backups/video/torrents/ && lln"
 alias cdmbvi="cd ~/Misc/Backups/video/imdb/ && ll"
 alias cdmbvd="cd ~/Misc/Backups/video/donefiles/ && cat-donefiles"
 alias cdmr="cd ~/Misc/research-topics && ll"
-alias cdmn="cd ~/Misc/notes && ll"
+
 alias cdmo="cd ~/Misc/org/ && ll"
 alias cdmd="cd ~/Misc/diary/ && ll"
 alias cdmc="cd ~/Misc/cooking && ll"
 ## Movies
 alias cdf="cd ~/Films && ll"
+## Notes
+alias cdn="cd ~/Notes && ll"
 ## Books
 alias cdb="cd ~/Books"
 alias cdba="cd ~/Books/xadd && delete-opf; ll"
