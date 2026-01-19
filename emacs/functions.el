@@ -120,12 +120,17 @@
 (defun run-script-in-same-dir (filename)
   (interactive)
   (save-buffer)
-  (if (and (file-exists-p filename) (file-executable-p filename))
-      (progn
-	(executable-interpret filename)
-	(delete-other-windows)
-	(message (format "Executing script %s..." filename)))
-    (message (format "Script %s not found." filename))))
+  (let* ((dir-realpath    (directory-file-name (file-name-parent-directory (file-truename (buffer-file-name)))))
+	 (script-realpath (format "%s/%s" dir-realpath filename))
+	 (prev-dir        (file-name-parent-directory (buffer-file-name))))
+    (cd dir-realpath)
+    (if (and (file-exists-p script-realpath) (file-executable-p script-realpath))
+	(progn
+	  (executable-interpret script-realpath)
+	  (delete-other-windows)
+	  (message (format "Executing script %s..." script-realpath)))
+      (message (format "Script %s not found." script-realpath)))
+    (cd prev-dir)))
 
 (defun run-setsh-script ()
   (interactive)

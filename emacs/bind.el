@@ -70,6 +70,10 @@
 
 ;; dired
 (keymap-global-set "C-c v n"           (lambda () (interactive) (dired "~/Notes")))
+(keymap-global-set "C-’ j"             (lambda () (interactive)
+					 (counsel-find-file "~/Notes/jottings/")
+					 (end-of-buffer)
+					 (olivetti-mode t)))
 (keymap-global-set "C-c v m d"         (lambda () (interactive) (dired "~/Misc/diary")))
 (keymap-global-set "C-c v m o"         (lambda () (interactive) (dired "~/Misc/org")))
 (keymap-global-set "C-c v j w"         (lambda () (interactive) (dired "~/Projects/writings")))
@@ -90,10 +94,6 @@
 					 (find-file "~/Misc/org/task.org")))
 (keymap-global-set "C-’ w"             (lambda () (interactive)
 					 (find-file "~/Misc/org/tiasut.org")))
-(keymap-global-set "C-’ n"             (lambda () (interactive)
-					 (find-file "~/Archives/Personal/notebook/notebook.md")
-					 (end-of-buffer)
-					 (olivetti-mode)))
 (keymap-global-set "C-’ c"             (lambda () (interactive)
 					 (find-file "~/Study/commonplace/commonplace.md")
 					 (end-of-buffer)

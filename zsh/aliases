@@ -62,6 +62,7 @@ alias cdmc="cd ~/Misc/cooking && ll"
 alias cdf="cd ~/Films && ll"
 ## Notes
 alias cdn="cd ~/Notes && ll"
+alias cdnj="cd ~/Notes/jottings/ && lln"
 ## Books
 alias cdb="cd ~/Books"
 alias cdba="cd ~/Books/xadd && delete-opf; ll"
