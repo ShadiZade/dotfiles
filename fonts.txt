@@ -6252,7 +6252,6 @@
 /usr/share/fonts/TTF/BlexMonoNerdFont-SemiBoldItalic.ttf: BlexMono Nerd Font,BlexMono Nerd Font SemiBold:style=SemiBold Italic,Italic
 /usr/share/fonts/user-fonts/gochihand_regular.ttf: Gochi Hand:style=Regular
 /usr/share/fonts/oldschool/Mx437_PhoenixEGA_8x8.ttf: Mx437 PhoenixEGA 8x8:style=Regular
-/usr/share/fonts/otf-gfs/GFSArtemisiaBoldIt.otf: GFS Artemisia,GFS Didot:style=Bold Italic
 /usr/share/fonts/OTF/OverpassNerdFont-Bold.otf: Overpass Nerd Font:style=Bold
 /usr/share/fonts/misc/ter-u16b.otb: Terminus:style=Bold
 /usr/share/fonts/noto/NotoSansSinhala-SemiCondensed.ttf: Noto Sans Sinhala SemiCondensed:style=Regular
@@ -6348,6 +6347,7 @@
 /usr/share/fonts/TTF/IBMPlexSansCondensed-Text.ttf: IBM Plex Sans Condensed,IBM Plex Sans Cond Text:style=Text,Regular
 /usr/share/fonts/noto/NotoSerifMyanmar-CondensedThin.ttf: Noto Serif Myanmar Condensed,Noto Serif Myanmar Condensed Thin:style=Thin,Regular
 /usr/share/fonts/noto/NotoSansGujaratiUI-SemiCondensedExtraBold.ttf: Noto Sans Gujarati UI,Noto Sans Gujarati UI SemiCondensed ExtraBold:style=SemiCondensed ExtraBold,Regular
+/usr/share/fonts/otf-gfs/GFSArtemisiaBoldIt.otf: GFS Artemisia:style=Bold Italic
 /usr/share/fonts/oldschool/Mx437_Master_512-M7.ttf: Mx437 Master 512\-M7:style=Regular
 /usr/share/fonts/TTF/M+1CodeNerdFontPropo-Thin.ttf: M+1Code Nerd Font Propo,M+1Code Nerd Font Propo Thin:style=Thin,Regular
 /usr/share/fonts/TTF/NotoSansMNerdFont-ExtraCondensedBlack.ttf: NotoSansM Nerd Font,NotoSansM NF,NotoSansM NF ExtCond Black:style=ExtraCondensed Black,Regular

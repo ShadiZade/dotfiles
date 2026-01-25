@@ -56,7 +56,7 @@ function terminal-art {
      echolor mintgreen-violet "∎∎““∎∎”” $(date +%A), $(date +"%d %B 1%Y") HE" 1
      [[ ! -z "$(cat "$usdd/today-date-hijri")" ]] && echolor mintgreen ", $(cat "$usdd/today-date-hijri") AH" 1
      echolor violet-mintgreen "\n∎∎““∎∎ $(cat "$usdd/today-date-french")””" 
-     ~/Repositories/communist-calendar/fetch-events.sh
+     ~/Repositories/applications/communist-calendar/fetch-events.sh
      local quote_margin=30
      echolor mintgreen "$(horizontal-line ◆◆◆◇◇◇ $quote_margin)"
      cat <(echo -ne "\t") "$usdd/qotd" | fold -w $(($(tput cols) - $quote_margin)) -s
