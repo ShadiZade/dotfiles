@@ -48,6 +48,7 @@ fwupd
 fzf
 gimp
 git
+git-delta
 git-filter-repo
 grub
 gst-plugins-good

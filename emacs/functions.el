@@ -246,7 +246,7 @@ The corresponding mode is `%s'."
 (defun date-string ()
   (interactive) 
   (shell-command
-   "date +%Y%m%d%H%M%S"
+   "date -Isec"
    (current-buffer))
   (end-of-visual-line))
 
