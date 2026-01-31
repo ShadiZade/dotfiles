@@ -2154,7 +2154,6 @@
 /usr/share/fonts/OTF/NotoSansCJKsc-Light.otf: Noto Sans CJK SC,Noto Sans CJK SC Light:style=Light,Regular
 /usr/share/fonts/TTF/IBMPlexSansArabic-SemiBold.ttf: IBM Plex Sans Arabic,IBM Plex Sans Arabic SmBld:style=SemiBold,Regular
 /usr/share/fonts/TTF/ZedMonoNerdFont-ExtendedBoldOblique.ttf: ZedMono Nerd Font,ZedMono NF,ZedMono NF Extd Obl:style=Extended Bold Oblique,Bold Italic
-/usr/share/fonts/user-fonts/Ubuntu-Arabic_B.ttf: Ubuntu Arabic:style=Bold
 /usr/share/fonts/OTF/CommitMonoNerdFontPropo-BoldItalic.otf: CommitMono Nerd Font Propo:style=Bold Italic
 /usr/share/fonts/TTF/ZedMonoNerdFontPropo-MediumOblique.ttf: ZedMono Nerd Font Propo,ZedMono NFP,ZedMono NFP Medium Obl:style=Medium Oblique,Italic
 /usr/share/fonts/user-fonts/coustard_regular.ttf: Coustard:style=Regular
@@ -3908,7 +3907,6 @@
 /usr/share/fonts/TTF/M+CodeLat50NerdFontMono-Medium.ttf: M+CodeLat50 Nerd Font Mono,M+CodeLat50 Nerd Font Mono Med:style=Medium,Regular
 /usr/share/fonts/user-fonts/NotoSansNerdFontPropo-SemiCondensedSemiBoldItalic.ttf: NotoSans Nerd Font Propo,NotoSans NFP,NotoSans NFP SemCond SemBd:style=SemiCondensed SemiBold Italic,Italic
 /usr/share/fonts/oldschool/Ac437_Nix8810_M16.ttf: Ac437 Nix8810 M16:style=Regular
-/usr/share/fonts/user-fonts/Ubuntu-Arabic_R.ttf: Ubuntu Arabic:style=Regular
 /usr/share/fonts/TTF/DaddyTimeMonoNerdFont-Regular.ttf: DaddyTimeMono Nerd Font:style=Regular
 /usr/share/fonts/oldschool/Ac437_TridentEarly_8x11.ttf: Ac437 TridentEarly 8x11:style=Regular
 /usr/share/fonts/TTF/IosevkaTermSlabNerdFontMono-BoldItalic.ttf: IosevkaTermSlab Nerd Font Mono,IosevkaTermSlab NFM:style=Bold Italic

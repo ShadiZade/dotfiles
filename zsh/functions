@@ -863,72 +863,58 @@ horizontal-line () {
     echo -e "\033[${hl_remainder}D\033[K"
 }
 
-function ytv137 {
-    yt-dlp                                                                               \
-	-f '137/399/299/303+140/251'                                                     \
-	--fragment-retries infinite                                                      \
-	--no-mtime                                                                       \
-	--embed-chapters                                                                 \
-	--embed-subs                                                                     \
-	--sub-langs en,-live_chat                                                        \
-	--use-postprocessor DeArrow:when=pre_process                                     \
-	--remote-components ejs:github                                                   \
-	--extractor-args "youtube:player-client=default,-tv_simply"                      \
-	"$@"
-}
-
 function ytv {
-    yt-dlp                                                                               \
-	-f 'bestvideo[height=1080][ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best'       \
-	--fragment-retries infinite                                                      \
-	--no-mtime                                                                       \
-	--embed-chapters                                                                 \
-	--embed-subs                                                                     \
-	--sub-langs en,-live_chat                                                        \
-	--use-postprocessor DeArrow:when=pre_process                                     \
-	--remote-components ejs:github                                                   \
-	--extractor-args "youtube:player-client=default,-tv_simply"                      \
+    yt-dlp                                                                                   \
+	-f 'bestvideo[height=1080][ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best'           \
+	--fragment-retries infinite                                                          \
+	--no-mtime                                                                           \
+	--embed-chapters                                                                     \
+	--embed-subs                                                                         \
+	--sub-langs en,-live_chat                                                            \
+	--use-postprocessor DeArrow:when=pre_process                                         \
+	--remote-components ejs:github                                                       \
+	--extractor-args "youtube:player-client=default,-tv_simply,-android_sdkless"         \
 	"$@"
 }
 
 function ytvr {
-    yt-dlp                                                                               \
-	-f 'bestvideo[height=1080][ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best'       \
-	--fragment-retries infinite                                                      \
-	--no-mtime                                                                       \
-	--embed-chapters                                                                 \
-	--embed-subs                                                                     \
-	--sub-langs en,-live_chat                                                        \
-	--sponsorblock-remove all                                                        \
-	--use-postprocessor DeArrow:when=pre_process                                     \
-	--remote-components ejs:github                                                   \
-	--extractor-args "youtube:player-client=default,-tv_simply"                      \
+    yt-dlp                                                                                   \
+	-f 'bestvideo[height=1080][ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best'           \
+	--fragment-retries infinite                                                          \
+	--no-mtime                                                                           \
+	--embed-chapters                                                                     \
+	--embed-subs                                                                         \
+	--sub-langs en,-live_chat                                                            \
+	--sponsorblock-remove all                                                            \
+	--use-postprocessor DeArrow:when=pre_process                                         \
+	--remote-components ejs:github                                                       \
+	--extractor-args "youtube:player-client=default,-tv_simply,-android_sdkles"          \
 	"$@"
 }
 
 function ytm {
-    yt-dlp                                                                       \
-	--fragment-retries infinite                                              \
-	--format bestaudio                                                       \
-	--no-mtime                                                               \
-	--extract-audio                                                          \
-	--audio-format mp3                                                       \
-	--remote-components ejs:github                                                   \
-	--extractor-args "youtube:player-client=default,-tv_simply"              \
+    yt-dlp                                                                                   \
+	--fragment-retries infinite                                                          \
+	--format bestaudio                                                                   \
+	--no-mtime                                                                           \
+	--extract-audio                                                                      \
+	--audio-format mp3                                                                   \
+	--remote-components ejs:github                                                       \
+	--extractor-args "youtube:player-client=default,-tv_simply,-android_sdkles"          \
 	"$@"
 }
 
 
 function ytmr {
-    yt-dlp                                                                       \
-	--fragment-retries infinite                                              \
-	--format bestaudio                                                       \
-	--no-mtime                                                               \
-	--extract-audio                                                          \
-	--audio-format mp3                                                       \
-	--sponsorblock-remove all                                                \
-	--remote-components ejs:github                                                   \
-	--extractor-args "youtube:player-client=default,-tv_simply"              \
+    yt-dlp                                                                                  \
+	--fragment-retries infinite                                                         \
+	--format bestaudio                                                                  \
+	--no-mtime                                                                          \
+	--extract-audio                                                                     \
+	--audio-format mp3                                                                  \
+	--sponsorblock-remove all                                                           \
+	--remote-components ejs:github                                                      \
+	--extractor-args "youtube:player-client=default,-tv_simply,-android_sdkles"         \
 	"$@"
 }
 
