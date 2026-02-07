@@ -1,6 +1,15 @@
 #!/bin/bash
 # location: ~/.config/polybar/scripts/
 
+[[ ! -e /tmp/current-song || ! -e /tmp/current-song-full ]] && {
+    touch /tmp/current-song /tmp/current-song-full
+}
+fullname=$(quodlibet --print-playing)
+[[ "$fullname" = "$(cat /tmp/current-song-full)" ]] && {
+    cat /tmp/current-song
+    exit
+}
+
 [[ -e "/tmp/brown-noise-pid" ]] && {
     echo "[BROWN NOISE]"
     exit
@@ -10,7 +19,6 @@ quodlibet --print-playing 2>&1 | grep -qi 'Quod Libet is not running' && {
     exit
 }
 
-fullname=$(quodlibet --print-playing)
 echo "$fullname" | grep -q 'Unknown Audio' && {
     echo '[UNKNOWN AUDIO]'
     exit
@@ -46,4 +54,7 @@ printf "$fullname" | grep -q ' - ' && isolate-fullname "$fullname" || songname="
 songname=$(echo "$songname" \
 | awk -F ' —' '{print $1}' \
 | awk -F ', [[:alnum:]]+[[:print:]]+[([:digit:]|N/A)]' '{print $1}')
-get-movement "$fullname"; echo "$songname$movnum"
+get-movement "$fullname"
+echo -n "$fullname" > /tmp/current-song-full
+echo -n "$songname$movnum" > /tmp/current-song
+echo "$songname$movnum"
