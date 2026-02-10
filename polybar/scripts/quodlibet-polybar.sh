@@ -4,21 +4,19 @@
 [[ ! -e /tmp/current-song || ! -e /tmp/current-song-full ]] && {
     touch /tmp/current-song /tmp/current-song-full
 }
-fullname=$(quodlibet --print-playing)
-[[ "$fullname" = "$(cat /tmp/current-song-full)" ]] && {
-    cat /tmp/current-song
-    exit
-}
-
 [[ -e "/tmp/brown-noise-pid" ]] && {
     echo "[BROWN NOISE]"
     exit
 }
-quodlibet --print-playing 2>&1 | grep -qi 'Quod Libet is not running' && {
+fullname=$(quodlibet --print-playing 2>&1)
+echo -n "$fullname" | grep -qi 'Quod Libet is not running' && {
     echo ''
     exit
 }
-
+[[ "$fullname" = "$(cat /tmp/current-song-full)" ]] && {
+    cat /tmp/current-song
+    exit
+}
 echo "$fullname" | grep -q 'Unknown Audio' && {
     echo '[UNKNOWN AUDIO]'
     exit
@@ -28,7 +26,7 @@ echo "$fullname" | grep -q '[ابتثجحخدذرزسشصضطظعغفقكلمن�
     then
 	songitself=$(echo "$fullname" | awk -F " - " '{print $2}')
 	artistname=$(echo "$fullname" | awk -F " - " '{print $1}')
-	songname=$songitself" ل"$artistname
+	songname="$songitself ل$artistname"
     else
 	songname="$fullname"
     fi

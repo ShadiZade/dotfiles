@@ -206,6 +206,7 @@ alias archnews="~/Repositories/scripts/arch-news"
 alias pl="~/Repositories/scripts/link-from-p2p"
 alias plu="~/Repositories/scripts/link-from-p2p -u"
 alias qr="~/Repositories/scripts/give-qr.sh"
+alias pdfnull="~/Repositories/scripts/remove-nullchar-from-pdf-bookmarks"
 
 # files
 alias ’z="e ~/Repositories/dotfiles/zsh/zshrc"
