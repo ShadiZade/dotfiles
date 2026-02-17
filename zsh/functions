@@ -675,16 +675,19 @@ function zhen {
     command trans -b zh:en "$1"
 }
 
-function glyph {
-    codepoint=''
-    echo "$1" | grep -qi "^U+" && codepoint="${1#*+}"
-    [[ -z "$codepoint" ]] && {
-	codepoint="$(echo -n "$1" | iconv -f utf8 -t utf32be | xxd -p | sed -E 's/^0+//g')"
-	echolor blue-beige ":: ““$1”” is ““U+$codepoint””"
-    }
-    fc-list :charset="$codepoint" | awk -F ':' '{print $2}' | awk -F ',' '{print $1}' | sort | uniq
+function get-codepoint {
+    echo -n "$1" | iconv -f utf8 -t utf32be | xxd -p | sed -r 's/^0+/0x/' | xargs printf 'U+%04X\n'
 }
-    
+
+function glyph {
+    char="$(echo -n "$@" | awk '{print substr($0,0,1)}')"
+    codepoint="$(get-codepoint "$char")"
+    [[ -z "$codepoint" ]] && return 1
+    chmap -lC never -c "$char"
+    kitten icat --align left "https://glyphwiki.org/glyph/$(echo -n $codepoint | sed 's/+//g' | tr '[A-Z]' '[a-z]').png"
+    fc-list :charset="${codepoint#U+}" | awk -F ':' '{print $2}' | awk -F ',' '{print $1}' | sort | uniq | less
+}
+
 function find-font {
     fc-list | grep -i "$1" | awk -F ': ' '{print $2}' | sort | uniq
 }
