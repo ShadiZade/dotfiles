@@ -355,6 +355,7 @@ submv () {
     fw="$dir/$fl"
     realpath -- "$fw" | ←
     echolor yellow ":: Opening ““$fw””"
+    resolved=1
     case "$file_ext" in
 	pdf|ps|djvu|epub|cbz)
 	    rdo sioyek "$fw" ;;
@@ -364,12 +365,20 @@ submv () {
 	    rdo mpv --osd-fractions --volume=100 --volume-max=200 --loop=inf --audio-samplerate=88200 "$fw" ;;
 	jpg|png|jpeg|svg|jxl|jpeg_large|webp|gif|tif|avif|jp2)
 	    rdo sxiv "$fw" ;;
-	txt|md|org|tex|bib|sh|el|lisp|html|css)
+	txt|md|org|tex|bib|sh|el|lisp|html|css|yml|yaml)
 	    bat "$fw" ;;
+	json)
+	    jq '.' "$fw" | bat -l json ;;
 	csv)
 	    csvlens "$fw" ;;
-	*)
-	    rdo xdg-open "$fw" ;;
+	doc|docx|docm|odt|xls|xlsx|xlsm|ods|ppt|pptx|pptm|odp)
+	    libreoffice "$fw" ;;
+	*) resolved=0 ;;
+    esac
+    [[ "$resolved" -eq 1 ]] && return 0
+    case "$(mimetype -b "$fw")" in
+	"text/plain") bat "$fw" ;;
+	*) rdo xdg-open "$fw" ;;
     esac
 }
 

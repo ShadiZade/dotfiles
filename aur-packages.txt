@@ -32,6 +32,7 @@ subtitleedit
 tagutil
 telegram-desktop-bin
 ttf-juliamono
+ttf-times-new-roman
 ttf-unifont-csur
 ugene-bin
 units

@@ -1841,6 +1841,7 @@
 /usr/share/fonts/ArrowType-Recursive/RecursiveSansLnrSt-XBlk.ttf: Recursive Sans Linear Static,Recursive Sn Lnr St XBk:style=ExtraBlack,Regular
 /usr/share/fonts/TTF/Inconsolata-UltraExpandedExtraBold.ttf: Inconsolata,Inconsolata Ultra Expanded ExtraBold:style=Ultra Expanded ExtraBold,Regular
 /usr/share/fonts/TTF/iMWritingMonoNerdFont-BoldItalic.ttf: iMWritingMono Nerd Font:style=Bold Italic
+/usr/share/fonts/TTF/times.ttf: Times New Roman:style=Regular,Normal,obyčejné,Standard,Κανονικά,Normaali,Normál,Normale,Standaard,Normalny,Обычный,Normálne,Navadno,thường,Arrunta
 /usr/share/fonts/user-fonts/NotoSansNerdFont-ExtraCondensedMediumItalic.ttf: NotoSans Nerd Font,NotoSans NF,NotoSans NF ExtCond Med:style=ExtraCondensed Medium Italic,Italic
 /usr/share/fonts/TTF/DejaVuSansMNerdFontMono-Bold.ttf: DejaVuSansM Nerd Font Mono:style=Bold
 /usr/share/fonts/TTF/MononokiNerdFont-Bold.ttf: Mononoki Nerd Font:style=Bold
@@ -4204,6 +4205,7 @@
 /usr/share/fonts/TTF/HackNerdFont-Bold.ttf: Hack Nerd Font:style=Bold
 /usr/share/fonts/noto/NotoSansGujarati-ExtraCondensedBlack.ttf: Noto Sans Gujarati,Noto Sans Gujarati ExtraCondensed Black:style=ExtraCondensed Black,Regular
 /usr/share/fonts/oldschool/AcPlus_IBM_CGA-2y.ttf: AcPlus IBM CGA\-2y:style=Regular
+/usr/share/fonts/TTF/timesi.ttf: Times New Roman:style=Italic,cursiva,kurzíva,kursiv,Πλάγια,Kursivoitu,Italique,Dőlt,Corsivo,Cursief,kursywa,Itálico,Курсив,İtalik,Poševno,nghiêng,Etzana
 /usr/share/fonts/noto/NotoSansKannada-SemiCondensedLight.ttf: Noto Sans Kannada,Noto Sans Kannada SemiCondensed Light:style=SemiCondensed Light,Regular
 /usr/share/fonts/oldschool/Px437_Zenith_Z-100_Alt.ttf: Px437 Zenith Z\-100 Alt:style=Regular
 /usr/share/fonts/TTF/IBMPlexSansDevanagari-Light.ttf: IBM Plex Sans Devanagari,IBM Plex Sans Devanagari Light:style=Light,Regular
@@ -4215,6 +4217,7 @@
 /usr/share/fonts/TTF/NotoSerifNerdFont-CondensedRegular.ttf: NotoSerif Nerd Font,NotoSerif NF,NotoSerif NF Cond:style=Condensed Regular,Regular
 /usr/share/fonts/noto/NotoSansMono-SemiCondensed.ttf: Noto Sans Mono,Noto Sans Mono SemiCondensed:style=SemiCondensed,Regular
 /usr/share/fonts/OTF/OverpassMNerdFontPropo-Light.otf: OverpassM Nerd Font Propo,OverpassM Nerd Font Propo Light:style=Light,Regular
+/usr/share/fonts/TTF/timesbd.ttf: Times New Roman:style=Bold,Negreta,tučné,fed,Fett,Έντονα,Negrita,Lihavoitu,Gras,Félkövér,Grassetto,Vet,Halvfet,Pogrubiona,Negrito,Полужирный,Fet,Kalın,Krepko,đậm,Lodia
 /usr/share/fonts/noto/NotoSerifThai-SemiCondensedThin.ttf: Noto Serif Thai,Noto Serif Thai SemiCondensed Thin:style=SemiCondensed Thin,Regular
 /usr/share/fonts/TTF/LiterationMonoNerdFontPropo-Bold.ttf: LiterationMono Nerd Font Propo:style=Bold
 /usr/share/fonts/noto/NotoSansTamil-ExtraCondensedSemiBold.ttf: Noto Sans Tamil ExtraCondensed,Noto Sans Tamil ExtraCondensed SemiBold:style=SemiBold,Regular
@@ -4974,6 +4977,7 @@
 /usr/share/fonts/noto/NotoSansSinhala-Black.ttf: Noto Sans Sinhala,Noto Sans Sinhala Black:style=Black,Regular
 /usr/share/fonts/oldschool/Px437_MBytePC230_Mono.ttf: Px437 MBytePC230 Mono:style=Regular
 /usr/share/fonts/TTF/RecMonoCasualNerdFontMono-Italic.ttf: RecMonoCasual Nerd Font Mono:style=Italic
+/usr/share/fonts/TTF/timesbi.ttf: Times New Roman:style=Bold Italic,Negreta cursiva,tučné kurzíva,fed kursiv,Fett Kursiv,Έντονα Πλάγια,Negrita Cursiva,Lihavoitu Kursivoi,Gras Italique,Félkövér dőlt,Grassetto Corsivo,Vet Cursief,Halvfet Kursiv,Pogrubiona kursywa,Negrito Itálico,Полужирный Курсив,Tučná kurzíva,Fet Kursiv,Kalın İtalik,Krepko poševno,nghiêng đậm,Lodi etzana
 /usr/share/fonts/noto/NotoSansGurmukhi-SemiCondensedSemiBold.ttf: Noto Sans Gurmukhi SemiCondensed,Noto Sans Gurmukhi SemiCondensed SemiBold:style=SemiBold,Regular
 /usr/share/fonts/noto/NotoSerifArmenian-CondensedThin.ttf: Noto Serif Armenian,Noto Serif Armenian Condensed Thin:style=Condensed Thin,Regular
 /usr/share/fonts/noto-cjk/NotoSerifCJK-Bold.ttc: Noto Serif CJK JP:style=Bold
