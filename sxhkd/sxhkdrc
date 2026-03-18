@@ -39,7 +39,7 @@ super + shift + s
 
 # volume down/up
 super + alt + ctrl + {Down,Up}
-        pamixer --allow-boost {-d 10,-i 10}
+        pamixer --allow-boost {-d 5,-i 5}
 
 # volume mute/100
 super + alt + ctrl + {slash,BackSpace}
