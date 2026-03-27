@@ -309,7 +309,10 @@ netc () {
 
 ## cat-donefiles
 cat-donefiles () {
-    echo -e "$(cat * | sed 's/^/\\033[4\;37m/g;s/ is done on /\\033[0m is done on \\033[33m/g;s/$/\\033[0m/g')"
+    for j in "$@"
+    do
+	echo -e "\033[4;37m${$(sed 1q "$j"| sed 's/\.mkv//g' | tr '.' ' ')%% 1080p*}\033[0m is done on \033[33m$(sed -n 2p "$j")"
+    done
 }
 
 fresco () {
