@@ -213,10 +213,6 @@ detect-extra-home-dirs () {
 	| sed '/^$/d'
     return 1
 }
-## k
-k () {
-    ~/Repositories/scripts/mpv-done.sh "$1"
-}
 ## ..c
 ..c () {
     git add .
