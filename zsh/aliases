@@ -106,7 +106,7 @@ alias cdt="cd /tmp && lln"
 alias cde="cd ~/Excluding/ && ll"
 alias cdep="cd ~/Excluding/podcasts && lln"
 alias cdec="cd ~/Excluding/courses/ && ll"
-alias cdey="cd ~/Excluding/youtube/ && lln -- *mp4"
+alias cdey="cd ~/Excluding/youtube/main && lln -- *mp4"
 ## Projects
 alias cdj="cd ~/Projects && ff"
 alias cdjm="cd ~/Projects/misc/ && ff"
@@ -269,3 +269,4 @@ alias rp="realpath"
 alias 郑码="uggx"
 alias gpl='wget -O LICENSE https://www.gnu.org/licenses/gpl-3.0.txt'
 alias bt="bluetui"
+alias hezi="emacsclient -nw -a emacs $HOME/Excluding/youtube/.rules.hezi"
