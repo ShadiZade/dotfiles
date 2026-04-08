@@ -1,0 +1,27 @@
+theme_name: Zollern Smoke
+
+colors:
+  color1: 
+    name: Zollern Smoke
+    hex: "ccae8c"
+  color2:
+    name: Zollern Copper
+    hex: "5b3a2d"
+  color3:
+    name: Zollern Tan
+    hex: "cdc6bf"
+  color4:
+    name: Alarm Red
+    hex: "ff0000"
+  color5:
+    name: Zollern Dark Smoke
+    hex: "bda082"
+  
+wallpaper: 
+  name: Zollern Smoke
+  path: "$HOME/.local/share/user-scripts/wallpapers/zollern.jpg"
+
+files:
+  rofi: "$HOME/Repositories/dotfiles/rofi/themes/zollern-smoke.rasi"
+  polybar: "$HOME/Repositories/dotfiles/polybar/themes/zollern-smoke.ini"
+  dunst: "$HOME/Repositories/dotfiles/dunst/themes/zollern-smoke"
