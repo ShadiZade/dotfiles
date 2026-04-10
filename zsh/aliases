@@ -106,6 +106,7 @@ alias cdt="cd /tmp && lln"
 alias cde="cd ~/Excluding/ && ll"
 alias cdep="cd ~/Excluding/podcasts && lln"
 alias cdec="cd ~/Excluding/courses/ && ll"
+alias cded="cd ~/Excluding/documentaries/ && ll"
 alias cdey="cd ~/Excluding/youtube/main && lln -- *mp4"
 ## Projects
 alias cdj="cd ~/Projects && ff"
