@@ -17,7 +17,6 @@ bluez-utils
 brightnessctl
 bspwm
 btop
-calibre
 cmatrix
 cowsay
 csvlens
