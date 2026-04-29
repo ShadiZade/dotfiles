@@ -711,14 +711,6 @@ function display-unread-arch-news {
     echolor beige ":: Unread Arch News!"
     echolor blue "   “$(cat $usdd/latest-arch-news-title)”"
 }
-    
-function memuse {
-    local rootdisk="$(df -h --sync | grep " /$")"
-    echolor aquamarine-beige ":: ““$(echo $rootdisk | awk '{print $5}')”” of disk space on " 1
-    echolor aquamarine-beige "““$(echo $rootdisk | awk '{print $1}')”” is used " 1
-    echolor aquamarine-beige "(““$(echo $rootdisk | awk '{print $3}')”” out of " 1
-    echolor aquamarine-beige "““$(echo $rootdisk | awk '{print $2}')””)"
-}
 
 function reading-stats {
     [[ ! -d "$HOME/Projects/reading/" ]] && echolor mintgreen-violet "““::”” No reading directory found."
