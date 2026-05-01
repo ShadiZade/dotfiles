@@ -141,8 +141,8 @@ rofi
 rofi-emoji
 rofimoji
 rsync
+rust
 rustlings
-rustup
 scdoc
 scrapy
 shellcheck
@@ -278,6 +278,7 @@ xdg-utils
 xf86-video-intel
 xine-lib
 xorg-server
+xorg-xev
 xorg-xinit
 xorg-xrandr
 xsel
