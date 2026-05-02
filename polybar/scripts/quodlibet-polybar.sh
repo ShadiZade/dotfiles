@@ -31,6 +31,8 @@ echo "$fullname" | grep -q '[ابتثجحخدذرزسشصضطظعغفقكلمن�
 	songname="$fullname"
     fi
     echo "$songname" | fribidi | awk '{gsub(/^\s+|\s+$/,"")} {print $0}'
+    echo -n "$fullname" > /tmp/current-song-full
+    echo -n "$songname" | fribidi | awk '{gsub(/^\s+|\s+$/,"")} {print $0}' > /tmp/current-song
     exit
 }
 
