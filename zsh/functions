@@ -1036,3 +1036,7 @@ av1ize () {
     }
     echolor blue ":: Conversion done"
 }
+
+function jazz {
+    ~/Repositories/scripts/music-tagger -v "$(quodlibet --print-query "$(cat /tmp/current-song-title)")"
+}

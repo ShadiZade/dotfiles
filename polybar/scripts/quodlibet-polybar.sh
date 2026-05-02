@@ -1,8 +1,8 @@
 #!/bin/bash
 # location: ~/.config/polybar/scripts/
 
-[[ ! -e /tmp/current-song || ! -e /tmp/current-song-full ]] && {
-    touch /tmp/current-song /tmp/current-song-full
+[[ ! -e /tmp/current-song || ! -e /tmp/current-song-full || ! -e /tmp/current-song-title ]] && {
+    touch /tmp/current-song /tmp/current-song-full /tmp/current-song-title
 }
 [[ -e "/tmp/brown-noise-pid" ]] && {
     echo "[BROWN NOISE]"
@@ -17,6 +17,9 @@ echo -n "$fullname" | grep -qi 'Quod Libet is not running' && {
     cat /tmp/current-song
     exit
 }
+
+quodlibet --print-playing '<title>' > /tmp/current-song-title
+
 echo "$fullname" | grep -q 'Unknown Audio' && {
     echo '[UNKNOWN AUDIO]'
     exit
