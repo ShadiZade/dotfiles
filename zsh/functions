@@ -249,7 +249,7 @@ lv () {
 }
 ## wg
 wg () {
-    extract-cookies
+    fd -q --newer 10m -p "$COOKIE_FILE" /tmp || extract-cookies
     [[ -z "$2" ]] && {
 	wget --continue --load-cookies "$COOKIE_FILE" --no-use-server-timestamps -nc -t 0 -- "$1"
     } || {
