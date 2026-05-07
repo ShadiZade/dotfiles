@@ -22,12 +22,12 @@ sort () {
 
 describe () {
     ext=$(echo "$file" | awk -F '.' '{print $NF}')
-    killall dunst
+    dunstctl close-all
     notify-send -t 10000000 "Old name:" "$file"
     newname="$(fd 'jpg|jpeg|png|gif|webp|jxl|jpg_large|svg' "$(pwd)" | awk -F '/' '{print $NF}' | rofi -dmenu -i -p 'rename image')"
     newname="$(kebab "$newname")"
     [ -z "$newname" ] || (mv -vn -- "$file" "$newname"."$ext"
-			  killall dunst
+			  dunstctl close-all
 			  notify-send -t 3000 "File renamed:" "$newname.$ext")
 }
 
@@ -55,7 +55,7 @@ showinfo () {
     filetype="$(mimetype -db "$file")"
     datec="$(exiftool -q "$file" | grep "Create Date" -m 1 | ifne sed 's/Create Date                     : //;')"
     filesize="$(du -h "$file" | awk '{print $1}')"
-    killall dunst
+    dunstctl close-all
     notify-send -t 20000 "File info:" "${filename}\n${filesize}\n${filetype}\n${geometry}\n${datec:-––NO DATE––}"
 }
 
@@ -76,7 +76,7 @@ changedate () {
     echolor yellow ":: Updated date on image ““$file””"
     echolor yellow-blue ":: ─────── from ““$lasttime”” to ““$currentdate””"
     touch "$file"
-    killall dunst
+    dunstctl close-all
     notify-send -t 7000 "Gentle touch" "${file}\n${lasttime}\n${currentdate}"
 }
 
