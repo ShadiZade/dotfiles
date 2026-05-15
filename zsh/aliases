@@ -52,7 +52,6 @@ alias cdmb="cd ~/Misc/Backups && ll"
 alias cdmbv="cd ~/Misc/Backups/video/ && ll"
 alias cdmbvt="cd ~/Misc/Backups/video/torrents/ && lln"
 alias cdmbvi="cd ~/Misc/Backups/video/imdb/ && ll"
-alias cdmbvd="cd ~/Misc/Backups/video/donefiles/ && cat-donefiles donefile*"
 alias cdmr="cd ~/Misc/research-topics && ll"
 
 alias cdmo="cd ~/Misc/org/ && ll"

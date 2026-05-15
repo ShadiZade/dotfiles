@@ -303,14 +303,6 @@ netc () {
     wifi-connected-p
 }
 
-## cat-donefiles
-cat-donefiles () {
-    for j in "$@"
-    do
-	echo -e "\033[4;37m${$(sed 1q "$j"| sed 's/\.mkv//g' | tr '.' ' ')%% 1080p*}\033[0m is done on \033[33m$(sed -n 2p "$j")"
-    done
-}
-
 fresco () {
     dir_list="$(eza $hide_flag -1DX --show-symlinks --no-quotes)"
     [[ -z "$dir_list" ]] && return 1
@@ -545,7 +537,18 @@ function xmmv {
 	echolor red ":: No input"
 	return
     }
-    → "$@" ~/.local/mobile/Internal\ shared\ storage/Home/Desktop
+    for j in "$@"
+    do
+	[[ -e "$j" ]] || continue
+	grep -q "\." <<< "$j" && {
+	    ext="$(echo "$j" | awk -F '.' '{print $NF}')"
+	    newname="$(echo "$j" | sed "s/\.$ext$/-$(random-number).$ext/g")"
+	} || {
+	    newname="$(echo "$j"-$(random-number))"
+	}
+	echolor green ":: Copying ““${j##*/}””\n:: As      ““${newname##*/}””"
+	→ "$j" ~/.local/mobile/Internal\ shared\ storage/Home/Desktop/"${newname##*/}"
+    done
 }
 
 function xmmb {
