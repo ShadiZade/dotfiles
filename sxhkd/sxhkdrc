@@ -125,35 +125,39 @@ super + q ; a
 
 # terminal
 super + q ; s
-	pkill dunst; dunst & notify-send -t 1000 'Launcher' 'Launching "kitty"' & kitty && pkill dunst
+	dunstctl close-all; notify-send -t 1000 'Launcher' 'Launching "kitty"' & kitty && dunstctl close-all
 
 # vivaldi
 super + q ; v
-	pkill dunst; dunst & notify-send -t 1000 'Launcher' 'Launching "vivaldi"' & vivaldi-stable && pkill dunst
+	dunstctl close-all; notify-send -t 1000 'Launcher' 'Launching "vivaldi"' & vivaldi-stable && dunstctl close-all
 
 # emacs
 super + q ; e
-	pkill dunst; dunst & notify-send -t 1000 'Launcher' 'Launching "emacs"' & emacsclient -c -a emacs && pkill dunst
+	dunstctl close-all; notify-send -t 1000 'Launcher' 'Launching "emacs"' & emacsclient -c -a emacs && dunstctl close-all
 
 # quodlibet
 super + q ; l
-	pkill dunst; dunst & notify-send -t 1000 'Launcher' 'Launching "quodlibet"' & quodlibet --run && pkill dunst
+	dunstctl close-all; notify-send -t 1000 'Launcher' 'Launching "quodlibet"' & quodlibet --run && dunstctl close-all
 
 # freetube
 super + q ; f
-	pkill dunst; dunst & notify-send -t 1000 'Launcher' 'Launching "freetube"' & freetube && pkill dunst
+	dunstctl close-all; notify-send -t 1000 'Launcher' 'Launching "freetube"' & freetube && dunstctl close-all
 
 # qbittorrent
 super + q ; b
-	pkill dunst; dunst & notify-send -t 1000 'Launcher' 'Launching "qbittorrent"' & qbittorrent && pkill dunst
+	dunstctl close-all; notify-send -t 1000 'Launcher' 'Launching "qbittorrent"' & qbittorrent && dunstctl close-all
 
 # windscribe
 super + q ; w
-	pkill dunst; dunst & notify-send -t 1000 'Launcher' 'Launching "windscribe"' & windscribe && pkill dunst
+	dunstctl close-all; notify-send -t 1000 'Launcher' 'Launching "windscribe"' & windscribe && dunstctl close-all
 
 # sioyek
 super + q ; p
-	pkill dunst; dunst & notify-send -t 1000 'Launcher' 'Launching "sioyek"' & sioyek && pkill dunst
+	dunstctl close-all; notify-send -t 1000 'Launcher' 'Launching "sioyek"' & sioyek && dunstctl close-all
+
+# pick color
+super + q ; c
+        pastel --color-picker xcolor pick | pastel format hex | tr -d '\n' | xclip -selection clipboard
 
 # net-surfer
 super + n
