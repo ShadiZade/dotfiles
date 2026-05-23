@@ -10,9 +10,7 @@ freetube-bin
 gallery-dl
 hq
 i3lock-color
-iqtree
 jmtpfs
-mega
 mikhak-fonts
 mimeo
 minecraft-launcher
@@ -34,7 +32,6 @@ telegram-desktop-bin
 ttf-juliamono
 ttf-times-new-roman
 ttf-unifont-csur
-ugene-bin
 units
 wemeet-bin
 windscribe
