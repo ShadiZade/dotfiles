@@ -124,11 +124,15 @@ pipewire-pulse
 playerctl
 polybar
 pypinyin
+python-brotli
+python-brotlicffi
+python-curl_cffi
 python-matplotlib
 python-pipx
 python-scipy
 python-seaborn
 python-soundfile
+python-xattr
 qbittorrent
 qt5-svg
 qt5-tools
@@ -288,6 +292,7 @@ xsel
 xsv
 xwallpaper
 yq
+yt-dlp-ejs
 zathura
 zathura-cb
 zathura-djvu

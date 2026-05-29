@@ -190,6 +190,7 @@ alias tagger="~/Repositories/scripts/tagger.sh"
 alias gv="~/Repositories/scripts/convert-to-mp4.sh"
 alias tn="~/Repositories/scripts/takenote.sh"
 alias λ="~/Repositories/scripts/OpenShennong.sh"
+alias λλ="outside=yes ~/Repositories/scripts/OpenShennong.sh"
 alias knife='~/Repositories/scripts/kebab-knife.sh'
 alias ⨯⨯⨯⨯="~/Repositories/scripts/trash-emptier.sh"
 alias ¿="~/Repositories/scripts/system-check"
