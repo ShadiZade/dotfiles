@@ -1,11 +1,13 @@
 #!/bin/bash
 
+mkdir ~/.local/share/user-scripts/
+ln -sf ~/Repositories/scripts/src/echolors.csv ~/.local/share/user-scripts/
 sudo ln -sf ~/Repositories/dotfiles/xkb/us /usr/share/X11/xkb/symbols/
 sudo ln -sf ~/Repositories/dotfiles/xkb/ara /usr/share/X11/xkb/symbols/
 mkdir -p ~/.config/emacs/lisp
 ln -sf ~/Repositories/dotfiles/emacs/lisp/*  ~/.config/emacs/lisp
 ln -sf ~/Repositories/dotfiles/emacs/*el  ~/.config/emacs/
-ln -sf ~/Repositories/private/elfeed-feeds.el ~/.config/emacs/
+ln -sf ~/.local/share/user-scripts/elfeed-feeds.el ~/.config/emacs/
 mkdir ~/.config/zsh/
 ln -sf ~/Repositories/dotfiles/zsh/{aliases,extra,functions,variables}  ~/.config/zsh/
 ln -sf ~/Repositories/dotfiles/zsh/zshrc  ~/.config/zsh/.zshrc
@@ -13,6 +15,7 @@ mkdir ~/.config/sxiv/exec
 ln -sf ~/Repositories/dotfiles/sxiv/key-handler ~/.config/sxiv/exec
 mkdir -p ~/.config/rofi/themes
 ln -sf ~/Repositories/dotfiles/rofi/config.rasi ~/.config/rofi
+ln -sf ~/Repositories/dotfiles/rofi/gruvbox-common.rasi /home/shadi/.config/rofi
 ln -sf ~/Repositories/dotfiles/rofi/themes/* ~/.config/rofi/themes
 mkdir ~/.config/bspwm
 ln -sf ~/Repositories/dotfiles/bspwm/bspwmrc ~/.config/bspwm/
@@ -24,11 +27,9 @@ ln -sf ~/Repositories/dotfiles/kitty/kitty.conf ~/.config/kitty
 mkdir ~/.config/cowsay
 ln -sf ~/Repositories/dotfiles/cowsay/none.cow ~/.config/cowsay
 sudo ln -sf ~/Repositories/dotfiles/cowsay/none.cow /usr/share/cowsay/cows/
-mkdir ~/.local/share/user-scripts/
-ln -sf ~/Repositories/scripts/src/echolors.csv ~/.local/share/user-scripts/
-sudo ln -sf ~/Repositories/dotfiles/fortune/marxism.strfile /usr/share/fortune
+sudo ln -sf ~/Repositories/dotfiles/fortune/marxism.strfile /usr/share/fortune/marxism
 sudo ln -sf ~/Repositories/dotfiles/fortune/marxism.dat /usr/share/fortune
-sudo ln -sf ~/Repositories/dotfiles/fortune/general.strfile /usr/share/fortune
+sudo ln -sf ~/Repositories/dotfiles/fortune/general.strfile /usr/share/fortune/general
 sudo ln -sf ~/Repositories/dotfiles/fortune/general.dat /usr/share/fortune
 mkdir -p ~/.config/polybar/scripts
 ln -sf ~/Repositories/dotfiles/polybar/config.ini ~/.config/polybar/

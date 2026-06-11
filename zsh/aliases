@@ -58,7 +58,7 @@ alias cdmo="cd ~/Misc/org/ && ll"
 alias cdmd="cd ~/Misc/diary/ && ll"
 alias cdmc="cd ~/Misc/cooking && ll"
 ## Movies
-alias cdf="cd ~/Films && ll"
+alias cdf="cd ~/Films && ll -I '*srt'"
 ## Notes
 alias cdn="cd ~/Notes && ll"
 alias cdnj="cd ~/Notes/jottings/ && lln"

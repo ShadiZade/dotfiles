@@ -1,0 +1,4 @@
+ffcuesplitter
+instaloader
+pdf-toc
+repcal

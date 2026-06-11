@@ -17,6 +17,7 @@ bluez-utils
 brightnessctl
 bspwm
 btop
+btrfs-progs
 cmatrix
 cowsay
 csvlens
@@ -31,6 +32,7 @@ emacs
 expac
 eza
 f3d
+fcitx5
 fcitx5-chinese-addons
 fcitx5-configtool
 fcitx5-gtk
@@ -50,6 +52,7 @@ git
 git-delta
 git-filter-repo
 grub
+gst-plugin-pipewire
 gst-plugins-good
 gucharmap
 htmlq
@@ -57,14 +60,17 @@ imagemagick
 inetutils
 inkscape
 inotify-tools
+intel-media-driver
+intel-ucode
 inxi
 iwd
-jack2
 julia
 kitty
 leiningen
 less
+libpulse
 libreoffice-fresh
+libva-intel-driver
 linux
 linux-firmware
 linux-headers
@@ -96,6 +102,7 @@ npm
 nsxiv
 ntfs-3g
 ntp
+openbox
 otf-aurulent-nerd
 otf-codenewroman-nerd
 otf-comicshanns-nerd
@@ -120,6 +127,7 @@ picom
 pipewire
 pipewire-alsa
 pipewire-docs
+pipewire-jack
 pipewire-pulse
 playerctl
 polybar
@@ -153,7 +161,7 @@ scrapy
 shellcheck
 shuffle
 snapper
-steam
+sudo
 sxhkd
 sxiv
 tealdeer
@@ -272,16 +280,17 @@ vim
 visidata
 vivaldi
 vivid
+vulkan-intel
 vulkan-nouveau
 wget
 winetricks
+wireplumber
 wpa_supplicant
 xan
 xclip
 xcolor
 xdg-desktop-portal-gtk
 xdg-user-dirs
-xdg-utils
 xf86-video-intel
 xine-lib
 xorg-server
@@ -290,6 +299,7 @@ xorg-xinit
 xorg-xrandr
 xsel
 xsv
+xterm
 xwallpaper
 yq
 yt-dlp-ejs
@@ -299,6 +309,8 @@ zathura-djvu
 zathura-pdf-poppler
 zathura-ps
 zint
+zram-generator
 zsh
+zsh-autocomplete
 zsh-history-substring-search
 zsh-syntax-highlighting

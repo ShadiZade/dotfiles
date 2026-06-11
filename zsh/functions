@@ -41,7 +41,7 @@ function terminal-art {
 
     if wifi-connected-p && [[ -z "$(cat "$usdd/today-date-french")" ]] 
      then
-	 echolor green ":: Updating French Republican date..." 1 
+	 echolor green ":: Updating French Republican date..." 1
 	 ~/Repositories/scripts/french-republican-time.sh > "$usdd/today-date-french"
 	 clear-line
      fi
@@ -51,7 +51,6 @@ function terminal-art {
 	 ~/Repositories/scripts/hijri-date.sh > "$usdd/today-date-hijri"
 	 clear-line
      fi
-     dodec -c "pretty $(date +%Y-%m-%d)"
      reading-stats
      echolor mintgreen-violet "∎∎““∎∎”” $(date +%A), $(date +"%d %B 1%Y") HE" 1
      [[ ! -z "$(cat "$usdd/today-date-hijri")" ]] && echolor mintgreen ", $(cat "$usdd/today-date-hijri") AH" 1

@@ -1,8 +1,6 @@
 ;; themes
 (unless (package-installed-p 'gruvbox-theme)
   (package-install 'gruvbox-theme))
-(unless (package-installed-p 'atom-one-dark-theme)
-  (package-install 'atom-one-dark-theme))
 (load-theme 'gruvbox t)
 ; (load-theme 'atom-one-dark t)
 (disable-theme 'catppuccin)
@@ -68,25 +66,10 @@
    '("b1a691bb67bd8bd85b76998caf2386c9a7b2ac98a116534071364ed6489b695d"
      default))
  '(package-selected-packages
-   '(all-the-icons all-the-icons-dired arjen-grey-theme
-		   atom-one-dark-theme auctex auto-compile
-		   baidu-translate beacon calmer-forest-theme
-		   casual-calc charmap circe company company-auctex
-		   company-emoji company-spell counsel counsel-tramp
-		   csv-mode ct dash ebuku elfeed ess geiser
-		   geiser-racket general graphviz-dot-mode
-		   gruvbox-theme gscholar-bibtex helpful hydra
-		   insert-char-preview ivy-rich jumblr languagetool
-		   lines-at-once linguistic lingva lorem-ipsum
-		   lua-mode magit markdown-mode mbsync mediawiki
-		   mingus move-text mu4easy nerd-icons-dired nov
-		   olivetti openwith org-bullets org-mode
-		   org-translate paperless paredit pdf-tools pdfgrep
-		   poly-R pyim pyim-basedict pyim-cangjiedict quiz
-		   racket-mode rainbow-delimiters reverso
-		   scholar-import slime su sudo-utils swagg
-		   sxhkdrc-mode sxiv unbound unipoint use-package
-		   which-key xclip xwiki-mode yaml-mode yaml-pro zotra)))
+   '(all-the-icons-dired beacon company compat counsel elfeed general
+			 gruvbox-theme helpful ivy-rich move-text
+			 nswbuff org-bullets pomidor
+			 rainbow-delimiters xclip)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -218,7 +201,7 @@
 
 (setq dired-kill-when-opening-new-dired-buffer t)
 (setq dired-listing-switches "-alh")
-(use-package elfeed)
+(require 'elfeed)
 (put 'upcase-region 'disabled nil)
 (put 'downcase-region 'disabled nil)
 

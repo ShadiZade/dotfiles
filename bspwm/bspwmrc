@@ -65,7 +65,7 @@ xwallpaper --zoom "$lin_wallpaper" &
 fcitx5 -d &
 copyq &
 flameshot &
-emacs --daemon &
+emacs --init-directory="$HOME"/.config/emacs --daemon &
 killall battery-warner
 killall chart-disk
 killall jukebox
