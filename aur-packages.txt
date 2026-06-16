@@ -25,6 +25,8 @@ shahab-fonts
 siji-git
 sioyek-git
 subtitleedit
+tagutil
+tagutil-debug
 telegram-desktop-bin
 ttf-juliamono
 ttf-times-new-roman
