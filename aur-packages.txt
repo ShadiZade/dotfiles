@@ -28,6 +28,7 @@ subtitleedit
 tagutil
 tagutil-debug
 telegram-desktop-bin
+ttf-courier-prime
 ttf-juliamono
 ttf-times-new-roman
 units

@@ -19,6 +19,7 @@
 /usr/share/fonts/TTF/IosevkaTermNerdFont-Medium.ttf: IosevkaTerm Nerd Font,IosevkaTerm NF,IosevkaTerm NF Medium:style=Medium,Regular
 /usr/share/fonts/TTF/JetBrainsMonoNLNerdFontPropo-Bold.ttf: JetBrainsMonoNL Nerd Font Propo,JetBrainsMonoNL NFP:style=Bold
 /usr/share/fonts/noto/NotoSansGothic-Regular.ttf: Noto Sans Gothic:style=Regular
+/usr/share/fonts/TTF/CourierPrime-SemiBold.ttf: Courier Prime,Courier Prime SemiBold:style=SemiBold,Regular
 /usr/share/fonts/LongCang-Regular.ttf: Long Cang:style=Regular
 /usr/share/fonts/TTF/NotoSerifNerdFont-Bold.ttf: NotoSerif Nerd Font,NotoSerif NF:style=Bold
 /usr/share/fonts/noto/NotoSansThaiLooped-SemiCondensedExtraBold.ttf: Noto Sans Thai Looped SemiCondensed,Noto Sans Thai Looped SemiCondensed ExtraBold:style=ExtraBold,Regular
@@ -1037,6 +1038,7 @@
 /usr/share/fonts/noto/NotoSerifLao-ExtraCondensedBold.ttf: Noto Serif Lao ExtraCondensed:style=Bold
 /usr/share/fonts/TTF/MononokiNerdFontPropo-Regular.ttf: Mononoki Nerd Font Propo:style=Regular
 /usr/share/fonts/Arkhip_font.otf: Arkhip:style=Regular
+/usr/share/fonts/TTF/Courier Prime Sans Italic.ttf: Courier Prime Sans:style=Italic
 /usr/share/fonts/TTF/AnonymiceProNerdFontPropo-Bold.ttf: AnonymicePro Nerd Font Propo:style=Bold
 /usr/share/fonts/TTF/Inconsolata-UltraExpandedBlack.ttf: Inconsolata,Inconsolata Ultra Expanded Black:style=Ultra Expanded Black,Regular
 /usr/share/fonts/TTF/NotoSerifNerdFontPropo-Bold.ttf: NotoSerif Nerd Font Propo,NotoSerif NFP:style=Bold
@@ -1132,6 +1134,7 @@
 /usr/share/fonts/Impact.TTF: Impact:style=Regular,Normal,obyčejné,Standard,Κανονικά,Normaali,Normál,Normale,Standaard,Normalny,Обычный,Normálne,Navadno,Arrunta
 /usr/share/fonts/TTF/NotoSansNerdFontPropo-SemiCondensedBold.ttf: NotoSans Nerd Font Propo,NotoSans NFP,NotoSans NFP SemCond:style=SemiCondensed Bold,Bold
 /usr/share/fonts/noto/NotoSansEthiopic-CondensedExtraBold.ttf: Noto Sans Ethiopic Condensed,Noto Sans Ethiopic Condensed ExtraBold:style=ExtraBold,Regular
+/usr/share/fonts/TTF/Courier Prime Bold Italic.ttf: Courier Prime:style=Bold Italic
 /usr/share/fonts/TTF/DejaVuMathTeXGyre.ttf: DejaVu Math TeX Gyre:style=Regular
 /usr/share/fonts/TTF/DejaVuSerifCondensed-Bold.ttf: DejaVu Serif,DejaVu Serif Condensed:style=Condensed Bold,Bold
 /usr/share/fonts/NotoSerifNerdFont-Condensed.ttf: NotoSerif Nerd Font,NotoSerif NF Cond:style=Condensed,Regular
@@ -1235,6 +1238,7 @@
 /usr/share/fonts/TTF/JetBrainsMonoNerdFont-Italic.ttf: JetBrainsMono Nerd Font,JetBrainsMono NF:style=Italic
 /usr/share/fonts/noto/NotoSerifDisplay-ExtraBoldItalic.ttf: Noto Serif Display,Noto Serif Display ExtraBold:style=ExtraBold Italic,Italic
 /usr/share/fonts/noto/NotoSansLaoLooped-Condensed.ttf: Noto Sans Lao Looped Condensed:style=Regular
+/usr/share/fonts/TTF/Courier Prime Code Italic.ttf: Courier Prime Code:style=Italic
 /usr/share/fonts/noto/NotoSansKannada-Bold.ttf: Noto Sans Kannada:style=Bold
 /usr/share/fonts/noto/NotoSerifGeorgian-Bold.ttf: Noto Serif Georgian:style=Bold
 /usr/share/fonts/OTF/CommitMonoNerdFontMono-Bold.otf: CommitMono Nerd Font Mono:style=Bold
@@ -1580,6 +1584,7 @@
 /usr/share/fonts/TTF/FantasqueSansMNerdFont-Regular.ttf: FantasqueSansM Nerd Font:style=Regular
 /usr/share/fonts/TTF/MononokiNerdFontMono-BoldItalic.ttf: Mononoki Nerd Font Mono:style=Bold Italic
 /usr/share/fonts/noto/NotoSansArmenian-Thin.ttf: Noto Sans Armenian,Noto Sans Armenian Thin:style=Thin,Regular
+/usr/share/fonts/TTF/CourierPrime-Medium.ttf: Courier Prime,Courier Prime Medium:style=Medium,Regular
 /usr/share/fonts/TTF/JetBrainsMonoNerdFontMono-Thin.ttf: JetBrainsMono Nerd Font Mono,JetBrainsMono NFM,JetBrainsMono NFM Thin:style=Thin,Regular
 /usr/share/fonts/arabeyes/KacstNaskh.ttf: KacstNaskh:style=Medium
 /usr/share/fonts/ZillaSlab-Italic.ttf: Zilla Slab:style=Italic
@@ -1688,6 +1693,7 @@
 /usr/share/fonts/TTF/MonofurNerdFontMono-Italic.ttf: Monofur Nerd Font Mono:style=Italic
 /usr/share/fonts/TTF/IBMPlexSansThai-Thin.ttf: IBM Plex Sans Thai,IBM Plex Sans Thai Thin:style=Thin,Regular
 /usr/share/fonts/TTF/JetBrainsMonoNerdFont-SemiBoldItalic.ttf: JetBrainsMono Nerd Font,JetBrainsMono NF,JetBrainsMono NF SemiBold:style=SemiBold Italic,Italic
+/usr/share/fonts/TTF/Courier Prime Sans Bold Italic.ttf: Courier Prime Sans:style=Bold Italic
 /usr/share/fonts/TTF/NotoSansNerdFontPropo-ExtraCondensedItalic.ttf: NotoSans Nerd Font Propo,NotoSans NFP,NotoSans NFP ExtCond:style=ExtraCondensed Italic,Italic
 /usr/share/fonts/TTF/TinosNerdFont-Bold.ttf: Tinos Nerd Font:style=Bold
 /usr/share/fonts/TTF/JetBrainsMonoNerdFont-ExtraBold.ttf: JetBrainsMono Nerd Font,JetBrainsMono NF,JetBrainsMono NF ExtraBold:style=ExtraBold,Regular
@@ -1885,6 +1891,7 @@
 /usr/share/fonts/noto/NotoSerifEthiopic-SemiCondensed.ttf: Noto Serif Ethiopic SemiCondensed:style=Regular
 /usr/share/fonts/noto/NotoSerifGeorgian-ExtraCondensed.ttf: Noto Serif Georgian,Noto Serif Georgian XCn:style=ExtraCondensed,Regular
 /usr/share/fonts/BiggyJohn.ttf: Biggy John:style=Regular
+/usr/share/fonts/TTF/Courier Prime Code.ttf: Courier Prime Code:style=Regular
 /usr/share/fonts/arabeyes/KacstBook.ttf: KacstBook:style=Medium
 /usr/share/fonts/noto/NotoSerifBengali-SemiCondensedBlack.ttf: Noto Serif Bengali,Noto Serif Bengali SemiCondensed Black:style=SemiCondensed Black,Regular
 /usr/share/fonts/TTF/ProggyCleanCENerdFont-Regular.ttf: ProggyClean CE Nerd Font:style=Regular
@@ -1936,6 +1943,7 @@
 /usr/share/fonts/Iosevka-Regular.ttc: Iosevka Term:style=Regular
 /usr/share/fonts/arabeyes/KacstPen.ttf: KacstPen:style=Medium
 /usr/share/fonts/Salium (1).ttf: Salium:style=Regular
+/usr/share/fonts/TTF/Courier Prime Sans Bold.ttf: Courier Prime Sans:style=Bold
 /usr/share/fonts/TTF/Iosevka-SemiBold.ttc: Iosevka,Iosevka Semibold:style=Semibold,Regular
 /usr/share/fonts/TTF/NotoSansNerdFont-CondensedExtraBoldItalic.ttf: NotoSans Nerd Font,NotoSans NF,NotoSans NF Cond ExtBd:style=Condensed ExtraBold Italic,Italic
 /usr/share/fonts/noto/NotoSansDevanagariUI-CondensedMedium.ttf: Noto Sans Devanagari UI Condensed,Noto Sans Devanagari UI Condensed Medium:style=Medium,Regular
@@ -2057,6 +2065,7 @@
 /usr/share/fonts/TTF/Inconsolata-UltraCondensedBlack.ttf: Inconsolata,Inconsolata Ultra Condensed Black:style=Ultra Condensed Black,Regular
 /usr/share/fonts/Adwaita/AdwaitaSans-Regular.ttf: Adwaita Sans:style=Light
 /usr/share/fonts/TTF/M+CodeLat50NerdFont-Medium.ttf: M+CodeLat50 Nerd Font,M+CodeLat50 Nerd Font Med:style=Medium,Regular
+/usr/share/fonts/TTF/Courier Prime.ttf: Courier Prime:style=Regular
 /usr/share/fonts/TTF/GoMonoNerdFont-Bold.ttf: GoMono Nerd Font:style=Bold
 /usr/share/fonts/TTF/IosevkaTermNerdFontPropo-BoldItalic.ttf: IosevkaTerm Nerd Font Propo,IosevkaTerm NFP:style=Bold Italic
 /usr/share/fonts/TTF/NotoSansMNerdFont-CondensedMedium.ttf: NotoSansM Nerd Font,NotoSansM NF,NotoSansM NF Cond Med:style=Condensed Medium,Regular
@@ -3352,6 +3361,7 @@
 /usr/share/fonts/noto/NotoSerifEthiopic-SemiBold.ttf: Noto Serif Ethiopic,Noto Serif Ethiopic SemiBold:style=SemiBold,Regular
 /usr/share/fonts/noto/NotoSerifKannada-Light.ttf: Noto Serif Kannada,Noto Serif Kannada Light:style=Light,Regular
 /usr/share/fonts/TTF/AgaveNerdFontPropo-Regular.ttf: Agave Nerd Font Propo:style=Regular
+/usr/share/fonts/TTF/Courier Prime Bold.ttf: Courier Prime:style=Bold
 /usr/share/fonts/noto/NotoSerifTamil-SemiCondensedExtraLightItalic.ttf: Noto Serif Tamil SemiCondensed,Noto Serif Tamil SemiCondensed ExtraLight:style=ExtraLight Italic,Italic
 /usr/share/fonts/Oxygen-Light.ttf: Oxygen:style=Light
 /usr/share/fonts/TTF/CaskaydiaMonoNerdFontMono-LightItalic.ttf: CaskaydiaMono Nerd Font Mono,CaskaydiaMono NFM,CaskaydiaMono NFM Light:style=Light Italic,Italic
@@ -3506,6 +3516,7 @@
 /usr/share/fonts/noto/NotoSansDevanagariUI-ExtraCondensedLight.ttf: Noto Sans Devanagari UI ExtraCondensed,Noto Sans Devanagari UI ExtraCondensed Light:style=Light,Regular
 /usr/share/fonts/TTF/MononokiNerdFontMono-Bold.ttf: Mononoki Nerd Font Mono:style=Bold
 /usr/share/fonts/TTF/NotoSansMNerdFontPropo-Bold.ttf: NotoSansM Nerd Font Propo,NotoSansM NFP:style=Bold
+/usr/share/fonts/TTF/Courier Prime Italic.ttf: Courier Prime:style=Italic
 /usr/share/fonts/TTF/IosevkaTermSlabNerdFontMono-Bold.ttf: IosevkaTermSlab Nerd Font Mono,IosevkaTermSlab NFM:style=Bold
 /usr/share/fonts/TTF/IosevkaNerdFontMono-ExtraBoldItalic.ttf: Iosevka Nerd Font Mono,Iosevka NFM,Iosevka NFM ExtraBold:style=ExtraBold Italic,Italic
 /usr/share/fonts/Sedan-Italic.ttf: Sedan:style=Italic
@@ -5091,6 +5102,7 @@
 /usr/share/fonts/OTF/CodeNewRomanNerdFont-Regular.otf: CodeNewRoman Nerd Font:style=Regular
 /usr/share/fonts/OTF/OpenDyslexicMNerdFontMono-Regular.otf: OpenDyslexicM Nerd Font Mono:style=Regular
 /usr/share/fonts/OTF/OpenDyslexicNerdFont-Regular.otf: OpenDyslexic Nerd Font:style=Regular
+/usr/share/fonts/TTF/Courier Prime Sans.ttf: Courier Prime Sans:style=Regular
 /usr/share/fonts/TTF/IBMPlexSansJP-Bold.ttf: IBM Plex Sans JP:style=Bold
 /usr/share/fonts/TTF/NotoSerifNerdFont-CondensedExtraBoldItalic.ttf: NotoSerif Nerd Font,NotoSerif NF,NotoSerif NF Cond ExtBd:style=Condensed ExtraBold Italic,Italic
 /usr/share/fonts/noto/NotoSerifGeorgian-SemiCondensed.ttf: Noto Serif Georgian,Noto Serif Georgian SmCn:style=SemiCondensed,Regular

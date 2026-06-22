@@ -10,6 +10,7 @@ base
 base-devel
 bash-completion
 bat
+bc
 bitwarden
 bluetui
 bluez
@@ -160,6 +161,7 @@ scrapy
 shellcheck
 shuffle
 snapper
+steam
 sudo
 sxhkd
 sxiv

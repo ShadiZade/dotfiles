@@ -274,4 +274,5 @@ alias gpl='wget -O LICENSE https://www.gnu.org/licenses/gpl-3.0.txt'
 alias bt="bluetui"
 alias hezi="emacsclient -nw -a emacs $HOME/Excluding/youtube/.rules.hezi"
 alias tp='ThyPipe '
-
+alias orphan='pacman -Qtdq | ifne sudo pacman -Rns -'
+alias ..h="git diff 'HEAD^' HEAD"
