@@ -165,7 +165,7 @@ super + n
 
 # flameshot
 shift + Print
-    flameshot full; ~/Repositories/scripts/sound-effects shutter
+    flameshot full && ~/Repositories/scripts/sound-effects shutter
 
 ctrl + shift + Print
     flameshot gui
