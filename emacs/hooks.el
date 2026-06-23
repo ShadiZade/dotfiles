@@ -48,6 +48,11 @@
 	    (keymap-local-set "C-≠" 'run-setsh-script)
 	    ))
 
+(add-hook 'text-mode-hook
+	  (lambda ()
+	    (keymap-local-set "C-≠" 'run-setsh-script)
+	    ))
+
 (add-hook 'mhtml-mode-hook
 	  (lambda ()
 	    (keymap-local-set "C-c r" 'do-xhtml-refs)
