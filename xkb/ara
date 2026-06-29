@@ -24,7 +24,7 @@ xkb_symbols "basic" {
     key <AD03> {  [     Arabic_theh,             quotedbl,                  NoSymbol,               U2068 ]};  // ‎ث‎ ‎◌ُ       FIRST STRONG ISOLATE
     key <AD04> {  [      Arabic_qaf,     			colon,                  NoSymbol,               U2069 ]};  // ‎ق‎ ‎◌ٌ       POP DIRECTIONAL ISOLATE
     key <AD05> {  [      Arabic_feh,         Arabic_fatha,                Arabic_veh,            NoSymbol ]};  // ‎ف‎ ‎ﻹ     ‎ڤ
-    key <AD06> {  [    Arabic_ghain,	  Arabic_fathatan,                  NoSymbol,               U202A ]};  // ‎غ‎ ‎إ‎       LEFT-TO-RIGHT-EMBEDDING
+    key <AD06> {  [    Arabic_ghain,	  Arabic_fathatan,                  U06A0,               U202A ]};  // ‎غ‎ ‎إ‎       LEFT-TO-RIGHT-EMBEDDING
     key <AD07> {  [      Arabic_ain,                grave,                  NoSymbol,               U202B ]};  // ‎ع‎ `       RIGHT-TO-LEFT EMBEDDING
     key <AD08> {  [       Arabic_ha,             division,                  NoSymbol,               U202C ]};  // ‎ه‎ ÷       POP DIRECTIONAL FORMATTING
     key <AD09> {  [     Arabic_khah,             multiply,                  NoSymbol,            NoSymbol ]};  // ‎خ‎ ×

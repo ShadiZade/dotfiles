@@ -32,6 +32,7 @@ ttf-courier-prime
 ttf-juliamono
 ttf-times-new-roman
 units
+usbimager
 wemeet-bin
 windscribe
 xdg-ninja-git

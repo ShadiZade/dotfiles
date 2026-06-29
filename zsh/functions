@@ -827,7 +827,7 @@ function mvar {
 	echolor red ":: No file beginning with “aaa” was found in ~/Downloads"
 	return 1
     }
-    mvk "$HOME/Downloads/aaa"* "${1} $(random-string ${3:-13}) ${2}"
+    mvk "$HOME/Downloads/aaa"* "${1} $(random-string ${2:-13}) ${3}"
 }
 
 function rl {

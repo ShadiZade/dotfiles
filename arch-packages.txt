@@ -131,6 +131,7 @@ pipewire-jack
 pipewire-pulse
 playerctl
 polybar
+pv
 pypinyin
 python-brotli
 python-brotlicffi
@@ -283,6 +284,7 @@ vivaldi
 vivid
 vulkan-intel
 vulkan-nouveau
+vulkan-tools
 wget
 winetricks
 wireplumber
