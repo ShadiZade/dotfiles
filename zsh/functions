@@ -25,6 +25,7 @@ function terminal-art {
     last-back-caravan
     last-back-mobile
     display-unread-arch-news
+    thypipe-failures
     touch "$usdd/qotd" "$usdd/today-date"
     [[ "$(cat "$usdd/today-date")" != "$(date +%m-%d)" ]] && {
 	echolor green ":: Updating date..." 1
@@ -1041,4 +1042,9 @@ av1ize () {
 
 function jazz {
     ~/Repositories/scripts/music-tagger -v "$(quodlibet --print-query "$(cat /tmp/current-song-title)")"
+}
+
+function thypipe-failures {
+    local thypipe_failed="$(fd -i 'thypipe-failed' /tmp | wc -l)"
+    [[ "$thypipe_failed" -gt 0 ]] && echolor red ":: Found ““$thypipe_failed'” ThyPipe failures."
 }

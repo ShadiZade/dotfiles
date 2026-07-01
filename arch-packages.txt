@@ -156,6 +156,7 @@ rofi-emoji
 rofimoji
 rsync
 rust
+rust-analyzer
 rustlings
 scdoc
 scrapy
