@@ -844,8 +844,10 @@ function rl {
     for j in "${@}"
     do
 	[[ ! -e "$j" ]] && {
-	    echolor red ":: File ““$j”” does not exist."
-	    return 1
+	    fd -qt l -d 1 --exact "$j" || {
+		echolor red ":: File ““$j”” does not exist."
+		return 1
+	    }
 	}
 	[[ "$(stat -c '%F' "$j")" != "symbolic link" ]] && {
 	    echolor red ":: File ““$j”” is not a symlink."
