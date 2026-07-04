@@ -2,7 +2,6 @@ beancount
 bible-kjv
 buku
 cozette-otb
-cropgui
 downgrade
 edir
 freetube-bin
