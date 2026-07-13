@@ -63,19 +63,23 @@ super + alt + ctrl + Return
 
 # quodlibet enqueue classical
 super + alt + ctrl + asciitilde
-	$HOME/Repositories/scripts/choose-classical.sh
+    $HOME/Repositories/scripts/choose-classical.sh
 
 # brown noise mode
 super + alt + ctrl + b
-	$HOME/Repositories/scripts/brown-noise
+    $HOME/Repositories/scripts/brown-noise
 
 # reconnect bluetooth
 super + alt + ctrl + c
-	$HOME/Repositories/scripts/connect-bluetooth
+    $HOME/Repositories/scripts/connect-bluetooth
 	
 # clear clipboard
 super + shift + BackSpace
-	xsel -cb
+    xsel -cb
+
+# clear notifs
+super + Delete
+    dunstctl close-all
 
 ############################################# window management
 
