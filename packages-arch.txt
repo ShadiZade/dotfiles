@@ -1,6 +1,8 @@
 7zip
 acpi
+alsa-oss
 alsa-plugins
+alsa-tools
 alsa-utils
 android-file-transfer
 aspell
