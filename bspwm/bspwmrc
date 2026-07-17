@@ -50,7 +50,7 @@ bspc rule -a Steam state=floating
 bspc rule -a Emacs state=tiled
 bspc rule -a Sxiv state=fullscreen
 bspc rule -a Nsxiv state=fullscreen  
-bspc rule -a FreeTube state=fullscreen
+bspc rule -a freetube state=fullscreen
 bspc rule -a Zathura state=fullscreen
 bspc rule -a sioyek state=fullscreen
 
