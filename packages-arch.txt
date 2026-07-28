@@ -70,6 +70,7 @@ julia
 kitty
 leiningen
 less
+lib32-vulkan-intel
 libpulse
 libreoffice-fresh
 libva-intel-driver
@@ -149,7 +150,6 @@ qt5-svg
 qt5-tools
 quodlibet
 r
-racket
 reflector
 ripgrep
 river-classic
