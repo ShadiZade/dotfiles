@@ -24,6 +24,7 @@ btrfs-progs
 cmatrix
 cowsay
 csvlens
+cups
 dateutils
 deno
 dialog
@@ -139,6 +140,7 @@ pypinyin
 python-brotli
 python-brotlicffi
 python-curl_cffi
+python-levenshtein
 python-matplotlib
 python-pipx
 python-scipy
@@ -302,6 +304,7 @@ xine-lib
 xorg-server
 xorg-xev
 xorg-xinit
+xorg-xinput
 xorg-xrandr
 xsel
 xsv

@@ -39,6 +39,22 @@ echo "$fullname" | grep -q '[ابتثجحخدذرزسشصضطظعغفقكلمن�
     exit
 }
 
+echo "$fullname" | grep -qP "\p{Script=Han}" && {
+    if echo "$fullname" | grep -q ' - '
+    then
+	songitself=$(echo "$fullname" | awk -F " - " '{print $2}')
+	artistname=$(echo "$fullname" | awk -F " - " '{print $1}')
+	songname="$artistname 「$songitself」"
+    else
+	songname="$fullname"
+    fi
+    
+    echo "$songname"
+    echo -n "$fullname" > /tmp/current-song-full
+    echo -n "$songname" > /tmp/current-song
+    exit
+}
+
 function isolate-fullname {
 	# checks for a hyphen to ascertain if the song has a known artist
 	songitself=$(printf "$1" | awk -F " - " '{print $NF}' | awk -F '(' '{print $1}' | sed 's/\s*$//g')
