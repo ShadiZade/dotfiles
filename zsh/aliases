@@ -48,7 +48,7 @@ alias cdp="cd ~/Pictures && ff"
 alias cdpd="cd ~/Pictures/design/ && ll"
 ## Misc
 alias cdm="cd ~/Misc && ll"
-alias cdmb="cd ~/Misc/Backups && ll"
+alias cdmb="cd ~/Misc/Backups && fresco-fresco"
 alias cdmbv="cd ~/Misc/Backups/video/ && ll"
 alias cdmbvt="cd ~/Misc/Backups/video/torrents/ && lln"
 alias cdmbvi="cd ~/Misc/Backups/video/imdb/ && ll"
