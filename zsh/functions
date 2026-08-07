@@ -337,7 +337,7 @@ submv () {
     echo -e "\033[33m:: Renamed the No. $whichsub subtitle files\033[0m"
 }
 
-’ () {
+qw () {
     dir="$1"
     [[ -z "$1" ]] && dir="."
     fl="$(eza --no-quotes -1fX --show-symlinks "$dir" | sed '/^$/d' | sort | fzf)"
