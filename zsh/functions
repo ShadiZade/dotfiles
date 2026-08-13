@@ -1050,3 +1050,12 @@ function thypipe-failures {
     local thypipe_failed="$(fd -i 'thypipe-failed' /tmp | wc -l)"
     [[ "$thypipe_failed" -gt 0 ]] && echolor red ":: Found ““$thypipe_failed”” ThyPipe failures."
 }
+
+function add-podcast {
+    mobiledir="$HOME/.local/mobile/Internal shared storage"
+    [[ -d "$mobiledir" ]] || {
+	echolor red ":: Mobile not mounted."
+	return 1
+    }
+    rsync -ParuL -- "$@" "$mobiledir/Home/Podcasts"
+}
