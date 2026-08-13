@@ -68,7 +68,11 @@ super + alt + ctrl + asciitilde
 # brown noise mode
 super + alt + ctrl + b
     $HOME/Repositories/scripts/brown-noise
-	
+
+# quodlibet enqueue current
+super + alt + ctrl + h
+	$HOME/Repositories/scripts/connect-bluetooth
+
 # clear clipboard
 super + shift + BackSpace
     xsel -cb

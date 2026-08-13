@@ -151,6 +151,7 @@ qbittorrent
 qt5-svg
 qt5-tools
 quodlibet
+qutebrowser
 r
 reflector
 ripgrep
