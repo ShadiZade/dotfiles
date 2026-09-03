@@ -1,3 +1,4 @@
+;; -*- lexical-binding: nil -*- 
 (defun delete-visited-file (buffer-name)
   "Delete the file visited by the buffer named BUFFER-NAME."
   (interactive "bDelete file visited by buffer ")

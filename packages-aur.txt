@@ -19,7 +19,6 @@ otf-kawkab-mono
 pacman-log-orphans-hook
 potato
 ripdrag-git
-scantailor-advanced-git
 shahab-fonts
 siji-git
 sioyek-git

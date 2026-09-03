@@ -44,6 +44,7 @@ fcitx5-lua
 fcitx5-pinyin-zhwiki
 fcitx5-table-extra
 fclones
+fd
 figlet
 flameshot
 flatpak
@@ -69,6 +70,8 @@ inxi
 iwd
 julia
 kitty
+kmines
+kpat
 leiningen
 less
 lib32-vulkan-intel
@@ -163,6 +166,7 @@ rsync
 rust
 rust-analyzer
 rustlings
+scantailor-advanced
 scdoc
 scrapy
 shellcheck

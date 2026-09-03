@@ -1,3 +1,4 @@
+;; -*- lexical-binding: nil -*- 
 ;;; mhtml-mode (mhtml-mode-hook)
 (defalias 'do-xhtml-refs
    (kmacro "C-f M-b C-b <delete> <delete> <delete> <delete> C-SPC M-f M-w <delete> M-b <backspace> < s m a l l > < a SPC h r e f = \" # f n M-f \" > C-y C-c / C-c / M-> < p SPC i d = \" f n C-y \" > C-c / C-b C-b C-b C-b C-y . SPC"))

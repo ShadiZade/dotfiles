@@ -1,3 +1,4 @@
+;; -*- lexical-binding: nil -*- 
 ;; themes
 (unless (package-installed-p 'gruvbox-theme)
   (package-install 'gruvbox-theme))

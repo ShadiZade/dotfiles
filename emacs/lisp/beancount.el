@@ -1,3 +1,4 @@
+;; -*- lexical-binding: nil -*- 
 ;;; beancount.el --- A major mode to edit Beancount input files. -*- lexical-binding: t -*-
 
 ;; Copyright (C) 2013 Martin Blais <blais@furius.ca>

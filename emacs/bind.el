@@ -1,3 +1,4 @@
+;; -*- lexical-binding: nil -*- 
 ;; unset
 (keymap-global-unset "C-x C-k <return>")
 (keymap-global-unset "C-x C-p")
@@ -72,7 +73,6 @@
 					 (end-of-buffer)
 					 (olivetti-mode t)))
 (keymap-global-set "C-c v m d"         (lambda () (interactive) (dired "~/Misc/diary")))
-(keymap-global-set "C-c v m o"         (lambda () (interactive) (dired "~/Misc/org")))
 (keymap-global-set "C-c v j w"         (lambda () (interactive) (dired "~/Projects/writings")))
 (keymap-global-set "C-c v l s u"       (lambda () (interactive) (dired "~/.local/share/user-scripts")))
 
@@ -87,10 +87,6 @@
 					 (find-file "~/Repositories/dotfiles/emacs/bind.el")))                           
 (keymap-global-set "C-z e o"           (lambda () (interactive)
 					 (find-file "~/Repositories/dotfiles/emacs/org.el")))                           
-(keymap-global-set "C-z t"             (lambda () (interactive)
-					 (find-file "~/Misc/org/task.org")))
-(keymap-global-set "C-z w"             (lambda () (interactive)
-					 (find-file "~/Misc/org/tiasut.org")))
 (keymap-global-set "C-z $"             (lambda () (interactive)
 					 (find-file "~/Archives/Personal/bookkeeping/book.beancount")
 					 (text-scale-set 2)

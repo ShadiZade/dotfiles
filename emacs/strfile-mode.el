@@ -1,3 +1,4 @@
+;; -*- lexical-binding: nil -*- 
 (defvar strfile-mode-hook nil)
 
 (defvar strfile-mode-map

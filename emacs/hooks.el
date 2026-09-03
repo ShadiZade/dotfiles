@@ -1,3 +1,4 @@
+;; -*- lexical-binding: nil -*- 
 (add-hook 'bibtex-mode-hook
 	  (lambda ()
 	    (keymap-local-set "C-c C-~" 'yank-bib-and-copy-name)
