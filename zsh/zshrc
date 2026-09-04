@@ -18,8 +18,8 @@ source ~/Repositories/scripts/essential-functions
 source ~/.config/zsh/extra
 source ~/.config/zsh/functions
 source ~/.config/zsh/aliases
-source ~/Repositories/private/wifi-creds.sh
 source ~/Repositories/private/private-aliases.sh
+source ~/Repositories/private/wifi-creds/wifi-"${$(cat "$modefile"):-home}"
 
 export ZSH_COMPDUMP="$XDG_CACHE_HOME"/zsh/zcompdump-"$ZSH_VERSION" 
 export HISTCONTROL=ignorespace

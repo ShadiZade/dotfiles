@@ -269,6 +269,7 @@ wg () {
 }
 
 netc () {
+    source ~/Repositories/private/wifi-creds/wifi-"${$(cat "$modefile"):-home}"
     nmcli device disconnect wlan0 >/dev/null 2>/dev/null && {
 	echolor green ":: Disconnected successfully."
     }
@@ -606,7 +607,7 @@ function ws {
 	reset_p="n"
 	read -r reset_p
 	[[ "$reset_p" = "y" ]] && {
-	    source ~/Repositories/private/wifi-creds.sh
+	    source ~/Repositories/private/wifi-creds/wifi-"${$(cat "$modefile"):-home}"
 	    echolor green ":: Default network reset to ““$DEFAULT_WIFI_NETWORK””"
 	}
 	return

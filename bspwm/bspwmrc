@@ -16,6 +16,7 @@
 source ~/Repositories/scripts/bspwm-theme.sh
 source ~/.local/share/user-scripts/current-theme
 source ~/Repositories/scripts/essential-functions
+switch-mode home
 
 cmp -s /etc/hostname <(echo "zookeeper") && {
     xrandr -q | grep -q "HDMI2 connected" && {
