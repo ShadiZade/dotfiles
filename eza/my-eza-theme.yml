@@ -108,5 +108,6 @@ filenames:
 extensions:
   # Custom extension-based overrides
   # rs: {filename: {foreground: Red}, icon: {glyph: 🦀}}
-  beancount: {filename: {foreground: default}, icon: {glyph: }}
-  rasi: {filename: {foreground: Default}, icon: {glyph: }}
+  beancount: {filename: {foreground: purple}, icon: {glyph: }}
+  rasi: {filename: {foreground: purple}, icon: {glyph: }}
+  d2: {filename: {foreground: purple}, icon: {glyph: 𐇲}}
