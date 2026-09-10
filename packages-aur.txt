@@ -8,6 +8,7 @@ freetube-bin
 gallery-dl
 i3lock-color
 jmtpfs
+linuxqq
 mikhak-fonts
 mimeo
 minecraft-launcher

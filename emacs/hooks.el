@@ -7,7 +7,16 @@
 (add-hook 'org-mode-hook
 	  (lambda ()
 	      (keymap-local-unset "C-'")
-	      (keymap-local-unset "C-,")))
+	      (keymap-local-unset "C-,")
+	      ))
+
+(add-hook 'calendar-mode-hook
+	  (lambda ()
+	    (add-hook 'diary-nongregorian-listing-hook 'diary-chinese-list-entries)
+	    (add-hook 'diary-nongregorian-marking-hook 'diary-chinese-mark-entries)
+	    (add-hook 'diary-nongregorian-listing-hook 'diary-islamic-list-entries)
+	    (add-hook 'diary-nongregorian-marking-hook 'diary-islamic-mark-entries)
+	    ))
 
 (add-hook 'LaTeX-mode-hook
 	  (lambda ()
