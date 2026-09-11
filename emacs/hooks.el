@@ -12,6 +12,8 @@
 
 (add-hook 'calendar-mode-hook
 	  (lambda ()
+	    (keymap-local-unset "<next>")
+	    (keymap-local-unset "<prior>")
 	    (add-hook 'diary-nongregorian-listing-hook 'diary-chinese-list-entries)
 	    (add-hook 'diary-nongregorian-marking-hook 'diary-chinese-mark-entries)
 	    (add-hook 'diary-nongregorian-listing-hook 'diary-islamic-list-entries)

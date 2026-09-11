@@ -14,6 +14,8 @@
 (keymap-global-unset "M-m")
 (keymap-global-unset "M-h")
 (keymap-global-unset "M-j")
+(keymap-global-unset "C-<prior>")
+(keymap-global-unset "C-<next>")
 
 ;; global bindings
 (keymap-global-set "<escape>"        'keyboard-escape-quit)
@@ -27,7 +29,8 @@
 (keymap-global-set "C-<down>"        'split-window-vertically)
 (keymap-global-set "C-z i b"         'ispell-buffer)
 (keymap-global-set "C-z i r"         'ispell-region)
-(keymap-global-set "C-z c"           'shadi/reload-config-file)
+(keymap-global-set "C-z r"           'shadi/reload-config-file)
+(keymap-global-set "C-z c"           'calendar)
 (keymap-global-set "C-z o"           'olivetti-mode)
 (keymap-global-set "C-z l"           'emacs-lock-mode)
 (keymap-global-set "C-z <"           'diff-buffer-with-file)
