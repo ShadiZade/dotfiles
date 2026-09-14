@@ -60,3 +60,7 @@ mkdir -p ~/.config/sioyek/
 ln -sf ~/Repositories/dotfiles/sioyek/*user.config ~/.config/sioyek/
 mkdir -p ~/.config/eza/
 ln -sf ~/Repositories/dotfiles/eza/my-eza-theme.yml ~/.config/eza/theme.yml
+mkdir -p ~/.config/mpd/
+mkdir -p ~/.local/share/mpd/
+mkdir -p ~/.local/state/mpd/
+ln -sf ~/Repositories/dotfiles/mpd/mpd.conf ~/.config/mpd/

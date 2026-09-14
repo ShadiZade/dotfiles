@@ -10,25 +10,25 @@ DefaultIM=keyboard-ru
 # Name
 Name=keyboard-us
 # Layout
-Layout=
+# Layout=
 
 [Groups/0/Items/1]
 # Name
 Name=pinyin
 # Layout
-Layout=
+# Layout=
 
 [Groups/0/Items/2]
 # Name
 Name=keyboard-ara
 # Layout
-Layout=
+# Layout=
 
 [Groups/0/Items/3]
 # Name
 Name=keyboard-ru
 # Layout
-Layout=
+# Layout=
 
 [GroupOrder]
 0="Group 1"
