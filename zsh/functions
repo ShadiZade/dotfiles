@@ -818,6 +818,11 @@ function mvk {
 
 function mva {
     fd -q "^aaa" "$HOME/Downloads/" || {
+	fd -q "crdownload$" "$HOME/Downloads/" && {
+	echolor yellow ":: Found currently downloading file in ~/Downloads "
+	eza --no-quotes -lX --icons --no-user --time-style=iso --sort=time --color-scale all --color always ~/Downloads/*crdownload
+	return 1
+	}
 	echolor red ":: No file beginning with “aaa” was found in ~/Downloads"
 	return 1
     }
@@ -826,6 +831,11 @@ function mva {
 
 function mvar {
     fd -q "^aaa" "$HOME/Downloads/" || {
+	fd -q "crdownload$" "$HOME/Downloads/" && {
+	echolor yellow ":: Found currently downloading file in ~/Downloads "
+	eza --no-quotes -lX --icons --no-user --time-style=iso --sort=time --color-scale all --color always ~/Downloads/*crdownload
+	return 1
+	}
 	echolor red ":: No file beginning with “aaa” was found in ~/Downloads"
 	return 1
     }
