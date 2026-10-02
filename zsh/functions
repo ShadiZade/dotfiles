@@ -1023,3 +1023,24 @@ function add-podcast {
     }
     rsync -ParuL -- "$@" "$mobiledir/Home/Podcasts"
 }
+
+function relate {
+    constant="$(random-string 15)"
+    i=1
+    for j in "$@"
+    do
+	[[ -e "$j" ]] || {
+	    echolor red ":: File ““$j”” does not exist."
+	    return 1
+	}
+	grep -q '/' <<< "$j" && {
+	    echolor red ":: Can't handle outside directories."
+	    return 1
+	}
+    done
+    for j in "$@"
+    do
+	mvk "$j" "$constant-$(printf '%.4d' $i)"
+	((i++))
+    done
+}

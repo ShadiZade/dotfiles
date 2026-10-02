@@ -26,7 +26,7 @@ symlink () {
 describe () {
     ext=$(echo "$file" | awk -F '.' '{print $NF}')
     dunstctl close-all
-    notify-send -t 10000000 "Old name:" "$file"
+    notify-send -t 5000 "Old name:" "$file"
     newname="$(fd 'jpg|jpeg|png|gif|webp|jxl|jpg_large|svg' "$(pwd)" | awk -F '/' '{print $NF}' | rofi -dmenu -i -p 'rename image')"
     newname="$(echo "$newname" | sed 's/→/-'$(random-string)'/g')"
     newname="$(kebab "$newname")"
