@@ -54,6 +54,7 @@ bspc rule -a Nsxiv state=fullscreen
 bspc rule -a freetube state=fullscreen
 bspc rule -a Zathura state=fullscreen
 bspc rule -a sioyek state=fullscreen
+bspc rule -a photoflare state=fullscreen
 
 xdg-mime default sxiv.desktop image/{jpg,jpeg,png,tiff,bmp,svg+xml,jxl,webp}
 xdg-mime default gimp.desktop image/x-xcf
