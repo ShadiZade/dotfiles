@@ -724,7 +724,7 @@ function reading-stats {
     [[ "$tbr20_number" -gt 20 ]] && local tbr20_number="$(echolor red "$tbr20_number")"
     local tbr5_number="$(fd . ~/Projects/reading/tbr/tbr-5/ | wc -l)"
     [[ "$tbr5_number" -gt 5 ]] && local tbr5_number="$(echolor red "$tbr5_number")"
-    local readingnow_number="$(fd -d 1 -t l -t f . ~/Projects/reading/ | wc -l)"
+    local readingnow_number="$(fd -d 1 -t l -t f 'pdf$' ~/Projects/reading/ | wc -l)"
     [[ "$readingnow_number" -gt 6 ]] && local readingnow_number="$(echolor red "$readingnow_number")"
     local done_number="$(fd . ~/Projects/reading/done/$(date +%Y) | wc -l)"
     [[ "$done_number" -eq 0 ]] && local done_number="$(echolor red "$done_number")"
@@ -1043,4 +1043,5 @@ function relate {
 	mvk "$j" "$constant-$(printf '%.4d' $i)"
 	((i++))
     done
+    echo -n "$constant" | xclip -selection clipboard
 }

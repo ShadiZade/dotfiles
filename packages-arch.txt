@@ -132,6 +132,7 @@ pdfgrep
 pdftk
 perl-file-mimeinfo
 perl-image-exiftool
+photoflare
 picom
 pipewire
 pipewire-alsa
