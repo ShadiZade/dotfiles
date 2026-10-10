@@ -26,7 +26,7 @@ xkb_symbols "basic" {
     key <AD07>	{[ u,				U														]};
     key <AD08>	{[ i,				I														]};
     key <AD09>	{[ o,				O														]};
-    key <AD10>	{[ p,				P,					bar									]};
+    key <AD10>	{[ p,				P											]};
     key <AD11>	{[ bracketleft,		braceleft												]};
     key <AD12>	{[ bracketright,	braceright												]};
 
@@ -41,7 +41,7 @@ xkb_symbols "basic" {
     key <AC09>	{[ l,				L,					U03BB								]};
     key <AC10>	{[ semicolon,		colon,				U201C								]};
     key <AC11>	{[ apostrophe,		quotedbl,			U201D								]};
-    key <BKSL>	{[ asciitilde,		backslash,			U00A0									]};
+    key <BKSL>	{[ asciitilde,		bar,			U00A0									]};
 
     key <AB01>	{[ z,				Z,					U1F577									]};
     key <AB02>	{[ x,				X,					U2A2F								]};

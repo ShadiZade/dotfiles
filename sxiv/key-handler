@@ -93,6 +93,11 @@ clipboard () {
     xclip -selection clipboard -target image/png -i "$(realpath "$file")"
 }
 
+profile () {
+    source ~/Repositories/private/private-aliases.sh
+    make-profile "$file"
+}
+
 while read file
 do
         case "$1" in
@@ -108,6 +113,7 @@ do
 	"C-i")  showinfo ;;
 	"C-l")  label ;;
 	"C-x")  clipboard ;;
+	"C-j")  profile ;;
         esac
 done
 
