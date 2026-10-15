@@ -291,6 +291,7 @@ ttf-ubuntu-nerd
 ttf-victor-mono-nerd
 ttf-zed-mono-nerd
 unrar
+vcsi
 vim
 visidata
 vivaldi

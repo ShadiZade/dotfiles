@@ -102,12 +102,12 @@
 (keymap-global-set "C-z s"   'su-read-only)
 
 ;; mode bindings
-(keymap-global-set "C-| t" 'text-mode)
-(keymap-global-set "C-| o" 'org-mode)
-(keymap-global-set "C-| m" 'markdown-mode)
-(keymap-global-set "C-| e" 'emacs-lisp-mode)
-(keymap-global-set "C-| b" 'shell-script-mode)
-(keymap-global-set "C-| l" 'TeX-tex-mode)
+(keymap-global-set "C-z h t" 'text-mode)
+(keymap-global-set "C-z h o" 'org-mode)
+(keymap-global-set "C-z h m" 'markdown-mode)
+(keymap-global-set "C-z h e" 'emacs-lisp-mode)
+(keymap-global-set "C-z h b" 'shell-script-mode)
+(keymap-global-set "C-z h l" 'TeX-tex-mode)
 
 ;; frequent-words
 (keymap-global-set "C-c 1"  (lambda () (interactive) (shadi/fw 1)))

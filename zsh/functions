@@ -345,7 +345,7 @@ qw () {
     [[ -z "$fl" ]] && return 1
     file_ext="$(echo "$fl" | awk -F '.' '{print $NF}')"
     fw="$dir/$fl"
-    realpath -- "$fw" | ←
+    realpath -- "$fw" | copy
     echolor yellow ":: Opening ““$fw””"
     resolved=1
     case "$file_ext" in
@@ -387,8 +387,8 @@ xmm () {
     esac
 }
 
-←←← () {
-    realpath -- "${1:-.}" | ←
+lk () {
+    realpath -- "${1:-.}" | copy
     realpath -- "${1:-.}"
 }
 
@@ -403,7 +403,7 @@ function relevant {
     } || {
 	copyfile="$1"
     }
-    cat "$copyfile" | sed '/^#/d;/^$/d' | ←n
+    cat "$copyfile" | sed '/^#/d;/^$/d' | copyn
     echolor yellow ":: Copied contents of ““$copyfile”” to clipboard."
 }
 
@@ -433,7 +433,7 @@ function pandocjk {
     pandoc --pdf-engine=xelatex -V mainfont="$cjk_font" "$1" -o "$2"
 }
 
-function ⨯⨯ {
+function xx {
     move-to-trash-recursively $@
     echolor yellow ":: ““$number_of_files_trashed”” files trashed."
 }
@@ -548,16 +548,16 @@ function xmmv {
 	    newname="$(echo "$j"-$(random-number))"
 	}
 	echolor green ":: Copying ““${j##*/}””\n:: As      ““${newname##*/}””"
-	→ "$j" ~/.local/mobile/Internal\ shared\ storage/Home/Desktop/"${newname##*/}"
+	parul "$j" ~/.local/mobile/Internal\ shared\ storage/Home/Desktop/"${newname##*/}"
     done
 }
 
 function xmmb {
-    → ~/Books/xadd/* ~/.local/mobile/Internal\ shared\ storage/Books
+    parul ~/Books/xadd/* ~/.local/mobile/Internal\ shared\ storage/Books
 }
 
 function xmmp {
-    → "$(pall path)" ~/.local/mobile/Internal\ shared\ storage/Home/Desktop
+    parul "$(pall path)" ~/.local/mobile/Internal\ shared\ storage/Home/Desktop
 }
 
 function open-newsletter {
