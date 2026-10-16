@@ -188,8 +188,8 @@ alias gap="~/Repositories/scripts/active-projects"
 alias tagger="~/Repositories/scripts/tagger.sh"
 alias gv="~/Repositories/scripts/convert-to-mp4.sh"
 alias tn="~/Repositories/scripts/takenote.sh"
-alias λ="~/Repositories/scripts/OpenShennong.sh"
-alias λλ="outside=yes ~/Repositories/scripts/OpenShennong.sh"
+alias L="~/Repositories/scripts/OpenShennong.sh"
+alias LL="outside=yes ~/Repositories/scripts/OpenShennong.sh"
 alias knife='~/Repositories/scripts/kebab-knife.sh'
 alias xxxx="~/Repositories/scripts/trash-emptier.sh"
 alias tv="~/Repositories/scripts/upcoming-shows.sh"
@@ -225,7 +225,8 @@ alias rmdir='rmdir -v'
 alias grep='grep --color=auto -is'
 alias window-name="xprop WM_CLASS"
 alias clr="printf '\033[2J\033[3J\033[1;1H'"
-alias ,,='trans -b'
+alias trans='trans -b'
+alias ,,='cd ..'
 alias llwc="ll | wc -l"
 alias back="~/Repositories/scripts/back/backmaster.sh"
 alias morse="morse-x -f 350"
@@ -234,10 +235,6 @@ alias copyn="xclip -selection clipboard"
 alias copy="tr -d '\n' | xclip -selection clipboard"
 alias sxiv="sxiv -a"
 alias duh="du -h"
-alias rq="R -q -f "
-alias rqq="R -s -f "
-alias Q="R -s"
-alias o="rdo okular"
 alias cal="cal --color=always -3m"
 alias f="fresco && ll"
 alias f~='hide_flag="-a"; f; hide_flag=""'

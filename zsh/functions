@@ -1045,3 +1045,12 @@ function relate {
     done
     echo -n "$constant" | xclip -selection clipboard
 }
+
+function strip-audio {
+    [[ -e "$1" ]] || {
+	echolor red ":: File ““$1”” does not exist."
+	return 1
+    }
+    mv "$1" "$1"-old
+    ffmpeg -i "$1"-old -loglevel 8 -an -c:v copy "$1" && move-to-trash "$1"-old
+}
