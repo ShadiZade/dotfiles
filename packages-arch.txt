@@ -188,6 +188,7 @@ tesseract-data-chi_tra
 tesseract-data-deu
 tesseract-data-eng
 tesseract-data-por
+tesseract-data-rus
 texlive-basic
 texlive-bibtexextra
 texlive-binextra
