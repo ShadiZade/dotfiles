@@ -14,6 +14,8 @@
 (setq save-abbrevs 'silently)
 (read-abbrev-file nil)
 
+(setq ispell-local-dictionary "en_US") 
+
 
 (load "~/.config/emacs/functions.el")
 (load "~/.config/emacs/macros.el")

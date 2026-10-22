@@ -106,7 +106,22 @@
 	  'auto-revert-mode)
 
 
-
+(add-hook 'company-mode-hook
+	  (lambda ()
+	    (setq company-minimum-prefix-leng 2)
+	    (setq company-idle-delay 0)
+	    (setq company-selection-wrap-around t)
+	    (setq company-require-match nil)
+	    (setq company-lighter-base "c→")
+	    (setq company-tooltip-margin 3)
+	    (setq company-backends '(company-elisp
+				     company-files company-capf company-semantic
+				     company-dabbrev company-dabbrev-code
+				     company-abbrev company-keywords))
+	    ;; unused backends: company-bbdb company-cmake company-clang company-gtags company-etags company-oddmuse company-ispell company-spell
+	    (setq company-dabbrev-ignore-case 'keep-prefix)
+	    (setq company-transformers '(company-sort-by-occurrence))
+	    ))
 
 (defun athenaeum-index.csv_file_hook ()
   (when (string= (file-name-nondirectory (buffer-file-name)) "athenaeum-index.csv")
@@ -127,6 +142,8 @@
     (sxhkdrc-mode)
     )
 )
+
+
 
 (add-hook 'find-file-hook 'athenaeum-index.csv_file_hook)
 (add-hook 'find-file-hook 'refs.bib_file_hook)
