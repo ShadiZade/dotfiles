@@ -4778,6 +4778,7 @@
 /usr/share/fonts/noto/NotoSansTelugu-ExtraBold.ttf: Noto Sans Telugu,Noto Sans Telugu ExtraBold:style=ExtraBold,Regular
 /usr/share/fonts/TTF/IntoneMonoNerdFontPropo-Regular.ttf: IntoneMono Nerd Font Propo,IntoneMono NFP:style=Regular
 /usr/share/fonts/TTF/NotoSerifNerdFont-ExtraBold.ttf: NotoSerif Nerd Font,NotoSerif NF,NotoSerif NF ExtBd:style=ExtraBold,Regular
+/usr/share/fonts/chinese/WenJinMinchoP0-Regular.ttf: WenJin Mincho Plane 0,文津宋體 第0平面,文津明朝 第0平面,문진(文津) 명조 평면 0,文津宋体 第0平面:style=Regular,常規,標準,일반,常规
 /usr/share/fonts/TTF/IBMPlexSerif-TextItalic.ttf: IBM Plex Serif,IBM Plex Serif Text:style=Text Italic,Italic
 /usr/share/fonts/noto/NotoSerifHebrew-ExtraBold.ttf: Noto Serif Hebrew,Noto Serif Hebrew ExtraBold:style=ExtraBold,Regular
 /usr/share/fonts/noto/NotoSans-Thin.ttf: Noto Sans,Noto Sans Thin:style=Thin,Regular
@@ -5346,6 +5347,7 @@
 /usr/share/fonts/noto/NotoSansOsage-Regular.ttf: Noto Sans Osage:style=Regular
 /usr/share/fonts/noto/NotoSerif-SemiCondensedMedium.ttf: Noto Serif,Noto Serif SemiCondensed Medium:style=SemiCondensed Medium,Regular
 /usr/share/fonts/fa-regular-400.ttf: Font Awesome 6 Free,Font Awesome 6 Free Regular:style=Regular
+/usr/share/fonts/chinese/WenJinMinchoP2-Regular.ttf: WenJin Mincho Plane 2,文津宋體 第2平面,文津明朝 第2平面,문진(文津) 명조 평면 2,文津宋体 第2平面:style=Regular,常規,標準,일반,常规
 /usr/share/fonts/noto/NotoSansTelugu-SemiCondensedExtraLight.ttf: Noto Sans Telugu,Noto Sans Telugu SemiCondensed ExtraLight:style=SemiCondensed ExtraLight,Regular
 /usr/share/fonts/TTF/M+CodeLat50NerdFontPropo-Regular.ttf: M+CodeLat50 Nerd Font Propo:style=Regular
 /usr/share/fonts/TTF/IBMPlexSansThaiLooped-ExtraLight.ttf: IBM Plex Sans Thai Looped,IBM Plex Sans Thai Looped ExtLt:style=ExtraLight,Regular
@@ -5607,3 +5609,4 @@
 /usr/share/fonts/JuliaMono-BoldLatin.ttf: JuliaMono,JuliaMono Latin:style=BoldLatin,Bold
 /usr/share/fonts/OTF/HasklugNerdFont-ExtraLight.otf: Hasklug Nerd Font,Hasklug Nerd Font ExtLt:style=ExtraLight,Regular
 /usr/share/fonts/TTF/NotoSansNerdFontPropo-ExtraCondensedThin.ttf: NotoSans Nerd Font Propo,NotoSans NFP,NotoSans NFP ExtCond Thin:style=ExtraCondensed Thin,Regular
+/usr/share/fonts/chinese/WenJinMinchoP3-Regular.ttf: WenJin Mincho Plane 3,文津宋體 第3平面,文津明朝 第3平面,문진(文津) 명조 평면 3,文津宋体 第3平面:style=Regular,常規,標準,일반,常规
