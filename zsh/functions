@@ -242,9 +242,9 @@ dr () {
 lv () {
     echo -e "\033[33m:: Showing a live feed of $(pwd | sed "s|$HOME|~|")\033[0m"
     while true; do
-	lln
+	lln *crdownload
 	sleep 1s
-	tput cuu $(lln | wc -l)
+	tput cuu $(lln *crdownload | wc -l)
     done
 }
 ## wg
@@ -1053,4 +1053,52 @@ function strip-audio {
     }
     mv "$1" "$1"-old
     ffmpeg -i "$1"-old -loglevel 8 -an -c:v copy "$1" && move-to-trash "$1"-old
+}
+
+function laundry {
+    [[ -e /tmp/laundry ]] && {
+	mv /tmp/laundry /tmp/laundry-done-$(date-string)
+	echolor yellow ":: Laundry reminder removed."	
+    } || {
+	touch /tmp/laundry
+	echolor green ":: Laundry reminder placed."	
+    }
+	
+}
+
+function zzz {
+    issues_exist=0
+    echolor green ":: Doing pre-sleep checks..."
+    [[ -e /tmp/laundry ]] && {
+	echolor red ":: LAUNDRY REMINDER!"
+	issues_exist=1
+    }
+    pgrep --quiet qbittorrent || {
+	echolor red ":: P2P CLIENT NOT ON!"
+	issues_exist=1
+    }	
+    [[ "$issues_exist" -eq 0 ]] && echolor green ":: No issues. Good night!"
+}
+
+function y {
+    [[ -e info.yml ]] && {
+	[[ -n "$1" ]] && {
+	    yq -r "$1" info.yml
+	} || {
+	    yq '.' info.yml
+	}
+    } || {
+	fd -q 'yml$' && {
+	    local this_yml="$(fd -1 -d 1 'yml$')"
+	    [[ -n "$1" ]] && {
+		yq -r "$1" "$this_yml"
+	    } || {
+		yq '.' "$this_yml"
+	    }
+	} || {
+	    echolor red ":: No info file. ““Press [continue] to create one.””" 1
+	    read
+	    emacsclient -nw -a emacs info.yml
+	}
+    }
 }

@@ -9,7 +9,7 @@
 ----------        3. changed OSD messages
 ----------        4. zeroed hold_threshold
 
-local speed_multiplier = 2.5
+local speed_multiplier = 1.5
 local slow_multiplier = 0.3
 local hold_threshold = 0
 local is_changing = false
@@ -20,8 +20,8 @@ local function fast_on()
     is_changing = true
     -- Capture the speed EXACTLY as it is before we change it
     pre_hold_speed = mp.get_property_number("speed")
-
     mp.set_property("speed", speed_multiplier)
+    mp.set_osd_ass(0, 0, "")
     mp.set_osd_ass(0, 0, "▶▶ " .. speed_multiplier .. "x faster")
 end
 
@@ -31,6 +31,7 @@ local function slow_on()
     pre_hold_speed = mp.get_property_number("speed")
 
     mp.set_property("speed", slow_multiplier)
+    mp.set_osd_ass(0, 0, "")
     mp.set_osd_ass(0, 0, "        " .. slow_multiplier .. "x slower ◀◀")
 end
 
