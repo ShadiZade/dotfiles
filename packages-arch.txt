@@ -179,6 +179,7 @@ steam
 sudo
 sxhkd
 sxiv
+symlinks
 tealdeer
 termdown
 terminus-font

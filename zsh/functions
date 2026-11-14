@@ -240,11 +240,18 @@ dr () {
 
 ## lv
 lv () {
-    echo -e "\033[33m:: Showing a live feed of $(pwd | sed "s|$HOME|~|")\033[0m"
+    [[ -z "$1" ]] && thispath="$(pwd)" || thispath="$1"
+    [[ -z "$2" ]] && thisname="crodownload" || thisname="$2"
+    echolor yellow ":: Showing a live feed of ““$(sed "s|$HOME|~|" <<< "$thispath")””"
+    function find-and-list {
+	fd "$thisname" "$thispath" -X eza --no-quotes -lX --icons --no-user --time-style=iso --sort=newest --color-scale all --color always
+    }
     while true; do
-	lln *crdownload
-	sleep 1s
-	tput cuu $(lln *crdownload | wc -l)
+	find-and-list 2> /dev/null
+	[[ "$(find-and-list crdownload "$thispath" 2> /dev/null | wc -l)" -gt 0 ]] && {
+	    tput cuu $(find-and-list 2> /dev/null | wc -l)
+	}
+	sleep 0.3s
     done
 }
 ## wg
@@ -393,13 +400,17 @@ lk () {
 }
 
 function relevant {
-    [ -z "$1" ] && {
-	fd -qH '.relevant-function.sh' \
-	    && copyfile='.relevant-function.sh' \
-		|| {
+    [[ -z "$1" ]] && {
+	fd -qH '.relevant-function.sh' && {
+	    copyfile='.relevant-function.sh' 
+	} || {
+	    fd -qH '.relevant-function.sh' ..  && {
+		copyfile='../.relevant-function.sh'
+	    } || {
 		echolor red ':: No relevant-function found'
 		return
 	    }
+	}
     } || {
 	copyfile="$1"
     }
