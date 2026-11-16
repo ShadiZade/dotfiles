@@ -1113,3 +1113,8 @@ function y {
 	}
     }
 }
+
+function pat {
+    [[ -e "$1" ]] || return 1
+    cat "$1" | pad-and-wrap 50 | bat -l txt
+}
