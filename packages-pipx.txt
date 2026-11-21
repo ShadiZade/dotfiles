@@ -1,4 +1,5 @@
 ffcuesplitter
 instaloader
 pdf-toc
+pip
 repcal

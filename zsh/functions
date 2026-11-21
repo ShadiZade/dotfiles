@@ -559,16 +559,16 @@ function xmmv {
 	    newname="$(echo "$j"-$(random-number))"
 	}
 	echolor green ":: Copying ““${j##*/}””\n:: As      ““${newname##*/}””"
-	parul "$j" ~/.local/mobile/Internal\ shared\ storage/Home/Desktop/"${newname##*/}"
+	rsync -Parul -- "$j" ~/.local/mobile/Internal\ shared\ storage/Home/Desktop/"${newname##*/}"
     done
 }
 
 function xmmb {
-    parul ~/Books/xadd/* ~/.local/mobile/Internal\ shared\ storage/Books
+    rsync -Parul -- ~/Books/xadd/* ~/.local/mobile/Internal\ shared\ storage/Books
 }
 
 function xmmp {
-    parul "$(pall path)" ~/.local/mobile/Internal\ shared\ storage/Home/Desktop
+    rsync -Parul -- "$(pall path)" ~/.local/mobile/Internal\ shared\ storage/Home/Desktop
 }
 
 function open-newsletter {
@@ -801,31 +801,6 @@ function zap-to-directory {
 	    return 1 ;;
     esac
 }
-
-function mvk {
-    [[ -z "$1" ]] && return 1
-    [[ ! -e "$1" ]] && {
-	echolor red ":: File ““$1”” not found."
-	return 1
-    }
-    local fname="$1"
-    local ext="${fname##*.}"
-    case "$2" in
-	'.'|'') nname="$(basename "${fname%.*}")" ;;
-	*)      nname="$2" ;;
-    esac
-    [[ -z "$nname" ]] && return 1
-    [[ -n "$ext" ]] && local ext=".$ext"
-    grep -q '\.' <<< "$fname" || local ext=''
-    [[ -e "$(kebab "$nname")$ext" ]] && {
-	echolor red ":: ““$(kebab "$nname")$ext”” already exists here."
-	return 1
-    }
-    [[ -z "$ext"  ]] && ext="$(extension-determiner "$fname")"
-    mv -vn "$fname" "$(kebab "$nname")$ext" || return 1
-    echolor purple-aquamarine ":: From ““$fname””\n:: Into ““$(kebab "$nname")$ext””"
-}
-
 
 function mva {
     fd -q "^aaa" "$HOME/Downloads/" || {

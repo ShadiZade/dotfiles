@@ -238,7 +238,7 @@ alias f="fresco && ll"
 alias f~='hide_flag="-a"; f; hide_flag=""'
 alias ff="fresco-fresco && ll"
 alias ff~='hide_flag="-a"; ff; hide_flag=""'
-alias parul="rsync -ParuL --"
+alias P="rsync -ParuL --"
 alias ezad="ll -D"
 alias ezaf="ll -f"
 alias restore="restore-files-from-trash"
