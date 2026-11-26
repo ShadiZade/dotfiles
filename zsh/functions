@@ -554,9 +554,9 @@ function xmmv {
 	[[ -e "$j" ]] || continue
 	grep -q "\." <<< "$j" && {
 	    ext="$(echo "$j" | awk -F '.' '{print $NF}')"
-	    newname="$(echo "$j" | sed "s/\.$ext$/-$(random-number).$ext/g")"
+	    newname="$(echo "$j" | sed "s/\.$ext$/-$(date-string).$ext/g")"
 	} || {
-	    newname="$(echo "$j"-$(random-number))"
+	    newname="$(echo "$j"-$(date-string))"
 	}
 	echolor green ":: Copying ““${j##*/}””\n:: As      ““${newname##*/}””"
 	rsync -Parul -- "$j" ~/.local/mobile/Internal\ shared\ storage/Home/Desktop/"${newname##*/}"

@@ -147,16 +147,15 @@ alias pten="command trans -b pt:en"
 alias enpt="command trans -b en:pt"
 
 # list
-alias l="cd .; eza --icons --sort=ext --group-directories-first"
 alias ll="cd .; eza --no-quotes -lX --icons --no-user --time-style=iso --sort=ext --group-directories-first --color-scale all --color always"
 alias lnl="cd .; eza --no-quotes -lX --icons --no-user --time-style=iso --sort=name --color-scale all --color always"
 alias lla="cd .; eza --no-quotes -laX --icons --no-user --group-directories-first --sort=ext --time-style=iso --color-scale all --color always"
 alias lln="cd .; eza --no-quotes -lX --icons --no-user --time-style=iso --sort=newest --color-scale all --color always"
 alias llo="cd .; eza --no-quotes -lX --icons --no-user --time-style=iso --sort=oldest --color-scale all --color always"
-alias lls="cd .; eza --no-quotes -lX --icons --no-user --time-style=iso --sort=size --group-directories-first --color-scale all --color always"
+alias lls="cd .; eza --total-size --no-quotes -lX --icons --no-user --time-style=iso --sort=size --group-directories-first --color-scale all --color always"
 alias llt="cd .; eza --no-quotes -lX --icons --no-user --time-style=iso --sort=ext --group-directories-first --color-scale all --tree --color always"
 alias llg="cd .; eza --no-quotes -lX --icons --no-user --time-style=iso --sort=ext --group-directories-first --color-scale all --git --color always"
-alias lld="cd .; eza -DXl --icons --no-user --time-style=iso --sort=ext --group-directories-first --color-scale all --color always"
+alias lld="cd .; eza --total-size -DXl --icons --no-user --time-style=iso --sort=ext --group-directories-first --color-scale all --color always"
 alias llf="cd .; eza -fXl --icons --no-user --time-style=iso --sort=ext --group-directories-first --color-scale all --color always"
 
 # package management

@@ -89,7 +89,6 @@ lutris
 lvm2
 man-db
 marble
-marble-maps
 mat2
 meld
 moreutils
